@@ -1,0 +1,425 @@
+: Note: This is NOT a public network slot!  It is part of a virtual subnetwork.
+:       NO MODIFICATIONS TO THIS FILE ARE TO BE MADE without prior authoriza-
+:       tion from the Tymnet International Technical Support organization!!!
+:       For further information, contact Tymnet International Operations in
+:       Vienna, Virginia.   Telephone:  (703)827-9110.
+:
+:>>>>>                    TRT's X.75 slot on node 2575                <<<<<
+:
+:       Date:    08-JUN-87                      Last Changed By:  S WHITE
+:       Node Number:  2575                      Kernal Host Number:   2152
+:       Slot Number:  1                         Code Version Number:  3.01
+:       Memory Size:  270 kb                    Node Location: Wash. D.C.
+:       Site Phone:  (202)347-8091              Customer Phone:  (202)862-4530
+:
+:                              Host Information
+:             Host
+:       LUN  Number     Description of host     Circuit Number  Trouble Number
+:       ---  ------  -------------------------  --------------  --------------
+:        -    3237   XCOM Operations Manager         None        (703)827-9110
+:        0    0290   Telenet X.75                     --         (202)347-8091
+:        1    1439   X.75 TO MODEL 60
+:        2    2955
+:        3    4010
+:        4    4756
+:        5    4989
+:        6    3203   TRT -> TYM (3138) gateway   36LNGS1698      (202)347-8091
+:
+:                               Revision History
+:         Date     Changed
+:      (yy-mm-dd)  By Whom               Description of Change
+:       87-02-27   T/OTRADOVEC  Added uk(2436) and Canada(5246)  to link 1
+:                               as pseudo link hosts
+:       87-02-27  S/White       Added HOSTKEY statements.
+:                               added TCTCSI macro to all links.
+:       87-03-03   T/Otradovec  Reduced the number of DPORTS for all links
+:                               FROM 120 DPORTS TO 100 DPORTS needed for memeory
+:       87-04-10  T/Otradovec   Removed Trinidad-link2 and moved Austria up to
+:                               be the new link 2 (4010)
+:       87-04-21  S/White       At Tom's request, distribute calls to all 
+:                               hosts (except 290) between links 1 and 2.
+:                               add DSHOST patch if not already present.
+:
+:       87-05-27  S/WHITE       Complete overhaul of this file.  Host 290
+:                               is for Telenet, links 1 and 2 are identical 
+:                               and serve the TRT Sub-Net calling thru TRT to
+:                               Foreign Networks (via M60 switch). 
+:
+:                               GATEWAY STATEMENTS retained for now although
+:                               no longer required except for perhaps Telnet.
+:                               TRT to remove GATEWAY statements not required
+:                               later.
+:
+:                               3106 no longer an ODNIC.  Calls to 3106 come
+:                               to Tymnet via x.75 rotation gateways.
+:
+:	08 JUN 87		add 7141 as ODNIC to allow calls to Panama.
+:       28 Oct 1988		added 3640 as ODNIC for links 1 and 2 to route
+:				calls to Bahamas, BaTelco.
+
+SEECONFIGURATION(2)             :Print Configuration Info
+
+PROTOCOL(X.75,HDLC,SLP)         :GLOBAL INTERFACE TYPE FOR ALL HOSTS ON SLOT
+DPORTS(100)                     :NUMBER OF ISIS DISPATCHER PORTS FOR ALL LINKS
+
+::      Host Statements
+
+
+HOSTLINKS(290,0)                :ASSIGN 290 AS DESTINATION HOST FOR LINK 0
+  HOSTPORTAVAILABILITY(2,2)     :Send NO PORT msg when only 2 DPORTS left
+
+HOSTLINKS(1439,1,2)             :ASSIGN 1439 AS DESTINATION HOST FOR LINK 1
+  HOSTKEY(85)                  :use pattern 01010101 as host key
+  HOSTPORTAVAILABILITY(2,2)     :Send NO PORT msg when only 2 DPORTS left
+
+HOSTLINKS(4010,1,2)              :ASSIGN 4010 AS DESTINATION HOST FOR LINK 2
+  HOSTKEY(85)                  :use pattern 01010101 as host key
+  HOSTPORTAVAILABILITY(2,2)     :Send NO PORT msg when only 2 DPORTS left
+
+HOSTLINKS(2436,1,2)            :ASSIGN 2436 AS DESTINATION HOST FOR LINK 1
+  HOSTKEY(85)                  :use pattern 01010101 as host key
+  HOSTPORTAVAILABILITY(2,2)   :Send NO port msg when only 2 DPORTS left
+
+HOSTLINKS(5246,1,2)            :ASSIGN 5246 AS DESTINATION HOST FOR LINK 1
+  HOSTKEY(85)                 :use pattern 01010101 as host key
+  HOSTPORTAVAILABILITY(2,2)   :Send NO port msg when only 2 DPORTS left
+
+HOSTLINKS(4756,1,2)              :ASSIGN 4756 AS DESTINATION HOST FOR LINK 1
+  HOSTKEY(85)                  :use pattern 01010101 as host key
+  HOSTPORTAVAILABILITY(2,2)   :Send NO port msg when only 2 DPORTS left
+
+HOSTLINKS(4989,1,2)             :ASSIGN 4989 AS DESTINATION HOST FOR LINK 1
+  HOSTKEY(85)                  :use pattern 01010101 as host key
+  HOSTPORTAVAILABILITY(2,2)   :Send NO port msg when only 2 DPORTS left
+
+::      GLOBAL OPTIONS
+
+HIHOSTNUMBER(99999)             :Send as numeric username if > 99999
+
+::  See (INTLTECH)DNIC.NOD for DNICNODES macro's
+
+L1ENABLE(07,15)         : Set Break to X3 decimal 21
+L1ENABLE(0A,00)         : Turn off line folding X.3 para 10
+                        : Do NOT use L1ENABLE macro's to Tymnet Networks
+
+XOMUSERNAMES(INTLTECH)  : Additional XOM username
+XOMUSERNAMES(INTLXOM)   : Additional XOM username 
+XOMUSERNAMES(TRTDDT)    : IRC XOM username
+XOMUSERNAMES(OMNC)      : Network Console username
+XOMHOST(3237)           : XOM host number
+
+MAXGATEWAYS(255)        : Allocate additional storage for XOM entry
+MAXDNICNODES(128)       : Allocate additional storage for XOM entry
+MAXODNIC(16)            : Allocate additional storage for XOM entry
+
+MTEXT(0000,"8D"8Atrt/remote network: ):CHANGE DEFAULT 'LOCAL: ' HEADER MESSAGE
+MTEXT(0001,"8D"8Atrt gateway: ):CHANGE DEFAULT 'REMOTE: ' HEADER MESSAGE
+MTEXT(0455, call connected via trt:"8D"8A)
+
+TALKOLDCODE(OFF)
+
+:************************************************************************
+::::    Link Level Statements for Link 0 - Telenet X.75
+:************************************************************************
+
+LINKS(0)
+:       Frame Level Statements
+  PSADR(01,03)          :Primary/Secondary Addresses
+  K(7)                  : Frame Window
+  N2(20)                : Number of times frame will be re-xmitted
+  T1(30)                : Time between re-xmit of frames in 1/10 of sec's
+  ILRRC(60)             : Send RR cmd every 60 sec's of idleline
+  FRMOPT(-FM128)        : Frame sequencing modulus 8
+::      Packet Level Statements
+  TCNL(1,127)           : Two-way logical channel numbering - default=DPORTS
+  T31(90)               : Incomming call request timer = 90 sec's
+  ODNIC(3119,7141,4263,3503): 3119 is Transit Net DNIC, also serve others
+::  CHKCLG(??)          : Check Calling Adr to see if call is from ??
+  CLDADL(4)             : Verify DNIC in call accept packet
+  NETUSERNAMEPREFIX(TRT.): Build circuit with irc.<dnic> to group 19 & 26
+  PKTOPT(HILCN,IPRNR): Top-down LCN selection, do NOT allow called adr of 3106
+                        : Do NOT send RNR's let the packet window close
+::      Optional User Utilities
+  PWIND(2,2,NEGOTIATION)        : Default packet w/s of 2, accept Utility
+                                : code 43
+  PSIZE(128,128,NEGOTIATION)    : Default packet size 128, accept Utility
+                                : code 42
+  MAXPSIZE(128,128)             : Maximum packet size acceptable is 128
+  TCLASS(10,10,NEGOTIATION,PASSTOX)     : Max throughput class is 10/9600, 
+                                        : Process utility code 02
+  TCTCSI(1,1,1,1,1,2,3,3,3,4,4,4,4,4,4) :map tc 7 to ctrl c gouge thru net
+::TCTOPW(0,0,1,1,1,1,2,3,6,7,7,7): Spt Throughput Class to WS mapping
+  CHARGE(CPT,-RCX,RCNA,-CPNA,-RCNS,-XCLEAR): Tymsat Caller Paid, X Caller Paid,
+                                : Rev Chg to link NA, Caller Paid to link
+                                : allowed, RevChg utility subscribed, RevChg
+                                : from link allowed - DEFAULT CHARGE STMT
+  FASTSELECT(-SUBSCRIPTION,-ACCEPTANCE): Do NOT Allow FastSelect Fm/To Link
+  RPOA(-PASSTOX)                : Strip RPOA facility fm incoming call
+  CALLID(CIDCHECK)              : Clear if utility code 81 is missing
+  NATIONAL(-XCLEAR,PASSTOX)     : accept and pass to link Nat Fac/Utilties
+  UNKNOWNFACILITY(-XCLEAR,PASSTOX): accept & pass to link Unk Fac/Utilities
+ ::     Virtual PAD Options
+  CLGADR(-NUIADR,HOSTADR)       : Use Host # or 7+node # for calling adr
+  PADFORWARD(2,0)               : X.3 Para 3, Tymsat=All CTL chara,Tymcom=none
+  PADIDLETIMER(80,6)            : X.3 Para 4, Tymsat=5 sec,Tymcom=800ms
+  PADBREAK(21)                  : X.3 Para 7, options 1+4+16
+  PADOPTIONS(NR13)              : X.3 Para's 13 DISABLED
+  PADNATIONAL(21)               : Nat opition separator in level 1 pkt
+                                : parameters to link
+  ECHOABLE(07-0D,20-7E)         : If in Deferred Echo send G^-M^, & Printables
+  TELENET(TADR,TX3,TCAP)        : Telenet style login, accept telenet national
+                                : parameters, ignore cud in call accept pkt.
+: DATAPAC()                     : Not used
+::      Log Report Statements
+  LOGREPORTS(ON,10-39,80-0AA)   : Turn on all Error Log Msgs
+
+
+:*************************************************************************
+:   GATEWAY STATEMENTS TO ALLOW ACCESS TO TRT'S XCOM GATEWAYS
+:*************************************************************************
+
+GATEWAY(2080,TRTFRANCE"3BROMANCE"3B)    :Transit U.K. | Germany to France
+GATEWAY(2081,TRTFRANCE"3BROMANCE"3B)    :Transit U.K. | Germany to France
+GATEWAY(2223,TRT4756"3BRAVIOLI"3B)      :Provide gateway to Italy
+GATEWAY(2322,TRTAUSTRIA"3BALPINE"3B)    :Provide gateway to Austria Datex-P
+GATEWAY(2329,TRTAUSTRIA"3BALPINE"3B)    :Provide gateway to Austria (Radaus)
+GATEWAY(2341,TRTUNKING"3BHOPE & GLORY"3B)       :Provide gateway to IPSS
+GATEWAY(2342,TRTUNKING"3BHOPE & GLORY"3B)       :Provide gateway to PSS
+GATEWAY(2621,TRTAUSTRIA"3BALPINE"3B)    :Provide gateway to Hungarian Datex
+GATEWAY(2624,TRTGERM"3BBREW FEST"3B)    :Provide gateway to Germany
+GATEWAY(2703,TRTLUX"3BTINY PLACE"3B)    :Luxembourg via the UK
+GATEWAY(2704,TRTLUX"3BTINY PLACE"3B)    :Luxembourg via the UK
+GATEWAY(2709,TRTLUX"3BTINY PLACE"3B)    :Luxembourg via the UK
+GATEWAY(2721,TRTEIRE"3BIRISH CREAM"3B)  :Provide gateway to Ireland
+GATEWAY(2284,TRTSWISS"3BTYM PIECE"3B)   :provide gateway to telepac
+::GATEWAY(3110,TRTTELE"3BRES TON"3B)    :PROVIDE GATEWAY TO TELENET
+::GATEWAY(3127,TRTTELE"3BRES TON"3B)    :PROVIDE GATEWAY TO Telenet's Sub-net
+::GATEWAY(3130,TRTSUBNET"3BBETHESDA"3B) :PROVIDE GATEWAY TO TRT'S TEST NETWORK
+GATEWAY(3136,TRTGE"3BLIGHTBULB"3B)      :PROVIDE GATEWAY TO GE
+GATEWAY(3745,TRTTODAD"3BCOCO NUT"3B)    :Provide gateway to Trinadad
+GATEWAY(4401,TRTJAPAN"3BGEISHA GIRL"3B) :Japan via the UK
+GATEWAY(4408,TRTJAPAN"3BGEISHA GIRL"3B) :Japan via the UK
+GATEWAY(4545,TRTKONG"3BTRIN KET"3B)     :Transit UK to Hong Kong
+GATEWAY(5052,TRTAUSSIE"3BKANGA ROO"3B)  :Provide gateway to Austpac
+GATEWAY(5053,TRTAUSSIE"3BKANGA ROO"3B)  :Provide gateway to OTC
+GATEWAY(5252,TRT7279"3BFAREAST"3B)      :Provide gateway to Singapore
+GATEWAY(5301,TRTNEWZEAL"3BALL BLACKS"3B) :Transit Australia to New Zealand
+GATEWAY(6559,TRT-SAFRICA"3BCAPE OF GOOD HOPE"3B) : SA via UK
+GATEWAY(7240,TRTBRAZIL"3BDEJANEIRO"3B)  :Provide gateway to Brazil
+GATEWAY(8231,TELXTRT"3BREAL.TIME"3B)    :Provide gateway to Real-time telex
+GATEWAY(8232,INTLMSS"3BSTORE.FWD"3B)    :Provide gateway to IMSS 1 & 2
+
+:************************************************************************
+::: ::  Link Level Statements for Link 1 - TO TRT M60 SWITCH
+:************************************************************************
+
+LINKS(1)
+:       Frame Level Statements
+  PSADR(01,03)          :Primary/Secondary Addresses
+  K(7)                  : Frame Window
+  N2(10)                : Number of times frame will be re-xmitted
+  T1(30)                : Time between re-xmit of frames in 1/10 of sec's
+  ILRRC(60)             : Send RR cmd every 60 sec's of idleline
+  FRMOPT(-FM128)        : Frame sequencing modulus 8
+
+::      Packet Level Statements
+  TCNL(1,40)            : Two-way logical channel numbering
+  T31(90)               : Incomming call request timer = 90 sec's
+  ODNIC(3119,7141,4263,3503,3640) : 3119 is Transit Net DNIC, also serve others
+::CHKCLG(NONE)        : Check Calling Adr to see if call is from ??
+  CLDADL(4)             : Verify DNIC in call accept packet
+  NETUSERNAMEPREFIX(TRT.): Build circuit with IRC.<DNIC> to group 26
+  PKTOPT(-HILCN,+TKSUP,+TKDSP,IPRNR)   : Bottom-up LCN selection
+                                       : Do NOT send RNR's - let the packet
+                                       : window close
+
+::      Optional User Utilities
+  PWIND(2,2,NEGOTIATION)        : Default packet w/s of 2, accept Utility
+                                : code 43
+  PSIZE(128,128,NEGOTIATION)    : Default packet size 128, accept Utility
+                                : code 42
+  MAXPSIZE(128,128)             : Maximum packet size acceptable is 128
+  TCLASS(10,10,NEGOTIATION,-XCLEAR,PASSTOX) : Max throughput class is 10/9600,
+                                            : process utility code 02
+  TCTCSI(1,1,1,1,1,2,3,3,3,4,4,4,4,4,4)     : Map tc 7 to ^C gouge thru net
+::TCTOPW(0,0,1,1,1,1,2,3,6,7,7,7)           : Throughput Class to WS mapping
+  CHARGE(CPT,-RCX,RCNA,-CPNA,RCNS,+XCLEAR): Tymsat Caller Paid, X Caller Paid,
+                                : Rev Chg to link NA, Caller Paid to link
+                                : allowed, RevChg utility NOT subscribed
+                                : RevChg from link allowed 
+  FASTSELECT(-SUBSCRIPTION,-ACCEPTANCE): Do NOT Allow FastSelect Fm/To Link
+  RPOA(-PASSTOX)                : Strip RPOA facility fm incoming call
+  CALLID(CIDCHECK)              : Clear if utility code 81 is missing
+  NATIONAL(-XCLEAR,PASSTOX)     : accept and pass to link Nat Fac/Utilties
+  UNKNOWNFACILITY(-XCLEAR,PASSTOX): accept & pass to link Unk Fac/Utilities
+ ::     Virtual PAD Options
+  CLGADR(-NUIADR,HOSTADR)       : Use Host # or 7+node # for calling adr
+  PADFORWARD(2,0)               : X.3 Para 3, Tymsat=All CTL chara,Tymcom=none
+  PADIDLETIMER(80,6)            : X.3 Para 4, Tymsat=5 sec,Tymcom=800ms
+  PADBREAK(21)                  : X.3 Para 7, options 1+4+16
+  PADOPTIONS(NR13)              : X.3 Para's 13 DISABLED
+  PADNATIONAL(00,-NOPASS)       : Nat Options Marker = 0000, pass Nat X.29 
+                                : parameters to link
+  ECHOABLE(07-0D,20-7E)         : If in Deferred Echo send G^-M^, & Printables
+: TELENET()                     : Not used
+: DATAPAC()                     : Not used
+::      Log Report Statements
+  LOGREPORTS(ON,10-39,80-0AA)   : Turn on all Error Log Msgs
+
+:*************************************************************************
+:   GATEWAY STATEMENTS TO ALLOW ACCESS TO TRT'S XCOM GATEWAYS
+:*************************************************************************
+
+GATEWAY(2080,TRTFRANCE"3BROMANCE"3B)    :Transit Germany to France
+GATEWAY(2081,TRTFRANCE"3BROMANCE"3B)    :Transit Germany to France
+::GATEWAY(2220,TRT4756"3BRAVIOLI"3B) :gateway to Italy
+::GATEWAY(2222,TRT4756"3BRAVIOLI"3B) :gateway to Italy
+::GATEWAY(2223,TRT4756"3BRAVIOLI"3B) :gateway to Italy
+::GATEWAY(2227,TRT4756"3BRAVIOLI"3B) :gateway to Italy
+GATEWAY(2283,TRTSWISS"3BTYM PIECE"3B) : gateway to Switzerland
+GATEWAY(2284,TRTSWISS"3BTYM PIECE"3B) : gateway to Switzerland
+GATEWAY(2320,TRTAUSTRIA"3BALPINE"3B)    :gateway to Austria Datex-P
+GATEWAY(2322,TRTAUSTRIA"3BALPINE"3B)    :gateway to Austria Datex-P
+GATEWAY(2329,TRTAUSTRIA"3BALPINE"3B)    :gateway to Austria (Radaus)
+GATEWAY(2341,TRTUNKING"3BHOPE & GLORY"3B)       :gateway to IPSS
+GATEWAY(2342,TRTUNKING"3BHOPE & GLORY"3B)       :gateway to PSS
+GATEWAY(2621,TRTAUSTRIA"3BALPINE"3B)    :gateway to Hungarian Datex
+::GATEWAY(2624,TRTGERM"3BBREW FEST"3B)  :gateway to Germany
+GATEWAY(2680,TRTPORTUGAL"3BSAR DINES"3B) :gateway to Portugal
+GATEWAY(2703,TRTLUX"3BTINY PLACE"3B) :Luxembourg via the UK
+GATEWAY(2704,TRTLUX"3BTINY PLACE"3B) :Luxembourg via the UK
+GATEWAY(2709,TRTLUX"3BTINY PLACE"3B) :Luxembourg via the UK
+GATEWAY(2721,TRTEIRE"3BIRISH CREAM"3B)  :gateway to Ireland
+GATEWAY(2724,TRTEIRE"3BIRISH CREAM"3B)  :gateway to Ireland
+GATEWAY(3025,TRTCAN"3BLADY DEE"3B) :Gateway toTeleglobe Globe dat
+GATEWAY(3028,TRTCAN"3BLADY DEE"3B) :Gateway to CNCP via teleglobe?
+GATEWAY(3029,TRTCAN"3BLADY DEE"3B) :CNCP infoswitch via teleglobe?
+GATEWAY(3110,TRTTELE"3BRES TON"3B)      :GATEWAY TO TELENET
+GATEWAY(3127,TRTTELE"3BRES TON"3B)      :GATEWAY TO Telenet's Sub-net
+::GATEWAY(3130,TRTSUBNET"3BBETHESDA"3B) :GATEWAY TO TRT'S TEST NETWORK
+GATEWAY(3136,TRTGE"3BLIGHTBULB"3B)      :GATEWAY TO GE
+GATEWAY(3340,TRTMEX"3BHOT CHILLI"3B)    :gateway to Mexico
+GATEWAY(3740,TRTTODAD"3BCOCO NUT"3B)    :gateway to Trinadad
+GATEWAY(3745,TRTTODAD"3BCOCO NUT"3B)    :gateway to Trinadad
+GATEWAY(4545,TRTKONG"3BTRIN KET"3B)     :Transit UK to Hong Kong
+GATEWAY(4401,TRTJAPAN"3BGEISHA GIRL"3B) :Transit to Japan
+GATEWAY(4408,TRTJAPAN"3BGEISHA GIRL"3B) :Transit to Japan
+GATEWAY(5052,TRTAUSSIE"3BKANGA ROO"3B)  :gateway to Austpac
+GATEWAY(5053,TRTAUSSIE"3BKANGA ROO"3B)  :gateway to OTC
+GATEWAY(5250,TRT7279"3BFAREAST"3B)      :gateway to Singapore
+GATEWAY(5251,TRT7279"3BFAREAST"3B)      :gateway to Singapore
+GATEWAY(5252,TRT7279"3BFAREAST"3B)      :gateway to Singapore
+GATEWAY(5300,TRTNEWZEAL"3BALL BLACKS"3B) :Transit Australia to New Zealand
+GATEWAY(5301,TRTNEWZEAL"3BALL BLACKS"3B) :Transit Australia to New Zealand
+GATEWAY(6559,TRT-SAFRICA"3BCAPE OF GOOD HOPE"3B) :South Africa via UK
+::GATEWAY(7240,TRTBRAZIL"3BDEJANEIRO") :No longer available
+::GATEWAY(8231,TELXTRT"3BREAL.TIME"3B)  :gateway to Real-time telex
+::GATEWAY(8232,INTLMSS"3BSTORE.FWD"3B)  :gateway to IMSS 1 & 2
+:************************************************************************
+::::    Link Level Statements for Link 2 - TO TRT MODEL 60 SWITCH
+:************************************************************************
+
+LIN
+:       Frame Level Statements
+  PSADR(01,03)          :Primary/Secondary Addresses
+  K(7)                  : Frame Window
+  N2(10)                : Number of times frame will be re-xmitted
+  T1(30)                : Time between re-xmit of frames in 1/10 of sec's
+  ILRRC(60)             : Send RR cmd every 60 sec's of idleline
+  FRMOPT(-FM128)        : Frame sequencing modulus 8
+
+::      Packet Level Statements
+  TCNL(1,40)            : Two-way logical channel numbering
+  T31(90)               : Incomming call request timer = 90 sec's
+  ODNIC(3119,7141,4263,3503,3640) : 3119 is Transit Net DNIC, also serve others
+::CHKCLG(NONE)        : Check Calling Adr to see if call is from ??
+  CLDADL(4)             : Verify DNIC in call accept packet
+  NETUSERNAMEPREFIX(TRT.): Build circuit with IRC.<DNIC> to group 26
+  PKTOPT(-HILCN,+TKSUP,+TKDSP,IPRNR)   : Bottom-up LCN selection
+                                       : Do NOT send RNR's - let the packet
+                                       : window close
+
+::      Optional User Utilities
+  PWIND(2,2,NEGOTIATION)        : Default packet w/s of 2, accept Utility
+                                : code 43
+  PSIZE(128,128,NEGOTIATION)    : Default packet size 128, accept Utility
+                                : code 42
+  MAXPSIZE(128,128)             : Maximum packet size acceptable is 128
+  TCLASS(10,10,NEGOTIATION,-XCLEAR,PASSTOX) : Max throughput class is 10/9600,
+                                            : process utility code 02
+  TCTCSI(1,1,1,1,1,2,3,3,3,4,4,4,4,4,4)     : Map tc 7 to ^C gouge thru net
+::TCTOPW(0,0,1,1,1,1,2,3,6,7,7,7)           : Throughput Class to WS mapping
+  CHARGE(CPT,-RCX,RCNA,-CPNA,RCNS,+XCLEAR): Tymsat Caller Paid, X Caller Paid,
+                                : Rev Chg to link NA, Caller Paid to link
+                                : allowed, RevChg utility NOT subscribed
+                                : RevChg from link allowed 
+  FASTSELECT(-SUBSCRIPTION,-ACCEPTANCE): Do NOT Allow FastSelect Fm/To Link
+  RPOA(-PASSTOX)                : Strip RPOA facility fm incoming call
+  CALLID(CIDCHECK)              : Clear if utility code 81 is missing
+  NATIONAL(-XCLEAR,PASSTOX)     : accept and pass to link Nat Fac/Utilties
+  UNKNOWNFACILITY(-XCLEAR,PASSTOX): accept & pass to link Unk Fac/Utilities
+ ::     Virtual PAD Options
+  CLGADR(-NUIADR,HOSTADR)       : Use Host # or 7+node # for calling adr
+  PADFORWARD(2,0)               : X.3 Para 3, Tymsat=All CTL chara,Tymcom=none
+  PADIDLETIMER(80,6)            : X.3 Para 4, Tymsat=5 sec,Tymcom=800ms
+  PADBREAK(21)                  : X.3 Para 7, options 1+4+16
+  PADOPTIONS(NR13)              : X.3 Para's 13 DISABLED
+  PADNATIONAL(00,-NOPASS)       : Nat Options Marker = 0000, pass Nat X.29 
+                                : parameters to link
+  ECHOABLE(07-0D,20-7E)         : If in Deferred Echo send G^-M^, & Printables
+: TELENET()                     : Not used
+: DATAPAC()                     : Not used
+::      Log Report Statements
+  LOGREPORTS(ON,10-39,80-0AA)   : Turn on all Error Log Msgs
+
+:*************************************************************************
+:   GATEWAY STATEMENTS TO ALLOW ACCESS TO TRT'S XCOM GATEWAYS
+:*************************************************************************
+
+GATEWAY(2080,TRTFRANCE"3BROMANCE"3B)    :Transit Germany to France
+GATEWAY(2081,TRTFRANCE"3BROMANCE"3B)    :Transit Germany to France
+::GATEWAY(2220,TRT4756"3BRAVIOLI"3B) :gateway to Italy
+::GATEWAY(2222,TRT4756"3BRAVIOLI"3B) :gateway to Italy
+::GATEWAY(2223,TRT4756"3BRAVIOLI"3B) :gateway to Italy
+::GATEWAY(2227,TRT4756"3BRAVIOLI"3B) :gateway to Italy
+GATEWAY(2283,TRTSWISS"3BTYM PIECE"3B) : gateway to Switzerland
+GATEWAY(2284,TRTSWISS"3BTYM PIECE"3B) : gateway to Switzerland
+GATEWAY(2320,TRTAUSTRIA"3BALPINE"3B)    :gateway to Austria Datex-P
+GATEWAY(2322,TRTAUSTRIA"3BALPINE"3B)    :gateway to Austria Datex-P
+GATEWAY(2329,TRTAUSTRIA"3BALPINE"3B)    :gateway to Austria (Radaus)
+GATEWAY(2341,TRTUNKING"3BHOPE & GLORY"3B)       :gateway to IPSS
+GATEWAY(2342,TRTUNKING"3BHOPE & GLORY"3B)       :gateway to PSS
+GATEWAY(2621,TRTAUSTRIA"3BALPINE"3B)    :gateway to Hungarian Datex
+::GATEWAY(2624,TRTGERM"3BBREW FEST"3B)  :gateway to Germany
+GATEWAY(2680,TRTPORTUGAL"3BSAR DINES"3B) :gateway to Portugal
+GATEWAY(2703,TRTLUX"3BTINY PLACE"3B) :Luxembourg via the UK
+GATEWAY(2704,TRTLUX"3BTINY PLACE"3B) :Luxembourg via the UK
+GATEWAY(2709,TRTLUX"3BTINY PLACE"3B) :Luxembourg via the UK
+GATEWAY(2721,TRTEIRE"3BIRISH CREAM"3B)  :gateway to Ireland
+GATEWAY(2724,TRTEIRE"3BIRISH CREAM"3B)  :gateway to Ireland
+GATEWAY(3025,TRTCAN"3BLADY DEE"3B) :Gateway toTeleglobe Globe dat
+GATEWAY(3028,TRTCAN"3BLADY DEE"3B) :Gateway to CNCP via teleglobe?
+GATEWAY(3029,TRTCAN"3BLADY DEE"3B) :CNCP infoswitch via teleglobe?
+GATEWAY(3110,TRTTELE"3BRES TON"3B)      :GATEWAY TO TELENET
+GATEWAY(3127,TRTTELE"3BRES TON"3B)      :GATEWAY TO Telenet's Sub-net
+::GATEWAY(3130,TRTSUBNET"3BBETHESDA"3B) :GATEWAY TO TRT'S TEST NETWORK
+GATEWAY(3136,TRTGE"3BLIGHTBULB"3B)      :GATEWAY TO GE
+GATEWAY(3340,TRTMEX"3BHOT CHILLI"3B)    :gateway to Mexico
+GATEWAY(3740,TRTTODAD"3BCOCO NUT"3B)    :gateway to Trinadad
+GATEWAY(3745,TRTTODAD"3BCOCO NUT"3B)    :gateway to Trinadad
+GATEWAY(4545,TRTKONG"3BTRIN KET"3B)     :Transit UK to Hong Kong
+GATEWAY(4401,TRTJAPAN"3BGEISHA GIRL"3B) :Transit to Japan
+GATEWAY(4408,TRTJAPAN"3BGEISHA GIRL"3B) :Transit to Japan
+GATEWAY(5052,TRTAUSSIE"3BKANGA ROO"3B)  :gateway to Austpac
+GATEWAY(5053,TRTAUSSIE"3BKANGA ROO"3B)  :gateway to OTC
+GATEWAY(5250,TRT7279"3BFAREAST"3B)      :gateway to Singapore
+GATEWAY(5251,TRT7279"3BFAREAST"3B)      :gateway to Singapore
+GATEWAY(5252,TRT7279"3BFAREAST"3B)      :gateway to Singapore
+GATEWAY(5300,TRTNEWZEAL"3BALL BLACKS"3B) :Transit Australia to New Zealand
+GATEWAY(5301,TRTNEWZEAL"3BALL BLACKS"3B) :Transit Australia to New Zealand
+GATEWAY(6559,TRT-SAFRICA"3BCAPE OF GOOD HOPE"3B) :South Africa via UK
+::GATEWAY(7240,TRTBRAZIL"3BDEJANEIRO") :No longer available
+::GATEWAY(8231,TELXTRT"3BREAL.TIME"3B)  :gateway to Real-time telex
+::GATEWAY(8232,INTLMSS"3BSTORE.FWD"3B)  :gateway to IMSS 1 & 2
+
+| zž
