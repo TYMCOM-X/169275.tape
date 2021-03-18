@@ -1,0 +1,34 @@
+00:00:54 S 11-Mar-95
+03:00:53 S 11-Mar-95
+04:59:54 S 11-Mar-95 Signing off.
+11:32:41 S ** 11-Mar-95 XEXEC %1(215) in frame 4 ** user PERPOPER **
+11:32:41 S run #1 job 1 is lost.
+11:32:41 S -S- run #1 job 1 Req #10289  Running DSK:(NETALERT)ALERT.SHR
+11:32:41 S run #2 job 7 is lost.
+11:32:41 S -S- run #2 job 7 Req #22811  Running DSK:(NETALERT)ALERT.SHR
+11:32:42 S -S- stream #1 Req #45012 DSK:(JMS)SZRPT.LOG=DSK:(JMS)SZRPT.CTL
+11:32:48 S Processor status JSU EXECX Setup in frame 8
+11:32:48 P Waiting for interlock
+11:32:49 P Got interlock
+11:32:49 P EXECX Job Processor %1(226) starting in frame 8
+11:32:50 P Stream #1 Req #45012 DSK:(JMS)SZRPT.LOG=DSK:(JMS)SZRPT.CTL
+11:32:50 S Starting job processor in frame 8
+11:33:49 S 11-Mar-95
+11:37:14 P Stream #1 Req #45012 * completed *
+11:37:15 S -R- stream #1 Done-End <0>
+11:52:49 P Signing off.
+12:00:49 S 11-Mar-95
+15:00:49 S 11-Mar-95
+15:30:05 S -S- stream #1 Req #45013 DSK:(JMS)FNDBAD.LOG=DSK:(JMS)FNDBAD.CTL
+15:30:11 S Processor status JSU EXECX Setup in frame 10
+15:30:11 P Waiting for interlock
+15:30:12 P Got interlock
+15:30:12 P EXECX Job Processor %1(226) starting in frame 10
+15:30:13 P Stream #1 Req #45013 DSK:(JMS)FNDBAD.LOG=DSK:(JMS)FNDBAD.CTL
+15:30:13 S Starting job processor in frame 10
+15:32:47 P Stream #1 Req #45013 * completed *
+15:32:48 S -R- stream #1 Done-End <0>
+15:48:12 P Signing off.
+18:00:12 S 11-Mar-95
+21:00:00 S 11-Mar-95
+00:00:00 S 12-Mar-95
