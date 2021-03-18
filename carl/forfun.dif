@@ -1,0 +1,141 @@
+File 1)	<SH>FORFUN.MAC	created: 1147 26-Aug-1982
+File 2)	<DEC>FORFUN.MAC	created: 1328 04-Oct-1977
+
+1-39>1      	IF1,<
+1->         	    IFNDEF FT$22,<
+1->         		PRINTX	DEC standard FORFUN will be assembled.
+1->         	  >
+1->         	    IFDEF FT$22,<
+1->         		PRINTX 	1022 version of FORFUN will be assembled.
+1->         	    >
+1->         	>
+1->         		PAGE
+bytes 1290,1453
+****
+2-40>1      		PAGE
+bytes 1292,1292
+**************
+1-166>1     	FUNGA5:
+1->         	    IFDEF FT$22,<
+1->         					;SYSTEM 1022 ONLY CODE HERE
+1->         					;**************************
+1->         		PUSHJ	P,LA1022	;GIVE SKIP RETURN IF IN 1022
+1->         		 JRST	N1022		;NOT IN 1022...SKIP THE REST
+1->         		CAIG	P3,(T1)		;LA1022 GIVES ".JBREL" IN T1
+1->         		 JRST	FUNDFM		;NO NEED TO ALLOCATE CORE
+1->         		MOVEI	T0,(P3)		;ALLOCATE BLOCK FROM AVAILABLE CORE
+1->         		SUBI	T0,-2(T1)	;DETERMINE THE NUMBER OF WORDS
+1->         					;TO ALLOCATE AND SUBTRACT 2 SO
+1->         					;THAT WE NEVER ALLOCATE THE EXACT
+1->         					;AMOUNT
+1->         		MOVE	T3,T1		;SAVE OLD ".JBFF"
+1->         		AOS	T3		;    ..
+1->         		PUSHJ	P,-3(T2)	;ALLOCATE CORE
+1->         		 JRST	FUNST3		;CAN'T...NONE AVAILABLE
+1->         		HRRZ	T4,FRE.DY(P4)	;GET DYNAMIC CORE POINTER
+1->         		JUMPN	T4,FA1022	;GO IF NOT FIRST TIME
+1->         		MOVEI	T4,-1(P2)	;GET HIGHEST ADDRESS WE DON'T WANT
+1->         		SUBI	T4,-1(T3)	;LENGTH TO GIVE BACK
+1->         		JUMPLE	T4,FA1022	;GIVE BACK ANY FREED CORE
+1->         		MOVE	T1,T3		;GET ".JBFF"
+1->         		HRLZM	T4,(T1)		;STORE LENGTH IN FIRST WORD
+1->         		ADDB	T4,T3		;ACCOUNT FOR IT
+1->         		AOS	T1		;POINT TO FIRST WORD
+1->         		MOVSS	FRE.DY(P4)	;POINT TO OTS LIST
+1->         		PUSH	P,T3		;SAVE ".JBFF"
+1->         		PUSHJ	P,PMEM%%	;RETURN CORE TO OTS LIST
+1->         		POP	P,T3		;RESTORE ".JBFF"
+1->         		MOVSS	FRE.DY(P4)	;    ..
+1->         	FA1022:
+1->         		PUSHJ	P,LA1022	;GET THE NEW ".JBREL"
+1->         		 JFCL			;(UNLIKELY THAT THIS WOULD HAPPEN)
+1->         		MOVE	T2,T1		;SAVE IT
+1->         		MOVE	T1,T3		;COMPUTE SIZE OF BLOCK ADDED
+1->         		SUBI	T2,-1(T1)	;    ..
+1->         		HRLZM	T2,(T1)		;STORE BLOCK SIZE
+1->         		JRST	X1022		;TO COMMON CODE
+1->         	LA1022:
+1->         		HLRE	T2,.JBCST##	;SEE IF A 1022 PROGRAM
+1->         		AOJE	T2,P1022	;(NOPE)
+File 1)	<SH>FORFUN.MAC	created: 1147 26-Aug-1982
+File 2)	<DEC>FORFUN.MAC	created: 1328 04-Oct-1977
+
+1->         		PUSHJ	P,-2(T2)	;YES, LOAD ".JBREL"
+1->         		PORTAL	.+1		;(ALLOW EXEC-ONLY FOROTS'S)
+1->         		AOS	(P)		;AND SKIP RETURN
+1->         	P1022:
+1->         		POPJ	P,		;    ..
+1->         	N1022:
+1->         	    >
+1->         		MOVE	T1,.JBREL##	;[512] LOCATE LAST ASSIGNED ADR
+1->         		CAIG	P3,0(T1)	;[245] ALLOCATING PAST END OF CORE
+bytes 4529,6154
+****
+2-158>1     	FUNGA5:	MOVE	T1,.JBREL##	;[512] LOCATE LAST ASSIGNED ADR
+2->         		CAIG	P3,0(T1)	;[245] ALLOCATING PAST END OF CORE
+bytes 4368,4426
+**************
+1-239>1     	    IFDEF FT$22,<
+1->         	X1022:
+1->         	    >
+1->         		ADDI	T1,1		;OFFSET FOR PMEM%%
+bytes 7174,7208
+****
+2-208>1     		ADDI	T1,1		;OFFSET FOR PMEM%%
+bytes 5446,5446
+**************
+1-389>1     	    IFDEF FT$22,<
+1->         		PUSHJ	P,LA1022	;LOAD T1 WITH ".JBREL" IF 1022
+1->         	    >
+1->         		 HRRZ	T1,.JBREL##	;LOAD LAST LEGAL ADR
+1->         		ADDI	P3,-1(P2)	;COMPUTE LAST ADR IN BLOCK
+bytes 12468,12583
+****
+2-329>1     		HRRZ	T1,.JBREL##	;LOAD LAST LEGAL ADR
+2->         		ADDI	P3,-1(P2)	;COMPUTE LAST ADR IN BLOCK
+bytes 10706,10746
+**************
+1-571>1     	    IFDEF FT$22,<
+1->         		HRRZ	T4,.JBREL##	;LOAD WITH .JBREL
+1->         		PUSHJ	P,LA1022	;OR LOAD WITH 1022'S ".JBREL"
+1->         		 CAIA			;    ..
+1->         		MOVE	T4,T1		;    ..
+1->         	    >
+1->         	FUNCB0:	JUMPE	T3,FUNST0	;[311] GIVE IT IF NO FORWARD LINK
+bytes 17744,17894
+****
+2-508>1     	FUNCB0:	JUMPE	T3,FUNST0	;[311] GIVE IT IF NO FORWARD LINK
+bytes 15907,15907
+**************
+1-585>1     	    IFDEF FT$22,<
+1->         		CAME	P1,T4		;LESS THAN TOP?
+1->         	    >
+1->         	    IFNDEF FT$22,<
+1->         		CAME	P1,.JBREL##	;[311] LESS THAN TOP?
+1->         	    >
+1->         		JRST	FUNCB0		;[311] YES, IGNORE THIS BLOCK
+1->         		MOVEI	P1,-1(T2)	;[311] LAST WORD WE NEED
+1->         	    IFDEF FT$22,<
+File 1)	<SH>FORFUN.MAC	created: 1147 26-Aug-1982
+File 2)	<DEC>FORFUN.MAC	created: 1328 04-Oct-1977
+
+1->         		HLRE	T3,.JBCST##	;SEE IF 1022
+1->         		AOJE	T3,NO1022	;NOT 1022
+1->         		HLLZS	(T1)		;CLEAR FORWARD POINTER NOW
+1->         		MOVEI	T0,-1(T2)	;DETERMINE NUMBER OF WORDS TO
+1->         		SUBI	T0,(T4)		;DEALLOCATE
+1->         		PUSHJ	P,-3(T3)	;DEALLOCATE CORE
+1->         		 PORTAL	.+1		;(SHOULDN'T NOT BE ABLE TO)
+1->         		PORTAL	.+1		;(AGAIN, ALLOW EXEC-ONLY FOROTS)
+1->         		PJRST	FUNST0		;RETURN
+1->         	NO1022:
+1->         	    >
+1->         		CORE	P1,		;[311]
+bytes 18258,18829
+****
+2-516>1     		CAME	P1,.JBREL##	;[311] LESS THAN TOP?
+2->         		JRST	FUNCB0		;[311] YES, IGNORE THIS BLOCK
+2->         		MOVEI	P1,-1(T2)	;[311] LAST WORD WE NEED
+2->         		CORE	P1,		;[311]
+bytes 16271,16400
+**************
