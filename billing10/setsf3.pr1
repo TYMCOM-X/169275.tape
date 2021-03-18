@@ -1,0 +1,340 @@
+PROCEDURE SETUP.SESS.FILES.370         % SETSF3.PR1    M5ERQX.ME1  11
+
+ Version 11.0 - April 15, 1983 - J. Murphy
+  Added code to stop the adding of remote printer records into the checksum.
+
+ Version 10.0 - March 8, 1983 - J. Murphy
+  Minor code changes to process the remote printer record.
+
+ Version 9.0 - December 8, 1982 - J. Murphy
+  Minor code changes to process the recharge record.
+
+ Version 8.0 - December 17, 1981 - P. E. Brown
+  Minor code changes to process Tymslice records.
+
+ Version 7.0 - November 10, 1981 - P. E. Brown
+  Minor code alterations to allow for an increased record size to 160
+    characters.
+
+ Version 6.0 - Oct. 15, 1981 - P. E. Brown
+  Added code to allow acceptance of TRAN.CODE 60, the TRU extension record.
+
+ Version 5.0 - July 1, 1981 - P. E. Brown
+  Corrected definition of TRAN.CODE 50 in source statement
+
+ Version 4.0  1/2/80   Ronda Wilcox
+  Corrected problem that occurred when starting a new year, but
+  still processing previous years data.
+ Version 3.0  7901.05  Jim Stronach
+   Procedure modified to abort when a checksum error is detected in
+   any SR file.
+   New format for SR files
+ Version 3.0    7905.01        /Jim Stronach
+*
+  1. Checks filenames and checksums for 370 session files.
+  2. inserts into relation SESS.SRC.FNAMS  all checksummed session files.
+  3. The number of files to be processed is set in file 'SES370.CTL'.
+  4. If there is at least one file to process the relation RUN.CNTL
+     is set to 2 -- otherwise, it is set to 9.
+%
+
+BEGIN
+
+FIELDS
+  CNTL.L        SAME AS CNTL,   % TO RESET TO START NO FILES TO PROCESS %
+  FIRST.REC.SW  AS "N",         % First record switch %
+  PREV.HOST     SAME AS HOST,
+  PREV.FIRST.SESS   SAME AS FIRST.SESS,
+  PREV.LAST.SESS    SAME AS LAST.SESS,
+  PREV.SRC.DATE     SAME AS SRC.DATE,
+  PREV.SRC.FNAM     SAME AS SRC.FNAM,
+  FIL.DATE      AS DATE "MMDD.",         % Date in file name %
+  FIL.DATE.CK   AS DATE 'MMDD',
+  HOST.CK       SAME AS HOST,
+  CHKSUM.DFILE  AS '7ZV2N',
+  CHKSUM        SAME AS CHKSUM.DFILE,
+  CHKSUM.SW     AS 'N',
+  HEADER.REC.SW AS 'N',
+  ERR.SW        AS 'N',
+  ERR.THIS.FILE.SW   AS 'N',
+  RUN.TIME      AS '4ZN',
+  RUN.HOUR      AS '2N',
+  RUN.MINT      AS '2N',
+  MAX.FILE.CNT  AS      '2Z',
+  SESS.FILE.CNT AS      '2Z',
+  MISS.FILE.CNT AS      '2Z',
+  TRK.DSTART    SAME AS DSTART,
+  FNAM.HOST     SAME AS HOST,
+  REC.ID        AS 'C',
+  USAGE         AS '5ZV2N',
+  DIRFN         SAME AS SRC.FNAM
+
+RELATION H.SESS IS
+  KEY HOST, FIRST.SESS
+  DATA LAST.SESS, SRC.DATE, SRC.FNAM
+
+RELATION FILDIR IS
+  KEY DIRFN
+
+REPORT CTL.FILE TO 'SES370.CTL-ANY'
+        PAGE.SIZE 0
+
+SOURCE TRK.DATE FROM  'TRKDAT.DAT'
+        FREE FORM
+        INPUT
+                DSTOP,@CR
+
+SOURCE FILE.CTL FROM "FILDIR.CTL"
+  FIXED FORM
+  INPUT DIRFN
+
+SOURCE DAILY370 FROM SRC.FNAM
+  FIXED FORM
+  INPUT @TAB 3, HOST, TRAN.CODE, REC.ID, @TAB TO 71,
+  CONDITIONAL ON TRAN.CODE
+    BEGIN
+    10: CONDITIONAL ON REC.ID
+          BEGIN
+          "0": USAGE, @TAB TO 155, DSTART, @CR
+          "A": @CR
+          "B": @CR
+          END
+    11: @TAB TO 155,DSTART,@CR
+    12: @TAB TO 155, DSTART, @CR
+    15: USAGE, @TAB TO 155, DSTART, @CR
+    18:@TAB TO 155,DSTART,@CR
+    20: USAGE, @TAB TO 155, DSTART, @CR
+    30: USAGE, @TAB TO 155, DSTART, @CR
+    40: USAGE, @TAB TO 155, DSTART, @CR
+    50: @CR
+    60: @TAB TO 155, DSTART, @CR
+    70: @TAB TO 155, DSTART, @CR
+    75: @TAB TO 155, DSTART, @CR
+    99: @TAB 6, FIRST.SESS, LAST.SESS,@TAB 1, CHKSUM, @CR
+    END
+
+MOVE TIME TO RUN.TIME
+MOVE (RUN.TIME/3600) TO RUN.HOUR
+MOVE ((RUN.TIME/60) - (RUN.HOUR*60)) TO RUN.MINT
+TYPE @CR,'STARTING: SETUP.SESS.FILES.370 ----- VER 11.0',
+   @TAB TO 46,TODAY AS DATE "MM/DD/YY",@TAB 4,RUN.HOUR,":",RUN.MINT,@CR
+
+FOR EACH HOST.SESS
+  INSERT INTO H.SESS
+
+FOR EACH FILE.CTL
+  INSERT INTO FILDIR
+
+MOVE DEFAULT TO PREV.FIRST.SESS,PREV.SRC.DATE, PREV.SRC.FNAM
+MOVE DEFAULT TO PREV.LAST.SESS, HEADER.REC.SW
+MOVE DEFAULT TO SESS.FILE.CNT, MAX.FILE.CNT, TRK.DSTART
+
+FOR EACH TRK.DATE
+        MOVE DSTOP TO TRK.DSTART OF SETUP.SESS.FILES.370
+
+INFNBLK:
+FOR EACH SRC.FNAM.SESS
+
+GET.NEXT.SRC.FNAM:
+        BEGIN
+
+        IF FLAG # 0  THEN  % THIS FILE ALREADY PROCESSED %
+                FINISH GET.NEXT.SRC.FNAM
+
+        % GET DATE AND HOST FROM FILENAME INTO FIL.DATE, FNAM.HOST %
+
+        LET FIL.DATE = (YEAR(TRK.DSTART) AS '4C' +
+                       SUBSTR(SRC.FNAM,3,4)) AS DATE 'YYYYMMDD'
+
+        MOVE SUBSTR(SRC.FNAM,8,3) AS '3N' TO FNAM.HOST
+
+        % IF THIS FILE IS AFTER TODAY'S PROCESS DATE, THEN FORGET IT. %
+
+        IF FIL.DATE GT TRK.DSTART
+                THEN FINISH GET.NEXT.SRC.FNAM
+        ADD 1 TO MAX.FILE.CNT   % UNPROCESSED FILE WITHIN DATE RANGE %
+        SELECT FILDIR VIA (DIRFN=SRC.FNAM) THEN NOTHING
+                ELSE FINISH GET.NEXT.SRC.FNAM   % NOT IN DIRECTORY %
+
+        % NOW WE HAVE FOUND AN UNPROCESSED FILE IN THIS DIRECTORY %
+
+        MOVE 0 TO CHKSUM.DFILE,   CHKSUM.SW, ERR.THIS.FILE.SW
+        MOVE 0 TO FIRST.REC.SW
+        TYPE "Checking: ", SRC.FNAM, " "
+        FOR EACH DAILY370
+          BEGIN
+          IF CHKSUM.SW = 1 THEN
+             BEGIN
+             MOVE 1 TO ERR.SW, ERR.THIS.FILE.SW
+             TYPE @CR,'*** ERROR, Checksum record not last record on file: ',
+                       SRC.FNAM, @CR
+             FINISH INFNBLK
+             END
+          IF TRAN.CODE = 99 THEN
+            BEGIN
+            MOVE 1 TO CHKSUM.SW
+            IF CHKSUM = CHKSUM.DFILE THEN
+              BEGIN
+              TYPE "Checksum matches.",  @CR
+              MOVE DSTART TO SRC.DATE
+              INSERT INTO H.SESS
+              END
+            ELSE
+             BEGIN
+             MOVE 1 TO ERR.SW, ERR.THIS.FILE.SW
+             TYPE @CR,"*** ERROR, Bad checksum for file: ", SRC.FNAM,@CR,
+             @TAB 10, CHKSUM, CHKSUM.DFILE, @CR
+             END
+  
+            END
+          ELSE
+            BEGIN
+            IF FIRST.REC.SW=0 THEN      % CHECK 1ST REC FOR DATE, HOST %
+              BEGIN
+              MOVE 1 TO FIRST.REC.SW
+              MOVE DSTART OF DAILY370 TO FIL.DATE.CK
+              MOVE   HOST OF DAILY370 TO HOST.CK
+
+              IF FIL.DATE NE FIL.DATE.CK OR
+                 FNAM.HOST NE HOST.CK THEN
+  
+                  BEGIN
+                  MOVE 1 TO ERR.SW, ERR.THIS.FILE.SW
+                  TYPE @CR,"***SOURCE FILE ERROR: Data in file ",
+                       SRC.FNAM," wrong.",@CR,
+                       "   First record date is: ", FIL.DATE.CK,
+                       " and HOST is: ",HOST.CK,@CR
+                  END
+              END
+  
+          IF (REC.ID = "0") AND (TRAN.CODE NE 50) AND (TRAN.CODE NE 60) AND
+                (TRAN.CODE NE 12) AND (TRAN.CODE NE 70) AND
+                (TRAN.CODE NE 75) AND (TRAN.CODE NE 11) AND
+                (TRAN.CODE NE 18) THEN
+                        % USAGE not part of TRAN.CODE 50,60,12,70, and 75) %
+              ADD USAGE TO CHKSUM.DFILE
+
+          END   % end ELSE clause of IF TRAN.CODE = 99 THEN  %
+
+          END   % end FOR EACH DAILY370 %
+
+        IF CHKSUM.SW = 0 THEN
+            BEGIN
+            MOVE 1 TO ERR.SW, ERR.THIS.FILE.SW
+            TYPE @CR,'*** ERROR, No checksum record for file: ',
+                     SRC.FNAM, @CR
+            END
+
+        % PUT CORRECTLY CKSUMMED FILE ON LIST OF FILES TO BE PROCESSED %
+  
+        IF ERR.THIS.FILE.SW = 1 THEN FINISH GET.NEXT.SRC.FNAM
+        INSERT INTO SESS.SRC.FNAMS
+        ADD 1 TO SESS.FILE.CNT    % UNPROCESSED FILE IN DIRECTORY %
+  
+        END     % end FOR EACH SRC.FNAM.SESS %
+
+IF COUNT(SESS.SRC.FNAMS) GT 0 THEN
+        BEGIN
+        TYPE @CR,'***** FILES TO BE PROCESSED *****',@CR,@CR
+        FOR EACH SESS.SRC.FNAMS
+              TYPE @TAB TO 11,SRC.FNAM,@CR
+       END
+
+TYPE @CR, "Now checking host session numbers for gaps.",@CR
+
+MOVE 0 TO PREV.HOST
+
+FOR EACH H.SESS WHERE FIRST.SESS < 1000000
+  BEGIN
+  IF PREV.HOST # 0 THEN
+    IF PREV.HOST = HOST THEN
+      IF (PREV.LAST.SESS + 1) # FIRST.SESS THEN
+
+        BEGIN
+        MOVE 1 TO ERR.SW, ERR.THIS.FILE.SW
+        TYPE "***MISSING DATA FOR HOST: ", HOST, " as follows:", @CR,
+          "Last session no. ", PREV.LAST.SESS, " was found in file ",
+          PREV.SRC.FNAM, " with data date of ", PREV.SRC.DATE, @CR,
+          "Next session no. ", FIRST.SESS, " was found in file ",
+          SRC.FNAM, " with data date of ", SRC.DATE, @CR
+        END
+
+      ELSE NOTHING
+    ELSE NOTHING
+  ELSE NOTHING
+
+  MOVE HOST TO PREV.HOST
+  MOVE FIRST.SESS TO PREV.FIRST.SESS
+  MOVE LAST.SESS TO PREV.LAST.SESS
+  MOVE SRC.DATE TO PREV.SRC.DATE
+  MOVE SRC.FNAM TO PREV.SRC.FNAM
+  END
+
+IF ERR.SW = 1 THEN
+   BEGIN
+   TYPE @CR,@CR,@CR,'***** ERROR IN ABOVE FILE(S) -----> ',
+                    'DO NOT LOAD DATA!!!',@CR
+   ABORT
+   END
+
+ELSE
+        BEGIN
+        TYPE @CR,@CR,'FILES VERIFIED - CONTINUING -----',@CR,@CR
+        WRITE REPORT CTL.FILE    % WRITE OUT CTL FILE  %
+          BEGIN
+          PRINT TO CTL.FILE "0,", SESS.FILE.CNT, @CR
+          END
+
+        MOVE 11 TO GRP.NO
+           SELECT RUN.CNTL VIA KEY THEN
+             BEGIN
+             IF SESS.FILE.CNT = 0 THEN
+                MOVE 9 TO CNTL, CNTL.L   % END OF SESSION UPDATES %
+              ELSE
+                MOVE 2 TO CNTL          % MORE FILES TO PROCESS  %
+             ALTER RUN.CNTL
+             END
+            ELSE
+             BEGIN
+             TYPE @CR,'NO ENTRY IN RELATION **RUN.CNTL** FOR GROUP NO. ',
+                      GRP.NO,' -----> CONTACT DBA',@CR
+             ABORT
+             END
+
+            IF CNTL.L = 9 THEN
+                BEGIN
+                  MOVE 69 TO GRP.NO
+                  SELECT RUN.CNTL VIA KEY THEN
+                    BEGIN
+                      MOVE 80 TO CNTL
+                      ALTER RUN.CNTL
+                    END
+                  ELSE
+                    BEGIN
+                      TYPE @CR, 'NO ENTRY IN RELATION **RUN.CNTL** ',
+                      'FOR GROUP NO. ', GRP.NO, ' -----> CONTACT',
+                      ' DBA', @CR
+                      ABORT
+                    END
+                END    % END OF IF CNTL.L = 9 %
+        END
+
+
+MOVE MAX.FILE.CNT-SESS.FILE.CNT  TO  MISS.FILE.CNT
+
+TYPE @CR,'    FILES READY FOR PROCESSING:   ',SESS.FILE.CNT,@CR,
+         '      MAX NO. OF FILES ALLOWED:   ',MAX.FILE.CNT,@CR,
+         '  FILES MISSING FROM DIRECTORY:   ',MISS.FILE.CNT, @CR,
+         'FILES TO BE PROCESSED THIS RUN:   ',SESS.FILE.CNT, @CR
+
+
+MOVE TIME TO RUN.TIME
+MOVE (RUN.TIME/3600) TO RUN.HOUR
+MOVE ((RUN.TIME/60) - (RUN.HOUR*60)) TO RUN.MINT
+TYPE @CR,@CR,'COMPLETED: SETUP.SESS.FILES.370 ----- VER 11.0',
+  @TAB TO 46,TODAY AS DATE "MM/DD/YY",@TAB 4,RUN.HOUR,":",RUN.MINT,@CR
+
+
+
+END
+    
