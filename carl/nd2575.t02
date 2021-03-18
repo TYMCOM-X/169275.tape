@@ -1,0 +1,925 @@
+: Note: This is NOT a public network slot!  It is part of a virtual subnetwork.
+:	NO MODIFICATIONS TO THIS FILE ARE TO BE MADE without prior authoriza-
+:	tion from the Tymnet External Network Technical Support organization!!!
+:	For further information, contact Tymnet ExNet Operations in Vienna,
+:	Virginia.   Telephone:  (703)827-9110.
+:
+:			TRT's Multi-Host X.25 slot
+:
+:	Node Number:  2575			Kernal Host Number: 2152
+:	Slot Number:  2				Code Version Number:  3.01
+:	Memory Allocated:  280 kb		Node Location: Wash D.C
+:	Site ID # :  848
+:
+:
+:                              Host Information
+:             Host
+:       LUN  Number     Description of host     Circuit Number  Trouble Number
+:       ---  ------  -------------------------  --------------  --------------
+:        -    6757   XCOM Operations Manager         None        (703)827-9110
+:        0    6754   REAL TIME X.25 TELEX PAD #1      --         (202)347-8091
+:        1    7901   REAL TIME X.25 TELEX PAD #2 -
+:             7902   Distribution host for RT tlx
+:        2    7476   WANG- MULTICOM
+:        3    2899   IMSS PAD #1
+:        4    2636   Test X.25 Host                   --         (202)347-8091
+:        5    4028   World Bank                       --         (202)347-8091
+:        6    6753   IMSS PAD #2             
+:	 7    1908   Dynapac host
+:
+:                               Revision History
+:         Date     Changed
+:      (yy-mm-dd)  By Whom               Description of Change
+:       --------   --------   ------------------------------------------------
+:       84-09-17   Lane       Original configuration of new slot
+:       84-10-24   Lane       Shortened message text messages 0000 & 0455
+:       84-12-05   Tsai       Added gateway stmts to the link
+:       85-01-15   Lane       Added link 1 
+:       85-03-11   Lane       Added link 2, Added 4263 to ODNICs
+:       85-05-10   Lane       Combine slots 2 & 3 into this slot
+:       85-05-14   Lane       Regen w/modified EXTL02 patch file--to reset
+:                             NED patch when # log channels reaches max
+:       85-05-23   Jullien    Clean-up the gateway statements-update nbr of
+:                             LCN to 16 for each PAD
+:
+:	85-06-18   S/White    Added INTLXOM as a XOMUSERNAME. Raised HIHOST-
+:			      -NUMBER to 89999.  Added HOSTPORTAVAILABILITY
+:			      statements to  links 0 & 2.  Number of 2-way
+:			      channels reduced to 15 from 16.
+:	85-07-24   S/White	Revised gateway statements.
+:       85-08-22   Lane		Upgrade to vers 3.01
+:	85-08-26   S/White	Corrected MTEXT to read as before 3.01 upgrade
+:				DO NOT alter the text without prior consent of
+:				TRT...they have several clients whose s/w
+:				keys off various parts of the text!! 
+:	85-09-27   S/White	Changed HOSPORTAVAIABILITY(4,4) for lnk 0
+:				HiHost -> 99999, DPORTS -> 128
+:	85-10-08   S/White	Added hostcost statement to telex host link(0)
+:	86-01-22   S/White      Regenned to include latest patches for out of
+:				channels problem & node crashes.
+:	86-01-29   S/White	Changed hostcost values & added gwy stmts
+:				hostcost(0,56,14,2,8,8) for lnk 0
+:	86-01-06   S/White	TCNL for link 0 now 1,16
+:	86-02-11   S/White	TCNL for link 0 now 1,17 (!!)
+:       86-02-24   S/White	Added hosts 7901/7902, Guatemala (4543) and
+:				Dynapac host #3 1908
+:				Shuffled links down to add tlx lnk(1),
+:				MAXGATEWAYS increased to 200.
+:	86-03-21   S/White	Explicitly set netusernameprefix to (X250) lnk7
+:       86-03-24   Shur         Set netusernameprefix t0 x25 for test
+:
+:       86-04-03  T/Otradovec   Turned off reverse charge - DYNAPAC host(CHARGE
+:       86-04-10  T/Otradovec   Decreased HOSTCOST statement on PSUEDO host
+:                               to 0 38 1C 8 8 8.
+:       86-05-27  T/Otradovec   Converted link 6 into Telex no. 5
+:	86-05-27   S/White	added CLDADR & CUDSTRING stmts to hst 1908
+:				to prevent garbage DNIC's confusing billing.
+:				Removed Forced Log in from link 6!
+:	86-06-10   S/White	commented out CLDADR & CUDSTR for now, lnk 7.
+:	86-10-28   S/White      re-gen with latest patches (cure hlfdup pblm)
+:	87-01-19   S/White      same as above.
+:       87-05-06  T/Otradovec   Converted link  6 into IMSS no. 2 using hostkey 
+:                               AND LINK 2 INTO WANG-MULTICOM USING HOSTKEY
+:	87-05-29  White		Edit CSC and Geisco links onto bottom of file
+:				for Tom to complete changes.
+:       87-05-29  T/Otradovec   completed link parameters for csc and giesco
+:	87-06-08  White		insert NEWCCI link as link 8, push others down
+:	87-06-11  White		insert NEWIRVing link as link 11.
+:      87-07-06  T.Otradovec    Increased the tcnl range on tlx1 &2
+:                             from 17 to 48 
+:      87-07-06  T.Otradovec   made charege= +cpt,-rcx,+rcna and cudstring()
+:                             and cldadr=3119900100200 for tlx1 &2
+:	87-07-14 White		Per TRT PROOF request, increase TCNL on CCI
+:				link to 8.
+:	87-07-30  White added host 4530 as duplicate onlink 9
+:	88-04-07  White        combine updates into 1 new file per PROOF 
+:				tickets 4816 5059 5171 4869.  leave link 8 in 
+:				now so that Forced Log In can be tsted later.
+:				Removing link 8 requires node code chnge.
+:				links(3) - TCNL(1,48), TCLASS -neg, add CLDADR
+:				LINKS(6) - TCNL(1.48)
+:				LINKS(7) - remove CHKCLG, add PKTOPT(+BRFCA)
+:	88-06-01                Per proof - link 0,1, 3 change called DNIC
+:				to 8231.
+:				Link 2&6 (7476, 6753) add PFXTLR to add 8231
+:				in front of called address.
+:
+:	88-11-28     R. Mani	Changed HOSTCOST for host 7902 to achieve 
+:				load balance with host 770 on node 2575.
+:	89-05-26     R.Mani     Host 6756, link 8 may be used for Guatemala.
+:				It is being tested with NONTN for that purpose.
+:				Turned NONTN on.
+:	89-05-26     R.Mani	Effort to consolidate links ( since TRT has 
+:				shortage of SIO ports ) was made. Found that 
+:				only links 5 and 11 could be consolidated,
+:				the rest were required either for address 
+:				insertion or redundancy.
+:	89-05-26     R. Mani    Consolidation of links 5 and 11 : Link 5 (World
+:				Bank) and link 11 ( TRT Irving )
+:				look much the same, and since TRT may 
+:				soon be in the need of one additional SIO port,
+:				link 11 is being removed and the host assigned
+:			        to 
+:				it , host 4151 is being reassigned to link 5.
+:				This means 1) the Telenet macro is not
+:				available on link 5, as it was  
+:				on  link 11  2) link 5 will not 
+:				have XCLEAR , as did link 11. 3)RPOA will not 
+:				be stripped on calls to link 5, whereas it 
+:				was stripped on calls to link 11.
+:
+:	89-06-20    R. Mani	Removing all Gateway statements from link 8
+:				since NONTN will not work if Called DNIC is
+:				in Gateway statement.
+:
+:	89-08-25    R.Mani	Add HOSTCOST for hosts 7476, 2899 to balance 
+:				with hosts 771, 8483 on node 3005 resply.
+:
+:	89-09-01    R. Mani	In preparation of upgrade to 4.03. 
+:				Change TCNL for 7476 to (1,48)
+:				Also change HOSTCOST. Change DPORTS from 128 
+:				to 100 to save memory. Included CHKCLG() on 
+:				links 2 -7 since else defaults to first ODNIC
+:
+:	89-09-22   R. Mani	Upgraded patch ADRMOD.301 to ADRMOD.403, 
+:				upgraded code to 4.03
+:
+:	89-10-20  R.Mani	Changed Tymsat Padforward to CR (2) and 
+:				Padidle to .25 seconds per Tim Scales request
+:				on links 2,3, and 6 only.
+:
+:	89-12-29  R. Mani	Changed Tymsat Padforward to 4, and 
+:				padidle to 1 second on links 2 and 3 only
+:				per Jack Shields, TRT.
+:	90-01-04  R. mani	Changed Hostcost on host 7902 to increase
+:			       Maxsteps value--doesn't affect hostcost reported
+:
+:	90-02-07  R. mani	Reassigned host 7902 to link 0 to send 
+:				all TRTTLX calls to link 0 only. Link 1 
+:				to be phased out after testing complete.
+:				Changed hostcost statement to be same 
+:				as host 770 in SF ( nd 3005 ) for traffic
+:				balancing.
+:				Also regen to pick up latest patches 
+:				particularly HostCost patches.
+:	
+:	90-02-12  R. Mani	Fine tuned Hostcost macros forosts 7902, 7476,
+:				2899
+:
+SEECONFIGURATION(2)		:Print Configuration Info
+
+PROTOCOL(X.25,HDLC,LAPB)	:GLOBAL INTERFACE TYPE FOR ALL HOSTS ON SLOT
+DPORTS(100)			:NUMBER OF ISIS DISPATCHER PORTS FOR ALL LINKS
+
+::	Host Statements
+
+
+HOSTLINKS(6754,0)		:ASSIGN 6754 AS DESTINATION HOST FOR LINK 0
+:  HOSTCOST(0,38,10,4,4,8)       :SEE PSUEDO HOST COST FOR THIS LINK
+  HOSTPORTAVAILABILITY(1,1)     :Send noport msg when only 1 dports left
+
+HOSTLINKS(7901,1)		:ASSIGN 7901 AS DESTINATION HOST FOR LINK 1
+:  HOSTCOST(0,38,10,4,4,8)       :SEE PSUEDO HOST COST FOR THIS LINK
+  HOSTPORTAVAILABILITY(1,1)     :Send NO PORT msg when only 1 dports left
+
+HOSTLINKS(7902,0)             : No longer DISTRIBUTION HOST FOR LINKS 0 & 1
+				: targetted only to link 0
+:  HOSTCOST(0,56,24,8,8,8)       :Host cost makes 8 increments of 8 per step
+  HOSTCOST(10,120,48,38,12,16)	: to achieve load balance with 
+				: host 770, node 3005
+  HOSTPORTAVAILABILITY(3,3)     :Send NO Port msg when only 3 dports left
+                                :PSUEDO HOST COST IS RECOGNIZED FOR TELEX 1&2
+                                :will change balance with 3762/3005  hosts.
+
+HOSTLINKS(7476,2)               :ASSIGN 7476 AS DESTINATION FOR LINK 2
+  HOSTKEY(64)                   :ASSIGN 64 AS THE HOST KEY FOR 7476
+  HOSTCOST(10,120,48,38,12,16)   : To balance with host 771, node 3005
+  HOSTPORTAVAILABILITY(2,2)	:Send NO PORT msg when only 2 DPORTS left
+
+HOSTLINKS(2899,3)		:ASSIGN 2899 AS DESTINATION HOST FOR LINK 3
+  HOSTCOST(10,120,48,38,12,16)   : To balance with host 8483, node 3005
+  HOSTPORTAVAILABILITY(2,2)	:Send NO PORT msg when only 2 DPORTS left
+
+HOSTLINKS(2636,4)		:ASSIGN 2636 AS DESTINATION HOST FOR LINK 4
+  HOSTPORTAVAILABILITY(2,2)	:Send NO PORT msg when only 2 DPORTS left
+
+HOSTLINKS(4028,5)		:ASSIGN 4028 AS DESTINATION HOST FOR LINK 5
+  HOSTPORTAVAILABILITY(2,2)	:Send NO PORT msg when only 2 DPORTS left
+
+HOSTLINKS(4151,5)              :assign 4151 AS DESTINATION HOST FOR LINK 05
+  HOSTKEY(68)                   :68 IS THE HOSTKEY FOR Irving
+  HOSTPORTAVAILABILITY(2,2)     :Send NO PORT msg when only 2 dports left
+
+HOSTLINKS(6753,6)              :ASSIGN 6753 AS DESTINATION HOST FOR LINK 6
+  HOSTKEY(61)                  :HOSTKEY FOR IMSS #2 IS 61
+  HOSTPORTAVAILABILITY(2,2)    :Send NO PORT msg when only 2 DPORTS left
+
+HOSTLINKS(1908,7)		:ASSIGN 1908 AS DESTINATION HOST FOR LINK 7  
+  HOSTPORTAVAILABILITY(2,2)	:Send NO PORT msg when only 2 DPORTS left
+
+HOSTLINKS(6756,8)               :ASSIGN 6756 AS DESTINATION HOST FOR LINK 8
+  HOSTKEY(66)                   :66 IS THE HOST KEY FOR CCI
+  HOSTPORTAVAILABILITY(2,2)     :Send NO PORT msg when only 2 DPORTS left
+
+HOSTLINKS(3607,9)               :ASSIGN 3607 AS DESTINATION HOST FOR LINK 9
+  HOSTKEY(62)                   :62 IS THE HOST KEY FOR CSC
+  HOSTPORTAVAILABILITY(2,2)     :Send NO PORT msg when only 2 POPRTS LEFT
+
+HOSTLINKS(4530,9)               :ASSIGN 4530 AS DESTINATION HOST FOR LINK 9
+  HOSTPORTAVAILABILITY(2,2)     :Send NO PORT msg when only 2 DPORTS left
+
+HOSTLINKS(7477,10)              :assign 7477 AS DESTINATION HOST FOR LINK 10
+  HOSTKEY(65)                   :65 IS THE HOSTKEY FOR GEISCO
+  HOSTPORTAVAILABILITY(2,2)     :Send NO PORT msg when only 2 dports left
+
+::	GLOBAL OPTIONS
+
+HIHOSTNUMBER(99999)		:Send as numeric username if > 99999
+
+::  See (INTLTECH)DNIC.NOD for DNICNODES macro's
+
+L1ENABLE(07,15)		: Set Break to X3 decimal 21
+L1ENABLE(0A,00)		: Turn off line folding X.3 para 10
+			: Do NOT use L1ENABLE macro's to Tymnet Networks
+XOMUSERNAMES(INTLTECH)	: Additional XOM username
+XOMUSERNAMES(INTLXOM)	: Additional XOM username 
+XOMUSERNAMES(TRTDDT)	: IRC XOM username
+XOMUSERNAMES(OMNC)	: Network Console username
+XOMHOST(6757)		: XOM host number
+MAXGATEWAYS(200)	: Allocate additional storage for XOM entry
+MAXDNICNODES(128)	: Allocate additional storage for XOM entry
+MAXODNIC(16)		: Allocate additional storage for XOM entry
+MTEXT(0000,"8D"8Atrt ):CHANGE DEFAULT 'LOCAL: ' HEADER MESSAGE
+MTEXT(0001,"8D"8Atrt/gateway: ):CHANGE DEFAULT 'REMOTE: ' HEADER MESSAGE
+MTEXT(0455,connected:"8D"8A)
+TALKOLDCODE(OFF)
+
+:************************************************************************
+::	Link Level Statements for Link 0 - Real Time Telex
+:************************************************************************
+
+LINKS(0)
+:	Frame Level Statements
+  PSADR(03,01)		:Primary/Secondary Addresses
+  K(7)			: Frame Window
+  N2(10)		: Number of times frame will be re-xmitted
+  T1(30)		: Time between re-xmit of frames in 1/10 of sec's
+  ILRRC(30)		: Send RR cmd every 30 sec's of idleline
+  FRMOPT(-FM128)	: Frame sequencing modulus 8
+::	Packet Level Statements
+  TCNL(1,48)		: Two-way logical channel numbering
+  T31(90)		: Incomming call request timer = 90 sec's
+  ODNIC(3119,3106,4263,3503): 3119 is Transit Net DNIC, also serve others
+  CUDSTRING()
+  CLDADR(8231900100200) : 8231 is TRT telex
+  CLDADL(4)		: Verify DNIC in call accept packet
+  NETUSERNAMEPREFIX(trt.): Build circuit with trt.<dnic> to group 19 & 26
+  PKTOPT(TKSUP,IPRNR)	: Bottom-up LCN selection, allow called adr of 3106
+  			: Do NOT send RNR's let the packet window close
+::	Optional User Utilities
+  PWIND(2,2)			: Default packet w/s of 2
+  PSIZE(128,128)		: Default packet size 128
+  MAXPSIZE(256,256)		: Maximum packet size acceptable is 256
+  TCLASS(7,7)			: Max throughput class is 7/1200
+::TCTOPW(0,0,1,1,1,1,2,3,6,7,7,7): Spt Throughput Class to WS mapping
+  CHARGE(+CPT,-RCX,+RCNA,-CPNA,-RCNS,-XCLEAR): Tymsat Caller Paid, X Caller Pd
+				: Rev Chg to link NA, Caller Paid to link
+				: allowed, RevChg utility subscribed, RevChg
+				: from link allowed - DEFAULT CHARGE STMT
+  FASTSELECT(-SUBSCRIPTION,-ACCEPTANCE): Do NOT Allow FastSelect Fm/To Link
+  NATIONAL(-XCLEAR,PASSTOX)	: accept and pass to link Nat Fac/Utilties
+  UNKNOWNFACILITY(-XCLEAR,PASSTOX): accept & pass to link Unk Fac/Utilities
+ ::	Virtual PAD Options
+  CLGADR(-NUIADR,HOSTADR)	: Use Host # or 7+node # for calling adr
+  CHKCLG(3119)                  : Check callng addr of calls fm host
+  PADFORWARD(126,0)		: X.3 Para 3, Tymsat=All CTL chara,Tymcom=none
+  PADIDLETIMER(100,16)		: X.3 Para 4, Tymsat=5 sec,Tymcom=800ms
+  PADBREAK(21)			: X.3 Para 7, options 1+4+16
+  PADOPTIONS(-NR13,-NR14)	: X.3 Para's 13 & 14 will be sent to Link
+  PADNATIONAL(00,-NOPASS)	: Nat Options Marker = 0000, pass Nat X.29 
+				: parameters to link
+  ECHOABLE(07-0D,20-7E)		: If in Deferred Echo send G^-M^, & Printables
+: TELENET()			: Not used
+: DATAPAC()			: Not used
+::	Log Report Statements
+  LOGREPORTS(ON,10-39,80-0AA)	: Turn on all Error Log Msgs
+
+:************************************************************************
+::	Link Level Statements for Link 1 - Real Time Telex
+:************************************************************************
+
+LINKS(1)
+:	Frame Level Statements
+  PSADR(03,01)		:Primary/Secondary Addresses
+  K(7)			: Frame Window
+  N2(10)		: Number of times frame will be re-xmitted
+  T1(30)		: Time between re-xmit of frames in 1/10 of sec's
+  ILRRC(30)		: Send RR cmd every 30 sec's of idleline
+  FRMOPT(-FM128)	: Frame sequencing modulus 8
+::	Packet Level Statements
+  TCNL(1,48)		: Two-way logical channel numbering
+  T31(90)		: Incomming call request timer = 90 sec's
+  ODNIC(3119,3106,4263,3503): 3119 is Transit Net DNIC, also serve others
+  CUDSTRING()
+  CLDADR(8231900100200) : 8231 is TRT telex
+  CLDADL(4)		: Verify DNIC in call accept packet
+  NETUSERNAMEPREFIX(trt.): Build circuit with trt.<dnic> to group 19 & 26
+  PKTOPT(TKSUP,IPRNR)	: Bottom-up LCN selection, allow called adr of 3106
+  			: Do NOT send RNR's let the packet window close
+::	Optional User Utilities
+  PWIND(2,2)			: Default packet w/s of 2
+  PSIZE(128,128)		: Default packet size 128
+  MAXPSIZE(256,256)		: Maximum packet size acceptable is 256
+  TCLASS(7,7)			: Max throughput class is 7/1200
+::TCTOPW(0,0,1,1,1,1,2,3,6,7,7,7): Spt Throughput Class to WS mapping
+  CHARGE(+CPT,-RCX,+RCNA,-CPNA,-RCNS,-XCLEAR): Tymsat Caller Paid, X Caller Pd
+				: Rev Chg to link NA, Caller Paid to link
+				: allowed, RevChg utility subscribed, RevChg
+				: from link allowed - DEFAULT CHARGE STMT
+  FASTSELECT(-SUBSCRIPTION,-ACCEPTANCE): Do NOT Allow FastSelect Fm/To Link
+  NATIONAL(-XCLEAR,PASSTOX)	: accept and pass to link Nat Fac/Utilties
+  UNKNOWNFACILITY(-XCLEAR,PASSTOX): accept & pass to link Unk Fac/Utilities
+ ::	Virtual PAD Options
+  CLGADR(-NUIADR,HOSTADR)	: Use Host # or 7+node # for calling adr
+  CHKCLG(3119)                  : Check callng addr of calls fm host
+  PADFORWARD(126,0)		: X.3 Para 3, Tymsat=All CTL chara,Tymcom=none
+  PADIDLETIMER(100,16)		: X.3 Para 4, Tymsat=5 sec,Tymcom=800ms
+  PADBREAK(21)			: X.3 Para 7, options 1+4+16
+  PADOPTIONS(-NR13,-NR14)	: X.3 Para's 13 & 14 will be sent to Link
+  PADNATIONAL(00,-NOPASS)	: Nat Options Marker = 0000, pass Nat X.29 
+				: parameters to link
+  ECHOABLE(07-0D,20-7E)		: If in Deferred Echo send G^-M^, & Printables
+: TELENET()			: Not used
+: DATAPAC()			: Not used
+::	Log Report Statements
+  LOGREPORTS(ON,10-39,80-0AA)	: Turn on all Error Log Msgs
+
+  
+:************************************************************************
+::    LINK LEVEL STATEMENTS FOR LINK 2 - telex TRTSVC ( IMSS )
+:************************************************************************
+
+LINKS(2)
+:	Frame Level Statements
+  PSADR(03,01)		:Primary/Secondary Addresses
+  K(7)			: Frame Window
+  N2(10)		: Number of times frame will be re-xmitted
+  T1(30)		: Time between re-xmit of frames in 1/10 of sec's
+  ILRRC(30)		: Send RR cmd every 30 sec's of idleline
+  FRMOPT(-FM128)	: Frame sequencing modulus 8
+::	Packet Level Statements
+  TCNL(1,48)           : TWO -WAY LOGICAL CHANNEL NUMBERING
+  T31(90)		: Incomming call request timer = 90 sec's
+  ODNIC(3119,3106,4263,3503): 3119 is Transit Net DNIC, also serve others
+  PFXTLR(,8231)         : Add 8231 in front of all call requests
+  CLDADL(4)		: Verify DNIC in call accept packet
+  NETUSERNAMEPREFIX(trt.): Build circuit with trt.<dnic> to group 19 & 26
+  PKTOPT(TKSUP,IPRNR)	: Top-down LCN seon, allow called adr of 3106
+  			: Do NOT send RNR's let the packet window close
+::	Optional User Utilities
+  PWIND(2,2)			: Default packet w/s of 2
+  PSIZE(128,128)		: Default packet size 128
+  MAXPSIZE(256,256)		: Maximum packet size acceptable is 256
+  TCLASS(7,7)			: Max throughput class is 7/1200
+::TCTOPW(0,0,1,1,1,1,2,3,6,7,7,7): Spt Throughput Class to WS mapping
+  CHARGE(-CPT,-RCX,-RCNA,-CPNA,-RCNS,+XCLEAR): Tymsat Caller Paid, X Caller Pd
+				: Rev Chg to link NA, Caller Paid to link
+				: allowed, RevChg utility subscribed, RevChg
+				: from link allowed - DEFAULT CHARGE STMT
+  FASTSELECT(-SUBSCRIPTION,-ACCEPTANCE): Do NOT Allow FastSelect Fm/To Link
+  NATIONAL(-XCLEAR,PASSTOX)	: accept and pass to link Nat Fac/Utilties
+  UNKNOWNFACILITY(-XCLEAR,PASSTOX): accept & pass to link Unk Fac/Utilities
+ ::	Virtual PAD Options
+  CLGADR(-NUIADR,HOSTADR)	: Use Host # or 7+node # for calling adr
+  CHKCLG()			: must include else defaults to ODNIC
+  PADFORWARD(4,0)		: X.3 Para 3
+  PADIDLETIMER(20,16)		: X.3 Para 4, Tymsat=1 sec,Tymcom=800ms
+  PADBREAK(21)			: X.3 Para 7, options 1+4+16
+  PADOPTIONS(-NR13,-NR14)	: X.3 Para's 13 & 14 will be sent to Link
+  PADNATIONAL(00,-NOPASS)	: Nat Options Marker = 0000, pass Nat X.29 
+				: parameters to link
+  ECHOABLE(07-0D,20-7E)		: If in Deferred Echo send G^-M^, & Printables
+: TELENET()			: Not used
+: DATAPAC()			: Not used
+::	Log Report Statements
+  LOGREPORTS(ON,10-39,80-0AA)	: Turn on all Error Log Msgs
+
+:************************************************************************
+:     Gateway Statement Specific to this interface
+:************************************************************************
+
+GATEWAY(3110,GTEVIATRT"3BRESTON"3B)  : Gateway to host 7478 (The Source Host)
+
+:************************************************************************
+::    LINK LEVEL STATEMENTS FOR LINK 3 - INTL MSG SWITCH SYSTEM #1 TRTSTX
+:************************************************************************
+
+LINKS(3)
+:	Frame Level Statements
+  PSADR(03,01)		:Primary/Secondary Addresses
+  K(7)			: Frame Window
+  N2(10)		: Number of times frame will be re-xmitted
+  T1(30)		: Time between re-xmit of frames in 1/10 of sec's
+  ILRRC(30)		: Send RR cmd every 30 sec's of idleline
+  FRMOPT(-FM128)	: Frame sequencing modulus 8
+::	Packet Level Statements
+  TCNL(1,48)		: Two-way logical channel numbering
+  T31(90)		: Incomming call request timer = 90 sec's
+  ODNIC(3119,3106,4263,3503): 3119 is Transit Net DNIC, also serve others
+  CLDADL(4)		: Verify DNIC in call accept packet
+  NETUSERNAMEPREFIX(trt.): Build circuit with trt.<dnic> to group 19 & 26
+  PKTOPT(TKSUP,IPRNR)	: Top-down LCN selection, allow called adr of 3106
+  			: Do NOT send RNR's let the packet window close
+::	Optional User Utilities
+  PWIND(2,2)			: Default packet w/s of 2
+  PSIZE(128,128)		: Default packet size 128
+  MAXPSIZE(256,256)		: Maximum packet size acceptable is 256
+  TCLASS(7,7,-NEGOTIATION)	: Max throughput class is 7/1200
+::TCTOPW(0,0,1,1,1,1,2,3,6,7,7,7): Spt Throughput Class to WS mapping
+  CHARGE(-CPT,RCX,-RCNA,-CPNA,-RCNS,-XCLEAR): Tymsat Caller Paid, X Caller Pd
+				: Rev Chg to link NA, Caller Paid to link
+				: allowed, RevChg utility subscribed, RevChg
+				: from link allowed - DEFAULT CHARGE STMT
+  FASTSELECT(-SUBSCRIPTION,-ACCEPTANCE): Do NOT Allow FastSelect Fm/To Link
+  NATIONAL(-XCLEAR,PASSTOX)	: accept and pass to link Nat Fac/Utilties
+  UNKNOWNFACILITY(-XCLEAR,PASSTOX): accept & pass to link Unk Fac/Utilities
+ ::	Virtual PAD Options
+  CLDADR(8231900101100)		: 8231 is TRT telex
+  CHKCLG()			: must include else defaults to ODNIC
+  CLGADR(-NUIADR,HOSTADR)	: Use Host # or 7+node # for calling adr
+  PADFORWARD(4,0)		: X.3 Para 3, Tymsat=  ,Tymcom=none
+  PADIDLETIMER(20,16)		: X.3 Para 4, Tymsat=1 sec,Tymcom=800ms
+  PADBREAK(21)			: X.3 Para 7, options 1+4+16
+  PADOPTIONS(-NR13,-NR14)	: X.3 Para's 13 & 14 will be sent to Link
+  PADNATIONAL(00,-NOPASS)	: Nat Options Marker = 0000, pass Nat X.29 
+				: parameters to link
+  ECHOABLE(07-0D,20-7E)		: If in Deferred Echo send G^-M^, & Printables
+: TELENET()			: Not used
+: DATAPAC()			: Not used
+::	Log Report Statements
+  LOGREPORTS(ON,10-39,80-0AA)	: Turn on all Error Log Msgs
+  
+:************************************************************************
+::	Link Level Statements for Link 4 - TRT's Test X.25 Host
+:************************************************************************
+
+LINKS(4)
+:	Frame Level Statements
+  PSADR(03,01)		:Primary/Secondary Addresses
+  K(7)			: Frame Window
+  N2(10)		: Number of times frame will be re-xmitted
+  T1(30)		: Time between re-xmit of frames in 1/10 of sec's
+  ILRRC(30)		: Send RR cmd every 30 sec's of idleline
+  FRMOPT(-FM128)	: Frame sequencing modulus 8
+::	Packet Level Statements
+  TCNL(1,15)		: Two-way logical channel numbering
+  T31(90)		: Incomming call request timer = 90 sec's
+  ODNIC(3119,3106,4263,3503): 3119 is Transit Net DNIC, also serve others
+  CLDADL(4)		: Verify DNIC in call accept packet
+  NETUSERNAMEPREFIX(trt.): Build circuit with trt.<dnic> to group 19 & 26
+  PKTOPT(TKSUP,IPRNR)	: Bottom-up LCN selection, allow called adr of 3106
+  			: Do NOT send RNR's let the packet window close
+::	Optional User Utilities
+  PWIND(2,2,-NEGOTIATION)  :W/S OF 2 NEGOTIATION ON
+  PSIZE(128,128,-NEGOTIATION)  :DEFAULT P/S128 NEGOTIATION ON
+  MAXPSIZE(256,256)		: Maximum packet size acceptable is 256
+  TCLASS(7,7,-NEGOTIATION)	: Max throughput class is 7/1200
+::TCTOPW(0,0,1,1,1,1,2,3,6,7,7,7): Spt Throughput Class to WS mapping
+  CHARGE(+CPT,+RCX,-RCNA,-CPNA,-RCNS,-XCLEAR) : Reverse charge of calls made
+				: allowed, RevChg utility subscribed, RevChg
+				: from link allowed - DEFAULT CHARGE STMT
+  FASTSELECT(-SUBSCRIPTION,-ACCEPTANCE): Do NOT Allow FastSelect Fm/To Link
+  NATIONAL(-XCLEAR,PASSTOX)	: accept and pass to link Nat Fac/Utilties
+  UNKNOWNFACILITY(-XCLEAR,PASSTOX): accept & pass to link Unk Fac/Utilities
+ ::	Virtual PAD Options
+  CLGADR(-NUIADR,HOSTADR)	: Use Host # or 7+node # for calling adr
+  CHKCLG()			: must include else defaults to ODNIC
+  PADFORWARD(126,0)		: X.3 Para 3, Tymsat=All CTL chara,Tymcom=none
+  PADIDLETIMER(100,16)		: X.3 Para 4, Tymsat=5 sec,Tymcom=800ms
+  PADBREAK(21)			: X.3 Para 7, options 1+4+16
+  PADOPTIONS(-NR13,-NR14)	: X.3 Para's 13 & 14 will be sent to Link
+  PADNATIONAL(00,-NOPASS)	: Nat Options Marker = 0000, pass Nat X.29 
+				: parameters to link
+  ECHOABLE(07-0D,20-7E)		: If in Deferred Echo send G^-M^, & Printables
+: TELENET()			: Not used
+: DATAPAC()			: Not used
+::	Log Report Statements
+  LOGREPORTS(ON,10-39,80-0AA)	: Turn on all Error Log Msgs
+
+:*************************************************************************
+:   GATEWAY STATEMENTS TO ALLOW ACCESS TO TRT'S XCOM GATEWAYS
+:*************************************************************************
+:GATEWAY(X,Y) :
+GATEWAY(2062,TRTBELGIUM"3BEEC HEADQRTS"3B) :Transit UK to Belguim (not global)
+GATEWAY(2069,TRTBELGIUM"3BEEC HEADQRTS"3B) :Transit UK to Belguim (not global)
+GATEWAY(2080,TRTFRANCE"3BROMANCE"3B)    :Transit Germany to France
+GATEWAY(2081,TRTFRANCE"3BROMANCE"3B)    :Transit Germany to France
+GATEWAY(2220,TRT4756"3BRAVIOLI"3B) :gateway to Italy
+GATEWAY(2222,TRT4756"3BRAVIOLI"3B) :gateway to Italy
+::GATEWAY(2223,TRT4756"3BRAVIOLI"3B) :gateway to Italy
+GATEWAY(2227,TRT4756"3BRAVIOLI"3B) : gateway to Italy to Italy
+::GATEWAY(2283,TRTSWISS"3BTYM PIECE"3B) : gateway to Switzerland
+GATEWAY(2284,TRTSWISS"3BTYM PIECE"3B) : gateway to Switzerland
+GATEWAY(2320,TRTAUSTRIA"3BALPINE"3B)    :gateway to Austria Datex-P
+GATEWAY(2322,TRTAUSTRIA"3BALPINE"3B)    :gateway to Austria Datex-P
+GATEWAY(2329,TRTAUSTRIA"3BALPINE"3B)    :gateway to Austria (Radaus)
+GATEWAY(2341,TRTUNKING"3BHOPE & GLORY"3B)	:gateway to IPSS
+GATEWAY(2342,TRTUNKING"3BHOPE & GLORY"3B)	:gateway to PSS
+GATEWAY(2621,TRTAUSTRIA"3BALPINE"3B)	:gateway to Hungarian Datex
+GATEWAY(2624,TRTGERM"3BBREW FEST"3B)	:gateway to Germany
+GATEWAY(2680,TRTPORTUGAL"3BSAR DINES"3B) :gateway to Portugal
+GATEWAY(2703,TRTLUX"3BTINY PLACE"3B) :Luxembourg via the UK
+GATEWAY(2704,TRTLUX"3BTINY PLACE"3B) :Luxembourg via the UK
+GATEWAY(2709,TRTLUX"3BTINY PLACE"3B) :Luxembourg via the UK
+GATEWAY(2721,TRTEIRE"3BIRISH CREAM"3B)	:gateway to Ireland
+GATEWAY(2724,TRTEIRE"3BIRISH CREAM"3B)	:gateway to Ireland
+GATEWAY(3020,TRTCAN"3BLADY DEE"3B)  :GATEWAY TO CANADA
+GATEWAY(3025,TRTCAN"3BLADY DEE"3B)  :GATEWAY TO CANAD
+GATEWAY(3028,TRTCAN"3BLADY DEE"3B) :Gateway to CNCP via teleglobe?
+GATEWAY(3029,TRTCAN"3BLADY DEE"3B) :CNCP infoswitch via teleglobe?
+GATEWAY(3110,TRTTELE"3BRES TON"3B)	:GATEWAY TO TELENET
+GATEWAY(3127,TRTTELE"3BRES TON"3B)	:GATEWAY TO Telenet's Sub-net
+GATEWAY(3130,TRTSUBNET"3BBETHESDA"3B) 	:GATEWAY TO TRT'S TEST NETWORK
+GATEWAY(3136,TRTGE"3BLIGHTBULB"3B)	:GATEWAY TO GE
+GATEWAY(3340,TRTMEX"3BHOT CHILLI"3B)    :gateway to Mexico
+GATEWAY(3400,TRTFRANCE"3BROMANCE"3B)   :GERMANY TO FRANCE
+GATEWAY(3740,TRTTODAD"3BCOCO NUT"3B)	:gateway to Trinadad
+GATEWAY(3745,TRTTODAD"3BCOCO NUT"3B)	:gateway to Trinadad
+GATEWAY(4545,TRTKONG"3BTRIN KET"3B)	:Transit UK to Hong Kong
+GATEWAY(4401,TRTJAPAN"3BGEISHA GIRL"3B) :Transit to Japan
+GATEWAY(4408,TRTJAPAN"3BGEISHA GIRL"3B) :Transit to Japan
+GATEWAY(5052,TRTAUSSIE"3BKANGA ROO"3B)	:gateway to Austpac
+GATEWAY(5053,TRTAUSSIE"3BKANGA ROO"3B)	:gateway to OTC
+GATEWAY(5250,TRT7279"3BFAREAST"3B)	:gateway to Singapore
+GATEWAY(5251,TRT7279"3BFAREAST"3B)	:gateway to Singapore
+GATEWAY(5252,TRT7279"3BFAREAST"3B)	:gateway to Singapore
+GATEWAY(5300,TRTNEWZEAL"3BALL BLACKS"3B) :Transit Australia to New Zealand
+GATEWAY(5301,TRTNEWZEAL"3BALL BLACKS"3B) :Transit Australia to New Zealand
+GATEWAY(6400,TRTFRANCE"3BROMANCE"3B)  :GERMANY TO FRANCE
+GATEWAY(6550,TRT-SAFRICA"3BCAPE OF GOOD HOPE"3B) :South Africa via UK
+GATEWAY(7222,TRTARGENT"3BBUENOS AIRES"3B)  :GATEWAY TO ARGENTINA
+::GATEWAY(7240,TRTBRAZIL"3BDEJANEIRO") :No longer available
+GATEWAY(7420,TRTFRANCE"3BROMANCE"3B)  :GERMANY TO FRANCE
+GATEWAY(8231,TELXTRT"3BREAL.TIME"3B) 	:gateway to Real-time telex
+GATEWAY(8232,INTLMSS"3BSTORE.FWD"3B) 	:gateway to IMSS 1 & 2
+
+
+:************************************************************************
+::	Link Level Statements for Link 5 - World Bank
+:************************************************************************
+
+LINKS(5)
+:	Frame Level Statements
+  PSADR(01,03)		:Primary/Secondary Addresses
+  K(7)			: Frame Window
+  N2(10)		: Number of times frame will be re-xmitted
+  T1(30)		: Time between re-xmit of frames in 1/10 of sec's
+  ILRRC(30)		: Send RR cmd every 30 sec's of idleline
+  FRMOPT(-FM128)	: Frame sequencing modulus 8
+::	Packet Level Statements
+  TCNL(1,16)		: Two-way logical channel numbering
+  T31(90)		: Incomming call request timer = 90 sec's
+  ODNIC(3119,3106,4263,3503): 3119 is Transit Net DNIC, also serve others
+  CLDADL(4)		: Verify DNIC in call accept packet
+  NETUSERNAMEPREFIX(trt.): Build circuit with trt.<dnic> to group 19 & 26
+  PKTOPT(TKSUP,IPRNR)	: Bottom-up LCN selection, allow called adr of 3106
+  			: Do NOT send RNR's let the packet window close
+::	Optional User Utilities
+  PWIND(2,2)			: Default packet w/s of 2
+  PSIZE(128,128)		: Default packet size 128
+  MAXPSIZE(256,256)		: Maximum packet size acceptable is 256
+  TCLASS(7,7)			: Max throughput class is 7/1200
+::TCTOPW(0,0,1,1,1,1,2,3,6,7,7,7): Spt Throughput Class to WS mapping
+  CHARGE(-CPT,-RCX,-RCNA,-CPNA,-RCNS,-XCLEAR): Tymsat Caller Paid, X Caller Pd
+				: Rev Chg to link NA, Caller Paid to link
+				: allowed, RevChg utility subscribed, RevChg
+				: from link allowed - DEFAULT CHARGE STMT
+  FASTSELECT(-SUBSCRIPTION,-ACCEPTANCE): Do NOT Allow FastSelect Fm/To Link
+  NATIONAL(-XCLEAR,PASSTOX)	: accept and pass to link Nat Fac/Utilties
+  UNKNOWNFACILITY(-XCLEAR,PASSTOX): accept & pass to link Unk Fac/Utilities
+ ::	Virtual PAD Options
+  CLGADR(-NUIADR,HOSTADR)	: Use Host # or 7+node # for calling adr
+  CHKCLG()			: must include else defaults to ODNIC
+  PADFORWARD(126,0)		: X.3 Para 3, Tymsat=All CTL chara,Tymcom=none
+  PADIDLETIMER(100,16)		: X.3 Para 4, Tymsat=5 sec,Tymcom=800ms
+  PADBREAK(21)			: X.3 Para 7, options 1+4+16
+  PADOPTIONS(-NR13,-NR14)	: X.3 Para's 13 & 14 will be sent to Link
+  PADNATIONAL(00,-NOPASS)	: Nat Options Marker = 0000, pass Nat X.29 
+				: parameters to link
+  ECHOABLE(07-0D,20-7E)		: If in Deferred Echo send G^-M^, & Printables
+: TELENET()			: Not used
+: DATAPAC()			: Not used
+::	Log Report Statements
+  LOGREPORTS(ON,10-39,80-0AA)	: Turn on all Error Log Msgs
+
+:************************************************************************
+::    LINK LEVEL STATEMENTS FOR LINK 6 - INTL MSG SWITCH SYSTEM #2
+:************************************************************************
+LINKS(6)
+:	Frame Level Statements
+  PSADR(03,01)		:Primary/Secondary Addresses
+  K(7)			: Frame Window
+  N2(10)		: Number of times frame will be re-xmitted
+  T1(30)		: Time between re-xmit of frames in 1/10 of sec's
+  ILRRC(30)		: Send RR cmd every 30 sec's of idleline
+  FRMOPT(-FM128)	: Frame sequencing modulus 8
+::	Packet Level Statements
+  TCNL(1,48)		: Two-way logical channel numbering
+  T31(90)		: Incomming call request timer = 90 sec's
+  ODNIC(3119,3106,4263,3503): 3119 is Transit Net DNIC, also serve others
+  PFXTLR(,8231)         : Add 8231 in front of all call requests
+  CLDADL(4)		: Verify DNIC in call accept packet
+  NETUSERNAMEPREFIX(TRT.): Build circuit with irc.<dnic> to group 19 & 26
+  PKTOPT(TKSUP,IPRNR)       : bottom-up LCN selection, allow cldadr of 3106
+  			: Do NOT send RNR's let the packet window close
+::	Optional User Utilities
+  PWIND(2,2)             : Default packet w/s of 2, accept Utility
+				: code 43
+  PSIZE(128,128)                 :Default packet size 128
+  MAXPSIZE(256,256)		: Maximum packet size acceptable is 256
+  TCLASS(7,7)                   :Max throughput class is 7/1200
+::TCTOPW(0,0,1,1,1,1,2,3,6,7,7,7): Spt Throughput Class to WS mapping
+  CHARGE(-CPT,+RCX,-RCNA,-CPNA,-RCNS,-XCLEAR) :Tymsat Caller paid, x Caller paid
+				: Rev Chg to link NA, Caller Paid to link
+				: allowed, RevChg utility subscribed, RevChg
+				: from link allowed - DEFAULT CHARGE STMT
+  FASTSELECT(-SUBSCRIPTION,-ACCEPTANCE): Do NOT Allow FastSelect Fm/To Link
+  NATIONAL(-XCLEAR,PASSTOX)	: accept and pass to link Nat Fac/Utilties
+  UNKNOWNFACILITY(-XCLEAR,PASSTOX): accept & pass to link Unk Fac/Utilities
+ ::	Virtual PAD Options
+  CLGADR(-NUIADR,HOSTADR)	: Use Host # or 7+node # for calling adr
+  PADFORWARD(2,0)		: X.3 Para 3, Tymsat=CR,Tymcom=none
+  PADIDLETIMER(5,16)		: X.3 Para 4, Tymsat=.25 sec,Tymcom=800ms
+  CHKCLG(3119)                   :Check callingaddr of calls from the host
+  PADBREAK(21)			: X.3 Para 7, options 1+4+16
+  PADOPTIONS(-NR13,-NR14)	: X.3 Para's 13 & 14 will be sent to Link
+  PADNATIONAL(00,-NOPASS)	: Nat Options Marker = 0000, pass Nat X.29 
+				: parameters to link
+  ECHOABLE(07-0D,20-7E)		: If in Deferred Echo send G^-M^, & Printables
+: TELENET()			: Not used
+: DATAPAC()			: Not used
+::	Log Report Statements
+  LOGREPORTS(ON,10-39,80-0AA)	: Turn on all Error Log Msgs
+:************************************************************************
+::::    LINK LEVEL STATEMENTS FOR LINK 7 - DYNAPAC HOST
+:***********************************************************************
+LINKS(7)
+:	Frame Level Statements
+  PSADR(03,01)		:Primary/Secondary Addresses
+  K(7)			: Frame Window
+  N2(10)		: Number of times frame will be re-xmitted
+  T1(30)		: Time between re-xmit of frames in 1/10 of sec's
+  ILRRC(60)		: Send RR cmd every 60 sec's of idleline
+  FRMOPT(-FM128)	: Frame sequencing modulus 8
+::	Packet Level Statements
+  TCNL(1,32)		: Two-way logical channel numbering
+  T11(90)		: Incomming call request timer = 90 sec's
+  ODNIC(3119,3106)	: 3119 is Transit Net DNIC, also serve others
+::  CHKCLG(3119001908)  : Check calling address, insert if none.
+::  CLDADR(3119001908)	: Canned called address for non-pkt mode DTE's
+::  CUDSTRING()		: nothing 'canned' in CUD field.
+  CLDADL(4)		: Verify DNIC in call accept packet
+  NETUSERNAMEPREFIX(X25) : Build circuit with X250HOST to group 19 & 26
+  PKTOPT(TKSUP,IPRNR,+BRFCA)	: allow called adr of 3106, Inhib RNR
+  			: Do NOT send RNR's let the packet window close
+::	Optional User Utilities
+  PWIND(2,2,-NEGOTIATION)	: Default packet w/s of 2, accept Utility
+				: code 43
+  PSIZE(128,128,-NEGOTIATION)	: Default packet size 128, accept Utility
+				: code 42
+  MAXPSIZE(256,256)		: Maximum packet size acceptable is 256
+  TCLASS(7,7,-NEGOTIATION)	: Max throughput class is 7/1200, process
+				: Utility code 02
+::TCTOPW(0,0,1,1,1,1,2,3,6,7,7,7): Spt Throughput Class to WS mapping
+  CHARGE(CPT,-RCX,RCNA,-CPNA,-RCNS,XCLEAR): Reverse Charge specs   
+  FASTSELECT(-SUBSCRIPTION,-ACCEPTANCE): Do NOT Allow FastSelect Fm/To Link
+  RPOA(-PASSTOX)		: Strip RPOA facility fm incoming call
+::  CALLID(CIDCHECK)		: Clear if utility code 81 is missing
+  NATIONAL(-XCLEAR,PASSTOX)	: accept and pass to link Nat Fac/Utilties
+  UNKNOWNFACILITY(-XCLEAR,PASSTOX): accept & pass to link Unk Fac/Utilities
+ ::	Virtual PAD Options
+  CLGADR(-NUIADR,HOSTADR)	: Use Host # or 7+node # for calling adr
+  CHKCLG()			: must include else defaults to ODNIC
+  PADFORWARD(126,0)		: X.3 Para 3, Tymsat=All CTL chara,Tymcom=none
+  PADIDLETIMER(100,16)		: X.3 Para 4, Tymsat=5 sec,Tymcom=800ms
+  PADBREAK(21)			: X.3 Para 7, options 1+4+16
+  PADOPTIONS(-NR13,-NR14)	: X.3 Para's 13 & 14 will be sent to Link
+  PADNATIONAL(00,-NOPASS)	: Nat Options Marker = 0000, pass Nat X.29 
+				: parameters to link
+  ECHOABLE(07-0D,20-7E)		: If in Deferred Echo send G^-M^, & Printables
+: TELENET()			: Not used
+: DATAPAC()			: Not used
+::	Log Report Statements
+  LOGREPORTS(ON,10-39,80-0AA)	: Turn on all Error Log Msgs
+
+:***************************************************************************
+::    Gateway Statements for link - 7 Dynapac X.25 Host
+:*************************************************************************
+:GATEWAY(X,Y) :
+GATEWAY(2062,TRTBELGIUM"3BEEC HEADQRTS"3B) :Transit UK to Belguim (not global)
+GATEWAY(2069,TRTBELGIUM"3BEEC HEADQRTS"3B) :Transit UK to Belguim (not global)
+GATEWAY(2080,TRTFRANCE"3BROMANCE"3B)    :Transit Germany to France
+GATEWAY(2081,TRTFRANCE"3BROMANCE"3B)    :Transit Germany to France
+GATEWAY(2220,TRT4756"3BRAVIOLI"3B) :gateway to Italy
+GATEWAY(2222,TRT4756"3BRAVIOLI"3B) :gateway to Italy
+::GATEWAY(2223,TRT4756"3BRAVIOLI"3B) :gateway to Italy
+GATEWAY(2227,TRT4756"3BRAVIOLI"3B) : gateway to Italy to Italy
+GATEWAY(2283,TRTSWISS"3BTYM PIECE"3B) : gateway to Switzerland
+GATEWAY(2284,TRTSWISS"3BTYM PIECE"3B) : gateway to Switzerland
+GATEWAY(2320,TRTAUSTRIA"3BALPINE"3B)    :gateway to Austria Datex-P
+GATEWAY(2322,TRTAUSTRIA"3BALPINE"3B)    :gateway to Austria Datex-P
+GATEWAY(2329,TRTAUSTRIA"3BALPINE"3B)    :gateway to Austria (Radaus)
+GATEWAY(2341,TRTUNKING"3BHOPE & GLORY"3B)	:gateway to IPSS
+GATEWAY(2342,TRTUNKING"3BHOPE & GLORY"3B)	:gateway to PSS
+GATEWAY(2621,TRTAUSTRIA"3BALPINE"3B)	:gateway to Hungarian Datex
+GATEWAY(2624,TRTGERM"3BBREW FEST"3B)	:gateway to Germany
+GATEWAY(2680,TRTPORTUGAL"3BSAR DINES"3B) :gateway to Portugal
+GATEWAY(2703,TRTLUX"3BTINY PLACE"3B) :Luxembourg via the UK
+GATEWAY(2704,TRTLUX"3BTINY PLACE"3B) :Luxembourg via the UK
+GATEWAY(2709,TRTLUX"3BTINY PLACE"3B) :Luxembourg via the UK
+GATEWAY(2721,TRTEIRE"3BIRISH CREAM"3B)	:gateway to Ireland
+GATEWAY(2724,TRTEIRE"3BIRISH CREAM"3B)	:gateway to Ireland
+GATEWAY(3025,TRTCAN"3BLADY DEE"3B) :Gateway toTeleglobe Globe dat
+GATEWAY(3028,TRTCAN"3BLADY DEE"3B) :Gateway to CNCP via teleglobe?
+GATEWAY(3029,TRTCAN"3BLADY DEE"3B) :CNCP infoswitch via teleglobe?
+::GATEWAY(3110,TRTTELE"3BRES TON"3B)	:GATEWAY TO TELENET
+::GATEWAY(3127,TRTTELE"3BRES TON"3B)	:GATEWAY TO Telenet's Sub-net
+::GATEWAY(3130,TRTSUBNET"3BBETHESDA"3B) 	:GATEWAY TO TRT'S TEST NETWORK
+::GATEWAY(3136,TRTGE"3BLIGHTBULB"3B)	:GATEWAY TO GE
+GATEWAY(3340,TRTMEX"3BHOT CHILLI"3B)    :gateway to Mexico
+GATEWAY(3740,TRTTODAD"3BCOCO NUT"3B)	:gateway to Trinadad
+GATEWAY(3745,TRTTODAD"3BCOCO NUT"3B)	:gateway to Trinadad
+GATEWAY(4545,TRTKONG"3BTRIN KET"3B)	:Transit UK to Hong Kong
+GATEWAY(4401,TRTJAPAN"3BGEISHA GIRL"3B) :Transit to Japan
+GATEWAY(4408,TRTJAPAN"3BGEISHA GIRL"3B) :Transit to Japan
+GATEWAY(5052,TRTAUSSIE"3BKANGA ROO"3B)	:gateway to Austpac
+GATEWAY(5053,TRTAUSSIE"3BKANGA ROO"3B)	:gateway to OTC
+GATEWAY(5250,TRT7279"3BFAREAST"3B)	:gateway to Singapore
+GATEWAY(5251,TRT7279"3BFAREAST"3B)	:gateway to Singapore
+GATEWAY(5252,TRT7279"3BFAREAST"3B)	:gateway to Singapore
+GATEWAY(5300,TRTNEWZEAL"3BALL BLACKS"3B) :Transit Australia to New Zealand
+GATEWAY(5301,TRTNEWZEAL"3BALL BLACKS"3B) :Transit Australia to New Zealand
+GATEWAY(6550,TRT-SAFRICA"3BCAPE OF GOOD HOPE"3B) :South Africa via UK
+::GATEWAY(7240,TRTBRAZIL"3BDEJANEIRO") :No longer available
+::GATEWAY(8231,TELXTRT"3BREAL.TIME"3B) 	:gateway to Real-time telex
+::GATEWAY(8232,INTLMSS"3BSTORE.FWD"3B) 	:gateway to IMSS 1 & 2
+
+:************************************************************************
+:::::   Link Level Statements for Link 8 - << this link has NONTN turned on
+:************************************************************************
+
+LINKS(8)
+:	Frame Level Statements
+  PSADR(01,03)		:Primary/Secondary Addresses
+  K(4)			: Frame Window
+  N2(20)		: Number of times frame will be re-xmitted
+  T1(30)		: Time between re-xmit of frames in 1/10 of sec's
+  ILRRC(30)		: Send RR cmd every 30 sec's of idleline
+  FRMOPT(-FM128)	: Frame sequencing modulus 8
+::	Packet Level Statements
+  TCNL(1,8)		: Two-way logical channel numbering
+::  T21(90)		: Incomming call request timer = 90 sec's
+  ODNIC(3119,3106,4263,3503):3119 is Transit Net DNIC, also serve others
+  CHKCLG(3119)		: Check Calling Adr to see if call is from trt.
+  CLDADL(4)		: Verify DNIC in call accept packet
+  NETUSERNAMEPREFIX(trt.): Build circuit with trt.<dnic> to group 19 & 26
+  PKTOPT(TKSUP,IPRNR,NONTN)	: allow called adr of 3106
+  			: Do NOT send RNR's let the packet window close
+			: Ignore X.121 address for routing, instead send PLI:
+:
+::	Optional User Utilities
+  PWIND(2,2,-NEGOTIATION)	: Default packet w/s of 2, accept Utility
+				: code 43
+  PSIZE(128,128,-NEGOTIATION)	: Default packet size 128, accept Utility
+				: code 42
+  MAXPSIZE(256,256)		: Maximum packet size acceptable is 256
+  TCLASS(7,7,-NEGOTIATION)	: Max throughput class is 7/1200, process
+				: Utility code 02
+::TCTOPW(0,0,1,1,1,1,2,3,6,7,7,7): Spt Throughput Class to WS mapping
+  CHARGE(-CPT,-RCX,-RCNA,-CPNA,-RCNS,+XCLEAR):Reverse Charge Specs
+  FASTSELECT(-SUBSCRIPTION,-ACCEPTANCE): Do NOT Allow FastSelect Fm/To Link
+  RPOA(-PASSTOX)		: Strip RPOA facility fm incoming call
+::  CALLID(CIDCHECK)		: Clear if utility code 81 is missing
+  NATIONAL(-XCLEAR,PASSTOX)	: accept and pass to link Nat Fac/Utilties
+  UNKNOWNFACILITY(-XCLEAR,PASSTOX): accept & pass to link Unk Fac/Utilities
+ ::	Virtual PAD Options
+  CLGADR(-NUIADR,HOSTADR)	: Use Host # or 7+node # for calling adr
+  PADFORWARD(126,0)		: X.3 Para 3, Tymsat=All CTL chara,Tymcom=none
+  PADIDLETIMER(100,16)		: X.3 Para 4, Tymsat=5 sec,Tymcom=800ms
+  PADBREAK(21)			: X.3 Para 7, options 1+4+16
+  PADOPTIONS(-NR13,-NR14)	: X.3 Para's 13 & 14 will be sent to Link
+  PADNATIONAL(00,-NOPASS)	: Nat Options Marker = 0000, pass Nat X.29 
+				: parameters to link
+  ECHOABLE(07-0D,20-7E)		: If in Deferred Echo send G^-M^, & Printables
+: TELENET()			: Not used
+: DATAPAC()			: Not used
+::	Log Report Statements
+  LOGREPORTS(ON,10-39,80-0AA)	: Turn on all Error Log Msgs
+
+
+:************************************************************************
+::: ::	Link Level Statements for Link  - Comp. Sci. Corp. CSC
+:************************************************************************
+
+LINKS(9)
+:	Frame Level Statements
+  PSADR(03,01)		:Primary/Secondary Addresses
+  K(7)			: Frame Window
+  N2(10)		: Number of times frame will be re-xmitted
+  T1(30)		: Time between re-xmit of frames in 1/10 of sec's
+  ILRRC(30)		: Send RR cmd every 30 sec's of idleline
+  FRMOPT(-FM128)	: Frame sequencing modulus 8
+::	Packet Level Statements
+  TCNL(1,128)		: Two-way logical channel numbering
+::  T11(90)		: Incomming call request timer = 90 sec's
+  ODNIC(3119,3106,4263,3503): 31nn is Transit Net DNIC, also serve others
+  CHKCLG(3119003607)	: Check Calling Adr to see if call is from CSC
+  CLDADR(3119903607)	: Called addr to be used in CLRQ pkt to the host
+  CUDSTRING()		: Send protocol ID to the host.
+  CLDADL(4)		: Verify DNIC in call accept packet
+::  NETUSERNAMEPREFIX(trt.): Build circuit with trt.<dnic> to group 19 & nn
+  PKTOPT(TKSUP,IPRNR): Top-down LCN selection, allow called adr of 3106
+  			: Do NOT send RNR's let the packet window close
+::	Optional User Utilities
+  PWIND(2,2,-NEGOTIATION)	: Default packet w/s of 2, accept Utility
+				: code 43
+  PSIZE(128,128,-NEGOTIATION)	: Default packet size 128, accept Utility
+				: code 42
+  MAXPSIZE(256,256)		: Maximum packet size acceptable is 256
+  TCLASS(7,7,-NEGOTIATION)	: Max throughput class is 7/1200, process
+				: Utility code 02
+::TCTOPW(0,0,1,1,1,1,2,3,6,7,7,7): Spt Throughput Class to WS mapping
+  CHARGE(-CPT,-RCX,-RCNA,-CPNA,-RCNS,+XCLEAR): Reverse Charge specs
+  FASTSELECT(-SUBSCRIPTION,-ACCEPTANCE): Do NOT Allow FastSelect Fm/To Link
+  RPOA(-PASSTOX)		: Strip RPOA facility fm incoming call
+::  CALLID(CIDCHECK)		: Clear if utility code 81 is missing
+  NATIONAL(-XCLEAR,PASSTOX)	: accept and pass to link Nat Fac/Utilties
+  UNKNOWNFACILITY(-XCLEAR,PASSTOX): accept & pass to link Unk Fac/Utilities
+ ::	Virtual PAD Options
+  CLGADR(-NUIADR,HOSTADR)	: Use Host # or 7+node # for calling adr
+  PADFORWARD(126,0)		: X.3 Para 3, Tymsat=All CTL chara,Tymcom=none
+  PADIDLETIMER(100,16)		: X.3 Para 4, Tymsat=5 sec,Tymcom=800ms
+  PADBREAK(21)			: X.3 Para 7, options 1+4+16
+  PADOPTIONS(-NR13,-NR14)	: X.3 Para's 13 & 14 will be sent to Link
+  PADNATIONAL(00,-NOPASS)	: Nat Options Marker = 0000, pass Nat X.29 
+				: parameters to link
+  ECHOABLE(07-0D,20-7E)		: If in Deferred Echo send G^-M^, & Printables
+: TELENET()			: Not used
+: DATAPAC()			: Not used
+::	Log Report Statements
+  LOGREPORTS(ON,10-39,80-0AA)	: Turn on all Error Log Msgs
+
+:************************************************************************
+::::	Link Level Statements for Link - G.E.
+:************************************************************************
+
+LINKS(10)
+:	Frame Level Statements
+  PSADR(03,01)		:Primary/Secondary Addresses
+  K(7)			: Frame Window
+  N2(10)		: Number of times frame will be re-xmitted
+  T20(180,3)		: T20 = 3 minutes w/ 3 re-tries
+  T22(180,3)		: T22 = 3 minutes w/ 3 re-tries
+  T23(180,3)		: T23 = 3 minutes w/ 3 re-tries
+  T1(20)		: Time between re-xmit of frames in 1/10 of sec's
+  ILRRC(30)		: Send RR cmd every 30 sec's of idleline
+  FRMOPT(-FM128)	: Frame sequencing modulus 8
+::	Packet Level Statements
+  TCNL(1,80)		: Two-way logical channel numbering
+::  T11(90)		: Incomming call request timer = 90 sec's
+  ODNIC(3119,3106,4263,3503): 3119 is Transit Net DNIC, also serve others
+  CHKCLG(3119)		: Check Calling Adr to see if call is from TRT
+  CLDADR(3136900)       :INSERT 3136900 AS THE CALLED ADD
+  CLDADL(4)		: Verify DNIC in call accept packet
+::  NETUSERNAMEPREFIX(trt.): Build circuit with trt.<dnic> to group 19 & nn
+  PKTOPT(TKSUP,IPRNR): Top-down LCN selection, allow called adr of 3106
+  			: Do NOT send RNR's let the packet window close
+::	Optional User Utilities
+  PWIND(2,2,-NEGOTIATION)	: Default packet w/s of 2, accept Utility
+				: code 43
+  PSIZE(128,128,-NEGOTIATION)	: Default packet size 128, accept Utility
+				: code 42
+  MAXPSIZE(256,256)		: Maximum packet size acceptable is 256
+  TCLASS(7,7,-NEGOTIATION)	: Max throughput class is 7/1200, process
+				: Utility code 02
+::TCTOPW(0,0,1,1,1,1,2,3,6,7,7,7): Spt Throughput Class to WS mapping
+  CHARGE(CPT,-RCX,-RCNA,-CPNA,-RCNS,+XCLEAR):Reverse Charge specs
+  FASTSELECT(-SUBSCRIPTION,-ACCEPTANCE): Do NOT Allow FastSelect Fm/To Link
+  RPOA(-PASSTOX)		: Strip RPOA facility fm incoming call
+::  CALLID(CIDCHECK)		: Clear if utility code 81 is missing
+  NATIONAL(-XCLEAR,PASSTOX)	: accept and pass to link Nat Fac/Utilties
+  UNKNOWNFACILITY(-XCLEAR,PASSTOX): accept & pass to link Unk Fac/Utilities
+ ::	Virtual PAD Options
+  CLGADR(-NUIADR,HOSTADR)	: Use Host # or 7+node # for calling adr
+  PADFORWARD(126,0)		: X.3 Para 3, Tymsat=All CTL chara,Tymcom=none
+  PADIDLETIMER(100,16)		: X.3 Para 4, Tymsat=5 sec,Tymcom=800ms
+  PADBREAK(21)			: X.3 Para 7, options 1+4+16
+  PADOPTIONS(-NR13,-NR14)	: X.3 Para's 13 & 14 will be sent to Link
+  PADNATIONAL(00,-NOPASS)	: Nat Options Marker = 0000, pass Nat X.29 
+				: parameters to link
+  ECHOABLE(07-0D,20-7E)		: If in Deferred Echo send G^-M^, & Printables
+: TELENET()			: Not used
+: DATAPAC()			: Not used
+::	Log Report Statements
+  LOGREPORTS(ON,10-39,80-0AA)	: Turn on all Error Log Msgs
+  @Cú
