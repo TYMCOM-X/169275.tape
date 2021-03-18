@@ -1,0 +1,705 @@
+
+
+	SEARCH	FORPRM
+	TV	FORINI	INITIALIZE FOROTS LOWSEG, 7(3260)
+	SUBTTL	/DAW/JLC/AHM/BL	18-Nov-82
+
+; Previous authors (before V6)
+;	D. TODD/DRT/HPW/DMN/MD/JNG/SWG/CAL
+
+;COPYRIGHT (C) DIGITAL EQUIPMENT CORPORATION 1981, 1983
+
+;THIS SOFTWARE IS FURNISHED UNDER A LICENSE AND MAY BE USED AND COPIED
+;ONLY  IN  ACCORDANCE  WITH  THE  TERMS  OF  SUCH LICENSE AND WITH THE
+;INCLUSION OF THE ABOVE COPYRIGHT NOTICE.  THIS SOFTWARE OR ANY  OTHER
+;COPIES THEREOF MAY NOT BE PROVIDED OR OTHERWISE MADE AVAILABLE TO ANY
+;OTHER PERSON.  NO TITLE TO AND OWNERSHIP OF THE  SOFTWARE  IS  HEREBY
+;TRANSFERRED.
+
+;THE INFORMATION IN THIS SOFTWARE IS SUBJECT TO CHANGE WITHOUT  NOTICE
+;AND  SHOULD  NOT  BE  CONSTRUED  AS A COMMITMENT BY DIGITAL EQUIPMENT
+;CORPORATION.
+
+;DIGITAL ASSUMES NO RESPONSIBILITY FOR THE USE OR RELIABILITY  OF  ITS
+;SOFTWARE ON EQUIPMENT WHICH IS NOT SUPPLIED BY DIGITAL.
+
+COMMENT \
+
+***** Begin Revision History *****
+
+***** Begin Version 6 *****
+
+1262	DAW	 9-Feb-81
+	Allow FORINI to run in a non-zero section. (Assumes
+	that all code is in the same section).
+
+1530	JLC	10-Jul-81
+	FOROTS becomes FOROT6.
+
+1623	DAW	21-Aug-81
+	Entry point RESET$ to test extended addressing in FOROTS.
+
+2005	JLC	15-Oct-81
+	Added REENTER code. Make DDT-20 understand symbol tables
+	at other than 400000.
+
+2007	JLC	16-Oct-81
+	Fixed temp stack to be larger for reenter code.
+
+2033	DAW	19-Nov-81
+	Fixed problems in REENTER code.
+
+***** Begin Version 7 *****
+
+3035	JLC	29-Jan-81
+	FOROT6 becomes FOROT7.
+
+3056	JLC	23-Mar-82
+	Rework lowseg/hiseg dispatch, save ACs in lowseg.
+
+3101	JLC	5-Apr-81
+	Modified lowseg/hiseg interface - address of user's ACs
+	are now passed in F instead of T1.
+
+3102	JLC	7-Apr-82
+	Fix OTS/NONSHAR, INIT call was going to 0. Slightly modify
+	passing of return address of RESET. - PDL is now in
+	the lowseg.
+
+3103	JLC	8-Apr-82
+	More minor changes to lowseg/hiseg interface. Stack setup
+	is now done totally in FORINI.
+
+3122	JLC	28-May-82
+	Change lowseg/hiseg interface again. Now uses 2-word entries.
+
+3123	JLC	29-May-82
+	Modified interface again to make it faster.
+
+3125	JLC	3-Jun-82
+	Moved AC save routine to hiseg again.
+
+3137	AHM	30-Jun-82
+	Development patches for running entirely in a non-zero section
+	for V8.  If .JBSA in  RESET.'s section contains 0,  synthesize
+	reasonable numbers to put in  JOBDAT for the current  section.
+	Do XGVEC% and XSVEC% to  save and restore the program's  entry
+	vector.  Set  up a  global  stack pointer  when running  in  a
+	non-zero section.  Don't pass the  address of AU.ACS to  INIT.
+	in F, since it isn't used any more.
+
+3156	AHM	21-Jul-82
+	Don't do XGVEC% and XSVEC% unless we are running in a non-zero
+	section so that we can run UNDER Tops-20 release 4.1 on a  KS.
+	Also, do private OPDEFs of  PDVOP%, XGVEC% and XSVEC% so  that
+	FORINI will assemble with release 4.1 MONSYM.
+
+3163	AHM	24-Aug-82
+	Make FAKJBD a little more paranoid about blamming the location
+	that 770001 references with a symbol table pointer by checking
+	770000 for  JRST  770002 ala  EXEC  and OVRLAY.   Use  section
+	defaulting in RPACS% calls.  Don't zero left half of .JBREN.
+
+3177	BL	14-Sep-82
+	Store DBMS entry vector at .JBBLT.
+
+3202	JLC	26-Oct-82
+	Install non-skip (error) return from CLOSF.
+
+3205	AHM	28-Oct-82
+	Add code under IF20 conditional to define %SRTAD (SORT's start
+	address) here, zero it upon restart, and toss the section that
+	SORT is in, if it owns its own section.
+
+3220	AHM	18-Nov-82
+	Replace non-zero section tests that depended upon the sign  of
+	the stack pointer  with a check  that uses XMOVEI  so that  we
+	know which section we are currently executing in.
+
+3231	JLC	14-Dec-82
+	RESET. becomes FOROK. for new DBMS interface.
+
+3235	AHM	16-Dec-82
+	Fix ACs for entry vector JSYS call around code to GET% FOROTS.
+
+3236	JLC	17-Dec-82
+	Move setup of FUNCT. in .JBBLT to FORMEM.
+
+3244	JLC	30-Dec-82
+	Moved setup of FUNCT. back into FORINI, as PORTAL is
+	almost inaccessible from hiseg. Changed the name of
+	DBSTP$ to a FOROTS entry, resolved by a file later
+	in FORLIB if DBMS program, resolved to dummy one if
+	no DBMS program.
+
+3245	JLC	4-Jan-82
+	Look at %DBSTP to determine whether to GETSEG FOROT7.EXE
+	or FDBOT7.EXE.
+
+3246	JLC	5-Jan-83
+	Put PORTAL back here.
+
+3252	JLC	12-Jan-83
+	Move KSORT to FORSRT.MAC.
+
+3253	JLC	13-Jan-83
+	Change %FRSNONSHARE to %FRSNS. Change %FRSLOAD to %FRSLO.
+	Fix CLSFIL to set up 'STOP!!' on stack to stop traceback loop.
+
+3254	CKS	13-Jan-83
+	Do not set up .JBHSO so that FOROTS symbols will not be seen by DDT
+	unless user explicitly requests them by setting up .JBHSO.
+
+3260	JLC	17-Jan-83
+	Make KSORT an EXTERN on the -10 so it will be drawn in to
+	get %SRTAD.
+
+***** End Revision History *****
+
+\
+REPEAT 0,<	;[SH] DON'T INCLUDE THIS BEFORE FINAL SCAN THRU FORLIB
+
+;THIS MODULE IS REACHED IF LINK DOES NOT DEFINE FOROT%, THAT IS, IF
+;WE ARE LOADING /OTS:NONSHARE OR WITH /SEARCH. THIS MODULE IS HERE
+;TO REMOVE ALL OTHER TRACES OF THE SYMBOL FOROT% FROM FOROTS.
+;IT DEFINES THE SWITCH %FRSNS, WHICH PREVENTS RESOLUTION
+;OF THE SYMBOL %FRSLO, WHICH IS AN ENTRY IN FOROTS.RLR IN FORLIB.
+
+	ENTRY	FOROT%
+
+	EXTERN	%FRSLO
+
+	INTERN	%FRSNS
+
+%FRSNS==0
+FOROT%==<EXP %FRSLO>
+
+
+	PRGEND
+
+	SEARCH	FORPRM
+	TV	FORSHR
+
+;THIS MODULE IS TO IMPLEMENT /DEFINE:%FRSNS AS A AN
+;EVENTUAL SUBSTITUTE FOR /OTS:NONSHARE, AND TO MAKE IT COEXIST
+;WITH FOROT%, WHICH IS DEFINED BY /OTS:SHARABLE.
+;SPECIFYING /DEFINE:%FRSNS BY ITSELF HAS A
+;PECULIARITY DUE TO LINK THINKING THAT THE PROGRAM
+;IS GOING TO USE SHARABLE FOROTS: IT MAKES EVERYTHING,
+;INCLUDING FOROTS, /SEG:LOW.
+
+	ENTRY	%FRSNS
+
+	INTERN	%FRSLO
+
+%FRSNS==0
+%FRSLO==0
+
+	PRGEND
+
+	SEARCH	FORPRM
+	TV	FORGET	GETSEG FOROTS
+> ;[SH] END REPEAT 0
+
+;[SH]	SEGMENT	CODE
+
+	EXTERN	%FRSLOAD,%DBSTP,KDBMS.,KSORT.
+	INTERN	CHRPT.
+
+	ENTRY	FOROT.,FOROT$,ERROR.
+
+ERROR.=FORER.
+
+IF20,<
+	OPDEF	XGVEC%	[JSYS 606] ;[3156] Get extended entry vector info
+	OPDEF	XSVEC%	[JSYS 607] ;[3156] Set extended entry vector info
+> ; End of IF20
+
+;RESET. WILL GETSEG FOROTS IF IT WAS NOT LOADED WITH THE PROGRAM.
+;THE SYMBOL %FRSLO IS USED TO DECIDE IF FOROTS HAS BEEN LOADED.
+;IF %FRSNS HAS NOT BEEN DEFINED, IT IS RESOLVED IN
+;FORSHR AS 0. IF %FRSNS HAS BEEN DEFINED, EITHER BY
+;THE LINK COMMAND STRING OR INDIRECTLY BY SPECIFYING /OTS:NONSHAR,
+;IT IS RESOLVED IN FOROTS.RLR AS THE DISPATCH TABLE ADDRESS
+;
+;CALL:
+;	JSP	16,RESET.
+;	 0			;ARG, IGNORED
+;
+;RETURNS WITH FOROTS PRESENT AND INITIALIZED.  SETS UP P.
+;CAN DESTROY ALL ACS
+
+IF10,<
+FOROT$:
+> ;END IF10
+FOROT.:	PORTAL	.+1		;ALLOW ENTRY FROM PUBLIC
+
+RESET0:	MOVE	T1,[JRST FUNCT.] ;SETUP JUMP TO FUNCT.
+	MOVEM	T1,.JBBLT	;WHERE DBMS CAN USE IT
+				;Another label (used by RESET$)
+	XMOVEI	P,INIPDL	;[3137] Set up a global stack
+	TLNN	P,-1		;[3137] Is there a section number ?
+	 MOVE	P,[IOWD LPDL,INIPDL] ;[3137] No, use a local stack
+
+	PUSH	P,['STOP!!']	;FLAG BOTTOM OF STACK FOR TRACEBACK
+	PUSH	P,L		;PUSH RETURN ADDR FROM JSP
+	MOVEM	0,U.ACS		;SAVE USER'S ACS
+	MOVSI	0,1
+	HRRI	0,U.ACS+1
+	BLT	0,U.ACS+17
+	SETZM	CHRPT.		;CLEAR THE CHAR STACK PNTR
+	PUSHJ	P,KDBMS.		;KILL PREVIOUS TRACES OF DBMS
+
+IF20,<
+	PUSHJ	P,KSORT.	;[3205] Get rid of SORT, if it is present
+
+	XMOVEI	T1,0		;[3220] See what section the ACs are in
+	JUMPE	T1,JOBOK	;[3220] Don't try to fake JOBDAT in section 0
+	SKIPN	.JBSA		;[3137] No JOBDAT?  If so, should have a PDV
+	 PUSHJ	P,FAKJBD	;[3137] Yes, fake up JOBDAT from PDV for V8
+
+JOBOK:	MOVEI	T1,.FHSLF	;[3137] Reference this fork
+	XMOVEI	T2,0		;[3220] See what section the ACs are in
+	JUMPE	T2,S0GVEC	;[3220] Do a GEVEC% if we are in section 0
+	XGVEC%			;[3137] Get entry vector length and address
+	JRST	S1GVEC		;[3156] Interpret the entry vector
+S0GVEC:	GEVEC%			;[3156] Get entry vector info using old call
+	HRRZ	T3,T2		;[3235] Put the address where XGVEC% puts it
+	HLRZ	T2,T2		;[3235] Put the length in the right half
+S1GVEC:	DMOVEM	T2,SAVET	;[3137] Save info - GET% wrecks it
+	CAIE	T2,(JRST)	;[3137] Real entry vector?
+	 CAIG	T2,1		;[3137] Yes, big enough?
+	  JRST	NOENTV		;No, just store address in .JBREN
+	SKIPN	T1,1(T3)	;[3137] Get reenter instruction
+	 MOVE	T1,[JRST EXICAL];USE OURS IF NONE
+	CAMN	T1,[JRST CLSFIL] ;Already setup? (Program re-started?)
+	 JRST	FOROK		;Yes, skip this.
+	TLNN	T1,-1		;ANY OPCODE?
+	 HRLI	T1,(JRST)	;NO. PUT IN A JRST
+	MOVEM	T1,USEREN	;TO EXECUTE AFTER %EXIT1
+	MOVE	T1,[JRST CLSFIL];USED TO CLOSE ALL FILES
+	MOVEM	T1,1(T3)	;[3137] When user types "@REENTER"
+>;END IF20
+
+NOENTV:	SKIPN	T1,.JBREN	;DOES USER HAVE .JBREN ADDR?
+	 MOVEI	T1,EXICAL	;NO. USE AN EXIT CALL
+	HRRZ	T2,T1		;Did we already do this?
+	CAIN	T2,CLSFIL
+	 JRST	FOROK		;Yes, don't do it again.
+	HRLI	T1,(JRST)	;MAKE IT A LOCAL INSTRUCTION
+	MOVEM	T1,USEREN	;TO EXECUTE AFTER %EXIT1
+	MOVEI	T1,CLSFIL	;[3137] Used to close all files
+	HRRM	T1,.JBREN	;[3137] When user types "REENTER"
+
+FOROK:	SKIPE	T1,FBASE	;FOROTS ALREADY GETED?
+	 JRST	FINIT		;YES. GO THERE
+	SKIPN	T1,[%FRSLOAD]	;NO. DOES IT WANT A HISEG?
+	 JRST	GOGET		;YES. GO AND GET IT
+	XMOVEI	T1,(T1)		;NO. GET IT'S EXTENDED ADDR
+	XMOVEI	T2,RBASE	;GET EXTENDED ADDR OF TABLE OFFSET
+	SUB	T1,T2		;SUBTRACT TABLE OFFSET
+	MOVEM	T1,FBASE	;SAVE IT
+	JRST	FINIT		;AND GO THERE
+
+GOGET:
+IF10,<
+	JS.XO==2000		;JBTSTS BIT, JOB IS EXECUTE ONLY
+
+	HRROI	T1,.GTSTS	;GET JOB STATUS
+	GETTAB	T1,
+	  SETZ	T1,		;CAN'T, ASSUME NOT EXECUTE ONLY
+	TRNN	T1,JS.XO	;EXECUTE ONLY?
+	  TDZA	T2,T2		;NO
+	MOVEI	T2,UU.PHY	;YES, SET FOR PHYS-ONLY GETSEG
+
+	MOVE	T1,%DBSTP	;GET INSTRUCTION AT DBSTP$
+	CAMN	T1,[POPJ P,]	;IS IT THE "REAL" DBSTP$?
+	 JRST	GFOROT		;NO. JUST GET FOROTS
+
+	MOVEI	T1,['SYS   '	;YES. GET FDBOTS INSTEAD
+		    'FDBOT7'
+		    EXP 0,0,0,0]
+	JRST	DOGETS		;GO DO GETSEG
+
+GFOROT:	MOVEI	T1,['SYS   '	;GETSEG FOROTS
+		    'FOR227'
+		    EXP 0,0,0,0]
+
+DOGETS:	GETSEG	T1,(T2)
+	  HALT			;FAILED, TYPE MONITOR ERROR MESSAGE
+
+	MOVE	P,U.ACS+P	;GETSEG WRECKED P, GET IT BACK
+
+	MOVE	T1,[-2,,.GTUPM]	;GET BASE ADDRESS OF HIGH SEG (FOROTS)
+	GETTAB	T1,
+	 $FCALL	SNH,EXICAL	;CAN'T FAIL
+	HLRZ	T1,T1		;PUT IN RIGHT HALF
+	TRZ	T1,777		;CLEAR EXTRA BITS
+	TRO	T1,10		;START ADDRESS IS XXX010
+	SUBI	T1,RBASE	;SUBTRACT TABLE OFFSET
+	MOVEM	T1,FBASE	;STORE FOR LATER
+
+	JRST	FINIT		;START UP FOROTS
+> ;IF10
+IF20,<
+	MOVX	T1,RF%LNG+.FHSLF ;FUNNY CALL,,THIS FORK
+	MOVEI	T2,STBLK	;POINT TO FORK STATUS BLOCK
+	RFSTS%			;READ FORK STATUS
+	SKIPL	STBLK+.RFSFL	;SEE IF WE ARE EXECUTE ONLY
+	  SKIPA	T1,[GJ%SHT+GJ%OLD] ;NO, SET UP FOR REGULAR GTJFN
+	MOVX	T1,GJ%SHT+GJ%OLD+GJ%PHY	;YES, SET UP FOR PHYSICAL-ONLY GTJFN
+	HRROI	T2,[ASCIZ /SYS:FOR227.EXE/]
+	GTJFN%
+	  ERJMP	RERR
+
+	HRLI	T1,.FHSLF	;THIS FORK
+	TRO	T1,GT%NOV	;ERROR IF PAGES ALREADY EXIST
+	XMOVEI	T2,GARGBL	;Point to GET arg block
+	TLNE	T2,-1		; Needed?
+	 PUSHJ	P,GTFRS1	;SETUP FOR SECTION 1 GET%
+	GET%			;GET FOROTS
+	  ERJMP	RERR
+
+	MOVEI	T1,.FHSLF	;THIS FORK
+	GEVEC%			;GET FOROTS ENTRY VECTOR
+
+	HRRZI	T2,(T2)		;LOCAL ADDR ONLY
+	HRRZ	T1,(T2)		;GET "START" ADDRESS
+	XMOVEI	T3,(T1)		;GET EXTENDED ADDR
+	XMOVEI	T4,RBASE	;GET EXTENDED ADDR OF TABLE OFFSET
+	SUB	T3,T4		;SUBTRACT TABLE OFFSET
+	MOVEM	T3,FBASE	;SAVE BASE ADDRESS OF DISPATCH VECTOR
+	HLRZ	T2,.JBHRN-.JBHDA(T1) ;ADD HIGH SEGMENT LENGTH
+	ADDI	T2,-.JBHDA-1(T1) ;TO HISEG ORIGIN-1
+	HLL	T2,.JBHRN-.JBHDA(T1) ;MAKE .JBHRL LOOK LIKE ON THE -10
+	SKIPN	.JBHRL		;AND IF THE USER DIDN'T HAVE ONE
+	 MOVEM	T2,.JBHRL	;SAVE FOR DDT
+
+IFN 0,<				;[3254] USE THIS FOR DEBUGGING; REMOVED FOR
+				;[3254] PRODUCTION
+	XMOVEI	T1,(T1)		;GET EXTENDED ADDR
+	LSH	T1,-9		;CREATE PAGE ADDR
+	SKIPN	.JBHSO		;AND IF THE USER DOESN'T HAVE ONE
+	 MOVEM	T1,.JBHSO	;SAVE THE FOROTS HIGH SEG ORIGIN FOR DDT
+> ;IFN
+
+	MOVEI	T1,.FHSLF	;THIS FORK
+	DMOVE	T2,SAVET	;[3137] Put real entry vector back
+	XMOVEI	T4,0		;[3220] See what section the ACs are in
+	JUMPE	T4,S0SVEC	;[3220] Do a SEVEC% if we are in section 0
+	XSVEC%			; SO ^C, START WORKS
+	JRST	FINIT		;GO DO FOROTS INITIALIZATION
+
+S0SVEC:	HRLZ	T2,T2		;[3235] Put the size in the left half
+	HRR	T2,T3		;[3235] Put the address in the right half
+	SEVEC%			;[3156] Set the entry vector with an old call
+	JRST	FINIT		;[3156] Go do FOROTS initialization
+
+;Definitions in R5 MONSYM
+GT%ARG==1B22			;Arg block supplied for GET
+GT%BAS==1B2			;BASE-address word supplied in arg block
+
+;Call here to do setup for GET% into section 1 only
+GTFRS1:	HLRZM	T2,GARGBL+3	;Save section number to GET into
+	MOVX	T3,GT%BAS	;Tell monitor which word to use
+	MOVEM	T3,GARGBL
+	TXO	T1,GT%ARG	;Remember we have an arg block
+	POPJ	P,		;Back to main code
+
+RERR:	HRROI	T1,RERRBF	;POINT TO MESSAGE BUFFER
+	HRLOI	T2,.FHSLF	;THIS FORK,,LAST ERROR
+	MOVSI	T3,-^D80	;LIMIT OF 80 CHARS
+	ERSTR%			;GET ERROR STRING
+	 JRST	[HRROI T1,[ASCIZ /Undefined error number/]
+		 JRST RQUIT]
+	  SKIPA	T1,[-1,,[ASCIZ /Error in ERSTR/]]
+	HRROI	T1,RERRBF
+
+RQUIT:	MOVEM	T1,SAVET	;SAVE T1 FOR A WHILE
+	HRROI	T1,[ASCIZ /Can't get FOR227.EXE/]
+	ESOUT%			;TYPE EXPLANATION
+	MOVE	T1,SAVET	;GET POINTER BACK
+	ESOUT%			;TYPE ERROR STRING
+	HALTF%			;QUIT AND DON'T CONTINUE
+	JRST	.-1
+> ;IF20
+
+FINIT:	XMOVEI	D,%DBSTP 	;PASS ADDRESS OF DBSTP$ OR POPJ P,
+	JRST	INIT.
+
+CLSFIL:
+
+IF10,<
+	OUTSTR	CLSMSG		;GIVE USER A MSG
+	INCHWL	T1		;GET THE FIRST CHAR
+	CLRBFI			;CLEAR TYPE-AHEADS
+>;END IF10
+
+IF20,<
+	MOVE	T1,[POINT 7,CLSMSG] ;GIVE USER A MSG
+	PSOUT%
+	MOVE	T1,[TXIBLB,,TXIBLK] ;Copy args to TXIBLK
+	BLT	T1,TXIBLK+.TXLEN-1
+	XMOVEI	T1,TXIBLK	;SETUP FOR TEXTI
+	TEXTI%
+	 JFCL			;?Failed
+
+;Clear input buffer.
+
+	MOVEI	T1,.PRIIN	;Get terminal designator
+	CFIBF%			;Clear input buffer
+	 ERJMP	.+1		;Ignore error
+
+	LDB	T1,[POINT 7,YESWRD,6] ;GET THE 1ST CHAR
+>;END IF20
+
+;Here with first char of response in T1.
+
+	CAIE	T1,"Y"		;IS IT YES
+	 CAIN	T1,"y"
+	  JRST	DOCLS		;YES, IT'S YES
+	JRST	NDOCLS		;NO. IT'S NOT
+
+DOCLS:	MOVE	P,[IOWD LPDL,INIPDL] ;SET UP STACK
+	PUSH	P,['STOP!!']	;FLAG BOTTOM OF STACK FOR TRACEBACK
+	XMOVEI	L,[1+[EXP 0,0]]	;NULL ARGS
+	PUSHJ	P,EXIT1.	;CLOSE ALL FILES
+NDOCLS:	XCT	USEREN		;EXECUTE REENTER INST
+
+IF20,<
+EXICAL:	MOVNI	T1,1		;CLOSE ALL OTHER FILES
+	CLOSF%
+	 $FCALL	IOE		;REPORT WHATEVER ERROR IT IS
+	HALTF%			;STOP FOROTS
+	JRST	.-1		;AND STAY THAT WAY
+>
+
+IF10,<
+EXICAL:	EXIT			;HALT FOROTS
+>
+
+IF20,<
+TXIBLB:	4			;LENGTH FOLLOWING
+	RD%TOP!RD%JFN		;STOP ON TOPS-10 STYLE CODES
+	.PRIIN,,.PRIOU		;INPUT,,OUTPUT
+	POINT 7,YESWRD		;THE ANSWER POINTER
+	5			;5 BYTES MAX
+.TXLEN==.-TXIBLB		;Length of block
+
+TXIBLK:	BLOCK	.TXLEN		;Real TEXTI block.
+>;END IF20
+
+CLSMSG:	ASCIZ /Do you want to close all files? (Y or N):/
+
+
+
+;DISPATCH VECTOR.  JUMP TO APPROPRIATE PLACE IN FOROTS DISPATCH VECTOR
+
+DEFINE	Y (E) <
+IFDIF <E>,<FUNCT>,<	ENTRY	E'.>	;;[SH]
+IFIDN <E>,<FUNCT>,<	INTERN	E'.>	;;[SH]
+	SIXBIT	/E'./
+E'.:	PUSHJ	P,RDISP
+>
+
+DEFINE	X (E) <
+IFDIF <E>,<FUNCT>,<	ENTRY	E'.>	;;[SH]
+IFIDN <E>,<FUNCT>,<	INTERN	E'.>	;;[SH]
+	SIXBIT	/E'./
+E'.:	PUSHJ	P,RDISP
+>
+
+	XALL
+RVEC:	FORVEC
+	SALL
+
+RBASE==RVEC+1			;LOCAL RETURN PC-1 ON CALL FROM 1ST ENTRY
+
+;THE FOLLOWING LOWSEG/HISEG INTERFACE ALLOWS FORDSP TO BE IN
+;A DIFFERENT SECTION THAN FOROTS. FBASE IS THE ENTRY VECTOR
+;ADDRESS, MINUS THE OFFSET OF THE TRANSFER VECTOR TABLE (RVEC).
+;RDISP JUST DOES A JUMP TO FOROTS, WITHOUT SAVING ANY AC'S.
+;IT IS EXPECTED THAT EITHER THE AC'S ARE STORED SEPARATELY (E.G. INIT)
+;OR STORED BY THE HISEG ENTRY POINT
+RDISP:	EXCH	0,(P)		;GET RETURN ADDR, SAVE 0
+	ADD	0,FBASE		;RELOCATE TO FOROTS ENTRY POINT
+	EXCH	0,(P)		;GET 0 BACK, SAVE ENTRY POINT
+	POPJ	P,		;GO TO IT
+
+
+	SUBTTL	RESET$ - MAP SECTION 0 AND 1 TOGETHER
+
+;This is a temporary entry point to test extended addressing FOROTS
+;RESET$ maps sections 0 and 1 together, then returns to RESET0
+
+IF20,<
+FOROT$:	PORTAL	.+1		;Allow call from public page
+	SKIPE	FBASE		;WAS FOROTS GOTTEN ALREADY?
+	 JRST	RESET0		;YES. NOTHING TO DO
+	DMOVEM	0,U.ACS	;Save a few acs
+	DMOVEM	2,U.ACS+2
+
+	SETZ	T1,		;Create private section
+	MOVE	T2,[.FHSLF,,1]	;Section 1
+	MOVX	T3,PM%RD!PM%WR+1 ;Read Write and one section
+	SMAP%			;** Create section 1 **
+	 ERJMP	NOSC1		;Can't
+
+	MOVE	T1,[.FHSLF,,0]	;Want to map section 0
+	MOVE	T2,[.FHSLF,,1000] ;Into other section
+	SKIPE	[%FRSLOAD]	;Is FOROTS loaded?
+	 JRST	RSTFLD		;Yes
+
+	MOVX	T3,PM%RWX!PM%CNT+400 ;All lowseg
+	PMAP%			;Make the two sections the same
+	 ERJMP	CNTMP1		;Can't map pages to section 1
+	MOVE	T1,[.FHSLF,,765] ;Also copy DDT if present
+	MOVE	T2,[.FHSLF,,1765]
+	MOVX	T3,PM%RWX!PM%CNT+13
+	PMAP%
+	 ERJMP	CNTMP1
+
+	XJRSTF	[EXP 0,<1,,.+1>] ;Enter extended addressing
+	JRST	RSTGO		;Go do FOROTS initialization
+
+NOSC1:	HRROI	T1,[ASCIZ/?FRSNS1 Can't put myself in section 1, reason:
+ Can't create section 1 with SMAP%
+/]
+	PSOUT%
+	JRST	RSTGO		;Go anyway
+
+CNTMP1:	HRROI	T1,[ASCIZ/?FRSCM1 Can't put myself in section 1, reason:
+ Can't PMAP section 0 to section 1
+/]
+	PSOUT%
+	JRST	RSTGO		;Go do regular RESET.
+
+;HERE IF FOROTS LOADED AND WE WANT TO GO TO SECTION 1.
+;Setup T3 for PMAP% and do it.
+
+RSTFLD:	MOVX	T3,PM%RWX!PM%CNT+1000 ; The whole section
+	PMAP%
+	 ERJMP	CNTMP1
+	XJRSTF	[EXP 0,<1,,.+1>] ;Enter extended addressing
+;	JRST	RSTGO		;Go do FOROTS initialization
+
+
+RSTGO:	DMOVE	0,U.ACS		;Restore acs
+	DMOVE	2,U.ACS+2
+	XMOVEI	16,(16)		;Get section # in LH(16)
+	JRST	RESET0		;Entry at RESET0
+>;END IF20
+	SUBTTL	FAKJBD - Fake up a JOBDAT from the PDV
+
+; This is  a temporary  subroutine used  to test  extended  addressing
+; FOROTS.  If we are  running entirely in section  1 because LINK  has
+; loaded us  there directly,  then there  is no  JOBDAT area.   During
+; extended addressing development it should be sufficient to read  the
+; data from the  PDV and  store it  into the  locations 1,,20  through
+; 1,,137 that have been  deliberately left alone to  leave room for  a
+; JOBDAT by setting the .CODE. psect origin to 1,,140.
+
+; Added by edit 3137
+
+IF20,<
+	OPDEF	PDVOP%	[JSYS 603] ;[3156] Manipulates program data vectors
+
+;[3156] PDVOP% function codes accepted in AC1
+	.POGET==0		;[3156] Get a set of PDVAs
+				; (Program Data Vector addresses)
+;[3156] Arg block offsets for block addressed by AC2
+	.PODAT==3		;[3156] Address of data block
+
+;[3156] Offsets defined within program dactors
+	.PVSTR==2		;[3156] Program starting address
+	.PVREE==3		;[3156] Program reenter address
+	.PVVER==4		;[3156] Program version number
+	.PVMEM==5		;[3156] Address of a block describing
+				;[3156]  program memory
+	.PVSYM==6		;[3156] Address of the program symbol table
+
+FAKJBD:	XMOVEI	T1,PDVA		;Get global address of word to get PDVA
+	MOVEM	T1,PDVARG+.PODAT ;Store in arg block
+	MOVX	T1,.POGET	;Function to get the address of the PDV
+	XMOVEI	T2,PDVARG	;Point to the argument block
+	PDVOP%			;Get the PDV's address
+	 ERJMP	PDVPNT		;Can't, return
+	MOVE	P1,PDVA		;Put the address in a handy place
+
+	MOVE	T1,.PVSTR(P1)	;Get the starting address
+	HRRZM	T1,.JBSA	;Store in section local format
+	MOVE	T1,.PVREE(P1)	;Get the reenter address
+	HRRM	T1,.JBREN	;[3163] Store it in section local format
+	MOVE	T1,.PVVER(P1)	;Get the version number
+	MOVEM	T1,.JBVER	;Store it
+
+	MOVE	P2,.PVSYM(P1)	;Get symbol table pointer
+	MOVEM	P2,.JBSYM	;Save it away.  (Should be 30 bit address, but
+				; LINK sets it to be an IOWD and DDT needs the
+				; count anyhow)
+	MOVX	T1,<.FHSLF,,770> ;[3163] Our fork,,page 770 in this section
+	RPACS%			;Get the page info
+	 ERJMP	MEMIN		;Don't bother if it isn't there
+	TXNN	T2,PA%PEX	;Does the page exist ?
+	 JRST	MEMIN		;[3163] No, don't store into page
+	MOVE	T1,770000	;[3163] Get first instruction in DDT (maybe)
+	CAMN	T1,[JRST 770002] ;[3163] Look familiar ?
+	 MOVEM	P2,@770001	;Yes, give symbol table pointer to DDT
+
+; Use the memory map  pointed to by .PVMEM  instead of this code  when
+; LINK puts something in it.
+
+; Rewritten to take advantage of section defaulting by edit 3163.
+
+MEMIN:	MOVEI	P2,764		;Lowest page DDT could touch
+MEMLP:	MOVE	T1,P2		;Get the page number
+	HRLI	T1,.FHSLF	;Read our fork's page map
+	RPACS%			; from the monitor
+	 ERJMP	MEMDEF
+	TXNE	T2,PA%PEX	;Does the page exist ?
+	 AOJA	P2,MEMXIT	;Yes, we have found the last used page
+	CAIE	P2,300		;Are we at local page 300 ?
+	 SOJA	P2,MEMLP	;No, try the next page
+MEMDEF:	SKIPA	P2,[400000]	;Failed - assume .DATA. stops at 400000
+MEMXIT:	 LSH	P2,^D9		;Convert back into address
+	HRLM	P2,.JBSA	;Store initial first free location
+	HRRM	P2,.JBFF	;Store first free location
+	SOJ	P2,		;Before that is verboten
+	HRRZM	P2,.JBREL	;Set lowseg lower bound
+PDVPNT:	POPJ	P,
+
+>;END IF20
+
+
+;[SH]	SEGMENT	DATA
+
+CHRPT.:	BLOCK	1		;CHARACTER STACK PNTR
+FBASE:	BLOCK	1		;FOROTS BASE ADDR MINUS TABLE OFFSET
+SRETAD:	BLOCK	1		;RETURN ADDR OF CALL TO SDISP
+U.ACS:	BLOCK	20		;USER ACS
+INIPDL:	BLOCK	LPDL		;FOR NOW THE PERM PDL
+USEREN:	BLOCK	1		;USER REENTER ADDR
+YESWRD:	BLOCK	1		;WORD FOR USER RESPONSE
+
+IF20,<
+
+STBLK:	5			;LENGTH OF RFSTS BLOCK
+	BLOCK	4		;RFSTS BLOCK
+GARGBL:	BLOCK	4		;"GET" arg block
+
+RERRBF: BLOCK	^D80/5		;BUFFER FOR ERROR MESSAGE
+SAVET:	BLOCK	2		;[3137] Random temp (no stack yet)
+
+PDVARG:	EXP	PDVLEN		;[3137] Length of the block
+	EXP	.FHSLF		;[3137] This process
+	EXP	PDVALN		;[3137] Data block length
+	BLOCK	1		;[3137] Address of associated data block (PDVA)
+	PDVLEN==.-PDVARG	;[3137] Length of this block
+				;[3137] 
+PDVA:	BLOCK	1		;[3137] Gets address of PDV
+	PDVALN==.-PDVA		;[3137] Length of this block
+
+> ;END IF20
+
+	END
+    *@ ÷
