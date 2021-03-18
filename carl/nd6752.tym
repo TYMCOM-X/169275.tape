@@ -1,0 +1,52 @@
+:*************************************************************************
+:***************** T-II SWITCHER - LEVEL _  ******************************
+:NOTE: TYM-II .TYM FILE NEIGHBOR LISTINGS DO NOT REPRESENT PHYSICAL
+:PORT ORDER. DO SYNPRT (PROBE) FOR PHYSICAL PORT LOCATION.
+:*************************************************************************
+
+:       T-II NODE DESCRIPTOR                    ND6752
+:       VERSION: 5.22                           30-OCT-89  KJH 
+:       MEMORY:  1024 SEMI                      LOCATION: VERNON, CA.
+:       ORDER #: 53189W.LA   
+:       LOAD DATE: 01-NOV-89         SITE ID 6773           NEW PSM
+
+        RA      8
+
+MACHNM  EQ      6752            :NODE NUMBER
+HST0    EQ      $A 5030         :HOST NUMBER
+MICRO   EQ      2               :MICROCODE LEVEL (SYNC ENHANCED)
+MEMRMK  EQ      1
+NBRK    EQ      $A 1024
+M.DA0   EQ      $0 80
+M.NP0   EQ      $A 8
+:# OF DAUGHTER CARDS INSTALLED  : _   V.24  CARDS INSTALLED (_ PORTS EACH)
+:                               : _   V.35  CARDS INSTALLED (_ PORTS EACH)
+:                               : 1   OCL   CARDS INSTALLED (8 PORTS EACH)
+:                               : _   SYNC  CARDS INSTALLED (_ PORTS EACH)
+:                               : _   ASYNC CARDS INSTALLED (_ PORTS EACH)
+:                               : _   SIO ASYNC CARDS INSTALLED (_ PORTS)
+NPTHR   EQ      $A 2048
+LBOOT   EQ      1
+ZITEL   EQ      1
+NETID   EQ      1
+EXPWSZ  EQ      0
+SIBFRL  EQ      0
+MACHIN  EQ      1
+REBTST  EQ      1
+NLINES  EQ      $A 6
+P1SIZE  EQ      $0 800
+PHSIZE  EQ      $0 400
+
+        TIILNK(6751,8,8,,MS)
+        TIILNK(6750,8,8,,MS)
+        TIILNK(6740,8,8,,MS)
+        TIILNK(6736,8,8,,MS)
+        TIILNK(6571,8,8,,MS)
+        TIILNK(6572,8,8,,MS)
+        TIILNK(5576,8,8,,MS)
+        TIILNK(5212,8,12)       : 14.4
+        TIILNK(6034,8,8)
+        TIILNK(4231,8,8)
+        TIILNK(2710,8,12)  : 14.4
+        TIILNK(5316,8,8)
+        TIILNK(6450,8,8)
