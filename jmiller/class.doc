@@ -1,0 +1,1107 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      TYMNET ACCESS CONTROL
+
+
+ The description and definition of the major Classes and Groups
+        used on Public TYMNET to Control Network Access.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+McDonnell Douglas Corporation CONFIDENTIAL:  TYMNET's proprietary
+rights are  included  in  the  information  disclosed  herin. The
+recipient, by receiving this document, agrees  that  neither this
+document  nor  the  information  disclosed  herein  nor  any part
+thereof shall be  reproduced  or transfered to other documents or
+used  or  disclosed  to   others   for   any  purpose  except  as
+specifically authorized  in  writing  by  TYMNET  Validations  or
+TYMNET International Network Services.
+
+
+
+
+
+
+Author:  Steve White,  International  Network  Services  (INS) in
+cooperation with TYMNET Validations.
+
+Last Update: July 10, 1989
+
+
+
+
+
+
+
+
+
+
+
+
+                          Contents
+
+
+        1  WHAT IS A CLASS?  . . . . . . . . . . . . . . . 3
+        2  WHY DO WE NEED CLASSES?   . . . . . . . . . . . 3
+        3  HOW ARE CLASSES DEFINED?  . . . . . . . . . . . 3
+        4  USERNAME PROFILES . . . . . . . . . . . . . . . 4
+        5  STANDARD USERNAME PROFILES  . . . . . . . . . . 4
+        6  GROUPS  . . . . . . . . . . . . . . . . . . . . 5
+        7  CLASS DESCRIPTIONS  . . . . . . . . . . . . . . 7
+        8  DEFINITION OF CLASSES . . . . . . . . . . . .  11
+           8.1  CHANGES TO DEFINITIONS   . . . . . . . .  12
+        9  COMPARING ACCESS CHARGES  . . . . . . . . . .  13
+
+     Appendix A  CLASS TITLES                             15
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                i
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               ii
+
+
+
+
+
+
+
+
+
+
+
+
+                           Tables
+
+
+     Table 1: Comparison of rates by location  . . . . . .14
+     Table 2: Reasons for which the major Classes exist  .14
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               iii
+
+
+
+
+
+
+
+
+
+
+
+
+                         TYMNET CLASSES
+
+
+1  WHAT IS A CLASS?
+
+
+A Class defines a set of nodes and/or hosts in a TYMNET network.
+A TYMNET network Supervisor may use defined Classes when checking
+that  a  username's  logon  request  may originate from  a  given
+location.
+
+
+2  WHY DO WE NEED CLASSES?
+
+
+There are four reasons why it may be desirable to define a Class.
+
+    -  Pricing Structure and accounting
+
+    -  Security, both for the Network(s) and our subscribers.
+
+    -  Legal (regulatory) requirements.
+
+    -  Administrative convenience
+
+
+3  HOW ARE CLASSES DEFINED?
+
+
+Classes are  defined through NETVAL and reside as data structures
+on the network Supervisor(s).
+
+NETVAL allows Classes to be composed from one or more CATEGORIES.
+A category contains a list of nodes or hosts and is identified by
+a  short  mnemonic.   Node categories  can  be  mixed  with  host
+categories  when  a  Class is defined.  A category may be used in
+different class definitions as required.
+
+Classes that  allow  access  from  the  component  categories are
+called INCLUSION Classes.
+
+It is sometimes more expedient  to define an EXCLUSION Class that
+will  allow  access   from  everywhere  EXCLUDING  the  locations
+specified in the component categories.  Class 4 is an  example of
+an EXCLUSION class.
+
+
+
+
+                              - 3 -
+
+
+
+
+
+
+On  Public  Tymnet,  the  Validations  group  is  responsible for
+maintaining the Class tables through NETVAL.    Validations works
+closely with other groups when planning Class table changes.
+
+
+4  USERNAME PROFILES
+
+
+Usernames  have  a  profile in the Master  User  Directory  (MUD)
+which,  among  other  things, limits from where a user may access
+the network and to  where  they may call. The profile may custom-
+define a set origination points or may use  one  or  more  of the
+predefined Classes.
+
+There  are limits on the complexity of  a  username  profile.  An
+access position can have a maximum of six  entries  defining both
+the origination and destinations allowed.  Each username may have
+at  most 10 access positions.  These  limits  rarely  create  any
+difficulty.
+
+The order in which the access positions of a username are defined
+is important: the Supervisor will always try to  satisfy  a logon
+request  using  access  positions  in  order  (top  to bottom  as
+displayed  by  VALINFO).  A   customer   with   two  hosts  in  a
+primary/backup configuration requesting access from two different
+Class locations would have usernames requiring 4 access positions
+(2x2=4).
+
+
+5  STANDARD USERNAME PROFILES
+
+
+The following shows the Classes of access issued as standard with
+particular types of usernames.
+
+    o  DEFAULT:  Class 4.
+
+    o  OUTBOUND USERNAMES:  Class 35.  Class 69 may be added with
+       the prior permission of International Network Services.
+
+    o  PUBLIC ASYNC OUTDIAL: Class  35,  36, 67 and 28.  Group 44
+       is the standard set of destination hosts.
+
+    o  X.121 ADDRESSES OF THE "9" FORMAT: Class 1 and Class 36.
+
+       All Digits after the DNIC form a numeric username (Network
+       User Number)
+
+
+
+
+
+
+
+
+                              - 4 -
+
+
+
+
+
+
+6  GROUPS
+
+
+In  a  similar  fashion to the way  a  CLASS  defines  a  set  of
+origination points (nodes or hosts), a GROUP defines a    set  of
+destination points (hosts).
+
+The username  profile uses GROUPS to efficiently describe the set
+of  allowed  destinations  for the username.   Defining  a  group
+simplifies username management, especially where the set of hosts
+is large and constantly changing.
+
+     NOTE: It is a  misconception  that  a TYMNET Supervisor will
+     consider ALL members of a GROUP when selecting a destination
+     for  a  user  which  did  not (or cannot) specify their  own
+     choice of host by using the "colon option".
+
+     Currently, the Supervisor will select from the last fourteen
+     (14)  hosts  of  the  GROUP  as  it  is   defined   in  that
+     Supervisor's  GROUP tables.  Only if NONE  of  the  last  14
+     members of  the  group  are  available  will  the Supervisor
+     examine the next batch of up to 14 hosts from the  bottom of
+     the  GROUP.    Among  the  subset chosen, the  selection  of
+     destination is based upon  host  status  and least cost path
+     calculations.   For this reason, GROUPs are of limited value
+     in load balancing between hosts.
+
+
+The following describes the main Groups used by the TYMNET public
+network:-
+
+GROUP     DESCRIPTION
+
+0         All hosts in the network.
+
+2         TYMSHARE hosts.
+
+19        Hosts that require access with X.121  addresses  of the
+          format  3106+0+hhhhh+ssss.    All  X.75  gateways  have
+          group 19  access.  X.25 hosts that request public X.121
+          access may also have group 19 access (add  group  19 to
+          the x25hhhhh username).
+
+          This "0" format  will  be  implemented  by  a different
+          mechanism  with  the  upcoming  TYMNET Numbering Plan 2
+          (TNP2) enhancements to  the TYMNET numbering plan. TNP2
+          will  make  the  current  use  of  Group  19  obsolete.
+          However, Group 19 will continue to exist  until further
+          announcement.
+
+37        A special group which  enables  the  user to access the
+          Supervisor's Target Profile  table.  The Target Profile
+
+
+
+                              - 5 -
+
+
+
+
+
+
+          Table  provides  DNIC  based  routing   and  Recognized
+          Private Operating Agency (RPOA) selection  capabilities
+          to outbound users and X.25 hosts.
+
+          Recognized  Private  Operating  Agencies  (RPOAs)   are
+          transit  networks   that   may   be   used   to   carry
+          international   calls   between   the  origination  and
+          destination networks.
+
+44        Public Async Outdial hosts.
+
+45        All hosts except Public Async Outdial hosts.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              - 6 -
+
+
+
+
+
+
+7  CLASS DESCRIPTIONS
+
+
+The  following  gives  a  "plain  English"  description   of  the
+principal  Classes  used  to  control  access  to  public  TYMNET
+services.  See  the  section  of  Class  definitions  for  a more
+rigorous definition on of each of the Classes.
+
+The descriptions in conjuction with  the  definitions  and tables
+below, should assist  TYMNET  personnel in catering to the access
+requirements of new and existing customers.
+
+The term "gateway" is much over worked and may  refer  to  almost
+any  network  interface.   In this document  the  term  "gateway"
+refers  to the interface (T2 or X.75)  between  two  PUBLIC  Data
+Networks (PDNs).
+
+
+Class 1.       TITLE: Caller paid (prepaid) gateways.
+
+               DESCRIPTION:    gateways  for which inbound access
+               charges are paid by the calling party.
+
+
+Class 2.       TITLE: McDonnell Douglas in-house usernames.
+
+               DESCRIPTION:    Most  locations except private and
+               PTT subnetworks.
+
+               EXCLUDED  SERVICE:  Domestic services barred  from
+               Class 2 are: WATS TYMDIAL  9.6,  TYMDIAL  X.25 and
+               Enhanced Gateway Access (EGA).
+
+Class 4.       TITLE: Default public Tymnet access.
+
+               DESCRIPTION:   Locations where access charges  for
+               the TYMNET subscriber do not  exceed  120%  of the
+               WATS  rate.  Includes: USA and territories,  WATS,
+               TYMNET- Canada, Gateways and IRC nodes.
+
+               SERVICE:    Currently  barred  from   4:  Enhanced
+               Gateway  Services  (eg:  TYMUSA).  Other   service
+               offerings may also be  barred  at  the  request of
+               Network Marketing - for example during betatest of
+               a new public access product.   TymDial  was barred
+               from 4 during betatest and now is  permitted since
+               the product is in  full  release  and  the service
+               fits the Class 4 profile definition.
+
+Class 15.      TITLE:  McDonnell  Douglas  International  Network
+               (MDINET) in Europe.
+
+
+
+
+                              - 7 -
+
+
+
+
+
+
+               DESCRIPTION:  MDISI nodes  in  Europe  and Middle-
+               east
+
+               SERVICE:  Used for MDC applications and dedicated
+               MDISI applications.  Not for GDN use without prior
+               authority of TYMNET and MDISI.
+
+Class 17.      TITLE: NIS-Japan Subnet and NIS gateways billed in
+               the USA (to the TYMNET party).
+
+               DESCRIPTION:  NIS-Japan  access  billed to the USA
+               subscriber.  New requests  for  Class  17  must be
+               accompanied by acknowledgment of the higher access
+               charges from the TYMNET subscriber.
+
+Class 23.      TITLE:  TYMNET WATS.
+
+               DESCRIPTION:   Async  access  via  toll-free "800"
+               service available within continental 48 states.
+
+Class 24.      TITLE: TYMNET  access  at  or  below  low  density
+               pricing.
+
+               DESCRIPTION:    Access  where  costs to the TYMNET
+               subscriber are  less  than  120%  of  the  cost of
+               TYMNET  Low  density.  (20%  allowance  for  price
+               structure variations, see section 8.1).
+
+
+               SERVICE:    Currently  barred  from  24:  Enhanced
+               Gateway  Services (eg:  TYMUSA)  and  WATS.  Other
+               service  offerings  may  also  be  barred  at  the
+               request of Network  Marketing - for example during
+               betatest of a new public access product.   TymDial
+               was barred from  24  during  betatest  and  now is
+               permitted since the product is in full release and
+               the service  fits  within  the  Class  24  profile
+               definition.
+
+Class 26.      TITLE: TymDial 9.6 Async
+
+               DESCRIPTION: TYMNET High speed async service (9600
+               bps dial)
+
+Class 27.      TITLE:  TymDial X.25
+
+               DESCRIPTION:  TymDial X.25  at  2400  and 9600bps.
+               X.32 service.
+
+Class 28.      TITLE:  Enhanced Gateway Access.
+
+
+
+
+
+                              - 8 -
+
+
+
+
+
+
+               DESCRIPTION:  Network Servers that  offer enhanced
+               services to inbound callers.
+
+               SERVICE:  Public  Async Outdial  from  caller-paid
+               gateways.
+
+Class 34.      TITLE: Global Data Network Nodes in Europe
+
+               DESCRIPTION: TYMNET Locations within Europe.
+
+               SERVICE:  Most TYMNET  services  are  available in
+               these  locations, but not Public Outdial.   Please
+               check  the  GDN handbook and  guide  for  specific
+               information  about services  offered  in  a  given
+               location.
+
+Class 35.      TITLE:  TYMNET  domestic  48  states,  no  foreign
+               access.
+
+               DESCRIPTION:   TYMNET    Locations    within   the
+               continental  48  states  where  the  cost  to  the
+               subscriber is less  than  120% of the price of low
+               density cities.  No  gateway access!
+
+               SERVICE:  Barred from  35  are  WATS  and Enhanced
+               Gateway Services (eg: TYMUSA).
+
+               WARNING:  Used exclusively and  without additional
+               classes of access or  X.121  addressing  this will
+               force foreign users  to use competing networks for
+               host access.
+
+Class 36.      TITLE: Gateways carrying reverse charge  (collect)
+               traffic.
+
+               DESCRIPTION:  gateways  for which the called party
+               may be charged.   Charges  are  less than 120% the
+               cost of TYMNET Low Density service.
+
+Class 63.      TITLE:  Mercury (UK) T2 gateways.
+
+               DESCRIPTION:   Access from the Mercury  network(s)
+               via the T2  gateways.   May be pre-paid or reverse
+               charged.
+
+
+
+
+
+
+
+
+
+
+
+                              - 9 -
+
+
+
+
+
+
+Class 67.      TITLE:   States and territories outside the  North
+               American   contiguous 48 states with  TYMNET-style
+               access.
+
+               DESCRIPTION:   TYMNET or TYMNET-style access  from
+               Hawaii,  Alaska  and  US  territories.  The TYMNET
+               subscriber is liable for access charges up to 120%
+               of the cost of TYMNET low density.
+
+
+               WARNING:  Used exclusively and  without additional
+               classes of access or  X.121  addressing  this will
+               force foreign users  to use competing networks for
+               host access.
+
+Class 69.      TITLE:    McDonnell  Douglas  Information  Systems
+               Canada nodes.
+
+               DESCRIPTION:  Nodes that belong to our  subsidiary
+               network in Canada, sometimes called Tymnet-Canada.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                             - 10 -
+
+
+
+
+
+
+8  DEFINITION OF CLASSES
+
+
+In the following definitions, reference  is  often  made  to "the
+rates quoted for"    and  then  either  "low  density  cities" or
+"WATS".  The comparison of access rates is made by  comparing the
+cost  of  a  1  hour  session  with  70K  characters of I/O using
+standard pricing (not file transfer  pricing)  with  no discounts
+applied.
+
+At current prices, these values are:-
+
+               Time      +    I/O       =    Total
+Low density    11.45     +    4.20      =    $15.65
+WATS           23.20     +    4.20      =    $27.40
+
+CLASS          DEFINITION
+_____          __________
+
+
+1              Caller-paid gateways.
+
+2              Nodes  supervised  by  the TYMNET Supervisor which
+               are  owned  and  operated  by   McDonnell  Douglas
+               Corporation.
+
+4              Exclusion  Class.  Bars  access  locations   where
+               charges  to the TYMNET subscriber may exceed  120%
+               of the  rates  quoted  for  Tymnet  WATS  service.
+               Allows inbound access from gateways where the call
+               was pre-paid.  Allows inbound access from gateways
+               where the call may be billed collect to the TYMNET
+               subscriber,  except  where  the  collection   rate
+               exceeds  the rate quoted for TYMNET WATS  service.
+               Other service offerings may also be barred  at the
+               request  of Network Marketing eg: during  betatest
+               of a new public access  product  (eg:  TymDial was
+               barred from 4 during betatest).
+
+               Currently barred from 4: Enhanced Gateway Service.
+
+15             MDISI network (MDINET), all locations.
+
+17             NIS  Japan  Subnet nodes and  NIS  gateway  access
+               billed to the TYMNET subscriber.
+
+22             Pacific  Connection  (PCI)   Nodes.     Explicitly
+               designates access from PCI's locations.  (includes
+               Micronesian islands of Guam and Saipan).
+
+23             WATS nodes
+
+
+
+
+                             - 11 -
+
+
+
+
+
+
+24             Exclusion  class.   Bars  access  locations  where
+               charges  to the TYMNET subscriber may exceed  120%
+               the rate for  Tymnet low density; includes gateway
+               access where inbound calls are less expensive than
+               120%  of  Tymnet  low  density  prices.    Certain
+               service  offerings are also barred at the  request
+               of Network Marketing.
+
+               Domestic services currently barred from  24: WATS,
+               TYMDIAL X.25 and TYMDIAL  9600  (hi  speed async),
+          Enhanced Gateway Service.
+
+28             Enhanced Gateway Access Hosts.
+
+               Network servers for: Pre-paid International Public
+               Async Outdial calls.
+
+35             Exclusion  class.  Bars access from all  locations
+               outside  TYMNET's  continental US locations;  Bars
+               all  gateway  access;  Bars domestic services when
+               charges to the TYMNET  subscriber  exceed  120% of
+               the rate for TYMNET low density  cities.   Certain
+               service  offerings  are  also  be  barred  at  the
+               request of Network Marketing.
+
+               Domestic services currently barred from 35: WATS.
+
+36             Reverse-charge gateways where the collection  rate
+               is less than  120%  of those quoted for TYMNET Low
+               Density  service.   Inbound calls  may  be  billed
+               collect to the TYMNET subscriber.
+
+63             Mercury (UK) T2 access.
+
+67             USA states and territories outside  the contiguous
+               48 states  with  TYMNET-style  logon  where access
+               charges are paid by the TYMNET  subscriber.   Does
+               not include access locations where  access charges
+               exceed 120% of the rate for TYMNET WATS service.
+
+69             Tymnet nodes in Canada.
+
+8.1  CHANGES TO DEFINITIONS
+
+Definitions are subject to periodic  review  and  may  be changed
+after  careful consideration  and  consultation  as  appropriate.
+Changes are made cautiously since it may be difficult to restrict
+access where once it was possible.
+
+Occasionally,   the   scope   of   particular  Class  may  become
+inconsistent with its definition.  This is most  likely  to occur
+
+
+
+
+                             - 12 -
+
+
+
+
+
+
+where the definition is based upon a dollar value or  is relative
+to the price of certain "benchmark" services (eg: WATS).
+
+As a "rule of thumb",  where Class barriers are based principally
+upon pricing, a service  or  location's price may drift up to 20%
+from  the  Class's  normal benchmark (eg: low  density  or  WATS)
+before action is initiated to remove that location/service from a
+Class's composition.
+
+In all cases, the principle is to keep consistent with the spirit
+of a Class's definition while  not  annoying  our  subscribers by
+being  over zealous in changing host  access  due  to  relatively
+minor fluctuations in the network pricing structure.
+
+Where adjustments that will curtail the scope of a Class's access
+become necessary, notice is  typically  given  to  TYMNET support
+groups in advance.  Where possible, username profiles are updated
+to  keep changes transparent to the  majority  of  users.  TYMNET
+Validations reserves the right to change the Class tables without
+prior notice.
+
+
+9  COMPARING ACCESS CHARGES
+
+
+To make a true comparison of the cost of services  from different
+locations, it is necessary to compare the cost of a  session with
+both a connect time and I/O component.
+
+The benchmark used is -  1  hour  of  connect  time  with  an I/O
+component of 70K Characters occurring during the peak rate period
+with  no  special  discounts  applied.    Traffic  statistics and
+projections reveal that 70KCh is a suitable I/O benchmark for  at
+least the next two or three years.
+
+The table below gives dollar comparisons of selected locations at
+the prevailing rates and indicates  the scope of access for Class
+4 and Class 24.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                             - 13 -
+
+
+
+
+
+
+                   Table 1: Comparison of rates by location
+
+
+
+               CONNECT   +    I/O       =    $TOTAL    ACCESS SCOPE
+LOCATION       1 Hr      +    70KCh     =    $COMPARE  (except *)
+
+
+Canada (TYM)   4.50      +    3.50      =    08.00     |    |
+Hi density     4.45      +    4.20      =    08.65     |    |
+Canada (DPAC)  1.92      +    8.40      =    10.32     |    *
+TymDial X.25   6.45      +    4.20      =    10.65     |    |
+9600 Async     6.45      +    4.20      =    10.65     |    |
+Alaska         4.00      +    7.00      =    11.00     |    |
+Med density    6.95      +    4.20      =    11.15     |    |
+Hawaii         4.45      +    7.00      =    11.45     |    |
+Guam (PCI)     4.45      +    7.00      =    11.45     |    |
+Puerto Rico    6.00      +    7.00      =    13.00     |    |
+Mexico         6.50      +    9.11      =    15.61#    |    |
+LOW DENSITY    11.45     +    4.20      =    15.65     |    |^Class 24
+-----------    -----     -    ----           -----     |
+Mercury (UK)   10.00     +    10.50     =    22.50     |
+WATS           23.20     +    4.20      =    27.40     |^Class 4
+NIS-Japan      11.40     +    21.00     =    32.40
+
+*  Indicates  a  service is barred from Class 4 or  24  for  some
+reason other than price.
+
+NOTE: Prices as of August 1988.
+
+NOTE(#):  Pricing of this service is made in Kilo-Segments so for
+purpose of comparison we have  converted  segments  to characters
+assuming 60% segment fill.    1Kseg*60%  = 38,400 characters. 60%
+segment  fill  is  a  realistic  segment  fill  for an  'average'
+session.  Actual usage  may  deviate  significantly  from average
+depending on the nature of the application.
+
+
+
+              Table 2: Reasons for which the major Classes exist
+
+Class     35   24   4    1    34   36   67   69   63   22   23   17   28
+Reason(s) SP   P    P    SA   PASR SA   SAP  RS   ASP  AP   P    PS   PAS
+
+The reason codes are in qualitative priority order, reading left  to right.
+This table is intended as a rough guide only.
+
+     S = Network Security
+     P = Pricing and accounting control
+     R = Regulatory
+     A = Administrative
+
+
+
+
+                             - 14 -
+
+
+
+
+
+
+
+
+
+
+
+
+                                  Appendix A
+
+                                 CLASS TITLES
+
+
+CLASS #        TITLE
+
+Class 1.       Caller paid (prepaid) gateways.
+
+Class 2.       McDonnell Douglas in-house usernames. Used  principally
+               by EDI and OnTyme.
+
+Class 4.       Default public Tymnet access.
+
+Class 15.      McDonnell Douglas International Network (MDINET).
+
+Class 17.      NIS-Japan Subnet and NIS gateways billed in the USA.
+
+Class 23.      TYMNET WATS.
+
+Class 24.      TYMNET access at or below low density pricing.
+
+Class 26.      TymDial 9.6 Async
+
+Class 27.      TymDial X.25
+
+Class 28.      Enhanced Gateway Access hosts
+
+Class 34.      Global Data Network Nodes in Europe.
+
+Class 35.      TYMNET domestic 48 states, no foreign access.
+
+Class 36.      Gateways carrying reverse charge (collect) traffic.
+
+Class 63.      Mercury (UK) T2 gateways.
+
+Class 67.      States  and  territories  outside  the  North  American
+               contiguous 48 states with TYMNET-style access.
+
+Class 69.      McDonnell  Douglas  Information Systems  Canada  nodes;
+               (Tymnet-Canada).
+
+The above is  not  an  exhaustive  list  of the classes, but is a
+complete listing of those relevant to TYMNET access.
+
+
+
+
+
+                             - 15 -
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                             - 16 -
+
+rf›
