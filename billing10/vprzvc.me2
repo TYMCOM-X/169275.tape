@@ -1,0 +1,66 @@
+%   STOP.CTL                           STOPCL.PR1      06   %
+PROCEDURE STOP.CTL%
+Version 6, March 26, 1980, by VEV
+Now writes a LOG "STOP" message in file GLOG.DAT.
+Version 4, Feb. 13, 1979, by VEV
+If RPTCT.DAT is 0, does not decrement count and type out count.
+Version 3, Sept. 19, 1979, by VEV
+Changed to type out the remaining count.
+Version 2, Sept. 11, 1979, by VEV
+Now decrements RPTCT.DAT for each run.
+Version 1, September 7, 1979, by VEV
+*
+This procedure stops processes in any directory.
+%
+
+BEGIN
+
+FIELDS
+  CNT           AS "3Z",        % Repeate count %
+  MSG           AS "9C"        %ABORT OR RUN MESSAGE%
+
+
+SOURCE RPTCT FROM "RPTCT.DAT"
+  FREE FORM
+  INPUT CNT
+
+REPORT NEWCT TO "RPTCT.DAT-ANY"
+  PAGE.SIZE 0
+
+SOURCE INP FROM "STOP.DAT"
+  FREE FORM
+  INPUT MSG
+
+REPORT STP TO "STOP.DAT-ANY"
+  PAGE.SIZE 0
+
+REPORT LOG.STP APPEND TO "GLOG.DAT-ANY"
+  PAGE.SIZE 0
+
+
+MOVE DEFAULT TO MSG
+
+FOR EACH RPTCT
+  IF CNT = 0 THEN NOTHING ELSE
+  WRITE REPORT NEWCT
+    BEGIN
+    SUBTRACT 1 FROM CNT
+    TYPE "New count: ", CNT, @CR
+    PRINT TO NEWCT CNT, @CR
+    END
+
+FOR EACH INP
+  MOVE MSG TO MSG OF STOP.CTL
+
+IF MSG NE "STOP" THEN NOTHING ELSE
+  BEGIN
+  WRITE REPORT STP, LOG.STP
+    BEGIN
+    PRINT TO LOG.STP "000STOP",TODAY, TIME, @CR
+    PRINT TO STP "RUN", @CR
+    END
+  ABORT
+    "STOPPING RUN AT OPERATORS REQUEST-- NO PROBLEMS", @SKIP 5
+  END
+
+END
