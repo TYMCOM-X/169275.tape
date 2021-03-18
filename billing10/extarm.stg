@@ -1,0 +1,610 @@
+%   EXTEND.ARMY.STORAGE                EXTAGE.PR1      01  %
+PROCEDURE EXTEND.ARMY.STORAGE
+%
+Version 1.0 --- 1 July 1982 --- L. E. Rickan
+*
+   This procedure is used to EXTEND the PRICING of RESOURCES used by
+   APPLYING the RATE to the QUANTITY to determine the AMOUNT of CHARGE
+   for each RESOURCE
+
+   The ARMY.STORAGE relation is EXTENDED by this procedure
+
+   The FIELDS ALTERED in each INSTANCE that is EXTENDED are:
+
+                PROD.CODE,
+                RATE,
+                AMT,
+                INV.LINE.ORDER,
+                EXTEND.DATE
+
+%
+
+BEGIN
+
+FIELDS
+        ANSWER.L                AS 'C',
+        CUTOFF.DATE.L           SAME AS CUTOFF.DATE,
+        NULL.EXTEND.DATE.L      SAME AS EXTEND.DATE,
+        EXTEND.DATE.L           SAME AS EXTEND.DATE,
+        HOST.L                  SAME AS HOST,
+        JOB.CLASS.L             SAME AS JOB.CLASS,
+        GAN.L                   SAME AS GAN,
+        UUN.L                   SAME AS UUN,
+        DSTART.L                SAME AS DSTART,
+        RESOURCE.L              SAME AS RESOURCE,
+        CURRENCY.L              SAME AS CURRENCY,
+        PROD.CODE.L             SAME AS PROD.CODE,
+        INV.LINE.ORDER.L        SAME AS INV.LINE.ORDER,
+        PRIC.CODE.L             SAME AS PRIC.CODE,
+        MAP.CODE.L              SAME AS MAP.CODE,
+        TID.SET.L               SAME AS TID.SET,
+        NODE.SET.L              SAME AS NODE.SET,
+        RATE.L                  SAME AS RATE,
+        AMT.L                   SAME AS AMT,
+        EXT.RELATION.L          AS '20C',
+        ERROR.REL.L             AS '20C',
+
+        % DEFAULTS %
+
+        TID.SET.DEFT.L          SAME AS TID.SET,
+        NODE.SET.DEFT.L         SAME AS NODE.SET,
+
+        % COUNTERS %
+
+        DSTART.GT.CUTOFF        AS '7ZN',       % NO. DSTART > ERRORS %
+        ERROR.CNT.L             AS '7ZN',       % NUMBER OF ERRORS %
+        ARMY.STORAGE.ITER.L        AS '3ZN',       % FOR PROGRESS TYPE %
+        ARMY.STORAGE.BLIP.L        AS '7ZN',       % FOR PROGRESS TYPE %
+        ARMY.STORAGE.TOT.L         AS '7ZN',       % RELATION COUNT %
+        ARMY.STORAGE.CNT.L         AS '7ZN',       % CUMMULATIVE %
+        ARMY.STORAGE.CNT0.L        AS '7ZN',       % ALREADY EXTENDED %
+        ARMY.STORAGE.CNT1.L        AS '7ZN',       % ATTEMPTS TO EXTEND %
+        ARMY.STORAGE.CNT2.L        AS '7ZN',       % ACTUALLY EXTENDED %
+        ARMY.STORAGE.LO.L          AS '7ZN',       % LOW RANGE %
+        ARMY.STORAGE.HI.L          AS '7ZN',       % HIGH RANGE %
+
+        % SWITCHES %
+
+        ERROR.SW                AS 'C',
+        SESSION.SW              SAME AS ERROR.SW,
+        CUTOFF.DATE.SW          SAME AS ERROR.SW,
+        EXTEND.SW               SAME AS ERROR.SW,
+        USER.SW                 SAME AS ERROR.SW,
+        USER.SYS.SW             SAME AS ERROR.SW,
+        MAP.CODE.SW             SAME AS ERROR.SW,
+        TID.SW                  SAME AS ERROR.SW,
+        NODE.SW                 SAME AS ERROR.SW,
+        PROD.CODE.SW            SAME AS ERROR.SW,
+        PRICE.SW                SAME AS ERROR.SW
+
+% DECLARE RELATION(S) %
+
+        RELATION EXTEND.ERRORS.L IS
+        KEY
+                EXT.RELATION.L,
+                UUN.L,
+                HOST.L,
+                RESOURCE.L,
+                ERROR.REL.L
+        DATA
+                DSTART.L,
+                GAN.L
+
+SOURCE ACTSYS.TYP FROM 'ACTSYS.DAT'
+FREE FORM
+INPUT ACTG.SYS.TYP
+
+REPORT EXTMIS.RPT TO "EXTARM.RPT-ANY"
+        PAGE.SIZE 60
+        TOP.MARGIN 3
+        BOTTOM.MARGIN 3
+        HEADING.SIZE 7
+        PAGE.TOP @FF
+
+        PAGE.HEADING
+                BEGIN
+                PRINT TO EXTMIS.RPT
+                'EXTARM.RPT',
+                @TAB TO 18, 'CAIS EXTEND "ARMY.STORAGE" relation ERROR REPORT',
+                @TAB TO 70,'PAGE ',PAGE.NUM AS '4ZN', @CR,
+                @CR, "REPORT DATED: ", TODAY AS DATE 'MM/DD/YYYY', @TAB 2,
+                (TIME/3600) AS '2Z', ":",
+                ((TIME-TIME/3600*3600)/60) AS '2N', @CR
+
+                PRINT TO EXTMIS.RPT
+                @CR, TRIM(ACTG.SYS.DESCR), ' "ARMY.STORAGE" relation',
+                ' ... EXTENDED THRU ',CUTOFF.DATE.L AS DATE 'MM/DD/YY',@CR
+                PRINT TO EXTMIS.RPT
+                @CR, "EXTEND RELATION", @TAB TO 21, "HOST", @TAB TO 29, "GAN",
+                @TAB TO 36, "UUN", @TAB TO 42, "RES", @TAB TO 47, "DSTART",
+                @TAB TO 55, "ERROR RELATION", @CR
+                END
+
+FORMAT EXTMIS.FMT
+        @CR,EXT.RELATION.L,@TAB 1,
+        HOST.L,@TAB 1,
+        GAN.L,@TAB 1,
+        UUN.L,@TAB 1,
+        RESOURCE.L,@TAB 1,
+        DSTART.L AS DATE 'MM/DD/YY',@TAB 1,
+        TRIM(ERROR.REL.L)
+
+FORMAT STATS01.FMT
+        @CR, '*** RUN STATISTICS:', @CR,
+        @CR, ARMY.STORAGE.TOT.L, '  TOTAL instances in relation "ARMY.STORAGE"',
+        @CR, ((ARMY.STORAGE.HI.L - ARMY.STORAGE.LO.L) + 1) AS '7ZN', "  INSTANCES",
+        " to be EXAMINED this run",
+        @CR, ARMY.STORAGE.CNT0.L, "  instances ALREADY EXTENDED",
+        @CR, DSTART.GT.CUTOFF, "  instances with DSTART GT CUTOFF DATE",
+        @CR, ARMY.STORAGE.CNT1.L, "  instances EXAMINED",
+        @CR, ERROR.CNT.L, '  *** E R R O R S ***',
+        @CR, ARMY.STORAGE.CNT2.L, "  instances EXTENDED", @CR
+
+FORMAT RUN.DATE.TIME
+  @TAB 3,
+  TODAY AS DATE 'MM/DD/YY',
+  @TAB 2,
+  (TIME/3600) AS '2Z', ":",
+  ((TIME-TIME/3600*3600)/60) AS '2N', @CR
+
+  TYPE "Beginning procedure EXTEND.ARMY.STORAGE.....Version 01.0", RUN.DATE.TIME
+
+  MOVE DEFAULT TO ACTG.SYS.TYP, ACTG.SYS.DESCR
+
+% PROMPT FOR DEFINITION OF RUN %
+
+% ACTG SYSTEM TYPE %
+        FOR EACH ACTSYS.TYP
+        MOVE ACTG.SYS.TYP TO ACTG.SYS.TYP OF EXTEND.ARMY.STORAGE
+
+        SELECT ACTG.SYS.DESCRS VIA KEY THEN
+          MOVE ACTG.SYS.DESCR TO ACTG.SYS.DESCR OF EXTEND.ARMY.STORAGE
+
+        TYPE @CR, "Processing ACTG.SYS.TYP ", TRIM(ACTG.SYS.DESCR), @CR
+
+% CUTOFF DATE %
+        LET CUTOFF.DATE.SW = 'N' % MISSING %
+        SELECT INV.TRK.DATES VIA KEY
+         THEN BEGIN
+                MOVE 'Y' TO CUTOFF.DATE.SW
+                MOVE RANGE.STOP TO CUTOFF.DATE.L
+                TYPE @CR,'***CUTOFF DATE from "INV.TRK.DATES" is ',
+                     CUTOFF.DATE.L AS DATE 'MM/DD/YY', @CR
+                END
+         ELSE BEGIN
+                MOVE 'N' TO CUTOFF.DATE.SW
+                TYPE @CR,'***WARNING: MISSING "INV.TRK.DATES"', @CR
+                END
+
+        Q.OVERRIDE.DATE:
+        BEGIN
+        IF CUTOFF.DATE.SW = 'Y'
+         THEN BEGIN
+                TYPE @CR,'...ACCEPTABLE CUTOFF DATE (Y/N)??? '
+                ACCEPT ANSWER.L
+                IF ANSWER.L # 'Y' AND ANSWER.L # 'N'
+                 THEN REPEAT Q.OVERRIDE.DATE
+                IF ANSWER.L = 'N'
+                 THEN BEGIN
+                        MOVE 'N' TO CUTOFF.DATE.SW
+                        END
+                END
+        END
+
+     %  Q.SUBMIT.DATE:  %
+        BEGIN
+        IF CUTOFF.DATE.SW = 'N'
+         THEN BEGIN
+                TYPE @CR,'...Enter CUTOFF DATE as (YYMMDD): '
+                ACCEPT CUTOFF.DATE.L    
+                END
+        END
+
+        % --------------- INITIALIZATION --------------- %
+
+% INITIALIZE COUNTERS %
+        MOVE 1000 TO ARMY.STORAGE.ITER.L
+        MOVE ARMY.STORAGE.ITER.L TO ARMY.STORAGE.BLIP.L
+        MOVE 0 TO ERROR.CNT.L
+        MOVE 0 TO ARMY.STORAGE.CNT.L
+        MOVE 0 TO ARMY.STORAGE.CNT0.L
+        MOVE 0 TO ARMY.STORAGE.CNT1.L
+        MOVE 0 TO ARMY.STORAGE.CNT2.L
+        MOVE 0 TO DSTART.GT.CUTOFF
+
+% SET EXTEND.DATE FOR THIS RUN %
+        MOVE TODAY AS DATE 'YYMMDD' TO EXTEND.DATE.L
+
+% SET "NULL" DATE %
+        MOVE 0 AS DATE TO NULL.EXTEND.DATE.L
+
+% SET DEFAULTS %
+        MOVE 1 TO TID.SET.DEFT.L
+        MOVE 1 TO NODE.SET.DEFT.L
+
+% BEGIN PROCESSING "ARMY.STORAGE" DATA BASE %
+
+% PROMPTS %
+
+        Q.MISC.EXTEND:
+
+        BEGIN
+        TYPE @CR,'EXTEND "ARMY.STORAGE" (Y/N)??? '
+        ACCEPT ANSWER.L
+        IF ANSWER.L # 'Y' AND ANSWER.L # 'N'
+         THEN REPEAT Q.MISC.EXTEND
+        MOVE ANSWER.L TO EXTEND.SW
+        IF EXTEND.SW = 'Y'
+         THEN BEGIN
+                MOVE COUNT(ARMY.STORAGE) TO ARMY.STORAGE.TOT.L
+                TYPE @CR, ARMY.STORAGE.TOT.L, " INSTANCES in relation ARMY.STORAGE", @CR
+                IF ARMY.STORAGE.TOT.L = 0
+                 THEN BEGIN
+                        TYPE @CR,'***NOTE: EMPTY "ARMY.STORAGE" relation', @CR
+                        MOVE 'N' TO EXTEND.SW
+                        END
+                END
+
+        Q.MISC.EXTEND.ALL:
+
+        IF EXTEND.SW = 'Y'
+         THEN BEGIN
+                TYPE @CR,'...EXTEND ALL (Y/N)??? '
+                ACCEPT ANSWER.L
+                IF ANSWER.L # 'Y' AND ANSWER.L # 'N'
+                 THEN REPEAT Q.MISC.EXTEND.ALL
+                IF ANSWER.L = 'Y'
+                 THEN BEGIN
+                        MOVE 1 TO ARMY.STORAGE.LO.L
+                        MOVE ARMY.STORAGE.TOT.L TO ARMY.STORAGE.HI.L
+                        END
+
+                Q.MISC.EXTEND.RANGE:
+
+                IF ANSWER.L = 'N'
+                 THEN BEGIN
+                        TYPE @CR,'...ENTER START  RANGE: '
+                        ACCEPT ARMY.STORAGE.LO.L
+                        TYPE @CR,'...ENTER ENDING RANGE: '
+                        ACCEPT ARMY.STORAGE.HI.L
+                        IF ARMY.STORAGE.HI.L > ARMY.STORAGE.TOT.L
+                         THEN BEGIN
+                                MOVE ARMY.STORAGE.TOT.L TO ARMY.STORAGE.HI.L
+                                TYPE @CR,'*** ENDING RANGE SET TO ',
+                                ARMY.STORAGE.HI.L
+                                END
+                        IF ARMY.STORAGE.HI.L < ARMY.STORAGE.LO.L
+                         THEN BEGIN
+                                TYPE @CR,'***BAD RANGE'
+                                REPEAT Q.MISC.EXTEND.RANGE
+                                END
+                        IF ARMY.STORAGE.LO.L < 1
+                         THEN BEGIN
+                                MOVE 1 TO ARMY.STORAGE.LO.L
+                                TYPE @CR,'*** START RANGE SET TO 1'
+                                END
+                        IF ARMY.STORAGE.HI.L < 1
+                         THEN BEGIN
+                                MOVE 1 TO ARMY.STORAGE.HI.L
+                                TYPE @CR,'*** ENDING RANGE SET TO 1'
+                                END
+                        END
+                END
+         ELSE BEGIN
+                MOVE 0 TO ARMY.STORAGE.LO.L
+                MOVE 0 TO ARMY.STORAGE.HI.L
+                END
+        END
+
+% TEST EXTENDING %
+        IF EXTEND.SW # 'Y'
+         THEN BEGIN
+                TYPE @CR, "***ERROR: NOTHING to EXTEND", @CR,
+                     @CR, "Please NOTIFY the DBA", @CR, @CR
+                ABORT
+              END
+
+% CONTINUE ??? %
+
+        TYPE @CR, "*** RUN DEFINITION for ACTG.SYS.TYP ", TRIM(ACTG.SYS.DESCR),
+             " ***", @CR,
+             @CR, "CUTOFF DATE = ", CUTOFF.DATE.L AS DATE 'MM/DD/YY',
+             @CR, ARMY.STORAGE.TOT.L, '  TOTAL "ARMY.STORAGE" instances',
+             @CR, ((ARMY.STORAGE.HI.L - ARMY.STORAGE.LO.L) +1) AS '7ZN',
+             "  INSTANCES to be EXAMINED this run", @CR
+
+        Q.CONTINUE:
+
+        BEGIN
+        TYPE @CR, "Okay to CONTINUE? "
+        ACCEPT ANSWER.L
+        IF ANSWER.L # 'Y' AND ANSWER.L # 'N'
+        THEN REPEAT Q.CONTINUE
+        IF ANSWER.L = 'N'
+         THEN BEGIN
+                TYPE @CR,'***JOB TERMINATED***', @CR, @CR
+                ABORT
+              END
+        END
+
+% MAIN PROCESSING BLOCK %
+
+        TYPE @CR, "***Beginning to EXTEND relation ARMY.STORAGE...", @CR, @CR
+        MOVE 'ARMY.STORAGE' TO EXT.RELATION.L
+
+% ACCESS RECORD(S) IN "ARMY.STORAGE" %
+
+END.FOR.EACH.ARMY.STORAGE:
+FOR EACH ARMY.STORAGE
+FOR.EACH.ARMY.STORAGE:
+ BEGIN
+        MOVE 0 TO GAN.L
+        MOVE UUN TO UUN.L
+        MOVE HOST TO HOST.L
+        MOVE DSTART TO DSTART.L
+        MOVE RESOURCE TO RESOURCE.L
+        ADD 1 TO ARMY.STORAGE.CNT.L
+        IF ARMY.STORAGE.CNT.L = ARMY.STORAGE.BLIP.L
+         THEN BEGIN
+                TYPE ARMY.STORAGE.BLIP.L, " INSTANCES processed", RUN.DATE.TIME
+                LET ARMY.STORAGE.BLIP.L = ARMY.STORAGE.BLIP.L + ARMY.STORAGE.ITER.L
+                END
+
+        % CONDITION(S) FOR IGNORING ARMY.STORAGE %
+
+        IF ARMY.STORAGE.CNT.L > ARMY.STORAGE.HI.L
+         THEN FINISH END.FOR.EACH.ARMY.STORAGE
+        IF ARMY.STORAGE.CNT.L < ARMY.STORAGE.LO.L
+         THEN FINISH FOR.EACH.ARMY.STORAGE
+        IF ACTG.SYS.TYP # ACTG.SYS.TYP OF EXTEND.ARMY.STORAGE
+         THEN BEGIN
+                FINISH FOR.EACH.ARMY.STORAGE
+                END
+        IF DSTART > CUTOFF.DATE.L
+         THEN BEGIN
+                ADD 1 TO DSTART.GT.CUTOFF
+                MOVE 'DSTART.GT.CUTOFF' TO ERROR.REL.L
+                SELECT EXTEND.ERRORS.L VIA KEY
+                THEN NOTHING
+                ELSE BEGIN
+                        INSERT INTO EXTEND.ERRORS.L
+                        END
+                FINISH FOR.EACH.ARMY.STORAGE
+                END
+        IF EXTEND.DATE OF ARMY.STORAGE # NULL.EXTEND.DATE.L
+         THEN BEGIN
+                ADD 1 TO ARMY.STORAGE.CNT0.L
+                FINISH FOR.EACH.ARMY.STORAGE
+                END
+
+        % PROCESS THIS ARMY.STORAGE %
+
+        ADD 1 TO ARMY.STORAGE.CNT1.L
+        MOVE 'N' TO ERROR.SW
+
+        % FETCH CURRENCY and GAN %
+
+        MOVE 'N' TO USER.SW
+        FOR EACH UUN.USR.NAM VIA (UUN)
+                BEGIN
+                IF (DSTART <= DSTART OF ARMY.STORAGE AND
+                            DSTOP >=  DSTART OF ARMY.STORAGE)
+                 THEN BEGIN
+                        MOVE 'Y' TO USER.SW
+                        MOVE GAN TO GAN.L
+                        MOVE CURRENCY TO CURRENCY.L
+                        END
+
+                END % FOR EACH UUN.USR.NAM %
+
+        % FETCH PRIC.CODE,MAP.CODE %
+
+        MOVE 'N' TO USER.SYS.SW
+        FOR EACH USER.ACTG.SYS VIA (UUN, ACTG.SYS.TYP)
+                BEGIN
+                IF (DSTART <= DSTART OF ARMY.STORAGE AND
+                            DSTOP  >= DSTART OF ARMY.STORAGE)
+                 THEN BEGIN
+                        MOVE 'Y' TO USER.SYS.SW
+                        MOVE PRIC.CODE TO PRIC.CODE.L
+                        MOVE MAP.CODE TO MAP.CODE.L
+                        END
+
+                END % FOR EACH USER.ACTG.SYS %
+
+        IF USER.SW = 'N'
+         THEN BEGIN
+                MOVE 'Y' TO ERROR.SW
+                ADD 1 TO ERROR.CNT.L
+                MOVE 'UUN.USR.NAM' TO ERROR.REL.L
+                SELECT EXTEND.ERRORS.L VIA KEY
+                THEN NOTHING
+                ELSE BEGIN
+                        INSERT INTO EXTEND.ERRORS.L
+                        END
+                END
+        IF USER.SYS.SW = 'N'
+         THEN BEGIN
+                MOVE 'Y' TO ERROR.SW
+                ADD 1 TO ERROR.CNT.L
+                MOVE 'USER.ACTG.SYS' TO ERROR.REL.L
+                SELECT EXTEND.ERRORS.L VIA KEY
+                THEN NOTHING
+                ELSE BEGIN
+                        INSERT INTO EXTEND.ERRORS.L
+                        END
+                END
+
+        IF ERROR.SW = 'Y'
+         THEN BEGIN
+                FINISH FOR.EACH.ARMY.STORAGE
+                END
+
+        % FETCH PROD.CODE,INV.LINE.ORDER %
+
+        IF PRIME.P OF ARMY.STORAGE = ' '
+         THEN BEGIN
+                MOVE 'Y' TO PRIME.P OF ARMY.STORAGE
+                END
+        MOVE 'N' TO PROD.CODE.SW
+        FOR EACH PROD.CODES VIA(
+                ACTG.SYS.TYP = ACTG.SYS.TYP OF EXTEND.ARMY.STORAGE,
+                RESOURCE = RESOURCE.L,
+                NODE.SET = 1,
+                TID.SET = 1,
+                PRIME.P = PRIME.P OF ARMY.STORAGE,
+                JOB.CLASS = 'A',
+                JOB.PRTY = 0)
+        BEGIN
+        IF (DSTART <= DSTART OF ARMY.STORAGE AND
+            DSTOP  >= DSTART OF ARMY.STORAGE)
+         THEN BEGIN
+                MOVE 'Y' TO PROD.CODE.SW
+                MOVE PROD.CODE TO PROD.CODE.L
+                MOVE INV.LINE.ORDER TO INV.LINE.ORDER.L
+                END
+
+        END % FOR EACH PROD.CODES %
+
+        % TEST FOR PRESENCE OF PROD.CODE %
+
+        IF PROD.CODE.SW = 'N'
+         THEN BEGIN
+                ADD 1 TO ERROR.CNT.L
+                MOVE 'PROD.CODES ' + PRIC.CODE.L AS '3C' + ' ' + CURRENCY.L
+                     TO ERROR.REL.L
+                SELECT EXTEND.ERRORS.L VIA KEY
+                THEN NOTHING
+                ELSE BEGIN
+                        INSERT INTO EXTEND.ERRORS.L
+                        END
+                FINISH FOR.EACH.ARMY.STORAGE
+                END
+
+        % TEST FOR MAPPING OF PROD.CODE %
+
+        IF MAP.CODE.L GT 1
+         THEN BEGIN
+
+                % FETCH PROD.CODE OVERRIDE %
+
+                MOVE 'N' TO MAP.CODE.SW
+
+                END.FOR.EACH.PROD.CODE.MAPS:
+                FOR EACH PROD.CODE.MAPS VIA (
+                        MAP.CODE = MAP.CODE.L,
+                        UNMAP.PROD.CODE = PROD.CODE.L)
+                BEGIN
+                IF (DSTART <= DSTART OF ARMY.STORAGE AND
+                   DSTOP  >= DSTART OF ARMY.STORAGE)
+                 THEN BEGIN
+                        MOVE 'Y' TO MAP.CODE.SW
+                        MOVE PROD.CODE TO PROD.CODE.L
+                        MOVE INV.LINE.ORDER TO
+                        INV.LINE.ORDER.L
+                        FINISH END.FOR.EACH.PROD.CODE.MAPS
+                        END
+
+                END % END FOR EACH PROD.CODE.MAPS %
+
+                IF MAP.CODE.SW = 'N'
+                 THEN BEGIN
+                        ADD 1 TO ERROR.CNT.L
+                        MOVE 'PC.MAPS ' + MAP.CODE.L AS '5C' + " " +
+                             PROD.CODE.L AS '5C' TO ERROR.REL.L
+                        SELECT EXTEND.ERRORS.L VIA KEY
+                        THEN NOTHING
+                        ELSE BEGIN
+                        INSERT INTO EXTEND.ERRORS.L
+                        END
+                        FINISH FOR.EACH.ARMY.STORAGE
+                        END
+
+                END % MAP.CODE GT 1 %
+
+   % FETCH PRICE %
+
+        MOVE 'N' TO PRICE.SW
+        FOR EACH PRICES VIA(
+                ACTG.SYS.TYP = ACTG.SYS.TYP OF EXTEND.ARMY.STORAGE,
+                PRIC.CODE = PRIC.CODE.L,
+                PROD.CODE = PROD.CODE.L,
+                CURRENCY = CURRENCY.L)
+        BEGIN
+        IF (DSTART <= DSTART OF ARMY.STORAGE AND
+            DSTOP  >= DSTART OF ARMY.STORAGE AND
+            STEP.LEVEL = 1)
+         THEN BEGIN
+                MOVE 'Y' TO PRICE.SW
+                MOVE RATE TO RATE.L
+                END
+
+        END % FOR EACH PRICES %
+
+        % TEST FOR PRESENCE OF RATE %
+
+        IF PRICE.SW = 'N'
+         THEN BEGIN
+                ADD 1 TO ERROR.CNT.L
+                MOVE "PRICES " + PRIC.CODE.L AS '3C' + " " +
+                     PROD.CODE.L AS '5C' + " " + CURRENCY.L TO ERROR.REL.L
+                SELECT EXTEND.ERRORS.L VIA KEY
+                THEN NOTHING
+                ELSE BEGIN
+                        INSERT INTO EXTEND.ERRORS.L
+                        END
+                FINISH FOR.EACH.ARMY.STORAGE
+                END
+
+        % EXTEND QTY BY RATE %
+
+        MOVE (QTY OF ARMY.STORAGE * RATE.L) TO AMT.L ROUNDED
+        IF CRDB OF ARMY.STORAGE = 'C' THEN LET AMT.L = AMT.L * -1
+
+        % ALTER "ARMY.STORAGE" %
+
+        ALTER ARMY.STORAGE USING(
+                RATE.L FOR RATE,
+                AMT.L FOR AMT,
+                PROD.CODE.L FOR PROD.CODE,
+                INV.LINE.ORDER.L FOR INV.LINE.ORDER,
+                EXTEND.DATE.L FOR EXTEND.DATE)
+
+        ADD 1 TO ARMY.STORAGE.CNT2.L
+
+END % FOR EACH ARMY.STORAGE %
+
+        TYPE ARMY.STORAGE.CNT.L, " INSTANCES processed", RUN.DATE.TIME
+
+        TYPE @CR, " relation ARMY.STORAGE EXTENDED", @CR
+
+% WRITE OUT ERROR REPORT %
+
+        TYPE @CR, '***WRITING ERROR REPORT to "EXTARM.RPT"', @CR
+
+        WRITE REPORT EXTMIS.RPT
+        BEGIN
+                IF ERROR.CNT.L # 0
+                 THEN BEGIN
+                        FOR EACH EXTEND.ERRORS.L
+                        PRINT TO EXTMIS.RPT EXTMIS.FMT
+                        END
+                 ELSE BEGIN
+                        PRINT TO EXTMIS.RPT
+                        @CR, '*** No ERRORS this RUN ****', @CR
+                        END
+
+                PRINT TO EXTMIS.RPT @CR, @CR, STATS01.FMT
+                PRINT TO EXTMIS.RPT
+                @CR,@CR,'...END REPORT'
+        END
+
+        TYPE @CR,'...REPORT FINISHED', @CR
+
+% RUN SUMMARY %
+        TYPE STATS01.FMT
+
+  TYPE @CR, "End EXTEND.ARMY.STORAGE", RUN.DATE.TIME
+
+END % End of procedure EXTEND.ARMY.STORAGE %
+   ' e¨
