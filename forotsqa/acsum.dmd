@@ -1,0 +1,95 @@
+!                           System 1022
+!                      ACSUM data description
+!                          Version 116B
+! 
+! The ACSUM data set description is used to load a data set using data
+! output by the ACSUM program.  This data set is used in a report
+! program, also named ACSUM.
+! 
+! The ACSUM.EXE program, which is described more fully in ACSUM.MEM, reads
+! the accounting files that were created by System 1022 usage and puts
+! them into a readable form. Logical name ACCT: points to the files.
+! The output from ACSUM.EXE is a text file, ACSUM.DMI.  This
+! file is loaded into a dataset by means of the definitions below.
+! 
+
+! Data set description for ACSUM, version 116B
+
+! Project Programmer number in octal.
+filler	1
+attr	project		integer	length 6	keyed
+	abb proj	range 0 777777
+attr	programmer	integer length 6	keyed
+	abb prog	range 0 777777
+
+! Start and End date and time of program run
+filler	1
+attr	start_date	date	length 8	keyed
+	abb sdate
+filler	1
+attr	start_time	text	length 8
+	abb stime
+filler	1
+attr	end_date	date	length 8
+	abb edate
+filler	1
+attr	end_time	text	length 8
+	abb etime
+
+! Connect Seconds for program run and CPU milliseconds used
+filler	1
+attr	connect_seconds	integer length 6
+	abb cts		range 0 999999
+filler	1
+attr	cpu_time	integer length 10
+	abb cpu
+
+! Disk Reads, Disk Writes, and Kilo core seconds (All 3 are TOPS-10 only)
+filler	1
+attr	disk_reads	integer length 10
+	abb drs
+filler	1
+attr	disk_writes	integer length 10
+	abb dws
+filler	1
+attr	kilo_core_sec	integer length 10
+	abb kcs
+
+! System 1022 Version Number 
+filler	1
+attr	version_no	integer	length 6
+	abb verno	range 0 999999
+
+! Type of Run (0 = standalone, 1 = HLI, 2 - 511 reserved)
+! [PD, tr GT 511. means LDS used]
+filler	1
+attr	type_of_run	integer length 4
+	abb tr		range 0 1023
+
+! Type of Exit (1 = normal, 0 = control c)
+attr	type_of_exit	integer	length 1
+	abb tex		range 0 1
+
+! Batch Flag (1 = batch, 0 = interactive)
+attr	batch_flag	integer	length 1
+	abb bflg	range 0 1
+
+! Node Number and Line Number are in Octal
+filler	1
+attr	node_num	integer	length 6
+	abb node	range 0 777777
+attr	line_num	integer	length 6
+	abb lnum	range 0 777777
+
+! User Charge Number is for TOPS-10 only
+attr	charge_num	text	length 12
+	abb chnum	
+
+! First Dataset opened by the user, User name, Account String
+filler 1
+attr	dataset_name	text	length 25
+	abb dsnam
+attr	user_name	text	length 40	keyed
+	abb uname
+attr	account_string	text	length 40	keyed
+	abb accst
