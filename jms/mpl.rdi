@@ -1,0 +1,118 @@
+Master host: 33
+733 files on master system.
+Slave hosts: 56
+Checking host 56
+(MPL         :  56) SEC.SAV        4 01-Feb-79 18:42 -- bad license 
+                           should be 01-Feb-79 19:20 CEGRAR  ALL  RD RUN     10
+(MPL         :  56) LOKMAL.SAV     2 01-Feb-79 18:40 -- bad license 
+                           should be 01-Feb-79 19:19 FOJZOV  ALL  RD RUN     10
+(MPL         :  56) SCAN.SAV      22 03-May-81 05:40 -- bad checksum POWWUT
+                           should be 25-Aug-81 05:21 CAPPEJ  ALL  RD RUN
+(MPL         :  56) ICPSYM         2 12-Sep-90 15:16 -- bad checksum DEHDEP
+                           should be 07-Dec-87 09:53 QAPPIG  ALL  RD  NO
+(MPL         :  56) LINK10.SHR    74 16-Apr-81 10:14 -- bad checksum XEFNID
+                           should be 08-Dec-80 22:01 CURTOM  ALL  RD RUN
+(MPL         :  56) RPG.SHR       14 16-Apr-81 09:55 -- bad checksum BOXKIL
+                           should be 16-Jan-87 12:46 RAKYIJ  ALL  RD RUN
+(MPL         :  56) RUB.SAI        2 03-Jun-79 00:53 -- bad checksum TUSWIH
+                           should be 20-Oct-80 19:15 DAKTEV  ALL  RD  RD
+(MPL         :  56) SETOP.SAV      5 19-Oct-90 13:32 -- protection ALL  RD  NO
+                           should be 17-Nov-86 15:05 MOCXIQ  ALL  RD RUN
+(MPL         :  56) SUPMOV.BES    55 30-Aug-88 23:22 -- extra not on master
+(MPL         :  56) COPY.DOC       2 03-Jun-79 01:19 -- bad checksum ROBFUB
+                           should be 10-Dec-86 23:35 CUHSIV  ALL  RD  RD
+(MPL         :  56) ITSR.SWR       2 27-Jun-80 16:50 -- bad checksum POBZOC
+                           should be 27-Jun-80 16:50 JULGIK  ALL  RD  NO
+(MPL         :  56) UUOSYM.SAI     9 23-Jun-83 17:30 -- protection ALL  RD  NO
+                           should be 23-Jun-83 16:58 PUSVEN  ALL  RD  RD
+(MPL         :  56) ICP.OLD       30 22-Oct-80 15:48 -- extra not on master
+(MPL         :  56) UUODEF.MAC    21 23-Jun-83 17:27 -- bad checksum CELQID
+                           should be 23-Jun-83 15:38 QOYVAK  ALL  RD  RD
+(MPL         :  56) UUOSYM.MAC     9 23-Jun-83 17:28 -- protection ALL  RD  NO
+                           should be 23-Jun-83 16:57 MIBVIR  ALL  RD  RD
+(MPL         :  56) UUOSYM.DEF    10 23-Jun-83 17:29 -- bad checksum LAHQIK
+                           should be 15-Oct-83 00:24 LUFPIV  ALL  RD  RD
+(MPL         :  56) ICP.SAV       30 06-Mar-86 08:56 -- bad checksum JUTREK
+                           should be 11-Jul-80 13:09 GAKSEF  ALL  RD RUN 202010
+(MPL         :  56) LNK68K.DOC    39 14-Nov-87 00:25 -- extra not on master
+(MPL         :  56) OOPER.SAV      2 16-Apr-81 10:29 -- bad checksum TURNUZ
+                           should be 13-Apr-82 14:29 LEKZUY  ALL  RD RUN  40000
+(MPL         :  56) SPOOL.SAV     14 09-Jun-81 22:18 -- bad checksum NELHOG
+                           should be 15-Sep-81 05:02 YAYVOL  ALL  RD RUN
+(MPL         :  56) CTYMSG.SAV    16 30-May-79 14:46 -- bad license 
+                           should be 30-May-79 14:49 HEWVEH  ALL  RD RUN 100000
+(MPL         :  56) COPYCR.SAV     2 22-Jun-79 23:07 -- bad checksum NIVHAF
+                           should be 28-Jan-81 15:25 QOHPUF  ALL  RD RUN
+(MPL         :  56) ZAP.SAV        2 30-Jan-80 11:28 -- bad checksum ZAMJUC
+                           should be 30-Jan-80 17:11 XORXOL  ALL  RD RUN 400000
+(MPL         :  56) AUXIO.COM      2 21-Feb-69 13:49 -- bad checksum WOHWAY
+                           should be 10-Dec-86 23:32 FEYJON  ALL  RD  NO
+(MPL         :  56) AUXIO.CMD      2 30-Jun-81 18:14 -- bad checksum JIPBES
+                           should be 17-Oct-83 15:01 XIGHIP  ALL  RD  RD
+(MPL         :  56) AUXIO.34       8 30-Jun-81 18:14 -- extra not on master
+(MPL         :  56) SCREAM.SAV    31 25-May-89 17:03 -- protection ALL  RD  NO
+                           should be 02-Feb-87 17:11 NALDUJ  ALL  RD RUN
+(MPL         :  56) SCREAM.OLD    31 25-Mar-83 15:21 -- bad checksum WOSGOP
+                           should be 20-May-86 19:39 NACVAL  ALL  RD  NO
+(MPL         :  56) HENRY.LOW     10 11-May-84 15:52 -- extra not on master
+(MPL         :  56) HENRY.SHR      5 11-May-84 15:52 -- extra not on master
+(MPL         :  56) ICP13.SAV     29 16-Apr-81 06:34 -- bad license 
+                           should be 08-Dec-80 21:57 NONMUY  ALL  RD RUN 202010
+(MPL         :  56) READST.SAV    33 27-Jul-78 13:23 -- bad checksum SOZSIL
+                           should be 27-Jul-78 13:27 VIBBOG  ALL  RD RUN
+(MPL         :  56) ACTPRI.SAV     2 22-Jun-79 23:01 -- bad checksum MIZWUF
+                           should be 28-May-80 12:18 TENLOW  ALL  RD RUN
+(MPL         :  56) SETTRM.SAI    11 09-Apr-82 14:42 -- bad checksum BUWGEK
+                           should be 09-Apr-82 14:58 NEXJET  ALL  RD  RD
+(MPL         :  56) TTY            2 14-Jul-82 15:10 -- extra not on master
+(MPL         :  56) OPER.SAV       2 16-Apr-81 10:11 -- bad checksum GOBJIB
+                           should be 17-Nov-86 13:58 JAPGUJ  ALL  RD RUN
+(MPL         :  56) STEVE.RT       5 11-May-84 15:38 -- extra not on master
+(MPL         :  56) PCOM.CTL       2 10-May-85 14:41 -- extra not on master
+(MPL         :  56) PCOM.DOC      10 10-May-85 14:42 -- extra not on master
+(MPL         :  56) PCOM.SAI      35 10-May-85 14:37 -- extra not on master
+(MPL         :  56) AUXCHK.SAV     2 01-Feb-79 18:36 -- bad checksum XERGIS
+                           should be 10-Apr-80 08:23 LEXXIL  ALL  RD RUN
+(MPL         :  56) SNARF.SAV      2 10-Apr-79 18:41 -- bad checksum ZETTIQ
+                           should be 09-Dec-83 22:36 ZILFUY  ALL  RD RUN
+(MPL         :  56) RUNCHK.SAV     2 26-Nov-80 12:28 -- bad license 
+                           should be 28-Dec-79 15:50 MAVJIC  ALL  RD RUN 441000
+(MPL         :  56) XCORE.SAV      2 30-Jul-81 14:29 -- extra not on master
+(MPL         :  56) PJCVFY.SAV    15 19-Jan-83 17:51 -- bad license 
+                           should be 23-Oct-81 00:14 LIDYEH  ALL  RD RUN   1002
+(MPL         :  56) ASM68K.DOC    76 14-Nov-87 00:02 -- extra not on master
+(MPL         :  56) DIR.SAV        5 11-May-84 17:23 -- extra not on master
+(MPL         :  56) CRSHID.LOG     2 04-Dec-81 01:10 -- extra not on master
+(MPL         :  56) LUDDY.SAV      2 29-Dec-80 17:16 -- bad license 
+                           should be 29-Dec-80 17:11 DAGGIF  ALL  RD RUN  45002
+(MPL         :  56) SETE.SAV       2 22-Jun-79 22:50 -- bad checksum SIBSUT
+                           should be 02-Dec-87 00:47 FAYPAS  ALL  RD RUN
+(MPL         :  56) GRAB.SAV      13 08-Aug-79 17:10 -- bad checksum KOGWIQ
+                           should be 20-Oct-82 15:33 GUFGOZ  ALL  RD RUN
+(MPL         :  56) RUNPAM.SAV     2 26-Nov-80 12:27 -- bad license 
+                           should be 27-Aug-80 14:08 QAHYOG  ALL  RD RUN 401000
+(MPL         :  56) SNOOPY.SAV    32 16-Apr-81 10:06 -- bad license 
+                           should be 17-Jul-80 12:28 ZACGOP  ALL  RD RUN 600010
+(MPL         :  56) BADFIL.D54     1 21-Nov-82 11:06 -- extra not on master
+(MPL         :  56) REMIND.SAV     8 01-Feb-79 18:40 -- bad license 
+                           should be 01-Feb-79 19:19 WINNOP  ALL  RD RUN     10
+(MPL         :  56) PASPRN.SAV     2 22-Jun-79 23:02 -- bad checksum WIQDIZ
+                           should be 17-Jul-87 21:37 SATJAM  ALL  RD RUN
+(MPL         :  56) FSHTAP.SAV     2 22-Jun-79 23:02 -- bad license 
+                           should be 14-Nov-77 13:11 LAXHEK  ALL  RD RUN  20002
+(MPL         :  56) RUNMEM.SAV     2 26-Nov-80 12:28 -- bad checksum NIVMER
+                           should be 06-Aug-81 20:36 MOYKUK  ALL  RD RUN
+(MPL         :  56) ANYTHI        11 01-Dec-80 15:35 -- extra not on master
+(MPL         :  56) T              2 25-Nov-80 13:43 -- extra not on master
+(MPL         :  56) FTP10X.SAV    27 26-Jan-81 23:11 -- bad checksum SERMIL
+                           should be 25-Sep-83 01:21 FODJUP  ALL  RD RUN
+(MPL         :  56) TYPBAT.SAV     3 02-Nov-87 00:40 -- bad checksum KOBCOV
+                           should be 16-Nov-87 12:54 GEVSAQ  ALL  RD RUN     14
+(MPL         :  56) DIRIT.MAC     17 11-May-84 14:45 -- bad checksum MEDPUP
+                           should be 24-Apr-86 12:26 CURBER  ALL  RD  NO
+(MPL         :  56) DIRIT.REL      8 11-May-84 15:36 -- extra not on master
+(MPL         :  56) DIRIT.SAV      5 11-May-84 17:24 -- extra not on master
+(MPL         :  56) PCOINT.DCL     2 10-May-85 14:44 -- protection ALL  RD  NO
+                           should be 21-Sep-82 22:57 ROPHEB  ALL  RD  RD
+(MPL         :  56) T.RPT          1 21-Nov-82 11:03 -- extra not on master
+   
