@@ -1,0 +1,80 @@
+%   COMPER                             COMPER.PR1      02  %
+PROCEDURE COMPER %
+Version 1, October 15, 1979, by VEV
+Changed to use XEXEC file TEMP for input errors.  This procedure
+is a derivative of COMERR.  The following comments refer to COMERR.
+
+VERSION 12.0---------------- OCTOBER 13, 1978 ------------------ CHRIS REHBERG
+    ADDED CODE TO ALLOW FOR ERROR MESSAGE #610 ACCEPTANCE TO THE DDDS SYSTEM.
+    ADDED CODE TO ACCEPT '*' IN THE DDDS SYSTEM
+
+Version 11.0, Sept. 13, 1976, by VEV
+Appends to the error file first to stop the no error problem.
+
+Version 1.0, File COMPER, October 15, 1979, by VEV
+*
+This procedure is a derivative of COMERR.  It scans an error
+file and summarizes the common warning messages, 507 and 531, while
+typing out all other errors.  Input errors are placed in the XEXEC
+file "TEMP".
+
+%
+BEGIN
+
+FIELDS
+  CNT531        AS "3Z",
+  CNT507        AS "3Z",
+  CNT610        AS '3Z',
+   FIRST.CH   AS "C",
+   CNTRL        AS "3C",
+   STRING       AS "72C",
+   LSTRING      AS "50C",
+   CSTRING      AS "50C"
+
+REPORT APPEND TO "TEMP-ANY"
+  PAGE.SIZE 0
+
+SOURCE INPT FROM "TEMP"
+  FIXED FORM
+  INPUT FIRST.CH,
+    CONDITIONAL ON FIRST.CH
+      BEGIN
+      "C" OR " ": CSTRING
+      "L": LSTRING
+      "#": CNTRL, STRING
+      "$": @CR
+      '*':@CR
+      END
+
+WRITE REPORT
+  BEGIN
+  PRINT "$", @CR
+  END
+
+MOVE 0 TO CNT531, CNT507, CNT610
+TYPE "Compile errors:", @CR,@CR
+FOR EACH INPT
+  IF FIRST.CH = "C" OR " " THEN
+    TYPE FIRST.CH, TRIM(CSTRING), @CR
+  ELSE IF FIRST.CH = "#" THEN
+    IF CNTRL NE "507" AND "531" AND "610" THEN
+      TYPE "L", TRIM(LSTRING), @CR, "#",CNTRL, TRIM(STRING),@CR
+    ELSE
+    IF CNTRL EQ "507" THEN
+      ADD 1 TO CNT507
+    ELSE
+      IF CNTRL EQ '610' THEN
+        ADD 1 TO CNT610
+      ELSE
+        ADD 1 TO CNT531
+  ELSE NOTHING
+
+IF (CNT507 + CNT531 + CNT610) = 0 THEN
+  TYPE "No errors or warnings",@CR
+ELSE
+  IF CNT507 NE 0 THEN
+    TYPE CNT507, " - #507 Warnings: Assignment may lose significant data", @CR
+  IF CNT531 NE 0 THEN
+    TYPE CNT531, " - #531 Warnings: Conversion may lose significant data", @CR
+
+END
