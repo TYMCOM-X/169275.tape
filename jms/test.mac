@@ -1,0 +1,4 @@
+	rim10b
+	loc	2000
+start:	jfcl
+	end	start
