@@ -1,0 +1,965 @@
+Master host: 30
+190 files on master system.
+Slave hosts: 23,26,30,33,34,38,74
+Checking host 23
+(JMS         :  23) TATTLE.LOG     3 08-Jun-91 16:05 -- bad checksum CASWEL
+                           should be 08-Jun-91 16:05 REXMAM  ALL  RD  NO
+(JMS         :  23) 20S            2 13-Nov-87 12:23 -- bad checksum PABYOX
+                           should be 18-Nov-88 22:14 BEXDAS  ALL  RD  NO
+(JMS         :  23) JMS.DIR      105 15-Feb-90 15:53 -- bad checksum KOLVAF
+                           should be 15-Feb-90 16:05 XUZPIV  ALL  RD  NO
+(JMS         :  23) FNDBAD.LOG     2 14-Dec-92 07:30 -- bad checksum GIYREB
+                           should be 14-Dec-92 07:30 RETSID  ALL  RD  NO
+(JMS         :  23) SPOOL.LOG      2 07-Dec-92 00:00 -- bad checksum BESREF
+                           should be 07-Dec-92 00:00 VIGGAY  ALL  RD  NO
+(JMS         :  23) SZRPT.LOG      4 14-Dec-92 00:45 -- bad checksum NENTUZ
+                           should be 14-Dec-92 00:45 WAYKEZ  ALL  RD  NO
+(JMS         :  23) SZRPT.GAN      7 21-Jan-87 19:07 -- bad checksum TEMCEG
+                           should be 21-Jan-87 19:08 FEDWET  ALL  RD  NO
+(JMS         :  23) SZRPT.LST      2 14-Dec-92 00:45 -- bad checksum GALWIY
+                           should be 14-Dec-92 00:45 BOPGEW  ALL  RD  NO
+(JMS         :  23) SZRPT.SAT      3 12-Dec-92 00:48 -- bad checksum LONKUJ
+                           should be 12-Dec-92 00:48 YOWQOL  ALL  RD  NO
+(JMS         :  23) SZRPT.SUN      3 13-Dec-92 00:48 -- bad checksum CEJGEL
+                           should be 13-Dec-92 00:48 DOMHAL  ALL  RD  NO
+(JMS         :  23) SZRPT.MON      3 14-Dec-92 00:48 -- bad checksum NUJNOP
+                           should be 14-Dec-92 00:47 RUNXIJ  ALL  RD  NO
+(JMS         :  23) SZRPT.TUE      3 08-Dec-92 00:48 -- bad checksum XUVPAL
+                           should be 08-Dec-92 00:47 WUCVUM  ALL  RD  NO
+(JMS         :  23) SZRPT.WED      3 09-Dec-92 00:48 -- bad checksum GULDEM
+                           should be 09-Dec-92 00:48 TOTQIJ  ALL  RD  NO
+(JMS         :  23) SZRPT.THU      3 10-Dec-92 00:48 -- bad checksum COTKUV
+                           should be 10-Dec-92 00:47 CITJOK  ALL  RD  NO
+(JMS         :  23) SZRPT.FRI      3 11-Dec-92 00:48 -- bad checksum SUPTEF
+                           should be 11-Dec-92 03:50 CIWHOY  ALL  RD  NO
+(JMS         :  23) TEMP.CTL       2 10-May-88 13:47 -- bad checksum BUYDEC
+                           should be 04-Aug-89 18:32 DUKNED  ALL  RD  NO
+(JMS         :  23) SZRPT.CTL      2 09-Nov-91 22:42 -- bad checksum TEZFEV
+                           should be 15-Feb-91 19:56 FOYZET  ALL  RD  NO
+(JMS         :  23) CRSHID.LOG     2 01-Apr-91 14:13 -- bad checksum NEVNES
+                           should be 01-Apr-91 14:13 XUMZIP  ALL  RD  NO
+(JMS         :  23) MAIL.BOX      64 24-Mar-86 17:32 -- bad checksum RIPBAJ
+                           should be 24-Mar-86 17:34 YATMIG  ALL  RD  NO
+(JMS         :  23) FILLUP.MAC     3 04-Dec-86 12:56 -- bad checksum QIPMOQ
+                           should be 27-Jan-87 14:00 HICHAJ  ALL  RD  NO
+(JMS         :  23) DIRIT.INI      2 08-Nov-91 16:34 -- bad checksum JAVZUC
+                           should be 14-Nov-89 14:59 FAYXEZ  ALL  RD  RD
+(JMS         :  23) GAN3B.CTL                        -- missing on slave
+(JMS         :  23) ZAC80A.MAC                       -- missing on slave
+(JMS         :  23) TORTUR.M80                       -- missing on slave
+(JMS         :  23) TORTUR.LIB                       -- missing on slave
+(JMS         :  23) CROSS.MAC                        -- missing on slave
+(JMS         :  23) CROSS.HLP                        -- missing on slave
+(JMS         :  23) CROSS.EXE                        -- missing on slave
+(JMS         :  23) CROSS.DOC                        -- missing on slave
+(JMS         :  23) BLKJCK.FCL                       -- missing on slave
+(JMS         :  23) DSKCLN.F33                       -- missing on slave
+(JMS         :  23) G11447.CTL                       -- missing on slave
+(JMS         :  23) DSLAVE.74                        -- missing on slave
+(JMS         :  23) DSLAVE.28                        -- missing on slave
+(JMS         :  23) DSLAVE.38                        -- missing on slave
+(JMS         :  23) DSLAVE.58                        -- missing on slave
+(JMS         :  23) DSLAVE.30                        -- missing on slave
+(JMS         :  23) DSLAVE.SCM                       -- missing on slave
+(JMS         :  23) SETPDT.MAC                       -- missing on slave
+(JMS         :  23) GAN3A.CTL                        -- missing on slave
+(JMS         :  23) SYSTAT.ROL                       -- missing on slave
+(JMS         :  23) SYSTAT.RCF                       -- missing on slave
+(JMS         :  23) SYSTAT.LOW                       -- missing on slave
+(JMS         :  23) MAGNUM.ROL                       -- missing on slave
+(JMS         :  23) MAGNUM.XXX                       -- missing on slave
+(JMS         :  23) MAGNUM.BIN                       -- missing on slave
+(JMS         :  23) ZORTUR.M80                       -- missing on slave
+(JMS         :  23) SYMSTA.LIB                       -- missing on slave
+(JMS         :  23) NCOMPA.LIB                       -- missing on slave
+(JMS         :  23) MOSTEK.TXT                       -- missing on slave
+(JMS         :  23) MACROS.LIB                       -- missing on slave
+(JMS         :  23) EQUATE.LIB                       -- missing on slave
+(JMS         :  23) LANBAR.FCL                       -- missing on slave
+(JMS         :  23) BINARY.FCL                       -- missing on slave
+(JMS         :  23) BIGLET.FCL                       -- missing on slave
+(JMS         :  23) G3.CTL                           -- missing on slave
+(JMS         :  23) SYSDSK.BAR                       -- missing on slave
+(JMS         :  23) 30GAN3.CTL                       -- missing on slave
+(JMS         :  23) CARL.RDI                         -- missing on slave
+(JMS         :  23) 30GAN3.LOG                       -- missing on slave
+(JMS         :  23) 30GAN3.BAK                       -- missing on slave
+(JMS         :  23) HELP.ROL                         -- missing on slave
+(JMS         :  23) SEQIO.LIB                        -- missing on slave
+(JMS         :  23) M80V7.MSG                        -- missing on slave
+(JMS         :  23) M80V7.DOC                        -- missing on slave
+(JMS         :  23) HAN65.FCL                        -- missing on slave
+(JMS         :  23) TEMP.CCL                         -- missing on slave
+(JMS         :  23) Z80.LIB                          -- missing on slave
+(JMS         :  23) MACRO.LIB                        -- missing on slave
+(JMS         :  23) M80V6.DOC                        -- missing on slave
+(JMS         :  23) M80UNV.UNV                       -- missing on slave
+(JMS         :  23) M80UNV.MAC                       -- missing on slave
+(JMS         :  23) LET5.FCL                         -- missing on slave
+(JMS         :  23) HEX.FCL                          -- missing on slave
+(JMS         :  23) FLUTE.FCL                        -- missing on slave
+(JMS         :  23) BEAR.FCL                         -- missing on slave
+(JMS         :  23) LUD.SYS                          -- missing on slave
+(JMS         :  23) X.CTL                            -- missing on slave
+(JMS         :  23) SPPOPE.RDI                       -- missing on slave
+(JMS         :  23) GAN3E.CTL                        -- missing on slave
+(JMS         :  23) GAN.LOG                          -- missing on slave
+(JMS         :  23) SPOOL.ROL                        -- missing on slave
+(JMS         :  23) Z80UNV.UNV                       -- missing on slave
+(JMS         :  23) Z80UNV.MAC                       -- missing on slave
+(JMS         :  23) MAC80.VDI                        -- missing on slave
+(JMS         :  23) MAC80.RND                        -- missing on slave
+(JMS         :  23) MAC80.MEM                        -- missing on slave
+(JMS         :  23) MAC80.MAC                        -- missing on slave
+(JMS         :  23) MAC80.HLP                        -- missing on slave
+(JMS         :  23) MAC80.EXE                        -- missing on slave
+(JMS         :  23) MAC80.DOC                        -- missing on slave
+(JMS         :  23) MAC80.CMD                        -- missing on slave
+(JMS         :  23) Z80COD.NUM                       -- missing on slave
+(JMS         :  23) Z80COD.NAM                       -- missing on slave
+(JMS         :  23) MAC80.MIC                        -- missing on slave
+(JMS         :  23) DIFF.FCL                         -- missing on slave
+(JMS         :  23) KERM20.MAC                       -- missing on slave
+(JMS         :  23) KERM20.HLP                       -- missing on slave
+(JMS         :  23) DISK1.MOD                        -- missing on slave
+(JMS         :  23) OSMAN.RDI                        -- missing on slave
+(JMS         :  23) VADIMP.RDI                       -- missing on slave
+(JMS         :  23) GAN3D.CTL                        -- missing on slave
+(JMS         :  23) ZAC80.RND                        -- missing on slave
+(JMS         :  23) ZAC80.MAC                        -- missing on slave
+(JMS         :  23) ZAC80.EXE                        -- missing on slave
+(JMS         :  23) ZAC80.DOC                        -- missing on slave
+(JMS         :  23) WHENS.LIB                        -- missing on slave
+(JMS         :  23) NEWZ80.LIB                       -- missing on slave
+(JMS         :  23) LAN65.FCL                        -- missing on slave
+(JMS         :  23) HANOUT.FCL                       -- missing on slave
+(JMS         :  23) DIFEQ.FCL                        -- missing on slave
+(JMS         :  23) KERM10.MAC                       -- missing on slave
+(JMS         :  23) KERM10.EXE                       -- missing on slave
+(JMS         :  23) CMDTST.MAC                       -- missing on slave
+(JMS         :  23) INFO.RDI                         -- missing on slave
+(JMS         :  23) XEXEC.RDI                        -- missing on slave
+(JMS         :  23) LINK10.RDI                       -- missing on slave
+(JMS         :  23) GAN3.LST                         -- missing on slave
+(JMS         :  23) GAN3C.CTL                        -- missing on slave
+(JMS         :  23) GAN3.CTL                         -- missing on slave
+(JMS         :  23) USERS.CTL                        -- missing on slave
+(JMS         :  23) SELECT.LIB                       -- missing on slave
+(JMS         :  23) MAC80A.MAC                       -- missing on slave
+(JMS         :  23) LINK80.MAC                       -- missing on slave
+(JMS         :  23) LINK80.EXE                       -- missing on slave
+(JMS         :  23) LINK80.DOC                       -- missing on slave
+(JMS         :  23) DOWHIL.LIB                       -- missing on slave
+(JMS         :  23) HANOI.FCL                        -- missing on slave
+(JMS         :  23) CMD.MAC                          -- missing on slave
+Checking host 26
+(JMS         :  26) JMS.DIR      105 15-Feb-90 15:59 -- bad checksum KOLVAF
+                           should be 15-Feb-90 16:05 XUZPIV  ALL  RD  NO
+(JMS         :  26) FNDBAD.LOG     2 14-Dec-92 07:30 -- bad checksum ZAMJIT
+                           should be 14-Dec-92 07:30 RETSID  ALL  RD  NO
+(JMS         :  26) SPOOL.LOG      2 07-Dec-92 00:00 -- bad checksum HEGFAT
+                           should be 07-Dec-92 00:00 VIGGAY  ALL  RD  NO
+(JMS         :  26) SZRPT.LST      2 14-Dec-92 00:45 -- bad checksum GEMKOY
+                           should be 14-Dec-92 00:45 BOPGEW  ALL  RD  NO
+(JMS         :  26) SZRPT.SAT      4 12-Dec-92 03:22 -- bad checksum KUXZAP
+                           should be 12-Dec-92 00:48 YOWQOL  ALL  RD  NO
+(JMS         :  26) SZRPT.SUN      4 13-Dec-92 04:12 -- bad checksum ZODQIX
+                           should be 13-Dec-92 00:48 DOMHAL  ALL  RD  NO
+(JMS         :  26) SZRPT.MON      4 14-Dec-92 00:50 -- bad checksum CIBSEZ
+                           should be 14-Dec-92 00:47 RUNXIJ  ALL  RD  NO
+(JMS         :  26) SZRPT.TUE      4 08-Dec-92 00:50 -- bad checksum CEDHAQ
+                           should be 08-Dec-92 00:47 WUCVUM  ALL  RD  NO
+(JMS         :  26) SZRPT.WED      4 09-Dec-92 00:50 -- bad checksum FUSYUF
+                           should be 09-Dec-92 00:48 TOTQIJ  ALL  RD  NO
+(JMS         :  26) SZRPT.THU      4 10-Dec-92 00:51 -- bad checksum CAVFEJ
+                           should be 10-Dec-92 00:47 CITJOK  ALL  RD  NO
+(JMS         :  26) SZRPT.FRI      4 11-Dec-92 00:50 -- bad checksum WOHFAB
+                           should be 11-Dec-92 03:50 CIWHOY  ALL  RD  NO
+(JMS         :  26) SZRPT.LOG      5 14-Dec-92 00:45 -- bad checksum YUPGUR
+                           should be 14-Dec-92 00:45 WAYKEZ  ALL  RD  NO
+(JMS         :  26) SWITCH.INI     3 10-Feb-92 20:22 -- bad checksum JACSOY
+                           should be 01-Jul-92 22:57 YATWEH  ALL  RD  NO
+(JMS         :  26) MAIL.BOX     128 09-Mar-86 00:11 -- bad checksum LELKIJ
+                           should be 24-Mar-86 17:34 YATMIG  ALL  RD  NO
+(JMS         :  26) GAN3B.CTL                        -- missing on slave
+(JMS         :  26) ZAC80A.MAC                       -- missing on slave
+(JMS         :  26) TORTUR.M80                       -- missing on slave
+(JMS         :  26) TORTUR.LIB                       -- missing on slave
+(JMS         :  26) CROSS.MAC                        -- missing on slave
+(JMS         :  26) CROSS.HLP                        -- missing on slave
+(JMS         :  26) CROSS.EXE                        -- missing on slave
+(JMS         :  26) CROSS.DOC                        -- missing on slave
+(JMS         :  26) BLKJCK.FCL                       -- missing on slave
+(JMS         :  26) DSKCLN.F33                       -- missing on slave
+(JMS         :  26) G11447.CTL                       -- missing on slave
+(JMS         :  26) DSLAVE.74                        -- missing on slave
+(JMS         :  26) DSLAVE.28                        -- missing on slave
+(JMS         :  26) DSLAVE.38                        -- missing on slave
+(JMS         :  26) DSLAVE.58                        -- missing on slave
+(JMS         :  26) DSLAVE.30                        -- missing on slave
+(JMS         :  26) DSLAVE.SCM                       -- missing on slave
+(JMS         :  26) SETPDT.MAC                       -- missing on slave
+(JMS         :  26) SETPDT.SAV                       -- missing on slave
+(JMS         :  26) CKSUM.CTL                        -- missing on slave
+(JMS         :  26) GAN3A.CTL                        -- missing on slave
+(JMS         :  26) SYSTAT.ROL                       -- missing on slave
+(JMS         :  26) SYSTAT.RCF                       -- missing on slave
+(JMS         :  26) SYSTAT.LOW                       -- missing on slave
+(JMS         :  26) MAGNUM.ROL                       -- missing on slave
+(JMS         :  26) MAGNUM.XXX                       -- missing on slave
+(JMS         :  26) MAGNUM.BIN                       -- missing on slave
+(JMS         :  26) ZORTUR.M80                       -- missing on slave
+(JMS         :  26) SYMSTA.LIB                       -- missing on slave
+(JMS         :  26) NCOMPA.LIB                       -- missing on slave
+(JMS         :  26) MOSTEK.TXT                       -- missing on slave
+(JMS         :  26) MACROS.LIB                       -- missing on slave
+(JMS         :  26) EQUATE.LIB                       -- missing on slave
+(JMS         :  26) LANBAR.FCL                       -- missing on slave
+(JMS         :  26) BINARY.FCL                       -- missing on slave
+(JMS         :  26) BIGLET.FCL                       -- missing on slave
+(JMS         :  26) NADCHK.CTL                       -- missing on slave
+(JMS         :  26) ND6657.C00                       -- missing on slave
+(JMS         :  26) ND6657.CMD                       -- missing on slave
+(JMS         :  26) ND6657.BND                       -- missing on slave
+(JMS         :  26) ND6657.LOD                       -- missing on slave
+(JMS         :  26) G3.CTL                           -- missing on slave
+(JMS         :  26) SYSDSK.BAR                       -- missing on slave
+(JMS         :  26) MAIL                             -- missing on slave
+(JMS         :  26) FILLUP.CTL                       -- missing on slave
+(JMS         :  26) FILLUP.SAV                       -- missing on slave
+(JMS         :  26) FILLUP.MAC                       -- missing on slave
+(JMS         :  26) TTYINI.MAC                       -- missing on slave
+(JMS         :  26) 30GAN3.CTL                       -- missing on slave
+(JMS         :  26) CARL.RDI                         -- missing on slave
+(JMS         :  26) 30GAN3.LOG                       -- missing on slave
+(JMS         :  26) 30GAN3.BAK                       -- missing on slave
+(JMS         :  26) HELP.ROL                         -- missing on slave
+(JMS         :  26) CRSHID.LOG                       -- missing on slave
+(JMS         :  26) SEQIO.LIB                        -- missing on slave
+(JMS         :  26) M80V7.MSG                        -- missing on slave
+(JMS         :  26) M80V7.DOC                        -- missing on slave
+(JMS         :  26) HAN65.FCL                        -- missing on slave
+(JMS         :  26) TEMP.CCL                         -- missing on slave
+(JMS         :  26) Z80.LIB                          -- missing on slave
+(JMS         :  26) MACRO.LIB                        -- missing on slave
+(JMS         :  26) M80V6.DOC                        -- missing on slave
+(JMS         :  26) M80UNV.UNV                       -- missing on slave
+(JMS         :  26) M80UNV.MAC                       -- missing on slave
+(JMS         :  26) LET5.FCL                         -- missing on slave
+(JMS         :  26) HEX.FCL                          -- missing on slave
+(JMS         :  26) FLUTE.FCL                        -- missing on slave
+(JMS         :  26R.FCL                         -- missing on slave
+(JMS         :  26) G1.CTL                           -- missing on slave
+(JMS         :  26) TEMP.CTL                         -- missing on slave
+(JMS         :  26) LUD.SYS                          -- missing on slave
+(JMS         :  26) X.CTL                            -- missing on slave
+(JMS         :  26) SZRPT.GAN                        -- missing on slave
+(JMS         :  26) SPPOPE.RDI                       -- missing on slave
+(JMS         :  26) GAN3E.CTL                        -- missing on slave
+(JMS         :  26) GAN.LOG                          -- missing on slave
+(JMS         :  26) SPOOL.ROL                        -- missing on slave
+(JMS         :  26) Z80UNV.UNV                       -- missing on slave
+(JMS         :  26) Z80UNV.MAC                       -- missing on slave
+(JMS         :  26) MAC80.VDI                        -- missing on slave
+(JMS         :  26) MAC80.RND                        -- missing on slave
+(JMS         :  26) MAC80.MEM                        -- missing on slave
+(JMS         :  26) MAC80.MAC                        -- missing on slave
+(JMS         :  26) MAC80.HLP                        -- missing on slave
+(JMS         :  26) MAC80.EXE                        -- missing on slave
+(JMS         :  26) MAC80.DOC                        -- missing on slave
+(JMS         :  26) MAC80.CMD                        -- missing on slave
+(JMS         :  26) Z80COD.NUM                       -- missing on slave
+(JMS         :  26) Z80COD.NAM                       -- missing on slave
+(JMS         :  26) MAC80.MIC                        -- missing on slave
+(JMS         :  26) DIFF.FCL                         -- missing on slave
+(JMS         :  26) KERM20.MAC                       -- missing on slave
+(JMS         :  26) KERM20.HLP                       -- missing on slave
+(JMS         :  26) DISK1.MOD                        -- missing on slave
+(JMS         :  26) MSGLOG.CTL                       -- missing on slave
+(JMS         :  26) OSMAN.RDI                        -- missing on slave
+(JMS         :  26) VADIMP.RDI                       -- missing on slave
+(JMS         :  26) GAN3D.CTL                        -- missing on slave
+(JMS         :  26) ZAC80.RND                        -- missing on slave
+(JMS         :  26) ZAC80.MAC                        -- missing on slave
+(JMS         :  26) ZAC80.EXE                        -- missing on slave
+(JMS         :  26) ZAC80.DOC                        -- missing on slave
+(JMS         :  26) WHENS.LIB                        -- missing on slave
+(JMS         :  26) NEWZ80.LIB                       -- missing on slave
+(JMS         :  26) LAN65.FCL                        -- missing on slave
+(JMS         :  26) HANOUT.FCL                       -- missing on slave
+(JMS         :  26) DIFEQ.FCL                        -- missing on slave
+(JMS         :  26) KERM10.MAC                       -- missing on slave
+(JMS         :  26) KERM10.EXE                       -- missing on slave
+(JMS         :  26) CMDTST.MAC                       -- missing on slave
+(JMS         :  26) ASH.CTL                          -- missing on slave
+(JMS         :  26) 20S                              -- missing on slave
+(JMS         :  26) DEL.CMD                          -- missing on slave
+(JMS         :  26) INFO.RDI                         -- missing on slave
+(JMS         :  26) XEXEC.RDI                        -- missing on slave
+(JMS         :  26) LINK10.RDI                       -- missing on slave
+(JMS         :  26) GAN3.LST                         -- missing on slave
+(JMS         :  26) GAN3C.CTL                        -- missing on slave
+(JMS         :  26) GAN3.CTL                         -- missing on slave
+(JMS         :  26) TATTLE.LOG                       -- missing on slave
+(JMS         :  26) USERS.CTL                        -- missing on slave
+(JMS         :  26) SELECT.LIB                       -- missing on slave
+(JMS         :  26) MAC80A.MAC                       -- missing on slave
+(JMS         :  26) LINK80.MAC                       -- missing on slave
+(JMS         :  26) LINK80.EXE                       -- missing on slave
+(JMS         :  26) LINK80.DOC                       -- missing on slave
+(JMS         :  26) DOWHIL.LIB                       -- missing on slave
+(JMS         :  26) HANOI.FCL                        -- missing on slave
+(JMS         :  26) ND6760.LOD                       -- missing on slave
+(JMS         :  26) ND6760.C00                       -- missing on slave
+(JMS         :  26) ND6760.CMD                       -- missing on slave
+(JMS         :  26) ND6760.BND                       -- missing on slave
+(JMS         :  26) CMD.MAC                          -- missing on slave
+(JMS         :  26) ACCESS.LIS                       -- missing on slave
+Checking host 30
+(JMS         :  30) 30GAN3.LOG     1 14-Dec-92 10:40 -- bad checksum PIGFOK
+                           should be 14-Dec-92 10:40 TEXDEH  ALL  RD  NO
+Checking host 33
+(JMS         :  33) GAN3.LST       3 30-Nov-88 16:37 -- bad checksum VEJRIH
+                           should be 14-Dec-92 10:33 FANWUP  ALL  RD  NO
+(JMS         :  33) TATTLE.LOG    40 08-Jun-91 16:05 -- bad checksum DECSIL
+                           should be 08-Jun-91 16:05 REXMAM  ALL  RD  NO
+(JMS         :  33) INFO.RDI       2 05-Sep-91 14:38 -- bad checksum XERDEC
+                           should be 14-Dec-92 21:07 PENRAP  ALL  RD  NO
+(JMS         :  33) LINK10.RDI     2 05-Sep-91 14:53 -- bad checksum LIBWER
+                           should be 14-Dec-92 10:57 KENDON  ALL  RD  NO
+(JMS         :  33) GAN3.CTL       4 05-Sep-91 14:07 -- bad checksum NUXZOQ
+                           should be 14-Dec-92 10:33 NUSRIP  ALL  RD  NO
+(JMS         :  33) OSMAN.RDI      3 05-Sep-91 15:13 -- bad checksum KONNED
+                           should be 14-Dec-92 11:06 LUQKIV  ALL  RD  NO
+(JMS         :  33) FNDBAD.LOG     2 09-Jun-92 15:07 -- bad checksum SOWCON
+                           should be 14-Dec-92 07:30 RETSID  ALL  RD  NO
+(JMS         :  33) SPOOL.LOG      2 07-Dec-92 00:00 -- bad checksum GAZNID
+                           should be 07-Dec-92 00:00 VIGGAY  ALL  RD  NO
+(JMS         :  33) SPPOPE.RDI     3 05-Sep-91 15:40 -- bad checksum MAZZOV
+                           should be 14-Dec-92 10:40 SOHPUC  ALL  RD  NO
+(JMS         :  33) SZRPT.LOG      7 14-Dec-92 00:45 -- bad checksum KOVYUP
+                           should be 14-Dec-92 00:45 WAYKEZ  ALL  RD  NO
+(JMS         :  33) SZRPT.LST      2 14-Dec-92 00:45 -- bad checksum DUFMAH
+                           should be 14-Dec-92 00:45 BOPGEW  ALL  RD  NO
+(JMS         :  33) SZRPT.SAT      4 12-Dec-92 00:50 -- bad checksum CAMVAW
+                           should be 12-Dec-92 00:48 YOWQOL  ALL  RD  NO
+(JMS         :  33) TEMP.CTL       2 03-Jan-90 14:44 -- bad checksum MAGKOC
+                           should be 04-Aug-89 18:32 DUKNED  ALL  RD  NO
+(JMS         :  33) SZRPT.GAN      9 21-Jan-87 19:09 -- bad checksum MUZDAW
+                           should be 21-Jan-87 19:08 FEDWET  ALL  RD  NO
+(JMS         :  33) CRSHID.LOG     2 27-Oct-92 14:05 -- bad checksum QUSFET
+                           should be 01-Apr-91 14:13 XUMZIP  ALL  RD  NO
+(JMS         :  33) CARL.RDI       6 05-Sep-91 14:09 -- bad checksum WOVCOM
+                           should be 14-Dec-92 20:47 SIQLEM  ALL  RD  NO
+(JMS         :  33) MAIL.BOX       3 08-Oct-87 13:07 -- bad checksum TEGMOD
+                           should be 24-Mar-86 17:34 YATMIG  ALL  RD  NO
+(JMS         :  33) SEDONL.HLP    11 22-May-85 06:23 -- protection ALL  RD  RD
+                           should be 22-May-85 06:23 WIJZIT  ALL  RD  NO
+(JMS         :  33) FILLUP.CTL     2 30-May-87 00:18 -- bad checksum FILPUB
+                           should be 05-Dec-86 21:57 RIBBOK  ALL  RD  NO
+(JMS         :  33) SYSTAT.LOW     2 31-Jan-87 01:34 -- bad checksum BAGNIS
+                           should be 30-Nov-92 19:59 KUTXUJ  ALL  RD  NO
+(JMS         :  33) G3.CTL         3 28-Feb-90 23:15 -- bad checksum CANBEQ
+                           should be 14-Dec-89 21:20 KEKREY  ALL  RD  NO
+(JMS         :  33) CKSUM.CTL      2 14-Aug-87 19:02 -- bad checksum TISKUF
+                           should be 05-Dec-86 21:12 QOXFOM  ALL  RD  NO
+(JMS         :  33) SETPDT.MAC     2 04-Feb-87 22:48 -- bad checksum RIXHAL
+                           should be 16-Nov-87 13:36 BOPLES  ALL  RD  NO
+(JMS         :  33) DSKCLN.F33     2 18-Feb-89 18:37 -- bad checksum VEJZAM
+                           should be 18-Dec-89 17:37 VEZFOW  ALL  RD  NO
+(JMS         :  33) USERS.CTL      2 29-Sep-87 14:40 -- bad checksum XOLXAZ
+                           should be 01-Oct-90 12:32 WAKVAJ  ALL  RD  NO
+(JMS         :  33) XEXEC.RDI      3 05-Sep-91 16:05 -- bad checksum YIFFEC
+                           should be 14-Dec-92 11:23 XANYUJ  ALL  RD  NO
+(JMS         :  33) SZRPT.FRI      4 11-Dec-92 00:50 -- bad checksum QILBEF
+                           should be 11-Dec-92 03:50 CIWHOY  ALL  RD  NO
+(JMS         :  33) SZRPT.SUN      4 13-Dec-92 00:50 -- bad checksum WOVCOZ
+                           should be 13-Dec-92 00:48 DOMHAL  ALL  RD  NO
+(JMS         :  33) SZRPT.MON      4 14-Dec-92 00:50 -- bad checksum SUKBAJ
+                           should be 14-Dec-92 00:47 RUNXIJ  ALL  RD  NO
+(JMS         :  33) SZRPT.TUE      4 08-Dec-92 00:50 -- bad checksum CEHTEB
+                           should be 08-Dec-92 00:47 WUCVUM  ALL  RD  NO
+(JMS         :  33) SZRPT.WED      4 09-Dec-92 00:49 -- bad checksum QAJCOJ
+                           should be 09-Dec-92 00:48 TOTQIJ  ALL  RD  NO
+(JMS         :  33) SZRPT.THU      4 10-Dec-92 00:50 -- bad checksum RIMCIY
+                           should be 10-Dec-92 00:47 CITJOK  ALL  RD  NO
+(JMS         :  33) G11447.CTL     2 28-Feb-90 23:16 -- bad checksum CAFPIK
+                           should be 17-Nov-89 15:28 HETTAZ  ALL  RD  NO
+(JMS         :  33) TECO.INI       2 01-Oct-91 00:29 -- bad checksum GUMRAN
+                           should be 18-Apr-87 02:39 YAGZUM  ALL  RD  RD
+(JMS         :  33) GAN3B.CTL                        -- missing on slave
+(JMS         :  33) ZAC80A.MAC                       -- missing on slave
+(JMS         :  33) TORTUR.M80                       -- missing on slave
+(JMS         :  33) TORTUR.LIB                       -- missing on slave
+(JMS         :  33) CROSS.MAC                        -- missing on slave
+(JMS         :  33) CROSS.HLP                        -- missing on slave
+(JMS         :  33) CROSS.EXE                        -- missing on slave
+(JMS         :  33) CROSS.DOC                        -- missing on slave
+(JMS         :  33) BLKJCK.FCL                       -- missing on slave
+(JMS         :  33) DSLAVE.74                        -- missing on slave
+(JMS         :  33) DSLAVE.28                        -- missing on slave
+(JMS         :  33) DSLAVE.38                        -- missing on slave
+(JMS         :  33) DSLAVE.58                        -- missing on slave
+(JMS         :  33) DSLAVE.30                        -- missing on slave
+(JMS         :  33) DSLAVE.SCM                       -- missing on slave
+(JMS         :  33) GAN3A.CTL                        -- missing on slave
+(JMS         :  33) SYSTAT.ROL                       -- missing on slave
+(JMS         :  33) SYSTAT.RCF                       -- missing on slave
+(JMS         :  33) MAGNUM.ROL                       -- missing on slave
+(JMS         :  33) MAGNUM.XXX                       -- missing on slave
+(JMS         :  33) MAGNUM.BIN                       -- missing on slave
+(JMS         :  33) ZORTUR.M80                       -- missing on slave
+(JMS         :  33) SYMSTA.LIB                       -- missing on slave
+(JMS         :  33) NCOMPA.LIB                       -- missing on slave
+(JMS         :  33) MOSTEK.TXT                       -- missing on slave
+(JMS         :  33) MACROS.LIB                       -- missing on slave
+(JMS         :  33) EQUATE.LIB                       -- missing on slave
+(JMS         :  33) LANBAR.FCL                       -- missing on slave
+(JMS         :  33) BINARY.FCL                       -- missing on slave
+(JMS         :  33) BIGLET.FCL                       -- missing on slave
+(JMS         :  33) ND6657.TYM                       -- missing on slave
+(JMS         :  33) SYSDSK.BAR                       -- missing on slave
+(JMS         :  33) 30GAN3.CTL                       -- missing on slave
+(JMS         :  33) 30GAN3.LOG                       -- missing on slave
+(JMS         :  33) 30GAN3.BAK                       -- missing on slave
+(JMS         :  33) HELP.ROL                         -- missing on slave
+(JMS         :  33) SEQIO.LIB                        -- missing on slave
+(JMS         :  33) M80V7.MSG                        -- missing on slave
+(JMS         :  33) M80V7.DOC                        -- missing on slave
+(JMS         :  33) HAN65.FCL                        -- missing on slave
+(JMS         :  33) TEMP.CCL                         -- missing on slave
+(JMS         :  33) Z80.LIB                          -- missing on slave
+(JMS         :  33) MACRO.LIB                        -- missing on slave
+(JMS         :  33) M80V6.DOC                        -- missing on slave
+(JMS         :  33) M80UNV.UNV                       -- missing on slave
+(JMS         :  33) M80UNV.MAC                       -- missing on slave
+(JMS         :  33) LET5.FCL                         -- missing on slave
+(JMS         :  33) HEX.FCL                          -- missing on slave
+(JMS         :  33) FLUTE.FCL                        -- missing on slave
+(JMS         :  33) BEAR.FCL                         -- missing on slave
+(JMS         :  33) LUD.SYS                          -- missing on slave
+(JMS         :  33) X.CTL                            -- missing on slave
+(JMS         :  33) GAN3E.CTL                        -- missing on slave
+(JMS         :  33) GAN.LOG                          -- missing on slave
+(JMS         :  33) SPOOL.ROL                        -- missing on slave
+(JMS         :  33) Z80UNV.UNV                       -- missing on slave
+(JMS         :  33) Z80UNV.MAC                       -- missing on slave
+(JMS         :  33) MAC80.VDI                        -- missing on slave
+(JMS         :  33) MAC80.RND                        -- missing on slave
+(JMS         :  33) MAC80.MEM                        -- missing on slave
+(JMS         :  33) MAC80.MAC                        -- missing on slave
+(JMS         :  33) MAC80.HLP                        -- missing on slave
+(JMS         :  33) MAC80.EXE                        -- missing on slave
+(JMS         :  33) MAC80.DOC                        -- missing on slave
+(JMS         :  33) MAC80.CMD                        -- missing on slave
+(JMS         :  33) Z80COD.NUM                       -- missing on slave
+(JMS         :  33) Z80COD.NAM                       -- missing on slave
+(JMS         :  33) MAC80.MIC                        -- missing on slave
+(JMS         :  33) DIFF.FCL                         -- missing on slave
+(JMS         :  33) CRALST.CMD                       -- missing on slave
+(JMS         :  33) KERM20.MAC                       -- missing on slave
+(JMS         :  33) KERM20.HLP                       -- missing on slave
+(JMS         :  33) DISK1.MOD                        -- missing on slave
+(JMS         :  33) VADIMP.RDI                       -- missing on slave
+(JMS         :  33) GAN3D.CTL                        -- missing on slave
+(JMS         :  33) ZAC80.RND                        -- missing on slave
+(JMS         :  33) ZAC80.MAC                        -- missing on slave
+(JMS         :  33) ZAC80.EXE                        -- missing on slave
+(JMS         :  33) ZAC80.DOC                        -- missing on slave
+(JMS         :  33) WHENS.LIB                        -- missing on slave
+(JMS         :  33) NEWZ80.LIB                       -- missing on slave
+(JMS         :  33) LAN65.FCL                        -- missing on slave
+(JMS         :  33) HANOUT.FCL                       -- missing on slave
+(JMS         :  33) DIFEQ.FCL                        -- missing on slave
+(JMS         :  33) KERM10.MAC                       -- missing on slave
+(JMS         :  33) KERM10.EXE                       -- missing on slave
+(JMS         :  33) CMDTST.MAC                       -- missing on slave
+(JMS         :  33) ASH.CTL                          -- missing on slave
+(JMS         :  33) DEL.CMD                          -- missing on slave
+(JMS         :  33) GAN3C.CTL                        -- missing on slave
+(JMS         :  33) SELECT.LIB                       -- missing on slave
+(JMS         :  33) MAC80A.MAC                       -- missing on slave
+(JMS         :  33) LINK80.MAC                       -- missing on slave
+(JMS         :  33) LINK80.EXE                       -- missing on slave
+(JMS         :  33) LINK80.DOC                       -- missing on slave
+(JMS         :  33) DOWHIL.LIB                       -- missing on slave
+(JMS         :  33) HANOI.FCL                        -- missing on slave
+(JMS         :  33) ND6760.TYM                       -- missing on slave
+(JMS         :  33) CMD.MAC                          -- missing on slave
+(JMS         :  33) ACCESS.LIS                       -- missing on slave
+Checking host 34
+(JMS         :  34) FNDBAD.LOG     2 02-Oct-91 00:01 -- bad checksum GITSOZ
+                           should be 14-Dec-92 07:30 RETSID  ALL  RD  NO
+(JMS         :  34) SPOOL.LOG      2 07-Dec-92 00:00 -- bad checksum YOCZUN
+                           should be 07-Dec-92 00:00 VIGGAY  ALL  RD  NO
+(JMS         :  34) FNDBAD.RPT     2 02-Oct-91 00:01 -- bad checksum DETYON
+                           should be 14-Dec-92 07:30 VAVVAV  ALL  RD  RD
+(JMS         :  34) SZRPT.GAN     15 21-Jan-87 19:09 -- bad checksum BUNBOR
+                           should be 21-Jan-87 19:08 FEDWET  ALL  RD  NO
+(JMS         :  34) SZRPT.LST      2 14-Dec-92 00:45 -- bad checksum PABZIG
+                           should be 14-Dec-92 00:45 BOPGEW  ALL  RD  NO
+(JMS         :  34) SZRPT.SAT      4 12-Dec-92 00:48 -- bad checksum XOGHEF
+                           should be 12-Dec-92 00:48 YOWQOL  ALL  RD  NO
+(JMS         :  34) SZRPT.SUN      4 13-Dec-92 00:49 -- bad checksum HIMPAV
+                           should be 13-Dec-92 00:48 DOMHAL  ALL  RD  NO
+(JMS         :  34) SZRPT.MON      4 14-Dec-92 00:51 -- bad checksum NIQCAW
+                           should be 14-Dec-92 00:47 RUNXIJ  ALL  RD  NO
+(JMS         :  34) SZRPT.TUE      4 08-Dec-92 00:50 -- bad checksum QIZJIR
+                           should be 08-Dec-92 00:47 WUCVUM  ALL  RD  NO
+(JMS         :  34) SZRPT.WED      4 09-Dec-92 00:50 -- bad checksum HEPREP
+                           should be 09-Dec-92 00:48 TOTQIJ  ALL  RD  NO
+(JMS         :  34) SZRPT.THU      4 10-Dec-92 00:50 -- bad checksum QUTWAJ
+                           should be 10-Dec-92 00:47 CITJOK  ALL  RD  NO
+(JMS         :  34) SZRPT.FRI      4 11-Dec-92 00:49 -- bad checksum KEQRIS
+                           should be 11-Dec-92 03:50 CIWHOY  ALL  RD  NO
+(JMS         :  34) SZRPT.LOG      8 14-Dec-92 00:45 -- bad checksum TEMCUB
+                           should be 14-Dec-92 00:45 WAYKEZ  ALL  RD  NO
+(JMS         :  34) MAIL.BOX      54 20-Feb-86 17:49 -- bad checksum GAGBEX
+                           should be 24-Mar-86 17:34 YATMIG  ALL  RD  NO
+(JMS         :  34) GAN3B.CTL                        -- missing on slave
+(JMS         :  34) ZAC80A.MAC                       -- missing on slave
+(JMS         :  34) TORTUR.M80                       -- missing on slave
+(JMS         :  34) TORTUR.LIB                       -- missing on slave
+(JMS         :  34) CROSS.MAC                        -- missing on slave
+(JMS         :  34) CROSS.HLP                        -- missing on slave
+(JMS         :  34) CROSS.EXE                        -- missing on slave
+(JMS         :  34) CROSS.DOC                        -- missing on slave
+(JMS         :  34) BLKJCK.FCL                       -- missing on slave
+(JMS         :  34) DSKCLN.F33                       -- missing on slave
+(JMS         :  34) G11447.CTL                       -- missing on slave
+(JMS         :  34) DSLAVE.74                        -- missing on slave
+(JMS         :  34) DSLAVE.28                        -- missing on slave
+(JMS         :  34) DSLAVE.38                        -- missing on slave
+(JMS         :  34) DSLAVE.58                        -- missing on slave
+(JMS         :  34) DSLAVE.30                        -- missing on slave
+(JMS         :  34) DSLAVE.SCM                       -- missing on slave
+(JMS         :  34) SETPDT.MAC                       -- missing on slave
+(JMS         :  34) SETPDT.SAV                       -- missing on slave
+(JMS         :  34) CKSUM.CTL                        -- missing on slave
+(JMS         :  34) GAN3A.CTL                        -- missing on slave
+(JMS         :  34) SYSTAT.ROL                       -- missing on slave
+(JMS         :  34) SYSTAT.RCF                       -- missing on slave
+(JMS         :  34) SYSTAT.LOW                       -- missing on slave
+(JMS         :  34) MAGNUM.ROL                       -- missing on slave
+(JMS         :  34) MAGNUM.XXX                       -- missing on slave
+(JMS         :  34) MAGNUM.BIN                       -- missing on slave
+(JMS         :  34) ZORTUR.M80                       -- missing on slave
+(JMS         :  34) SYMSTA.LIB                       -- missing on slave
+(JMS         :  34) NCOMPA.LIB                       -- missing on slave
+(JMS         :  34) MOSTEK.TXT                       -- missing on slave
+(JMS         :  34) MACROS.LIB                       -- missing on slave
+(JMS         :  34) EQUATE.LIB                       -- missing on slave
+(JMS         :  34) LANBAR.FCL                       -- missing on slave
+(JMS         :  34) BINARY.FCL                       -- missing on slave
+(JMS         :  34) BIGLET.FCL                       -- missing on slave
+(JMS         :  34) NADCHK.CTL                       -- missing on slave
+(JMS         :  34) ND6657.C00                       -- missing on slave
+(JMS         :  34) ND6657.CMD                       -- missing on slave
+(JMS         :  34) ND6657.TYM                       -- missing on slave
+(JMS         :  34) ND6657.BND                       -- missing on slave
+(JMS         :  34) ND6657.LOD                       -- missing on slave
+(JMS         :  34) G3.CTL                           -- missing on slave
+(JMS         :  34) SYSDSK.BAR                       -- missing on slave
+(JMS         :  34) FILLUP.CTL                       -- missing on slave
+(JMS         :  34) FILLUP.SAV                       -- missing on slave
+(JMS         :  34) FILLUP.MAC                       -- missing on slave
+(JMS         :  34) TTYINI.MAC                       -- missing on slave
+(JMS         :  34) 30GAN3.CTL                       -- missing on slave
+(JMS         :  34) CARL.RDI                         -- missing on slave
+(JMS         :  34) 30GAN3.LOG                       -- missing on slave
+(JMS         :  34) 30GAN3.BAK                       -- missing on slave
+(JMS         :  34) HELP.ROL                         -- missing on slave
+(JMS         :  34) CRSHID.LOG                       -- missing on slave
+(JMS         :  34) SEQIO.LIB                        -- missing on slave
+(JMS         :  34) M80V7.MSG                        -- missing on slave
+(JMS         :  34) M80V7.DOC                        -- missing on slave
+(JMS         :  34) HAN65.FCL                        -- missing on slave
+(JMS         :  34) TEMP.CCL                         -- missing on slave
+(JMS         :  34) Z80.LIB                          -- missing on slave
+(JMS         :  34) MACRO.LIB                        -- missing on slave
+(JMS         :  34) M80V6.DOC                        -- missing on slave
+(JMS         :  34) M80UNV.UNV                       -- missing on slave
+(JMS         :  34) M80UNV.MAC                       -- missing on slave
+(JMS         :  34) LET5.FCL                         -- missing on slave
+(JMS         :  34) HEX.FCL                          -- missing on slave
+(JMS         :  34) FLUTE.FCL                        -- missing on slave
+(JMS         :  34) BEAR.FCL                         -- missing on slave
+(JMS         :  34) G1.CTL                           -- missing on slave
+(JMS         :  34) TEMP.CTL                         -- missing on slave
+(JMS         :  34) LUD.SYS                          -- missing on slave
+(JMS         :  34) SZRPTX.CTL                       -- missing on slave
+(JMS         :  34) X.CTL                            -- missing on slave
+(JMS         :  34) SPPOPE.RDI                       -- missing on slave
+(JMS         :  34) GAN3E.CTL                        -- missing on slave
+(JMS         :  34) GAN.LOG                          -- missing on slave
+(JMS         :  34) SPOOL.ROL                        -- missing on slave
+(JMS         :  34) Z80UNV.UNV                       -- missing on slave
+(JMS         :  34) Z80UNV.MAC                       -- missing on slave
+(JMS         :  34) MAC80.VDI                        -- missing on slave
+(JMS         :  34) MAC80.RND                        -- missing on slave
+(JMS         :  34) MAC80.MEM                        -- missing on slave
+(JMS         :  34) MAC80.MAC                        -- missing on slave
+(JMS         :  34) MAC80.HLP                        -- missing on slave
+(JMS         :  34) MAC80.EXE                        -- missing on slave
+(JMS         :  34) MAC80.DOC                        -- missing on slave
+(JMS         :  34) MAC80.CMD                        -- missing on slave
+(JMS         :  34) Z80COD.NUM                       -- missing on slave
+(JMS         :  34) Z80COD.NAM                       -- missing on slave
+(JMS         :  34) MAC80.MIC                        -- missing on slave
+(JMS         :  34) DIFF.FCL                         -- missing on slave
+(JMS         :  34) CRALST.CMD                       -- missing on slave
+(JMS         :  34) KERM20.MAC                       -- missing on slave
+(JMS         :  34) KERM20.HLP                       -- missing on slave
+(JMS         :  34) DISK1.MOD                        -- missing on slave
+(JMS         :  34) GFD3.CTL                         -- missing on slave
+(JMS         :  34) MSGLOG.CTL                       -- missing on slave
+(JMS         :  34) OSMAN.RDI                        -- missing on slave
+(JMS         :  34) VADIMP.RDI                       -- missing on slave
+(JMS         :  34) GAN3D.CTL                        -- missing on slave
+(JMS         :  34) ZAC80.RND                        -- missing on slave
+(JMS         :  34) ZAC80.MAC                        -- missing on slave
+(JMS         :  34) ZAC80.EXE                        -- missing on slave
+(JMS         :  34) ZAC80.DOC                        -- missing on slave
+(JMS         :  34) WHENS.LIB                        -- missing on slave
+(JMS         :  34) NEWZ80.LIB                       -- missing on slave
+(JMS         :  34) LAN65.FCL                        -- missing on slave
+(JMS         :  34) HANOUT.FCL                       -- missing on slave
+(JMS         :  34) DIFEQ.FCL                        -- missing on slave
+(JMS         :  34) KERM10.MAC                       -- missing on slave
+(JMS         :  34) KERM10.EXE                       -- missing on slave
+(JMS         :  34) CMDTST.MAC                       -- missing on slave
+(JMS         :  34) ASH.CTL                          -- missing on slave
+(JMS         :  34) 20S                              -- missing on slave
+(JMS         :  34) DEL.CMD                          -- missing on slave
+(JMS         :  34) INFO.RDI                         -- missing on slave
+(JMS         :  34) XEXEC.RDI                        -- missing on slave
+(JMS         :  34) LINK10.RDI                       -- missing on slave
+(JMS         :  34) GAN3.LST                         -- missing on slave
+(JMS         :  34) GAN3C.CTL                        -- missing on slave
+(JMS         :  34) GAN3.CTL                         -- missing on slave
+(JMS         :  34) TATTLE.LOG                       -- missing on slave
+(JMS         :  34) USERS.CTL                        -- missing on slave
+(JMS         :  34) SELECT.LIB                       -- missing on slave
+(JMS         :  34) MAC80A.MAC                       -- missing on slave
+(JMS         :  34) LINK80.MAC                       -- missing on slave
+(JMS         :  34) LINK80.EXE                       -- missing on slave
+(JMS         :  34) LINK80.DOC                       -- missing on slave
+(JMS         :  34) DOWHIL.LIB                       -- missing on slave
+(JMS         :  34) HANOI.FCL                        -- missing on slave
+(JMS         :  34) ND6760.LOD                       -- missing on slave
+(JMS         :  34) ND6760.C00                       -- missing on slave
+(JMS         :  34) ND6760.CMD                       -- missing on slave
+(JMS         :  34) ND6760.TYM                       -- missing on slave
+(JMS         :  34) ND6760.BND                       -- missing on slave
+(JMS         :  34) CMD.MAC                          -- missing on slave
+(JMS         :  34) ACCESS.LIS                       -- missing on slave
+(JMS         :  34) PPNS.TEC                         -- missing on slave
+Checking host 38
+(JMS         :  38) TUMS.INI       3 27-Jul-90 17:06 -- bad checksum CILWUX
+                           should be 12-Mar-91 16:40 RIGNIL  ALL  RD  NO
+(JMS         :  38) FNDBAD.LOG     2 14-Dec-92 07:48 -- bad checksum QUBFEN
+                           should be 14-Dec-92 07:30 RETSID  ALL  RD  NO
+(JMS         :  38) FNDBAD.CTL     2 22-Nov-89 12:07 -- bad checksum CASGUM
+                           should be 03-Nov-89 14:04 LIZNIP  ALL  RD  NO
+(JMS         :  38) CRALST.CMD     2 22-Jan-90 14:28 -- bad checksum HIBNAJ
+                           should be 24-Aug-90 15:06 PILGER  ALL  RD  NO
+(JMS         :  38) SPOOL.LOG      2 07-Dec-92 00:00 -- bad checksum BOFHOG
+                           should be 07-Dec-92 00:00 VIGGAY  ALL  RD  NO
+(JMS         :  38) SZRPT.GAN     22 21-Jan-87 19:09 -- bad checksum BURBEZ
+                           should be 21-Jan-87 19:08 FEDWET  ALL  RD  NO
+(JMS         :  38) SZRPT.LST      2 14-Dec-92 00:45 -- bad checksum KOMQUQ
+                           should be 14-Dec-92 00:45 BOPGEW  ALL  RD  NO
+(JMS         :  38) SZRPT.SAT      4 12-Dec-92 02:57 -- bad checksum NEWYOX
+                           should be 12-Dec-92 00:48 YOWQOL  ALL  RD  NO
+(JMS         :  38) SZRPT.SUN      4 13-Dec-92 00:49 -- bad checksum WUHKUZ
+                           should be 13-Dec-92 00:48 DOMHAL  ALL  RD  NO
+(JMS         :  38) SZRPT.MON      4 14-Dec-92 00:49 -- bad checksum MABQAL
+                           should be 14-Dec-92 00:47 RUNXIJ  ALL  RD  NO
+(JMS         :  38) SZRPT.TUE      4 08-Dec-92 01:14 -- bad checksum RIRGAB
+                           should be 08-Dec-92 00:47 WUCVUM  ALL  RD  NO
+(JMS         :  38) SZRPT.WED      4 09-Dec-92 08:17 -- bad checksum MUTHES
+                           should be 09-Dec-92 00:48 TOTQIJ  ALL  RD  NO
+(JMS         :  38) SZRPT.THU      4 10-Dec-92 00:50 -- bad checksum MUPJAB
+                           should be 10-Dec-92 00:47 CITJOK  ALL  RD  NO
+(JMS         :  38) SZRPT.FRI      4 11-Dec-92 00:49 -- bad checksum GOKSOZ
+                           should be 11-Dec-92 03:50 CIWHOY  ALL  RD  NO
+(JMS         :  38) SZRPT.LOG      4 14-Dec-92 00:45 -- bad checksum XEFTEX
+                           should be 14-Dec-92 00:45 WAYKEZ  ALL  RD  NO
+(JMS         :  38) SWITCH.INI     3 10-Feb-92 20:22 -- bad checksum JACSOY
+                           should be 01-Jul-92 22:57 YATWEH  ALL  RD  NO
+(JMS         :  38) MAIL.BOX      74 27-Nov-85 18:04 -- bad checksum KIWDAF
+                           should be 24-Mar-86 17:34 YATMIG  ALL  RD  NO
+(JMS         :  38) FILLUP.MAC     3 04-Dec-86 13:04 -- bad checksum QIPMOQ
+                           should be 27-Jan-87 14:00 HICHAJ  ALL  RD  NO
+(JMS         :  38) DIRIT.INI      2 21-May-90 14:18 -- bad checksum REQGEX
+                           should be 14-Nov-89 14:59 FAYXEZ  ALL  RD  RD
+(JMS         :  38) GAN3B.CTL                        -- missing on slave
+(JMS         :  38) ZAC80A.MAC                       -- missing on slave
+(JMS         :  38) TORTUR.M80                       -- missing on slave
+(JMS         :  38) TORTUR.LIB                       -- missing on slave
+(JMS         :  38) CROSS.MAC                        -- missing on slave
+(JMS         :  38) CROSS.HLP                        -- missing on slave
+(JMS         :  38) CROSS.EXE                        -- missing on slave
+(JMS         :  38) CROSS.DOC                        -- missing on slave
+(JMS         :  38) BLKJCK.FCL                       -- missing on slave
+(JMS         :  38) DSKCLN.F33                       -- missing on slave
+(JMS         :  38) G11447.CTL                       -- missing on slave
+(JMS         :  38) DSLAVE.74                        -- missing on slave
+(JMS         :  38) DSLAVE.28                        -- missing on slave
+(JMS         :  38) DSLAVE.38                        -- missing on slave
+(JMS         :  38) DSLAVE.58                        -- missing on slave
+(JMS         :  38) DSLAVE.30                        -- missing on slave
+(JMS         :  38) DSLAVE.SCM                       -- missing on slave
+(JMS         :  38) SETPDT.MAC                       -- missing on slave
+(JMS         :  38) GAN3A.CTL                        -- missing on slave
+(JMS         :  38) SYSTAT.ROL                       -- missing on slave
+(JMS         :  38) SYSTAT.RCF                       -- missing on slave
+(JMS         :  38) SYSTAT.LOW                       -- missing on slave
+(JMS         :  38) MAGNUM.ROL                       -- missing on slave
+(JMS         :  38) MAGNUM.XXX                       -- missing on slave
+(JMS         :  38) MAGNUM.BIN                       -- missing on slave
+(JMS         :  38) ZORTUR.M80                       -- missing on slave
+(JMS         :  38) SYMSTA.LIB                       -- missing on slave
+(JMS         :  38) NCOMPA.LIB                       -- missing on slave
+(JMS         :  38) MOSTEK.TXT                       -- missing on slave
+(JMS         :  38) MACROS.LIB                       -- missing on slave
+(JMS         :  38) EQUATE.LIB                       -- missing on slave
+(JMS         :  38) LANBAR.FCL                       -- missing on slave
+(JMS         :  38) BINARY.FCL                       -- missing on slave
+(JMS         :  38) BIGLET.FCL                       -- missing on slave
+(JMS         :  38) ND6657.C00                       -- missing on slave
+(JMS         :  38) ND6657.CMD                       -- missing on slave
+(JMS         :  38) ND6657.TYM                       -- missing on slave
+(JMS         :  38) ND6657.BND                       -- missing on slave
+(JMS         :  38) ND6657.LOD                       -- missing on slave
+(JMS         :  38) G3.CTL                           -- missing on slave
+(JMS         :  38) SYSDSK.BAR                       -- missing on slave
+(JMS         :  38) 30GAN3.CTL                       -- missing on slave
+(JMS         :  38) CARL.RDI                         -- missing on slave
+(JMS         :  38) 30GAN3.LOG                       -- missing on slave
+(JMS         :  38) 30GAN3.BAK                       -- missing on slave
+(JMS         :  38) HELP.ROL                         -- missing on slave
+(JMS         :  38) CRSHID.LOG                       -- missing on slave
+(JMS         :  38) SEQIO.LIB                        -- missing on slave
+(JMS         :  38) M80V7.MSG                        -- missing on slave
+(JMS         :  38) M80V7.DOC                        -- missing on slave
+(JMS         :  38) HAN65.FCL                        -- missing on slave
+(JMS         :  38) TEMP.CCL                         -- missing on slave
+(JMS         :  38) Z80.LIB                          -- missing on slave
+(JMS         :  38) MACRO.LIB                        -- missing on slave
+(JMS         :  38) M80V6.DOC                        -- missing on slave
+(JMS         :  38) M80UNV.UNV                       -- missing on slave
+(JMS         :  38) M80UNV.MAC                       -- missing on slave
+(JMS         :  38) LET5.FCL                         -- missing on slave
+(JMS         :  38) HEX.FCL                          -- missing on slave
+(JMS         :  38) FLUTE.FCL                        -- missing on slave
+(JMS         :  38) BEAR.FCL                         -- missing on slave
+(JMS         :  38) G1.CTL                           -- missing on slave
+(JMS         :  38) TEMP.CTL                         -- missing on slave
+(JMS         :  38) LUD.SYS                          -- missing on slave
+(JMS         :  38) X.CTL                            -- missing on slave
+(JMS         :  38) SPPOPE.RDI                       -- missing on slave
+(JMS         :  38) GAN3E.CTL                        -- missing on slave
+(JMS         :  38) GAN.LOG                          -- missing on slave
+(JMS         :  38) SPOOL.ROL                        -- missing on slave
+(JMS         :  38) Z80UNV.UNV                       -- missing on slave
+(JMS         :  38) Z80UNV.MAC                       -- missing on slave
+(JMS         :  38) MAC80.VDI                        -- missing on slave
+(JMS         :  38) MAC80.RND                        -- missing on slave
+(JMS         :  38) MAC80.MEM                        -- missing on slave
+(JMS         :  38) MAC80.MAC                        -- missing on slave
+(JMS         :  38) MAC80.HLP                        -- missing on slave
+(JMS         :  38) MAC80.EXE                        -- missing on slave
+(JMS         :  38) MAC80.DOC                        -- missing on slave
+(JMS         :  38) MAC80.CMD                        -- missing on slave
+(JMS         :  38) Z80COD.NUM                       -- missing on slave
+(JMS         :  38) Z80COD.NAM                       -- missing on slave
+(JMS         :  38) MAC80.MIC                        -- missing on slave
+(JMS         :  38) DIFF.FCL                         -- missing on slave
+(JMS         :  38) KERM20.MAC                       -- missing on slave
+(JMS         :  38) KERM20.HLP                       -- missing on slave
+(JMS         :  38) DISK1.MOD                        -- missing on slave
+(JMS         :  38) OSMAN.RDI                        -- missing on slave
+(JMS         :  38) VADIMP.RDI                       -- missing on slave
+(JMS         :  38) GAN3D.CTL                        -- missing on slave
+(JMS         :  38) ZAC80.RND                        -- missing on slave
+(JMS         :  38) ZAC80.MAC                        -- missing on slave
+(JMS         :  38) ZAC80.EXE                        -- missing on slave
+(JMS         :  38) ZAC80.DOC                        -- missing on slave
+(JMS         :  38) WHENS.LIB                        -- missing on slave
+(JMS         :  38) NEWZ80.LIB                       -- missing on slave
+(JMS         :  38) LAN65.FCL                        -- missing on slave
+(JMS         :  38) HANOUT.FCL                       -- missing on slave
+(JMS         :  38) DIFEQ.FCL                        -- missing on slave
+(JMS         :  38) KERM10.MAC                       -- missing on slave
+(JMS         :  38) KERM10.EXE                       -- missing on slave
+(JMS         :  38) CMDTST.MAC                       -- missing on slave
+(JMS         :  38) INFO.RDI                         -- missing on slave
+(JMS         :  38) XEXEC.RDI                        -- missing on slave
+(JMS         :  38) LINK10.RDI                       -- missing on slave
+(JMS         :  38) GAN3.LST                         -- missing on slave
+(JMS         :  38) GAN3C.CTL                        -- missing on slave
+(JMS         :  38) GAN3.CTL                         -- missing on slave
+(JMS         :  38) TATTLE.LOG                       -- missing on slave
+(JMS         :  38) USERS.CTL                        -- missing on slave
+(JMS         :  38) SELECT.LIB                       -- missing on slave
+(JMS         :  38) MAC80A.MAC                       -- missing on slave
+(JMS         :  38) LINK80.MAC                       -- missing on slave
+(JMS         :  38) LINK80.EXE                       -- missing on slave
+(JMS         :  38) LINK80.DOC                       -- missing on slave
+(JMS         :  38) DOWHIL.LIB                       -- missing on slave
+(JMS         :  38) HANOI.FCL                        -- missing on slave
+(JMS         :  38) ND6760.LOD                       -- missing on slave
+(JMS         :  38) ND6760.C00                       -- missing on slave
+(JMS         :  38) ND6760.CMD                       -- missing on slave
+(JMS         :  38) ND6760.TYM                       -- missing on slave
+(JMS         :  38) ND6760.BND                       -- missing on slave
+(JMS         :  38) CMD.MAC                          -- missing on slave
+(JMS         :  38) ACCESS.LIS                       -- missing on slave
+Checking host 74
+(JMS         :  74) GAN3.LST      12 13-Jan-87 08:50 -- bad checksum FAWTAS
+                           should be 14-Dec-92 10:33 FANWUP  ALL  RD  NO
+(JMS         :  74) KERM10.EXE    30 16-Nov-82 05:53 -- bad checksum DEMGER
+                           should be 16-Nov-82 05:53 NAVHUG  ALL  RD  NO
+(JMS         :  74) TUMS.INI       3 12-Mar-91 16:40 -- protection ALL  RD  RD
+                           should be 12-Mar-91 16:40 RIGNIL  ALL  RD  NO
+(JMS         :  74) FNDBAD.LOG     2 24-Nov-92 09:19 -- bad checksum XUSQIQ
+                           should be 14-Dec-92 07:30 RETSID  ALL  RD  NO
+(JMS         :  74) DISK1.MOD      4 16-Sep-88 18:56 -- bad checksum HAJYOX
+                           should be 31-Aug-88 17:55 MUBHUL  ALL  RD  NO
+(JMS         :  74) SPOOL.LOG      2 07-Dec-92 00:00 -- bad checksum MEWBUJ
+                           should be 07-Dec-92 00:00 VIGGAY  ALL  RD  NO
+(JMS         :  74) SZRPT.LST      2 14-Dec-92 00:45 -- bad checksum MOYZUL
+                           should be 14-Dec-92 00:45 BOPGEW  ALL  RD  NO
+(JMS         :  74) SZRPT.FRI      5 11-Dec-92 00:52 -- bad checksum COQLEX
+                           should be 11-Dec-92 03:50 CIWHOY  ALL  RD  NO
+(JMS         :  74) SZRPT.SAT      5 12-Dec-92 00:52 -- bad checksum ROWYAC
+                           should be 12-Dec-92 00:48 YOWQOL  ALL  RD  NO
+(JMS         :  74) SZRPT.SUN      5 13-Dec-92 00:52 -- bad checksum PEPPAG
+                           should be 13-Dec-92 00:48 DOMHAL  ALL  RD  NO
+(JMS         :  74) SZRPT.MON      5 14-Dec-92 00:53 -- bad checksum VILTEZ
+                           should be 14-Dec-92 00:47 RUNXIJ  ALL  RD  NO
+(JMS         :  74) SZRPT.TUE      5 08-Dec-92 00:52 -- bad checksum ROXFAP
+                           should be 08-Dec-92 00:47 WUCVUM  ALL  RD  NO
+(JMS         :  74) SZRPT.WED      5 09-Dec-92 00:53 -- bad checksum ZANXEL
+                           should be 09-Dec-92 00:48 TOTQIJ  ALL  RD  NO
+(JMS         :  74) SZRPT.THU      5 10-Dec-92 00:51 -- bad checksum BEJKAK
+                           should be 10-Dec-92 00:47 CITJOK  ALL  RD  NO
+(JMS         :  74) SZRPT.GAN      5 21-Jan-87 19:11 -- bad checksum MEMWAG
+                           should be 21-Jan-87 19:08 FEDWET  ALL  RD  NO
+(JMS         :  74) SZRPT.LOG     11 14-Dec-92 00:45 -- bad checksum TACBUX
+                           should be 14-Dec-92 00:45 WAYKEZ  ALL  RD  NO
+(JMS         :  74) SETPDT.MAC     2 04-Feb-87 22:48 -- bad checksum RIXHAL
+                           should be 16-Nov-87 13:36 BOPLES  ALL  RD  NO
+(JMS         :  74) TATTLE.LOG    59 07-Jun-91 17:10 -- bad checksum PUQHUN
+                           should be 08-Jun-91 16:05 REXMAM  ALL  RD  NO
+(JMS         :  74) TATTLE.CTL     2 15-Feb-91 16:13 -- bad checksum YAQBAG
+                           should be 15-Feb-91 19:56 DEBVOK  ALL  RD  NO
+(JMS         :  74) USERS.CTL      2 08-Jul-92 15:41 -- bad checksum JOJCIP
+                           should be 01-Oct-90 12:32 WAKVAJ  ALL  RD  NO
+(JMS         :  74) ASH.CTL        2 12-Apr-91 16:29 -- bad checksum FAZVIZ
+                           should be 31-Aug-88 12:54 RUGMID  ALL  RD  NO
+(JMS         :  74) CRALST.CMD     2 22-Jan-90 14:28 -- bad checksum HIBNAJ
+                           should be 24-Aug-90 15:06 PILGER  ALL  RD  NO
+(JMS         :  74) LUD.SYS      224 22-Jun-90 15:52 -- bad checksum KOJNOP
+                           should be 21-Sep-89 01:15 FAPVES  ALL  RD  NO
+(JMS         :  74) TEMP.CTL       2 09-Nov-92 18:12 -- bad checksum QUQNEJ
+                           should be 04-Aug-89 18:32 DUKNED  ALL  RD  NO
+(JMS         :  74) CRSHID.LOG     2 01-Apr-91 14:14 -- bad checksum MAGKAJ
+                           should be 01-Apr-91 14:13 XUMZIP  ALL  RD  NO
+(JMS         :  74) ZAC80A.MAC                       -- missing on slave
+(JMS         :  74) TORTUR.M80                       -- missing on slave
+(JMS         :  74) TORTUR.LIB                       -- missing on slave
+(JMS         :  74) CROSS.MAC                        -- missing on slave
+(JMS         :  74) CROSS.HLP                        -- missing on slave
+(JMS         :  74) CROSS.EXE                        -- missing on slave
+(JMS         :  74) CROSS.DOC                        -- missing on slave
+(JMS         :  74) BLKJCK.FCL                       -- missing on slave
+(JMS         :  74) G11447.CTL                       -- missing on slave
+(JMS         :  74) DSLAVE.74                        -- missing on slave
+(JMS         :  74) DSLAVE.28                        -- missing on slave
+(JMS         :  74) DSLAVE.38                        -- missing on slave
+(JMS         :  74) DSLAVE.58                        -- missing on slave
+(JMS         :  74) DSLAVE.30                        -- missing on slave
+(JMS         :  74) DSLAVE.SCM                       -- missing on slave
+(JMS         :  74) SYSTAT.ROL                       -- missing on slave
+(JMS         :  74) SYSTAT.RCF                       -- missing on slave
+(JMS         :  74) MAGNUM.ROL                       -- missing on slave
+(JMS         :  74) MAGNUM.XXX                       -- missing on slave
+(JMS         :  74) MAGNUM.BIN                       -- missing on slave
+(JMS         :  74) ZORTUR.M80                       -- missing on slave
+(JMS         :  74) SYMSTA.LIB                       -- missing on slave
+(JMS         :  74) NCOMPA.LIB                       -- missing on slave
+(JMS         :  74) MOSTEK.TXT                       -- missing on slave
+(JMS         :  74) MACROS.LIB                       -- missing on slave
+(JMS         :  74) EQUATE.LIB                       -- missing on slave
+(JMS         :  74) LANBAR.FCL                       -- missing on slave
+(JMS         :  74) BINARY.FCL                       -- missing on slave
+(JMS         :  74) BIGLET.FCL                       -- missing on slave
+(JMS         :  74) G3.CTL                           -- missing on slave
+(JMS         :  74) SYSDSK.BAR                       -- missing on slave
+(JMS         :  74) MAIL                             -- missing on slave
+(JMS         :  74) MAIL.BOX                         -- missing on slave
+(JMS         :  74) 30GAN3.CTL                       -- missing on slave
+(JMS         :  74) CARL.RDI                         -- missing on slave
+(JMS         :  74) 30GAN3.LOG                       -- missing on slave
+(JMS         :  74) 30GAN3.BAK                       -- missing on slave
+(JMS         :  74) HELP.ROL                         -- missing on slave
+(JMS         :  74) SEQIO.LIB                        -- missing on slave
+(JMS         :  74) M80V7.MSG                        -- missing on slave
+(JMS         :  74) M80V7.DOC                        -- missing on slave
+(JMS         :  74) HAN65.FCL                        -- missing on slave
+(JMS         :  74) TEMP.CCL                         -- missing on slave
+(JMS         :  74) Z80.LIB                          -- missing on slave
+(JMS         :  74) MACRO.LIB                        -- missing on slave
+(JMS         :  74) M80V6.DOC                        -- missing on slave
+(JMS         :  74) M80UNV.UNV                       -- missing on slave
+(JMS         :  74) M80UNV.MAC                       -- missing on slave
+(JMS         :  74) LET5.FCL                         -- missing on slave
+(JMS         :  74) HEX.FCL                          -- missing on slave
+(JMS         :  74) FLUTE.FCL                        -- missing on slave
+(JMS         :  74) BEAR.FCL                         -- missing on slave
+(JMS         :  74) X.CTL                            -- missing on slave
+(JMS         :  74) SPPOPE.RDI                       -- missing on slave
+(JMS         :  74) GAN.LOG                          -- missing on slave
+(JMS         :  74) SPOOL.ROL                        -- missing on slave
+(JMS         :  74) Z80UNV.UNV                       -- missing on slave
+(JMS         :  74) Z80UNV.MAC                       -- missing on slave
+(JMS         :  74) MAC80.VDI                        -- missing on slave
+(JMS         :  74) MAC80.RND                        -- missing on slave
+(JMS         :  74) MAC80.MEM                        -- missing on slave
+(JMS         :  74) MAC80.MAC                        -- missing on slave
+(JMS         :  74) MAC80.HLP                        -- missing on slave
+(JMS         :  74) MAC80.EXE                        -- missing on slave
+(JMS         :  74) MAC80.DOC                        -- missing on slave
+(JMS         :  74) MAC80.CMD                        -- missing on slave
+(JMS         :  74) Z80COD.NUM                       -- missing on slave
+(JMS         :  74) Z80COD.NAM                       -- missing on slave
+(JMS         :  74) MAC80.MIC                        -- missing on slave
+(JMS         :  74) DIFF.FCL                         -- missing on slave
+(JMS         :  74) OSMAN.RDI                        -- missing on slave
+(JMS         :  74) VADIMP.RDI                       -- missing on slave
+(JMS         :  74) ZAC80.RND                        -- missing on slave
+(JMS         :  74) ZAC80.MAC                        -- missing on slave
+(JMS         :  74) ZAC80.EXE                        -- missing on slave
+(JMS         :  74) ZAC80.DOC                        -- missing on slave
+(JMS         :  74) WHENS.LIB                        -- missing on slave
+(JMS         :  74) NEWZ80.LIB                       -- missing on slave
+(JMS         :  74) LAN65.FCL                        -- missing on slave
+(JMS         :  74) HANOUT.FCL                       -- missing on slave
+(JMS         :  74) DIFEQ.FCL                        -- missing on slave
+(JMS         :  74) CMDTST.MAC                       -- missing on slave
+(JMS         :  74) INFO.RDI                         -- missing on slave
+(JMS         :  74) XEXEC.RDI                        -- missing on slave
+(JMS         :  74) LINK10.RDI                       -- missing on slave
+(JMS         :  74) SELECT.LIB                       -- missing on slave
+(JMS         :  74) MAC80A.MAC                       -- missing on slave
+(JMS         :  74) LINK80.MAC                       -- missing on slave
+(JMS         :  74) LINK80.EXE                       -- missing on slave
+(JMS         :  74) LINK80.DOC                       -- missing on slave
+(JMS         :  74) DOWHIL.LIB                       -- missing on slave
+(JMS         :  74) HANOI.FCL                        -- missing on slave
+(JMS         :  74) CMD.MAC                          -- missing on slave
+(JMS         :  74) ACCESS.LIS                       -- missing on slave
+(JMS         :  74) PPNS.TEC                         -- missing on slave
+  \&/k&
