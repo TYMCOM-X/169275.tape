@@ -1,0 +1,1760 @@
+
+  Parity:Odd  9-Track  Write enabled
+
+  BACKUP reel number 1; start save set: 
+    by version 2(232) at 22:08:18 on 30-Nov-77
+    written on MTA010: on S/N 1205 at 1600 9-track
+    under TOPS-10 system 603(15717): Catholic Univ 603(12) VM
+
+ADVENT	MIC     2  <057>   145212  20-Jul-77	DSKA:	[10,64]
+  Total of 2 blocks in 1 file Checksum = 145212 on DSKA: [10,64]
+
+ADVENT	TXT     6  <155>   172712  22-Oct-77	[10,64,ADVENT]
+FUNNY	TXT     1  <333>   677301  21-Jul-77
+LIST	CMD     4  <157>   136003  10-Sep-77
+LIST	HRZ     3  <157>   355377  10-Sep-77
+RATS	SNO     1  <057>   222274  21-Jul-77
+READ	REL     7  <157>   400002   4-Nov-77
+READ	SAI     4  <157>   255747  19-Sep-77
+READFL	REL     4  <157>   405222   4-Nov-77
+READFL	SAI     2  <157>   302231  10-Sep-77
+  Total of 32 blocks in 9 files Checksum = 040052 on DSKA: [10,64,ADVENT]
+
+ADVENT	EXE   244  <156>   455670  13-Oct-77	[10,64,ADVENT,SOURCE]
+START	EXE   244  <156>   250121  23-Nov-77
+TEXT	DAT    90  <155>   246211   7-Sep-77
+X	EXE   220  <156>   652071  15-Nov-77	31(225)
+X	SAV   197  <157>   430345  15-Nov-77	31(225)
+  Total of 995 blocks in 5 files Checksum = 624463 on DSKA: [10,64,ADVENT,SOURCE]
+
+LOADME	ALG     2  <057>   375044   2-Oct-75	[10,64,ALGOL]
+  Total of 2 blocks in 1 file Checksum = 375044 on DSKA: [10,64,ALGOL]
+
+ALTER	MBC     6  <057>   624500   2-Jul-75	[10,64,ALTER]
+ALTER	RND    17  <057>   123144   2-Jul-75
+ALTER	RNH     3  <057>   457220  26-Jun-75
+ALTER	SNO    41  <057>   736126   2-Jul-75
+FIXCTL	SNO    14  <057>   344526   2-Jan-75
+  Total of 81 blocks in 5 files Checksum = 342177 on DSKA: [10,64,ALTER]
+
+AMAZON	EXE    44  <156>   731517  11-Sep-77	[10,64,AMAZON]
+AMAZON	REL     5  <157>   034202   4-Nov-77
+AMAZON	SAI     3  <157>   522017  11-Sep-77
+CENTER	FOR     1  <157>   111347   6-Jul-76
+CMDLIB	001     3  <157>   007243  11-Sep-77
+CMDLIB	REL     2  <157>   767404   4-Nov-77
+CMDLIB	SAI     4  <157>   043157  11-Sep-77
+COMAND	FOR     3  <157>   604657  30-Aug-77
+COMAND	REL     4  <157>   034745  30-Aug-77
+LOOKTT	MAC     4  <157>   151177  30-Aug-77
+LOOKTT	REL     1  <157>   261561  30-Aug-77
+PRTEST	REL    18  <157>   000272   9-Nov-77
+PRTEST	SAI    12  <157>   574366   3-Sep-77
+ROOMS	       10  <157>   037311  23-Sep-77
+SYSLIB	REL     4  <157>   214607   4-Nov-77
+SYSLIB	SAI     7  <157>   006675   9-Sep-77
+TES	EXE    44  <156>   165023   4-Nov-77
+TEST	EXE    12  <156>   227716   1-Sep-77
+TEST	FOR     1  <157>   330334   1-Sep-77
+TEST	REL     3  <157>   127145   4-Nov-77
+TEST	SAI     2  <157>   714630   1-Sep-77
+X	REL     1  <157>   541267   1-Sep-77
+  Total of 188 blocks in 22 files Checksum = 176040 on DSKA: [10,64,AMAZON]
+
+1CHECK	BAS     4  <057>   166166  14-Oct-76	[10,64,BAS]
+23MTCH	BAS     3  <057>   513243  14-Oct-76
+3DPLOT	BAS     1  <057>   773041  14-Oct-76
+ACEYDU	BAS     4  <057>   054413  14-Oct-76
+ADVICE	BAS     1  <057>   000000  14-Oct-76
+AMAZIN	BAS     7  <057>   460366  14-Oct-76
+ANIMAL	BAS     4  <057>   267651  14-Oct-76
+ARTILL	BAS     7  <157>   424603  30-Jul-75
+AWARI	BAS     5  <057>   312216  14-Oct-76
+BAGELS	BAS     4  <057>   524037  14-Oct-76
+BANDIT	BAS     7  <157>   277213  30-Nov-71
+BIG6	BAS     7  <057>   532103  14-Oct-76
+BLKJAC	BAS    14  <057>   307521  14-Oct-76
+BOMBER	BAS     5  <057>   711157  14-Oct-76
+BOUNCE	BAS     3  <057>   413364  14-Oct-76
+BOWL	BAS     4  <057>   122762  14-Oct-76
+BOXING	BAS     6  <057>   420050  14-Oct-76
+BUG	BAS    10  <057>   734125  14-Oct-76
+BULCOW	BAS     7  <157>   752110  14-Oct-76
+BULEYE	BAS     3  <057>   064046  14-Oct-76
+BUZZWD	BAS     5  <057>   320620  14-Oct-76
+CAIADD	BAS     2  <057>   321605  14-Oct-76
+CALCL8	BAS     2  <157>   172477  14-Jul-75
+CAVES	BAS     4  <157>   143213  14-Oct-76
+CHANGE	BAS     2  <057>   077542  14-Oct-76
+CHEKER	BAS     4  <057>   353030  14-Oct-76
+CHIEF	BAS     3  <057>   166554  14-Oct-76
+CHIKEN	BAS     6  <157>   550142  14-Oct-76
+CHOMP	BAS     5  <157>   740652  14-Oct-76
+CIVIL	BAS    13  <057>   303507  14-Oct-76
+CIVILW	BAS    15  <157>   577122  14-Oct-76
+CRAPS	BAS     5  <057>   344737  14-Oct-76
+CUBE	BAS     7  <157>   315321  14-Oct-76
+DEFUSE	BAS     3  <057>   624521  14-Oct-76
+DEPTH	BAS     4  <157>   531734  14-Oct-76
+DIAMND	BAS     1  <057>   660377  14-Oct-76
+DIGIT	BAS     4  <057>   236134  14-Oct-76
+DRINKS	BAS     4  <057>   610621  14-Oct-76
+EBARD	BAS     4  <157>   017450  14-Oct-76
+EVEN	BAS     4  <057>   047722  14-Oct-76
+FATHER	BAS     7  <057>   335577  14-Oct-76
+FLPFOP	BAS     5  <157>   265231  14-Oct-76
+FOOTBL	BAS    14  <057>   454163  14-Oct-76
+FOTBAL	BAS    12  <057>   225141  14-Oct-76
+FURS	BAS    10  <057>   342341  14-Oct-76
+GAMES	BAS     7  <057>   347340  14-Oct-76
+GEOWAR	BAS     8  <057>   466752  14-Oct-76
+GOLF	BAS    10  <057>   064172  14-Oct-76
+GOLFER	BAS     9  <157>   234575  29-Jan-70
+GOMOKO	BAS     4  <057>   755525  14-Oct-76
+GUESS	BAS     2  <057>   666572  14-Oct-76
+GUNER1	BAS     5  <057>   254256  14-Oct-76
+GUNNER	BAS     4  <057>   416553  14-Oct-76
+HAM	BAS     6  <157>   777317  26-Apr-72
+HAMMUR	BAS     5  <057>   134111  19-May-75
+HANG	BAS     6  <057>   056645  14-Oct-76
+HEXMAZ	BAS     7  <157>   330161   9-May-77
+HILD	BAS     2  <057>   234552  14-Oct-76
+HIQ	BAS     6  <057>   033561  14-Oct-76
+HMRABI	BAS     8  <157>   764411  14-Oct-76
+HOCKEY	BAS    10  <057>   450375  14-Oct-76
+HORSES	BAS     6  <057>   606740  14-Oct-76
+HOSSRC	BAS     8  <157>   206111  22-Dec-69
+HURKLE	BAS     4  <157>   556457  14-Oct-76
+IGUESS	BAS     2  <157>   422060  14-Oct-76
+KENO	BAS     6  <057>   722730  14-Oct-76
+KINEMA	BAS     2  <057>   711224  14-Oct-76
+KING	BAS    15  <157>   746447  14-Oct-76
+LAB	BAS     2  <157>   403657  11-Nov-65
+LABEL	BAS     2  <055>   170034  15-Nov-76
+LEM	BAS    15  <057>   567115  11-Aug-76
+LEMA	BAS     5  <057>   467644  11-Aug-76
+LEMB	BAS     8  <057>   021062  11-Aug-76
+LETTER	BAS     2  <057>   503060  14-Oct-76
+LIFE	BAS     3  <057>   510236  14-Oct-76
+LIFE2	BAS     4  <057>   204206  14-Oct-76
+LITQZ	BAS     3  <057>   337557  14-Oct-76
+MADLB2	BAS     9  <057>   052142  14-Oct-76
+MADLIB	BAS     9  <057>   035636  14-Oct-76
+MAGIC	BAS     5  <057>   250766  14-Oct-76
+MATHDI	BAS     3  <057>   033700  14-Oct-76
+MAZE4	BAS     7  <157>   002605  10-May-77
+MNPLYF	BAS     7  <057>   637226  14-Oct-76
+MONOP	BAS    69  <157>   563151  21-Aug-75
+MONPLY	BAS    13  <057>   127571  14-Oct-76
+MUGGY	BAS     3  <157>   673074  14-Oct-76
+MUGWMP	BAS     3  <057>   002267  14-Oct-76
+NICOMA	BAS     2  <057>   675503  14-Oct-76
+NIM	BAS     7  <057>   171446  14-Oct-76
+NMONOP	BAS    64  <157>   331524   1-Aug-75
+NO	BAS     4  <157>   724576  14-Apr-76
+OMONOP	BAS    51  <057>   361260  28-Jul-76
+ORBIT	BAS     9  <157>   257106  14-Oct-76
+PASCAL	BAS     1  <057>   523116  14-Oct-76
+PATHWA	BAS    11  <057>   256246  14-Oct-76
+PATTRN	BAS     4  <057>   212263  13-Oct-76
+PIGSKN	BAS    11  <157>   412572  18-Nov-71
+PIZZA	BAS     4  <057>   356453  14-Oct-76
+POET	BAS     3  <057>   425144  14-Oct-76
+POETRY	BAS     9  <057>   345717  14-Oct-76
+POKER	BAS    12  <057>   766733  14-Oct-76
+PONG	BAS     9  <057>   655643  14-Oct-76
+PUZZLE	BAS     8  <057>   717753   3-Dec-70
+QUBIC	BAS    11  <157>   345726  14-Oct-76
+REVRSE	BAS     4  <157>   070670  14-Oct-76
+ROCKET	BAS     6  <057>   073527  14-Oct-76
+ROCKSP	BAS     2  <057>   035360  14-Oct-76
+ROCKT1	BAS     6  <157>   751766  14-Oct-76
+ROTATE	BAS     4  <057>   172616  14-Oct-76
+ROULET	BAS    10  <057>   430645  14-Oct-76
+RUSROU	BAS     1  <057>   757354  14-Oct-76
+SALVO	BAS    11  <057>   251514  14-Oct-76
+SALVO1	BAS     5  <057>   661401  14-Oct-76
+SEAWAR	BAS    11  <057>   113453  14-Oct-76
+SHRINK	BAS     5  <057>   142675  14-Oct-76
+SLOTS	BAS     5  <057>   260737  14-Oct-76
+SMLTRK	BAS    47  <057>   416320  13-Dec-76
+SMOG	BAS     4  <057>   646577  14-Oct-76
+SNOOPY	BAS     6  <057>   204517  14-Oct-76
+SPACWR	BAS    30  <057>   411674  14-Oct-76
+SPLAT	BAS     9  <057>   703516  14-Oct-76
+STAR	BAS    69  <057>   245302   1-Oct-76
+STARS	BAS     4  <157>   151152  14-Oct-76
+STARTK	BAS    60  <057>   263074  10-Aug-76
+STARTK	BSS    61  <057>   652542  16-Dec-74
+STOCK	BAS    12  <057>   504564  14-Oct-76
+STOCKS	BAS     8  <157>   340012  27-May-75
+STR	BAS    21  <057>   426417  29-Oct-76
+STRTRK	BAS    32  <155>   243661   6-May-77
+SYNONM	BAS     3  <057>   343326  14-Oct-76
+TARGET	BAS     4  <057>   304150  14-Oct-76
+TENNIS	BAS     7  <057>   214105  14-Oct-76
+TICTAC	BAS     4  <057>   505437  14-Oct-76
+TITLES	BAS     4  <057>   073406  14-Oct-76
+TOWER	BAS     7  <057>   666545  14-Oct-76
+TRAIN	BAS     2  <057>   364237  13-Dec-76
+TRAP	BAS     3  <157>   674734  14-Oct-76
+TRNR	BAS    12  <157>   716715  12-Jan-77
+TVPLOT	BAS     4  <057>   640512  14-Oct-76
+UGLY	BAS     3  <057>   635317  14-Oct-76
+WEKDAY	BAS     6  <157>   633346  14-Oct-76
+WORD	BAS     3  <057>   115133  14-Oct-76
+WUMP1	BAS    12  <157>   404543  14-Oct-76
+WUMP3	BAS    11  <157>   222020  14-Oct-76
+WWII	BAS    12  <157>   672534  14-Oct-76
+YAHTZY	BAS     5  <057>   417150  14-Oct-76
+ZOOP	BAS     3  <057>   122711  14-Oct-76
+ZOT	BAS     7  <157>   351342  14-Oct-76
+  Total of 1330 blocks in 148 files Checksum = 346221 on DSKA: [10,64,BAS]
+
+1977	DAT   119  <155>   767436  28-Nov-77	[10,64,CALEND]
+1978	DAT   119  <155>   443236  28-Nov-77
+BIGCAL	SAV    10  <155>   340722  22-Jan-76
+  Total of 248 blocks in 3 files Checksum = 410244 on DSKA: [10,64,CALEND]
+
+CARL	CTL     2  <157>   037737  29-Nov-77	[10,64]
+CARL	DIR    79  <157>   332321  29-Nov-77
+CARL	L00     7  <001>   014377  29-Nov-77
+  Total of 88 blocks in 3 files Checksum = 337042 on DSKA: [10,64]
+
+CHESS	ALG    17  <057>   112762   6-Aug-75	[10,64,CHESS]
+CHESS	HOW     5  <157>   412243  14-Apr-70
+CHESS	NEW    16  <057>   347411   6-Aug-75
+CHESS	OLD    16  <057>   656162   6-Aug-75
+CHESS	SAV    80  <157>   154175   9-Jun-70
+MOVES	DAT     1  <057>   461514   6-Aug-75
+TABLE	MAC    64  <057>   505430  21-Nov-72
+TABLES	DAT    10  <057>   211473   6-Aug-75
+  Total of 209 blocks in 8 files Checksum = 041556 on DSKA: [10,64,CHESS]
+
+ACOUNT	001    13  <057>   457347  23-Jun-77	[10,64,CLASS]
+CASHP	        6  <057>   574056  28-Jul-77
+CASHP	BAK     6  <057>   566056  28-Jul-77
+CASHR	        6  <057>   352624  28-Jul-77
+CASHR	BAK     6  <057>   752622  28-Jul-77
+JOURNA	        6  <057>   237740  27-Jun-77
+LEDGER	        5  <057>   633777  27-Jun-77
+LEDGER	3       6  <057>   414764  27-Jun-77
+PURCHA	        5  <057>   057442  28-Jul-77
+PURCHA	BAK     6  <057>   406635  28-Jul-77
+SALESJ	        5  <057>   453367  28-Jul-77
+SALESJ	BAK     5  <057>   701562  28-Jul-77
+  Total of 75 blocks in 12 files Checksum = 026274 on DSKA: [10,64,CLASS]
+
+DATECV	CBL     5  <057>   077061  14-Sep-76	[10,64,COBOL]
+MASK4	MAC     2  <057>   604524  29-Aug-74
+RDGEN	SAV     7  <057>   511277  12-Aug-75
+  Total of 14 blocks in 3 files Checksum = 743045 on DSKA: [10,64,COBOL]
+
+D	MIC     1  <155>   601601  29-Nov-77	[10,64]
+  Total of 1 block in 1 file Checksum = 601601 on DSKA: [10,64]
+
+DECTA	HLP     2  <057>   315103  13-Feb-74	[10,64,DECDIR]
+DECTA	SNO     9  <057>   075453  14-Feb-74
+DIR	SNO    10  <057>   550644   4-Jan-64
+DIRS	SNO     5  <057>   741111   8-Jul-75
+  Total of 26 blocks in 4 files Checksum = 471726 on DSKA: [10,64,DECDIR]
+
+109	DIR     2  <157>   605371  29-Nov-77	[10,64,DECTAP]
+  Total of 2 blocks in 1 file Checksum = 605371 on DSKA: [10,64,DECTAP]
+
+COINS	SNO     7  <157>   330007   6-Dec-74	[10,64,DECTAP,109]
+CUME	SNO    11  <157>   047735  15-Nov-74
+DECODE	SNO    15  <157>   026320   5-May-75
+DECTA	HLP     2  <157>   315103  13-Feb-74
+DECTA	SNO     9  <157>   075453  14-Feb-74
+DMPSNO	SNO     2  <157>   416206   4-May-75
+DOCGEN	SNO    17  <157>   712114  24-Mar-75
+DOCTOR	SNO    24  <157>   156101   7-Feb-74
+EXTRAK	SNO     2  <157>   536566   2-Jul-75
+FIXCTL	SNO    14  <157>   344526   2-Jan-75
+FORMAT	SNO     2  <157>   052310   6-May-75
+GRADE	        2  <157>   633376   3-Jul-75
+HELP	SNO    15  <157>   422001  13-Dec-74
+IO	SNO     2  <157>   654256  24-Mar-75
+PHONES	SNO     1  <157>   727274   6-Jul-76
+PURGE	SNO     9  <157>   056604  25-Oct-74
+SEARCH	SNO     5  <157>   303661  27-Sep-74
+SONGS	DAT    16  <157>   620064  14-Apr-75
+SONGS	SNO     2  <157>   624047  14-Apr-75
+TYDIR	SNO     1  <157>   145003  15-Apr-75
+WAITAC	SNO     2  <157>   736122  28-Jun-74
+  Total of 160 blocks in 21 files Checksum = 031247 on DSKA: [10,64,DECTAP,109]
+
+110	DIR     2  <157>   716547  29-Nov-77	[10,64,DECTAP]
+  Total of 2 blocks in 1 file Checksum = 716547 on DSKA: [10,64,DECTAP]
+
+BIO	P11     9  <157>   331130  13-May-76	[10,64,DECTAP,110]
+BIO1	FOR     2  <157>   614557  13-May-76
+BIO2	FOR     1  <157>   372151  13-May-76
+BIOEOD	P11     2  <157>   747203  13-May-76
+BIOFOR	RNO    19  <157>   764105  13-May-76
+BIOINI	P11     3  <157>   403073  13-May-76
+BIOLIB	P11    25  <157>   107353  13-May-76
+BIOOUT	P11     3  <157>   052223  13-May-76
+BIOPEN	FOR     1  <157>   410466  13-May-76
+BIOPLT	FOR     3  <157>   033773  13-May-76
+BIORED	FOR     2  <157>   127276  13-May-76
+BIORST	P11     4  <157>   165726  13-May-76
+BIOSET	P11     3  <157>   345726  13-May-76
+BIOSIN	P11     4  <157>   012046  13-May-76
+BIOWRT	FOR     2  <157>   763214  13-May-76
+BIOX	FOR     1  <157>   640504  13-May-76
+GT40C	P11   154  <157>   226325  23-Jul-74
+GTSHAM	P11   153  <157>   106771  14-Mar-74
+RB	FOR     1  <157>   320372  13-May-76
+RBIO	FOR     3  <157>   617064  13-May-76
+SETHED	FOR     1  <157>   420010  13-May-76
+TESTER	FOR     2  <157>   647347  13-May-76
+  Total of 398 blocks in 22 files Checksum = 562213 on DSKA: [10,64,DECTAP,110]
+
+115	DIR     2  <157>   025356  29-Nov-77	[10,64,DECTAP]
+  Total of 2 blocks in 1 file Checksum = 025356 on DSKA: [10,64,DECTAP]
+
+ABS	P11     4  <157>   321401  17-Jul-76	[10,64,DECTAP,115]
+B4010	P11    39  <157>   411247  17-Jul-76
+BATCON	P11    24  <157>   744156  17-Jul-76
+C4010	P11    37  <157>   473607  17-Jul-76
+DL	P11     8  <157>   644377  17-Jul-76
+GETPNT	P11     4  <157>   256353  17-Jul-76
+ISYMBL	P11    28  <157>   632433  17-Jul-76
+LPSARY	P11     3  <157>   042752  17-Jul-76
+LPSCUR	P11     3  <157>   014107  17-Jul-76
+LPSPNT	P11     3  <157>   461051  17-Jul-76
+LPSXXX	P11     2  <157>   345741  17-Jul-76
+LSPOOL	P11     9  <157>   410345  17-Jul-76
+MENU	FOR     1  <157>   110161  17-Jul-76
+P613IT	P11     4  <157>   157505  17-Jul-76
+PLOT	FOR     1  <157>   627621  17-Jul-76
+PLOTMC	P11     7  <157>   422676  17-Jul-76
+PLOTS	P11     3  <157>   130704  17-Jul-76
+SETPEN	P11     3  <157>   325235  17-Jul-76
+SYMBOL	FOR     2  <157>   042326  17-Jul-76
+TOUTS	P11    13  <157>   113516  17-Jul-76
+TR	P11    28  <157>   300511  17-Jul-76
+TTLIB	P11    12  <157>   636452  17-Jul-76
+  Total of 238 blocks in 22 files Checksum = 501134 on DSKA: [10,64,DECTAP,115]
+
+12	DIR     1  <157>   747160  29-Nov-77	[10,64,DECTAP]
+  Total of 1 block in 1 file Checksum = 747160 on DSKA: [10,64,DECTAP]
+
+EXCON	SAV     4  <157>   674333  13-Apr-72	[10,64,DECTAP,12]
+PACKER	SHR    58  <157>   357541  25-Jul-75	1(1)
+RESCUE	SAV     3  <157>   257202   4-Sep-73
+XFER	SHR     7  <157>   264417  16-May-74	6(2)
+  Total of 72 blocks in 4 files Checksum = 420523 on DSKA: [10,64,DECTAP,12]
+
+120	DIR     1  <157>   777654  29-Nov-77	[10,64,DECTAP]
+  Total of 1 block in 1 file Checksum = 777654 on DSKA: [10,64,DECTAP]
+
+ALTER	DOC    28  <157>   373701   2-Jul-75	[10,64,DECTAP,120]
+ALTER	HLP     2  <157>   041144  26-Jun-75
+ALTER	MBC     6  <157>   624500   2-Jul-75
+ALTER	PLM    10  <157>   473071   2-Jul-75
+ALTER	RND    17  <157>   123144   2-Jul-75
+ALTER	RNH     3  <157>   457220  26-Jun-75
+ALTER	SNO    41  <157>   736126   2-Jul-75
+FILGEN	SAV    82  <157>   372676   2-Jul-75	4B(121)
+SUBALT	MBC     3  <157>   211201  27-Jun-75
+  Total of 192 blocks in 9 files Checksum = 027631 on DSKA: [10,64,DECTAP,120]
+
+122	DIR     2  <157>   567050  29-Nov-77	[10,64,DECTAP]
+  Total of 2 blocks in 1 file Checksum = 567050 on DSKA: [10,64,DECTAP]
+
+DESIGN	DAT     2  <157>   254136  26-Apr-76	[10,64,DECTAP,122]
+GFILE	F4      2  <157>   500741   1-Oct-76
+GLANG	CMD     1  <157>   524605   1-Oct-76
+GLANG	F4     26  <157>   223374   1-Oct-76
+GLANG	REL    21  <157>   220077  15-May-76
+GLANG	S01    26  <157>   107410  20-Apr-77
+GLANG	SAV    26  <157>   725737  15-May-76
+GMACRO	F4      4  <157>   004011   8-Apr-76
+GMACRO	REL     4  <157>   036564  15-May-76
+GNUM	F4      3  <157>   141530  18-Dec-72
+GROW2	DAT     1  <157>   071734  15-May-76
+GROW2	LRN     3  <157>   311313   4-Mar-76
+GSLOT	F4      3  <157>   752713  18-Dec-72
+GT40	REL    18  <157>   317513   3-Mar-76
+GT40	UNV     2  <157>   613757   3-Mar-76
+GT40C	BIN    12  <157>   512054   2-Aug-75
+GT40C	P11   154  <157>   226325  23-Jul-74
+GWORD	F4      2  <157>   234070  18-Dec-72
+MACRO	DAT     1  <157>   434572  19-Mar-76
+TREES	DAT     1  <157>   654673  17-Mar-76
+TYPIC	INS     2  <157>   311440   8-Apr-76
+  Total of 314 blocks in 21 files Checksum = 105664 on DSKA: [10,64,DECTAP,122]
+
+124	DIR     1  <157>   721354  29-Nov-77	[10,64,DECTAP]
+  Total of 1 block in 1 file Checksum = 721354 on DSKA: [10,64,DECTAP]
+
+ARC	RNO     3  <157>   514634  16-Mar-76	[10,64,DECTAP,124]
+ARCH	RNO     4  <157>   421022  19-Jan-76
+ARCH02	RNO     6  <157>   623064  26-Apr-76
+ARCH03	RNO    14  <157>   324505  26-Apr-76
+LIST	RNO     6  <157>   216303  12-Feb-76
+LRCONT	RNO    14  <157>   250456  24-Feb-76
+LRFAIL	RNO    12  <157>   731314  30-Mar-76
+LRXXX	RNO    12  <157>   547067   9-Mar-76
+PCSPY	RNO     4  <157>   041132  29-Apr-76
+RECDK	RNO     2  <157>   324450   9-Jul-76
+SLIDES	RNO     9  <157>   110624  23-Apr-76
+  Total of 86 blocks in 11 files Checksum = 557260 on DSKA: [10,64,DECTAP,124]
+
+126	DIR     1  <157>   142373  29-Nov-77	[10,64,DECTAP]
+  Total of 1 block in 1 file Checksum = 142373 on DSKA: [10,64,DECTAP]
+
+AXIS	F4      3  <157>   357004  11-Aug-72	[10,64,DECTAP,126]
+CIRC	F4      1  <157>   735417  13-Dec-74
+DATA	MAC     4  <157>   603054  16-Sep-74
+GRID	F4      1  <157>   000667  24-Jan-64
+HATPLT	F4      1  <157>   731310   6-Jun-74
+IPLDST	F4      3  <157>   063350  16-Nov-7LHIT	F4      6  <157>   555212  15-Dec-71
+MARK	F4      3  <157>   225145  14-Nov-73
+MARK	FOR     3  <157>   763641  21-Mar-74
+PLOT	MAC    35  <157>   051412  11-Aug-72
+POINTS	F4      2  <157>   637747  16-Sep-74
+SCALE	MAC     6  <157>   347517   5-Jul-73
+UNI	F4      5  <157>   372600  13-Nov-73
+UNIMK	F4      6  <157>   100460   6-Mar-74
+UNIPLT	F4      6  <157>   173734  22-Feb-74
+XY	F4      7  <157>   366576  11-Oct-73
+  Total of 92 blocks in 16 files Checksum = 620051 on DSKA: [10,64,DECTAP,126]
+
+127	DIR     1  <157>   376305  29-Nov-77	[10,64,DECTAP]
+  Total of 1 block in 1 file Checksum = 376305 on DSKA: [10,64,DECTAP]
+
+BANKER	        6  <157>   165155   2-Dec-75	[10,64,DECTAP,127]
+HYP	F4     16  <157>   163016  12-Oct-73
+HYP	SAV     9  <157>   724643  17-Jan-76	V(3)-4
+HYPER	F4     16  <157>   432607  19-Oct-73
+HYPER	SAV     9  <157>   724643  26-Sep-75	V(3)-4
+MER4	F4      5  <157>   737333  27-Jun-74
+PEN	F4      2  <157>   725115  18-Oct-73
+POWER	F4      3  <157>   044120   8-Oct-75
+PROC	F4      2  <157>   043705  20-Sep-74
+RDGEN	F4      2  <157>   252132   6-Jan-64
+RDGEN	SAV     7  <157>   511277  12-Aug-75
+ROOMS	F4      6  <157>   631120  19-Dec-74
+SORT2	F4      2  <157>   646747  11-Jan-74
+SYMVU	NEW    90  <157>   352055   3-Feb-64
+TRIG	F4      4  <157>   305630  23-Oct-73
+  Total of 179 blocks in 15 files Checksum = 453620 on DSKA: [10,64,DECTAP,127]
+
+128	DIR     1  <157>   257306  29-Nov-77	[10,64,DECTAP]
+  Total of 1 block in 1 file Checksum = 257306 on DSKA: [10,64,DECTAP]
+
+BILL10	CBL    82  <157>   112626   8-Mar-76	[10,64,DECTAP,128]
+DECUS	142    59  <157>   544314  14-Aug-74
+DRA210	CBL     3  <157>   274042   5-Jul-74
+DRA225	CBL     3  <157>   543526  29-May-74
+EB104	CBL     7  <157>   122417   8-Jul-74
+ERROR	CBL     3  <157>   244244  20-Aug-74
+FAILS1	046    25  <157>   665232  17-Jun-74
+MAKER	CBL     3  <157>   755052  16-Sep-74
+PPNACT	CBL     4  <157>   447364   8-Mar-76
+REF001	CBL     4  <157>   140467  26-Jul-74
+TITLE	CBL    16  <157>   275175  14-Jul-75
+  Total of 209 blocks in 11 files Checksum = 577455 on DSKA: [10,64,DECTAP,128]
+
+133	DIR     1  <157>   605040  29-Nov-77	[10,64,DECTAP]
+  Total of 1 block in 1 file Checksum = 605040 on DSKA: [10,64,DECTAP]
+
+BOUNCE	SAV     3  <157>   344235   9-Jul-74	[10,64,DECTAP,133]
+CURHAZ	ALG     2  <157>   455562   9-Jul-74
+CURHAZ	DOC    18  <157>   112074  17-Aug-74
+CURHAZ	MAC    24  <157>   014362  19-Aug-74
+CURHAZ	OLD    23  <157>   121206   2-Jul-74
+HAZEL	ALG     2  <157>   321554  10-Jul-74
+HAZEL	MAC     5  <157>   455355  12-Jan-74
+MASK4	MAC     2  <157>   604524  29-Aug-74
+MWHEEL	HLD     2  <157>   676706  13-Aug-74
+PING	ALG     7  <157>   540740   8-Aug-74
+SCREWS	CUA     1  <157>   605705  14-Aug-74
+SCROLL	MAC     4  <157>   065114  13-Aug-74
+SCROLL	SAV     2  <157>   245427  13-Aug-74
+SCROLL	SRC     4  <157>   226642  13-Aug-74
+TUG	MAC     6  <157>   526675  12-Feb-75
+UPDATE	MAC    23  <157>   630075  13-Aug-74
+UPDATE	SAV     6  <157>   616527  13-Aug-74	1-2
+UPDATE	SRC    23  <157>   065124  13-Aug-74
+  Total of 157 blocks in 18 files Checksum = 677110 on DSKA: [10,64,DECTAP,133]
+
+135	DIR     1  <157>   621100  29-Nov-77	[10,64,DECTAP]
+  Total of 1 block in 1 file Checksum = 621100 on DSKA: [10,64,DECTAP]
+
+ARTIST	BOX     5  <157>   272745  14-Jul-75	[10,64,DECTAP,135]
+ARTIST	BX      5  <157>   272745  14-Jul-75
+RECORD	INP     8  <157>   674374  19-Jun-75
+T	M01    17  <157>   566230  12-Aug-75
+TAPMAC	MAC     1  <157>   015574  25-Jul-75
+TAPMAC	UNV     1  <157>   001503  25-Jul-75
+TAPREC	MAC     1  <157>   222715  25-Jul-75
+TAPSUB	M01    48  <157>   532613   3-Jul-75
+TAPSUB	MAC    47  <157>   052277  26-Jul-75
+TAPSUB	R01    15  <157>   560747   9-Aug-76
+TITLE	CBL    16  <157>   275175  14-Jul-75
+TITLE	S01    11  <157>   647217  14-Jul-75
+TITLES	BOX     6  <157>   650210  14-Jul-75
+TITLES	BX      6  <157>   650210  14-Jul-75
+  Total of 187 blocks in 14 files Checksum = 361335 on DSKA: [10,64,DECTAP,135]
+
+145	DIR     1  <157>   222602  29-Nov-77	[10,64,DECTAP]
+  Total of 1 block in 1 file Checksum = 222602 on DSKA: [10,64,DECTAP]
+
+ARMIES	FOR     3  <157>   270560  18-Jul-76	[10,64,DECTAP,145]
+CENTER	FOR     1  <157>   111347   6-Jul-76
+CHKARM	FOR     1  <157>   006121  27-May-76
+GETCRD	FOR     5  <157>   162750  21-Jun-76
+GETNAM	FOR     3  <157>   305443  27-Jun-76
+GIVCRD	FOR     1  <157>   311201   6-Jun-76
+INDEX	FOR     1  <157>   605537   2-Jun-76
+RETCRD	FOR     1  <157>   075642   3-Jun-76
+RISKS	CMD     1  <157>   615312  13-Jul-76
+RISKS	FOR    32  <157>   167446  18-Jul-76
+SHFLCD	FOR     1  <157>   260161   2-Jun-76
+STATUS	FOR     1  <157>   527617   6-Jun-76
+WHERE	FOR     2  <157>   015706   4-Jun-76
+YESNOZ	FOR     1  <157>   623435  21-Jun-76
+  Total of 54 blocks in 14 files Checksum = 046511 on DSKA: [10,64,DECTAP,145]
+
+150	DIR     1  <157>   227130  29-Nov-77	[10,64,DECTAP]
+  Total of 1 block in 1 file Checksum = 227130 on DSKA: [10,64,DECTAP]
+
+DECTAP	DIR    24  <157>   647236   9-Aug-76	[10,64,DECTAP,150]
+DIR	SNO    10  <157>   550644   4-Jan-64
+DIRMAC	UNV     1  <157>   606324  10-Jan-76
+DIRS	SNO     5  <157>   741111   8-Jul-75
+TAPES	SNO     2  <157>   405153  15-May-75
+  Total of 42 blocks in 5 files Checksum = 411522 on DSKA: [10,64,DECTAP,150]
+
+153	DIR     1  <157>   713103  29-Nov-77	[10,64,DECTAP]
+  Total of 1 block in 1 file Checksum = 713103 on DSKA: [10,64,DECTAP]
+
+CARLAB	ALG     3  <157>   612624  10-Jul-74	[10,64,DECTAP,153]
+CURHAZ	ALG     2  <157>   455562   9-Jul-74
+HAZEL	ALG     2  <157>   321554  10-Jul-74
+LOADME	ALG     2  <157>   375044   2-Oct-75
+PING	ALG     7  <157>   540740   8-Aug-74
+  Total of 16 blocks in 5 files Checksum = 726771 on DSKA: [10,64,DECTAP,153]
+
+186	DIR     1  <157>   136634  29-Nov-77	[10,64,DECTAP]
+  Total of 1 block in 1 file Checksum = 136634 on DSKA: [10,64,DECTAP]
+
+CNTRLZ	SNO     2  <157>   027564  16-Jul-75	[10,64,DECTAP,186]
+DIR	SNO    10  <157>   550644   4-Jan-64
+DIRS	SNO     5  <157>   741111   8-Jul-75
+REVERS	SNO     1  <157>   511735  27-Jun-75
+  Total of 18 blocks in 4 files Checksum = 745631 on DSKA: [10,64,DECTAP,186]
+
+187	DIR     1  <157>   214204  29-Nov-77	[10,64,DECTAP]
+  Total of 1 block in 1 file Checksum = 214204 on DSKA: [10,64,DECTAP]
+
+JOTTO	AID    14  <157>   411027  14-Jun-74	[10,64,DECTAP,187]
+JOTTO	F4      1  <157>   116152  15-Jun-74
+JOTTO	LOW     5  <157>   574254  28-Oct-75	4(14)
+JOTTO	MAC    15  <157>   767164  28-Oct-75
+JOTTO	SHR     1  <157>   337403  28-Oct-75	4(14)
+JOTTO0	MAC    11  <157>   030215  11-Jun-74
+KOSTER	MAC     9  <157>   271646  13-Jun-75
+MJK	MAC     7  <157>   513746  15-May-73
+QED	MAC   117  <157>   237430  20-Aug-74
+SPEAK	MAC     5  <157>   445173  30-Jul-75
+  Total of 185 blocks in 10 files Checksum = 322112 on DSKA: [10,64,DECTAP,187]
+
+205	DIR     1  <157>   203730  29-Nov-77	[10,64,DECTAP]
+  Total of 1 block in 1 file Checksum = 203730 on DSKA: [10,64,DECTAP]
+
+ALTER	DOC    28  <157>   373701   2-Jul-75	[10,64,DECTAP,205]
+ALTER	HLP     2  <157>   041144  26-Jun-75
+ALTER	MBC     6  <157>   624500   2-Jul-75
+ALTER	PLM    10  <157>   473071   2-Jul-75
+ALTER	RND    17  <157>   123144   2-Jul-75
+ALTER	RNH     3  <157>   457220  26-Jun-75
+ALTER	SNO    41  <157>   736126   2-Jul-75
+FILGEN	SAV    82  <157>   372676   2-Jul-75	4B(121)
+SUBALT	MBC     3  <157>   211201  27-Jun-75
+  Total of 192 blocks in 9 files Checksum = 027631 on DSKA: [10,64,DECTAP,205]
+
+212	DIR     1  <157>   035744  29-Nov-77	[10,64,DECTAP]
+  Total of 1 block in 1 file Checksum = 035744 on DSKA: [10,64,DECTAP]
+
+ASSIN	F4      1  <157>   567343   5-Mar-75	[10,64,DECTAP,212]
+CNTROH	MAC     1  <157>   626736  24-Jan-74
+CODE	F4      1  <157>   401476  24-Apr-74
+ENCODE	F4      2  <157>   753477   1-May-74
+EXIT10	MAC     1  <157>   524156   9-Jul-74
+FIELD	F4      1  <157>   700061   6-Dec-74
+FILE	F4      2  <157>   625745  12-Dec-74
+FILNAM	F4      1  <157>   716756  18-May-74
+L	F4     10  <157>   626612  17-Oct-75
+LABEL	F4     10  <157>   651771  17-Apr-74
+LABEL1	F4     11  <157>   010263  17-Apr-74
+LIST	F4      6  <157>   533114  13-Jun-74
+MAINT	F4      2  <157>   467717  24-Jan-74
+MAZE	F4      9  <157>   370236  17-May-74
+MONIT	F4     13  <157>   410014  18-May-74
+REFORM	F4      3  <157>   571774   3-May-74
+STARS	F4     30  <157>   112217   7-Mar-75
+TTTNOT	FIN    18  <157>   442674  18-May-74
+UG	F4     14  <157>   302600  17-Oct-74
+UG001	F4     10  <157>   730056  27-Aug-74
+  Total of 146 blocks in 20 files Checksum = 110073 on DSKA: [10,64,DECTAP,212]
+
+226	DIR     1  <157>   212136  29-Nov-77	[10,64,DECTAP]
+  Total of 1 block in 1 file Checksum = 212136 on DSKA: [10,64,DECTAP]
+
+FACOVD	SAV    29  <157>   271453   4-May-77	[10,64,DECTAP,226]
+LB203	SAV    19  <157>   732534  25-Oct-76
+LBT203	SAV    36  <157>   357715  25-Oct-76
+  Total of 84 blocks in 3 files Checksum = 442115 on DSKA: [10,64,DECTAP,226]
+
+227	DIR     1  <157>   441464  29-Nov-77	[10,64,DECTAP]
+  Total of 1 block in 1 file Checksum = 441464 on DSKA: [10,64,DECTAP]
+
+TAPLIB	DOC    21  <157>   515075   4-Nov-75	[10,64,DECTAP,227]
+TAPLIB	RND    17  <157>   716143  30-Jul-75
+  Total of 38 blocks in 2 files Checksum = 305700 on DSKA: [10,64,DECTAP,227]
+
+25	DIR     1  <157>   200747  29-Nov-77	[10,64,DECTAP]
+  Total of 1 block in 1 file Checksum = 200747 on DSKA: [10,64,DECTAP]
+
+BARON	PIC    26  <157>   621240  10-Jan-76	[10,64,DECTAP,25]
+BIGCAL	F4      7  <157>   661652   9-Jan-76
+BROAD	PIC    13  <157>   205151  10-Jan-76
+BUNNY	DAT     2  <157>   232126  25-Oct-74
+CARD	DAT    71  <157>   743453   5-Nov-76
+CYBER	PAC    34  <157>   627063   2-Apr-76
+CYBER	PDP     8  <157>   475440   4-Jan-74
+CYBER	SAV    13  <157>   443643   8-Feb-77
+EXP	PIC    17  <157>   603616  10-Jan-76
+HEART	DAT     3  <157>   650532   3-Jan-74
+JACK	DAT     3  <157>   760263  24-Feb-77
+LINUS	PIC    18  <157>   446467  10-Jan-76
+MOVEMO	F4      1  <157>   711323   8-Jan-76
+MOVEMO	MAC     2  <157>   244031  21-Oct-75
+PEACE	PIC     8  <157>   626234  10-Jan-76
+PUPPY	PIC    19  <157>   044233  16-Dec-76
+SNOOPY	PIC    10  <157>   267743  10-Jan-76
+  Total of 255 blocks in 17 files Checksum = 662551 on DSKA: [10,64,DECTAP,25]
+
+26	DIR     1  <157>   634475  29-Nov-77	[10,64,DECTAP]
+  Total of 1 block in 1 file Checksum = 634475 on DSKA: [10,64,DECTAP]
+
+COMMEN	TEC     2  <157>   460030  26-Jun-74	[10,64,DECTAP,26]
+DIRCNT	TEC     1  <157>   742517  11-Jun-74
+INTERP	MAC    27  <157>   041556   7-Jun-74
+POLISH	T12    12  <157>   416217  18-Apr-74
+POLISH	T14    14  <157>   134607  27-Feb-75
+PRT	CTL     1  <157>   530243  28-Feb-75
+  Total of 57 blocks in 6 files Checksum = 514401 on DSKA: [10,64,DECTAP,26]
+
+3	DIR     1  <157>   354672  29-Nov-77	[10,64,DECTAP]
+  Total of 1 block in 1 file Checksum = 354672 on DSKA: [10,64,DECTAP]
+
+NOTIFY	MAC    17  <157>   173002  14-May-76	[10,64,DECTAP,3]
+STEAL	MAC     4  <157>   515001  11-Oct-76
+TECH	MAC     1  <157>   746537  20-Mar-74
+TFER	SAV     6  <157>   523257  19-Apr-77
+TTTEST	MAC     7  <157>   142176  19-Oct-76
+TYPE	MAC     5  <157>   250704  30-Jan-64
+  Total of 40 blocks in 6 files Checksum = 567417 on DSKA: [10,64,DECTAP,3]
+
+31	DIR     1  <157>   355633  29-Nov-77	[10,64,DECTAP]
+  Total of 1 block in 1 file Checksum = 355633 on DSKA: [10,64,DECTAP]
+
+D	MAC     3  <157>   077701   8-Jun-73	[10,64,DECTAP,31]
+DSKCHR	MAC    14  <157>   076142   3-Sep-74
+EBCOPY	MAC     3  <157>   476146  30-May-74
+IGNORE	MAC     1  <157>   041351   2-Aug-74
+LOGON	MAC     3  <157>   403706  23-Jun-75
+NEWD	EXE    20  <157>   104575   7-Oct-77	4
+NEWD	MAC    32  <157>   412621   7-Oct-77
+OLDD	MAC    23  <157>   622233  13-Jan-76
+SCANER	MAC    39  <157>   401200   2-Oct-77
+START	EXE    92  <157>   272531  13-Oct-77
+  Total of 230 blocks in 10 files Checksum = 603375 on DSKA: [10,64,DECTAP,31]
+
+548	DIR     1  <157>   341737  29-Nov-77	[10,64,DECTAP]
+  Total of 1 block in 1 file Checksum = 341737 on DSKA: [10,64,DECTAP]
+
+C	ATO     1  <157>   276416  16-Aug-76	[10,64,DECTAP,548]
+CHANGE	MAC     6  <157>   263611  10-Aug-76
+CHANGE	SAV     2  <157>   346657  10-Aug-76	2
+P	ATO     1  <157>   072104  16-Aug-76
+SALVO	194    50  <157>   016732   5-Sep-74
+SALVO	286    53  <157>   515211  19-Apr-77
+SALVO	2B4    49  <157>   011300  19-Apr-77
+SALVO	386    48  <157>   474635  16-Aug-76
+SALVO	3B4    53  <157>   515211  19-Apr-77
+SALVO	494    49  <157>   302004  30-Sep-74
+SALVO	EXT     1  <157>   342472  19-Apr-77
+SALVO1	286    49  <157>   302004   9-Aug-76
+SALVO2	286    49  <157>   011300   9-Aug-76
+  Total of 411 blocks in 13 files Checksum = 212622 on DSKA: [10,64,DECTAP,548]
+
+64	DIR     1  <157>   713206  29-Nov-77	[10,64,DECTAP]
+  Total of 1 block in 1 file Checksum = 713206 on DSKA: [10,64,DECTAP]
+
+BOOTGT	HLP     1  <157>   414227  18-Feb-74	[10,64,DECTAP,64]
+DATPLT	HLP     2  <157>   463435   4-Oct-73
+DECTA	HLP     2  <157>   315103  13-Feb-74
+GT40	HLP     3  <157>   054323  20-Feb-74
+MTA	HLP     9  <157>   207721  19-Sep-73
+SOS	RND    58  <157>   035033  10-Sep-75
+SOS	RNO    78  <157>   731442  19-Jan-72
+TECO	HLP    94  <157>   011241   2-Oct-71
+TECO	RNO    13  <157>   442703  20-Mar-74
+TRIGF4	HLP     3  <157>   725233  10-Oct-73
+  Total of 263 blocks in 10 files Checksum = 340233 on DSKA: [10,64,DECTAP,64]
+
+68	DIR     1  <157>   327545  29-Nov-77	[10,64,DECTAP]
+  Total of 1 block in 1 file Checksum = 327545 on DSKA: [10,64,DECTAP]
+
+BATCON	P11    24  <157>   744156  17-Jul-76	[10,64,DECTAP,68]
+CAR	P11     2  <157>   165350  30-Jul-74
+DEF40	P11    21  <157>   321204  19-Aug-75
+GRFLEX	P11   134  <157>   365472  17-Jul-76
+GRFPAR	P11     1  <157>   710577  17-Jul-76
+GT40C	P11   160  <157>   672114  12-Aug-75
+KEYBRD	P11     3  <157>   031021  14-Jul-76
+LSPOOL	P11     9  <157>   410345  17-Jul-76
+ODT11A	P11    27  <157>   641175  25-Aug-74
+TALK11	P11    34  <157>   124732  29-Jan-75
+TIME	P11     1  <157>   120452  16-Apr-75
+UNPAL	P11    16  <157>   005333  17-Jul-76
+UNPAL1	P11    14  <157>   757010   5-Oct-74
+  Total of 446 blocks in 13 files Checksum = 313152 on DSKA: [10,64,DECTAP,68]
+
+754	DIR     1  <157>   342535  29-Nov-77	[10,64,DECTAP]
+  Total of 1 block in 1 file Checksum = 342535 on DSKA: [10,64,DECTAP]
+
+CREF	DIF     8  <157>   451412  30-Jan-74	[10,64,DECTAP,754]
+CREF	F3      5  <157>   305635  30-Jan-74
+CREF	F4      5  <157>   305635  27-Oct-73
+CREF	F6      7  <157>   340454  30-Jan-74
+GETSAT	F4      2  <157>   226144  18-May-74
+GETSIT	MAC     5  <157>   203606  18-May-74
+POLY1	F4      2  <157>   677353  18-May-74
+REFORM	F4      3  <157>   571774   3-May-74
+TESTIT	F4      1  <157>   652770   5-Feb-74
+  Total of 38 blocks in 9 files Checksum = 614471 on DSKA: [10,64,DECTAP,754]
+
+96	DIR     1  <157>   560112  29-Nov-77	[10,64,DECTAP]
+  Total of 1 block in 1 file Checksum = 560112 on DSKA: [10,64,DECTAP]
+
+BOOTGT	HLP     1  <157>   414227  18-Feb-74	[10,64,DECTAP,96]
+BOOTGT	MAC    39  <157>   576654  18-Feb-74
+BOOTGT	SAV     7  <157>   336234  18-Feb-74	1(12)
+CAR	P11     2  <157>   165350  30-Jul-74
+DEF40	P11    21  <157>   717341  27-Jul-74
+METEOR	P11   122  <157>   734555  23-Jul-74
+SW	BIN    14  <157>   015135  18-Feb-74
+SW	P11   167  <157>   570215  18-Feb-74
+SWEEP	P11     3  <157>   517431   1-Aug-74
+VIDTST	PTR    50  <157>   374221  10-Jun-74
+  Total of 426 blocks in 10 files Checksum = 515705 on DSKA: [10,64,DECTAP,96]
+
+99	DIR     1  <157>   232145  29-Nov-77	[10,64,DECTAP]
+  Total of 1 block in 1 file Checksum = 232145 on DSKA: [10,64,DECTAP]
+
+ANALYS	FOC     1  <157>   130672  15-Jan-74	[10,64,DECTAP,99]
+DEM	FOC     4  <157>   745671  18-May-74
+DEMO	FOC     4  <157>   170725  11-Mar-73
+MOD	FOC     2  <157>   051273  10-Jan-74
+NUMBER	FOC     3  <157>   536662  18-May-74
+PROG	FOC     1  <157>   523437  14-Mar-74
+S2	FOC     3  <157>   416665  10-Jan-74
+SQSHAM	FOC     2  <157>   363723  14-Mar-74
+TTT2D	FOC     2  <157>   272761  18-May-74
+TTT3D	FOC     5  <157>   361171   6-Feb-74
+VECTOR	FOC     2  <157>   464757  17-Dec-73
+  Total of 29 blocks in 11 files Checksum = 551334 on DSKA: [10,64,DECTAP,99]
+
+MT4008	DIR    32  <157>   527003  29-Nov-77	[10,64,DECTAP]
+MT4020	DIR    33  <157>   250237  29-Nov-77
+OPRKJO	LOG     0  <157>   000000  29-Nov-77
+  Total of 65 blocks in 3 files Checksum = 756144 on DSKA: [10,64,DECTAP]
+
+DAYWK	SAV     4  <155>   110004   1-Feb-74	V(3)-1	[10,64,DEMO]
+DOCTOR	SAV   128  <057>   310156   4-Nov-69
+DOCTOR	SNO    27  <057>   253245   1-Oct-76
+GTPLOT	SAV    27  <155>   616504  18-Apr-74	32(436)
+MILES	SAV     7  <157>   247020  27-Aug-76
+PC	SAV    27  <057>   760441   5-Apr-77	22-1
+PCALEN	SAV     8  <057>   056430  10-Jan-76	1(1)
+RISK	SAV    47  <057>   037427  10-Aug-76	1
+SAY	SAV    20  <057>   106300  11-Aug-76	2
+SAYIT	SAV    20  <155>   106300   9-Sep-76	2
+SEARCH	MIC     1  <155>   503055   6-Jul-77
+SSIGN	SAV     6  <157>   521075  30-Mar-77
+TRIG	SAV    11  <155>   252773  16-Apr-74	4C
+  Total of 333 blocks in 13 files Checksum = 505530 on DSKA: [10,64,DEMO]
+
+109	DIR     2  <057>   605371  19-Jul-76	[10,64,DIRECT]
+110	DIR     2  <057>   716547  20-Apr-77
+115	DIR     2  <057>   025356  26-Aug-76
+120	DIR     1  <057>   777654   9-Aug-76
+122	DIR     2  <057>   567050  20-Apr-77
+124	DIR     1  <057>   721354  26-Aug-76
+126	DIR     1  <057>   142373  20-Apr-77
+127	DIR     1  <057>   376305  20-Apr-77
+128	DIR     1  <057>   257306   9-Aug-76
+133	DIR     1  <057>   605040  19-Apr-77
+135	DIR     1  <057>   621100   9-Aug-76
+141002	DIR     1  <057>   261610   9-Aug-76
+145	DIR     1  <057>   222602  10-Mar-77
+148	DIR     1  <057>   622345  10-Jan-76
+153	DIR     1  <057>   713103  19-Apr-77
+186	DIR     1  <057>   136634   9-Aug-76
+187	DIR     1  <057>   214204  19-Apr-77
+205	DIR     1  <057>   203730   9-Aug-76
+226	DIR     1  <157>   035744  20-Apr-77
+227	DIR     1  <057>   441464   9-Aug-76
+25	DIR     1  <057>   200747  20-Apr-77
+26	DIR     1  <057>   634475  20-Apr-77
+3	DIR     1  <057>   354672  20-Apr-77
+31	DIR     1  <057>   402712  20-Apr-77
+548	DIR     1  <157>   114342  31-Jul-77
+549	DIR     1  <157>   341737  31-Jul-77
+64	DIR     1  <157>   713206  20-Apr-77
+68	DIR     1  <057>   327545   9-Aug-76
+754	DIR     1  <157>   342535   1-Aug-77
+91	DIR     1  <057>   267764  29-Jun-77
+96	DIR     1  <057>   560112   3-Mar-76
+99	DIR     1  <057>   232145  20-Apr-77
+ANCIL1	DIR     1  <057>   075340  10-Aug-76
+DECTAP	DIR    24  <057>   647236   9-Aug-76
+MT1028	DIR    32  <057>   552424  23-May-77
+MT1124	DIR    42  <057>   122051  28-Jun-77
+MT1139	BDR    11  <057>   450401  13-Jan-76
+MT2073	DIR    32  <157>   756720   1-Aug-77
+MT2117	DIR    22  <157>   557355   1-Aug-77
+MT4020	DIR    45  <057>   560222  21-Aug-77
+MT4152	DIR    17  <057>   143457  21-Aug-77
+MTA	PRV    11  <057>   746367  12-May-75
+MTAX	PRV    11  <057>   746367  12-May-75
+MTRT11	DIR     6  <057>   011201  13-Apr-77
+MTSSRC	DIR     6  <057>   247044  25-Oct-76
+PAPERS	DIR     1  <057>   102227   9-Aug-76
+PROPS	DIR    66  <157>   116303  28-Nov-77
+PRV9	DIR    16  <057>   370736  29-Jun-77
+RT11	DIR    36  <057>   771245   1-Jun-77
+SFILE	SAV     6  <057>   025707  12-May-75
+SPARE	DIR     1  <057>   774613  30-Oct-76
+  Total of 422 blocks in 51 files Checksum = 345537 on DSKA: [10,64,DIRECT]
+
+BITMAP	MAC     1  <057>   472246   7-Jan-76	[10,64,DTA]
+BTYPE	MAC     6  <057>   120264   7-Jan-76
+DIR	MAC     3  <057>   744074   5-Jan-76
+DIR	SPC     5  <057>   020415   5-Jan-76
+DIRCOM	MAC     1  <057>   614144   7-Jan-76
+DIRDAT	MAC     1  <057>   512773   5-Feb-76
+DIRMAC	MAC     1  <057>   127257  10-Jan-76
+DIRMAC	UNV     1  <057>   606324  19-Nov-76
+READ	MAC     3  <057>   416703  18-Nov-76
+TOUT	MAC     2  <057>   773411  30-Mar-76
+TOUTS	MAC    22  <057>   146501  23-Jul-75
+  Total of 46 blocks in 11 files Checksum = 351745 on DSKA: [10,64,DTA]
+
+BACKUP	HOW     2  <157>   351127   8-Nov-77	[10,64,EXP]
+EXPORT	CCL     1  <157>   463212   8-Nov-77
+EXPORT	CTL     3  <157>   075212   8-Nov-77
+EXPORT	PUB     3  <157>   635366   8-Nov-77
+FD	LST     4  <157>   410201   8-Nov-77
+  Total of 13 blocks in 5 files Checksum = 600642 on DSKA: [10,64,EXP]
+
+FILGEN	548    45  <157>   141363  15-Nov-77	[10,64,FILGEN]
+FILGEN	555    48  <157>   133541  25-Nov-77
+FILGEN	BAK    68  <155>   506517  30-Nov-77
+FILGEN	DOC    74  <055>   630225  30-Nov-77
+FILGEN	EXE   104  <157>   760555  25-Nov-77	4B(121)
+FILGEN	RND    68  <155>   266446  30-Nov-77
+MT1124	DIR    42  <157>   445421  30-Nov-77
+TTY	DMP    13  <157>   507623  30-Nov-77
+  Total of 462 blocks in 8 files Checksum = 247147 on DSKA: [10,64,FILGEN]
+
+ADD	F4      1  <057>   264747   5-Nov-75	[10,64,FORTRA]
+BANKER	FOR     6  <057>   165155  19-Apr-77
+BSLAB	SAV     8  <057>   722537  19-May-76
+CIR	F4      1  <057>   700137  12-Nov-73
+CIRC	F4      1  <057>   735417  13-Dec-74
+CREF	F3      5  <057>   305635  30-Jan-74
+CREF	F4      5  <057>   305635  27-Oct-73
+CREF	F6      7  <057>   340454  30-Jan-74
+CREF	FDF     8  <057>   451412  30-Jan-74
+F	F4      1  <057>   347224  16-Mar-76
+HYP	F4     16  <057>   163016  12-Oct-73
+HYPER	F4     16  <057>   432607  19-Oct-73
+ICHAR	FOR     1  <057>   121615   9-Aug-76
+MAZEP	F4      3  <057>   577666  17-May-74
+MILES	FOR     4  <057>   301404  28-Mar-77
+MILES	MPG     1  <057>   445522  28-Mar-77
+MILES	SAV     7  <057>   615731  28-Mar-77
+POWER	FOR     3  <057>   044120   8-Oct-75
+TABLET	F4      7  <057>   022463   8-Jan-76
+UNI	F4      5  <057>   372600  13-Nov-73
+UNIMK	F4      6  <057>   100460   6-Mar-74
+UNIPLT	F4      6  <057>   173734  22-Feb-74
+  Total of 118 blocks in 22 files Checksum = 467213 on DSKA: [10,64,FORTRA]
+
+DECODE	SNO    15  <057>   015351   8-Jul-77	[10,64,FUN]
+DMPSNO	SNO     2  <057>   416206   4-May-75
+SIXBIT	SNO     1  <057>   700725   7-Jul-77
+  Total of 18 blocks in 3 files Checksum = 454741 on DSKA: [10,64,FUN]
+
+AWARI	GAM     9  <057>   220160  14-Oct-76	[10,64,GAM]
+BAGEL2	GAM     5  <057>   320741  14-Oct-76
+BAGELS	GAM     5  <057>   132210  14-Oct-76
+BULCOW	GAM     7  <057>   752110  14-Oct-76
+BUTTON	GAM     4  <057>   611204  14-Oct-76
+CAVES	GAM     4  <057>   143213  14-Oct-76
+CHIKEN	GAM     6  <057>   550142  14-Oct-76
+CHOMP	GAM     5  <057>   740652  14-Oct-76
+CIVILW	GAM    15  <057>   577122  14-Oct-76
+CUBE	GAM     7  <057>   315321  14-Oct-76
+DEFUSE	GAM     5  <057>   324504  14-Oct-76
+DEPTH	GAM     4  <057>   614753  14-Oct-76
+DEVIL	GAM     7  <057>   366651  14-Oct-76
+DRAG	GAM     7  <057>   227234  14-Oct-76
+EBARD	GAM     4  <057>   017450  14-Oct-76
+FLPFOP	GAM     5  <057>   265231  14-Oct-76
+GAMES	HLP     4  <057>   116100  14-Oct-76
+GUNNER	GAM     4  <057>   030167  14-Oct-76
+HMRABI	GAM     8  <057>   764411  14-Oct-76
+HURKLE	GAM     4  <057>   556457  14-Oct-76
+IGUESS	GAM     2  <057>   422060  14-Oct-76
+KING	GAM    15  <057>   746447  14-Oct-76
+MANDAL	GAM     3  <057>   204015  14-Oct-76
+MUGGY	GAM     3  <057>   673074  14-Oct-76
+NICOMA	GAM     2  <057>   345655  14-Oct-76
+ORBIT	GAM     9  <057>   257106  14-Oct-76
+PATTRN	GAM     4  <057>   212263  14-Oct-76
+POETRY	GAM    10  <057>   336643  14-Oct-76
+QUBIC	GAM    11  <057>   345726  14-Oct-76
+RACE	GAM     2  <057>   456162  14-Oct-76
+REVRSE	GAM     4  <057>   070670  14-Oct-76
+ROCKT1	GAM     6  <057>   751766  14-Oct-76
+STARS	GAM     4  <057>   151152  14-Oct-76
+TRAP	GAM     3  <057>   674734  14-Oct-76
+WEKDAY	GAM     6  <057>   633346  14-Oct-76
+WUMP1	GAM    12  <057>   404543  14-Oct-76
+WUMP3	GAM    11  <057>   222020  14-Oct-76
+WWII	GAM    12  <057>   672534  14-Oct-76
+ZEBRA	ANS     1  <157>   634557  30-Sep-77
+ZEBRA	TXT     2  <157>   120415  29-Sep-77
+ZEBRA2	TXT     2  <057>   157246   7-Oct-77
+ZOT	GAM     7  <057>   351342  14-Oct-76
+  Total of 250 blocks in 42 files Checksum = 606714 on DSKA: [10,64,GAM]
+
+BIORHM	APL    14  <157>   027634   7-Aug-76	[10,64,GAMES]
+BOARD	F4      1  <057>   405363  15-Jan-76
+BOARD	FOR     1  <057>   405363  15-Jan-76
+COSMOS	       49  <057>   630566   1-Oct-76
+FLOWER	F4      3  <057>   216603  12-Oct-64
+JOTTO	LOW     5  <057>   574254  28-Oct-75	4(14)
+JOTTO	SHR     1  <057>   337403  28-Oct-75	4(14)
+KOSTER	MAC     9  <057>   271646  28-Nov-77
+KOSTER	UNV     6  <057>   470644  25-Jul-75
+LIFE	DOC     5  <157>   315302  19-Nov-76
+LIGHTS	MAC     1  <157>   102214  11-Mar-77
+M	FOR     8  <057>   664313  29-Mar-77
+M	MAC    56  <057>   064527  30-Mar-77
+MAZE	COM     1  <057>   337352  28-Mar-77
+MAZE	F4      9  <057>   474760  22-Jan-76
+MAZE	ONE     5  <057>   630660  28-Mar-77
+MAZE	TWO     5  <057>   524475  28-Mar-77
+MONOP	BAS    48  <057>   310562   3-Jan-74
+MONOP	DAT    17  <057>   747436  23-Jul-75
+MONOP	SUE    44  <057>   171666  23-Jun-75
+SCRIPT	HGH    16  <157>   714065  26-Apr-72	1(30)-5
+SIGN1	ALG     4  <057>   764646   2-Oct-76
+SIGNAL	ALG     1  <057>   743270  25-Mar-75
+SIGNF4	F4      3  <057>   532720   2-Oct-76
+SMLTRK	ORG    48  <057>   700310  19-May-75
+SMLTRK	SND    47  <057>   416320   2-Jun-75
+SSTREK	DOC    22  <057>   205133  28-Jul-76
+SSTREK	SAV    62  <057>   654432  10-Aug-76	(1)
+STARTK	BRD    12  <057>   721012  19-May-75
+STARTK	ORG    60  <057>   263074   2-Jun-75
+STRTK	DAT    12  <057>   307015  10-Aug-76
+STRTRK	SAV    28  <157>   307065  13-Sep-75	1(1)
+TEXT2	        3  <057>   234454  18-Mar-65
+TREK	SAV    45  <057>   546731  10-Aug-76	1(1)
+TREKS	FOR    60  <057>   424026   1-Oct-76
+TREKS	SAV    53  <157>   577023  21-Oct-76
+TTY	MAC     4  <057>   322664  25-Jul-75
+W	EXE   120  <156>   311341   5-May-77
+WHO	EXE   112  <156>   461446   3-May-77
+  Total of 1000 blocks in 39 files Checksum = 621617 on DSKA: [10,64,GAMES]
+
+GRFLEX	BIN    13  <057>   663044  29-Jan-76	[10,64,GRFLEX]
+GRFLEX	MAC   134  <057>   365472  13-Jul-76
+GRFLEX	P11   134  <057>   555674  28-Jan-76
+GRFPAR	P11     1  <057>   372305  29-Jan-76
+  Total of 282 blocks in 4 files Checksum = 652024 on DSKA: [10,64,GRFLEX]
+
+CLOCK	SAI     4  <057>   440557   6-May-77	[10,64,GT40]
+CLOCK	SAV    69  <057>   735366  29-Apr-77
+GRFLEX	BIN    13  <057>   663044  29-Jan-76
+GRFLEX	P11   134  <057>   555674  28-Jan-76
+GRFPAR	P11     1  <057>   372305  29-Jan-76
+KEYBRD	BIN     1  <057>   170302  22-Jul-76
+LEM	090   242  <057>   646407  20-Sep-74
+LEM	LDA    26  <057>   610714  24-Aug-77
+LIFE	BIN     9  <057>   324507  22-Nov-76
+SPCWAR	LDA    14  <057>   015135   7-Aug-75
+SPCWAR	P11   122  <057>   362314  15-Apr-75
+  Total of 635 blocks in 11 files Checksum = 714722 on DSKA: [10,64,GT40]
+
+KAREN	      100  <057>   476431  18-Aug-76	[10,64,HUGHES]
+KAREN1	FOR    98  <057>   456742  27-Aug-76
+KARENS	FOR     8  <057>   625334  18-Aug-76
+  Total of 206 blocks in 3 files Checksum = 761610 on DSKA: [10,64,HUGHES]
+
+INTERP	SAV     5  <057>   601045  18-Apr-74	1(4)	[10,64,INTERP]
+  Total of 5 blocks in 1 file Checksum = 601045 on DSKA: [10,64,INTERP]
+
+5	DAT   398  <057>   573126  11-Oct-77	[10,64,ITS]
+6	DAT   225  <057>   171732  11-Oct-77
+ARPA	MAN   172  <157>   174557   9-Mar-76
+BARON	PIC    26  <057>   621240  10-Jan-76
+BROAD	PIC    13  <057>   205151  10-Jan-76
+COMPLT	DAT     3  <057>   604374  11-Mar-74
+DDTCMD	ITS     9  <155>   034734   8-Sep-77
+EXP	PIC    17  <057>   603616  10-Jan-76
+FIND	       35  <057>   674435   9-Sep-77
+FINGER	PIC    71  <057>   743453   5-Nov-76
+GIRL	DAT    17  <057>   762050  10-Jun-72
+HANDS1	DAT   104  <057>   116541  18-Feb-76
+INFO	       32  <057>   516256   9-Sep-77
+JARGON	MIT    88  <155>   577524  29-Oct-77
+LINUS	PIC    18  <057>   446467  10-Jan-76
+LISA1	DAT    91  <057>   036321  18-Feb-76
+MADON1	DAT   107  <057>   273050  18-Feb-76
+NOTES	NET    11  <155>   300263  29-Oct-77
+NUMS	DAT     2  <057>   260155  10-Jan-76
+PEACE	DAT     8  <057>   626234  10-Jun-72
+PEACE	PIC     8  <057>   626234  10-Jan-76
+PEACE2	DAT     7  <057>   542156  11-Mar-74
+PUPPY	DAT    17  <057>   356561  10-Jun-72
+PUPPY	PIC    15  <057>   441420  11-Jan-76
+SNOOP	DAT     5  <057>   030741   7-Mar-71
+SNOOP	PIC    19  <057>   600074  10-Jan-76
+SNOOPY	PIC    10  <057>   267743  10-Jan-76
+STRTK	DAT    12  <057>   307015  10-Aug-76
+TTY	MIT    38  <057>   373040   5-Nov-76
+  Total of 1578 blocks in 29 files Checksum = 245640 on DSKA: [10,64,ITS]
+
+M	MIC     1  <255>   317610  29-Nov-77	[10,64]
+  Total of 1 block in 1 file Checksum = 317610 on DSKA: [10,64]
+
+JOBDAT	LST    50  <157>   570754  26-Nov-77	[10,64,MACTEN]
+JOBDAT	MAC    27  <157>   626733   1-Mar-75
+JOBDAT	REL     2  <157>   706345  26-Nov-77
+MACTEN	LST    78  <157>   306135  26-Nov-77
+MACTEN	MAC    43  <157>   046562  25-Jan-77
+MACTEN	UNV    30  <157>   005470  26-Nov-77
+UUOSYM	LST   482  <157>   064151  26-Nov-77
+UUOSYM	MAC   207  <157>   140522  17-Mar-77
+UUOSYM	REL    46  <157>   274537  26-Nov-77
+UUOSYM	UNV    50  <157>   762754  26-Nov-77
+  Total of 1015 blocks in 10 files Checksum = 420142 on DSKA: [10,64,MACTEN]
+
+12K	MAC     3  <057>   157410   3-May-76	[10,64,MT4008]
+16K	MAC     3  <057>   117414   3-May-76
+20K	MAC     3  <057>   341606   3-May-76
+24K	MAC     3  <057>   361612   3-May-76
+28K	MAC     3  <057>   341616   3-May-76
+4010	UNV     3  <057>   002674  19-Apr-77
+4K	MAC     3  <057>   334546   3-May-76
+8K	MAC     3  <057>   234744   3-May-76
+ABS	MAC     3  <057>   637210   3-May-76
+ACC	MAC     8  <057>   354150  23-Aug-74
+ACCLIB	MAC     7  <057>   707734  16-Jul-74
+ADDA	MAC     8  <057>   420213   3-May-76
+ADDM	MAC     8  <057>   243356   3-May-76
+ADDP	MAC    11  <057>   436067   3-May-76
+AIF	MAC     3  <057>   422512   3-May-76
+AIMAG	MAC     3  <057>   510653   3-May-76
+AINT	MAC     5  <057>   737463   3-May-76
+ALOG	MAC     8  <057>   610127   3-May-76
+ALTER	MAC     3  <057>   507732   1-Jun-77
+ALTER	RNO     8  <057>   547107   1-Jun-77
+ALTER	SAV     2  <057>   000000   1-Jun-77
+ALTER	SRC     6  <057>   150765   1-Jun-77
+ALTER	TEC     3  <057>   605152   1-Jun-77
+AMAX1	MAC     5  <057>   553003   3-May-76
+AMIN0	MAC     4  <057>   465170   3-May-76
+AMOD	MAC     4  <057>   570716   3-May-76
+ASFRET	MAC     3  <057>   026472   3-May-76
+ASSIGN	MAC    10  <057>   721616   3-May-76
+ATAN	MAC    12  <057>   621710   3-May-76
+BACKSP	MAC     6  <057>   113052   3-May-76
+BATCON	P11    24  <057>   514756  13-Apr-77
+BITDID	MAC     3  <057>   540777   3-May-76
+BRAS	MAC     4  <057>   640744   3-May-76
+CABS	MAC     4  <057>   760207   3-May-76
+CADD	MAC     6  <057>   623467   3-May-76
+CALL	MAC     4  <057>   507615   3-May-76
+CARL	SML     5  <057>   462467  19-Apr-77
+CARLAB	MAC     3  <057>   550342  27-Jun-74
+CARMAC	MAC    21  <057>   271073   4-Sep-74
+CDIV	MAC     8  <057>   410457   3-May-76
+CEXP	MAC     4  <057>   772001   3-May-76
+CLOG	MAC     4  <057>   556552   3-May-76
+CLOSE	MAC     8  <057>   402072   3-May-76
+CLRCOR	P11     1  <057>   600262  13-Apr-77
+CLRD	MAC     5  <057>   173274   3-May-76
+CLS	MAC     4  <057>   015110   3-May-76
+CMPD	MAC     8  <057>   565524   3-May-76
+CMPF	MAC     8  <057>   467264   3-May-76
+CMPLX	MAC     3  <057>   242113   3-May-76
+CMUL	MAC     6  <057>   125613   3-May-76
+CNEG	MAC     4  <057>   563377   3-May-76
+COMAND	P11    13  <057>   272560  13-Apr-77
+CONCAT	OBJ    12  <057>   266060   1-Jun-77
+CONJG	MAC     3  <057>   021023   3-May-76
+CONV1	MAC     4  <057>   377655   3-May-76
+CONV2	MAC     7  <057>   067713   3-May-76
+CONV3	MAC     5  <057>   662423   3-May-76
+CONV4	MAC     4  <057>   273317   3-May-76
+CONV5	MAC     3  <057>   653610   3-May-76
+CONV6	MAC     3  <057>   050600   3-May-76
+CONVER	MAC     4  <057>   033263   2-Feb-64
+CONVF	MAC    28  <057>   747734   3-May-76
+CONVI	MAC    11  <057>   074660   3-May-76
+CONVL	MAC     6  <057>   014526   3-May-76
+COPY	MAC     4  <057>   712070   3-May-76
+CSIN	MAC     6  <057>   703125   3-May-76
+CSQRT	MAC     4  <057>   565457   3-May-76
+CVSWG	MAC     4  <057>   633327   3-May-76
+DABS	MAC     3  <057>   601134   3-May-76
+DADD	MAC    17  <057>   162076   3-May-76
+DATAN	MAC    16  <057>   373550   3-May-76
+DATE	MAC     4  <057>   763303  20-Jun-77
+DATES	MAC     1  <057>   124322   2-Jan-64
+DAYWK	MAC     2  <057>   700645  28-Jan-74
+DBLE	MAC     3  <057>   533335   3-May-76
+DDIV	MAC    10  <057>   260521   3-May-76
+DECTA	SNO     9  <057>   537476  20-Feb-74
+DEMO	FOR     3  <057>   662662   1-Jun-77
+DEMO	SAV    35  <057>   000000   1-Jun-77
+DEXP	MAC    12  <057>   232221   3-May-76
+DIM	MAC     4  <057>   407024   3-May-76
+DINT	MAC     6  <057>   140717   3-May-76
+DIS	MAC     6  <057>   526567   3-May-76
+DLOG	MAC    10  <057>   664723   3-May-76
+DMIN1	MAC     4  <057>   223207   3-May-76
+DMOD	MAC     4  <057>   421160   3-May-76
+DMOV1	MAC     3  <057>   166221   3-May-76
+DMOV2	MAC     3  <057>   263344   3-May-76
+DMOV3	MAC     4  <057>   617271   3-May-76
+DMOV4	MAC     3  <057>   500047   3-May-76
+DMOV5	MAC     3  <057>   575222  20-Jun-77
+DMOV6	MAC     4  <057>   341561   3-May-76
+DMOV7	MAC     3  <057>   247454   3-May-76
+DMOVR	MAC     4  <057>   677575   3-May-76
+DMUL	MAC    16  <057>   264524   3-May-76
+DPVEC	MAC     4  <057>   463735   3-May-76
+DRS1	MAC    11  <057>   470755   3-May-76
+DSIGN	MAC     3  <057>   165711   3-May-76
+DSIN	MAC    10  <057>   512514   3-May-76
+DSQRT	MAC     6  <057>   107633   3-May-76
+DUMPLA	MAC     4  <057>   472730   3-May-76
+DVEC	MAC     4  <057>   757644   3-May-76
+DVECP	MAC     4  <057>   231731   3-May-76
+ENCODE	MAC     4  <057>   252022   3-May-76
+ENDERR	MAC     3  <057>   763354   3-May-76
+ENGLND	UNV    12  <057>   131243  19-Apr-77
+EOF	MAC     5  <057>   733556   3-May-76
+EOL	MAC     4  <057>   245275   3-May-76
+ERRORS	PRE     5  <057>   310705   3-May-76
+ERRS	MAC     8  <057>   057152   3-May-76
+EXIT	MAC     3  <057>   002512   3-May-76
+EXP	MAC     8  <057>   674554   3-May-76
+F	MAC    19  <057>   307116  20-Jun-77
+F0	MAC    28  <057>   063414   3-May-76
+F1	MAC    36  <057>   602031   3-May-76
+F10	MAC    25  <057>   744673   3-May-76
+F11	MAC    39  <057>   446517   3-May-76
+F12	MAC    31  <057>   024051   3-May-76
+F12P	MAC     3  <057>   204061   3-May-76
+F13	MAC    66  <057>   604140   3-May-76
+F13P	MAC     3  <057>   041600   3-May-76
+F14A	MAC     6  <057>   073546   3-May-76
+F14B	MAC    28  <057>   706521   3-May-76
+F14P	MAC     3  <057>   000053   3-May-76
+F15	MAC     8  <057>   350245   3-May-76
+F15P	MAC     3  <057>   032143   3-May-76
+F16	MAC     8  <057>   122134   3-May-76
+F16P	MAC     3  <057>   174413   3-May-76
+F17A	MAC     9  <057>   275132   3-May-76
+F17B	MAC     6  <057>   533706   3-May-76
+F17P	MAC     3  <057>   020727   3-May-76
+F1S	MAC    21  <057>   673574   3-May-76
+F2	MAC    61  <057>   523120   3-May-76
+F3	MAC    59  <057>   201672   3-May-76
+F3S	MAC     6  <057>   406047   3-May-76
+F4	MAC    57  <057>   545403   3-May-76
+F5	MAC    48  <057>   470512   3-May-76
+F6	MAC    56  <057>   535253   3-May-76
+F7	MAC    58  <057>   234303   3-May-76
+F8	MAC    63  <057>   757106   3-May-76
+F9	MAC    58  <057>   744137   3-May-76
+FADD	MAC    15  <057>   560104   3-May-76
+FBEGIN	MAC    37  <057>   205264   3-May-76
+FBLOCK	PRE     5  <057>   240034   3-May-76
+FCALL	MAC     3  <057>   060133   3-May-76
+FCHNL	MAC     4  <057>   641560   3-May-76
+FCODE	MAC    48  <057>   463613   3-May-76
+FDIV	MAC    16  <057>   761131   3-May-76
+FDRIVE	MAC     7  <057>   370711   3-May-76
+FIND	MAC     5  <057>   735016   3-May-76
+FINIT	EAE     3  <057>   220510   3-May-76
+FINIT	EIS     3  <057>   373321   3-May-76
+FINIT	FIS     3  <057>   726431   3-May-76
+FINIT	FPU     3  <057>   304331   3-May-76
+FINIT	PRE     3  <057>   555620   3-May-76
+FIO	MAC    26  <057>   270517  20-Jun-77
+FIXCTL	ORG    12  <057>   357577   2-Jan-75
+FLOAT	MAC     3  <057>   327624   3-May-76
+FLT16	MAC     4  <057>   462724   3-May-76
+FMOV1	MAC     3  <057>   061460   3-May-76
+FMOV2	MAC     3  <057>   763104   3-May-76
+FMOV3	MAC     3  <057>   171240   3-May-76
+FMOV4	MAC     3  <057>   065114   3-May-76
+FMOV5	MAC     3  <057>   411274   3-May-76
+FMOV6	MAC     3  <057>   567004   3-May-76
+FMOV7	MAC     3  <057>   402714   3-May-76
+FMOV8	MAC     3  <057>   133140   3-May-76
+FMOV9	MAC     4  <057>   625523   3-May-76
+FMOVR	MAC     3  <057>   232277   3-May-76
+FMUL	MAC    17  <057>   207202   3-May-76
+FNEG	MAC     3  <057>   332577   3-May-76
+FORTHD	MAC    14  <057>   464553   3-May-76
+FORTRA	BAK    23  <057>   474157   5-Jul-77
+FORTRA	BLB    24  <057>   463052   5-Jul-77
+FORTRA	CMD     2  <057>   514101  21-Jun-77
+FORTRA	HLP     2  <057>   673116   3-May-76
+FPLOT	OBJ     9  <057>   362035   1-Jun-77
+FPVEC	MAC     4  <057>   311105   3-May-76
+FROOT	MAC    10  <057>   624315   3-May-76
+FSH	MAC     4  <057>   377507   3-May-76
+FUD	MAC     3  <057>   152623   3-May-76
+FUDGE	MAC     3  <057>   245261   3-May-76
+FVEC	MAC     4  <057>   343565   3-May-76
+FVECP	MAC     4  <057>   234414   3-May-76
+FWRT	MAC     6  <057>   561134   3-May-76
+GETFIL	MAC     3  <057>   437664   3-May-76
+GETNUM	P11     4  <057>   711174  13-Apr-77
+GETREC	MAC     5  <057>   376226   3-May-76
+GO	P11     4  <057>   215550  13-Apr-77
+GOTO	MAC     4  <057>   613537   3-May-76
+HELP	P11     4  <057>   165356  13-Apr-77
+HIST	MAC     5  <057>   615417   3-May-76
+IABS	MAC     3  <057>   265406   3-May-76
+IADC	MAC     5  <057>   777276   3-May-76
+IADDS	MAC     4  <057>   047452   3-May-76
+IBR	MAC     4  <057>   714530   3-May-76
+IBW	MAC     4  <057>   252002   3-May-76
+ICMPS	MAC     4  <057>   103333   3-May-76
+IDATE	MAC     4  <057>   332524   3-May-76
+IDIM	MAC     3  <057>   512266   3-May-76
+IDIR	MAC     4  <057>   001426   3-May-76
+IDIV	MAC     6  <057>   574055   3-May-76
+IDOR	MAC     4  <057>   465740   3-May-76
+IFILE	MAC     3  <057>   272327  11-Aug-72
+IFIX	MAC     3  <057>   574257   3-May-76
+IFR	MAC     4  <057>   035350   3-May-76
+IFW	MAC     4  <057>   631724   3-May-76
+IMOVR	MAC     3  <057>   240557   3-May-76
+IMOVS	MAC     4  <057>   026246   3-May-76
+IMUL	MAC     6  <057>   107071   3-May-76
+INCR	MAC     4  <057>   055201   3-May-76
+INEG	MAC     3  <057>   231607   3-May-76
+INITIO	MAC     4  <057>   401677   3-May-76
+INLINE	P11     4  <057>   422243  13-Apr-77
+INT	MAC     3  <057>   623730   3-May-76
+INTERP	P11     7  <057>   125273  13-Apr-77
+INVERT	OBJ     8  <057>   223300   1-Jun-77
+IPADDS	MAC     4  <057>   031412   3-May-76
+IPCMPS	MAC     4  <057>   554252   3-May-76
+IPMOVS	MAC     4  <057>   054370   3-May-76
+IPSUBS	MAC     4  <057>   665674   3-May-76
+IPVEC	MAC     4  <057>   106745   3-May-76
+ISIGN	MAC     3  <057>   541227   3-May-76
+ISNLSN	MAC     4  <057>   124634   3-May-76
+ISUBS	MAC     4  <057>   003623   3-May-76
+IVEC	MAC     4  <057>   070066   3-May-76
+IVECP	MAC     4  <057>   514712   3-May-76
+KB2BCD	MAC     4  <057>   360140   3-May-76
+KBCD2B	MAC     4  <057>   403250   3-May-76
+LA0	MAC     4  <057>   100770   3-May-76
+LA1	MAC     3  <057>   511452   3-May-76
+LA2	MAC     3  <057>   310271   3-May-76
+LC	TEC     1  <057>   554323   1-Jun-77
+LCMPS	MAC     3  <057>   564216   3-May-76
+LCMPSI	MAC     3  <057>   721277   3-May-76
+LCMPSP	MAC     3  <057>   361153   3-May-76
+LDISP	MAC     6  <057>   772611   3-May-76
+LED	MAC     7  <057>   374700   3-May-76
+LGA0	MAC     6  <057>   610754   3-May-76
+LGA1	MAC     5  <057>   003374   3-May-76
+LICMP	MAC     8  <057>   260253   3-May-76
+LIN16	MAC     4  <057>   700570   3-May-76
+LINIT	MAC     6  <057>   075333   3-May-76
+LITRE	MAC     3  <057>   626534   1-Jun-77
+LITRE	SAV     2  <057>   000000   1-Jun-77
+LITRE	TEC     6  <057>   111714   1-Jun-77
+LMOVR	MAC     3  <057>   503254   3-May-76
+LMOVS	MAC     4  <057>   765244   3-May-76
+LNOTS	MAC     3  <057>   446741   3-May-76
+LOADS	MAC     4  <057>   565647   3-May-76
+LPARS	MAC     4  <057>   366020   3-May-76
+LPCMPS	MAC     3  <057>   617716   3-May-76
+LPSUNV	UNV     2  <057>   345741  19-Apr-77
+LPUT	MAC     3  <057>   726024   3-May-76
+LPVEC	MAC     4  <057>   033705   3-May-76
+LTEST	MAC     3  <057>   056576   3-May-76
+LV11	MAC     5  <057>   401526   1-Jun-77
+LV11I	OBJ     1  <057>   351441   1-Jun-77
+LV11R	OBJ     1  <057>   203130   1-Jun-77
+LVEC	MAC     4  <057>   377140   3-May-76
+LVECP	MAC     4  <057>   741240   3-May-76
+MAX0	MAC     3  <057>   413470   3-May-76
+METEOR	P11   122  <057>   734555  23-Jul-74
+MIN0	MAC     3  <057>   273062   3-May-76
+MOD	MAC     3  <057>   323276   3-May-76
+MOD	P11     5  <057>   612221  27-Jul-74
+MPY	P11     3  <057>   042075  13-Apr-77
+MSGOUT	P11     2  <057>   031732  13-Apr-77
+MTXI	MAC     1  <057>   401352   1-Jun-77
+MTXR	MAC     1  <057>   656517   1-Jun-77
+NXT1	MAC     4  <057>   177155   3-May-76
+NXT2	MAC     4  <057>   440652   3-May-76
+NXT3	MAC     4  <057>   516166   3-May-76
+NXT4	MAC     4  <057>   667340   3-May-76
+OBJENC	MAC     3  <057>   615745   3-May-76
+OBJFMT	MAC    14  <057>   326626   3-May-76
+ODT11A	BIN     3  <057>   430357  26-Aug-74
+OLAY	OBJ    13  <057>   613222   1-Jun-77
+OPEN	MAC    14  <057>   772201   3-May-76
+OTI	MAC    22  <057>   015070   3-May-76
+OTSWA	PRE     7  <057>   334327   3-May-76
+OUTNUM	P11     4  <057>   134150  13-Apr-77
+OUTVER	MAC     7  <057>   754212   3-Jan-64
+PAUSE	MAC     3  <057>   517664   3-May-76
+POPR	MAC     3  <057>   644473   3-May-76
+PUTREC	MAC     7  <057>   256446   3-May-76
+QPVEC	MAC     3  <057>   177613   3-May-76
+QVEC	MAC     3  <057>   552314   3-May-76
+QVECP	MAC     3  <057>   274577   3-May-76
+RAN	MAC     4  <057>   664407   3-May-76
+RANDU	MAC     4  <057>   025244   3-May-76
+READ	P11     2  <057>   046751  13-Apr-77
+REAL	MAC     3  <057>   122224   3-May-76
+REL	MAC     4  <057>   637376   3-May-76
+RETD	MAC     3  <057>   766220   3-May-76
+RETDSF	MAC     3  <057>   505361   3-May-76
+RETS	MAC     4  <057>   643105   3-May-76
+REWIND	MAC     4  <057>   246315   3-May-76
+RIO	MAC    11  <057>   322171   3-May-76
+RSXMC	P11     9  <057>   420203  13-Apr-77
+RTS	MAC    16  <057>   075566   3-May-76
+RWBLK	MAC     8  <057>   143351   3-May-76
+SAVACS	P11     2  <057>   711051  13-Apr-77
+SAVERT	P11     2  <057>   660200  13-Apr-77
+SETERR	MAC     3  <057>   775652   3-May-76
+SHIP	COR     3  <057>   414502  23-Jul-74
+SHORT	MAC     8  <057>   355507   3-May-76
+SIGN	MAC     3  <057>   274774   3-May-76
+SIMRT	MAC    21  <057>   243210   3-May-76
+SIN	MAC     8  <057>   514211   3-May-76
+SING	SNO     3  <057>   640673  18-Dec-75
+SNGL	MAC     3  <057>   100121   3-May-76
+SPOOL	P11     1  <057>   654421  13-Apr-77
+SQRT	MAC     8  <057>   046276   3-May-76
+STAR	        1  <057>   711040   2-Jan-64
+STOP	MAC     4  <057>   130567   3-May-76
+SUBR	MAC     4  <057>   237042   3-May-76
+T	P11     4  <057>   544556  10-Apr-75
+TANH	MAC     6  <057>   655475   3-May-76
+TAPE	P11    24  <057>   600375  13-Apr-77
+TAPERD	P11    25  <057>   135756  13-Apr-77
+TAPES	SNO     2  <057>   405153  15-May-75
+TCMPLX	MAC     3  <057>   555742   3-May-76
+TECO	SAV    20  <057>   000000   1-Jun-77
+TESTC	MAC     3  <057>   300677   3-May-76
+TESTS	MAC     4  <057>   133164   3-May-76
+TRARY	MAC     4  <057>   317470   3-May-76
+TTYIN	P11     9  <057>   553742  13-Apr-77
+TTYINT	P11    20  <057>   755537  13-Apr-77
+TYPER	MAC     2  <057>   021410   1-Jun-77
+UIO	MAC    14  <057>   553006   3-May-76
+USEREX	MAC     3  <057>   563524   3-May-76
+UTILNK	BAT     1  <057>   022076   1-Jun-77
+V2DEF	PRE     3  <057>   140730   3-May-76
+V2SDEF	PRE     3  <057>   140625   3-May-76
+VCTRAN	MAC     3  <057>   515615   3-May-76
+VPCMX1	FOR     6  <057>   022465   1-Jun-77
+VPCMX1	OBJ     6  <057>   777737   1-Jun-77
+VPCX10	OBJ     9  <057>   212316   1-Jun-77
+VPCX4K	OBJ     9  <057>   045262   1-Jun-77
+VPLOT	RNO    14  <057>   230716   1-Jun-77
+VTA	MAC    11  <057>   045447   3-May-76
+VTB	MAC    10  <057>   553164   3-May-76
+VTC	MAC     9  <057>   037047   3-May-76
+VTD	MAC    19  <057>   225114   3-May-76
+VTE	MAC    14  <057>   615076   3-May-76
+VTF	MAC    14  <057>   513323   3-May-76
+VTG	MAC    12  <057>   573426   3-May-76
+VTH	MAC    14  <057>   312174   3-May-76
+VTI	MAC    11  <057>   313316   3-May-76
+VTJ	MAC    24  <057>   010563   3-May-76
+VTK	MAC     5  <057>   162242   3-May-76
+VTL	MAC     7  <057>   550171   3-May-76
+VTM	MAC    16  <057>   776514   3-May-76
+VTRAN	MAC     4  <057>   531725   3-May-76
+VTU	MAC    26  <057>   141461   3-May-76
+WAIT	MAC     4  <057>   060065   3-May-76
+XCI	MAC     6  <057>   357550   3-May-76
+XDD	MAC     5  <057>   173546   3-May-76
+XDI	MAC     8  <057>   104267   3-May-76
+XFF	MAC     4  <057>   655454   3-May-76
+XFI	MAC     7  <057>   074340   3-May-76
+XII	MAC     6  <057>   413503   3-May-76
+  Total of 3031 blocks in 363 files Checksum = 724151 on DSKA: [10,64,MT4008]
+
+NEWD	EXE    20  <156>   552036  30-Nov-77	4(2)	[10,64,NEWD]
+NEWD	MAC    34  <157>   432077  30-Nov-77
+NEWD	REL    10  <157>   237734  30-Nov-77
+SCANER	MAC    40  <157>   635740  22-Nov-77
+SCANER	REL     9  <157>   555762  30-Nov-77
+  Total of 113 blocks in 5 files Checksum = 761436 on DSKA: [10,64,NEWD]
+
+NOTIFY	SAV    29  <157>   223565  30-Mar-77	36(152)	[10,64]
+  Total of 29 blocks in 1 file Checksum = 223565 on DSKA: [10,64]
+
+ABS	P11     4  <057>   321401  17-Jul-76	[10,64,NRL]
+BATCON	DOC     4  <057>   272202  17-Jul-76
+BATCON	P11    24  <057>   744156  17-Jul-76
+BATCON	REL     6  <057>   373673  17-Jul-76
+DIR	P11    16  <057>   231053  17-Jul-76
+FORTRA	BAK    23  <155>   474157   5-Jul-77
+FORTRA	BLB    24  <155>   463052   5-Jul-77
+GRFLEX	P11   134  <057>   365472  17-Jul-76
+GRFPAR	P11     1  <057>   710577  17-Jul-76
+KEYBRD	BIN     1  <157>   170302   8-Sep-77
+KEYBRD	P11     3  <057>   031021  14-Jul-76
+MOD	P11     5  <057>   612221  27-Jul-74
+SHIP	COR     3  <057>   414502  23-Jul-74
+T	P11     4  <057>   544556  10-Apr-75
+  Total of 252 blocks in 14 files Checksum = 204660 on DSKA: [10,64,NRL]
+
+BASEBA	BAS    38  <157>   170410   9-Nov-77	[10,64,OLDDIM]
+BATTLE	BAS    30  <157>   540572   9-Nov-77
+BIGWAR	BAS    29  <157>   306776   9-Nov-77
+BLACK	BAS    19  <157>   375071   9-Nov-77
+BRIDGE	BAS     8  <157>   364064   9-Nov-77
+CHESS	HOW     5  <157>   701240   9-Nov-77
+CHESS	SAV    80  <157>   326407   9-Nov-77
+FOOTBL	BAS    35  <157>   604076   9-Nov-77
+HANGMN	BAS    11  <157>   030444   9-Nov-77
+NIM	BAS     5  <157>   415674   9-Nov-77
+PGRM	BAS    23  <157>   342171   9-Nov-77
+RALLY	BAS     8  <157>   244051   9-Nov-77
+ROULET	BAS    16  <157>   122230   9-Nov-77
+SPOCK	BAS   104  <157>   115534   9-Nov-77
+STRTK1	BAS   104  <157>   544770   9-Nov-77
+STRTRK	BAS    38  <157>   104506  28-Nov-77
+SYSTAR	DOC     2  <157>   206123   9-Nov-77
+SYSTAR	HGH    49  <157>   435732  28-Nov-77	(1)
+SYSTAR	LOW    63  <157>   407015   9-Nov-77	(1)
+UARC	EXE    44  <156>   302153   9-Nov-77
+UARC	REL     5  <157>   727742   9-Nov-77
+UARC	SAI     2  <255>   553627   9-Nov-77
+UARC	SAV    36  <157>   503313   9-Nov-77
+UNPFIX	BAS    12  <157>   206465   9-Nov-77
+WUMPUS	BAS    13  <157>   633244   9-Nov-77
+XXX001	        1  <157>   015205   9-Nov-77
+XXX002	       29  <157>   306641   9-Nov-77
+XXX003	       19  <157>   013213   9-Nov-77
+XXX004	       30  <157>   323122   9-Nov-77
+XXX005	       38  <157>   640736   9-Nov-77
+XXX006	       35  <157>   533476   9-Nov-77
+XXX007	       23  <157>   652562   9-Nov-77
+XXX008	        8  <157>   404671   9-Nov-77
+XXX009	       16  <157>   640704   9-Nov-77
+XXX010	        8  <157>   042777   9-Nov-77
+XXX011	       11  <157>   767332   9-Nov-77
+XXX012	        5  <157>   572674   9-Nov-77
+XXX013	      110  <157>   015303   9-Nov-77
+XXX014	      104  <157>   336760   9-Nov-77
+XXX015	       39  <157>   272632   9-Nov-77
+XXX016	       13  <157>   265515   9-Nov-77
+XXX017	        2  <157>   672505   9-Nov-77
+XXX018	       63  <157>   203030   9-Nov-77
+XXX019	       49  <157>   764454   9-Nov-77
+XXX020	       80  <157>   500024   9-Nov-77
+XXX021	        5  <157>   720074   9-Nov-77
+  Total of 1467 blocks in 46 files Checksum = 116260 on DSKA: [10,64,OLDDIM]
+
+PARITY	CCL     1  <057>   152775   2-Feb-76	[10,64,PARITY]
+PARITY	CMD     1  <057>   661551   9-Feb-76
+PARITY	LOW     2  <057>   450701  31-May-77
+PARITY	MAC     7  <057>   100277  24-Nov-76
+PARITY	SHR     6  <057>   534715  31-May-77
+  Total of 17 blocks in 5 files Checksum = 052675 on DSKA: [10,64,PARITY]
+
+FTNMAC	P11    20  <057>   353567  19-Nov-76	[10,64,PDP11]
+PCSPY	SRC    28  <057>   002122  29-Apr-76
+  Total of 48 blocks in 2 files Checksum = 356263 on DSKA: [10,64,PDP11]
+
+PHONE	MIC     1  <157>   464000  16-Nov-77	[10,64]
+  Total of 1 block in 1 file Checksum = 464000 on DSKA: [10,64]
+
+ADDRES	SNO     6  <155>   431737  23-May-77	[10,64,PHONE]
+P	SNO     1  <155>   747153   2-Nov-77
+PHONE	BAK    20  <155>   417762  15-Nov-77
+PHONE	CC     20  <155>   421114  15-Nov-77
+PHONE	SNO     5  <155>   741040  14-Jun-77
+  Total of 52 blocks in 5 files Checksum = 007301 on DSKA: [10,64,PHONE]
+
+BARON	PIC    26  <157>   621240  10-Jan-76	[10,64,PICTUR]
+BROAD	PIC    13  <157>   205151  10-Jan-76
+BUNNY	DAT     2  <057>   232126  25-Oct-74
+COMPLT	DAT     3  <057>   604374  11-Mar-74
+CYBER	OLD    12  <057>   314656   3-Jan-74
+CYBER	PDP     8  <057>   475440   4-Jan-74
+EXP	PIC    17  <157>   603616  10-Jan-76
+FINGER	PIC    71  <157>   743453   5-Nov-76
+GIRL	DAT    17  <057>   762050  10-Jun-72
+HANDS1	DAT   104  <057>   116541  18-Feb-76
+HEART	DAT     3  <057>   650532  28-Nov-77
+JACK	DAT     3  <057>   760263   2-Apr-76
+LINUS	PIC    18  <157>   446467  10-Jan-76
+LISA1	DAT    91  <057>   036321  18-Feb-76
+MADON1	DAT   107  <057>   273050  18-Feb-76
+NUMS	DAT     2  <157>   260155  10-Jan-76
+OPUPPY	PIC    29  <155>   645264  15-Apr-77
+PEACE	DAT     8  <057>   626234  10-Jun-72
+PEACE	PIC     8  <157>   626234  10-Jan-76
+PEACE2	DAT     7  <057>   542156  11-Mar-74
+PICT	F4      3  <057>   607045  18-Feb-76
+PLAYMT	77     27  <157>   675346  20-Oct-76
+PUPPY	DAT    17  <057>   356561  10-Jun-72
+PUPPY	PIC    15  <157>   441420  11-Jan-76
+SEXY	BOD    38  <057>   064073  21-Sep-76
+SNOOP	        4  <057>   062364  16-Sep-74
+SNOOP	DAT     5  <057>   030741   7-Mar-71
+SNOOP	PIC    19  <157>   600074  10-Jan-76
+SNOOPL	TF4     9  <057>   565474  21-Dec-72
+SNOOPY	PIC    10  <157>   267743  10-Jan-76
+SNSIGN	BAK     7  <057>   474603  14-Oct-76
+SNSIGN	CBL     7  <057>   165361  29-Sep-77
+SNSIGN	EXE    20  <156>   671732  29-Sep-77
+SNSIGN	LST    13  <157>   333342  29-Sep-77
+SNSIGN	REL    11  <157>   455060  29-Sep-77
+SPOCK	PIC   664  <157>   222421   7-Nov-77
+XMAS	       71  <057>   451475  17-Dec-75
+XMAS1	       57  <057>   115617  18-Dec-72
+  Total of 1546 blocks in 38 files Checksum = 006012 on DSKA: [10,64,PICTUR]
+
+CONTUR	F4     16  <057>   210472  19-Jan-73	[10,64,PLOTS]
+GENPLT	RNO   100  <155>   122373  11-Sep-72
+PLOT	      116  <057>   661574  12-Jan-76
+PLOT	HLP    82  <057>   774465  12-Jan-76
+PLOT	MAC    35  <057>   051412  11-Aug-72
+PLOT	REL   157  <057>   675126  12-Jan-76
+SURFS1	F4     18  <057>   112376  11-Aug-72
+SURFS2	MAC     3  <057>   730070  11-Aug-72
+  Total of 527 blocks in 8 files Checksum = 111511 on DSKA: [10,64,PLOTS]
+
+POLIS2	TEC    14  <057>   134607  27-Feb-75	[10,64,POLISH]
+POLISH	TEC    12  <057>   416217  18-Apr-74
+POLISH	TXT     2  <157>   334750  10-Nov-77
+PRT	BAK     1  <057>   530243  28-Feb-75
+PRT	CTL     1  <057>   732647  24-Aug-77
+PRT	LOG     2  <057>   460066  24-Aug-77
+  Total of 32 blocks in 6 files Checksum = 362205 on DSKA: [10,64,POLISH]
+
+POLISH	TEC    12  <057>   416217  18-Apr-74	[10,64]
+  Total of 12 blocks in 1 file Checksum = 416217 on DSKA: [10,64]
+
+RESIG	BAK     2  <157>   565706  11-Nov-77	[10,64,RESUME]
+RESIG	MEM     3  <057>   457033  11-Nov-77
+RESIG	RNO     2  <157>   633713  11-Nov-77
+RESIGN	BAK     2  <157>   175711  11-Nov-77
+RESIGN	MEM     3  <057>   327053  11-Nov-77
+RESIGN	RNO     3  <157>   517634  11-Nov-77
+RESUME	RNO     7  <157>   237454  20-Oct-77
+SPELL	LIB     2  <157>   161132  13-Oct-77
+  Total of 24 blocks in 8 files Checksum = 635125 on DSKA: [10,64,RESUME]
+
+SAVGAM	RSK     5  <057>   225633  12-Oct-77	[10,64,RISK]
+  Total of 5 blocks in 1 file Checksum = 225633 on DSKA: [10,64,RISK]
+
+RUNOFF	SPL     1  <057>   056610  15-Sep-76	[10,64,RUNOFF]
+RUNOFF	TEC     3  <255>   267211   1-Jul-77
+  Total of 4 blocks in 2 files Checksum = 573224 on DSKA: [10,64,RUNOFF]
+
+ARCMAN	DMP   316  <155>   511002  10-Nov-77	[10,64,SAIL]
+CRYPT	FAI    13  <155>   235367  21-Oct-76
+CRYPT	SAV     5  <155>   767554  21-Oct-76
+DUMP	EXE    48  <155>   201743  10-Nov-77
+DUMP	REL    10  <155>   161227  10-Nov-77
+DUMP	SAI     6  <155>   206652  10-Nov-77
+LEXCMP	REL     9  <155>   101424  17-Nov-77
+LEXCMP	SAI     8  <155>   340544  15-Nov-77
+MTCOPY	REL     3  <155>   776361  17-Nov-77
+MTCOPY	SAI     1  <155>   243032  21-Oct-76
+MTDIR	REL     5  <155>   201674  17-Nov-77
+MTDIR	SAI     3  <155>   741074   9-Mar-77
+READFL	SAI     2  <155>   661615  10-Sep-77
+T	SAI     2  <155>   637545  10-Nov-77
+  Total of 431 blocks in 14 files Checksum = 632514 on DSKA: [10,64,SAIL]
+
+SALVO	MAC    53  <057>   515211   9-Aug-76	[10,64,SALVO]
+  Total of 53 blocks in 1 file Checksum = 515211 on DSKA: [10,64,SALVO]
+
+ADDRES	SNO     6  <057>   431737  23-May-77	[10,64,SNOBOL]
+ALTER	LST    94  <157>   653376   7-Sep-77
+ALTER	SNO    41  <157>   736126   2-Jul-75
+COINS	SNO     7  <057>   330007   6-Dec-74
+CUME	SNO    11  <057>   047735  15-Nov-74
+DECODE	SNO    15  <057>   026320   5-May-75
+DMPSNO	SNO     2  <057>   416206   4-May-75
+DOCGEN	SNO    17  <057>   712114  24-Mar-75
+DOCTOR	SNO    24  <057>   156101   7-Feb-74
+EXTRAK	SAV    11  <057>   772005  22-Mar-77	4B(121)
+EXTRAK	SNO     2  <057>   536566   2-Jul-75
+FIXCTL	ORG    12  <057>   357577   2-Jan-75
+FIXCTL	SNO    14  <057>   344526   2-Jan-75
+FORMAT	SNO     2  <057>   052310   6-May-75
+GRADE	        2  <057>   633376   3-Jul-75
+HELP	LST    42  <157>   206664   7-Sep-77
+HELP	SNO    15  <057>   422001  13-Dec-74
+IO	SNO     2  <057>   654256  24-Mar-75
+OLDPHN	SNO     3  <057>   412631   9-Mar-77
+PHONE	SNO     5  <057>   741040  14-Jun-77
+PURGE	SNO     9  <057>   056604  25-Oct-74
+SEARCH	SNO     5  <057>   303661  27-Sep-74
+SONGS	DAT    16  <057>   620064  14-Apr-75
+SONGS	SNO     2  <057>   624047  14-Apr-75
+TAPES	SNO     2  <057>   405153  15-May-75
+TYDIR	SNO     1  <057>   145003  15-Apr-75
+WAITAC	SNO     2  <057>   736122  28-Jun-74
+  Total of 364 blocks in 27 files Checksum = 522073 on DSKA: [10,64,SNOBOL]
+
+START	EXE    92  <156>   272531  13-Oct-77	[10,64]
+  Total of 92 blocks in 1 file Checksum = 272531 on DSKA: [10,64]
+
+CONV1	MAC    11  <057>   435234   6-Jan-75	[10,64,SUB]
+DAY	MAC     2  <057>   304500  24-Aug-77
+FILSPC	MAC    29  <157>   036202  26-Aug-77
+OUTDEC	MAC     2  <057>   417645  13-Jan-75
+READIN	MAC     3  <057>   505127  10-Feb-76
+TEST	EXE     8  <156>   046242  25-Aug-77
+TEST	FOR     1  <057>   210576  24-Aug-77
+TYPE	MAC     5  <057>   250704  30-Jan-64
+  Total of 61 blocks in 8 files Checksum = 421655 on DSKA: [10,64,SUB]
+
+SWITCH	INI     2  <057>   750510   4-Nov-77	[10,64]
+TECO	INI     1  <157>   465043   1-Feb-77
+  Total of 3 blocks in 2 files Checksum = 536075 on DSKA: [10,64]
+
+COMMEN	TEC     2  <057>   460030  26-Jun-74	[10,64,TECO]
+DIRCNT	TEC     1  <057>   742517  11-Jun-74
+RD	SHR    26  <057>   641254   4-Nov-75	23B(162)
+TECO	MAC   217  <057>   562057   4-Nov-75
+  Total of 246 blocks in 4 files Checksum = 075026 on DSKA: [10,64,TECO]
+
+TEST	CRF     4  <157>   457455   4-Nov-77	[10,64]
+TEST	MIC     1  <157>   215362   2-Nov-77
+  Total of 5 blocks in 2 files Checksum = 130651 on DSKA: [10,64]
+
+CP	MAC     5  <157>   753132  20-Oct-77	[10,64,TEST]
+DSKCHR	MAC    14  <157>   076142   3-Sep-74
+IGNORE	MAC     1  <157>   041351   2-Aug-74
+SNOOPY	DAT    46  <057>   222663  24-Oct-77
+T	EXE     8  <156>   371606  20-Oct-77
+TEST2	MAC     5  <100>   571552   8-Nov-77
+TEST2	REL     2  <100>   566244   8-Nov-77
+TTY	BAK     5  <157>   406246   9-Nov-77
+TTY	EXE     8  <156>   234026   9-Nov-77
+TTY	MAC     7  <157>   562226   9-Nov-77
+TTY	REL     3  <157>   035014   9-Nov-77
+TTYX	EXE     8  <156>   140462  21-Oct-77
+TTYX	MAC     3  <157>   415003  21-Oct-77
+  Total of 115 blocks in 13 files Checksum = 644143 on DSKA: [10,64,TEST]
+
+DIC	TXT     1  <157>   563264  23-Nov-77	[10,64,TFER]
+FUNNY	TXT     1  <157>   677301  21-Jul-77
+MT4008	DIR    22  <157>   077572  30-Nov-77
+NOTIFY	CCL     1  <057>   573262  29-Sep-76
+NOTIFY	CTL     1  <057>   617414   6-Dec-76
+NOTIFY	MAC    20  <057>   752200   8-Oct-76
+NOTIFY	SAV    29  <157>   223565  30-Mar-77	36(152)
+STATE	MAC     6  <057>   121257  11-Nov-75
+TFER	MAC    49  <057>   367762  22-Jul-77
+TFER	REL    17  <157>   544726  26-Nov-77
+TFER	SAV     9  <057>   665123  21-Jul-77
+  Total of 156 blocks in 11 files Checksum = 565045 on DSKA: [10,64,TFER]
+
+ARTIST	BOX     5  <057>   272745  14-Oct-77	[10,64,TITLE]
+RECORD	INP     8  <057>   674374  19-Jun-75
+TAPMAC	MAC     1  <057>   015574  25-Jul-75
+TAPMAC	UNV     1  <057>   001503  25-Jul-75
+TAPREC	MAC     1  <057>   222715  25-Jul-75
+TAPSUB	MAC    47  <057>   052277  26-Jul-75
+TAPSUB	REL     2  <057>   545373   7-Jun-76
+TITLE	CBL    16  <057>   275175  14-Jul-75
+TITLE	SAV    11  <057>   647217  30-Jul-75	1
+TITLES	BOX     6  <057>   650210  14-Oct-77
+  Total of 98 blocks in 10 files Checksum = 372657 on DSKA: [10,64,TITLE]
+
+GROW2	DAT     1  <057>   111734  20-Apr-77	[10,64,TYPIC]
+MACRO	DAT     1  <057>   751647   7-Mar-77
+TREES	DAT     1  <057>   654673  20-Apr-77
+  Total of 3 blocks in 3 files Checksum = 323137 on DSKA: [10,64,TYPIC]
+
+BOOK	MAC     6  <057>   130333  26-Aug-76	[10,64,UNFIN]
+DSKDIR	MAC     7  <057>   320013  23-Apr-76
+  Total of 13 blocks in 2 files Checksum = 724207 on DSKA: [10,64,UNFIN]
+
+CAB	MAC     3  <057>   641224  22-Oct-76	[10,64,UNV]
+CAB	UNV     2  <057>   550337  22-Oct-76
+CARL	MAC     3  <057>   013455   3-Jan-64
+CARL	UNV     6  <057>   250243  13-Sep-76
+CARLAB	MAC     3  <057>   550342  27-Jun-74
+CARLX1	MAC    15  <057>   504602  29-Jan-76
+KOSTER	MAC     9  <057>   271646  13-Jun-75
+KOSTER	UNV     6  <057>   470644  25-Jul-75
+OAB	UNV     2  <057>   550337  22-Oct-76
+OARL	UNV     6  <057>   250243  13-Sep-76
+  Total of 55 blocks in 10 files Checksum = 545535 on DSKA: [10,64,UNV]
+
+CARL	LST    11  <057>   444674  29-Nov-77	[10,64,WORK]
+NICE	TEC     1  <157>   067657  14-Nov-77
+RULES	1      13  <157>   112474  13-Oct-77
+RULES	4     112  <157>   732707  21-Nov-77
+STEP	TEC     1  <157>   376371  10-Nov-77
+  Total of 138 blocks in 5 files Checksum = 623104 on DSKA: [10,64,WORK]
+
+X	MIC     1  <155>   546476   3-Nov-77	[10,64]
+  Total of 1 block in 1 file Checksum = 546476 on DSKA: [10,64]
+
+ZORK	HLP     8  <157>   224454   8-Sep-77	[10,64,ZORK]
+  Total of 8 blocks in 1 file Checksum = 224454 on DSKA: [10,64,ZORK]
+  Grand total of 24031 blocks in 1494 files Checksum = 410447
+
+  BACKUP reel number 1; end save set: 
+    by version 2(232) at 22:16:29 on 30-Nov-77
+    written on MTA010: on S/N 1205 at 1600 9-track
+    under TOPS-10 system 603(15717): Catholic Univ 603(12) VM
+
+    jm%fö
