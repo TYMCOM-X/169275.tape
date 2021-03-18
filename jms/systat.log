@@ -1,0 +1,776 @@
+detach? 14:
+.o$
+!systat
+TYMSHARE X14-P035/E01 7-6-89 up 230:34:08! at 11:00:30 on Tue Mar 13,1990
+Null time = 218:52:17, Idle = 94% (Idle time per MIN. = 95%)
+8 jobs in use out of 31.  7 detached
+JOB  TYMNET    PORT  PROG  PAGES  STATE     TRU  CONNECT USER NAME
+ 1  DETACHED        PAM      4    SL    1962.01  0:00:00 PJ
+ 2  DETACHED        CHKPNT   6    TI     675.20  0:00:04 OPER +$
+ 3  DETACHED        PCOM    79    TI    4479.32 65:00:44 JMS +$
+ 4  DETACHED        XEXEC  110    SL    7794.25  0:03:56 PERPOPER +$
+ 5  DETACHED        SYSLOG  36    SL    2456.59  0:00:00 PERPOPER
+ 6  DETACHED        CRON    42    SL    3079.67  0:00:09 PERPOPER +
+ 7  DETACHED        SYSDAT  36    SL    2770.16  0:00:00 SRA +
+ 8* F33-base   #17  SYSTAT  32    RN       3.74  0:00:07 JMS +
++ means TYMSHARE inhouse user
+$ means RUN ONLY program
+Users=8 Det=7 [2,2], Queues: RUN=1 DIO=0 TIO=2 IO=0 SPC=5
+894 Physical pages available (MONITOR = 282P, User Area = 612P)
+Virt. memory used (TPU/TPA): 345/612 = 56%
+!
+17: cannot build circuit
+23:
+.o$
+!systat
+TYMSHARE F23-P035/E-1 3-2-89 up 28:54:17! at 11:00:52 on Tue Mar 13,1990
+Null time = 10:43:29, Idle = 37% (Idle time per MIN. = 31%)
+108 jobs in use out of 127.  17 detached
+JOB  TYMNET    PORT  PROG  PAGES  STATE     TRU  CONNECT USER NAME
+ 1  DETACHED        PAM      4    SL     561.38  0:00:00 PJ
+ 2  DETACHED        CHKPNT  12    TI     857.25  0:00:04 OPER +$
+ 3  Tokyo-7406 #170 MAGNRN 236    TI    1090.97 12:26:23 DBITS (NETDB) +$
+ 4  DETACHED        XEXEC  114    SL    2882.90  0:00:32 PERPOPER +$
+ 5  DETACHED        SYSLOG  36    SL     478.80  0:00:00 PERPOPER
+ 6  DETACHED        CRON    42    SL     416.53  0:00:06 PERPOPER +
+ 7  DETACHED        SYSDAT  36    SL    1044.23  0:00:00 SRA +
+ 8   -06142-   #177 MAGNRN 261    TI     414.32 14:06:57 ENFE (NETDB) +$
+ 9  DETACHED        PCOM    79    SL     724.71  0:00:00 NETDB +$
+10  DETACHED        PCOM    80    SL     774.64  0:00:00 TELCOBILL +$
+11  MUX-1274   #134 MAGNRN 268    TI    1268.15 27:10:20 NETCON (NETDB) +$
+12  DETACHED        MAGNRN 245    SL    9467.82  0:27:38 TELCOBILL +$
+13  DETACHED        PCOM    79    SL     686.99  0:00:00 NETDB +$
+14  F23-base   #207 MAGNRN 208    SL     754.64 28:50:15 NETDB +$
+15  D23-base   #201 SENDMA  42    TI     346.95 28:22:39 TELCOBILL +
+16  DETACHED        PCOM    80    SL     800.26  0:00:00 NETDBTRAIN +$
+17  F23-base   #213 MAGNRN 259    SL   12397.92 28:50:11 NETDBTRAIN +$
+18  Solar-2466 #176 GOPJ     2    ^C     739.76 28:46:24 OPER +
+19  DETACHED        PCOM    80    SL     721.79  0:00:00 NETDB +$
+20  MUX-2096   #175 MAGNRN 263    TI     245.33  1:31:18 DBCSERV (NETDB) +$
+21  F23-base   #221 MAGNRN 264    SL    9471.15 28:50:02 NETDB +$
+22  Vienna2562 #157 MAGNRN 282    TI    2596.57 27:51:29 DBCSERV (NETDB) +$
+23  South Bay  #174 MAGNRN 371    TI     778.32  0:25:39 DBENGB (NETDB) +$
+24  DETACHED        PCOM    80    SL     745.04  0:00:00 NETDBTRAIN +$
+25  F23-base   #225 MAGNRN 249    SL   10340.29 28:49:42 NETDBTRAIN +$
+26  South Bay  #146 MAGNRN 241    TI     189.64  0:13:05 DBWCNI (NETDB) $
+27  F23-base   #231 MAGNRN 251    SL    8032.83 28:49:19 NETDB +$
+28  DETACHED        EXECX  164    SL      28.23  0:00:00 PERPOPER +$
+29  Netcon3563 #171 MAGNRN 270    TI     865.17  1:25:45 NETCON (NETDB) +$
+30  Vienna3206 #151 MAGNRN 261    TI     302.67  5:12:37 DBITS (NETDB) +$
+31  MUX-2096   #165 MAGNRN 270    TI     471.09  6:29:08 DBCSERV (NETDB) +$
+32  Phoenix    #107 MAGNUM 229    TI   16047.23 16:44:20 DBAMIKE (NETDB) +
+33  MUX-8372   #164 MAGNRN 217    TI     454.18  4:51:45 ENFE (NETDB) +$
+34  MUX-2096   #161 MAGNRN 274    TI    3460.83  4:40:34 DBCSERV (NETDB) +$
+35  MUX-2096   #160 MAGNRN 248    TI     972.04  6:15:11 DBCSERV (NETDB) +$
+36  MUX-2096   #156 MAGNRN 279    TI     482.80  6:14:33 DBCSERV (NETDB) +$
+37   -06142-   #172 MAGNRN 263    TI     507.89 18:00:25 DBENFE (NETDB) +$
+38   -10317-   #162 MAGNRN 312    TI     723.52 10:29:10 DBICS (NETDB) +$
+39  MUX-1800   #152 MAGNRN 229    TI     236.26  4:15:32 DBNTS (NETDB) +$
+40   -06540-   #154 MAGNRN 266    TI     801.65 27:51:17 DBCNFEC (NETDB) $
+41  Vienna3206 #153 MAGNRN 263    TI     629.56 27:36:37 DBITS (NETDB) +$
+42  MUX-2096   #155 MAGNRN 280    TI     788.10  6:13:25 DBCSERV (NETDB) +$
+43   -06142-   #167 MAGNRN 269    TI     646.76 15:41:58 ENFE (NETDB) +$
+44  MUX-5666   #150 MAGNRN 217    TI     656.64 23:56:28 ENFE (NETDB) +
+45  Solar-2466 #163 TITO    32    ^C   63657.25 10:07:12 OPER +
+46  South Bay  #166 MAGNRN 302    RN    8861.21  4:16:19 DBTAR (TELCOBILL) +$
+47  MUX-1274   #147 MAGNRN 211    TI     411.12  1:15:23 TYMRES3 (NETDB) +
+48  South Bay  #125 LISTER  12    ^C     117.67  1:41:12 DBENG (NETDB) +
+49   -06540-   #145 MAGNRN 266    TI     613.29  4:54:30 DBCNFEC (NETDB) $
+50  MUX-2096   #143 MAGNRN 258    TI    1466.03  4:51:02 DBCSERV (NETDB) +$
+51  South Bay  #131 MAGNRN 322    TI     962.48  1:15:11 DBWCNI (NETDB) $
+52  DownersGro #103 MAGNRN 217    TI    1249.23  3:15:33 DBCTS (NETDB) $
+53  South Bay  #137 MAGNRN 252    TI     842.04  4:12:14 DBTAR (TELCOBILL) +$
+54  South Bay  #140 MAGNRN 288    TI     248.71  0:26:09 PSCTBILL +$
+55  Vienna3206 #126 MAGNRN 261    TI     299.57  3:42:17 DBITS (NETDB) +$
+56  South Bay  #105 MAGNRN 269    TI     255.68  0:38:38 DBTAR (TELCOBILL) +$
+57   -04627-   #135 MAGNRN 249    TI    1035.78  0:58:34 WNFE (NETDB) +$
+58  South Bay  #133 MAGNRN 310    TI    8078.39  4:06:03 DBTAR (TELCOBILL) +$
+59  South Bay  #115 GFD      6    ^C     744.02  2:32:12 DBENG +
+60  Irvine3211 #136 MAGNRN 287    TI     241.56  0:32:43 WNFE (NETDB) +$
+61  MUX-5666   #130 MAGNRN 315    TI    2505.68 26:43:48 ENFE (NETDB) +$
+62  Netcon3563 #124 MAGNRN 337    TI    3609.45  3:53:20 NETCON (NETDB) +
+63  MUX-2096   #127 MAGNRN 266    TI     775.17 23:35:34 DBCSERV (NETDB) +$
+64  Rockville  #123 MAGNRN 258    TI     273.06  3:53:13 ENFE (NETDB) +$
+65  South Bay  #132 MAGNRN 226    TI    3997.21  3:59:17 DBENG (NETDB) +$
+66  Fairfax    #121 MAGNRN 266    TI     604.00 24:19:21 ENFE (NETDB) +$
+67  South Bay  #122 MAGNRN 245    TI    2416.01  3:51:34 DBENG (NETDB) +
+68  South Bay  #120 MAGNRN 246    TI    3244.35  3:50:09 DBENG (NETDB) +
+69  South Bay  #117 MAGNRN 362    TI    1655.79  2:04:36 DBENG (NETDB) +$
+70  South Bay  #116 LOGINN   8    ^C       9.89  3:44:55 ACCG1 $
+71  MUX-2096   #112 MAGNRN 266    TI     655.16 21:37:17 DBCSERV (NETDB) +$
+72  Vienna6615 #113 MAGNRN 261    TI     304.87  3:41:27 DBCSERV (NETDB) +$
+73  Vienna3206 #114 MAGNRN 261    TI     279.89  3:44:34 DBITS (NETDB) +$
+74  Solar-2466 #111 SENDMA  46    ^C      35.94  2:01:38 OPER +
+75  South Bay  #110 MAGNRN 356    TI     797.97  3:33:18 DBENGB (NETDATA) +$
+76  South Bay  #102 LISTER  12    ^C     129.38  2:17:22 DBENG (NETDB) +$
+77  MUX-1274   #100 MAGNRN 236    TI     144.74  0:06:52 NETCON (NETDB) +
+78  South Bay  #106 MAGNRN 264    TI     714.34  0:26:28 ACCG1 (NETDB) $
+79  South Bay  #101 MAGNRN 332    TI     342.11  2:16:49 DBTAR (NETDATA) +$
+80  South Bay  #77  MAGNRN 348    TI     506.42  3:10:51 DBTAR (NETDATA) +$
+81  Irvine3211 #73  MAGNRN 267    TI     237.29  0:52:07 WATECH (NETDB) +$
+82  South Bay  #71  MAGNRN 281    TI   13668.16  3:02:06 DBTAR (TELCOBILL) +$
+83  DETACHED        FTICP   46    SL      99.43  0:00:05 SRA +
+84  South Bay  #142 MAGNRN 271    TI    2216.90  1:44:22 DBPORTS (NETDB) $
+85  South Bay  #144 MAGNRN 273    TI     557.61  1:00:38 DBTAR (TELCOBILL) +$
+86  MUX-2096   #76  MAGNRN 342    TI     854.08 23:04:02 DBCSERV (NETDATA) +$
+87  MUX-2096   #141 MAGNRN 236    TI     194.31  2:00:41 DBCSERV (NETDB) +$
+88  South Bay  #74  MAGNUM 229    TI    4993.55  2:08:33 TLY (NETDB) +
+89  South Bay  #104 MAGNRN 306    TI    9518.94  2:45:35 DBTAR (TELCOBILL) +$
+90  South Bay  #75  MAGNRN 275    TI    1286.73  1:59:07 SMITHC (NETDB)
+91  South Bay  #72  MAGNRN 286    TI     230.21  0:23:37 DBWCNI (NETDB) $
+92  MUX-2096   #70  MAGNRN 236    TI     186.80  0:55:36 DBCSERV (NETDB) +$
+93  F23-base   #203 PCOM    71    TO      25.21  0:00:36 NETDB +$
+94   -03350-   #67  MAGNRN 275    TI     535.40  1:53:57 NETQC (NETDB) +
+95  MUX-2734   #65  MAGNRN 226    TI     322.93  0:21:10 DBSCHED (NETDB) +
+96  South Bay  #64  EDITOR  24    TI     371.49  0:48:26 TLAI (NETDB) +
+97  MUX-5666   #63  MAGNRN 258    TI     177.60  0:20:19 ENFE (NETDB) +
+98  South Bay  #62  MAGNRN 329    TO     953.34  0:20:17 DBTLC (NETDB) +$
+99  South Bay  #61  MAGNRN 287    TI     357.38  0:20:01 DBTAR (TELCOBILL) +$
+100 South Bay  #60  MAGNRN 333    TI     258.64  0:17:41 DBTAR (NETDATA) +$
+101 South Bay  #57  MAGNRN 340    TI     398.98  0:13:44 DBENG (NETDB) +$
+102 South Bay  #56  MAGNRN 301    SW     498.32  0:13:01 TLY (NETDB) +
+103 MUX-2734   #55  MAGNRN 307    TI     727.19  0:09:04 DBTLC (NETDB) +$
+104 DETACHED        PCOM    79    SL       7.91  0:00:00 NETDB +$
+105 F23-base   #205 DIRIT   90    TO      17.35  0:00:24 NETDB +$
+106* F33-base   #173 SYSTAT  32   RN       8.67  0:00:10 JMS +
+107 DETACHED        PCOM    79    SL       5.01  0:00:00 NETDB +$
+108 F23-base   #211 RPG      1    SW       0.00  0:00:01 NETDB +$
++ means TYMSHARE inhouse user
+$ means RUN ONLY program
+Users=108 Det=17 [1,1], Queues: RUN=2 DIO=2 TIO=83 IO=0 SPC=21
+8190 Physical pages available (MONITOR = 490P, User Area = 7700P)
+Virt. memory used (TPU/TPA): 23008/7700 = 299%
+!
+26:
+.o$
+!systat
+TYMSHARE F26-P035/E-1 3-2-89 up 84:18:47! at 11:01:59 on Tue Mar 13,1990
+Null time = 64:07:53, Idle = 76% (Idle time per MIN. = 76%)
+59 jobs in use out of 116.  19 detached
+JOB  TYMNET    PORT  PROG  PAGES  STATE     TRU  CONNECT USER NAME
+ 1  DETACHED        PAM      4    SL     996.55  0:00:00 PJ
+ 2  DETACHED        CHKPNT  26    TI    3299.71  0:00:05 OPER +$
+ 3  StLouis    #170 LISTER  12    ^C      28.17  2:02:00 CTS +$
+ 4  DETACHED        XEXEC  114    SL   10854.26  0:00:32 PERPOPER +$
+ 5  DETACHED        SYSLOG  36    SL    1458.70  0:00:00 PERPOPER
+ 6  DETACHED        CRON    42    SL    1161.02  0:00:06 PERPOPER +
+ 7  DETACHED        SYSDAT  36    SL    1453.92  0:00:00 SRA +
+ 8  Solar-5511 #176 GOPJ     2    ^C     109.32  8:54:40 OPER +
+ 9  Austin-Tx  #174 OPER     4    ^C      13.59  6:25:28 NCF $
+10  VG2-2733   #171 DIRIT   20    ^C     153.51  1:59:37 WRONSTADT (TSNNET) +
+11  South Bay  #152 DIRIT   14    ^C    1002.67  0:31:31 TECHSERV +
+12  MUX-1800   #167 1022F4  76    ^C     256.88  1:14:00 NTS +
+13  BUBBF-G2   #163 DIRIT   32    TO      96.26  0:25:36 BETATEST +
+14  Vienna6615 #172 OPER     4    ^C      10.82  7:58:10 SMACMILLAN +$
+15  BUBBF-G2   #165 TELECO  46    TI    1028.50  0:50:29 BETATEST +
+16  DETACHED        EXECX  160    SL      64.68  0:00:00 PERPOPER +$
+17  Vienna6615 #166 TELECO  46    ^C     194.38  1:22:03 DREEDER +
+18  MdcIsg5510 #177 1022F4  76    ^C    1152.36  2:11:48 SWBNET +
+19  MdcIsg5510 #173 1022F4  76    ^C     486.81  0:08:02 SWBNET +
+20  MdcIsg5510 #141 CKSUM    8    ^C      75.71  1:18:13 SWBNET +$
+21  D37-base   #175 AUXMOX  16    TI    1573.32  2:01:28 VACODE +$
+22  DETACHED        ------   0    ^C       0.00  0:00:00 INSCODE +
+23   -05764-   #157 PCOM    75    ^C    1852.99  8:17:20 BILLTEMP +
+24  DETACHED        FTICP   46    SL      81.61  0:00:03 SRA +$
+25  Malvern-PA #151 LOADII  46    SL      56.85  0:03:47 NSSC +
+26   -05764-   #215 EDITOR  24    TI       7.25  0:31:19 BILLTEMP +
+27  DETACHED        LISTER  12    TO      34.62  0:02:44 ITALTAS $
+28  Vienna6615 #156 PEAK   101    ^C    5801.54  5:38:24 MMONAGHAN (INSCODE) +
+29  Vienna6615 #154 MINIT    2    ^C       9.66  7:57:51 PNTS +
+30  MdcIsg5510 #145 1022F4  76    ^C    1332.22  5:59:35 SWBNET +
+31  Vienna6615 #155 LISTER  12    ^C      83.28  7:59:30 EPACODE +
+32  DETACHED        LISTER  12    ^C     183.12 20:05:44 INSCODE +
+33   -05764-   #147 LISTER  12    ^C      56.37  4:27:59 UKFETRAIN (UKREPAIR) $
+34  DETACHED        PCOM    79    TI     191.86  0:00:00 TNSM (ESPOUY) +$
+35  DETACHED        1022F4  76    ^C    1696.82  7:19:17 INSCODE +
+36  Austin-Tx  #146 COM     32    TI     973.47  6:02:58 NCF
+37  Paris-Gate #213 NAD    122    ^C     943.88  7:56:37 TNSM (ESPOUY) +$
+38   -11227-   #150 DIRIT   20    ^C      11.13  0:02:53 DECNET $
+39  DETACHED        PCOM    79    TI     130.00  0:00:00 TNSM (ESPOUY) +
+40  Paris-Gate #205 NAD    122    ^C     845.64  5:09:12 TNSM (ESPOUY) +
+41  Vienna6615 #164 VUE     76    ^C      42.78  5:05:28 RFLEISHER +
+42  DeptLabor  #144 LISTER  12    ^C     347.15  5:33:22 USGSCODE +
+43  StLouis    #143 NAD    148    ^C     243.88  2:06:48 SWBNET +
+44  MdcIsg5510 #162 RDMAIL  78    ^C    1306.80  2:25:50 SWBNET +
+45* F33-base   #153 SYSTAT  32    RN       7.24  0:00:05 JMS +
+46  Austin-Tx  #137 SYSNO   24    ^C      71.11  5:00:35 NCF
+48  Vienna6615 #133 PEAK   105    TI    4050.71  4:44:22 INSCODE +
+50  Vienna6615 #160 RPG     18    ^C      33.04  4:32:00 DRHODES (VACODE) +
+51   -06375-   #135 LISTER  12    ^C      37.74  3:58:05 DECNET $
+52  DETACHED        SYSTAT  32    ^C     194.14  9:46:12 VALIDATE +$
+53  MdcIsg5510 #140 LISTER  12    ^C      45.31  2:16:28 SWBNET +$
+54  DETACHED        SYSTAT  32    ^C     377.21  0:31:05 HSBCNET +$
+55  DETACHED        1022F4  76    ^C     181.89  0:20:33 INSCODE +
+56  MdcIsg5510 #136 LISTER  12    ^C     123.01  2:05:22 SWBNET +$
+57  Paris-Gate #125 LOGOUT   8    ^C      33.54  3:12:08 TNSM (ESPOUY) +$
+60  Austin-Tx  #131 ADD     48    ^C      76.53  3:27:55 NCF
+63  DETACHED        CKSUM    8    ^C      46.21  3:14:54 FORDSUB
+73  DETACHED        PCOM    79    TI     239.02  0:00:00 TNSM (ESPOUY) +
+76  Paris-Gate #207 NAD    122    ^C    1017.58 10:00:59 TNSM (ESPOUY) +
++ means TYMSHARE inhouse user
+$ means RUN ONLY program
+Users=59 Det=19 [1,1], Queues: RUN=1 DIO=0 TIO=50 IO=0 SPC=8
+4094 Physical pages available (MONITOR = 490P, User Area = 3604P)
+Virt. memory used (TPU/TPA): 2732/3604 = 76%
+!
+30:
+.o$
+!systat
+System controlled until 23:59
+TYMSHARE F30-P035/E-1 3-2-89 up 103:36:05! at 11:02:16 on Tue Mar 13,1990
+Null time = 36:25:42, Idle = 35% (Idle time per MIN. = 95%)
+18 jobs in use out of 127.  7 detached  1 not logged in
+JOB  TYMNET    PORT  PROG  PAGES  STATE     TRU  CONNECT USER NAME
+ 1  DETACHED        PAM      4    SL    1299.48  0:00:00 PJ
+ 2  DETACHED        CHKPNT  48    TI    3282.82  0:00:05 OPER +$
+ 3  South Bay  #175 SYSTAT  32    ^C      50.26  4:39:01 RJK +
+ 4  DETACHED        XEXEC  110    SL    5270.44  0:00:32 PERPOPER +$
+ 5  DETACHED        SYSLOG  36    SL    1756.85  0:00:00 PERPOPER
+ 6  DETACHED        CRON    42    SL    1436.76  0:00:07 PERPOPER +
+ 7  DETACHED        SYSDAT  36    SL    1720.93  0:00:00 SRA +
+ 8  South Bay  #177 MAGNUM 240    TI   29427.03 22:23:29 ACCG1 (TESTEOM) $
+ 9  Solar-5511 #176 GOPJ     2    ^C   111018.81 103:20:04 OPER +
+10  DETACHED        FTICP   46    SL      70.08  0:00:02 SRA +$
+11  South Bay  #174 MAGNUM 240    TI    2974.10 20:10:39 ACCG1 (TESTEOM) $
+12* F33-base   #165 SYSTAT  32    RN       7.14  0:00:03 JMS !+
+13  South Bay  #172 SPOOL   46    TI      52.89  2:02:53 SPOOLRM +$
+14  Solar-5511 #171 SENDMA  46    ^C    6157.06  2:16:32 OPER +
+15  South Bay  #162 MAGNRG 229    TI     786.42 25:56:56 NETENTRY +
+16  South Bay  #170 LOGOUT   8    SL     250.26  0:47:58  ??? +
+17  MDC-D3lpt  #167 LOGINN   8    ^C       5.15  1:53:12 SPOOLRM +$
+19  South Bay  #173 SPURS   28    SL     297.98  0:25:14 FRANK +
++ means TYMSHARE inhouse user
+$ means RUN ONLY program
+! means controlled user
+Users=18 Det=7 [1,1], Queues: RUN=1 DIO=0 TIO=9 IO=0 SPC=8
+4094 Physical pages available (MONITOR = 490P, User Area = 3604P)
+Virt. memory used (TPU/TPA): 1233/3604 = 34%
+!
+32:
+.o$
+!systat
+TYMSHARE X32-P035/E-1 3-2-89 up 21:06:11 at 11:02:28 on Tue Mar 13,1990
+Null time = 20:05, Idle = 1% (Idle time per MIN. = 0%)
+12 jobs in use out of 49.  10 detached
+JOB  TYMNET    PORT  PROG  PAGES  STATE     TRU  CONNECT USER NAME
+ 1  DETACHED        PAM      4    SL     225.96  0:00:00 PJ
+ 2  DETACHED        CHKPNT   6    TI     114.17  0:00:05 OPER +$
+ 3  DETACHED        DCMMD  510    RN   296043.56  0:00:46 WAR +
+ 4  DETACHED        CRON    42    SL     300.81  0:00:13 PERPOPER +
+ 5  DETACHED        XEXEC  110    SL    1047.62  0:00:43 PERPOPER +$
+ 6  DETACHED        EXECX  162    SL    1972.08  0:00:00 PERPOPER +$
+ 7  DETACHED        SYSLOG  36    SL     354.41  0:00:00 PERPOPER
+ 8  DETACHED        HUMP5  178    RN   440578.64  0:07:15 WAR +
+ 9  DETACHED        HUMP6  178    RN   414088.10  0:01:38 WAR +
+10  DETACHED        DCMMD  510    RN   276570.21  0:00:49 WAR +
+11  MUX-2096   #177 TYPE    22    ^C      24.61  0:01:59 JMS +$
+12* F33-base   #176 SYSTAT  32    RN       6.28  0:00:07 JMS +
++ means TYMSHARE inhouse user
+$ means RUN ONLY program
+Users=12 Det=10 [2,2], Queues: RUN=5 DIO=0 TIO=2 IO=0 SPC=5
+8190 Physical pages available (MONITOR = 490P, User Area = 7700P)
+Virt. memory used (TPU/TPA): 1790/7700 = 23%
+!
+33:
+.o$
+!systat
+TYMSHARE F33-P035/E-1 3-2-89 up 78:30:54! at 11:02:42 on Tue Mar 13,1990
+Null time = 46:52:12, Idle = 59% (Idle time per MIN. = 7%)
+85 jobs in use out of 116.  9 detached
+JOB  TYMNET    PORT  PROG  PAGES  STATE     TRU  CONNECT USER NAME
+ 1  DETACHED        PAM      4    SL    1061.49  0:00:00 PJ
+ 2  DETACHED        CHKPNT  20    TI    2362.78  0:00:04 OPER +$
+ 3  MUX-1274   #177 FNDFIL   4    ^C    2583.81 36:41:36 NETCON +
+ 4  DETACHED        XEXEC  110    SL    5808.45  0:00:32 PERPOPER +$
+ 5  DETACHED        SYSLOG  36    SL    1386.26  0:00:00 PERPOPER
+ 6  DETACHED        CRON    42    SL    1093.38  0:00:07 PERPOPER +
+ 7  South Bay  #140 NEVGET  18    TO   10323.27 40:58:31 NETANAL +
+ 8  DETACHED        ALERT  106    SL    6438.83  0:00:00 NETALERT +
+ 9   -06142-   #176 SYSNO   24    ^C    4543.80 38:45:35 CWINTERS +
+10   -04137-   #173 INS    106    TI    1319.68 30:06:33 INSTYM
+11  Irvine7563 #131 FINWAI  38    SL    1727.90  1:52:10 TSDCONTROL +
+12  Solar-5511 #172 GOPJ     2    ^C   41450.71 38:05:41 OPER +
+13  South Bay  #151 NAD    170    TI     869.76 18:44:23 TECHSERV +
+14  South Bay  #55  LISTER  12    ^C     133.88  0:45:27 TECHSERV +
+15  France5047 #171 COPYPC  36    ^C     113.95 11:50:39 SLIE16  Solar-2451 #170 SUPCHK  36    SL    1778.86 38:01:03 OPER +
+17  France5047 #166 PEAK   113    ^C     581.25 12:01:23 SLIEXTC
+18  BUBBF-G2   #152 DIRIT    8    ^C      31.85  0:07:03 TECHSERV (HCHENG) +
+19  MUX-1274   #117 FIND    82    ^C    1039.77 20:38:14 JMS (*1BATCH) +
+20  Solar-4221 #115 PEAK    87    TI    7706.39 25:42:51 ANDERSONK +
+21  MUX-1800   #127 PIP     10    ^C     311.93 20:58:55 NTS (BBUNYAN) +
+22  VG2-2733   #162 DIRIT   18    ^C       4.15  0:02:07 WRONSTADT (TSNNET) +
+23  Solar-4221 #153 RECORD   4    SL     223.74 25:36:42 TNIDEV +$
+24  France5047 #161 DIRIT   14    ^C     533.86 11:50:15 SLIISIS (SLIEXTC) +
+25  MUX-1800   #72  LISTER  12    ^C     127.80 22:55:35 SRICHARDS +
+26  Solar-4221 #213 RECORD   4    SL     203.36 25:36:25 TNIDEV +
+27  Solar-4221 #215 NAD    124    ^C    1736.16 25:35:55 TNIDEV +
+28  BUBBF-G2   #150 RPG     18    ^C    6262.43 28:03:36 MFGNET +$
+29  Solar-5321 #146 OPER     4    ^C       1.37  0:03:24 HLE +$
+30  MUX-1274   #66  A       28    SL      31.89  0:20:47 NETCON +
+31  MUX-1800   #164 NAD    248    SW    5629.75 17:45:01 TECHSERV (RHO) +
+32  South Bay  #104 PEAK    87    ^C    1633.96  3:27:27 TECHSERV (TRWNET) +
+33  Solar-4221 #124 1022F4  76    ^C     748.89 18:56:43 FTSWELLS +
+34  DETACHED        MHX:33  24    TI     155.02  0:41:42 JMS +
+35  F26-base   #134 AUXMOX  16    TI     774.01  0:50:55 BETATEST +$
+36  Vienna6615 #156 1022F4  76    ^C    1071.04  1:14:17 CCHUNG +
+37  Solar-5511 #165 RAMMON  52    ^C    1390.80  4:30:34 OPER +
+38  MdcIsg5510 #147 INIT    42    ^C     287.70 23:28:50 SWBNET +
+39  MUX-8458   #120 TUMS     1    ^C     120.75  0:50:45 MCOLVIN +
+40  MUX-8458   #144 RPG     20    ^C   20296.82 27:40:12 EKENDIG +$
+41  Tokyo-7406 #133 1022F4  76    ^C     240.85  5:52:23 NISCNET +
+42* F33-base   #155 SYSTAT  32    RN       7.46  0:00:05 JMS +
+43  South Bay  #160 PEAK    88    ^C     674.25 18:56:41 TECHSERV (SCHOU) +
+44  Solar-4221 #125 1022F4  76    ^C     680.54 25:47:31 FTSWELLS +
+45   -06142-   #132 1022F4  76    ^C      61.66  0:02:43 ENFE +
+46  DETACHED        FTICP   46    SL     103.13  0:00:06 SRA +$
+47  South Bay  #67  EDITOR  24    TI    2382.42 18:29:34 TECHSERV +
+48  South Bay  #112 GFD      6    ^C       4.45  0:35:14 SCOHEN +
+49  Vienna3206 #135 SYSNO   24    ^C     234.00 26:54:56 INTLTECH (LRDCODE) +$
+50  Paris-Gate #46  ELFSLV  42    TI     860.90  6:30:29 TNSM +$
+51  South Bay  #123 NAD     76    TI     436.14 19:27:15 TECHSERV +
+53  Vienna6615 #174 1022F4  76    ^C     614.47 23:29:14 PBAKER +
+54  Irvine3211 #167 EDITOR  24    ^C    1075.01 18:21:40 TRWNET (MABBAS)
+55  South Bay  #110 NAD    122    TI     381.41  1:33:43 GHUDSON (TYMOUT) +
+56  VG2-2733   #37  NAD     82    ^C     971.32 24:13:03 DBLACK +
+57  Paris-Gate #137 ONTYME  18    TI    2476.97  8:50:14 TNSM (FISBEIN) +
+58  Solar-5511 #116 DIRIT   10    ^C    1026.08  2:25:23 SRA (TNSM) +
+59   -10330-   #122 DIRIT   10    ^C      35.71  2:59:37 FMCNET +$
+60  Irvine3211 #121 OPER     4    ^C      35.33 26:52:49 ALUU +$
+61  PSC-IRVINE #26  1022F4  76    ^C     516.72  0:35:33 K-MART +
+62  MUX-8458   #154 RPG     20    ^C     867.87  0:50:14 CWILSON +
+64  Solar-4221 #141 1022F4  76    ^C    3044.67 25:12:46 FTSWELLS +
+65  MUX-2096   #113 DIRIT   59    ^C     145.91  3:52:38 TCSUP +
+66  Vienna3206 #157 LISTER  12    ^C     241.52  2:02:22 INTLTECH +
+67  BUBBF-G2   #64  ASYNC   12    TO    5205.69  2:39:33 MFGNET +
+68  South Bay  #65  LISTER  12    ^C     305.22  1:33:24 TECHSERV (PJING) +
+69  Solar-2466 #107 CIAO    32    TI    1280.70  5:08:33 TTS317 +
+71  Solar-4221 #163 NAD    124    TI     954.55 21:44:09 FTSWELLS +
+72  Vienna6615 #62  OPER     4    ^C       3.53  0:47:56 MDESIMONE +$
+74  South Bay  #20  LISTER  12    ^C      18.32  0:24:10 TECHSERV +
+75  Solar-5511 #100 PSPATO   2    SL     247.19  4:24:24 OPER +
+76   -05413-   #76  1022F4  76    ^C     218.16  4:02:53 JBARGANIER +
+77  MUX-1274   #126 A       28    TI      66.53  3:08:39 NETCON +
+79  BUBBF-G2   #61  ASYNC   12    TO    6888.15  3:41:22 EST +
+80  MUX-2734   #36  NAD     98    ^C     550.75  1:09:24 WNFEOPS +$
+81  BUBBF-G2   #74  ASYNC   12    TO    6897.78  3:40:26 EST +
+83  MUX-2096   #73  LISTER  12    ^C     235.06  2:13:43 NETQC (NETANAL) +
+84  FremontSun #34  TUMS   278    TI      92.42  0:18:40 HTRINH +
+85  South Bay  #102 DIRIT   10    ^C     721.30  2:54:42 GHUDSON +
+86  MUX-2096   #40  ONTYME  18    ^C      47.63  0:43:09 NETQC +
+87   -04530-   #142 CODE    12    TI       4.17  0:43:04 TCHECKTID +$
+89  Solar-5511 #57  RAMMON  52    SL     126.57  2:11:42 OPER +
+90  South Bay  #32  LISTER  12    ^C      16.85  0:42:44 SCHOU +$
+91  MUX-7001   #56  DIRIT   11    ^C    1951.13  2:11:42 POSTECH +$
+94  DETACHED        EXECX  160    SL     165.59  0:00:00 PERPOPER +$
++ means TYMSHARE inhouse user
+$ means RUN ONLY program
+Users=85 Det=9 [2,2], Queues: RUN=1 DIO=1 TIO=69 IO=0 SPC=14
+8190 Physical pages available (MONITOR = 490P, User Area = 7700P)
+Virt. memory used (TPU/TPA): 4076/7700 = 53%
+!
+34:
+.o$
+!systat
+TYMSHARE F34-P035/E-1 11-16-89 up 62:28:44! at 11:03:18 on Tue Mar 13,1990
+Null time = 45:34:22, Idle = 72% (Idle time per MIN. = 92%)
+35 jobs in use out of 127.  18 detached  10 not logged in
+JOB  TYMNET    PORT  PROG  PAGES  STATE     TRU  CONNECT USER NAME
+ 1  DETACHED        PAM      4    SL    3886.10  0:00:00 PJ
+ 2  DETACHED        CHKPNT  14    TI    1071.86  0:00:04 OPER +$
+ 3  Malvern-PA #177 VENDR  134    TI      21.08  0:05:33 FSCORD +$
+ 4  DETACHED        XEXEC  110    SL    3576.43  0:00:32 PERPOPER +$
+ 5  DETACHED        SYSLOG  36    SL    1171.71  0:00:00 PERPOPER
+ 6  DETACHED        CRON    42    SL     869.60  0:00:07 PERPOPER +
+ 7  DETACHED        SYSDAT  36    SL    1953.88  0:00:00 SRA +
+ 8  DownersGro #176 OPPS    62    ^C      74.94  1:22:55 CTS +
+ 9  VallyForge #175 CUSTM  136    TI    3123.70  3:52:07 FSCORD +$
+10  MUX-1800   #174 TUMS   278    TI    3994.38 28:51:00 BRUCES +
+11  MUX-1800   #171 PART   126    TI     185.93  4:16:27 FSCORD +$
+12  DETACHED        LUDUP   32    SL     178.54  0:00:26 LUDUPD +
+13  Solar-2466 #167 WHO     32    RN    2944.60  2:05:32 BURNS1 +
+14  Solar-5511 #173 GOPJ     2    ^C     314.12 26:39:45 OPER +
+15  Fairfax    #166 PART   126    TI    1185.79 27:40:38 FSCORD +$
+16   -06674-   #172 CONX.R 251    TI     190.70  3:01:27 RVIPX $
+17   -05443-   #170 MAGNUM 240    TI     100.34  0:00:37 KOCH $
+18* F33-base   #165 SYSTAT  32    RN       7.34  0:00:04 JMS +
+19  MdcIsg5725 #163 LISTER  12    ^C     154.12 24:18:05 CNFE +$
+21  IBM43-base #157 AUXMOX  16    ^C      31.37  5:13:27 VALADM1 +$
+22  DETACHED        FTICP   46    SL      77.01  0:00:02 SRA +$
+24   -06142-   #160 CUSTM  136    TI    3940.62  1:51:57 FSCORD +$
+25  Rockville  #161 PART   126    TI    1189.65 26:17:55 FSCORD +$
+26  DETACHED        LOGINN   6    TI      13.33  0:00:41  ??? $
+28  DETACHED        LOGINN   6    TI      13.77  0:03:44  ??? $
+29  DETACHED        LOGINN   6    TI      14.60  0:04:00  ??? $
+31   -06674-   #152 CONX.R 273    TO     420.30  0:43:41 RVIPX $
+33  DETACHED        LOGINN   6    TI      14.09  0:03:50  ??? $
+36  DETACHED        LOGINN   6    TI      12.75  0:00:49  ??? $
+37  DETACHED        LOGINN   6    TI      13.95  0:03:38  ??? $
+38  DETACHED        LOGINN   6    TI      12.22  0:00:34  ??? $
+39  DETACHED        LOGINN   6    TI      14.12  0:03:52  ??? $
+40  DETACHED        LOGINN   6    TI      12.43  0:00:27  ??? $
+41  DETACHED        LOGINN   6    TI      12.39  0:00:32  ??? $
+44  Solar-5321 #145 PEAK    98    ^C     534.28  1:00:25 LINDLEY (OSIDEV1) +$
++ means TYMSHARE inhouse user
+$ means RUN ONLY program
+Users=25 Det=8 [1,1], Queues: RUN=2 DIO=0 TIO=16 IO=0 SPC=7
+8190 Physical pages available (MONITOR = 490P, User Area = 7700P)
+Virt. memory used (TPU/TPA): 2460/7700 = 32%
+!
+37:
+.o$
+!systat
+TYMSHARE D37-P035/E 3-2-89 up 58:47:45! at 11:03:31 on Tue Mar 13,1990
+Null time = 40:55:51, Idle = 69% (Idle time per MIN. = 81%)
+82 jobs in use out of 116.  12 detached
+JOB  TYMNET    PORT  PROG  PAGES  STATE     TRU  CONNECT USER NAME
+ 1  DETACHED        PAM      4    SL     794.49  0:00:00 PJ
+ 2  DETACHED        CHKPNT  26    TI    2375.56  0:00:05 OPER +$
+ 3  Dallas2177 #175 SUPCHK  36    SL     795.72 57:32:31 OPER +
+ 4  DETACHED        XEXEC  114    SL    4923.13  0:00:32 PERPOPER +$
+ 5  DETACHED        SYSLOG  36    SL    1002.10  0:00:00 PERPOPER
+ 6  DETACHED        CRON    42    SL     807.82  0:00:06 PERPOPER +
+ 7  Austin-Tx  #122 1022F4  76    ^C    1905.14  5:43:18 NCF
+ 8  Dallas2177 #177 SYSTAT  32    ^C     351.62 12:50:00 OPER +
+ 9  Malvern-PA #161 LISTER  12    ^C      16.24  3:01:02 NSSC +$
+10   -03116-   #173 1022F4  76    ^C    1229.43 49:12:27 SMAZZURCO +
+11  Austin-Tx  #115 NAD     76    ^C    5645.37  5:42:15 NCF
+12  Austin-Tx  #60  1022F4  76    ^C     716.05  2:40:52 NCF
+13  DETACHED        PEAK    93    ^C     753.50  7:01:55 VACODE +
+14  Austin-Tx  #170 OPER     4    ^C      14.15  6:27:21 NCF $
+15  DETACHED        UNDELE  46    ^C     268.14  0:01:58 ECKEL
+16  Malvern-PA #144 LOADII  44    ^C     511.70  7:41:45 NSSC +
+17  Malvern-PA #174 LOADII  44    ^C    2648.21 22:00:51 NSSC +
+18  Vienna6615 #121 OPER     4    ^C    1036.18 25:52:51 VACODE +
+19  MUX-8372   #165 NAD     76    ^C      64.85  0:30:38 FORDSUB
+20  Vienna6615 #162 PEAK    91    ^C    4752.27 30:03:37 ARMYNET1 +
+21  DupontGate #140 SYSTAT  32    ^C     253.55  4:09:06 DUCODE +$
+22  Austin-Tx  #141 1022F4  76    TI    3931.74  6:05:38 NCF
+23  South Bay  #160 NAD    174    TI    2371.02 19:16:22 TECHSERV (FORDSUB) +
+24  DeptLabor  #156 MERLIN  30    ^C     649.08 25:16:45 GMINTEL (VACODE) +
+25  France5047 #153 SYSNO   24    ^C     188.04  2:07:03 SLIEXTC $
+26   -03777-   #172 1022F4  76    ^C     585.77 25:20:17 ARMYNET1 +
+27  South Bay  #117 GFD      6    ^C      11.91  1:57:39 TECHSERV +
+28  Jacksonvil #147 CKSUM    8    TI    2223.58 30:51:53 FIRNNET $
+29  South Bay  #50  1022F4  76    ^C     905.32  1:29:46 TECHSERV (SCHOU) +
+30  MUX-8372   #133 1022F4  76    ^C     290.69  1:19:00 FORDSUB
+31  Malvern-PA #114 LOADII  44    ^C    1304.34  6:43:42 NSSC +
+32  Vienna6615 #112 MINIT    2    ^C      21.51 28:43:14 VACODE +$
+33  Malvern-PA #132 PEAK    88    ^C    2373.60  6:18:35 NSSC +
+34  Vienna6615 #151 PEAK   103    TI     294.02  0:30:05 DREEDER (VACODE) +
+35  DETACHED        FTICP   46    SL      89.25  0:00:02 SRA +$
+36  VForge7002 #111 LISTER  12    ^C     128.30  0:28:44 DUCODE +$
+37  Vienna6615 #145 NAD     90    ^C     988.71  1:14:52 VACODE +
+38  DETACHED        1022F4  76    ^C     612.93 23:27:19 VACODE +
+39  Chase-Gate #152 GET     54    ^C     131.99  5:04:30 CIDNNET +
+40  Malvern-PA #164 NUA     72    ^C     536.91 14:49:09 NSSC +
+41  MUX-1800   #176 DIRIT   11    ^C     119.73 28:07:29 BRUCES +
+42  South Bay  #163 NAD    150    TI     808.48  1:27:30 TECHSERV (FORDSUB) +
+43  Chase-Gate #136 1022F4  76    ^C     248.02  5:04:22 CIDNNET +
+44  Chase-Gate #135 PROOF  114    ^C    1178.07  5:04:21 CIDNNET +
+45   -03116-   #154 PCOM    71    ^C    4466.30 27:57:34 TELTEST +
+46  GreatValle #124 LISTER  12    ^C       9.74  0:11:15 NSSC +$
+47  Austin-Tx  #113 1022F4  42    ^C    2545.44 23:45:53 NCF
+48  South Bay  #143 WHO     32    ^C     970.27 19:08:52 CANCODE +
+49   -03116-   #123 PROOF  114    TI    2237.39 29:00:23 NETSNY +$
+50  VG2-7065   #155 LISTER  12    ^C      69.83  0:05:29 WRFS (UKL) +
+51  DETACHED        EXECX  161    SL      55.83  0:00:00 PERPOPER +$
+52  Tokyo-2242 #116 NLIST   80    TI     377.10 13:32:08 NSCNET +
+53  Vienna2560 #201 XSTAT   60    RN     105.80  0:03:19 DOLNET +
+54   -03347-   #146 UNDELE  36    ^C    7542.73 28:03:33 UL6CODE +$
+55  Jacksonvil #157 1022F4  76    ^C     745.36  2:00:14 FIRNNET
+56  VForge-STI #76  250      4    ^C       8.45  0:00:15 NCF
+57  South Bay  #77  S        4    ^C      92.18  0:52:14 TECHSERV +
+58  Vienna6615 #142 TAUX     4    SL    1730.77 26:59:17 DOLCODE +
+59  DETACHED        OPER     4    ^C      20.62  2:45:11 VACODE +$
+60   -03116-   #167 LISTER  12    ^C     448.62  1:19:24 RMASKEW (CIDNCODE) +
+61  VForge7002 #127 SOFT    86    ^C     307.44  4:25:44 EMORI +
+62  DETACHED        TELECO  46    TI    1939.05  0:00:00 VACODE +$
+63  South Bay  #150 NAD    174    TI    3030.75 18:21:56 TECHSERV (PSNEDDON) +
+64  DownersGro #106 LISTER  12    ^C    3556.01  3:53:59 WESTNET +
+65  South Bay  #66  NAD    142    ^C     648.78 18:38:02 SCHOU +$
+66  South Bay  #102 PCOM    71    ^C     218.02  0:55:58 TECHSERV (JWANG) +
+67   -05413-   #67  1022F4  76    ^C   15761.91 27:29:05 AMARYLAND +
+68  Malvern-PA #125 ZAP      1    ^C     565.38  4:20:39 NSSC +
+69  Malvern-PA #120 DIRIT   11    ^C      93.62  4:18:45 NSSC +
+70  South Bay  #166 NAD    172    TI     525.52  2:18:24 TECHSERV +
+71  South Bay  #103 EDITOR  48    TI    1535.34  1:03:11 TECHSERV (BETATEST) +
+72  Malvern-PA #73  LISTER  12    ^C      66.38 10:36:42 NSSC +
+73  Vienna3206 #71  1022F4  76    ^C    1662.98 27:30:42 INTLTECH (BARCODES) +
+74  VForge-STI #63  ADD     48    ^C     722.37  3:43:19 NCF
+75  MUX-1800   #131 1022F4  76    ^C     460.33  0:55:04 NTS +
+76  South Bay  #104 EDITOR  24    TI      13.78  0:01:34 TECHSERV (PSNEDDON) +
+77  Vienna6615 #52  AUXIO   60    ^C    4218.54  3:35:53 LMORGAN +
+78   -10330-   #171 DIRIT   14    ^C     105.14  2:35:40 UCCPAC +$
+79  VForge7002 #65  MERLIN  30    ^C    7246.77 11:00:53 DUCODE +$
+80  VG2-7065   #100 DIRIT   29    ^C     333.20  1:45:38 WRFS (DIALNET) +
+81   -10032-   #101 PEAK    87    SW     565.55  0:18:46 DESIMONEJ +
+82* F33-base   #105 SYSTAT  32    RN       7.12  0:00:04 JMS +
++ means TYMSHARE inhouse user
+$ means RUN ONLY program
+Users=82 Det=12 [1,1], Queues: RUN=2 DIO=1 TIO=71 IO=0 SPC=8
+8190 Physical pages available (MONITOR = 490P, User Area = 7700P)
+Virt. memory used (TPU/TPA): 4575/7700 = 59%
+!
+38:
+.o$
+!systat
+TYMSHARE F38-P035/E-1 3-2-89 up 96:26:28! at 11:03:56 on Tue Mar 13,1990
+Null time = 63:34:02, Idle = 65% (Idle time per MIN. = 85%)
+65 jobs in use out of 127.  18 detached
+JOB  TYMNET    PORT  PROG  PAGES  STATE     TRU  CONNECT USER NAME
+ 1  DETACHED        PAM      4    SL    1809.69  0:00:00 PJ *
+ 2  DETACHED        CHKPNT  32    TI    2901.18  0:00:04 OPER *+$
+ 3  DETACHED        EDITOR  24    ^C     342.43  0:06:03 SRAVAL *+
+ 4  DETACHED        XEXEC  114    SL    8419.67  0:00:32 PERPOPER *+$
+ 5  DETACHED        SYSLOG  36    SL    1597.82  0:00:00 PERPOPER *
+ 6  DETACHED        CRON    42    SL    1335.34  0:00:07 PERPOPER *+
+ 7  DETACHED        SYSDAT  36    SL    1591.08  0:00:00 SRA *+
+ 8  DETACHED        ALERT   64    SL    3886.30  0:00:00 TECHSERV (NETALERT) *+
+ 9  DETACHED        ALERT   64    SL    3850.53  0:00:00 NETALERT *+
+10  DETACHED        ALERT   64    SL    3868.53  0:00:00 NETALERT *+
+11  DETACHED        ALERT   64    SL    3705.69  0:00:00 NETALERT *+
+12  DETACHED        ALERT   64    SL    3739.34  0:00:00 NETALERT *+
+13  DETACHED        ALERT  104    SL   38329.38  0:00:00 NETALERT *+
+14  DETACHED        ALERT  120    SL   12908.23  0:00:00 NETALERT *+
+15   -02345-   #147 RPG     18    ^C     181.78  3:38:19 SSETO +
+16   -03116-   #173 FIND    56    TO     581.35  0:59:57 NETSNY (DBSCHED) +
+17   -06540-   #117 CFBNTR 102    TI     574.37  3:55:05 TDUSER *+
+18  DETACHED        LISTER  12    ^C     145.70 28:55:00 NEATECH (DBSCHED) *
+19  MUX-2734   #145 EDITOR  24    ^C     126.65  1:37:54 DBSCHED +
+20   -06142-   #107 DIRIT   60    ^C     433.43 26:05:28 ENFE *+
+21  Solar-2451 #175 GOPJ     2    ^C    9777.52 95:35:14 OPER *+
+22  MUX-2734   #146 EDITOR  24    TI      72.46  1:22:40 DBSCHED +
+23  South Bay  #166 EDITOR  24    ^C     376.55 19:47:21 DBSCHED +
+24   -06540-   #162 LISTER  12    ^C      23.99  3:10:02 ENFE *+
+25  MUX-2096   #165 EDITOR  24    ^C     995.06 95:23:18 DBSCHED *+
+26  MDC-D3lpt  #132 SPOOL   70    TI    1932.54 17:34:15 SPOOLRM *+$
+27   -10317-   #177 1022    98    TI    1426.11  8:27:30 MKHELLAF *+
+28  VG2-7065   #123 GFD      6    ^C       5.85  0:06:53 LIVERSON
+29  DETACHED        SPURS   28    ^C     915.21  1:36:00 FRANK +
+30   -06540-   #154 TELECO  46    ^C     231.22  5:55:38 WNFE *+$
+31  StLouis    #156 1022F4 180    ^C    1811.21 28:18:57 CTS *+
+32  Fairfax    #170 LISTER  12    ^C     114.96 28:41:19 ENFE *+
+33  Solar-2466 #112 EDITOR  24    ^C      20.91  0:10:53 SRAVAL +
+34   -10400-   #133 CFBNTR 102    TI     680.69 14:43:09 ENFE *+
+35   -10330-   #151 EDITOR  24    ^C      92.68  1:57:14 WATECH +
+36  South Bay  #163 LISTER  12    ^C      42.50  2:58:10 DBSCHED +
+37   -06540-   #157 LISTER  12    ^C     218.70 28:04:58 ENFE *+
+38  MUX-2734   #144 EDITOR  24    TI      41.07  0:06:33 DBSCHED +
+39  MUX-8372   #140 DIRIT   60    ^C     119.17  5:32:50 ENFE *+
+40   -10431-   #137 LISTER  12    ^C      24.47  5:02:28 ENFE *+
+41  MUX-2734   #115 DIRIT   62    ^C      15.55  0:23:23 WNFE +
+42  MUX-1274   #130 ZEN      1    ^C      72.78 27:12:05 NETCON *+
+43   -06540-   #174 LISTER  12    ^C      27.38  5:00:07 ENFE *+
+44  South Bay  #150 OPER     4    ^C       5.77  0:56:10 NETENG +$
+45  DETACHED        FTICP   46    SL      84.74  0:00:02 SRA *+
+46  South Bay  #121 LISTER  12    ^C      28.49  0:16:12 DBSCHED +
+47* F33-base   #161 SYSTAT  32    RN       7.64  0:00:04 JMS +
+48  DETACHED        DUGO2   14    SL     104.40  0:00:01 MSNTRACK *+
+49  South Bay  #160 EDITOR  24    TI     609.14 24:43:50 DBSCHED +$
+50  Vienna6615 #127 GFD      6    ^C     154.74  0:48:42 MDESIMONE +
+51  MUX-5666   #126 LISTER  12    ^C     206.36 27:26:23 ENFE *+
+52  VG2-2733   #102 LISTER  12    ^C    2310.34  3:02:56 NEATECH (MSS) *
+53  DownersGro #110 DIRIT   15    ^C      22.35  4:16:09 CTS *+$
+54  F58-base   #111 DUBAK  182    SL   64260.64  4:02:38 MSNTRACK +
+55  MUX-2734   #176 DIRIT   62    ^C      23.91  0:48:28 WNFE +
+56  MUX-5127   #131 GFD      6    ^C     348.96 19:35:52 LDAVENPORT *+
+58  Brookfield #142 LISTER  12    ^C     203.49 20:34:17 CNFE *+
+59  VForge7002 #113 EDITOR  26    ^C      50.12  4:21:01 EMORI *+
+60  Solar-2451 #153 LETTER   2    ^C      89.83  2:30:19 OPER (UTIL) +
+61   -06540-   #104 LISTER  12    ^C      20.68  2:32:31 ENFE *+
+64  DownersGro #103 LISTER  12    ^C      70.90  4:14:05 CTS *+
+65  MUX-5666   #116 LISTER  12    ^C     104.55 24:02:42 ENFE *+
+66  FosterCity #136 CFBNTR 102    TI     967.25 20:42:59 WNFE *+
+73  ENFE-CT    #124 LISTER  12    ^C     250.17 20:28:52 ENFE +
+74  MUX-1800   #155 CFBNTR 100    TI     805.36 25:17:49 TDUSER *+
++ means TYMSHARE inhouse user
+* means MAIL WAITING message pending
+$ means RUN ONLY program
+Users=65 Det=18 [1,1], Queues: RUN=1 DIO=0 TIO=49 IO=0 SPC=15
+4094 Physical pages available (MONITOR = 490P, User Area = 3604P)
+Virt. memory used (TPU/TPA): 2692/3604 = 75%
+!
+56:
+.o$
+!systat
+TYMSHARE D56-P035/E 3-2-89 up 39:15:48! at 11:04:24 on Tue Mar 13,1990
+Null time = 23:43:41, Idle = 60% (Idle time per MIN. = 74%)
+125 jobs in use out of 127!  6 detached
+JOB  TYMNET    PORT  PROG  PAGES  STATE     TRU  CONNECT USER NAME
+ 1  DETACHED        PAM      4    SL     384.04  0:00:00 PJ
+ 2  DETACHED        CHKPNT  18    TI    1096.22  0:00:04 OPER +$
+ 3  MUX-2096   #166 1022F4 110    TI    1047.73  1:05:24 TCSUP (TNT) +
+ 4  DETACHED        XEXEC  110    SL    2752.37  0:00:32 PERPOPER +$
+ 5  DETACHED        SYSLOG  36    SL     725.82  0:00:00 PERPOPER
+ 6  Dallas0554 #175 1022F4 108    TI   10119.10  8:31:07 TELECOMSUP +$
+ 7  Malvern-PA #177 1022F4 114    TI    2928.41  6:59:37 NSSC (TNT)
+ 8  DETACHED        MAGNRN 325    SL   28836.58  0:58:51 DBAOPER (OES) +
+ 9  GreatValle #173 1022F4 108    TI     430.52  6:50:19 NSSC (TNT)
+10  Malvern-PA #176 1022F4 120    TI    7699.92 14:43:56 NSSC (TNT)
+11  Malvern-PA #172 1022F4 112    TI    5534.51 22:53:09 NSSC (TNT)
+12  Atlanta    #174 1022F4 110    TI     134.25  0:21:01 ENFE $
+13  Irvine3211 #163 1022F4 108    TI     518.79  1:39:05 MREEVES +$
+14  South Bay  #157 PEAK    87    TI    2084.64  1:08:17 TECHSERV +$
+15  MUX-1274   #164 1022F4 120    TI    3741.29  3:39:57 NETCON (TNT) +
+16   -04627-   #171 1022F4 120    TI     101.73  0:02:52 TELECOMSUP +$
+17  Austin-Tx  #170 1022F4 124    TI    1805.86  2:33:45 NCF (TNT)
+18  Vienna6615 #167 1022F4 108    TI     591.84  5:50:21 BLARKIN $
+19  Vienna6615 #165 1022F4 108    TI    1894.51  8:01:01 SMACMILLAN +
+20  Irvine3211 #162 1022F4 110    TI     441.32  3:44:42 TELECOMSUP +$
+21  Malvern-PA #160 1022F4 120    TI    9143.35 14:48:35 NSSC (TNT)
+22  Malvern-PA #66  ONTYME  20    ^C    5488.82 24:33:19 NSSC
+23  Fairfax    #153 1022F4 108    TI    1297.10  6:43:08 ENFE $
+24   -06142-   #155 1022F4 108    TI    3358.28 28:24:11 TCSUP (TNT) +
+25   -06142-   #152 1022F4 108    TI    1932.17  6:42:26 ENFE $
+26  Dallas0126 #161 1022F4 110    TI     517.77  0:58:32 CNFE +
+27  MUX-2096   #151 1022F4 108    TI    2496.38  6:13:25 TCSUP (TNT) +
+28  StLouis    #145 1022F4 110    TI      98.86  1:18:35 CTS +$
+29   -05413-   #144 1022F4 108    TI      38.61  0:05:00 SSTRANG +$
+30  VG2-2733   #141 1022F4 108    TI     905.76  5:05:56 DPLUMMER +$
+31  Malvern-PA #146 1022F4 112    TI   11554.62 28:09:20 NSSC (TNT)
+32   -02345-   #156 1022F4 108    TI     235.99  1:05:10 SSETO +$
+33  MUX-1274   #150 LOGOUT   8    ^C    3562.33 17:39:29 NETCON (TNT) +
+34  DETACHED        SYSTAT  32    ^C      44.56  0:00:38 DBAMIKE +
+35  Vienna6615 #45  1022F4 120    TI     175.92  0:53:08 JRUGGERE
+36  MUX-2096   #130 1022F4 120    TI     606.00  0:22:46 TCSUP (TNT) +
+37  VForge7002 #140 1022F4 122    TI     321.51  4:26:31 EMORI +$
+38  ENFE-CT    #136 1022F4 120    TI    4365.31  5:36:03 TELECOMSUP +$
+39  Austin-Tx  #134 1022F4 108    TI     235.28  6:27:31 NCF (TNT)
+40  Vienna6615 #143 1022F4 108    TI     385.73  5:07:37 RFLEISHER +
+41  South Bay  #135 1022F4 110    TI     243.27  1:38:06 WNFE +$
+42  MUX-5666   #133 1022F4 108    TI     696.16  6:12:49 ENFE $
+43  KofPrussia #131 1022F4 120    TI    1412.73  6:21:06 ENFE $
+44  MUX-2096   #132 1022F4 108    TI    3908.61 22:34:27 TCSUP (TNT) +
+45   -03116-   #57  1022F4 120    TI     391.77  1:03:53 NETSNY +
+46  VG2-7065   #61  1022F4 120    TI     227.34  0:24:13 TROZOLIS +$
+47  Malvern-PA #126 1022F4 110    TI    4073.55  6:07:39 NSSC (TNT)
+48  Austin-Tx  #125 1022F4 118    TI    2796.92  6:07:09 NCF (TNT)
+49  South Bay  #124 1022F4 108    TI     310.14  1:56:35 JWANG $
+50  MUX-1800   #46  1022F4 120    TI     564.50  2:18:26 NTS $
+51  South Bay  #123 1022F4 110    TI     589.28  2:30:41 ATHAKUR +$
+52  VForge-STI #122 1022F4 120    TI    1790.31  6:01:14 VATYMFILES $
+53   -06142-   #121 1022F4 110    TI    1714.71  5:54:56 ENFE $
+54  MUX-8372   #120 1022F4 108    TI     958.14  5:48:22 ENFE $
+55  MUX-8372   #117 1022F4 120    TI    1295.95  5:05:30 ENFE $
+56  MUX-1274   #116 1022F4 110    TI     183.83  0:09:21 NETCON (TNT) +
+57  VG2-2733   #115 1022F4 116    TI    1142.44  5:21:06 JOLEARY +$
+58  Malvern-PA #114 1022F4 108    TI     479.83  0:28:10 NSSC (TNT)
+59  Vienna2562 #113 1022F4 108    TI     591.49  1:49:18 TCSUP (TNT) +
+60  MUX-2734   #137 1022F4 110    TI     141.84  1:26:15 WNFE +$
+61  VForge-STI #44  1022F4 108    TI     201.01  0:02:48 NCF (TNT)
+62  MUX-2096   #107 1022F4 110    TI     923.65  0:57:51 TCSUP (TNT) +
+63  MUX-2734   #106 1022F4 108    TI     194.34  0:18:11 WNFE +$
+64   -06540-   #105 1022F4 120    TI    1001.91  5:29:09 ENFE $
+65  MUX-2096   #111 1022F4 108    TI    6526.46 23:21:55 TCSUP (TNT) +
+66  Irvine3211 #112 1022F4 108    TI      52.68  0:33:24 WNFE +$
+67  VG2-2733   #103 1022F4 108    TI     122.15  1:11:13 KBIRSE +$
+68  VG2-2733   #102 1022F4 110    TI     966.84  5:04:46 MHANNA $
+69   -06540-   #104 1022F4 108    TI    1240.82  1:58:21 TELECOMSUP +$
+70  StLouis    #100 1022F4 110    TI     281.09  2:03:44 CTS +$
+71  VG2-2733   #77  1022F4 120    TI     931.73  5:20:34 GNADOW +$
+72  Vienna3206 #76  1022F4 120    TI     282.50  0:14:18 INTLTECH (TNT) +
+73  KofPrussia #101 1022F4 120    TI     224.44  1:56:25 ENFE $
+74   -03124-   #74  1022F4 108    TI     284.19  4:00:12 CIDNNET $
+75   -06540-   #73  1022F4 108    TI     640.99  4:25:26 WNFE +$
+76  South Bay  #56  LISTER  12    ^C      12.67  0:30:21 TECHSERV +$
+77  VG2-7065   #142 1022F4 108    TI     331.81  0:42:18 WNFE +$
+78  Dallas0554 #67  1022F4 108    TI   25220.67 24:50:06 TELECOMSUP +$
+79  MUX-2096   #70  1022F4 120    TI   11731.42  4:55:09 TCSUP (TNT) +
+80  DownersGro #65  1022F4 120    TI     210.81  3:47:36 CTS +$
+81  South Bay  #64  1022F4 116    TI     600.21  0:28:52 TYMNET (TNT) +
+82   -05413-   #63  1022F4 110    TI     650.58  4:52:06 JBARGANIER +
+83  MUX-2096   #62  1022F4 120    TI    3674.38  4:50:56 TCSUP (TNT) +
+84  Vienna3206 #43  1022F4 108    TI     368.03  3:03:37 INTLTECH (TNT) +
+85  Nicholson  #110 1022   100    TI    7023.73  1:03:28 DBTAR (OES)
+86  Irvine7563 #71  1022F4 120    TI     359.03  0:33:21 TSDCONTROL $
+87  South Bay  #154 1022F4 108    TI     131.08  0:31:22 WNFE +$
+88   -03116-   #55  1022F4 110    TI     458.91  3:26:11 NETSNY +
+89  Vienna6615 #54  1022F4 110    TI    1694.79  4:31:31 DBOWMAN
+90  StLouis    #75  1022F4 120    TI     398.63  1:42:24 CTS +$
+91   -03116-   #51  1022F4 108    TI     191.58  3:54:47 NETSNY +
+92  Vienna6615 #50  1022F4 120    TI    1871.61  4:06:45 TCSUP (TNT) +
+93  Irvine3211 #11  1022F4 120    TI     446.16  2:22:57 DDEATRICK +
+94  Vienna6615 #47  1022F4 120    TI     175.41  2:37:58 DREEDER +
+95  Vienna6615 #25  1022F4 108    TI     265.71  0:25:06 TCSUP (TNT) +
+96   -06540-   #53  1022F4 120    TI     673.87  1:51:56 ENFE $
+97  South Bay  #147 1022F4 108    TI     200.74  1:18:53 TECHSERV +
+98  Dallas2177 #52  TAKEIT  54    ^C     747.24 22:52:35 OPER +
+99  MUX-8372   #42  1022F4 120    TI     480.75  4:23:05 CTS +$
+100 MUX-1800   #41  1022F4 120    TI     288.55  4:19:43 NTS $
+101 South Bay  #40  1022F4 114    TI      31.87  0:01:39 TYMNET (TNT) +
+102 Alhambra   #37  1022F4 108    TI     124.36  1:47:07 WNFE +$
+103 KofPrussia #35  1022F4 108    TI     306.93  2:49:01 ENFE $
+104 VForge-STI #36  1022F4 120    TI    5090.05 27:35:15 NCF (TNT)
+105 DownersGro #34  1022F4 120    TI     303.15  4:01:06 CTS +$
+106 MUX-5666   #33  1022F4 120    TI    2130.67  3:46:22 ENFE $
+107 MUX-8372   #60  1022F4 120    TI     433.69  0:19:55 CTS +$
+108 South Bay  #23  1022F4 120    TI     175.97  2:08:06 TECHSERV +$
+109  -03116-   #30  1022F4 110    TI     979.70  3:41:29 ATKATSHJ
+110 South Bay  #32  1022F4 120    TI     163.62  1:36:30 STONEK $
+111 MUX-2096   #26  1022F4 114    TI     416.96  0:15:37 NETQC (TNT) +
+112 MUX-1800   #21  1022F4 108    TI     231.60  3:24:20 NTS $
+113 MUX-1274   #127 1022F4 116    TI     703.66  1:14:01 NETCON (TNT) +
+114 Austin-Tx  #17  1022F4 110    TI     751.68  3:23:12 NCF (TNT)
+115 DownersGro #24  1022F4 108    TI     247.81  3:34:06 CTS +$
+116 VG2-7065   #27  1022F4 120    TI     107.34  1:37:18 RFISHER $
+117 MUX-5666   #22  1022F4 108    TI     480.17  3:32:02 ENFE $
+118  -06142-   #20  1022F4 120    TI     607.70  3:20:07 ENFE $
+119 BUBBF-G2   #14  1022F4 120    TI     224.63  1:14:32 PINGCHU +
+120 South Bay  #15  1022F4 110    TI     306.90  2:03:08 POHARROW (TECHSERV) +$
+121* F33-base   #31 SYSTAT  32    RN       8.22  0:00:06 JMS +
+122 South Bay  #13  1022F4 120    TI    1084.85  3:16:58 TECHSERV +$
+123 MUX-1800   #12  1022F4 120    TI     157.00  2:54:21 NTS $
+124 MUX-2096   #72  1022F4 114    TI     142.28  0:09:21 TCSUP (TNT) +
+125  -06142-   #7   1022F4 108    TI     959.54  3:12:09 ENFE $
++ means TYMSHARE inhouse user
+$ means RUN ONLY program
+Users=125 Det=6 [1,1], Queues: RUN=1 DIO=0 TIO=120 IO=0 SPC=4
+8190 Physical pages available (MONITOR = 490P, User Area = 7700P)
+Virt. memory used (TPU/TPA): 13538/7700 = 176%
+!
+74:
+.o$
+!systat
+TYMSHARE F74-P035/E-1 3-2-89 up 4:31:32 at 11:05:02 on Tue Mar 13,1990
+Null time = 44:05, Idle = 16% (Idle time per MIN. = 2%)
+32 jobs in use out of 127.  11 detached
+JOB  TYMNET    PORT  PROG  PAGES  STATE     TRU  CONNECT USER NAME
+ 1* F33-base   #160 SYSTAT  32    RN       7.58  0:00:07 JMS +
+ 2  DETACHED        CHKPNT   6    TI     103.48  0:00:06 OPER +$
+ 3   -06234-   #177 TBARN   66    ^C    4536.34  0:22:58 BDAACCTG
+ 4  DETACHED        CRON    42    SL      59.47  0:00:14 PERPOPER +
+ 5  DETACHED        XEXEC  114    SL     558.44  0:00:47 PERPOPER +$
+ 6  DETACHED        SYSDAT  36    SL      70.37  0:00:00 SRA +
+ 7  DETACHED        SYSLOG  36    SL      77.03  0:00:00 PERPOPER
+ 8  South Bay  #151 TYMVAL  56    TI      44.06  0:44:05 TYMRES4 +$
+ 9  MUX-1274   #175 TYMVAL  56    ^C     507.19  1:21:44 TYMRES3 +
+10  DETACHED        FTICP   46    SL      82.12  0:00:05 SRA +$
+11  DETACHED        MCAUTO  76    SL     371.86  0:00:00 MAIL
+12  DETACHED        EXECX  164    SL     749.84  0:00:00 PERPOPER +$
+13  South Bay  #170 TYMVAL  56    ^C     585.23  2:48:41 TYMRES5 +$
+14  Solar-2466 #172 FTX22   56    TI     237.14  1:18:00 FREITAS2 (CUD10) +
+15  Solar-5511 #173 GOPJ     2    ^C     159.88  3:47:58 OPER +
+16   -10677-   #205 BHRGAT  70    SW   58294.95  3:47:56 CWMFEACCTG +
+17   -05363-   #156 INFORM  28    TO      50.24  0:03:01 INFORMATION
+18   -05363-   #147 INFORM  28    TI      53.58  0:05:32 INFORMATION
+19  F30-base   #153 BATCH   14    ^C      50.21  1:20:38 FRANK +
+20  South Bay  #164 TBARN   58    SW   23161.84  1:58:45 INTLACCTG +
+21  F74-base   #165 1022F4  46    SL      36.68  0:01:55 CUD10 +
+22  Solar-2466 #166 RDMAIL  78    ^C      41.20  1:17:59 DANIELSR +
+23  Vienna6615 #155 INFORM  28    TI      57.94  2:41:45 INFORMATION
+24  DETACHED        ONTYME  85    SL      50.77  0:00:00 MAIL
+25  DETACHED        PCOM    79    SL      54.00  0:00:00 NETDB +$
+26  Solar-2451 #157 RDMAIL  78    ^C      10.69  0:00:32 FREMONTDOC +
+27   -05413-   #150 GETMUD   6    TI       2.10  0:01:03 VALINFO $
+28  DETACHED        ONTMTP  91    SL     153.43  0:00:00 MAIL
+30  South Bay  #143 TYMVAL  56    TO    1669.61  2:40:43 TYMRES +$
+31  Phoenix    #207 MAGNRN 265    SL     572.90  2:04:38 NETDB +$
+32  Solar-2451 #161 PSPATO   2    SL     150.94  1:34:22 DANIELSR +
+38   -05537-   #171 INFORM  28    TI      34.78  0:04:04 INFORMATION
++ means TYMSHARE inhouse user
+$ means RUN ONLY program
+Users=32 Det=11 [4,1], Queues: RUN=1 DIO=2 TIO=16 IO=0 SPC=13
+8190 Physical pages available (MONITOR = 490P, User Area = 7700P)
+Virt. memory used (TPU/TPA): 1884/7700 = 24%
+!
+{ZH<Z
