@@ -1,0 +1,139 @@
+;       FORTRAN BLOCK I/O INTERFACES
+;       ----------------------------
+;       10-SEP-79       BILL EUSKE
+;
+;       INPUT:  IPORT   PORT NUMBER, -1 FOR COMMAND PORT.
+;               ISEC    MAXIMUM TIMEOUT IN SECONDS.
+;
+;       OUTPUT: IRET    RETURN CODE, 0 FOR PDP-10 SKIP RETURN (OK)
+;                                   -1 FOR PDP-10 NORMAL RETURN (ERROR)
+;
+;       I/O:    IBUF    BLOCK I/O BUFFER, MAX OF 101 DECIMAL WORDS.
+;                       0-7     8-15    16-24   24-32   32-35 BITS
+;                       ----------------BYTE COUNT----------- WD 0
+;                       B0      B1      B2      B3      XXXX  WD 1
+;                       B4      B5      B6      B7      XXXX  WD 2
+;                       ...
+;                       B396    B397    B398    B399    XXXX  WD 100
+;
+;       REFER TO TYMCOM-X MONITOR REFERENCE MANUAL FOR USAGE.
+;
+;       CALL BIOBEG(IPORT,IRET)         ENTER PORT INTO BLOCK I/O
+;       -----------------------
+;
+        ENTRY   BIOBEG
+BIOBEG: 0
+        SETZ    4,              ;INIT NO ERROR RET (0)
+        HRLZ    5,@0(16)        ;FETCH PORT NUMBER
+        IORI    5,34            ;MAKE AUXCAL AC,[PORT,,.AXEMB]
+        AUXCAL  5,              ;REQUEST BLOCK I/O
+        SETO    4,              ;NOT AVAILABLE, RET (-1)
+        MOVEM   4,@1(16)        ;SET IN RCODE
+        JRA     16,2(16)        ;RETURN
+;
+;       CALL BIOEND(IPORT)              EXIT PORT FROM BLOCK I/O
+;       ------------------
+;
+        ENTRY   BIOEND
+BIOEND: 0
+        HRLZ    5,@0(16)        ;FETCH PORT NUMBER
+        IORI    5,42            ;MAKE AUXCAL AC,[PORT,,.AXLBM]
+        AUXCAL  5,              ;LEAVE BLOCK I/O
+        JRA     16,1(16)        ;RETURN
+;
+;       CALL BIOPUT(IBUF,IPORT,IRET)    OUTPUT BLOCK
+;       ----------------------------
+;
+        ENTRY   BIOPUT
+BIOPUT: 0
+        HRRZ    5,0(16)         ;GET ADDR OF USER BUFFER
+        IOR     5,AUX           ;BUILD AUXCAL AC,ADDR
+        MOVEM   5,BIOPX         ;SET IN MEM FOR EXECUTION
+        SETZ    4,              ;INIT NO ERROR RET (0)
+        HRLZ    5,@1(16)        ;FETCH PORT NUMBER (0)
+        IORI    5,37            ;MAKE AUXCAL ARG [PORT,,.AXOB]
+BIOPX:  AUXCAL  5,0             ;OUTPUT BLOCK
+        SETO    4,              ;ERROR, RET (-1)
+        MOVEM   4,@2(16)        ;SET IN RCODE
+        JRA     16,3(16)        ;RETURN
+;
+;       CALL BIOPEN(IPORT)              TERMINATE OUTPUT
+;       ------------------
+;
+        ENTRY   BIOPEN
+BIOPEN: 0
+        HRLZ    5,@0(16)        ;FETCH PORT NUMBER
+        IORI    5,41            ;MAKE AUXCAL AC,[PORT,,.AXLBM]
+AUX:    AUXCAL  5,              ;LEAVE BLOCK OUTPUT
+        JRA     16,1(16)        ;RETURN
+;
+;       CALL BIOWAT(IPORT,ISEC,IRET)    DISMISS ON OUTPUT COMPLETE
+;       ----------------------------
+;
+        ENTRY   BIOWAT
+BIOWAT: 0
+        MOVE    5,@0(16)        ;FETCH PORT NUMBER
+        JUMPL   5,BIOWCP        ;BR COMMAND PORT (-1)
+        LSH     5,12            ;AUX PORT IN BITS 0-7 OF HALFWORD
+        IORI    5,100           ;TELL HIBER NOT COMMAND PORT
+        JUMPA   BIOWAX
+BIOWCP: SETZ    5,              ;ZERO FOR COMMAND PORT
+BIOWAX: IORI    5,41            ;HIBER OUTPUT COMPLETE, TIMEOUT IN SECS
+        LSH     5,22            ;PUT IN LEFT HALFWORD
+        HRR     5,@1(16)        ;GET MAX WAIT IN SECS
+        SETZ    4,              ;INIT FOR NO ERROR (0)
+        HIBER   5,              ;WAIT FOR OUTPUT COMPLETE
+        SETO    4,              ;ERROR (-1)
+        MOVEM   4,@2(16)        ;SET RCODE
+        JRA     16,3(16)        ;RETURN
+;
+;       CALL BIOGET(IBUF,IPORT,IRET)    READ & DISMISS TILL INPUT AVAIL.
+;       ----------------------------
+;
+        ENTRY   BIOGET
+BIOGET: 0
+        HRRZ    5,0(16)         ;GET ADDR OF USER BUFFER
+        IOR     5,AUX           ;BUILD AUXCAL AC,ADDR
+        MOVEM   5,BIOGX         ;SET IN MEM FOR EXECUTION
+        SETZ    4,              ;INIT NO ERROR RET (0)
+        HRLZ    5,@1(16)        ;FETCH PORT NUMBER (0)
+        IORI    5,35            ;MAKE AUXCAL ARG [PORT,,.AXIBW]
+BIOGX:  AUXCAL  5,0             ;INPUT BLOCK
+        SETO    4,              ;ERROR OR NO DATA, RET (-1)
+        MOVEM   4,@2(16)        ;SET IN RCODE
+        JRA     16,3(16)        ;RETURN
+;
+;       CALL BIORED(IBUF,IPORT,IRET)    START READ WITHOUT DISMISS
+;       ----------------------------
+;
+        ENTRY   BIORED
+BIORED: 0
+        HRRZ    5,0(16)         ;GET ADDR OF USER BUFFER
+        IOR     5,AUX           ;BUILD AUXCAL AC,ADDR
+        MOVEM   5,BIORX         ;SET IN MEM FOR EXECUTION
+        SETZ    4,              ;INIT NO ERROR RET (0)
+        HRLZ    5,@1(16)        ;FETCH PORT NUMBER (0)
+        IORI    5,36            ;MAKE AUXCAL ARG [PORT,,.AXIBS]
+BIORX:  AUXCAL  5,0             ;INPUT BLOCK
+        SETO    4,              ;ERROR OR NO DATA, RET (-1)
+        MOVEM   4,@2(16)        ;SET IN RCODE
+        JRA     16,3(16)        ;RETURN
+;
+;       CALL BIOGEN(IPORT)              TERMINATE INPUT
+;       ------------------
+;
+        ENTRY   BIOGEN
+BIOGEN: 0
+        HRLZ    5,@0(16)        ;FETCH PORT NUMBER
+        IORI    5,40            ;MAKE AUXCAL AC,[PORT,,.AXTBI]
+        AUXCAL  5,              ;LEAVE BLOCK INPUT
+        JRA     16,1(16)        ;RETURN
+;
+;       CALL RCLINE                     NEXT DATA INPUT WILL BE
+;       -----------                     COMMAND LINE BUFFER
+;
+        ENTRY   RCLINE
+RCLINE: 0
+        RESCAN                  ;ALLOW COMMAND LINE TO BE READ
+        JRA     16,0(16)        ;RETURN
+        END
