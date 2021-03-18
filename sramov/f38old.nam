@@ -1,0 +1,2197 @@
+
+ USER UFD            
+ TOTAL OLD FILES =  276 TOTAL OLD PAGES =  1825
+
+             FILE           SIZ             FILE           SIZ
+            #.=T UFD         22          #1[8MI UFD         69
+            $,;Q UFD         38          #10-L> UFD         53
+
+ USER *1BATCH        
+ TOTAL OLD FILES =   55 TOTAL OLD PAGES =  1517
+
+             FILE           SIZ             FILE           SIZ
+          PARCHG TAD        513          PARCHG KAB        513
+          PARCHG BAK         46          BATSEP BAK         20
+          BATDEC BAK         21          BAT038 SEP         28
+          BAT038 OCT         25          BAT038 NOV         25
+          BAT038 APR         25
+
+ USER SYS            
+ TOTAL OLD FILES =  713 TOTAL OLD PAGES = 24673
+
+             FILE           SIZ             FILE           SIZ
+          MLISP  SAV         48          VAS    HGH         21
+          HXLIB  REL        180          MLISPC SAV         61
+          FINLES SAV         35          FINLES OVL         50
+          COBOLD SHR         23          DEPRE  SAV         24
+          XOBNPO             36          FTSPFL SAV         26
+          1022C0 SHR         57          AMN    DAT         90
+          NS1022 SHR        178          QB1400 SHR         37
+          FORTC  SHR         40          COMPAC DAT         45
+          COMPAC SAV         32          COMPAC OVL         78
+          SIMPL  SHR         44          FTLIB4 REL        104
+          BAIL   REL         37          LIBSAA REL         60
+          DISSPL DHS        660          JQUEUE F38         22
+          JQUEUE XXX         22          JQUEUE WED         38
+          PUB2   SAV         20          TRUCTL SHR         21
+          DSKROM ROM        514          COBOLE SHR         32
+          SFOF   SHR         38          CADSYN SAV         41
+          RAID   REL         23          ASI    DAT         54
+          FTXLIB REL        107          1022M  SHR         35
+          1022C1 SHR         89          QC1400 SHR         24
+          HL1022 REL         67          FORTD  SHR         69
+          LNKOV1 SHR         28          1022F  SHR         45
+          1022T  SHR         50          QX1400 SHR         63
+          NOV90  MSG         24          FEB93  MSG         25
+          SPAGES SYS       9259          SDDT   REL         41
+          ZDRILL LOW         24          TIO    SHR         22
+          PRESUP SAV         29          COBOLF SHR         22
+          OWNLSE SAV         44          SFOG   SHR         37
+          FTSAIL LOW         43          FTSAIL SHR         67
+          PATV2A SHR         25          LIBOL  REL         66
+          TKPOP  HGH         23          MAP    DAT         22
+          PAF    DAT         50          AMPSYN SAV         29
+          QD1400 SHR         32          LNKOV2 SHR         25
+          SHC    SAV         41          FDM    SAV         38
+          TTR    SAV         32          PEAK   OLD         69
+          5OB    SAV         26          CMDPKG REL         58
+          MAXIMA SAV         38          PREFIN SAV         30
+          SUPER  SAV         24          SUPER  OVL         34
+          SFORTR SHR         24          SAISG8 SHR         42
+          LIBFTS REL         55          SAISGT SHR         43
+          PATV3A SHR         26          HER    DAT         35
+          QS1400 SHR         20          FORTF  SHR         53
+          LNKLOD SHR         26          SAIL   SHR         64
+          MICRO  SHR         42          JAN90  MSG         25
+          JAN90  CTY         21          MAY90  MSG         25
+          MAY90  CTY         22          JUN91  MSG         34
+          OCT91  MSG         37          OCT91  CTY         31
+          NOV92  MSG         30          NOV92  CTY         25
+          SPICE  OVL         65          RCHARG SHR         20
+          COBAID SHR         20          SFOB   SHR         49
+          HLBSA8 REL         55          MMM    DAT         57
+          SAISG9 SHR         41          MAIL   SAV         20
+          FAIL   SAV         25          NVAS   SHR         25
+          QT1400 SHR         20          CRAM   SAV         62
+          TAPE   SHR         30          TAR    SAV         27
+          SEP90  MSG         23          DEC90  MSG         23
+          JUN92  MSG         36          JUN92  CTY         31
+          ELIZA  SAV         31          REDUCE SAV         81
+          SNOBOL SHR         33          STADRV OVL         49
+          DETAP  SAV         26          COMPLR SAV         50
+          SPECX  SHR         25          SFOC   SHR         30
+          SFOLIB REL        120          LIBSA8 REL         55
+          ACTSUM SAV         38          FTDRYD SAV         26
+          ISORT  SHR         35          SAILWT REL         20
+          LIBO10 SHR         27          CALPOP LOW         21
+          LBL    DAT        154          PAI    DAT         29
+          AMS    DAT         22          HLBSA9 REL         55
+          FOR22  SHR        193          DSKCLN 106         21
+          FTF40  SHR         22          1022SA SAV         35
+          PCOM1  SHR         47          MAY92  MSG         35
+          MAY92  CTY         29          HLBFTS REL         56
+          REPMAN MEM         34          EUR    DAT         49
+          SPELL  SAV        239          1022C2 V10         78
+          1022C2 V20         41          MRLDOL SAV         21
+          FORTE  SHR         61          TELECO OLD         38
+          JUN90  MSG         23          JUN90  CTY         21
+          OCT90  MSG         28          OCT90  CTY         22
+          NOV91  MSG         34          NOV91  CTY         28
+          JUL92  MSG         43          JUL92  CTY         40
+          AUG92  MSG         33          AUG92  CTY         30
+          APR93  MSG         25          APR93  CTY         20
+          USH    DAT         49          LIBSA9 REL         55
+          VUE    EXE         60          KL3675 SAV        168
+          PAKCP5 SAV         26          APR90  MSG         20
+          SEP92  CTY         29          DEC92  CTY         31
+          DEC92  MSG         22          JAN93  MSG         32
+          JAN93  CTY         26          MAR93  MSG         26
+          MAR93  CTY         21          DTEXT  CPT         97
+          FORTG  SHR         47          FORLIB REL        107
+          DEC90  CTY         21          JAN91  MSG         22
+          JAN91  CTY         20          MAR91  MSG         29
+          MAR91  CTY         26          MAY91  MSG         34
+          MAY91  CTY         31          OCT92  MSG         33
+          OCT92  CTY         25          FOR22A SHR        193
+          KI3675 SAV        167          HLX22  REL         66
+          LOADZ  SAV         29          MAR90  MSG         28
+          MAR90  CTY         23          JUN91  CTY         30
+          NEW114 MEM        107          X22C0  SHR         65
+          ZETPOP LOW         23          38034P SAV        161
+          SY     SAV         25          ERROR  SHR         35
+          KI3652 SAV        167          LSGDEB REL         35
+          PAILIB REL         90          FEB90  MSG         22
+          SAIL23 SHR         61          SEP91  MSG         48
+          SEP91  CTY         38          DEC91  MSG         26
+          DEC91  CTY         22          JAN92  MSG         32
+          JAN92  CTY         26          MAR92  MSG         32
+          MAR92  CTY         26          DISSPL REL        660
+          JQUEUE THU         38          JQUEUE FRI         38
+          JQUEUE SAT         38          JQUEUE SUN         38
+          JQUEUE MON         38          JQUEUE TUE         38
+          JUL90  MSG         30          JUL90  CTY         25
+          AUG90  MSG         32          AUG90  CTY         27
+          APR91  MSG         25          APR91  CTY         21
+          FEB92  MSG         40          FEB92  CTY         32
+          QX1400 HGH         52          SYSTEM P10        161
+          CANCEL SAV         24          KL3652 SAV        168
+          PASLIB REL         89          JUL91  MSG         34
+          JUL91  CTY         32          AUG91  MSG         31
+          AUG91  CTY         27          DIRECT SHR         22
+          APR92  MSG         34          APR92  CTY         28
+          LSDBKI REL         38          TITO   HLP         21
+
+ USER UTIL           
+ TOTAL OLD FILES =  166 TOTAL OLD PAGES =  1224
+
+             FILE           SIZ             FILE           SIZ
+          RECL   SHR         29          STATUS SHR         24
+          TELHLP SHR         35          MUX    DOC         20
+          TBA    DOC        179          TRK300 FRM        198
+          UNITAP SAV         25          MAGLBL SHR         29
+          LODMES SHR         31          RNOFF  SHR         24
+          AUXMAP SHR         32          30MIN  SHR         23
+          SPFIX  SAV         52
+
+ USER CUD10          
+ TOTAL OLD FILES =   19 TOTAL OLD PAGES =   256
+
+             FILE           SIZ             FILE           SIZ
+          USERS  SAV         21          KAY                96
+          910424 NEW         21
+
+ USER SPOOL          
+ TOTAL OLD FILES =   26 TOTAL OLD PAGES =   536
+
+             FILE           SIZ             FILE           SIZ
+          SPOOLO GDF        214          SPOOLO FDF         55
+          SPLLOG JUL         29          SPLLOG SEP         21
+          SPLLOG JAN         23          SPLLOG MAR         26
+
+ USER SYSNEWS        
+ TOTAL OLD FILES =   49 TOTAL OLD PAGES =   500
+
+             FILE           SIZ             FILE           SIZ
+          VUE    DOC         64          MON    INF         23
+          TAKEIT DOC         29          PUB    DOC         62
+          UPI    DOC         56          TITO   DOC         21
+
+ USER BURNS1         
+ TOTAL OLD FILES =   86 TOTAL OLD PAGES =129331
+
+             FILE           SIZ             FILE           SIZ
+          INIT   SAV         30          SAV    130       1700
+          SYSSHO SAV         26          SAV    131       1700
+          SAV    132       1700          SAV    133       1700
+          SAV    134       1700          SAV    135       1700
+          SAV    136       1700          SAV    137       1700
+          SAV    138       1700          SAV    139       1700
+          SAV    140       1700          SAV    141       1700
+          SAV    142       1700          SAV    143       1700
+          SAV    144       1700          SAV    145       1700
+          SAV    146       1700          SAV    147       1700
+          SAV    148       1700          SAV    149       1700
+          SAV    150       1700          SAV    151       1700
+          SAV    152       1700          SAV    153       1700
+          SAV    154       1700          SAV    155       1700
+          SAV    156       1700          SAV    157       1700
+          SAV    158       1700          SAV    159       1700
+          SAV    160       1700          SAV    161       1700
+          SAV    162       1700          SAV    163       1700
+          SAV    164       1700          SAV    165       1700
+          SAV    166       1700          SAV    167       1700
+          SAV    168       1700          SAV    169       1700
+          SAV    170       1700          SAV    171       1700
+          SAV    172       1700          SAV    173       1700
+          SAV    174       1700          SAV    175       1700
+          SAV    176       1700          SAV    177       1700
+          SAV    178       1700          SAV    179       1700
+          SAV    180       1700          SAV    181       1700
+          SAV    182       1700          SAV    183       1700
+          SAV    184       1700          SAV    185       1700
+          SAV    186       1700          SAV    187       1700
+          SAV    188       1700          SAV    189       1700
+          SAV    190       1700          SAV    191       1700
+          SAV    192       1700          SAV    193       1700
+          SAV    194       1700          SAV    195       1700
+          SAV    196       1700          SAV    197       1700
+          SAV    198       1700          SAV    199       1700
+          SAV    200       1700          SAV    201       1700
+          SAV    202       1700          SAV    203       1700
+          SAV    205       1700          SAV    206       1700
+
+ USER SRATECH        
+ TOTAL OLD FILES =   62 TOTAL OLD PAGES =   412
+
+             FILE           SIZ             FILE           SIZ
+          UPDTST SAV         28          FINAL  DMS         44
+          CURLD  HGH         21          SPCOM  SHR         30
+
+ USER SRA            
+ TOTAL OLD FILES =   76 TOTAL OLD PAGES =   521
+
+             FILE           SIZ             FILE           SIZ
+          CMT    JUL        103          I                  42
+          CTYLOG AUG         28          CMTNOD OUT         26
+
+ USER SILVAM         
+ TOTAL OLD FILES =  139 TOTAL OLD PAGES =   530
+
+             FILE           SIZ             FILE           SIZ
+          SUNWKY LBL         74          SUNDLY LBL         38
+
+ USER FTSYS          
+ TOTAL OLD FILES =  118 TOTAL OLD PAGES =  2522
+
+             FILE           SIZ             FILE           SIZ
+          DECMAC SHR         25          LIBSA9 REL         55
+          FORTB  SHR         55          HLBSAA REL         60
+          NEWPAS SHR         20          ODMS   SHR         36
+          MDLPRO SHR         20          MDLPRO EXE         24
+          VUE    SHR         35          LNKERR SHR         27
+          XVUE   SHR         33          P10DRV BAD        115
+          REXMAC SHR         26          P10DRV SHR        115
+          TBAULB REL         30          FORTC  SHR         40
+          BAIL   REL         37          LIBSAA REL         60
+          LSIDEB REL         35          FORTD  SHR         69
+          PASLST SHR         37          P10OCG SHR         93
+          NXTPAS SHR         20          PASLIB REL         73
+          LNKOV1 SHR         28          TBA    SHR         44
+          FORTE  SHR         61          LNKOV2 SHR         25
+          MACRO  SHR         25          FORTF  SHR         53
+          SAIL   SHR         69          P10CCG SHR        116
+          LNKLOD SHR         26          MICRO  SHR         41
+          SAISG9 SHR         41          TBACMP SHR         42
+          FORTG  SHR         47          FORLIB REL         91
+          TAPE   SHR         30          HLBSA9 REL         55
+          P10SHP SHR        106          PAILIB REL         76
+          LSGDEB REL         32
+
+ USER SSEREP         
+ TOTAL OLD FILES =   83 TOTAL OLD PAGES =   689
+
+             FILE           SIZ             FILE           SIZ
+          UPDTST SAV         28          ARCHIV DOC         29
+          CLRMAI SHR         32          PRUPDP DEC         24
+          PRUPDP JAN         26          PRUPDP FEB         25
+          PRUPDP MAR         23          PRUPDP APR         24
+          PRUPDP MAY         21
+
+TOTAL FOR GAN  1     -  1901 FILES,164798 PAGES.
+
+
+ USER M33            
+ TOTAL OLD FILES =   46 TOTAL OLD PAGES =  1738
+
+             FILE           SIZ             FILE           SIZ
+          F02638 SAV         65          38XE01 SAV        170
+          38XE01 52         171          74XE01 SAV        170
+          M33    DIR        114          32XE01 SAV        172
+          33XE01 SAV        171          CRSHID SAV         40
+          F02572 SAV         65          34XE01 SAV        170
+          FROM70 ROL         52          F02598 SAV         65
+          26XE01 SAV        171
+
+ USER OSP            
+ TOTAL OLD FILES =    4 TOTAL OLD PAGES =   203
+
+             FILE           SIZ             FILE           SIZ
+          38035E SAV        170          STOPCD MEM         25
+
+ USER OSMAN          
+ TOTAL OLD FILES =   23 TOTAL OLD PAGES =   274
+
+             FILE           SIZ             FILE           SIZ
+          MAGNUM ROL        216
+
+ USER LINK10         
+ TOTAL OLD FILES =  295 TOTAL OLD PAGES =  3778
+
+             FILE           SIZ             FILE           SIZ
+          SPEC65 RNO         22          LNKERR REL         26
+          LNKERR MAC         34          TYP7I  REL         35
+          MONSYM UNV         44          SWIFIL MAC         97
+          LNKERR SHR         38          UUOSYM REL         20
+          LNKPAR MAC         22          LNKNEW MAC         38
+          TYP7Q  REL         34          OVRLAY MAC         51
+          UUOSYM OLD         22          TYPE   MAC         38
+          UUOSYM MAC         88          DIRECT MAC         66
+          LNKOV1 MAC         29          LNKCOR MAC         39
+          TYPER  MAC        111          LNKOV1 MAP         29
+          LNKSCN MAP         21          SWIERM MAC         20
+          SWILIO MAC         36          SWISCN MAC         92
+          LINK   SHR         20          LNKOV1 SHR         52
+          LNKSCN SHR         30          C      UNV         24
+          LNKMAP MAC         25          TOPS10 DAT         21
+          TYP7S  REL         35          LNKMAP MAP         20
+          LNKOV2 MAP         24          SCN7BC NIH         81
+          LNKMAP SHR         37          LNKOV2 SHR         40
+          DIR    EXE         48          DIR    MAC         96
+          LNKLOD MAP         28          LNKLOD MAC         55
+          LNKOLD MAC         63          LNKLOD SHR         49
+          NUC65  MIC         21          NUC65  LST         63
+          LNKWLD MAC         37          LNKXIT MAC         74
+          WLD5   MAC         26          TYP7N  REL         35
+          LNKXIT MAP         21          SCN7D  DOC         32
+          SWINET MAC         62          SWIWLD MAC         78
+          LNKXIT SHR         24          LNKHST MAC         46
+          WLD6   MAC         29          SCN7BF NIH         80
+
+ USER WRS            
+ TOTAL OLD FILES =   39 TOTAL OLD PAGES =  4637
+
+             FILE           SIZ             FILE           SIZ
+          ORDAT         49          890829 CMP       4402
+
+ USER XEXEC          
+ TOTAL OLD FILES =   29 TOTAL OLD PAGES =   366
+
+             FILE           SIZ             FILE           SIZ
+          FCAT   SAV         27          COPYPC SAV         24
+          SIGNUP SAV         31          FIND   SAV         25
+          CPY    SAV         44          UNITAP SAV         25
+          FIND15 SAV         41
+
+ USER SPL            
+ TOTAL OLD FILES =   39 TOTAL OLD PAGES =   382
+
+             FILE           SIZ             FILE           SIZ
+          SYF    SAV         21          CPY    SAV         44
+          FDM    SAV         38          COM    SAV         25
+          DIR    SHR         25          DOCGEN SHR         42
+          SY     SAV         25
+
+ USER CARL           
+ TOTAL OLD FILES =   67 TOTAL OLD PAGES =  1406
+
+             FILE           SIZ             FILE           SIZ
+          USERS  SAV         21          XEXEC  SAV         43
+          EXECX  SAV         57          INIT   SAV         33
+          TUMS   PRT         33          SHRSAV LOG         21
+          SYSDPY SAV         24          TSTSUP HGH        155
+          SPPARC F38        141          CUSPS  SAV         22
+          PCOM   SHR         51          MAIN33 VUE         67
+          RPGF   155        115          MAIL   BOX         80
+          FTP10X SAV         27          SUBMIT SAV         67
+          FIX38  LOG         31          PORTS  BAK         67
+          PORTS  FLT         49          PORTS  FLL         34
+
+ USER SUBMIT         
+ TOTAL OLD FILES =  845 TOTAL OLD PAGES =  3491
+
+             FILE           SIZ             FILE           SIZ
+          XEXEC  SAV         51          EXECX  SAV         62
+          JQUEUE FDM         26          SUBMIT SHR         52
+
+TOTAL FOR GAN  3     -  1513 FILES, 17328 PAGES.
+
+
+ USER BOBH           
+ TOTAL OLD FILES =   79 TOTAL OLD PAGES =   573
+
+             FILE           SIZ             FILE           SIZ
+          A      SAV         20          JAN01              34
+          PROF              172          ANAL   LAA         83
+          ANAL   BT          83
+
+ USER RJK            
+ TOTAL OLD FILES =   28 TOTAL OLD PAGES =   316
+
+             FILE           SIZ             FILE           SIZ
+          EIL2A             197          FILDIV SHR         31
+
+ USER BUELNAJ        
+ TOTAL OLD FILES =   70 TOTAL OLD PAGES =  1215
+
+             FILE           SIZ             FILE           SIZ
+          ACC12              24          ACC19              31
+          CRD9               47          EIL2              266
+          EIL12A            576          FAC21              54
+          ACC9               47
+
+ USER MISTAPE        
+ TOTAL OLD FILES =  129 TOTAL OLD PAGES =  3149
+
+             FILE           SIZ             FILE           SIZ
+          PRDEOM OCT         73          PRDEOM NOV         74
+          PRDEOM DEC         73          PRDEOM JAN         75
+          PRDEOM FEB         75          PRDEOM MAR         74
+          PRDEOM APR         77          PRDEOM MAY         75
+          PRDEOM JUN         33          PRDEOM JUL         33
+          PRDEOM AUG         33          PRDEOM SEP         33
+          NETF30 OCT         42          NETF30 NOV         36
+          NETF30 DEC         37          NETF30 JAN         36
+          A      SAV         20          NETF30 FEB         37
+          NETF30 MAR         38          NETF30 MAY         38
+          NETF30 JUL         39          NETF30 AUG         40
+          NETF30 SEP         40          NETEOM MAY         93
+          NETEOM JUN         94          NETEOM JUL         94
+          NETEOM AUG         98          NETEOM OCT        110
+          NETEOM SEP        102          NETEOM DEC        111
+          NETEOM FEB        111          NETEOM JAN        116
+          NETEOM NOV         51          NETEOM MAR        116
+          TF30   SEP         27          NETDET SEP         39
+          APMEC  SEP         36          APMEC  OCT         36
+          APMEC  NOV         36          APMEC  JAN         36
+          APMEC  FEB         36          APMEC  MAR         36
+          APMEC  APR         72          DAN    DIR        135
+
+ USER GL.DATA        
+ TOTAL OLD FILES =   59 TOTAL OLD PAGES =   740
+
+             FILE           SIZ             FILE           SIZ
+          DOCLUE MR0        540
+
+ USER UAS            
+ TOTAL OLD FILES =  251 TOTAL OLD PAGES =  1348
+
+             FILE           SIZ             FILE           SIZ
+          ENTRY  SAV         26          THUNDR            170
+          RTYMRG HGH         44          RTYACT HGH         31
+          RTYCHG HGH         28          RTY370 HGH         30
+          FDM    SAV         21          UNTDSC KAB         29
+          LEGEND UPD         26          D      SHR         24
+          SEARCH SHR         33          NONAME SHR         21
+          A      SAV         22          PRBRK  SHR         31
+
+ USER UIS            
+ TOTAL OLD FILES =   53 TOTAL OLD PAGES =   392
+
+             FILE           SIZ             FILE           SIZ
+          PROING DTC         32          CAIS   DT1         44
+          TYMNET DT4         29          TYCOMN DT3         20
+
+ USER ACTGTYMX       
+ TOTAL OLD FILES =  142 TOTAL OLD PAGES =  1047
+
+             FILE           SIZ             FILE           SIZ
+          P1REC  FOR         20          AUG27  12          26
+          UUN    RPT        237          UUN    DUP         99
+          P2REC  FOR         20          P002   PLI        149
+          PTROO1 F           36
+
+ USER PROGBK         
+ TOTAL OLD FILES = 2533 TOTAL OLD PAGES =  9037
+
+             FILE           SIZ             FILE           SIZ
+          EDIUPI SAV         24          RTYACT 940         20
+          RTYACT 010        214          TYMSCH RNO         20
+          YYMVHB ME1         27          INVREG HGH         29
+          INV    HGH         24          TRKTOT HGH         22
+          DATENY PR6         28          DATPUT PR6         42
+          OELLIB DTA         20          MERGE  MAC         35
+          WCSYS  RNO         39          EDIUPI FDM         28
+          PRDDSC DAT         79          A88YML MS1         48
+          TYMNET RNO         21          INVTK2 FIN         33
+          TYCOMN DT3         21          TYMNET DT4         24
+          PRDCOD DAT         38          UNTDSC DAT         36
+          AIS001 LST         22          COEES  FDM         42
+          OESDIB DTA         20          PRDINV FDM         29
+
+          MCCUS  DAT         45
+
+ USER DMOULTON       
+ TOTAL OLD FILES =   58 TOTAL OLD PAGES =   383
+
+             FILE           SIZ             FILE           SIZ
+          DJM    HGH         33          DJM    LOW         28
+          A      SAV         20          CVDGFS MR6         56
+          A88YML MD5         23
+
+ USER MISDOC         
+ TOTAL OLD FILES =  302 TOTAL OLD PAGES =  1247
+
+             FILE           SIZ             FILE           SIZ
+          WCSYS  BK          39          COEES  FDM         33
+          MIS008 SPL         93          MIS002 SPL         43
+          WCACCT NDS         34          MIS004 SPL         86
+          MIS005 SPL         46
+
+ USER PLUE           
+ TOTAL OLD FILES =  198 TOTAL OLD PAGES =  1183
+
+             FILE           SIZ             FILE           SIZ
+          S370   JUN        464          G2570  SEP         20
+          AUXIO  SAV         22          CAIS   DT1         43
+          MAIL   BOX         31          LUE011 RPT         28
+          ORGSTR DAT         49
+
+ USER ATTEND.DEV     
+ TOTAL OLD FILES =  170 TOTAL OLD PAGES =  1970
+
+             FILE           SIZ             FILE           SIZ
+          CYWFV8 MR0         53          CYWFV8 MB0         64
+          SMJ36K MR0         80          DQ7MM8 MB0         25
+          SMJ36K MB0         97          DQ7MM8 MR0         20
+          C2YTBX MP0         29          L4WOSD MR0         33
+          L4WOSD MB0         37          U74RRK MP0         22
+          BZSW97 MP0         32          NMWGWJ MR0        260
+          NMWGWJ MB0        307          KBDP8P ME0         36
+          O83F89 ME0         20          KBDP8P MP0         80
+          MGM5ZV MX0         23
+
+ USER MNICHOLS       
+ TOTAL OLD FILES =  109 TOTAL OLD PAGES =  1192
+
+             FILE           SIZ             FILE           SIZ
+          SLOTS2 SHR         41          KENO   SHR         38
+          B      SHR         45          TOTALS SHR         22
+          CB     SHR         37          RTYHED SHR         31
+          J      SHR         33          SCRMBL SHR         30
+          LOTERY SHR         34          LOT649 SHR         41
+          GETRTY SHR         34          FXLN10 SHR         31
+          FIXRTY SHR         32          TICKET SHR         38
+          SEARCH SHR         32          NWKENO SHR         38
+          S      SHR         49          L      SHR         23
+          JOKER  SHR         39          ODDS   SHR         23
+          LENTST SHR         31          T      SHR         27
+          ROULET SHR         38          FACTOR SHR         28
+
+ USER PORTSDLY       
+ TOTAL OLD FILES =   11 TOTAL OLD PAGES =  5468
+
+             FILE           SIZ             FILE           SIZ
+          CKTS   DMI       2596          HOSTS  DMS        114
+          PORTS  DMS       2743
+
+TOTAL FOR GAN  4     -  4303 FILES, 29885 PAGES.
+
+
+ USER *6NEWS         
+ TOTAL OLD FILES =  105 TOTAL OLD PAGES =  1952
+
+             FILE           SIZ             FILE           SIZ
+          DECMAC DOC         29          X22HST DOC        120
+          X22RPT DOC         34          TBASUP DOC         55
+          CA8085 DOC         20          RAID   DOC         28
+          TBA    DOC        178          TBA    INF         30
+          SI8048 DOC         24          SAIL   INF         20
+          X22    DOC        355          X22    INF         24
+          CA8008 DOC         20          MICRO  DOC         20
+          SI6800 DOC         23          MANUAL DOC        178
+          REDUCE DOC         45          CA68K  DOC         37
+          SUBMIT DOC         31
+
+TOTAL FOR GAN  6     -   161 FILES,  2146 PAGES.
+
+
+ USER MAGNUM         
+ TOTAL OLD FILES =   21 TOTAL OLD PAGES =  2701
+
+             FILE           SIZ             FILE           SIZ
+          P3COMP HGH        169          SORTOL HGH        101
+          MAGNED SHR         88          MGEDIT HGH        133
+          P4COMP HGH        129          S1COMP HGH        177
+          DBCTRL HGH        143          S2COMP HGH        195
+          MAGNAC SHR        156          MAGNP4 SHR         84
+          MAGNS1 SHR        131          MAGNS2 SHR        145
+          P1COMP HGH        209          ACCCTL HGH        203
+          MIDAS  HGH        241          P2COMP HGH        211
+          QUERYL HGH        159
+
+ USER FTMAGNUM       
+ TOTAL OLD FILES =   20 TOTAL OLD PAGES =  3573
+
+             FILE           SIZ             FILE           SIZ
+          MAGNP1 SHR        189          P3COMP HGH        195
+          MGRG   HGH        211          S1COMP HGH        195
+          DBCTRL HGH        205          S2COMP HGH        245
+          MAGNAC SHR        157          MAGNS1 SHR        144
+          RUNTIM HGH        225          MAGNRG SHR        174
+          MGUTIL HGH        225          MAGNS2 SHR        186
+          MAGNUT SHR        173          P1COMP HGH        239
+          ACCCTL HGH        209          MIDAS  HGH        255
+          P2COMP HGH        197          QUERYL HGH        127
+
+ USER XMAGNUM        
+ TOTAL OLD FILES =   28 TOTAL OLD PAGES =  4409
+
+             FILE           SIZ             FILE           SIZ
+          P3COMP HGH        195          MAGNP1 SHR        189
+          MAGNQL SHR         75          MGRG   HGH        211
+          S1COMP HGH        195          MAGNP2 SHR        137
+          DBCTRL HGH        205          S2COMP HGH        243
+          MAGNP3 SHR        134          RUNTIM HGH        225
+          MAGNAC SHR        157          MAGNRG SHR        173
+          MAGNRN SHR        182          MAGNS1 SHR        144
+          MGUTIL HGH        183          MAGNS2 SHR        185
+          P1COMP HGH        239          MAGNDB SHR        154
+          MAGNUM SHR        225          MAGNUT SHR        131
+          ACCCTL HGH        209          MIDAS  HGH        253
+          P2COMP HGH        197          QUERYL HGH        127
+
+TOTAL FOR GAN  7     -    69 FILES, 10683 PAGES.
+
+
+ USER UPL            
+ TOTAL OLD FILES =  111 TOTAL OLD PAGES =  1840
+
+             FILE           SIZ             FILE           SIZ
+          STARX  SAV         54          073184 DAT         75
+          COMPAC OVL         64          CAVE   SAV         59
+          NS1022 SHR        178          PASCAL SHR         57
+          PASCAL MAN         35          HL1022 REL         67
+          1022T  SHR         50          1022M  SHR         35
+          1022C1 SHR         89          TKPOP  HGH         22
+          1022C2 V20         41          1022C2 V10         78
+          DISPLA REL        363          VECTST HGH         21
+          VECTST LOW         23          MANMAN OVL         69
+          CALPOP HGH         21          JUD3   REL         41
+          QN1400 SHR         84
+
+TOTAL FOR GAN  11    -   111 FILES,  1840 PAGES.
+
+
+ USER MKTGINFO       
+ TOTAL OLD FILES =  573 TOTAL OLD PAGES =  4937
+
+             FILE           SIZ             FILE           SIZ
+          2400   PAG         25          ACCESS BRO         42
+          ACCESS OLD         96          ACCESS LST         20
+          ACCESS PMI         31          ACCESS LOC         21
+          L300   DMS         76          INFO   DOC         60
+          ACCESS ZMS        118          2400   TXT         25
+          MKTFIL TXT         22          LYNN   1           62
+          INFO   TX1         97          ACCESS DMS        127
+          PASS1  PRT         59          SVCLS  IDX         22
+          PUBS   TXT         33          INIT   SAV         28
+          PGRADE STA         29          AC     NEW         25
+          UNDER              20          A      SAV         22
+          ACC    NEW         33          MENU   SAV         28
+          MONTH  STA         23          9600   DEM         98
+          2400EX RPT         26          3DM                88
+          BKP    ACC         27          XPCDOS DOC         28
+          NODES  TXT         34          YMF9OB MR1         21
+          CLEP3              26          STATE  PAG         38
+          PHONE  TXT         37          INFORM SAV         20
+          MIKE1              31          FERRIS             28
+          PASS   PRT         37          CONT1  TXT         85
+          PASS   IN2         22          BXTDDV             74
+          INTDE  TXT         38          TEMP32             31
+          ACCES  LST         21          X25A   LST         33
+          CONT2  TXT         89          PHONES STA         24
+          TEST   ONE         29          TYMSAT             35
+          TYMSAT NAT         32          COUR               22
+          BADACC DMS        118          INFO4  UPD        111
+          X25B   LST         28          CONTA  TXT        173
+          X25CP  LST         64          LYNN   2           62
+          DIAL25 SHR         28          SVLS   IDX         35
+          INFO   DOM        100          2400   STE         27
+          INFO5  UPD        116
+
+ USER LASALES        
+ TOTAL OLD FILES =  141 TOTAL OLD PAGES =   516
+
+             FILE           SIZ             FILE           SIZ
+          042PCO LOG         31          TOOLS2 SAV         21
+
+ USER SCSALES        
+ TOTAL OLD FILES =   15 TOTAL OLD PAGES =   327
+
+             FILE           SIZ             FILE           SIZ
+          VIDEO  DAT        139          INIT   SAV         29
+          JBSH              115
+
+ USER NYDISTRICT     
+ TOTAL OLD FILES =  162 TOTAL OLD PAGES =  1061
+
+             FILE           SIZ             FILE           SIZ
+          ACCESS NOD         24          TYMUSA BAK         21
+          TYMUSA DOC         31          INIT   SAV         29
+          DMD    DEC         79          028PEA 001         33
+          SPECT  DDD         20          TYM    DOC         21
+          CHASE  RUN         54          CHASE  INT         36
+          DDA    RUN         54          BOWNE  DEC         79
+          DUANE  LL          44          GDN    DOC         62
+          ART    BAK         29          ART    DOC         29
+
+TOTAL FOR GAN  10056 -   945 FILES,  7097 PAGES.
+
+
+ USER TKOCHMANN      
+ TOTAL OLD FILES =  237 TOTAL OLD PAGES =  3663
+
+             FILE           SIZ             FILE           SIZ
+          PSM    DOC         21          TCK    DOC         38
+          PRG    MAN         68          MBASE  DOC         27
+          MBASE  GID         37          MBASE  GED         35
+          INTEG  DOC         20          INIT   VAS         33
+          SUP    DOC         26          TSITST             22
+          AUXIO  SAV         22          DMSC   DOC         21
+          TSINTS DOC       1860          CUSR   MAN         45
+          SLCOP  NIB         38          HDLC   DOC         48
+          XCOM03 P01         23          LOADIT SAV         28
+          TELRAT DOC         21          I2IS11 R00        382
+
+ USER CNFE           
+ TOTAL OLD FILES = 1181 TOTAL OLD PAGES =  4500
+
+             FILE           SIZ             FILE           SIZ
+          J10126 BND         99          SET    SAV         28
+          J10557 BND         66          J10557 N01         24
+          R10557 N01         23          N10126 N01         25
+          J10126 NIB         44          MUX05  R00         89
+          INC    SHR         41          N10126 BND         99
+          CENTRA L           47          N10557 N01         23
+          CENTRA 4           44          28104  DIR         88
+          TIP               340          FEPOIN TS          20
+          R10126 N01         25          N10557 BND         63
+          TEST               21          J10126 N03         28
+          J10126 N01         26          J10126 N00        123
+
+ USER ENFE           
+ TOTAL OLD FILES =  607 TOTAL OLD PAGES =  3843
+
+             FILE           SIZ             FILE           SIZ
+          BLABOK SHR         40          SORT   SHR         31
+          CIRCLE SHR         36          BET    SHR         41
+          N                  20          018PEA 002        185
+          EVALST SHR         33          BALTB2 SHR         42
+          MEMO   SHR         33          B      SHR        101
+          I      SHR         21          FSTST  SHR         38
+          SCRM   SHR         30          DRAGON SHR         27
+          ND5475 BND         69          CFB212 DOC         48
+          SAVE   TBA         33          SLOTS  SHR         40
+          FILER  SHR         41          C      SHR         36
+          FSRTST SHR         42          159T               20
+          XMA    SAV         42          SEARCH SHR         30
+          CKTLOG SHR         28          FSRRR  SHR         42
+          CR     SHR         36          PXL    CFB         22
+          PUB    TBA         54          FSTST1 SHR         42
+          PUB    REL         89          JOKER  SHR         39
+          LOAN   SHR         25          PUB    SHR        101
+          CXL    CFB         20          NEWADV DAT         28
+          DEC    AMX         53          PURGE  SHR         34
+          NOTBAD CD3         38          FSR2   SHR         42
+          RTP    SAV         38          SECRET SHR         23
+          ROULET SHR         38          RTP    SHR         38
+          REAL   SHR         25          1T                 22
+
+ USER NTS            
+ TOTAL OLD FILES =  759 TOTAL OLD PAGES = 10149
+
+             FILE           SIZ             FILE           SIZ
+          VAD    HGH         20          TII004 Y00         35
+          TDLIB  REL         65          BOOT09 DOC         27
+          I2IS   PRG        153          ENGSW  DOC         91
+          SUPFLD DOC         72          XRAY52 DOC        158
+          TPUT14 DOC         39          SIO3   CFB         20
+          ISRM   GED         23          SDLC   DMS        411
+          APPEAL DOC         44          TTERM              33
+          SUP    DOC         45          BB                 33
+          RSET16 N35         50          CFB173             20
+          RIOTST ENG         20          UNIV6  CI          26
+          UNIV6  VAS         48          OLDPNL             34
+          TGUIDE DOC         54          NODGEN DOC         31
+          AUXIO  SAV         22          PKARC  CVT         31
+          BB2005 NIB        112          PROBE  DOC        114
+          LINE   NIB         37          NETVAL DOC         41
+          BIXL30 1           99          MUX    DOC         20
+          Q                  26          CITI   DOC         52
+          ZEN    HGH         30          ZEN    FAI         45
+          NEWDLC P12         28          HELP   NAD         28
+          XCOM03 P01         23          HDLC   DOC         48
+          SUPGEN DOC         59          ENGINE DOC        107
+          PXL    DOC         58          CFB176 NEW         22
+          PXL    CFB         27          NCDBG  DOC         31
+          ZORK   SHR         57          ZORK   LOW         20
+          EDMENG DOC        212          TELRAT DOC         21
+          DIALOG 206         39          LDTST3 SCR         38
+          TPUT   DOC         38          ISIS   DOC         87
+          PCCM   CFB         29          NEWDSL PAK         75
+          UNUSED PRT         45          PICO   DOC         82
+          DISK   DOC         40          RSET48 N01         50
+          RESET  N01         49          RSET32 N35         51
+          RSET48 N35         51          TII05  R25        555
+          TII05  F25        288          TII05  I23         25
+          PICO   INS         33          M      DOC         21
+          DSIO42 N02         61          TII05  I34         30
+          TII05  R34        694          TOOLS  DOC         74
+          XGUIDE DOC         95          CDS    206         35
+          RSET16 N01         48          SUPGED DOC         37
+          CONSAT ERS         48          ACC    CFB         28
+          ACCT2  DOC         35          CONSAT DOC        122
+          ISIS2  DOC        151          ISIS2  LIB         21
+          ISIS2  SVC         23          I2IS11 R33        387
+          CIRCUI DOC         65          TII05  R35        673
+          TII05  I35         29
+
+ USER RVIVIER        
+ TOTAL OLD FILES =   44 TOTAL OLD PAGES =   484
+
+             FILE           SIZ             FILE           SIZ
+          X22    INF         24          1022   ROL        333
+
+ USER TECHTRAIN      
+ TOTAL OLD FILES =   19 TOTAL OLD PAGES =   462
+
+             FILE           SIZ             FILE           SIZ
+          LOADII SAV         27          APPEAL DOC         44
+          ISCS06 ERS        124          ISIS   NAD         53
+          NMIG   DOC         73
+
+ USER TYMDATA        
+ TOTAL OLD FILES =  498 TOTAL OLD PAGES = 12645
+
+             FILE           SIZ             FILE           SIZ
+          REPORT DMI         23          LININF DMI         32
+          LININF DMS         40          GENCOM DMS       6039
+          ORDPML DMS         78          REPORT DMS        118
+          002PEA 001         26          TDLIB  REL         65
+          CUSINF DMS         84          ORDSHA DMS        209
+          ORD01  FTF         24          ORD01  SAV         35
+          ORD01  JD          35          MENT   SAV         35
+          ACCTIO SAV         62          ORDERM DMS        316
+          PARTML DMS        138          CRASH  DMS        305
+          SCLASS DMS         21          PARTPI SAV         20
+          TDSLIB DOC         20          T1     SAV         31
+          RTYTST SAV         24          RENUM  DMS        100
+          INSREP DMS         39          LINERP DMS         66
+          ORDADR DMS         83          ARTML  DMS         70
+          DATABK SAV         42          T2     SAV         43
+          OCFB   SAV         38          DATA   FTF         37
+          DATA   SAV         43          YRTNEM SAV         35
+          PARTRP DMI         94          CFBINF DMS         25
+          PARTRP DMS        111          JD     FTF         24
+          D      FTF         33          D      SAV         65
+          INSTAL FTF         32          INSTAL REL         30
+          INSTAL SAV         50          HSTINF DMS        349
+          PAR4ML DMS         78          PART83 DMS        599
+          ALLREN DMS        100          ORDTP  FTF         24
+          ACTION DOC         26          LINES  FTF         26
+          LINES  SAV         30          ACTION FTF         49
+          ACTION REL         42          ACTION SAV         64
+          PARTS  DMS         76          PARTS  DMI         58
+          SITINF DMS        293          ACTREP DMS         37
+          PREGIO DMS        101          EXCEP  DMS         20
+          EMPINF DMS         75          PARTS  FTF         24
+          CFBNTR SAV         32          PARTS  SAV         47
+
+ USER MOORING        
+ TOTAL OLD FILES =   42 TOTAL OLD PAGES =   231
+
+             FILE           SIZ             FILE           SIZ
+          INIT   SAV         33          ZEN    HGH         25
+          CONFIG ALL         48
+
+TOTAL FOR GAN  11020 -  3446 FILES, 36190 PAGES.
+
+
+ USER DNDUTIL        
+ TOTAL OLD FILES =   99 TOTAL OLD PAGES =   566
+
+             FILE           SIZ             FILE           SIZ
+          RAID   MAN         27          MUX    DOC         20
+          CIAO   SAV         23          AFDGT6 SAV         21
+          NMIG   DOC         74
+
+ USER TDFTECH        
+ TOTAL OLD FILES =   79 TOTAL OLD PAGES =   916
+
+             FILE           SIZ             FILE           SIZ
+          SNA    ERS         60          INFO   SAV         44
+          INIT   SAV         33          CONSAT V06        124
+          CONSAT DOC        122          ACOM4  BAK         48
+          MUX    DOC         20          PBH104 DOC         44
+          SYSGEN DOC         21          PBTBOM DOC         43
+          NEWADV DAT         27          MCI    DOC         43
+          PBT901 DOC         48
+
+ USER ISIS           
+ TOTAL OLD FILES =  163 TOTAL OLD PAGES =  2601
+
+             FILE           SIZ             FILE           SIZ
+          LOADII ACC        135          XENVIR NAD         42
+          ONTYME OLD         59          ONTYME DIR         66
+          LOADII MAY        426          LOADII NOV        633
+          TIG11  R23         76          KERNEL SHR         29
+          ND3505 DMP         39          LDTRW  SAV         24
+          LOAD   SAV         28          TPUT11 NAD         35
+          LLLL   SAV         29          ISIS11 R23        237
+          GAZEL  SAV         29          ASAT05 R01         89
+          ND3035 DMP         79
+
+ USER ISISDOC        
+ TOTAL OLD FILES =   36 TOTAL OLD PAGES =   854
+
+             FILE           SIZ             FILE           SIZ
+          RAID   MAN         27          ACT80  DOC         21
+          ACOUNT DOC         32          ENGINE DOC        107
+          FINE   DOC         29          TYMNET DOC        104
+          ISIS   DOC         87          DEVICE DOC         31
+          PUB    DOC         63          PUB                62
+          TOOLS  DOC         72          CIRCUI DOC         63
+
+ USER ISIS2          
+ TOTAL OLD FILES =    8 TOTAL OLD PAGES =   332
+
+             FILE           SIZ             FILE           SIZ
+          KERN07 Z00         76          DISP07 Z00         37
+          IDDT07 L00         53          IDDT07 M00         53
+          IDDT07 Z00         53          MACH07 Z00         51
+
+ USER NETDVDOC       
+ TOTAL OLD FILES =   39 TOTAL OLD PAGES =  1251
+
+             FILE           SIZ             FILE           SIZ
+          ELFOD3 DOC         97          RAMRD5 DOC         69
+          IMS278 DOC        103          SITPRE DOC         24
+          SYNDD2 DOC         45          ENGMPD DOC         49
+          I32RDT DOC         49          X25SD  DOC         30
+          CMTRDX DOC         78          RAMOD5 DOC         68
+          I32RDH DOC         49          SDLCER DOC         75
+          TPUT   DOC         38          CPUDD2 DOC         37
+          PR1    RDH        243
+
+ USER PNETS          
+ TOTAL OLD FILES =   87 TOTAL OLD PAGES =   695
+
+             FILE           SIZ             FILE           SIZ
+          QLLC   DOC         60          PADUSR DOC         23
+          INIT   SAV         33          PRIOLD HGH         29
+          APM    SVS         51          PRI118 HGH         29
+          CIAO   SAV         34
+
+ USER JJOELS         
+ TOTAL OLD FILES =  263 TOTAL OLD PAGES =  1839
+
+             FILE           SIZ             FILE           SIZ
+          VAOPT6 DMS         65          EROT   DAT         63
+          NEVCON FTF         37          VAOPT8 DMS         67
+          TURBO6 DMS         72          MAKECL DMS         39
+          DLYRPT C           22          VAOPT3 DMS         65
+          TURBO8 DMS         78          TAPE   DIR         21
+          DULOG              34          SPEC   APM         20
+          TURBO3 DMS         73          DUBAK  SAV         26
+
+TOTAL FOR GAN  11334 -   776 FILES,  9137 PAGES.
+
+
+ USER SSVALSUP       
+ TOTAL OLD FILES =   31 TOTAL OLD PAGES =   263
+
+             FILE           SIZ             FILE           SIZ
+          UPDLUD SAV         28          UPDTST SAV         28
+          FTUPDL SAV         28          UPDTST OLD         30
+          INIT   SAV         30          MYINI  SAV         29
+
+ USER SSPAMSYM       
+ TOTAL OLD FILES =  106 TOTAL OLD PAGES =   367
+
+             FILE           SIZ             FILE           SIZ
+
+ USER SSBACKUP       
+ TOTAL OLD FILES =    8 TOTAL OLD PAGES =   253
+
+             FILE           SIZ             FILE           SIZ
+          SUPCHK SAV         31          TELAID SHR         22
+          TENCRT DAT         23          RTYACT CTL        100
+          LOAD   LUD         25          LOAD   CLS         35
+
+ USER SSINSTALL      
+ TOTAL OLD FILES =   38 TOTAL OLD PAGES =   230
+
+             FILE           SIZ             FILE           SIZ
+          ARCHIF DOC         29          ARCHIF BAK         29
+          LOAD   LUD         25          LOAD   CLS         35
+          ARCHIV MEM         23
+
+ USER TBATLIB        
+ TOTAL OLD FILES =   35 TOTAL OLD PAGES =   768
+
+             FILE           SIZ             FILE           SIZ
+          CNEST  SHR         32          TBALDR LOW         23
+          FORMAT SHR         38          CREF   SHR         50
+          TBA    SHR         43          TBALIB REL         88
+          TBA    INF         30          TCA    SHR         51
+          TBACMP SHR         41          MANUAL MEM        178
+          TLIB   REL         20          TLIB   MEM         24
+          PERTST SHR         35
+
+ USER FTTBA          
+ TOTAL OLD FILES =   27 TOTAL OLD PAGES =   399
+
+             FILE           SIZ             FILE           SIZ
+          SYSLIB REL         68          TBA    SHR         44
+          TBALIB REL         76          TCA    SHR         48
+          TBACMP SHR         41          CODGEN SHR         40
+
+TOTAL FOR GAN  11447 -   271 FILES,  2448 PAGES.
+
+
+ USER CRABBS         
+ TOTAL OLD FILES =   32 TOTAL OLD PAGES =  1992
+
+             FILE           SIZ             FILE           SIZ
+          H9987  SAL        681          OH9987            120
+          YYMMDD DMI        681          YYMMDD DMS        447
+
+TOTAL FOR GAN  13107 -    35 FILES,  2029 PAGES.
+
+
+ USER PAYROLLCORP    
+ TOTAL OLD FILES =   93 TOTAL OLD PAGES =  1253
+
+             FILE           SIZ             FILE           SIZ
+          EMPLST NET         33          EMPLST TSD         32
+          EMPLST TYM         89          EMPLST PSD         58
+          EMPLST TXT        117          EMPLST TEL         21
+          EMPLST BOA         48          EMPLST DYN        106
+          EMPLST MDC        133          EMPLST BTT         79
+          ALPLST BTT         79          EOWTME NET         63
+          ADKCRS MP0         25
+
+TOTAL FOR GAN  14130 -   164 FILES,  1461 PAGES.
+
+
+ USER EASTLINE       
+ TOTAL OLD FILES =    7 TOTAL OLD PAGES =  7128
+
+             FILE           SIZ             FILE           SIZ
+          D58296 T09       7067          LL1    GAN         25
+
+TOTAL FOR GAN  21472 -     7 FILES,  7128 PAGES.
+
+
+ USER SULLIVAN       
+ TOTAL OLD FILES =  136 TOTAL OLD PAGES =   494
+
+             FILE           SIZ             FILE           SIZ
+          AUXCKT SAV         20
+
+ USER BWELSH         
+ TOTAL OLD FILES =   26 TOTAL OLD PAGES =   208
+
+             FILE           SIZ             FILE           SIZ
+          DISPLA 002         66          DISPLA TOT         21
+
+TOTAL FOR GAN  21475 -   162 FILES,   702 PAGES.
+
+
+ USER PERSTATS       
+ TOTAL OLD FILES =  547 TOTAL OLD PAGES = 13925
+
+             FILE           SIZ             FILE           SIZ
+          DLAYF4             23          SUPMPN DMI         33
+          SUPMPH DMI        132          SUPMAP NOD         54
+          SUPMAP LIN        193          ANALYS DAT         31
+          SUPMAP OUT        213          NPANXX USA        917
+          NPANXX CA         106          DSUP   SAV         30
+          DSUP   F4          23          LSTMIN SAV         24
+          DNEW   SAV         44          142542 DIR         28
+          EOQ    FTF         32          START  B         1671
+          START  C         1245          START  D         1188
+          BASE4  DMS        294          JULY   HR         765
+          DPVT   FTF         26          BADLY  FTF         25
+          BADLY  SAV         32          DUGEN  RPT         63
+          HOUR   INF         21          LATA   VH         540
+          AUGUST HR         752          DDEV   SAV         31
+          DDEV   F4          23          DLAY   HOD         25
+          DELIII FTF         33          OH2262 SES         58
+          TOOLS4 FTF         28          SUPMPL DMI        129
+          FRCST  DAT         23          AVAIL  DMI         20
+          AVAIL  DMS         29          NISSAN 1         1713
+          DPUB   FTF         24          DJASON SAV         32
+          DJASON FTF         25          TOOLS  FTF         20
+          SPEC   APM         20          DJASON V2          24
+          DLAYV1 FTF         24          A      SAV         22
+          HSTHST DMS       1030          TOOLS3 SAV         21
+          T2OLD  O           57          ANZ    HST         21
+          NODES  TXT         41          TOOLS4 SAV         23
+          TOOLS4 REL         22
+
+ USER BSTALING       
+ TOTAL OLD FILES =   72 TOTAL OLD PAGES =   244
+
+             FILE           SIZ             FILE           SIZ
+          MERLIN SAV         20          NTGDL  SAV         28
+          SAL    SHR         31
+
+ USER MSS            
+ TOTAL OLD FILES =  168 TOTAL OLD PAGES =  2801
+
+             FILE           SIZ             FILE           SIZ
+          ACCESS COM         24          ONTYME EXE         24
+          TYMAUT EXE         52          XPCREG DMS        686
+          TRTMP2 DMS         65          TOOLS2 OLD         23
+          PLP    DOC         21          TTY                58
+          TOOLS2 FTF         28          TYMNET EXE         87
+          XPCMK4 EXE        131          XPCTR  DMS       1060
+
+ USER TECHSERV       
+ TOTAL OLD FILES =  188 TOTAL OLD PAGES =  2203
+
+             FILE           SIZ             FILE           SIZ
+          DATE   SHR         31          SUMSUM SHR         36
+          MRLN04 SAV         21          XHOST1 S01         35
+          THUNDR            132          TURBO  SUP         70
+          CMTU05 I01         22          CMTU05 R01        176
+          A      SAV         20          PBH103 DOC         39
+          PASUM  SHR         36          ALCC02 ERS         26
+          FIND   SAV         38          TYPE84 811         27
+          XCOM   NSR         34          BGUIDE DOC         93
+          CON    REF        388          XRAY05 DOC        147
+          CIRCUI DOC         65
+
+ USER NEATECH        
+ TOTAL OLD FILES =  189 TOTAL OLD PAGES =  1183
+
+             FILE           SIZ             FILE           SIZ
+          TOM    DOC         27          CONSAT DOC        122
+          CONSAT ERS         48          KODAK  TRF         56
+          MENU   TRA         23          TOOLS2 SAV         23
+          NETVAL 202         81          NECUST             22
+          TYMCOM QUE         43          STATS  BNY         28
+          DDD    DOC         32
+
+ USER DNDSPEC        
+ TOTAL OLD FILES =   93 TOTAL OLD PAGES =  5260
+
+             FILE           SIZ             FILE           SIZ
+          PBT902 DOC         48          MBASE  GED         35
+          MBASE  GID         37          MBSGED RD2         59
+          XRAY52 DOC        159          NTV502 ERS        162
+          NTO502 ERS         37          DLCS02 D03         73
+          DLCE02 D03        103          CMTHAF DOC         23
+          PBH102 DOC         44          PBT903 DOC         48
+          INBAND GED         20          ADRII  GED         81
+          CMTI   ERS        160          XRAY53 DOC        147
+          DCPU04 DOC         60          USR3   NAD         26
+          CSLGII GED         22          SNAS03 D00         61
+          SNAE03 D00        106          ALCC02 IMS         29
+          ALCC02 GEN         30          ISCS06 ERS        124
+          ALCC02 ERS         27          PBH103 DOC         44
+          HDXGED DOC         20          SNAE03 DOC        101
+          SNAS03 DOC         69          NODGEN DOC         31
+          PBTERS DOC        147          CRDU   DOC         43
+          DMAC07 DOC         67          X31984 GED         28
+          ALCC   GEN         30          PBH104 DOC         44
+          TMCS11 DOC         51          ISCS07 GED         67
+          ISCS07 ERS        176          SNAS04 D00         71
+          TMLB   PGM         42          TMLB   INS         21
+          USR    N68        101          PBHERS DOC        182
+          NTV506 ERS        166          DSIO04 DOC         81
+          PBT    ERS        173          SNA500 SGN         74
+          SNA500 ERS        163          MCP    GED         43
+          TBOM09 DOC         46          UTSV05 SGN         31
+          SNAERS V50        164          USER   NAD         24
+          N68K   ERS        101          CMTU   ERS         29
+          HBOM10 DOC         31          VIP03  GEN         21
+          VIP03  ERS         27          LG2GED DOC        144
+          TMCLOG DOC         22          LG2GED OLD        147
+          DLCE01 D12         73          DLCS01 D12         57
+          PBH    ERS        230          DMEM04 DOC         75
+          ALLPRD SEP         23
+
+ USER HQTECH.TIP     
+ TOTAL OLD FILES =   34 TOTAL OLD PAGES =   919
+
+             FILE           SIZ             FILE           SIZ
+          JUL87              24          NOV86              36
+          JUN86              22          OCT86              28
+          DDT    BAK        141          MAR86              24
+          JAN86              41          MAY86              29
+          MAR87              20          SEP86              27
+          JUN88              20          FEB86              43
+          APR86              40          FEB87              26
+          070PEA 001        154          APR87              28
+          AUG86              21
+
+ USER GBARLOW        
+ TOTAL OLD FILES =    8 TOTAL OLD PAGES =   318
+
+             FILE           SIZ             FILE           SIZ
+          INIT   SAV         29          DCPU04 DOC         60
+          DMAC07 DOC         67          DSIO04 DOC         81
+          DMEM04 DOC         75
+
+ USER                
+ TOTAL OLD FILES =   48 TOTAL OLD PAGES =   236
+
+             FILE           SIZ             FILE           SIZ
+          INIT   SAV         28          ADVENT SAV         54
+
+ USER NEEDLEDATA     
+ TOTAL OLD FILES =  251 TOTAL OLD PAGES = 30542
+
+             FILE           SIZ             FILE           SIZ
+          VAOPT6 419         73          DUNS19 DA        1591
+          921227 ROT         90          930119 DMI        725
+          930130 DMI        182          930227 DMI        878
+          NDATA  EX         159          NDATA  DMS        230
+          930407 DMI       2333          DELUTI FTF         33
+          DUNS13 DA        1003          DUNS13 AUG        474
+          1992   ROT        574          930228 DMI         89
+          EXP2   DMS         23          930417 DMI       2660
+          930408 DMI        182          930516 DMI        642
+          142542 DIR         28          H4271  DAT        107
+          1993   ROT        267          9600   DMS        558
+          VALUES DMS         20          930105 DMI        101
+          SITE   DAT        290          SITE   DMS        135
+          NL     DMS         62          930420 DMI        597
+          TOOLS2 NEW         28          TOOLS2 FTF         28
+          TOOLS2 REL         22          TOOLS2 E           28
+          H4271D DAT        104          H4271D DMS         64
+          TOOLS2 V2F         28          930106 DMI        167
+          930331 DMI       1080          DUKSDA 426        457
+          DUKSDA 427        455          DUKSDA 428        456
+          DUKSDA 429        455          93TST  DAT        739
+          930430 DMI        133          930509 DMI        967
+          930511 DMI        246          NIDTRC ON1         36
+          138053 DIR         21          DUNS16 DA        1072
+          921224 DMS         52          921224 ROT         78
+          930107 DMI         55          930125 DMI        542
+          DUKS   DMS         77          DUKS   DA         455
+          930429 DMI       1241          DUNS17 JUL        192
+          DUNS17 DA        1097          DUNS01 NOV         75
+          921225 ROT         88          930225 DMI       1108
+          NDATAH DMS        227          140721 DIR         21
+          921226 ROT        165          19932  ROT       1707
+          930201 DMI        419          930208 DMI        402
+          930210 DMI        224          930217 DMI        747
+          EXPORT DMS         67          DUBAK  SAV         26
+
+ USER HAMIK          
+ TOTAL OLD FILES =    8 TOTAL OLD PAGES =   897
+
+             FILE           SIZ             FILE           SIZ
+          AUG    SRT        437          JULY   SRT        445
+
+ USER SOFTDOC        
+ TOTAL OLD FILES =   14 TOTAL OLD PAGES =   521
+
+             FILE           SIZ             FILE           SIZ
+          PUBS   OLD         28          ABS    TXT         31
+          TOOLS2 DOC         74          TOOLS3 DOC         72
+          TOOLS4 DOC         74          ENGIN1 DOC        107
+          ENGIN2 DOC        107
+
+TOTAL FOR GAN  21476 -  1654 FILES, 59356 PAGES.
+
+
+ USER TELCODBS       
+ TOTAL OLD FILES =   51 TOTAL OLD PAGES = 12726
+
+             FILE           SIZ             FILE           SIZ
+          TE0IBW MP0         56          INIT   SAV         27
+          MZNG28 ME0         20          A89CMH MS0         51
+          A89CMH MX0         22          MUI87Z MR0        189
+          MUI878 MR0       1860          MUI879 MR0      10125
+          MUI87O MR0        265
+
+ USER NTRACKDATA     
+ TOTAL OLD FILES =   76 TOTAL OLD PAGES =   699
+
+             FILE           SIZ             FILE           SIZ
+          DELUTI SAV         30          DUQUE  OLD         24
+          DUQUE  DMI         22          CKBW   OUT         63
+          DUKS18 DMI        101          DUQUEO DMS         28
+          GNS    DMS        149
+
+ USER NTRACKPROGS    
+ TOTAL OLD FILES =  146 TOTAL OLD PAGES =  1583
+
+             FILE           SIZ             FILE           SIZ
+          DELUTI FTF         33          PRORAY QUE         71
+          A      SAV         20          NTRBAK BOA         26
+          NTRBAK SAV         26          NTRACK SAV         26
+          NTRQUE DMS        140          NTRQUE DMI         90
+          DUKS   DA         548          DLAY   FTF         21
+          DLAY   SAV         24
+
+ USER TARFDMS        
+ TOTAL OLD FILES =   53 TOTAL OLD PAGES =  5180
+
+             FILE           SIZ             FILE           SIZ
+          VHOLD  DMS       1178          VHLC04 82         267
+          CLASSA REP        176          NPANNX VH         446
+          VHLOC  DMS        376          VHLOC  RPT        280
+          VH     985       1142          VH     DMS       1147
+
+ USER SKIM           
+ TOTAL OLD FILES =   24 TOTAL OLD PAGES =   381
+
+             FILE           SIZ             FILE           SIZ
+          HOUR   INF        317
+
+ USER BOFADMIN       
+ TOTAL OLD FILES =   80 TOTAL OLD PAGES =  1142
+
+             FILE           SIZ             FILE           SIZ
+          TRBINX SHR         31          ISSINX SHR         31
+          TRBINX            239          TROUBL BOX        502
+          TROUBL INX         23          TICKET DMS         28
+
+ USER WESTBILL       
+ TOTAL OLD FILES = 1017 TOTAL OLD PAGES =  6387
+
+             FILE           SIZ             FILE           SIZ
+          ONTYME SAV         20          BA44OU             37
+          7ADP               20          DESG1  NET         40
+          NODE   FIL         25          1ADP               31
+          INIT   SAV         28          D52252 SES         69
+          D52252 S08         68          D52252 S09        100
+          DESG2  NET         40          PHONEA            107
+          BA55OU             28          PHONEB             77
+          BA22OU             53          1NONK              24
+          D29759 S07         61          D29759 S08         77
+          D29759 S09         66          D29759 S10         70
+          D29759 S11         75          D29759 S03         98
+          D29759 S02         95          PHONEC             67
+          MOD    DIA         51          PHASE1 DIA         51
+          BA33OU             44          BAOUT              66
+          INTEL  SRT        150          5ADP               20
+          NVIDEO OUT         22          BOA    OUT         21
+          CHEV2  OUT        160          2ADP               31
+          STARSC             28          BOA2   OUT         20
+          CHEV1A             26          KES1               21
+          2NONK              25          CONNEC JAN         38
+          BOFA1  OUT         73          MCIDD2             46
+          MCIDD2 OUT        218          SOTTO              21
+          STARSA             32          CHEVRO TAP        198
+          CHEV1B             27          MORMON FST         54
+          MORMON OUT        194          MORMON 1          112
+          MCIDDD             67          CCT    MAL        127
+          TOOMBS CI          87
+
+ USER RCHUN          
+ TOTAL OLD FILES =  586 TOTAL OLD PAGES =  2677
+
+             FILE           SIZ             FILE           SIZ
+          GLAPR  85         104          VARY   CHG         40
+          RANDY  CHN        139          A      SAV         20
+          MILE   DMS        131          MILE   DMI         81
+          FXPILO             20          SYNMO  DMS         22
+          RANDY1 DET        277          JUN91              27
+          INIT2  SAV         27          CKTS1  DAT         81
+          FX     DMS         30
+
+ USER NSSC           
+ TOTAL OLD FILES =   74 TOTAL OLD PAGES =  1101
+
+             FILE           SIZ             FILE           SIZ
+          DDT    DOC         22          TRNOVR SHR         33
+          MIKE   SHR         24          BKW                28
+          ISIS2  BAK        151          ISIS2  DOC        151
+          ELF    BAK         34          ELF    BKW         34
+          TYMWAT SPC         73          LOD    SHR         21
+          DIR    BAK         28          MOTINF TXT         29
+          PBHBOM DOC         31          X25RD2 DOC        157
+
+ USER TYMNET         
+ TOTAL OLD FILES =  148 TOTAL OLD PAGES =  9844
+
+             FILE           SIZ             FILE           SIZ
+          ND6760 BND         24          BK2333 BND        117
+          BK2333 N00        124          BK2333 NIB         61
+          BK2333 N03        116          SUPWAT JAN       1084
+          SUPWAT FEB        853          SUPWAT MAR        803
+          SUPWAT APR        920          ND6720 BND        120
+          ND6720 N00        127          ND6720 N03        116
+          ND6720 NIB         42          X                  53
+          SUPJAN 12         303          SUPJAN 9           63
+          SUPJAN 10          24          SUPMAR 5          334
+          SUPMAR           1137          ND6415 BND        120
+          ND6721 BND         75          ND6415 N03        116
+          ND6415 NIB         61          ND6657 BND         24
+          ND3374 BND         75          ND6722 BND         75
+          ND7021 BND         75          N10350 NIB         42
+          N10350 N00        126          N10350 N03        118
+          N10350 BND        119          BK0350 BND        119
+          BK0350 N00        130          BK0350 N03        122
+          BK0350 NIB         42          BK6720 BND         70
+          SUPFEB 4          543          SUPFEB 2          175
+          ND7004 BND         75          ND2333 BND         75
+          ND2333 N03        116          ND2333 NIB         61
+          ND2333 N00        123          BK6415 BND        120
+          BK6415 N03        116          BK6415 N00        128
+          BK6415 NIB         61
+
+ USER NETCON         
+ TOTAL OLD FILES =  257 TOTAL OLD PAGES =  4025
+
+             FILE           SIZ             FILE           SIZ
+          CLR522 SHR         26          ZAPCTL SHR         23
+          LOADII SAV         27          TAM    SAV         55
+          BK6146 BND        196          SUPMOV SHR         47
+          CNNSNN SHR         32          PRJTOT SHR         26
+          CLR523 SHR         26          WHAT   SAV         54
+          SUPWAT DEC        934          ND6314 BND        168
+          SNN112 DAT         23          LOGCNV SHR         29
+          PEAK   DAT         35          PRBCOM SWR         27
+          PHEDIR SHR         35          MANDY  STA         26
+          SUPJAN 4          200          TMCS   LST         73
+          TMS    SWR         21          TMS    MAC         38
+          NLIGNS SHR         35          TAMMY  SAV         55
+          OCT89  PGR         28          OCT89  STA         28
+          HOST   DMP         33          LOGALU SHR         32
+          OCT               201          CIAO   SAV         23
+          ND4024 BND        106          DEBTMS LOW         26
+          N11447 NIB         50          N11447 N00        135
+          N11447 N01         42          N11447 NA1         45
+          N11447 BND         80          SNN    RUN         67
+          SNN    DAT         29
+
+ USER MSANAL         
+ TOTAL OLD FILES =  165 TOTAL OLD PAGES =  1126
+
+             FILE           SIZ             FILE           SIZ
+          X25    DMS         38          X25    RPT         48
+          DELUTI FTF         33          ANALYS DAT         31
+          TOOLS2 SAV         23          HSTRY1 CNT         72
+          VALID1 EGB        108          FXCNV2 TXT         28
+          DELIII FTF         33          TGNUK  OUT         64
+          FRCST  DAT         23
+
+ USER MSREPORT       
+ TOTAL OLD FILES =  123 TOTAL OLD PAGES =   664
+
+             FILE           SIZ             FILE           SIZ
+          DELAY  F4          20          NTRBAK SAV         26
+          NTRQUE OLD        210          TIMES  DMS         22
+          TIMES  DMI         21
+
+ USER ANALYSIS       
+ TOTAL OLD FILES =   39 TOTAL OLD PAGES =   251
+
+             FILE           SIZ             FILE           SIZ
+          TYMDB  LOG         30          TMDT   DOC         29
+
+ USER NETSTAT        
+ TOTAL OLD FILES =  767 TOTAL OLD PAGES = 52096
+
+             FILE           SIZ             FILE           SIZ
+          SORT               43          DONOT  DEL         33
+          HACK   BTI         21          VICKI              30
+          OTIO09 CRU       2694          OTIO09 92        1702
+          BILLIN BAK         59          OTIO03 CRU       2869
+          OTICRU 527       4779          OTIO12 CRU       2699
+          OTIO12 DMS       1702          MIKE   OUT        195
+          OTIO03 DMS       1808          MM0105             76
+          NODUP  SHR         31          AUSGDN             29
+          GIBSON DOC         74          FOO                62
+          OTIDMS 527       2981          DAVE              653
+          D4043  DMI        126          OTIO04 CRU       2837
+          OTIO04 93        1789          TCNC               51
+          KAY    PAP         23          SLOT1              82
+          TNRC               74          REJECT            191
+          RSLAND DAT         26          XEROX  FWS         56
+          D3764  DMI         91          3M0120             87
+          MM0126             92          XNAMES SHR         31
+          CSX    DAT         62          CLAS12 DAT         27
+          D3121  DMI         29          C24    SHR         31
+          UP                 42          TYMINJ            277
+          T                  36          OTIO08 28S       2849
+          OTIO10 CRU       2822          OTIO10 DMS       1780
+          OTIO01 DMS       1719          3764   DEC         56
+          OTIO11 CRU       2706          OTIO11 DMS       1706
+          OTIO02 CRU       2734          DT3764             57
+          OTIO02 DMS       1723          OAG581             35
+          WWWW               32          OTIO01 CRU       2728
+          BILLIN             59          RANDY              25
+          MM2386             49
+
+ USER BWORKMAN       
+ TOTAL OLD FILES =    5 TOTAL OLD PAGES =   471
+
+             FILE           SIZ             FILE           SIZ
+          INIT   SAV         30          X                 431
+
+ USER NETENG         
+ TOTAL OLD FILES =  489 TOTAL OLD PAGES =  7200
+
+             FILE           SIZ             FILE           SIZ
+          FEMILE SAV        118          DELUTI SAV         30
+          NOV9   STA         27          FEB91  STA         27
+          FEB91  PGR         27          DELUTI V20         30
+          DELUTI OLD         39          NOV86  STA         22
+          FEMILE DMS        120          GINA18            224
+          APR90  STA         28          SPOOK  DMS         48
+          BNDW2A OUT        148          JCKSNV NA          38
+          PGRADE CTY         34          A      SAV         20
+          PATCH              27          EOQSAV BUP         29
+          APR91  STA         27          APR91  PGR         26
+          SPOOK  DMI         28          JUL90  STA         28
+          FEB92  STA         28          FEB92  PGR         28
+          PGRADE 101         27          MONTH  STA         27
+          NOV90  STA         27          NOV90  PGR         27
+          SITCON SAV         27          DIAL88 TXT         23
+          JUL91  PGR         27          JUL91  STA         27
+          AUG91  STA         27          SITE   LST         24
+          APR92  STA         28          APR92  PGR         28
+          NPRD2A OUT         46          TOOLS2 OLD         21
+          ELAINE DAT         25          RCHMND NE          20
+          RCHMND NA          46          EOQ    INF        813
+          TDELAY SAV         30          EOQ    REL         28
+          EOQ    SAV         29          EOQ    BUP         32
+          EOQ    FTF         32          OCT90  STA         27
+          NOV91  STA         27          NOV91  PGR         27
+          TOOLS2 SAV         24          NPRD2B OUT         28
+          COCOA  NA          26          SANG   HIS         90
+          EOQOLD FTF         33          EOQOLD SAV         30
+          FERPT              24          DUGEN  EGB        539
+          JUN91  STA         27          JUN91  PGR         27
+          JAN90  STA         28          OCT91  STA         27
+          OCT91  PGR         27          HSTRY1 CNT         91
+          NPRD2C OUT         30          AKRON  NA          26
+          DCOM   TRA         44          EOQCON DAT         31
+          DEC90  STA         27          JAN91  PGR         27
+          JAN91  STA         27          FRCST  DMS         21
+          PRDTR2 OUT         25          MAR91  STA         27
+          MAR91  PGR         26          MAY91  PGR         27
+          MAY91  STA         27          DUFCY  EGB         76
+          JUN92  STA         28          JUN92  PGR         28
+          CONHRS ORD         34          PORTS  OUT        260
+          PORTS  89         260          AVPEAK RNM        235
+          AVPEAK DMS        286          UNUSED NOW         21
+          OPEN   SAV         20          SEP91  STA         27
+          SEP91  PGR         27          DEC91  STA         28
+          DEC91  PGR         28          JAN92  STA         28
+          JAN92  PGR         28          MAR92  PGR         29
+          MAY92  STA         28
+
+ USER CAROTHERS      
+ TOTAL OLD FILES =  203 TOTAL OLD PAGES =  1200
+
+             FILE           SIZ             FILE           SIZ
+          37843  550        134          CHESS  SAV         21
+          128991 089         98          64279  225         83
+          BUDSHT SHR         32          TAPCAT SHR         35
+          STREK  SAV         27          RISK   SHR         23
+          BKEEP  SHR         47
+
+ USER SDSPROGS       
+ TOTAL OLD FILES =  300 TOTAL OLD PAGES =  1960
+
+             FILE           SIZ             FILE           SIZ
+          TSTPRT SAV         36          UPDKC  F4          39
+          TSTJJ2 PAR         32          LSTAT2 DAT         26
+          A      SAV         20          SORT3F SAV         21
+          1NP06  SUM         42          RAWZRO 2           33
+          NEVCON LST         69          NEVCON FTF         37
+          NETSIM NEW         21          PRTSUB FTF         43
+          PRTSUB REL         25          PRTSUB OF4         43
+          TAPDIR DIR         53          USESUM DEC         20
+          PORTS  REL         33          PORTS  FTF         59
+          PORTS  OF4         59          LSEATT USE         28
+          PORTS  SAV         48
+
+ USER MSL            
+ TOTAL OLD FILES =  150 TOTAL OLD PAGES =  1236
+
+             FILE           SIZ             FILE           SIZ
+          PRGLIB DMS        172          PRGLIB OPR         62
+          PRGLIB STA         24          PRGLIB REP        204
+          NCS    MAC         33          TOOLS2 FTF         28
+          TMS    MAC         36          PORTS  REL         22
+
+ USER MSEDSEL        
+ TOTAL OLD FILES =  869 TOTAL OLD PAGES =  4693
+
+             FILE           SIZ             FILE           SIZ
+          DYNPRO FTF         20          DELUTI REL         40
+          DELUTI SAV         30          ALUANA GEN         38
+          ALUANA ALL         70          POSOUT 162         26
+          DELUTI FTF         33          INIT   SAV         27
+          A      SAV         20          A      TLL         22
+          DPLINK FTF         20          DPLINK COP         20
+          SFOLD  DMI         60          SFOLD  DMS         52
+          TWOMIN SES         35          FRCSTU RT          22
+          AUG    DMS         34          COSANA COP         20
+          COSANA FTF         20          TOOLS2 SAV         23
+          ANZNOD TXT         41          CNHRS1 AVE         33
+          SITCLS DMI         22          SITCLS DMS         41
+          STATE  LST         27          CNHRS1 DMI         24
+          MSRCRD BIS         29          DAILY  INF         23
+          MASTER CRD         24          CONHRS AVE         33
+          TOPO01 TXT         22          SFNEW  DMI         30
+          SFNEW  DMS         27          NEWSF  DMI         77
+          NEWSF  DMS         85          ONEMIN SES         54
+          ONEMIN DMI         31          CONHRS MCR         37
+          USPSBU DMS         35          HOMEFI TLL         23
+          FRCSTD TLL         22          NFDAT  TLL         21
+          ANALYS TLL         29          TELMEX DMC         36
+          NIDTRC ALU         24          APPEBB TXT         25
+          CONHRS ORD         34          AUG    DMI         28
+
+ USER USCSALES       
+ TOTAL OLD FILES =   89 TOTAL OLD PAGES =   331
+
+             FILE           SIZ             FILE           SIZ
+
+ USER NETQC          
+ TOTAL OLD FILES =   26 TOTAL OLD PAGES =   325
+
+             FILE           SIZ             FILE           SIZ
+          PGRADE 022         28          MANDY  BAK         28
+          MANDY  JAN         28          MANDY  MAR         28
+          MANDY  STA         28          WPLOT  SAV         73
+
+ USER INTLACCTG      
+ TOTAL OLD FILES =   76 TOTAL OLD PAGES =  1644
+
+             FILE           SIZ             FILE           SIZ
+          ALASKA TIN        745          MCL05  TYM        161
+          MCL05  MCI        390          CONFIG ALL         50
+          Z                  39
+
+ USER CSS800         
+ TOTAL OLD FILES =   14 TOTAL OLD PAGES =   356
+
+             FILE           SIZ             FILE           SIZ
+          ADIAL  DET         27          PCP                92
+          ROSET  EXE         24          README PRN         23
+          TYMALR EXE         52          ROTARY EXE         75
+
+ USER TSNNET         
+ TOTAL OLD FILES =  259 TOTAL OLD PAGES =  3378
+
+             FILE           SIZ             FILE           SIZ
+          WET    SHR         32          DACNSP SHR         31
+          DACKPA LIS         34          TOM    DOC         27
+          DC2356 BND         92          AUDIT  SHR         34
+          DE2006 BND        101          DACPRP H00        163
+          DACPRP H01         60          DACKPP LIS         35
+          CONSAT DOC        122          INTROD SHR         23
+          DE2007 BND         89          INDEX  SHR         31
+          AUXIO  SAV         22          DACNDE SHR         31
+          X                  37          DNW202 NIB         32
+          RAM01  DBG         67          AFDPRP H00        321
+          AFDPRP H02         32          AFDPRP H05         60
+          AFDPRP T02         32          DECNSP SHR         30
+          NSPLBL SHR         34          XRAY04 DOC         44
+          RAM    FIL        522          CIAO   SAV         23
+          XRAY05 DOC        128          RAM    DOC         62
+          IC2356 BND         94          GEN    SHR         26
+          DECNDE SHR         30          DACPLT DAT         21
+
+ USER AUTODIST       
+ TOTAL OLD FILES =    7 TOTAL OLD PAGES =   616
+
+             FILE           SIZ             FILE           SIZ
+          OUTWAT            150          EXCEPT            139
+          ERR320            125          OUTERR            193
+
+ USER MSNTRACK       
+ TOTAL OLD FILES =  680 TOTAL OLD PAGES =  3480
+
+             FILE           SIZ             FILE           SIZ
+          DELAY  SAV         32          DUQUE  NEW         74
+          DELUTI FTF         33          DELUTI REL         34
+          A      SAV         20          HWSW   DMS         41
+          DLSUMJ DMS         37          NODSUM DMS         43
+          DLSUM  OCT         32          DLSUM  DMS         49
+          NCDLAY SAV         24          PCOM   HW          82
+          DUKSI  925         21          DLYAPP FTF         24
+          DLYAPP SAV         32          TOOLS2 SAV         23
+          DUKSDA 710         21          DLOTIO DMI         21
+          DLOTIO DMS         23          NISJPN DMS         26
+          NISJPN DME         37          NODTMP DMS         42
+          OCT    BE          27          DUKS12 DMS         45
+          BAND   DMS         24          LNKSUM DMS         28
+          BAND   LOG         31          DLAY   FTF         21
+          DPUB   F4          23          DPUB   SAV         31
+          PRDSUM DMS         22          DAJSON 921         32
+          DUBAK  BAV         25          TSTSUM DMI         23
+          TSTSUM DMS         34          LDAY1  LOG         53
+          DUKSMI 321         21          BDELAY             22
+          DJASON SAV         32          CKDLAY FTF         21
+          DUBAK  V2S         26          LNKSUM 320         26
+          DELUTI V30         33          DELUTI SAV         30
+          DLAYV2 FTF         25
+
+ USER SYSDAT         
+ TOTAL OLD FILES =  675 TOTAL OLD PAGES = 24210
+
+             FILE           SIZ             FILE           SIZ
+          JJOELS DIR         38          HOST1  ALL        303
+          80030C SFO        133          FTSHST DMI         31
+          FTS94  DOC        173          PSS93B DAT         58
+          PSS94A DAT         54          RBOC88 DAT        175
+          RBOC88 O1          57          RBOC88 O2          36
+          RBOC88 P2O         95          RBOC88 O3         158
+          RBOC88 P3         180          RBOC88 INF         58
+          RBOC88 P2          87          PSS93B P1          51
+          PSS93B O2          26          PSS93B P2          61
+          PSS93B O3         102          PSS93B P3         120
+          PSS93B INF         39          PSS94A P1          54
+          PSS94A O2          26          PSS94A P2          68
+          PSS94A O3         107          PSS94A P3         125
+          PSS94A INF         41          NCHASE O1          28
+          NYNEX  DMI         58          PACTEL DMI         32
+          AMTECH DMI        108          A      SAV         20
+          INIT   SAV         27          REBLD  RPT         48
+          TRFA   TEM        148          FTS95  DOC        173
+          PSS94B DAT         57          PSS95A DAT         54
+          RBOC89 P1          95          RBOC89 O2          36
+          RBOC89 P2O         87          RBOC89 O3         158
+          RBOC89 P3         181          RBOC89 INF         58
+          RBOC89 P2          87          FTS2   LOG         68
+          PSS94B P1          51          PSS94B O2          26
+          PSS94B P2          61          PSS94B O3         102
+          PSS94B P3         120          PSS94B INF         39
+          PSS95A P1          54          PSS95A O2          26
+          PSS95A P2          68          PSS95A O3         107
+          PSS95A P3         125          PSS95A INF         41
+          USWEST DMI         95          NETPLT SAV         63
+          TRFB   TEM        161          NETPLT OLD         63
+          60801A XPC         74          70512A FTS        589
+          T1     DMI        115          SFO1   OUT         22
+          NOR1   OUT         24          FTS96  DOC        173
+          PSS95B DAT         57          PSS96A DAT         54
+          PSS95B P1          51          PSS95B O2          26
+          PSS95B P2          61          PSS95B O3         102
+          PSS95B P3         120          PSS95B INF         39
+          PSS96A P1          54          PSS96A O2          26
+          PSS96A P2          68          PSS96A P3         125
+          PSS96A INF         41          BELATL DMI         72
+          TRFB28 TEM        717          TRFC   TEM         31
+          60730A XPC         74          60801B XPC         67
+          60802A XPC         20          MOREVH DAT        101
+          MOREVH OUT         34          70512B FTS        631
+          T2     DMI        136          NOR2   OUT         24
+          SFO2   OUT         22          FTS90  DOC        173
+          FTS97  DOC        173          PSS88A DAT         53
+          PSS90A DAT         54          PSS96B DAT         58
+          PSS97A DAT         54          PSS88A DMB         61
+          PSS88A O1          36          PSS88A P1          54
+          PSS88A P1B         54          PSS97A P3         125
+          PSS97A INF         41          PSS90A P1          54
+          PSS90A O2          26          PSS90A P2          68
+          PSS90A O3         107          PSS90A P3         125
+          PSS90A INF         41          PSS96B O3         102
+          STHWST DMI         84          TRFC28 TEM        651
+          CNHRS1 AVE         22          60730B XPC         92
+          HOME   YES         23          VARAW  SOR         49
+          VARAW  DMI         44          70512C FTS        260
+          T3     DMI        122          NOR3   OUT         24
+          SFO3   OUT         22          FTS89  DOC        173
+          FTS91  DOC        173          PSS88B DAT         56
+          PSS89A DAT         54          PSS90B DAT         58
+          PSS91A DAT         54          PSS97B DAT         57
+          PSS88B O1          34          PSS88B P1          51
+          PSS97B O3         102          MANHDO DIR         73
+          60730C XPC         33          80030A SFO        341
+          871129 NOR        164          871129 SFO        171
+          NOR4   OUT         24          SFO4   OUT         22
+          FTS92  DOC        173          PSS89B DAT         58
+          PSS91B DAT         57          PSS92A DAT         53
+          PSS89B P1          51          PSS89B P3         120
+          PSS89B O2          26          PSS89B P2          61
+          PSS89B O3         102          PSS89B INF         39
+          PSS91B P1          51          PSS91B O2          26
+          PSS91B P2          61          PSS91B O3         102
+          PSS91B P3         120          PSS91B INF         39
+          PSS92A O3         107          PSS92A P1          54
+          PSS92A O2          26          CONHRS AVE         22
+          CONHRS MCR         22          CONHRS ORD         24
+          80030B SFO        460          SFO5   OUT         22
+          NOR5   OUT         24          FTS93  DOC        173
+          PSS92B DAT         56          PSS93A DAT         54
+          FTS88T OUT         83          FTS88T P3          24
+          FTS88T DAT         25          PSS92B P1          51
+          PSS92B O2          26          PSS92B P2          61
+          PSS92B O3         102          PSS92B P3         120
+          PSS92B INF         39          PSS93A P1          54
+          PSS93A O2          26          PSS93A P2          68
+          PSS93A O3         107          PSS93A P3         125
+          PSS93A INF         41          CHASEM O12         29
+          CHASEM DS2         79          DPUB   FTF         24
+          DJASON FTF         24          NCHASE MS2         43
+          BSOUTH DMI        105          PSS88A O2          26
+          PSS88A P2          68          PSS88A O3         117
+          PSS88A P3         135          PSS88A INF         41
+          PSS97A P1          54          PSS97A O2          26
+          PSS97A P2          63          PSS97A O3         107
+          PSS96B P1          51          PSS96B O2          26
+          PSS96B P2          61          PSS96B P3         120
+          PSS96B INF         39          PSS88B O2          26
+          PSS88B P2          61          PSS88B O3         103
+          PSS88B P3         120          PSS88B INF         39
+          PSS97B P1          51          PSS97B O2          26
+          PSS97B P2          61          PSS97B P3         120
+          PSS97B INF         39          PSS89A P1          54
+          PSS89A O2          26          PSS89A P2          68
+          PSS89A O3         107          FTS    LOG         69
+          PSS89A P3         125          PSS89A INF         41
+          PSS90B P1          51          PSS90B O2          26
+          PSS90B P2          61          PSS90B O3         102
+          PSS90B P3         120          PSS90B INF         39
+          PSS91A P1          54          PSS91A O2          26
+          PSS91A P2          68          PSS91A O3         107
+          PSS91A P3         125          PSS91A INF         41
+          DUGEN  RPT        700          CMNODE HLD         46
+          DPVT   FTF         26          TRFD28 TEM        902
+          PSS92A P2          68          PSS92A P3         125
+          PSS92A INF         41          DELIII SAV         30
+          DELIII REL         34          DUFCY  RPT        727
+
+ USER EODA           
+ TOTAL OLD FILES =  232 TOTAL OLD PAGES =   758
+
+             FILE           SIZ             FILE           SIZ
+
+TOTAL FOR GAN  21477 -  7803 FILES,152398 PAGES.
+
+
+ USER NSCNET         
+ TOTAL OLD FILES =   15 TOTAL OLD PAGES =   273
+
+             FILE           SIZ             FILE           SIZ
+          NS2324 N03         53          NS2442 N04         45
+          GAN    LST         22          RAMOD5 DOC         68
+          SNADDT DOC         44
+
+TOTAL FOR GAN  23036 -    15 FILES,   273 PAGES.
+
+
+ USER MDISES         
+ TOTAL OLD FILES =    3 TOTAL OLD PAGES =   214
+
+             FILE           SIZ             FILE           SIZ
+          INIT   SAV         27          015PEA 001        185
+
+ USER FNOYER         
+ TOTAL OLD FILES =   14 TOTAL OLD PAGES =   259
+
+             FILE           SIZ             FILE           SIZ
+          ME350              20          SDN                36
+          MICRO              35          MP     SYS         20
+          MICSDN             33          MP     HLP         25
+          NODECO             36
+
+ USER MKHELLAF       
+ TOTAL OLD FILES =  128 TOTAL OLD PAGES =  1876
+
+             FILE           SIZ             FILE           SIZ
+          NETRAF DMS         29          GNSACT LNK         28
+          PGD    LOG        187          00410  DMS         35
+          GNSALL LNK         44          00411  DMS         50
+          00420  DMS         65          GNS1   LNK         23
+          SITRA1 DMS        116          SITE   TRA        113
+          OT3010 OUT         95          N0202A DMS         67
+          00419  DMS         37          GNSCKT LST         30
+          GNS2   NOD         35          TOOLS2 SAV         23
+          TOOLS2 FTF         28          M0202  DMS         81
+          M0219  DMS         56          00529  DMS         21
+          EURHST DMS         97          SITRA  DMS        130
+
+ USER TNSM           
+ TOTAL OLD FILES =   27 TOTAL OLD PAGES =   217
+
+             FILE           SIZ             FILE           SIZ
+          SUPFLD DOC         70          3270   DOC         20
+
+TOTAL FOR GAN  27514 -   248 FILES,  3002 PAGES.
+
+
+ USER DBENGA         
+ TOTAL OLD FILES =   88 TOTAL OLD PAGES =  2340
+
+             FILE           SIZ             FILE           SIZ
+          FEB89  STA         27          FEB89  PGR         27
+          APR88  PGR         25          APR88  STA         25
+          JUL87  STA         24          APR90  PGR         28
+          APR90  STA         28          FEB91  STA         27
+          FEB91  PGR         27          APR89  PGR         27
+          APR89  STA         27          JUL88  PGR         26
+          AUG88  PGR         27          JUL88  STA         26
+          AUG88  STA         27          JUL90  STA         28
+          JUL90  PGR         28          AUG90  STA         27
+          AUG90  PGR         27          APR91  STA         27
+          APR91  PGR         26          AUG89  STA         28
+          AUG89  PGR         28          JUL89  STA         28
+          NOV88  STA         27          NOV88  PGR         27
+          OCT87  STA         25          NOV90  STA         27
+          NOV90  PGR         27          JUN88  PGR         25
+          OCT88  PGR         27          JUN88  STA         25
+          OCT88  STA         27          NOV89  PGR         28
+          NOV89  STA         28          JUN90  STA         28
+          JUN90  PGR         28          OCT90  STA         27
+          OCT90  PGR         26          JUN89  PGR         28
+          JUN89  STA         28          OCT89  STA         28
+          OCT89  PGR         28          JAN88  PGR         25
+          MAR88  PGR         25          MAY88  PGR         25
+          JAN88  STA         25          MAR88  STA         25
+          MAY88  STA         25          JAN90  STA         28
+          JAN90  PGR         27          MAR90  STA         28
+          MAR90  PGR         28          MAY90  STA         28
+          MAY90  PGR         28          JUN91  STA         27
+          JUN91  PGR         27          MAY89  PGR         27
+          MAY89  STA         27          MAR89  STA         27
+          MAR89  PGR         27          JAN89  PGR         26
+          JAN89  STA         27          DEC88  PGR         26
+          DEC88  STA         26          SEP88  PGR         27
+          SEP88  STA         27          SEP90  STA         27
+          SEP90  PGR         27          DEC90  PGR         27
+          DEC90  STA         27          JAN91  STA         27
+          JAN91  PGR         27          MAR91  STA         27
+          MAR91  PGR         26          MAY91  STA         27
+          MAY91  PGR         27          SEP89  PGR         28
+          SEP89  STA         28          FEB88  PGR         25
+          FEB88  STA         25          DEC89  PGR         28
+          DEC89  STA         28          FEB90  PGR         28
+          FEB90  STA         28          SEP91  STA         27
+          SEP91  PGR         27
+
+ USER DBAMIKE        
+ TOTAL OLD FILES =   46 TOTAL OLD PAGES =  5276
+
+             FILE           SIZ             FILE           SIZ
+          EOQN   FTF         32          EOQN   SAV         29
+          FEMILE DMS         29          146922 DIR         48
+          CKTS   DMS       4855          EOQ    SAV         29
+
+ USER TELCOBILL      
+ TOTAL OLD FILES =  146 TOTAL OLD PAGES = 12678
+
+             FILE           SIZ             FILE           SIZ
+          PG0392 DMS         45          MAIN   VUE         27
+          A21293 OLD        152          A20393 OLD        120
+          A13193 OLD         83          A22893 OLD         83
+          A22193 OLD         59          A21993 OLD         44
+          ALLC84 MVS       2473          PG692  STA         28
+          PG0492 DMS         45          TELCO  DIR        120
+          A21393 OLD        143          A20493 OLD        138
+          A13293 OLD         86          A22993 OLD         71
+          A22293 OLD         94          PG191  BAK         26
+          PG191  DMI         26          146923 DIR         60
+          A21493 OLD         79          A20593 OLD        136
+          A13393 OLD        165          A22393 OLD        159
+          ALLCN  MVS       2642          PG0692 DMS         45
+          PG192  BAK         28          PG291  BAK         25
+          PG291  DMI         25          PG192  DMI         27
+          A21593 OLD         87          A20693 OLD         97
+          A22493 OLD        159          PG1091 DMS         44
+          PG0191 DMS         44          PG292  BAK         26
+          PG292  DMI         26          A20793 OLD        142
+          A22593 OLD        155          A21693 OLD        153
+          PG1191 DMS         44          PG0291 DMS         44
+          JAN93O D         2895          A21093 OLD        113
+          A20893 OLD        146          A20193 OLD         95
+          A22693 OLD        159          A21793 OLD        154
+          PG1291 DMS         45          A21193 OLD        166
+          A20993 OLD         45          A20293 OLD        117
+          A22793 OLD         88          A22093 OLD         93
+          A21893 OLD         45
+
+ USER DBSCHED        
+ TOTAL OLD FILES = 4114 TOTAL OLD PAGES = 13774
+
+             FILE           SIZ             FILE           SIZ
+          A      SAV         22          NODE1  N01        276
+          EAT02              51          63839E VA          21
+          BOSTON             22          63868W OC          22
+
+
+ USER DBTARIFF       
+ TOTAL OLD FILES =   27 TOTAL OLD PAGES =  2405
+
+             FILE           SIZ             FILE           SIZ
+          NPALIS AEG        312          LATA   DMI        635
+          LATA   DMS       1395
+
+ USER NETDATA        
+ TOTAL OLD FILES =  128 TOTAL OLD PAGES = 10495
+
+             FILE           SIZ             FILE           SIZ
+          LOGGER SHR         30          INIT   SAV         27
+          OESPRT LOG        155          RUNLOG OES         32
+          OESCKT DMP       4082          AUG28  RF         162
+          JOE    RPT         24          KATHY  DMP         24
+          MAIL              135          WI7TMG MR0       5489
+
+ USER JWAGNER        
+ TOTAL OLD FILES =   36 TOTAL OLD PAGES =  1701
+
+             FILE           SIZ             FILE           SIZ
+          TELCO  RPT        370          NY     RPT         74
+          SOFTW  RPT         20          YYMMD2 DMD        298
+          CFB193 RPT        745          PXL    INS         29
+          IPCFCY RPT         24          CFB    FIL         22
+          ALLPRD MAY         20          SOFTWA             20
+
+TOTAL FOR GAN  32120 -  4607 FILES, 48766 PAGES.
+
+
+ USER PAYROLTYM      
+ TOTAL OLD FILES = 1284 TOTAL OLD PAGES =  6502
+
+             FILE           SIZ             FILE           SIZ
+          UNI    OCT         61          TYMPR  OCT         84
+          TYM    DEC        764          TYMPR  DEC         81
+          UNI    DEC         28          FIELD  ENG         28
+          NET    DEC        204          NETPR  DEC         26
+          DEPLST HOW         22          NETDMP OCT         92
+          BATCH  44          31          BATCH  45          34
+          ACCBAT 10          34          NETDMP DEC        145
+          BAMSAV 002        195          BAMSAV 003        193
+          PPSSAV OUT        127          ACCBAT 41          30
+          ACCBAT 46          22          ACCBAT 20          22
+          BATCH  32          35          TERMIN ATE         74
+          O883DF MP9         20          DUPSTD RPT         50
+          BATCH  23          35          BATCH  28          36
+          ACCBAT 28          36          BATCH  34          35
+          BATCH  42          40          ACCBAT 39          23
+          BATCH  29          37          BATCH  36          35
+          BATCH  46          30          BATCH  52          24
+          BATCH  43          36          BATCH  40          34
+          BATCH  01          35          BATCH  02          38
+          ACCBAT 03          21          BATCH  07          39
+          ACCBAT 07          22          ACCBAT 22          23
+          ACCBAT 29          21          ACCBAT 50          23
+          ACCBAT 04          22          BATCH  19          35
+          ACCBAT 33          21          BATCH  37          37
+          ACCBAT 37          37          BATCH  17          35
+          BATCH  18          34          BATCH  53          31
+          ACCBAT 01          34          ACCBAT 06          35
+          ACCBAT 14          34          ACCBAT 19          34
+          BATCH  98          24          ACCBAT 23          35
+          ACCBAT 27          34          ACCBAT 31          37
+          ACCBAT 36          35          ACCBAT 40          34
+          SSN    BK          37          DDW    4           39
+          DDW    3           49          DDW    2           86
+
+TOTAL FOR GAN  32173 -  1284 FILES,  6502 PAGES.
+
+
+ USER TOPS           
+ TOTAL OLD FILES =   95 TOTAL OLD PAGES = 23555
+
+             FILE           SIZ             FILE           SIZ
+          OCT6NO DMS        272          CKTS18 DMI       2823
+          SUPTST DMS        162          CLSIT  DMS        212
+          CKTS   DMI       2822          UNITAP SAV         25
+          TYMCOM DAT       5145          DPVT   SAV         32
+          HOME   DMS         34          FINCON DMI        307
+          FINCON DMS        373          DPVT   BAK         26
+          HOME   FIL         25          VH87   BAK       1020
+          VH87   DMS       2209          CLSITE DMI        254
+          CLSITE DMS        309          AUX    SAV         20
+          CKTS15 DMI       2829          SWTCHR DAT       3206
+          DPUB   SAV         32          DPUB   BAK         24
+          VH     DMI       1061
+
+TOTAL FOR GAN  43722 -    95 FILES, 23555 PAGES.
+
+
+ USER WATECH         
+ TOTAL OLD FILES =  170 TOTAL OLD PAGES =   592
+
+             FILE           SIZ             FILE           SIZ
+          INIT   SAV         29
+
+TOTAL FOR GAN  44047 -   230 FILES,   880 PAGES.
+
+
+ USER CTS            
+ TOTAL OLD FILES =  325 TOTAL OLD PAGES =  1977
+
+             FILE           SIZ             FILE           SIZ
+          TYMUSA DOC         22          RABDUL P02         77
+          SDLC   GEN         47          HDXGED DOC         20
+          HOLD   CTS         33          HOLD   RMK         32
+          CERT   PRC         22          PBH10  DOC         44
+          HDLC   DOC         48          SDLCER DOC         75
+          058PEA 001         47          NCINFO OLD         22
+          CHER   DOC         38          CHER               35
+          TAR    EXE         95          CUSTBK DOC         37
+          FORD   RPT         85          T                 183
+
+TOTAL FOR GAN  44054 -   366 FILES,  2093 PAGES.
+
+
+ USER ANNARBOR       
+ TOTAL OLD FILES =   47 TOTAL OLD PAGES =   312
+
+             FILE           SIZ             FILE           SIZ
+          INIT   HLD         27          DDDFMT DAT         43
+          GATHER SES         29          DDDOUT DAT         76
+
+ USER JOLEARY        
+ TOTAL OLD FILES =   92 TOTAL OLD PAGES =   382
+
+             FILE           SIZ             FILE           SIZ
+          XWFSS  DMI         43          TOOLS2 SAV         23
+
+TOTAL FOR GAN  44060 -   141 FILES,   706 PAGES.
+
+
+ USER MJACOBS        
+ TOTAL OLD FILES =   19 TOTAL OLD PAGES =   408
+
+             FILE           SIZ             FILE           SIZ
+          PGRADE 090         26          PGRADE 100         26
+          PGRADE 021         26          PGRADE 031         27
+          PGRADE 041         27          PGRADE 051         27
+          PGRADE 091         27          PGRADE 012         27
+          PGRADE 022         28          PGRADE 032         28
+          PGRADE 042         28          PGRADE 052         28
+          PGRADE 061         28
+
+TOTAL FOR GAN  44061 -    46 FILES,   498 PAGES.
+
+
+ USER DREEDER        
+ TOTAL OLD FILES =   14 TOTAL OLD PAGES =   216
+
+             FILE           SIZ             FILE           SIZ
+          NODGEN DOC         31          CONFIG ALL         56
+          CON    ALL         61
+
+ USER DRHODES        
+ TOTAL OLD FILES =   18 TOTAL OLD PAGES =   289
+
+             FILE           SIZ             FILE           SIZ
+          CMTI   ERS        184          SUPGED DOC         37
+          XMODEM SHR         35
+
+TOTAL FOR GAN  44062 -    33 FILES,   511 PAGES.
+
+
+ USER SIRTITAS       
+ TOTAL OLD FILES =    8 TOTAL OLD PAGES =   465
+
+             FILE           SIZ             FILE           SIZ
+          046PEA 001        129          031PEA 001         33
+          NET    DOC         41          PBH    ERS        202
+          026PEA 001         45
+
+TOTAL FOR GAN  44155 -     8 FILES,   465 PAGES.
+
+
+ USER INTLINFO       
+ TOTAL OLD FILES =  108 TOTAL OLD PAGES =  1295
+
+             FILE           SIZ             FILE           SIZ
+          TYMUSA SHR         31          CLASS  TBL         65
+          GNSREV DOC         61          TYMUSA DOC         22
+          DTE    LST         29          HOLD               80
+          EXTINI SAV         28          CONECT X75         59
+          GNSSPT NEW         31          GNSSPT DOC         36
+          ALL    INF        100          KEI    TXT         98
+          070PEA 001         38          JGUIDE DOC         35
+          GNS    DOC         34
+
+TOTAL FOR GAN  44267 -   124 FILES,  1363 PAGES.
+
+
+ USER TGOMEZ         
+ TOTAL OLD FILES =   11 TOTAL OLD PAGES =   356
+
+             FILE           SIZ             FILE           SIZ
+          11009  PGD         24          DUGEN  RPT        180
+          DUFCY  RPT        131
+
+TOTAL FOR GAN  47256 -    11 FILES,   356 PAGES.
+
+
+ USER NISCNET        
+ TOTAL OLD FILES =   12 TOTAL OLD PAGES =  1026
+
+             FILE           SIZ             FILE           SIZ
+          VENUS  DMS        990
+
+TOTAL FOR GAN  51754 -    12 FILES,  1026 PAGES.
+
+    _@tþ
