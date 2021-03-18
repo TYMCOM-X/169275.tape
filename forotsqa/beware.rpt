@@ -1,0 +1,1799 @@
+                             SYSTEM 1022 PROBLEMS/CHANGES       Jun-11-1986
+
+
+
+
+STATUS: UNFIXED
+
+ID    SOLUTION     NAME-DATE           DESCRIPTION              FIX      
+      VERSION                                                   PRIORITY 
+--    --------     ---------           -----------              ------------
+
+2161               DUFF-1/27/86        DUMP SET followed by     NO ENTRY 
+                                       ADD results in damaged 
+                                       file.                  
+
+2163               LEWIS-1/31/86       MAP & TRANSACT miss      NO ENTRY 
+                                       some records for       
+                                       certain key table      
+                                       blocking               
+
+2178               DUESENBERRY-3/24/8  LRECL in LOAD command,   NO ENTRY 
+                   6                   that is shorter than   
+                                       described record,      
+                                       causes FATAL error     
+
+2197               GUNNERY-4/22/86     With pre-117 keys,       NO ENTRY 
+                                       errors in large updates
+                                       when key table grows in
+                                       height                 
+
+2199               CARR-4/29/86        Quotes may be ignored    NO ENTRY 
+                                       on word following      
+                                       dataset specification  
+
+2203               LEE-5/8/86          UPDATE ALLOW sometimes   NO ENTRY 
+                                       does not turn off      
+                                       UPDATE PREVENT         
+
+2206               LEE-5/27/86         OPEN FOO ENQ FOO NOENQ   NO ENTRY 
+                                       should give error, but 
+                                       does not               
+
+2207               MARTIN-6/4/86       Inform admit does not    NO ENTRY 
+                                       recognize 3rd argurment
+                                       [user-id].             
+
+2210               PARTINGTON-5/28/86  DBEND doesn't kill       NO ENTRY 
+                                       DBEXEC fork on TOPS-20.
+
+1974               WEITZEL-6/21/84     Can't OPEN multiple d/s  MINOR    
+                                       file if another d/s is 
+                                       being LOADed into that 
+                                       file.                  
+
+1988               BENNET 9/21/84      RUNning some fortran-6   MINOR    
+                                       HL programs via 1022   
+                                       RUN cmd gets bogus     
+                                       FOROTS VERSION SKEW err
+
+2100               DUESEN 8-14-85      PRINT ON n SYSDSFILE     MINOR                                 SYSTEM 1022 PROBLEMS/CHANGES       Jun-11-1986
+
+
+                                       prints correct string  
+                                       followed by trailing   
+                                       nulls up to 80         
+                                       bytes(nulls break DIF  
+                                       files)                 
+
+2138               LOMBARD-10/29/85    SET statement which      LESS     
+                                       includes PPN gets Fatal  IMPORTANT
+                                       error.                 
+
+2165               CARR-2/24/86        Erroneous overflow       LESS     
+                                       messages on global       IMPORTANT
+                                       CHANGE of attribute to 
+                                       expression containing  
+                                       itself                 
+
+2172               ALEXANDER-2/26/86   SYSRESET=2 is not fully  LESS     
+                                       implemented for global   IMPORTANT
+                                       CHANGEs to a collection
+
+2143               RODRIGUES-14/11/85  If select eliminates     IMPORTANT
+                                       all records global     
+                                       CHANGE may get dispatch
+                                       on zero error          
+
+2155               KELLEY-1/14/86      ADD cmd terminated w/    IMPORTANT
+                                       NUL keyword puts       
+                                       garbage into DBL       
+                                       INTEGER fields.        
+
+2173               BUTLER-2/26/86      ADDing to a collection   IMPORTANT
+                                       from GETREC mode during
+                                       simultaneous updates   
+                                       may cause ACCESS NOT   
+                                       SET UP error           
+
+2176               SCHMIDT-3/12/86     MAP sometimes sets       IMPORTANT
+                                       overflow flag.         
+
+
+
+                             TOTAL NUMBER OF UNFIXED ENTRIES: 19
+
+
+
+STATUS: IN PROGRESS
+
+ID    SOLUTION     NAME-DATE           DESCRIPTION              FIX      
+      VERSION                                                   PRIORITY 
+--    --------     ---------           -----------              ------------
+
+1212               BARNES-4/17/81      A  HEADING PRINT FMT C2  MINOR    
+                                       END causes a fatal     
+                                       internal error; we     
+                                       should catch it as a   
+                                       normal error instead   
+                             SYSTEM 1022 PROBLEMS/CHANGES       Jun-11-1986
+
+
+2167               CARR-2/24/86        SEARCH SYSID-SYSID EQ 0  MINOR    
+                                       doesn't give error     
+
+
+
+                             TOTAL NUMBER OF IN PROGRESS ENTRIES: 2
+
+
+
+STATUS: IN REVIEW
+
+ID    SOLUTION     NAME-DATE           DESCRIPTION              FIX      
+      VERSION                                                   PRIORITY 
+--    --------     ---------           -----------              ------------
+
+2129  117A(340)    BUTLER-1/8/86       DBSREC/STARTREC can      IMPORTANT
+                                       leave collection in    
+                                       inconsistent state     
+
+2050               SENTI-4/24/85       Using                    MINOR    
+                                       $CONST(undefined_variab
+                                       le) for 3rd dimension  
+                                       in DEFINing array,     
+                                       makes 1022 loop.       
+
+2110               BERSACK             USING clause sometimes   MINOR    
+                                       leaves garbage in      
+                                       command buffer.        
+
+1946               DUESEN-5/10/84      v116 loops infinitely    LESS     
+                                       when OPEN NOCLOSE is     IMPORTANT
+                                       attempted & no core is 
+                                       available. 115B got    
+                                       (CO7) errm.            
+
+2156               DUFF-1/15/86        Abbreviation in counted  IMPORTANT
+                                       string GT 5 chars is   
+                                       unrecognized.          
+
+
+
+                             TOTAL NUMBER OF IN REVIEW ENTRIES: 5
+
+
+
+STATUS: DONE
+
+ID    SOLUTION     NAME-DATE           DESCRIPTION              FIX      
+      VERSION                                                   PRIORITY 
+--    --------     ---------           -----------              ------------
+
+2139  117B(65 )    BAER-11/6/85        Allow users to provide   NO ENTRY 
+                                       their own DMI reader   
+                                       routines to LOAD etc.  
+
+2144  117B(65 )    CARR-11/14/85       Create SYSEXECKP to      NO ENTRY 
+                                       allow multiple PUSH                                 SYSTEM 1022 PROBLEMS/CHANGES       Jun-11-1986
+
+
+                                       commands to use the    
+                                       same instance of the   
+                                       EXEC on TOPS-20        
+
+2060  117B(50 )    MCNEANY 5/21/85     Bad or null data         LESS     
+                                       sometimes printed in     IMPORTANT
+                                       REPORT after FOOTING   
+                                       has been triggered     
+
+2074  117B(32 )    DUESEN 6/11/85      Add support for PC       NO ENTRY 
+                                       format files in PRINT  
+                                       statement              
+
+2204  117B(201)    CORWIN-5/20/86      Sometimes AUD, AUDI,     NO ENTRY 
+                                       ADM, and ADMI might not
+                                       be recognized as valid 
+                                       commands               
+
+2205  117B(201)    DMITRIA K.-5/23/86  DUMP SORTED dies         NO ENTRY 
+                                       strangely when         
+                                       finished;  depends on  
+                                       record size.           
+
+2198  117B(166)    SEIPEL-4/17/86      FIND/MAP that causes     NO ENTRY 
+                                       scratch file to be     
+                                       created may fatal      
+
+2187  117B(164)    WODELET-4/10/86     global CHANGE to 20 or   NO ENTRY 
+                                       more records in ENQ/DEQ
+                                       dataset dies           
+
+2189  117B(164)    ALEXANDER-4/17/86   Add line to INFORM       NO ENTRY 
+                                       VERSION to list        
+                                       purchased 1022 options 
+
+2166  117B(163)    CARR-2/24/86        OPEN NOCLOSE w/ no       MINOR    
+                                       other datasets open,   
+                                       leaves user set to     
+                                       first dataset rather   
+                                       than last.             
+
+1405  117B(144)    TAYLOR-11/2/81      PRINT "on" is parsed as  NO ENTRY 
+                                       PRINT ON.              
+
+2123  117B(144)    LOMBARD-9/23/85     Customer suggests        NO ENTRY 
+                                       system variable to make
+                                       1022 LOAD 6 digit dates
+                                       as MMDDYY.             
+
+1302  117B(144)    VITOLINS-8/20/81    PRINT 'ALL' does PRINT   MINOR    
+                                       ALL instead of printing
+                                       text literal           
+
+2086  117B(1  )    MARTIN-7/11/85      New inform command to    IMPORTANT
+                                       analyze context of dmx 
+                                       file.                  
+                             SYSTEM 1022 PROBLEMS/CHANGES       Jun-11-1986
+
+
+2188  117A(374)    GUNNERY-4/18/86     Boundary condition bug   IMPORTANT
+                                       in pre-117 key table   
+                                       update                 
+
+2175  117A(372)    LEWIS-3/5/86        OPTIMIZE DELETE (or ..   NO ENTRY 
+                                       ALL) loses most of     
+                                       delete list when large.
+
+2160  117A(366)    ALEXANDER-1/24/86   Subfork DBEXEC dies      NO ENTRY 
+                                       after stopping (for    
+                                       disk space, etc.) and  
+                                       continueing            
+
+2164  117A(366)    ALEXANDER-2/2/86    117 fails to use         NO ENTRY 
+                                       fastmode               
+
+2157  117A(364)    FOSBROOK-1/15/86    Accounting in 117A gets  NO ENTRY 
+                                       NXM. Ok in 116B.       
+
+2150  117A(362)    ROTH-12/4/85        FIND LAST etc. with      LESS     
+                                       SYSCORESS off may lose   IMPORTANT
+                                       scratch file blocks    
+
+2145  117A(362)    KELLY-11/15/85      Join references to a     IMPORTANT
+                                       collection can lose    
+                                       scratch file blocks,   
+                                       causing the file to    
+                                       grow and eventually run
+                                       out of space           
+
+2149  117A(362)    DUFF-12/3/85        Key/load/optimize can    IMPORTANT
+                                       run out of scratch file
+                                       space for big keys     
+
+2146  117A(360)    KELLY-11/19/85      BACKTO 116 fails for     LESS     
+                                       datasets with            IMPORTANT
+                                       double-precision       
+                                       attributes             
+
+2136  117A(360)    KLEIN-10/28/85      1022 can fatal when      IMPORTANT
+                                       extending a file with  
+                                       large records          
+
+2128  117A(355)    RMART 10/11/85      COMPILing prog. with     NO ENTRY 
+                                       ENABLE/DISABLE JOIN may
+                                       cause FATAL in         
+                                       compilation if a       
+                                       previously-JOINed d/s  
+                                       has been CLOSED.       
+
+2134  117A(355)    SCHNEIDER-10/18/85  Fatal "TRK" from KEY     IMPORTANT
+                                       when large number of   
+                                       blocks to reuse        
+
+2133  117A(341)    SCHNEIDER-10/20/8   117 can fatal when       NO ENTRY 
+                                       updating a key with    
+                                       inconsistent index                                  SYSTEM 1022 PROBLEMS/CHANGES       Jun-11-1986
+
+
+
+2089  117A(340)    DUFF-8/1/85         Attribute which is       NO ENTRY 
+                                       protected RO can be    
+                                       UNKEYed.               
+
+2125  117A(340)    DUFF-10/10/85       Large inclusive FIND     NO ENTRY 
+                                       can blow up            
+
+2126  117A(340)    GUNNERY-10/11/85    GETREC misses in         NO ENTRY 
+                                       collection when one set
+                                       uses bit table &       
+                                       another doesn't        
+
+2104  117A(325)    PAYNE-6/5/85        When 117 scratch file    NO ENTRY 
+                                       cannot be created,     
+                                       should not give FATAL  
+
+2115  117A(325)    SCHNEIDER-9/19/85   Upper-level new key      NO ENTRY 
+                                       table block can be     
+                                       indexed on wrong sysid 
+
+2119  117A(325)    ALEXANDER-9/20/85   117 sometimes messes up  NO ENTRY 
+                                       keys when splitting the
+                                       same block many times  
+
+2122  117A(325)    SCHNEIDER-9/23/85   SYSCASE stopped working  NO ENTRY 
+                                       in IF command          
+
+2117  117A(325)    ALEXANDER-9/19/85   117 sorts can get        LESS     
+                                       "access not set up"      IMPORTANT
+                                       when they run out of   
+                                       space                  
+
+2078  117A(325)    JENSEN-6/19/85      GETREC LEAVE outside of  IMPORTANT
+                                       loop LEAVES to end of  
+                                       loop, not end of PL.   
+
+2108  117A(325)    BUTLER-1/8/86       ON CHANGE processing     IMPORTANT
+                                       writes over transbuf:  
+                                       byte pointer must be   
+                                       made word-aligned      
+
+2114  117A(324)    SCHNEIDER-9/18/85   117A may set up bit      NO ENTRY 
+                                       table sysid lists for  
+                                       old keys in GETREC mode
+                                       CHANGE or DELETE       
+
+2102  117A(257)    CARR-8/22/85        "VALUES attr VALUE"      LESS     
+                                       command w/no other       IMPORTANT
+                                       options ignores        
+                                       selection set          
+
+2092  117A(255)    PAYNE-6/5/85        MAP prints one message   LESS     
+                                       per locator conversion   IMPORTANT
+                                       error                  
+
+2088  117A(255)    ZELLWEGER-8/1/85    UNKEY is allowed from    IMPORTANT                             SYSTEM 1022 PROBLEMS/CHANGES       Jun-11-1986
+
+
+                                       dataset w/ RO access.  
+                                       Works OK in 116B.      
+
+2094  117A(255)    PDUFF-7/19/85       In rare boundary case,   IMPORTANT
+                                       FIND with old keys     
+                                       misses sysids 1-31     
+
+2095  117A(255)    WODELET-7/18/85     SORT KEY using in-core   IMPORTANT
+                                       selection sets is      
+                                       broken                 
+
+2096  117A(255)    SCHNEIDER-7/17/85   Bomb out when first      IMPORTANT
+                                       OPEN is of dataset     
+                                       using in-core selection                                    set                    
+
+2097  117A(255)    BUTLER-1/8/86       Keying dataset GT        IMPORTANT
+                                       262000 blocks gave     
+                                       spurious IO error on   
+                                       TOPS-10                
+
+2099  117A(255)    JENSEN-8/12/85      New keys allowed         IMPORTANT
+                                       duplicate values in    
+                                       higher levels in some  
+                                       cases                  
+
+2093  117A(255)    SCHNEIDER-7/27/85   117 old key package      CRITICAL 
+                                       occasionally writes    
+                                       over first word of     
+                                       another block          
+
+2098  117A(255)    PAYNE-8/9/85        New keys damaged when    CRITICAL 
+                                       near end of section and
+                                       block split            
+
+2029  117A(230)    PZELL-2/21/85       MODIFY $ATTR,  LOAD,     LESS     
+                                       and CREATE allow         IMPORTANT
+                                       illegal attribute      
+                                       names.                 
+
+2072  117A(230)    PAYNE-6/7/85        Potential problems when  IMPORTANT
+                                       new key table level    
+                                       created                
+
+2065  117A(215)    PAYNE-5/28/85       Wrong result or fatal    NO ENTRY 
+                                       from FIND FILE on      
+                                       pre-117 DMV            
+
+2066  117A(215)    KELLY-5/28/85       New-style key table      NO ENTRY 
+                                       damage possible when   
+                                       splitting last         
+                                       low-level block        
+
+2067  117A(215)    BUTLER-1/8/86       Fatal while KEYing very  NO ENTRY 
+                                       large dataset          
+
+2077  117A(215)    DAVE W.-6/17/85     ADMIT * <access>         NO ENTRY                              SYSTEM 1022 PROBLEMS/CHANGES       Jun-11-1986
+
+
+                                       complains about illegal
+                                       octal PPN              
+
+2071  117A(215)    ALEXANDER-6/10/85   Updates are slowed down  LESS     
+                                       when 117A ferrets        IMPORTANT
+                                       unnecessarily          
+
+2076  117A(215)    ALEXANDER-6/10/85   SORT in getrec mode      LESS     
+                                       doesn't return in        IMPORTANT
+                                       getrec mode            
+
+2070  117A(215)    JENSEN-6/10/85      Potential problems       IMPORTANT
+                                       doing deletes on 117A  
+                                       delete lists           
+
+2075  117A(215)    KELLY-6/11/85       117A will map by key     IMPORTANT
+                                       even though there is a 
+                                       SELECT condition       
+
+2045  117A(214)    CORWIN-4/3/85       SH's PA1050 patches can  NO ENTRY 
+                                       interfere with non-1022
+                                       programs using .JBCST  
+
+2055  117A(214)    DUESENBERRY-4/24/8  VALUES on unkeyed        NO ENTRY 
+                   5                   attribute tests        
+                                       uninitlzd var, can die 
+                                       in RELFH               
+
+2062  117A(214)    JENSEN-5/21/85      117 can fatal when many  NO ENTRY 
+                                       records deleted using  
+                                       new keys               
+
+2063  117A(214)    JENSEN-5/22/85      KEY CHECKSUM ALL fails   NO ENTRY 
+                                       when no attributes are 
+                                       keyed                  
+
+2054  117A(207)    SCHNEIDER-4/23/85   LOAD could die due to    NO ENTRY 
+                                       BFALC at unsafe point  
+                                       in QSCBUF              
+
+2056  117A(207)    BUTLER-1/8/86       KEY BUFFER n thought it  NO ENTRY 
+                                       was KEY $SCAN          
+
+2057  117A(207)    SCHNEIDER-5/1/85    Selection set not freed  NO ENTRY 
+                                       on join map; file fills
+                                       up                     
+
+2036  117A(206)    SCHNEIDER-2/27/85   SORT with large CORE     NO ENTRY 
+                                       option gets PDL        
+                                       overflow.              
+
+2046  117A(206)    JONES 4/11/85       DBEND does not release   NO ENTRY 
+                                       error file handle      
+
+2017  117A(203)    CORWIN-1/23/85      INFORM VERSION, segment  NO ENTRY 
+                                       origin is translated   
+                                       for current structure                               SYSTEM 1022 PROBLEMS/CHANGES       Jun-11-1986
+
+
+                                       (TOPS-20)              
+
+2024  117A(167)    CARR 2/1/85         Open does not check the  NO ENTRY 
+                                       DBA if there is a      
+                                       directory string owner 
+                                       when setting dataset   
+                                       owner.                 
+
+2039  117A(167)    DUFF-2/28/85        Add system variable to   NO ENTRY 
+                                       allow for error        
+                                       messages in other      
+                                       languages.             
+
+2041  117A(167)    CARR-3/12/85        OPEN'ing a pre-116       NO ENTRY 
+                                       unbundled dataset with 
+                                       a bad ppn in the dmi   
+                                       filespec in the        
+                                       homeblock causes a     
+                                       fatal error            
+
+1064  117A(   )    HOFFMAN-1/19/81     DBEND should cause       MINOR    
+                                       further DB calls to get
+                                       errors.                
+
+1972  116B(74 )    DUESEN-8/10/84      if FILERR=CONTINUE & an  IMPORTANT
+                                       INFORM gets CS72       
+                                       err,next cmnd in DMC   
+                                       after INFORM is        
+                                       ignored. Sim. results  
+                                       after PERFORM errors.  
+
+1042  116B(73 )    RUPP-1/5/81         We should translate      IMPORTANT
+                                       PPN's on 20's from PS:,
+                                       not the connected      
+                                       structure.             
+
+1968  116B(73 )    BENNETT-7/30/84     PUSH USING command       IMPORTANT
+                                       <CRLF> POP <CRLF> END  
+                                       gets ?Not confirmed,   
+                                       works if no crlf before
+                                       POP                    
+
+1269  116B(73 )    WEIGLE-5/29/81      SUGGESTED that MODIFY    CRITICAL 
+                                       be able to make        
+                                       attributes ADDITIVE for
+                                       use in TRANSACT, which 
+                                       would supplant TRANSACT
+                                       DESC... idea.          
+
+1812  116B(50 )    DUESEN-8-25-83      Compiled-PL1022 project  IMPORTANT
+
+1867  116B(50 )    GERMAN-12/13/83     Add support for TOPS-20  IMPORTANT
+                                       dir strings            
+                                       (wildcarded) in ADMIT  
+
+1949  116B(50 )    CARR-5/1/84         Host Language Interface  IMPORTANT
+                                       slower in 116                                       SYSTEM 1022 PROBLEMS/CHANGES       Jun-11-1986
+
+
+
+1388  116B(50 )    WOOD-10/20/81       It would be useful to    CRITICAL 
+                                       permit floating        
+                                       parentheses (left-only 
+                                       is ok) in the          
+                                       formatter, in the same 
+                                       way we permit floating 
+                                       doll                   
+
+1929  116B(40 )    BRIESM-9/1/83       Wants to print negative  MINOR    
+                                       number with floating   
+                                       parens                 
+
+2208  116B(220)    TING-6/5/86         DBLOCK or DBGREC with    NO ENTRY 
+                                       $LOCK followed by      
+                                       DBEXEC('LOCK OFF...')  
+                                       gives FATAL 'EQE'      
+
+2185  116B(200)    JACKSON-3/31/86     ^C and REENTER during    NO ENTRY 
+                                       long typeout gives     
+                                       FATAL UTG (TOPS-10     
+                                       only)                  
+
+2083  116B(200)    ALEXANDER-7/1/85    UPDATE PREVENT needs     LESS     
+                                       error recovery for       IMPORTANT
+                                       collections            
+
+2154  116B(200)    BUTLER-1/8/86       Counted attribute field  IMPORTANT
+                                       w/ RECMODE DELIMIT is  
+                                       truncated by delimiter 
+                                       for following delimited
+                                       attribute              
+
+2174  116B(177)    BUTLER-3/3/86       Jobs that FIND while     NO ENTRY 
+                                       another job is         
+                                       APPENDing may loop     
+                                       forever                
+
+2177  116B(177)    JONES-3/13/86       AUDIT BACKUP done while  NO ENTRY 
+                                       UPDATE ON sometimes    
+                                       gets audit failure.    
+
+2107  116B(176)    LUKAS-9/6/85        "@=" reference in FMT    MINOR    
+                                       spec sometimes get     
+                                       (FO8) error.           
+
+2169  116B(176)    CARR-2/24/86        ADMIT should warn when   LESS     
+                                       password greater than 5  IMPORTANT
+                                       characters is truncated
+
+2153  116B(174)    JONES-1/6/86        DUMP DATA after          NO ENTRY 
+                                       SELECTING zero records 
+                                       gets Fatal error. OK in
+                                       6B105.                 
+
+1678  116B(173)    DUFF-11/9/82        DBFIND(attr,199999,val)  MINOR    
+                                       gives illegal mem. ref.                             SYSTEM 1022 PROBLEMS/CHANGES       Jun-11-1986
+
+
+
+2132  116B(173)    DUFF-10/18/85       "SORT desc" fails,       LESS     
+                                       though "desc" is an      IMPORTANT
+                                       attribute name and DESC
+                                       clause is disallowed   
+                                       here.                  
+
+2148  116B(173)    BUTLER-1/8/86       On Tops-10, DBSORT uses  LESS     
+                                       chan. 0, doesn't         IMPORTANT
+                                       release it after DBCLOS
+                                       orDBEND. Does release  
+                                       it for DBEXEC.         
+
+2103  116B(173)    BUTLER-1/8/86       at Compuserve, ALLOCATE  IMPORTANT
+                                       with TRUNCATE arg in   
+                                       DMD doesn't truncate   
+                                       file correctly         
+
+2151  116B(170)    STOWELL-12/20/85    INIT APPEND sometimes    NO ENTRY 
+                                       puts leading nulls into
+                                       output file.           
+
+2113  116B(167)    DUFF-9/18/85        If DDT is in extended    NO ENTRY 
+                                       section, HLI pgm which 
+                                       calls DBEXEC cannot be 
+                                       debugged.              
+
+2135  116B(167)    HEIL-10/16/85       $TEXTL used in           LESS     
+                                       concatenation sometimes  IMPORTANT
+                                       loses characters.      
+
+2080  116B(166)    LEVERITT-6/22/85    KEY command w/UPDATE ON  IMPORTANT
+                                       when there's no        
+                                       attributes to key, give
+                                       FATAL error            
+
+2130  116B(164)    RICARD-9/23/85      Audit Trails sometimes   NO ENTRY 
+                                       fail if record length  
+                                       gt 128 characters.     
+
+2124  116B(164)    BARR-10/8/85        concatenation of $TRIM   LESS     
+                                       of two blank fields,     IMPORTANT
+                                       sometimes NE blank.    
+
+2087  116B(164)    SCHNEIDER-7/18/85   FIND <SIXBIT_ATTR> BEG   IMPORTANT
+                                       text_variable fails.   
+
+1950  116B(163)    DUESEN-5/29/84      APPEND SET to            LESS     
+                                       collections sometimes    IMPORTANT
+                                       gets Fatal error       
+
+1633  116B(161)    WOOD-8/14/82        Add INFORM OWNER and     MINOR    
+                                       INFORM DBA commands    
+
+2085  116B(160)    WEITZEL-7/1/85      1022 OTS can't extend    NO ENTRY 
+                                       beyond page 577.       
+                             SYSTEM 1022 PROBLEMS/CHANGES       Jun-11-1986
+
+
+2090  116B(160)    VINCENT-7/25/85     Roll-forward AUDIT       IMPORTANT
+                                       TRAIL sometimes fails  
+                                       on multiple checkpoint.
+
+1975  116B(154)    SORTOR-7/24/84      ERROR RECOVER option     MINOR    
+                                       for TEXT attributes is 
+                                       illegal, but not       
+                                       detected on LOAD.      
+
+2084  116B(152)    PARTINGTON-6/4/85   Blank strings NE $NULL.  NO ENTRY 
+
+2064  116B(147)    WEIGLE-5/29/85      C10 format gets illegal  NO ENTRY 
+                                       instruction.           
+
+2061  116B(146)    THURMAN-5/20/85     ADD's to sixbit          NO ENTRY 
+                                       unbundled datasets     
+                                       cause random errors    
+
+2069  116B(146)    KOEPF-6/4/85        Under TOPS-20 simul.     NO ENTRY 
+                                       updates with ENQ       
+                                       datasets can sometimes 
+                                       causes "?Interrupt on  
+                                       channel 0"             
+
+598   116B(146)    SHKLAR-2/8/80       INFO STATUS, BASE and    MINOR    
+                                       SET should say whether 
+                                       the set is ACCESS RO in
+                                       the comment field.     
+
+1956  116B(146)    CARR-5/30/84        DMD parser complains     MINOR    
+                                       NOT ALIGNED when COMP  
+                                       attr specified w/no    
+                                       LENGTH but is still    
+                                       aligned                
+
+2051  116B(144)    DUESEN 4/30/85      TYPE SYSPAGE(0) gets     NO ENTRY 
+                                       ill. channel # warning,
+                                       but LET SYSPAGE(0)...  
+                                       is treated as if legal.
+
+2052  116B(144)    DUESEN 5/2/84       PRINT on n in PERFORM    NO ENTRY 
+                                       gets MI18 if n not     
+                                       init'ed, & HEAD/FOOTING
+                                       on n preceded          
+                                       PERFORM.PERFORM should 
+                                       clear all head/footings
+
+1969  116B(143)    B.DUFF-8/6/84       Wants SYSCOLNAME for     NO ENTRY 
+                                       COLLECTION name        
+
+2012  116B(143)    HPZ-1/10/85         Add subtopic print       NO ENTRY 
+                                       inhibitor functionality
+                                       to HELP and set max    
+                                       number of help keywords
+                                       to 1000 for HELP22.EXE.
+
+2014  116B(143)    PZELL-1/17/85       The 'SCRATCH DEV:' in    NO ENTRY                              SYSTEM 1022 PROBLEMS/CHANGES       Jun-11-1986
+
+
+                                       the LOADING SECTION of 
+                                       DMD does not work      
+                                       correclty              
+
+2021  116B(143)    SMEDBERG-1/28/85    Make SORT handle         NO ENTRY 
+                                       Swedish character set. 
+
+2034  116B(143)    MEADOWS-2/25/85     When loading a BLOCKED   NO ENTRY 
+                                       6-BIT DMI the records  
+                                       in the last DMI block  
+                                       don't get loaded.      
+
+2047  116B(143)    KOEPF 4/1/85        OPENing dataset with     NO ENTRY 
+                                       wrong password         
+                                       sometimes gives NXM.   
+
+2048  116B(143)    LUKAS-2/25/85       Alternate dataset        NO ENTRY 
+                                       reference w/ no record 
+                                       selected may use       
+                                       previous value         
+
+2049  116B(143)    LUKAS-4/17/85       INF STR sometimes omits  NO ENTRY 
+                                       FILLER statements      
+
+2007  116B(143)    Weum-12/17/84       TRANSACT with DUP        LESS     
+                                       MASTER MESSAGE put bad   IMPORTANT
+                                       sysids into DME        
+
+2037  116B(130)    DUFF 2/22/85        DBEXEC from              NO ENTRY 
+                                       execute-only Fortran-6 
+                                       or 7 prog. gets PMAP   
+                                       failure mapping from   
+                                       topfork to subfork     
+
+2028  116B(126)    FDH-2/20/85         A change command which   NO ENTRY 
+                                       has a colon in the     
+                                       numeric expression, a  
+                                       typo, causes           
+                                       unsuspected values to  
+                                       be stored.             
+
+2031  116B(126)    FDH-2/22/85         Joined attribute         NO ENTRY 
+                                       references may get     
+                                       disabled if joined to a
+                                       collection.            
+
+2032  116B(126)    STAPLETON-2/22/85   When loading 6_BIT DMI   NO ENTRY 
+                                       last record gets       
+                                       dropped if record byte 
+                                       count is greater then  
+                                       DMD last column.       
+
+2035  116B(126)    MEADOW-2/25/85      When dumping a blocked   NO ENTRY 
+                                       6-bit data file the new
+                                       DMI does not get       
+                                       blocked according to   
+                                       DMD.                                                SYSTEM 1022 PROBLEMS/CHANGES       Jun-11-1986
+
+
+
+2040  116B(126)    JACKSON-2/7/85      Large values for         NO ENTRY 
+                                       SYSTENQ result in short
+                                       sleep time under       
+                                       TOPS-10.               
+
+2105  116B(125)    BARR-9/4/85         DBADP call complains     NO ENTRY 
+                                       that 1022 not          
+                                       initialized            
+
+2033  116B(123)    BUTLER-1/8/86       Some Host Language       NO ENTRY 
+                                       counted string         
+                                       arguments (e.g.        
+                                       passwords) are         
+                                       delimited by space     
+                                       rather than count      
+
+2026  116B(122)    BUTLER-1/8/86       DBCSET returns garbage   NO ENTRY 
+                                       if called w. no d/s    
+                                       open. Make it return 0 
+                                       and document this.     
+
+2027  116B(122)    PARTINGTON-2/15/85  CLEAR COLLECT before     LESS     
+                                       any datasets OPENed      IMPORTANT
+                                       gets NXM.              
+
+1990  116B(121)    SHKLAR-10/22/84     AUDIT LIST SINCE <date>  NO ENTRY 
+                                       TILL <date> doesn't    
+                                       list only <date> but   
+                                       lists beginning to     
+                                       <date>                 
+
+2015  116B(121)    PZELL-1/22/85       LET allows a qualified   NO ENTRY 
+                                       attribute for a value  
+                                       assignment.  It should 
+                                       flag it as a CS97      
+                                       error.                 
+
+2022  116B(121)    PZELL-1/29/85       When using SCRATCH in a  NO ENTRY 
+                                       DMD syntax error occur 
+                                       when the optional      
+                                       LOADING SECTION is     
+                                       missing.               
+
+909   116B(121)    CAULFIELD-10/14/80  LOAD clears selection    MINOR    
+                                       group of current data  
+                                       set                    
+
+1944  116B(116)    OOSTRIK-5/3/84      TECO FILE cmd while      MINOR    
+                                       working from SFD writes
+                                       output file to UFD.    
+
+2016  116B(112)    KOEPF-9/11/84       HLI DBSET <alias> fails  LESS     
+                                       if 2 aliases are the     IMPORTANT
+                                       same in first 5        
+                                       characters.            
+                             SYSTEM 1022 PROBLEMS/CHANGES       Jun-11-1986
+
+
+2013  116B(111)    UPTON-1/11/85       TRANSACT from READONLY   NO ENTRY 
+                                       dataset doesn't work   
+                                       from DBEXEC            
+
+2023  116B(111)    CORWIN-1/31/85      ERRM during sort of      NO ENTRY 
+                                       sorted DUMP (e.g. SO7) 
+                                       doesn't release file   
+                                       handles for new DMS/DMI
+                                       files                  
+
+2025  116B(111)    GERMAN 2/6/85       Auto Audit recovery      NO ENTRY 
+                                       mode is set from an    
+                                       explicit AUDIT FIX     
+                                       command                
+
+2030  116B(111)    GERMAN 2/22/85      If a wrong password is   NO ENTRY 
+                                       given in a DBOPEN,     
+                                       wrong message is given 
+
+2043  116B(111)    CORWIN-3/20/85      1022's COBOL PMAP cache  NO ENTRY 
+                                       conflicts with pages   
+                                       676-677 that are used  
+                                       for COBOL SORT         
+
+2005  116B(110)    PZELL-12/11/84      DUMP SET from large      NO ENTRY 
+                                       collections can dump   
+                                       records that can't be  
+                                       read                   
+
+2010  116B(110)    PZELL-1/4/84        A write checkpoint,i.e.  NO ENTRY 
+                                       UPDATE ON, does not get
+                                       into the DML file      
+                                       during a system crash  
+                                       when using PA1050.     
+
+2011  116B(110)    SEIPEL-1/8/85       A DEFINE command given   NO ENTRY 
+                                       after HELP causes an   
+                                       illegal memory         
+                                       reference.             
+
+1993  116B(110)    FORDHAM-10/30/84    AUDIT FIX doesn't work   IMPORTANT
+                                       if AUDIT START uses    
+                                       default PRE value.     
+
+2004  116B(107)    SCHMIDT-11/14/84    Fortran-6 OTS which      NO ENTRY 
+                                       don't ORG at 400 will  
+                                       cause a Fatal error.   
+
+1977  116B(107)    MCNEANY-8/22/84     An alternate dataset     MINOR    
+                                       reference in print     
+                                       statement after DISABLE
+                                       JOIN ignores DISABLEd  
+                                       condition.             
+
+1978  116B(107)    GLAZER-8/29/84      Some collection sets     MINOR    
+                                       which have been sorted 
+                                       may cause a FATAL on                                SYSTEM 1022 PROBLEMS/CHANGES       Jun-11-1986
+
+
+                                       close                  
+
+1973  116B(107)    DUNN-8/16/84        Make KEY command use     LESS     
+                                       SYSSCRDEV for scratch    IMPORTANT
+                                       device                 
+
+2003  116B(106)    BAER-12-3-84        PERFORM SA-compiled      NO ENTRY 
+                                       prog from DBEXEC gets  
+                                       bogus vsn skew;PERFORM 
+                                       dbexec-compiled prog   
+                                       from SA gets ditto     
+
+2008  116B(106)    UPTON-12/28/84      DBOPEN "ACCESS" option   IMPORTANT
+                                       sometimes give update  
+                                       access instead of      
+                                       readonly.              
+
+2000  116B(105)    JONES 11/15/84      Load,dump,and create     NO ENTRY 
+                                       store garbage in place 
+                                       of the directory string
+                                       owner in the homeblock 
+                                       if a getseg is done    
+
+2001  116B(105)    STR-11/9/84         Qualified attrsibutes    NO ENTRY 
+                                       in non-interactive ADD 
+                                       do not work correctly. 
+
+1995  116B(104)    B.DUFF-11/8/84      $EXP function gets       NO ENTRY 
+                                       illegal memory         
+                                       reference              
+
+1991  116B(102)    CARR-10/25/84       ALIGNED file LOADed as   NO ENTRY 
+                                       DELIMITED              
+
+1992  116B(102)    CARR-10/24/84       TRANSACT to UNBUNDLED    NO ENTRY 
+                                       ADDITIVE attribute     
+                                       fails if transaction   
+                                       file datatype doesn't  
+                                       equal masters bundled  
+                                       type                   
+
+1989  116B(102)    JONES-10/12/84      opening a password       LESS     
+                                       protected dataset with   IMPORTANT
+                                       wrong pswd fatals out  
+
+1119  116B(101)    EASTBURN-2/4/81     Suggests SIN, COS, LOG,  CRITICAL 
+                                       and EXP functions for  
+                                       PL1022                 
+
+1959  116B(100)    CARR-5/30/84        Update block padded      MINOR    
+                                       with garbage           
+
+1966  116B(100)    AHUME-7/24/84       COMPILE gets CP2 err if  MINOR    
+                                       statement terminating  
+                                       the compiled segment is
+                                       not followed by at     
+                                       least 1 char                                        SYSTEM 1022 PROBLEMS/CHANGES       Jun-11-1986
+
+
+
+1953  116B(100)    CARR-5/30/84        INFORM STRUCTURE         LESS     
+                                       doesn't show COMP        IMPORTANT
+                                       attrs.  Does in 115.   
+
+1979  116B(100)    DUESEN-8/29/84      COMPILE should detect &  IMPORTANT
+                                       reject zero-length     
+                                       source file            
+
+1983  116B(100)    WEITZEL-9/14/84     SORTed TRANSACT of       IMPORTANT
+                                       unbundled datasets     
+                                       fails w/ duplicate     
+                                       master non-text locator
+                                       values.                
+
+
+
+                             TOTAL NUMBER OF DONE ENTRIES: 166
+
+
+
+STATUS: BEWARED
+
+ID    SOLUTION     NAME-DATE           DESCRIPTION              FIX      
+      VERSION                                                   PRIORITY 
+--    --------     ---------           -----------              ------------
+
+1214               TURNER-4/17/81      DBCORE and FUNCT.        CRITICAL 
+                                       interact incorrectly in
+                                       COBOL                  
+
+
+
+                             TOTAL NUMBER OF BEWARED ENTRIES: 1
+
+
+
+STATUS: USER ERROR
+
+ID    SOLUTION     NAME-DATE           DESCRIPTION              FIX      
+      VERSION                                                   PRIORITY 
+--    --------     ---------           -----------              ------------
+
+2058               WEISS-5/8/85        DEFINE in PL segment     NO ENTRY 
+                                       does not initialize    
+                                       variables.             
+
+2082               BUTLER-1/8/86       @Compuserve,LOAD         NO ENTRY 
+                                       w/SCRATCH DKA: in DMD  
+                                       gets bogus'DKA not a   
+                                       disk' foll. by LD29(&  
+                                       no text for LD29 errm).
+                                       works in 6b(105)       
+
+2137               BUTLER-1/8/86       PRINT ALL from           NO ENTRY 
+                                       DBEXEC('USE...') prints
+                                       fewer lines than                                    SYSTEM 1022 PROBLEMS/CHANGES       Jun-11-1986
+
+
+                                       identical DMC from SA  
+                                       or interactive DBEXEC. 
+
+2168               CARR-2/24/86        User feels               NO ENTRY 
+                                       DBINFO('SYSID',...)    
+                                       shouldn't give fatal   
+                                       error                  
+
+
+
+                             TOTAL NUMBER OF USER ERROR ENTRIES: 4
+
+
+
+STATUS: CAN'T REPRODUCE
+
+ID    SOLUTION     NAME-DATE           DESCRIPTION              FIX      
+      VERSION                                                   PRIORITY 
+--    --------     ---------           -----------              ------------
+
+1341  114D(127)    ROOT-9/1/81         DBEXEC return            CRITICAL 
+                                       unexpected period when 
+                                       passed string ending   
+                                       with @FILENAME         
+                                       construction.          
+
+1326  114D(122)    PATTERSON-8/7/81    APPEND of two unbundled  CRITICAL 
+                                       data sets adds garbage 
+                                       onto end of record     
+
+1279  114D(110)    SHKLAR-6/21/81      COBOL DBVAL of TEXT      CRITICAL 
+                                       into DISPLAY-7 PIC     
+                                       S9(10) produces HL37   
+                                       error                  
+
+267                BAER-10/31/79       If connected to another  NO ENTRY 
+                                       disk, INF STR gives    
+                                       wrong name.            
+
+919                BENNETT-10/23/80    1022SA OTS command       NO ENTRY 
+                                       fails if a previous    
+                                       LINK command is in     
+                                       TMPCOR                 
+
+968                GRISSOLM-11/26/80   The 1022SA RESIDE        NO ENTRY 
+                                       command leaves the     
+                                       protection on the file 
+                                       <000> on 10's; doesn't 
+                                       happen on other files. 
+
+970                EASTBURN-12/1/80    REPORT with MAP but no   NO ENTRY 
+                                       GETREC in SEC G for aux
+                                       dataset never gets     
+                                       record, also leaves set
+                                       in GLOBAL mode         
+
+974                ROBERTS-12/1/80     DBADDR ADDS TEXT FIELDS  NO ENTRY                              SYSTEM 1022 PROBLEMS/CHANGES       Jun-11-1986
+
+
+                                       INCORRECTLY FROM A     
+                                       COMPUTATIONAL ARRAY    
+
+982                LOMBARD-12/4/80     TRANSACT of out of       NO ENTRY 
+                                       range integer puts     
+                                       incorrect values in    
+                                       keys and points to     
+                                       wrong record in DME    
+
+983                ROOT-12/8/80        DMC with several #TYPEs  NO ENTRY 
+                                       gets fatal internal    
+                                       error in QA1400        
+
+986                ROOT-12/9/80        APPEND of 1E37 to a      NO ENTRY 
+                                       REAL field gets out of 
+                                       range error            
+
+988                ROOT-12/9/80        LOAD gets randon OP1     NO ENTRY 
+                                       error (device is not   
+                                       DSK)                   
+
+989                WELSH-12/9/80       A DMC with many #COM's   NO ENTRY 
+                                       in it gets Fatal at    
+                                       434233 in QA           
+
+993                VARANESE-12/9/80    UNKEY ALL dies if no     NO ENTRY 
+                                       attributes are keyed   
+
+995                HODGSON-12/10/80    An HL or HR DBFIND LAST  NO ENTRY 
+                                       AND ... which bombs out
+                                       on core, gets fatal    
+                                       internal error trying  
+                                       to clean up.           
+
+996                PERKOVIC-12/10/80   RUN 1022 / PRINT TOTALS  NO ENTRY 
+                                       => ? Fatal System 1022 
+                                       internal error...called
+                                       from 434531 in module  
+                                       QN1400                 
+
+998                SHKLAR-12/10/80     MI8 error message comes  NO ENTRY 
+                                       out in a strange place 
+
+1009               ROOT-12/16/80       FORTRAN program gets a   NO ENTRY 
+                                       PDL overflow           
+
+1011               ROOT-12/15/80       Arithmetic overflows     NO ENTRY 
+                                       and 0 divides aren't   
+                                       reported from DBEXEC   
+
+1028               SHKLAR-12/19/80     AUDIT LIST ON NUL:       NO ENTRY 
+                                       sends output to TTY:   
+
+1029               HOWARD-12/22/80     Turning error msgs off   NO ENTRY 
+                                       still generates a <CR> 
+                                       on error.              
+                             SYSTEM 1022 PROBLEMS/CHANGES       Jun-11-1986
+
+
+1030               KALISZ-12/23/80     AUDIT MERGE gets an      NO ENTRY 
+                                       SY21 on finishing in   
+                                       114C, not in 114B.     
+
+1033               ROOT-12/30/80       F40 program gets SY21    NO ENTRY 
+                                       doing DBDEL            
+
+1035               SHKLAR-12/30/80     INFO AUDIT shows FAST    NO ENTRY 
+                                       as an enabled condition
+                                       when it wasn't         
+
+1049               WEIGLE-1/6/81       MAP LOGICAL AND with     NO ENTRY 
+                                       multiple locators from 
+                                       0 records gets wrong   
+                                       answer; happens in 114B
+                                       & C                    
+
+1058               PATTERSON-1/7/81    A FORTRAN program that   NO ENTRY 
+                                       DBADDs 18 records to an
+                                       empty dataset gets an  
+                                       FD5; doesn't happen if 
+                                       d/s has 1 rec.         
+
+1091               FOLEY-1/23/81       1022SA DBA command get   NO ENTRY 
+                                       an illegal instruction 
+
+1098               ROOT-1/23/81        TEXTR treats dates in    NO ENTRY 
+                                       files different than   
+                                       dates in variables.    
+
+1111               CONROY-1/28/80      DUMP SORTED with 2       NO ENTRY 
+                                       atts, many recs gets   
+                                       I/O to unassigned      
+                                       channel on a 10.       
+
+1114               BARNES-2/3/81       Find >300 recs, SORT     NO ENTRY 
+                                       INT_ATT, DUMP SET FOO  
+                                       SORTED INT_ATT gets a  
+                                       PA1050 (I-O to         
+                                       unassigned channel).   
+
+1121               PATTERSON-2/6/81    A ^L at the end of a     NO ENTRY 
+                                       DMD in 114C causes LD5 
+                                       errors in 114C, not B. 
+
+1126               CHOMICZ-2/9/81      MAP LOGICAL AND VIA      NO ENTRY 
+                                       SYSID finds 0 records  
+                                       in standalone and HL.  
+
+1131               STEIN-2/11/81       Can get error codes      NO ENTRY 
+                                       when there is an error 
+                                       in DBEXEC, but not the 
+                                       message with DBERRT    
+                                       turned on.             
+
+1152               HOPKINS-2/22/81     ADMIT * 1234 UPDATE is   NO ENTRY 
+                                       not recognized by OPEN                              SYSTEM 1022 PROBLEMS/CHANGES       Jun-11-1986
+
+
+
+1154               PENCE-2/25/81       APPEND PRODUCES A NULL   NO ENTRY 
+                                       RECORD WITH BAD KEYS   
+
+1156               PATTERSON-2/24/81   TRANSACT and DEFINE      NO ENTRY 
+                                       sequence cause illegal 
+                                       memory reference       
+
+1162               WEIGLE-2/27/81      DBMAC doesn't set        NO ENTRY 
+                                       SYSREPSYNC to 1 as it  
+                                       should                 
+
+1169               SHIFF-2/15/81       Audit backup complains   NO ENTRY 
+                                       about missing update   
+                                       blocks                 
+
+1178               GARLAND-3/12/81     File <ANDY>UNBFD3.DMC    NO ENTRY 
+                                       gets reliable FD3 file 
+                                       damaged msg, 114C.     
+
+1185               HOPKINS-3/23/81     DBGET gets messed up     NO ENTRY 
+                                       after filling a LOCKED 
+                                       attribute with blanks. 
+
+1190               GRANT-3/24/81       1022SA INFO command      NO ENTRY 
+                                       sometimes gives a      
+                                       HEADER ERROR when      
+                                       there's nothing wrong  
+                                       with the EXE.          
+
+1194               ROOT-3/26/81        DBEXEC call causes       NO ENTRY 
+                                       detached job to freeze 
+                                       in TS wait             
+
+1204               HITCHCOCK-4/10/81   Sorted TRANSACT of 6     NO ENTRY 
+                                       locators using         
+                                       unbundled sets         
+                                       incorrectly reports    
+                                       transact record as out 
+                                       of order               
+
+1207               GRANT-4/14/81       114C OPEN works          NO ENTRY 
+                                       incorrectly with       
+                                       logical definitions if 
+                                       d/s names are the same.
+
+1229               GRANT-4/27/81       A DUMP SET on a ranged   NO ENTRY 
+                                       integer with a DESC    
+                                       clause can change the  
+                                       data.                  
+
+1258               TOMANDL-5/20/81     TRANSACT does not rekey  NO ENTRY 
+                                       unmapped date of       
+                                       change, also CHANGE    
+                                       after TRANSACT causes  
+                                       FD8                    
+                             SYSTEM 1022 PROBLEMS/CHANGES       Jun-11-1986
+
+
+1263               PENCE-5/26/81       DBEXEC in an input loop  NO ENTRY 
+                                       doesn't print errors,  
+                                       and doesn't trap them. 
+
+1322               SOLOMON-8/5/81      IMPROPER ROUNDING        NO ENTRY 
+                                       DURING ADD             
+
+1396               NOVACK-10/22/81     DBCLOS apparently got    NO ENTRY 
+                                       (SY20) Memory manage.  
+                                       error - int. buf.      
+                                       overwritten            
+
+1418               MALDEN-11/12/81     TYMSHARE accounting      NO ENTRY 
+                                       causes DBADD error     
+
+1712               HOLLIS-1/10/83      DBC74 call can get ill.  NO ENTRY 
+                                       mem. ref. tring to     
+                                       checksum non-exeistant 
+                                       page                   
+
+1823               CARR-9/10/83        In interactive ADD,      NO ENTRY 
+                                       values should be       
+                                       evaluated according to 
+                                       current datatype and   
+                                       conversion and length  
+                                       errors reported immed. 
+
+509                HOFFMAN-4/3/80      OPEN FOO. DPL START.     MINOR    
+                                       CLOSE. CLOSE. DPL END. 
+                                       gets PA1050 error.     
+
+811                BENNETT-8/5/80      DUMP and APPEND don't    MINOR    
+                                       report REAL to DATE    
+                                       conversion error       
+                                       properly               
+
+1236               JACKSON-4/30/81     PRINT preceded by        MINOR    
+                                       TRANSACT of unbundled  
+                                       sets prints record when
+                                       it should print nothing
+
+1266               GRANT-5/27/81       Report Generator unable  MINOR    
+                                       to recover from        
+                                       interactive errors.    
+
+1410               GARLAND-11/6/81     1022 sees no extension   MINOR    
+                                       when reading           
+                                       PS:<ANDY>OUT.DDO as    
+                                       file descr.  PS:OUT.DDO
+                                       works fine.            
+
+1758               WOOD-3/14/83        Ignore Damage gets       MINOR    
+                                       fatal error at setflg+1
+                                       in module qwd (sequence
+                                       was open, load, change,
+                                       ignore)                
+                             SYSTEM 1022 PROBLEMS/CHANGES       Jun-11-1986
+
+
+960                ROOT-11/13/80       APPEND DATA X BUFFER 80  LESS     
+                                       gets ill mem ref         IMPORTANT
+
+1134               WEIGLE-2/17/81      Redefining large text    LESS     
+                                       array sometimes causes   IMPORTANT
+                                       SY20; obscure case.    
+
+1147               ROGERS-2/20/81      REPORTS SENT DIRECTLY    LESS     
+                                       TO LPT: W/SET TAPE FF &  IMPORTANT
+                                       SYSREPSYNC DON'T PRINT 
+                                       FF CORRECTLY           
+
+1215               HOFFMAN-4/20/81     Having a COMP attribute  LESS     
+                                       in an ASCII DMD on       IMPORTANT
+                                       LOAD/CREATE causes     
+                                       strange results.       
+
+1235               EASTBURN-4/31/81    DBCHNG IN COBOL OF TEXT  LESS     
+                                       ATTR. TO COMP FIELD      IMPORTANT
+                                       DIES IN PA1050         
+
+1289               PENCE-6/25/81       MAP TO 1 VIA unkeyed     LESS     
+                                       attr. incurs FI1         IMPORTANT
+                                       ("attr. not keyed").   
+                                       DBSET 1 shows empty    
+                                       selection grp, but     
+                                       SYSNREC NE 0.          
+
+1379               WEIGLE-10/7/81      CREATE/LOAD is supposed  LESS     
+                                       to ignore ALIGN option   IMPORTANT
+                                       but doesn't.           
+
+1381               HOLZMAN-10/9/81     Simultaneous update to   LESS     
+                                       DMS gets input errors    IMPORTANT
+                                       (messages sound        
+                                       conflicting).          
+
+1425               COWIE-11/12/81      COBOL program with       LESS     
+                                       DBERRH trapping gets     IMPORTANT
+                                       UP1 - exits but should 
+                                       not                    
+
+1457               SHESKO-12/16/81     From COBOL, DBVAL        LESS     
+                                       respects "END." but not  IMPORTANT
+                                       "FIX." option. DBFIND  
+                                       respects "FIX.", but   
+                                       not "END." option.     
+
+1508               NIX-2/18/82         DBDBUG interferes with   LESS     
+                                       user's FORTRAN program.  IMPORTANT
+
+1533               SHKLAR-3/29/82      SORT                     LESS     
+                                       <double-integer-constan  IMPORTANT
+                                       t> fails w. ill. mem.  
+                                       ref.                   
+
+1596               DUESENBERRY-7/21/8  SPSS SUBFILE doesn't     LESS                                  SYSTEM 1022 PROBLEMS/CHANGES       Jun-11-1986
+
+
+                   2                   append to existing file  IMPORTANT
+                                       if preceded by another 
+                                       SPSS cmnd. In          
+                                       4E(111),5A(206),BUT not
+                                       4E(112),5A(207).       
+
+1369               WEIGLE-9/28/81      TRANSACT w/ locator      IMPORTANT
+                                       value out of range gets
+                                       fatal error. Subsequent
+                                       KEY and TRANSACT gets  
+                                       (IO2).                 
+
+1494               TAYLOR-2/11/82      Unexplained key table    IMPORTANT
+                                       damage to file during  
+                                       single access ADD -    
+                                       FIND NAME BEG M yields 
+                                       FD7 in <PHIL>LETTER.DMS
+
+1516               BENNETT-3/4/82      IF compares negative     IMPORTANT
+                                       double integer with    
+                                       integer incorrectly    
+
+1526               MCCARTY-2/24/82     DBFIND hoses records     IMPORTANT
+                                       which are subsequently 
+                                       DBADDed.               
+
+1614               NDC-7/21/82         1022SA doesn't           IMPORTANT
+                                       understand TOPS10 EXE  
+                                       files                  
+
+1900               KRIEK-2/2/84        MAPping within a         IMPORTANT
+                                       multi-dataset file gets
+                                       ill mem ref.           
+
+198                FARREL-10/9/79      Map and later dbset      CRITICAL 
+                                       back does not preserve 
+                                       selection group. See   
+                                       4C195.                 
+
+967                SCHIFF-11/26/80     DME for APPEND gives     CRITICAL 
+                                       wrong SYSID for bad    
+                                       records.               
+
+
+
+                             TOTAL NUMBER OF CAN'T REPRODUCE ENTRIES: 79
+
+
+
+STATUS: TABLED
+
+ID    SOLUTION     NAME-DATE           DESCRIPTION              FIX      
+      VERSION                                                   PRIORITY 
+--    --------     ---------           -----------              ------------
+
+929                MCENNIS-10/28/80    1022SA doesn't handle    NO ENTRY 
+                                       multiple structure                                  SYSTEM 1022 PROBLEMS/CHANGES       Jun-11-1986
+
+
+                                       search lists           
+
+1001               PERKOVIC-12/12/80   @1022 / * DEFINE TEXT    NO ENTRY 
+                                       5001 A. ACCEPT A. /    
+                                       "This is A" / ? (SY20) 
+                                       Memory management error
+                                       - internal buffer      
+                                       overwritten            
+
+1051               PERKOVIC-1/7/81     DUMP DATA with           NO ENTRY 
+                                       overlapping fields gets
+                                       a SY20 error.          
+
+1140               MANCUSO-2/18/81     DBERR does not trigger   NO ENTRY 
+                                       if CS146 was           
+                                       encountered in a DBEXEC
+                                       of a DMC               
+
+1255               BROWN-5/18/81       APPEND command requires  NO ENTRY 
+                                       tapes to be LOADED     
+                                       before they can be     
+                                       appended. Suggested    
+                                       that APPEND accomodate 
+                                       tapes.                 
+
+1399               SHKLAR-10/29/81     For efficiency, both     NO ENTRY 
+                                       SORT and SEARCH should 
+                                       ignore sorted order of 
+                                       sel.grp.               
+
+2170               CARR-2/24/86        The word END in a        NO ENTRY 
+                                       hollerith string in a  
+                                       FORMAT list will end   
+                                       the format             
+
+263                SHKLAR-11/01/79     KEYING msgs dont print   MINOR    
+                                       in fractions of pages, 
+                                       so they don't add up   
+
+271                BENNETT-11/05/79    ON CHANGE SYSPAGE        MINOR    
+                                       triggers twice at start
+                                       of report              
+
+339                SHKLAR-11/25/79     SORT KEY leaves          MINOR    
+                                       channels in use when it
+                                       bombs out because of no
+                                       disk space.            
+
+383                BAER-1/16/80        RETURN without CALL      MINOR    
+                                       does not print error   
+                                       message                
+
+647                GARLAND-5/28/80     FIND NOT <LE|LT|GE|GT>   MINOR    
+                                       does not do logical    
+                                       compliment of operator;
+                                       does logical inverse   
+                                       (NOT LE = GT)                                       SYSTEM 1022 PROBLEMS/CHANGES       Jun-11-1986
+
+
+
+681                HOPKINS-6/2/80      A CLOSE followed by a    MINOR    
+                                       GETREC in DPL fails    
+                                       with Fatal             
+
+764                SHKLAR-7/13/80      CS40 error doesn't come  MINOR    
+                                       out on PRINT 1 2 3 ON  
+                                       TTY: 4 5               
+
+891                DRAMMIZIO-9/24/80   On a 20, defining a      MINOR    
+                                       device with a dataset  
+                                       name, OPEN device gets 
+                                       a CS33 error.          
+
+903                SCHIFF-10/7/80      GETREC n after GETREC n  MINOR    
+                                       which fails gets       
+                                       garbage                
+
+923                SHKLAR-10/27/80     APPEND from a SET in     MINOR    
+                                       local mode appends no  
+                                       records and returns set
+                                       to global mode         
+
+924                MCNEANY-10/27/80    FIND ATT NOT EQ A B      MINOR    
+                                       parses different than  
+                                       documented.            
+
+928                HANSEN-10/29/80     Taking STDEV of many     MINOR    
+                                       values equal to .1 gets
+                                       strange error.         
+
+972                HOWARD-12/2/80      DBFIND('ALL','AND'...)   MINOR    
+                                       does not get CS69      
+                                       error, just does FIND  
+                                       ALL.                   
+
+977                BOETTNER-11/21/80   Labels may begin with    MINOR    
+                                       numbers instead of     
+                                       alphas                 
+
+991                BOETTNER-12/9/80    TRANSACT prints keying   MINOR    
+                                       attribute message when 
+                                       there's no keying done 
+
+997                PERKOVIC-12/10/80   DROP doesn't work as     MINOR    
+                                       documented: No warning 
+                                       if not in local mode.  
+                                       Old record image       
+                                       retained (not returned 
+                                       as nulls).             
+
+1004               PERKOVIC-12/15/80   DUMP ... DESC with no    MINOR    
+                                       filespec does not      
+                                       complain, does not use 
+                                       expected default DMD   
+                                       file (instead uses     
+                                       existing DMS structure                              SYSTEM 1022 PROBLEMS/CHANGES       Jun-11-1986
+
+
+
+1120               PLATTSMIER-2/5/81   SPSS command front end   MINOR    
+                                       should make transbuf   
+                                       for upper case file and
+                                       subfile names.         
+
+1175               WEIGLE-3/9/81       Printing SYSEXP in HL    MINOR    
+                                       system comes out as    
+                                       1/1/64.                
+
+1192               MCNEANY-3/25/81     XOR and EQV are not      MINOR    
+                                       recognized in FIND ATT 
+                                       CT VAL1 {XOR/EQV} VAL2.
+
+1205               SHKLAR-4/13/81      #Z from ADD cmd clears   MINOR    
+                                       type-ahead; it         
+                                       shouldn't.             
+
+1220               SHESKO-4/23/81      VALUES ON filename       MINOR    
+                                       causes the low segment 
+                                       to grow 1/4 page each  
+                                       time in a loop.        
+
+1283               LANGDON-6/23/81     DBEXEC from COBOL        MINOR    
+                                       doesn't error trap if  
+                                       argument variable is   
+                                       completely filled      
+
+1386               SOLA-10/20/81       A selection command      MINOR    
+                                       which contains SYSID on
+                                       the right hand side    
+                                       gets "(CS3) Value was  
+                                       expected".             
+
+1387               SHKLAR-10/20/81     ACCEPT int-variable,     MINOR    
+                                       -<RET> or +<RET>       
+                                       produces no error, goes
+                                       in as a zero.          
+
+1464               PERKOVIC-1/19/82    The sequence FIND /      MINOR    
+                                       GETREC / DROP / CHANGE 
+                                       modifies the "dropped" 
+                                       record.                
+
+1517               BENNETT-3/4/82      INIT APPEND puts nulls   MINOR    
+                                       in file                
+
+1528               GERARD 3/19/82      CERTAIN DATE VALUES      MINOR    
+                                       DONT PRINT WELL. IN    
+                                       PARTICULAR O -1 -2 ETC.
+                                       WITH F5 FMT            
+
+1553               DUFF-5/7/82         Comments w/ escape       MINOR    
+                                       sequences are          
+                                       terminated by the      
+                                       escape.                
+                             SYSTEM 1022 PROBLEMS/CHANGES       Jun-11-1986
+
+
+1584               SHKLAR-6/24/81      INFO FILES on TOPS-20    MINOR    
+                                       should show generation 
+                                       numbers                
+
+1586               SHKLAR-6/25/82      OPEN offline-DMS-file    MINOR    
+                                       gives OP7 intead of OP2
+
+1588               SHKLAR-6/28/82      INFO ON FILE.EXT FILES   MINOR    
+                                       lists JFN and name of  
+                                       FILE.EXT; 114 doesn't. 
+
+1641               MCCORRISON-9/3/82   Call to DBINFO reset to  MINOR    
+                                       zero an array index    
+
+1648               BARNES-9/22/82      DMC w/o CRLF at end      MINOR    
+                                       blows up.  Suggest     
+                                       making EOF = CRLF      
+
+1760               BENNETT-3/15/83     TEXT assignment in       MINOR    
+                                       PRINT with conversion  
+                                       function (like $TEXTR) 
+                                       loses precision        
+
+1826               CARR-9/12/83        Control Z is not         MINOR    
+                                       recognized as EOF from 
+                                       TTY on TOPS-20         
+
+1829               CARR-9/12/83        In interactive ADD for   MINOR    
+                                       display attributes,    
+                                       length of response,    
+                                       rather than standard   
+                                       form is checked against
+                                       attr length            
+
+1831               ZWICKER-9/14/83     INIT n TTY:. REL n.      MINOR    
+                                       PRINT ON n "blah".     
+                                       Should return FO3, but 
+                                       prints anyway          
+
+1862               YOUNG-12/2/83       Records not delimited    MINOR    
+                                       by linefeed aren't     
+                                       APPENDED.              
+
+858                ROOT/CLYDE-8/18/80  Data going into new      LESS     
+                                       dataset should match     IMPORTANT
+                                       exact range            
+                                       requirements or get    
+                                       error msg              
+
+905                SHKLAR-10/8/80      PRINT -123456 FMT        LESS     
+                                       P$$$,$$$,$$$S drops      IMPORTANT
+                                       last digit             
+
+985                SH-12/9/80          Embedded single quote    LESS     
+                                       mark is taken as start   IMPORTANT
+                                       of a literal, as in FMT
+                                       P99/'99 END.                                        SYSTEM 1022 PROBLEMS/CHANGES       Jun-11-1986
+
+
+
+1002               PERKOVIC-12/12/80   DEFINE TEXT does not     LESS     
+                                       check for length out of  IMPORTANT
+                                       range, gets CS13 error;
+                                       control-E causes       
+                                       illegal instruction    
+                                       from PA1050.           
+
+1036               FLAMMANG-12/30/80   Automatic audit          LESS     
+                                       recovery with RETRY      IMPORTANT
+                                       bombs with an ill.     
+                                       inst.                  
+
+1055               STEIN-1/8/81        Specifying <000> for     LESS     
+                                       prot in LOADING SECTION  IMPORTANT
+                                       gets system def. prot, 
+                                       not <000>.             
+
+1079               EASTBURN-1/22/81    Using SYSID as a value   LESS     
+                                       in ADD causes null       IMPORTANT
+                                       fields to be added     
+
+1123               SHKLAR-2/9/81       1022 should not check    LESS     
+                                       length of DATE attr in   IMPORTANT
+                                       ADD cmd for UNBUNDLED  
+                                       data set               
+
+1124               SHKLAR-2/9/81       1022 should not CREATE   LESS     
+                                       d.s. with DATE attrs LE  IMPORTANT
+                                       5 chars long           
+
+1141               MOSS-2/18/81        Real source not          LESS     
+                                       converted to integer     IMPORTANT
+                                       target in set to set   
+                                       append/transact.       
+
+1197               BOETTNER-3/30/81    TRANSACT LOCATOR SYSID   LESS     
+                                       UNAPPLIED TTY does not   IMPORTANT
+                                       print sysid            
+
+1208               BENNETT-4/16/81     DUMP from aligned        LESS     
+                                       dataset doesn't align    IMPORTANT
+                                       unless DMD is specified
+
+1222               ESQUIVEL-4/24/81    LOAD and APPEND ignore   LESS     
+                                       nulls, even with an      IMPORTANT
+                                       LRECL clause, making   
+                                       some DMI's unusable.   
+
+1259               BENNETT-5/13/81     ALTERNATE DATASET        LESS     
+                                       REFERENCE AFTER          IMPORTANT
+                                       ^C/REENTER OF GLOBAL   
+                                       PRINT GETS WRONG RECORD
+                                       SOMETIMES              
+
+1273               SCHIFF-6/4/81       DBSORT from COBOL        LESS     
+                                       specifying 1K core get   IMPORTANT                             SYSTEM 1022 PROBLEMS/CHANGES       Jun-11-1986
+
+
+                                       memory prot. violation 
+
+1282               ROOT-6/23/81        COBOL signs not allowed  LESS     
+                                       in interactive ADD with  IMPORTANT
+                                       SYSCBLSIGN=2           
+
+1300               SHKLAR-7/16/81      DBEXEC after DBEND in    LESS     
+                                       COBOL causes loop        IMPORTANT
+
+1356               ROOT-9/11/81        LOAD doesn't allow       LESS     
+                                       trailing signs (114C     IMPORTANT
+                                       did)                   
+
+1363               ROOT-1/1/81         Using "&" continuation   LESS     
+                                       in FMT causes 1022 to    IMPORTANT
+                                       prompt for extra line  
+
+1365               ROOT-1/1/81         DBEXEC doesn't jump to   LESS     
+                                       continuation label for   IMPORTANT
+                                       unterminated FMT       
+
+1412               BENNETT-11/6/81     MAP doesn't convert      LESS     
+                                       between locator          IMPORTANT
+                                       attribute types or     
+                                       report error           
+
+1440               DUFF-12/23/81       IGNORE DAMAGE message    LESS     
+                                       is inaccurate. "Dataset  IMPORTANT
+                                       damage has (not) been  
+                                       fixed." Originally part
+                                       of BUG ID# 1406.       
+
+1452               PERK-1/12/82        SYSERRDEV does not seem  LESS     
+                                       to be getting the        IMPORTANT
+                                       correct SIXBIT device  
+                                       name after an error.   
+
+1463               MACINNES-1/19/82    TOPS-10: if path ne      LESS     
+                                       logged in ppn and .EXE   IMPORTANT
+                                       not on 1st str in      
+                                       search list then  PATH 
+                                       fails                  
+
+1475               CARR-2/1/82         Invalid input for        LESS     
+                                       INTEGER fields from DMI  IMPORTANT
+                                       get no error or wrong  
+                                       one                    
+
+1492               SHKLAR-2/10/82      Problems with            LESS     
+                                       interactive error        IMPORTANT
+                                       processing             
+
+1604               SHKLAR-7/19/82      Job 1 opens d/s with     LESS     
+                                       aud.trl., does UPD ON;   IMPORTANT
+                                       job 2 can't open d/s   
+
+1652               ROVEGNO-9/29/82     DUMP to magtape gets     LESS                                  SYSTEM 1022 PROBLEMS/CHANGES       Jun-11-1986
+
+
+                                       Fatal error              IMPORTANT
+
+1655               PENCE-9/30/82       With many datasets       LESS     
+                                       open, TECO gets          IMPORTANT
+                                       insufficient core error
+                                       and gets bad data.     
+
+1690               DUFF-11/24/82       PRINT attr FMT O6 END    LESS     
+                                       fails when attr = 12345  IMPORTANT
+                                       (for example). PRINT   
+                                       12345 FMT O6 END       
+                                       succeeds.              
+
+1793               SHKLAR-6/23/83      FIND attr @some.DMC can  LESS     
+                                       get inappropriate CS43.  IMPORTANT
+
+1778               HOPKINS-5/13/83     Calling DEC's SORT from  IMPORTANT
+                                       COBOL gives PDL        
+                                       overflow. cf           
+                                       1015,1116,1145,1313,134
+                                       5                      
+
+
+
+                             TOTAL NUMBER OF TABLED ENTRIES: 78
+
+   F@#2
