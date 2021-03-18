@@ -1,0 +1,167 @@
+;       MACRO ROUTINES TO BUILD A CIRCUIT
+;       TEAR A CIRCUIT DOWN,GET ONE CHAR IN OR OUT, AND SLEEP FOR 16 MS.
+;
+;
+;       ROUTINE TO BUILD A CIRCUIT...PASSES BACK THE PORT
+;       OR THE REASON FOR THE FAILURE
+;       CALL AS BCIR (LOGIN STREAM,PORT,ERROR)
+;       IF ERROR 0 THEN CIRCUIT BUILDT..AND PORT HAS THE BASE PORT #
+;       SET ERROR TO 0 BEFORE THE CALL
+        ENTRY BCIR
+BCIR:   0
+        MOVEI 5,@0(16)  ;GET THE NODE NUMBER
+        CREAUX 5,       ;BUILD THE CIRUCIT
+        JRST    BCIR1   ;ERROR
+        HRRZM   5,@1(16)        ;SEND BACK THE PORT NUMBER
+        JRA     16,3(16)        ;NORMAL RETURN
+BCIR1:  MOVEM  5,@2(16)        ;SEND BACK ERROR CODE
+        JRA     16,3(16)        ;AND RETURN
+;
+;
+;       ROUTINE TO ZAP A CIRCUIT
+;       CALL AS ZAP(PORT)
+        ENTRY ZAP
+ZAP:    0
+        MOVE    5,@0(16)
+        ZAPCIR  5,
+        JRA     16,1(16)
+;
+;
+;
+;       CHECK..ROUTINE TO SEE IF AUX CIRCUIT IS STILL THERE
+;       CALL AS  CHECK (RESPONSE)
+;       IF RESPONSE IS -1...THEN YOU AINT THERE NO MORE..
+;       THAT ONLY WORKS FOR ONE AUX CIRCUIT
+        ENTRY CHECK
+CHECK:  0
+        MOVE    6,[-1,,TABS]
+        AUXRED  6,
+        JRST    CK1             ;WE GOT AN ERROR
+        CAME    6,[0]           ;0 MEANS NO PORT
+        JRA     16,1(16)        ;JUST RETURN IF EVERYTHING IS COOL
+        MOVE    5,[-1]
+        MOVEM   5,@0(16)        ;SEND BACK A -1
+        JRA     16,1(16)        ;BYE BYE
+CK1:    MOVE    5,[-1]
+        MOVEM   5,@0(16)
+        JRA     16,1(16)
+TABS: BLOCK 3
+;
+;       END OF CHECK ROUTINE
+;
+;
+;       
+;
+;
+;
+;       OK..ROUTINE TO GET ONLY ONE CHAR IN.
+;       CALL AS GETCH (PORT,CHAR)
+;       IF NOTHING THERE...CHAR WILL BE RETURNED AS A -1
+;
+;
+        ENTRY GETACH
+GETACH: 0
+        SETZ    5,0            ;MAKE SURE ACC 5 IS CLEAN
+        HRLZ    6,@0(16)        ;GET THE PORT NUMBER
+        HRR     6,[0,,10]       ;CHECK TO SEE IF SOMETHING THERE
+        AUXCAL  6,5             ;RESULT IN ACC 5
+        JRST    INO1            ;NO DATA
+        HRR     6,[0,,1]        ;INPUT CHAR 8 LEVEL
+        AUXCAL  6,5
+        JFCL    0
+        HRRZM   5,2             ;SLAP IT AROUND
+        AND     2,[377]         ;8 BITS ONLY!!
+        HRRZM   2,@1(16)        ;AND SEND IT BACK
+        JRA     16,2(16)        ;AND SPLIT
+INO1:   MOVE    5,[-1]          ;SET UP FRO ALL 1'S
+        HRROM   5,@1(16)        ;SET IT BACK FOR AN ERROR
+        JRA     16,2(16)        ;BYE!!!!
+;
+;
+;
+;
+;       OUTPUT A SINGLE CHAR...
+;       CALL AS OUTONE(PORT,DATA)
+        ENTRY OUTONE
+
+OUTONE: 0
+        HRLZ    6,@0(16)        ;THE PORT NUMBER
+        HRR     6,[0,,3]        ;PACK IN THE REQUEST TYPE
+        MOVE    5,@1(16)        ;GET THE CHAR
+        AUXCAL  6,5             ;SEND IT OUT
+        JRA     16,2(16)        ;DON'T SEND ANYTHING BACK
+;
+;       ROUTINE TO GO BEDDY BYE FOR 50 MILLS (OR MILLISECONDS)
+;       PORT NUMBER PASSED...CALL AS DELAY(PORT)
+;
+;
+        ENTRY DELAY
+DELAY:  0
+        HRLZ    5,@0(16)        ;GET THE PORT NUMBER
+        LSH     5,^D10          ;PUT IN HIGH ORDER
+        IOR     5,[000100,,1]           ;SLEEP FOR 1 JIFFY
+        HIBER   5,              ;GO TO IT
+        JRA     16,1(16)        ;ERROR RETURN
+        JRA     16,1(16)        ;NORMAL RETURN
+;
+;
+;
+
+;
+;
+;
+        ENTRY CIRCK
+CIRCK:  0
+        HRL     5,@0(16)        ;COUNT TO LEFT HALF OF AC 5
+        HRR     5,1(16)         ;TABLE ADDR TO RIGHT HALF 
+        AUXRED  5,              ;READ AUX CIR STATE TABLE
+        JRST    CIRCKE          ;NO CIRCUITS
+        MOVEM   5,@2(16)        ;CIR CNT INTO CIRCNT
+        JRA     16,3(16)        ;RETURN
+;
+CIRCKE: MOVE    5,[-1]          ;CIRCNT = -1
+        MOVEM   5,@2(16)
+        JRA     16,3(16)
+;
+;       CALL GETSYS(A3)
+;       ---------------
+;       THIS ROUTINE GETS THE SYSTEM NUMBER AS A A3 INTEGER.
+;       OUTPUT  A3 - SYSTEM NUMBER IN A3 LIKE C33
+;
+        ENTRY GETSYS
+GETSYS: 0
+        MOVE    5,[0,,11]       ;[%CNFGO,,.GTCNF]
+        GETTAB  5,              ;GET SYSNO
+        MOVE    5,[201004000000];ERROR, RETURN BLANKS
+        AND     5,[777777700000];MASK OUT ALL BUT 1ST 3 CHARS
+        IOR     5,[,,20100]     ;MAKE A3 FORMAT WITH BLANKS
+        MOVEM   5,@0(16)        ;SET IN A3
+        JRA     16,1(16)        ;RETURN
+;       CALL GETNOD(NODE)
+;       -----------------
+;       GET ORIGINATING NODE NUMBER FOR THIS JOB
+;       OUTPUT  NODE - NODE NUMBER, 0 IF ERROR IN ACCESS
+;
+        ENTRY   GETNOD
+GETNOD: 0
+        MOVE    5,[-1,,-24]     ;[THIS PORT,,.GTLOG DATA]
+        GETTAB  5,              ;FETCH XXXXXXXXXXXXXXNNNNNNXXNNNNNNXXXXXXXX
+        MOVE    5,[0]           ;ERROR IN ACCESS
+        LSHC    5,-16           ;X...XNNNNNNXX NNNNNNX...X
+        LSH     5,-2            ;X...XNNNNNN NNNNNNX...X
+        AND     5,[33]          ;NNNNNN NNNNNNX...X
+        LSHC    5,6             ;NNNNNNNNNNNN
+        MOVEM   5,@0(16)        ;DEPOSIT NODE NUMBER
+        JRA     16,1(16)        ;RETURN
+;
+;       CALL DETJOB
+;       -----------
+;       DETATCH THE JOB AND CONTINUE RUNNING
+;
+        ENTRY   DETJOB
+DETJOB: 0
+        SETZ    5,              ;DETATCH
+        ATTACH  5,
+        JRA     16,0(16)
+;
+        END
