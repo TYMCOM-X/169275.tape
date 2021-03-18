@@ -1,0 +1,13 @@
+03:00:40 S ** 30-Apr-95 XEXEC %1(215) in frame 4 ** user PERPOPER **
+03:00:40 S run #1 job 7 is lost.
+03:00:40 S -S- run #1 job 1 Req #10289  Running DSK:(NETALERT)ALERT.SHR
+03:00:41 S run #2 job 8 is lost.
+03:00:41 S -S- run #2 job 7 Req #22811  Running DSK:(NETALERT)ALERT.SHR
+03:01:40 S 30-Apr-95
+06:00:46 S 30-Apr-95
+09:00:46 S 30-Apr-95
+12:00:49 S 30-Apr-95
+15:00:51 S 30-Apr-95
+18:00:53 S 30-Apr-95
+21:00:53 S 30-Apr-95
+00:00:55 S 01-May-95
