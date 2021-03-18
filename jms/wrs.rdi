@@ -1,0 +1,150 @@
+Master host: 33
+724 files on master system.
+Slave hosts: 56
+Checking host 56
+(WRS         :  56) HACK.SAV       2 03-Sep-80 19:37 -- protection ALL  RD  NO
+                           should be 01-May-78 16:36 CUYLOT  ALL RUN RUN
+(WRS         :  56) REV80A.PUB     2 19-Oct-80 22:52 -- extra not on master
+(WRS         :  56) CTY.SAV       13 01-Apr-81 17:54 -- bad license 
+                           should be 01-Apr-81 01:28 XAFMON  ALL  RD  NO 101000
+(WRS         :  56) PTAPAC.LOG    10 25-Sep-84 18:04 -- extra not on master
+(WRS         :  56) PTAPAJ.LOG     8 30-Sep-84 20:13 -- extra not on master
+(WRS         :  56) PTAPAQ.LOG     2 30-Sep-84 21:07 -- extra not on master
+(WRS         :  56) 0929.LOG       2 01-Oct-84 13:11 -- extra not on master
+(WRS         :  56) XEXEC.SAV     21 12-Oct-84 02:52 -- bad checksum PENROY
+                           should be 11-Jul-85 01:05 JAJDIY  ALL  RD  NO
+(WRS         :  56) PTAPAX.LOG    25 01-Nov-84 19:52 -- extra not on master
+(WRS         :  56) PTAPA_.LOG     2 13-Jan-85 18:09 -- extra not on master
+(WRS         :  56) PTAPB&.LOG     2 13-Apr-85 03:40 -- extra not on master
+(WRS         :  56) D25GAN.RPT    12 11-Nov-85 10:07 -- extra not on master
+(WRS         :  56) POSTEC.LOG     8 12-Nov-85 16:46 -- extra not on master
+(WRS         :  56) XEXEC.CTL      2 28-May-86 16:21 -- extra not on master
+(WRS         :  56) BIRTH2.KI      8 31-Aug-87 22:49 -- extra not on master
+(WRS         :  56) NIBSUM.BAK     5 26-Apr-89 16:10 -- extra not on master
+(WRS         :  56) NIBSUM.CMD     2 26-Apr-89 15:08 -- extra not on master
+(WRS         :  56) NIBSUM.SAI     5 26-Apr-89 17:01 -- bad checksum ZISTOV
+                           should be 26-Apr-89 16:34 MISHIS  ALL  RD  NO
+(WRS         :  56) NIBSUM.SAV    37 26-Apr-89 16:56 -- bad checksum NIHROK
+                           should be 26-Apr-89 16:30 VOYFUP  ALL  RD  NO
+(WRS         :  56) XEXEC.LOG      2 23-Oct-86 12:27 -- extra not on master
+(WRS         :  56) SCAN.LOG       4 13-Nov-90 11:27 -- extra not on master
+(WRS         :  56) 102490.SAT   541 24-Oct-90 17:12 -- extra not on master
+(WRS         :  56) ASCII.SAV     12 03-Sep-80 19:36 -- bad checksum HAPROB
+                           should be 25-May-81 00:17 MIMZIC  ALL RUN RUN
+(WRS         :  56) WARNER.LOG     7 17-Aug-84 13:16 -- extra not on master
+(WRS         :  56) PTAPAD.LOG    47 25-Sep-84 18:09 -- extra not on master
+(WRS         :  56) PTAPAK.LOG     4 30-Sep-84 20:17 -- extra not on master
+(WRS         :  56) PTAPAR.LOG     5 30-Sep-84 21:07 -- extra not on master
+(WRS         :  56) PTAPAY.LOG     4 10-Nov-84 11:41 -- extra not on master
+(WRS         :  56) PTAPB.LOG      2 13-Jan-85 18:09 -- extra not on master
+(WRS         :  56) PTAPB'.LOG     8 08-Oct-85 15:18 -- extra not on master
+(WRS         :  56) D25COS.RPT    12 11-Nov-85 10:06 -- extra not on master
+(WRS         :  56) D25USR.RPT    12 11-Nov-85 10:08 -- extra not on master
+(WRS         :  56) D25GAV.RPT     2 11-Nov-85 10:09 -- extra not on master
+(WRS         :  56) MAILER.SAV    25 17-Jun-86 19:16 -- extra not on master
+(WRS         :  56) ARGS.CMD       2 31-Aug-87 23:48 -- extra not on master
+(WRS         :  56) ARGS.REL       4 31-Aug-87 23:48 -- extra not on master
+(WRS         :  56) ARGS.REQ       2 31-Aug-87 23:48 -- bad checksum TILMIT
+                           should be 24-Oct-84 17:56 CIRCIK  ALL  RD  NO
+(WRS         :  56) ARGS.SAI       3 31-Aug-87 23:48 -- bad checksum CUCGEK
+                           should be 08-Jan-87 18:46 QOXGUK  ALL  RD  NO
+(WRS         :  56) BIRTH3.KI     15 31-Aug-87 22:50 -- extra not on master
+(WRS         :  56) 102590.SAT   534 25-Oct-90 17:33 -- extra not on master
+(WRS         :  56) TVSTRI.NGS     2 05-Jan-82 22:35 -- bad checksum TULNUQ
+                           should be 13-Jul-82 12:56 YICTEY  ALL  RD  NO
+(WRS         :  56) CRASH.MEM      3 17-Oct-80 19:29 -- extra not on master
+(WRS         :  56) K33RT3.MD1     8 20-Jun-84 01:33 -- extra not on master
+(WRS         :  56) PTAP.SAV       3 24-Sep-84 19:38 -- bad checksum QONWOS
+                           should be 21-Sep-84 19:00 CITVIK  ALL  RD  NO 640000
+(WRS         :  56) PTAPAE.LOG     2 30-Sep-84 19:12 -- extra not on master
+(WRS         :  56) PTAPAL.LOG    15 30-Sep-84 20:18 -- extra not on master
+(WRS         :  56) PTAPAS.LOG     2 01-Oct-84 19:20 -- extra not on master
+(WRS         :  56) M33.RPT       27 02-Oct-84 02:18 -- extra not on master
+(WRS         :  56) H56.RPT      235 22-Oct-84 04:11 -- extra not on master
+(WRS         :  56) PTAPAZ.LOG     5 24-Nov-84 22:30 -- extra not on master
+(WRS         :  56) PTAPB!.LOG     2 13-Jan-85 18:09 -- extra not on master
+(WRS         :  56) TVEDIT.SHR    58 24-Jun-82 09:10 -- protection ALL  RD  NO
+                           should be 24-Jun-82 09:08 FERLUK  ALL RUN RUN
+(WRS         :  56) BIRTH4.KI     57 31-Aug-87 23:08 -- extra not on master
+(WRS         :  56) SAMPLE.NIB    79 14-Oct-86 18:41 -- extra not on master
+(WRS         :  56) 102690.SAT   515 26-Oct-90 17:12 -- extra not on master
+(WRS         :  56) LUDLOC.SAV     2 03-Sep-80 19:33 -- protection ALL  RD  NO
+                           should be 10-Feb-79 23:18 HUVNEK  ALL RUN RUN
+(WRS         :  56) HOG.SAV       12 03-Sep-80 19:34 -- bad checksum KAQGIW
+                           should be 21-Nov-78 13:34 YAMFOS  ALL RUN RUN  40000
+(WRS         :  56) READCH.REL     2 04-Sep-81 19:48 -- extra not on master
+(WRS         :  56) RTYFIX.SAV     2 22-Nov-83 12:48 -- protection RUN RUN RUN
+                           should be 22-Nov-83 12:48 VEXMUP  ALL  RD  NO
+(WRS         :  56) RTYFIX.SAV     2 22-Nov-83 12:48 -- bad license 640000
+                           should be 22-Nov-83 12:48 VEXMUP  ALL  RD  NO
+(WRS         :  56) PTAPAF.LOG     4 30-Sep-84 19:21 -- extra not on master
+(WRS         :  56) PTAPAM.LOG    10 30-Sep-84 20:25 -- extra not on master
+(WRS         :  56) PTAPAT.LOG    33 01-Oct-84 19:38 -- extra not on master
+(WRS         :  56) PTAPA[.LOG     3 16-Dec-84 18:42 -- extra not on master
+(WRS         :  56) PTAPB".LOG     4 13-Jan-85 18:10 -- extra not on master
+(WRS         :  56) BIRTH.KI      27 31-Aug-87 22:41 -- extra not on master
+(WRS         :  56) BIRTH.RPT     25 31-Aug-87 22:38 -- extra not on master
+(WRS         :  56) HOMEB.KI      83 31-Aug-87 23:08 -- extra not on master
+(WRS         :  56) HOMEB.RPT     66 01-Sep-87 00:03 -- extra not on master
+(WRS         :  56) KI.CMD         2 31-Aug-87 22:50 -- extra not on master
+(WRS         :  56) KI.SAI         2 01-Sep-87 00:02 -- extra not on master
+(WRS         :  56) KI.SAV         6 01-Sep-87 00:03 -- extra not on master
+(WRS         :  56) 102090.SAT   276 20-Oct-90 17:12 -- extra not on master
+(WRS         :  56) 102790.SAT   292 27-Oct-90 17:43 -- extra not on master
+(WRS         :  56) REMINI.SAV     5 03-Sep-80 19:06 -- protection ALL  RD  NO
+                           should be 28-Feb-79 20:01 CIYRIC  ALL RUN RUN
+(WRS         :  56) CRASUM.SAV    14 22-Apr-81 19:55 -- bad checksum FOGWAB
+                           should be 22-Apr-81 19:47 QIMFEF  ALL  RD  NO
+(WRS         :  56) CRSHID.LOG     2 20-Jun-84 16:58 -- bad checksum YAGBOK
+                           should be 22-Oct-86 14:43 SAZTIT  ALL  RD  NO
+(WRS         :  56) PREAD.MKR      2 22-Oct-84 04:12 -- bad checksum LILYOP
+                           should be 21-Sep-85 03:06 KEPCIK  ALL  RD  NO
+(WRS         :  56) PTAPAG.LOG     2 30-Sep-84 19:24 -- extra not on master
+(WRS         :  56) PTAPAN.LOG    28 30-Sep-84 20:31 -- extra not on master
+(WRS         :  56) PTAPAU.LOG     2 07-Oct-84 20:48 -- extra not on master
+(WRS         :  56) PTAPA\.LOG     2 22-Dec-84 17:30 -- extra not on master
+(WRS         :  56) PTAPB#.LOG     7 29-Jan-85 21:16 -- extra not on master
+(WRS         :  56) FREE.LOG      17 21-Jun-85 13:02 -- bad checksum KEGBIV
+                           should be 23-Jun-87 13:46 MILLUB  ALL  RD  NO
+(WRS         :  56) D25ORG.RPT    35 11-Nov-85 10:04 -- extra not on master
+(WRS         :  56) FREEXX.LOG    28 20-Aug-86 23:49 -- extra not on master
+(WRS         :  56) ARGPAR.REL     5 31-Aug-87 23:49 -- extra not on master
+(WRS         :  56) ARGPAR.SAI     3 31-Aug-87 23:48 -- bad checksum CEXKUS
+                           should be 08-Nov-86 18:45 YEDWEL  ALL  RD  NO
+(WRS         :  56) 102190.SAT   193 21-Oct-90 17:22 -- extra not on master
+(WRS         :  56) 102890.SAT   186 28-Oct-90 17:13 -- extra not on master
+(WRS         :  56) LNTEST.SAV    13 03-Sep-80 19:21 -- bad checksum DUVCUQ
+                           should be 10-Jul-86 03:49 BUKWEZ  ALL  RD  NO
+(WRS         :  56) ACSCAN.SAV    31 23-Dec-81 05:51 -- extra not on master
+(WRS         :  56) ACSCAN.DAT     2 23-Dec-81 05:54 -- extra not on master
+(WRS         :  56) PROFIL.CTL     2 10-Jan-84 17:36 -- extra not on master
+(WRS         :  56) MAIL.FWD       2 12-Jan-89 10:28 -- bad checksum LEQSEM
+                           should be 21-Feb-88 00:51 NELVAY  ALL  RD  NO
+(WRS         :  56) MAIL.BOX       2 17-Aug-84 15:30 -- bad checksum ROBZUH
+                           should be 13-Mar-80 13:45 VUGJUH  ALL  RD  NO
+(WRS         :  56) PTAPAA.LOG     2 25-Sep-84 02:36 -- extra not on master
+(WRS         :  56) PTAPAH.LOG     2 30-Sep-84 19:42 -- extra not on master
+(WRS         :  56) PTAPAO.LOG    22 30-Sep-84 20:43 -- extra not on master
+(WRS         :  56) PTAPAV.LOG     3 21-Oct-84 12:18 -- extra not on master
+(WRS         :  56) PTAPA].LOG     5 02-Jan-85 20:55 -- extra not on master
+(WRS         :  56) PTAPB$.LOG     2 04-Feb-85 17:39 -- extra not on master
+(WRS         :  56) MAGNUM.DIR     2 07-Feb-81 06:40 -- bad checksum XOTZUM
+                           should be 02-Aug-88 23:24 BUVZAT   CP  NO  NO
+(WRS         :  56) WRS.LOG        2 12-Nov-85 13:16 -- bad checksum GONCOY
+                           should be 12-Nov-85 13:19 TODKIF  ALL  RD  NO
+(WRS         :  56) 102290.SAT   443 22-Oct-90 17:35 -- extra not on master
+(WRS         :  56) 102990.SAT   439 29-Oct-90 17:10 -- extra not on master
+(WRS         :  56) REMIND.DAT     3 25-Jul-83 15:40 -- bad checksum VULGID
+                           should be 19-Mar-85 05:01 WAQMUP  ALL  RD  NO
+(WRS         :  56) PTAPAB.LOG     6 25-Sep-84 17:55 -- extra not on master
+(WRS         :  56) PTAPAI.LOG     8 30-Sep-84 20:10 -- extra not on master
+(WRS         :  56) PTAPAP.LOG    30 30-Sep-84 20:57 -- extra not on master
+(WRS         :  56) PTAPAW.LOG    10 21-Oct-84 12:19 -- extra not on master
+(WRS         :  56) PTAPA^.LOG     4 13-Jan-85 18:07 -- extra not on master
+(WRS         :  56) PTAPB%.LOG     2 06-Mar-85 02:48 -- extra not on master
+(WRS         :  56) D25CCV.RPT     2 11-Nov-85 10:09 -- extra not on master
+(WRS         :  56) WHEN.SAV      17 11-Jan-82 11:56 -- extra not on master
+(WRS         :  56) BIRTH1.KI      6 31-Aug-87 22:49 -- extra not on master
+(WRS         :  56) ND3044.BAK     2 03-Mar-88 16:18 -- extra not on master
+(WRS         :  56) ND3044.TYM     2 03-Mar-88 16:20 -- extra not on master
+(WRS         :  56) 102390.SAT   530 23-Oct-90 17:25 -- extra not on master
