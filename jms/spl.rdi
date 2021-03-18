@@ -1,0 +1,145 @@
+Master host: 33
+258 files on master system.
+Slave hosts: 56
+Checking host 56
+(SPL         :  56) PIP.HLP        2 25-Oct-85 13:53 -- protection ALL  RD RUN
+                           should be 25-Oct-85 14:56 DITHIB  ALL  RD  RD
+(SPL         :  56) ACCESS.DOC     2 18-Jan-87 22:25 -- protection ALL  RD RUN
+                           should be 12-Feb-87 02:31 XAKVEF  ALL  RD  RD
+(SPL         :  56) DIABLO.DOC     5 12-Feb-87 00:29 -- protection ALL  RD RUN
+                           should be 12-Feb-87 02:36 VUTCUQ  ALL  RD  RD
+(SPL         :  56) PIP.DOC        3 14-Nov-87 00:38 -- protection ALL  RD RUN
+                           should be 03-Apr-86 12:55 HABSOV  ALL  RD  RD
+(SPL         :  56) FIL.BAK        2 27-May-86 14:40 -- extra not on master
+(SPL         :  56) FTP20.OLD     30 28-Mar-85 01:12 -- bad checksum KUZRUQ
+                           should be 24-Feb-83 21:00 PAXNOP  ALL  RD  RD
+(SPL         :  56) INIT.SAI       2 26-Jun-83 11:29 -- extra not on master
+(SPL         :  56) FILCOM.HLP     2 25-Oct-85 13:51 -- protection ALL  RD RUN
+                           should be 10-Dec-86 23:25 PULPEF  ALL  RD  RD
+(SPL         :  56) COPY.16       24 08-Feb-83 17:47 -- protection ALL  RD RUN
+                           should be 10-Dec-86 23:29 HIYBAQ  ALL  RD  RD
+(SPL         :  56) COPY.DOC       3 06-May-86 13:15 -- protection ALL  RD RUN
+                           should be 06-May-86 13:11 DAMXAT  ALL  RD  RD
+(SPL         :  56) COPY.CMD       2 06-May-86 13:15 -- protection ALL  RD RUN
+                           should be 06-May-86 13:11 JETJOC  ALL  RD  RD
+(SPL         :  56) COPY.15       18 11-Oct-82 12:07 -- protection ALL  RD RUN
+                           should be 10-Dec-86 23:28 KIYFAP  ALL  RD  RD
+(SPL         :  56) COPY.15       18 11-Oct-82 12:07 -- bad license   1010
+                           should be 10-Dec-86 23:28 KIYFAP  ALL  RD  RD
+(SPL         :  56) TAUX.INF       2 04-Dec-86 22:40 -- protection ALL  RD RUN
+                           should be 04-Dec-86 22:41 RUNDUN  ALL  RD  RD
+(SPL         :  56) TAUX.DOC       2 03-Apr-86 12:49 -- protection ALL  RD RUN
+                           should be 03-Apr-86 12:49 NOPSIV  ALL  RD  RD
+(SPL         :  56) FSH030.FSH     1 09-Jan-89 16:50 -- extra not on master
+(SPL         :  56) FILCOM.DOC     2 14-Nov-87 00:20 -- protection ALL  RD RUN
+                           should be 03-Apr-86 12:51 VOQPIQ  ALL  RD  RD
+(SPL         :  56) MAKDCL.DOC     2 14-Nov-87 00:34 -- protection ALL  RD RUN
+                           should be 03-Apr-86 12:51 MOYCUN  ALL  RD  RD
+(SPL         :  56) PROJ.DFS       3 27-May-86 14:40 -- protection ALL  RD RUN
+                           should be 21-Oct-81 08:27 TEDZOZ  ALL  RD  RD
+(SPL         :  56) SHARI.1       26 30-Jun-89 04:02 -- extra not on master
+(SPL         :  56) TSRBAS.DMD     2 27-May-86 14:41 -- extra not on master
+(SPL         :  56) TELCHK.DOC     3 12-Dec-86 15:02 -- protection ALL  RD RUN
+                           should be 12-Dec-86 15:02 TIBTAQ  ALL  RD  RD
+(SPL         :  56) FED.SHR        8 06-Nov-82 19:13 -- bad checksum FOJYOY
+                           should be 06-Nov-82 18:57 GONNUC  ALL  RD RUN
+(SPL         :  56) MARKER.SAV    22 04-May-87 14:42 -- bad checksum TEQXIC
+                           should be 06-Jan-88 17:38 RIXTIV  ALL  RD RUN
+(SPL         :  56) DFAUX.SHR      3 05-Nov-83 01:44 -- bad checksum RELPUT
+                           should be 05-Nov-83 03:22 VODMOR  ALL  RD RUN
+(SPL         :  56) CPUTYP.MAC     4 11-May-87 16:29 -- protection ALL  RD RUN
+                           should be 11-May-87 16:29 PUWHEY  ALL  RD  RD
+(SPL         :  56) DELPAG.DOC     3 19-Nov-86 00:54 -- protection ALL  RD RUN
+                           should be 12-Feb-87 02:36 COHWUS  ALL  RD  RD
+(SPL         :  56) DOC.MEM        2 12-Feb-87 00:30 -- protection ALL  RD RUN
+                           should be 12-Feb-87 02:37 QIRYUW  ALL  RD  RD
+(SPL         :  56) MAIL9.MEM      2 12-Feb-87 00:45 -- protection ALL  RD RUN
+                           should be 12-Feb-87 02:45 TAVDEG  ALL  RD  RD
+(SPL         :  56) SUBR.DOC       5 12-Feb-87 00:54 -- protection ALL  RD RUN
+                           should be 12-Feb-87 02:49 WALMEW  ALL  RD  RD
+(SPL         :  56) SYSTEM.MEM     2 12-Feb-87 00:57 -- protection ALL  RD RUN
+                           should be 12-Feb-87 02:50 GINGOH  ALL  RD  RD
+(SPL         :  56) VAT.MEM        2 12-Feb-87 00:59 -- protection ALL  RD RUN
+                           should be 12-Feb-87 02:50 DOXBUC  ALL  RD  RD
+(SPL         :  56) FSH031.FSH     5 09-Jan-89 16:50 -- extra not on master
+(SPL         :  56) AUXIO          3 29-Mar-88 15:30 -- extra not on master
+(SPL         :  56) AUXIO.COM      3 27-Oct-80 16:01 -- extra not on master
+(SPL         :  56) AUXIO.DOC      2 07-Apr-86 18:57 -- protection ALL  RD RUN
+                           should be 07-Apr-86 19:18 VUFVIB  ALL  RD  RD
+(SPL         :  56) AUXIO.NEW      3 23-Oct-80 14:56 -- extra not on master
+(SPL         :  56) CREF.HLP       2 14-Nov-87 00:12 -- protection ALL  RD RUN
+                           should be 20-Mar-85 06:00 DUFMIS  ALL  RD  RD
+(SPL         :  56) TSR.DMD        2 27-May-86 14:40 -- extra not on master
+(SPL         :  56) TSR.DMS      637 27-May-86 14:42 -- extra not on master
+(SPL         :  56) LUK.SAV       31 20-Sep-81 20:58 -- bad checksum BAFFAC
+                           should be 30-Nov-81 19:03 JOBVEJ  ALL  RD RUN
+(SPL         :  56) LUK.DOC        2 20-Sep-81 21:00 -- protection ALL  RD RUN
+                           should be 11-May-81 19:23 TENDIQ  ALL  RD  RD
+(SPL         :  56) FIND.SAV      41 16-Aug-83 17:39 -- bad checksum YELHOD
+                           should be 11-Jan-88 19:22 NAWPUX  ALL  RD RUN
+(SPL         :  56) SETTRM.SAI    11 09-Apr-82 14:42 -- extra not on master
+(SPL         :  56) FIND.DOC       3 16-Aug-83 17:39 -- protection ALL  RD RUN
+                           should be 08-Sep-83 11:33 DIXDAL  ALL  RD  RD
+(SPL         :  56) TTY.MEM        2 12-Feb-87 00:59 -- protection ALL  RD RUN
+                           should be 12-Feb-87 02:50 BILPUC  ALL  RD  RD
+(SPL         :  56) SFTP.DOC       5 26-Jan-88 03:36 -- protection ALL  RD RUN
+                           should be 10-Dec-86 22:55 GANGIV  ALL  RD  RD
+(SPL         :  56) FSH032.FSH     1 09-Jan-89 16:50 -- extra not on master
+(SPL         :  56) MAP.DOC        2 14-Nov-87 00:37 -- protection ALL  RD RUN
+                           should be 03-Apr-86 12:50 GOXCUT  ALL  RD  RD
+(SPL         :  56) SIZES.SAV     16 28-Oct-85 11:38 -- extra not on master
+(SPL         :  56) PRDBAS.DMD     2 27-May-86 14:40 -- extra not on master
+(SPL         :  56) PRDBAS.DMS    57 27-May-86 14:41 -- extra not on master
+(SPL         :  56) TURNUP.DOC     3 25-Apr-86 18:43 -- protection ALL  RD RUN
+                           should be 25-Apr-86 18:40 YANFUS  ALL  RD  RD
+(SPL         :  56) PASS.MEM       2 12-Feb-87 00:51 -- protection ALL  RD RUN
+                           should be 12-Feb-87 02:49 JIKJUT  ALL  RD  RD
+(SPL         :  56) SNARF.DOC      2 12-Feb-87 00:53 -- protection ALL  RD RUN
+                           should be 09-Dec-83 22:35 GOGRAQ  ALL  RD  RD
+(SPL         :  56) FSH033.FSH     1 09-Jan-89 16:50 -- extra not on master
+(SPL         :  56) SNARF.MAC      3 28-Mar-85 01:01 -- protection ALL  RD RUN
+                           should be 09-Dec-83 22:36 GECWOR  ALL  RD  RD
+(SPL         :  56) FICHE.SAV     21 03-Nov-82 00:35 -- bad checksum QAMTIL
+                           should be 10-Sep-84 17:15 BIHBAD  ALL  RD RUN
+(SPL         :  56) FICHE.DOC      3 03-Nov-82 00:35 -- bad checksum VIVZUY
+                           should be 12-Dec-82 00:07 BEVTUM  ALL  RD  RD
+(SPL         :  56) GENINF.MEM     4 12-Feb-87 00:38 -- protection ALL  RD RUN
+                           should be 12-Feb-87 02:41 YAQBOW  ALL  RD  RD
+(SPL         :  56) LINKER.MEM     2 12-Feb-87 00:39 -- protection ALL  RD RUN
+                           should be 18-Sep-80 13:00 GERJOD  ALL  RD  RD
+(SPL         :  56) MAIL.MEM       2 12-Feb-87 00:45 -- protection ALL  RD RUN
+                           should be 12-Feb-87 02:45 JEZSAW  ALL  RD  RD
+(SPL         :  56) MAKLIB.DOC     6 12-Feb-87 00:46 -- protection ALL  RD RUN
+                           should be 12-Feb-87 02:45 GARZIN  ALL  RD  RD
+(SPL         :  56) FSH034.FSH     1 09-Jan-89 16:51 -- extra not on master
+(SPL         :  56) LINKER.DOC     2 14-Nov-87 00:25 -- protection ALL  RD RUN
+                           should be 03-Apr-86 12:52 DUCPAW  ALL  RD  RD
+(SPL         :  56) MAKLIB.HLP     2 14-Nov-87 00:35 -- protection ALL  RD RUN
+                           should be 18-Apr-85 02:21 DAQYEZ  ALL  RD  RD
+(SPL         :  56) WHO.DOC        2 14-Nov-87 00:40 -- protection ALL  RD RUN
+                           should be 03-Apr-86 12:50 POVVIX  ALL  RD  RD
+(SPL         :  56) LINKER.SAI     4 28-Mar-85 01:43 -- bad checksum HERFEQ
+                           should be 06-Feb-81 22:27 DIPYIW  ALL  RD  RD
+(SPL         :  56) PAGE.SAV      17 06-Jan-83 16:32 -- bad checksum SELZOX
+                           should be 14-Jan-83 02:23 WECJID  ALL  RD RUN
+(SPL         :  56) WHEN.SAV      13 19-Mar-87 15:42 -- bad license  40010
+                           should be 19-Mar-87 17:06 HABWAD  ALL  RD RUN
+(SPL         :  56) RECORD.SAV     3 19-Nov-86 01:05 -- bad checksum WILMIS
+                           should be 20-Nov-86 02:25 TOCRAW  ALL  RD RUN
+(SPL         :  56) CTEST.MEM      2 12-Feb-87 00:25 -- protection ALL  RD RUN
+                           should be 12-Feb-87 02:33 PUMLIJ  ALL  RD  RD
+(SPL         :  56) GLOB.DOC       5 12-Feb-87 00:38 -- protection ALL  RD RUN
+                           should be 12-Feb-87 02:41 NUXTOP  ALL  RD  RD
+(SPL         :  56) MONNOT.DOC    12 12-Feb-87 00:50 -- protection ALL  RD RUN
+                           should be 12-Feb-87 02:48 ZEWNOH  ALL  RD  RD
+(SPL         :  56) PRUNE.DOC      5 12-Feb-87 00:52 -- protection ALL  RD RUN
+                           should be 12-Feb-87 02:49 QARJEG  ALL  RD  RD
+(SPL         :  56) RECORD.DOC     2 29-May-87 23:09 -- protection ALL  RD RUN
+                           should be 29-May-87 23:09 ZESYED  ALL  RD  RD
+(SPL         :  56) DIRIT.MEM      2 19-Jan-83 13:46 -- protection ALL  RD RUN
+                           should be 19-Jan-83 13:46 FINYOY  ALL  RD  RD
+(SPL         :  56) GLOB.HLP       2 14-Nov-87 00:25 -- protection ALL  RD RUN
+                           should be 17-Apr-85 16:31 YUYWOD  ALL  RD  RD
+(SPL         :  56) PRUNE.DAT      2 27-May-86 14:40 -- bad checksum VOSKIZ
+                           should be 29-Dec-82 04:29 DUWDOS  ALL  RD  RD
+   
