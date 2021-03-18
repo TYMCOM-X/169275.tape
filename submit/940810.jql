@@ -1,0 +1,29 @@
+00:00:56 S 10-Aug-94
+03:00:56 S 10-Aug-94
+06:00:58 S 10-Aug-94
+07:45:02 S -S- stream #1 Req #44686 DSK:(JMS)SZRPT.LOG=DSK:(JMS)SZRPT.CTL
+07:45:08 S Processor status JSU EXECX Setup in frame 16
+07:45:09 P Waiting for interlock
+07:45:10 P Got interlock
+07:45:10 P EXECX Job Processor %1(226) starting in frame 16
+07:45:11 P Stream #1 Req #44686 DSK:(JMS)SZRPT.LOG=DSK:(JMS)SZRPT.CTL
+07:45:11 S Starting job processor in frame 16
+07:50:01 P Stream #1 Req #44686 * completed *
+07:50:01 S -R- stream #1 Done-End <0>
+08:05:10 P Signing off.
+09:00:11 S 10-Aug-94
+12:00:21 S 10-Aug-94
+15:00:27 S 10-Aug-94
+16:37:33 S -S- stream #1 Req #44688 DSK:(NETENG)T96PGR.LOG=DSK:(NETENG)T96PGR
+16:37:40 S Processor status JSU EXECX Setup in frame 18
+16:37:41 P Waiting for interlock
+16:37:42 P Got interlock
+16:37:42 P EXECX Job Processor %1(226) starting in frame 18
+16:37:43 S Starting job processor in frame 18
+16:37:43 P Stream #1 Req #44688 DSK:(NETENG)T96PGR.LOG=DSK:(NETENG)T96PGR
+16:40:17 P Stream #1 Req #44688 * completed *
+16:40:20 S -R- stream #1 Done-End <0>
+16:55:42 P Signing off.
+18:00:43 S 10-Aug-94
+21:00:43 S 10-Aug-94
+00:00:43 S 11-Aug-94
