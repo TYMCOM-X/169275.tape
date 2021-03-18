@@ -1,0 +1,431 @@
+Master host: 30
+90 files on master system.
+Slave hosts: 23,26,30,33,34,38,74
+Checking host 23
+(CARL        :  23) RPG.INI        2 04-Jan-85 20:59 -- bad checksum BUCPAB
+                           should be 13-May-89 01:10 XIBNAZ  ALL  RD  NO
+(CARL        :  23) VUE.INI        2 04-Jan-85 22:14 -- bad checksum SOCWIS
+                           should be 13-May-89 01:40 JEJWIM  ALL  RD  NO
+(CARL        :  23) SWITCH.INI     2 07-May-88 23:57 -- bad checksum KANDIM
+                           should be 05-Feb-88 18:01 ZOSHEM  ALL  RD  NO
+(CARL        :  23) CRSHID.LOG     2 21-Nov-89 13:12 -- bad checksum LICLUN
+                           should be 01-Nov-92 15:58 WIGDUJ  ALL  RD  NO
+(CARL        :  23) MAIL.BOX      29 05-Dec-85 17:12 -- bad checksum PAQFAX
+                           should be 05-Feb-85 01:54 GIHHIM  ALL  RD  NO
+(CARL        :  23) MAIL           2 22-Jun-89 04:23 -- bad checksum XABTUZ
+                           should be 08-Mar-88 00:42 GEPTIQ  ALL  RD  NO
+(CARL        :  23) MAGNUM.DIR     2 04-Feb-89 16:46 -- bad checksum QUHBEB
+                           should be 11-Oct-90 16:48 BUXLIY   CP  NO  NO
+(CARL        :  23) DSKB.QIK       7 05-Aug-88 14:53 -- bad checksum SAXGIS
+                           should be 05-Aug-88 14:54 GINLUK  ALL  RD  NO
+(CARL        :  23) BIO.SAV                          -- missing on slave
+(CARL        :  23) NEWMON.SAV                       -- missing on slave
+(CARL        :  23) DSLAVE.SAV                       -- missing on slave
+(CARL        :  23) ETATSY.SAV                       -- missing on slave
+(CARL        :  23) CSLAVE.SAV                       -- missing on slave
+(CARL        :  23) ETASYM                           -- missing on slave
+(CARL        :  23) AUTHOR.SAV                       -- missing on slave
+(CARL        :  23) IOCSF.165                        -- missing on slave
+(CARL        :  23) IOCSF.166                        -- missing on slave
+(CARL        :  23) GAMES.DIR                        -- missing on slave
+(CARL        :  23) MAIL.TST                         -- missing on slave
+(CARL        :  23) COUNT.SAV                        -- missing on slave
+(CARL        :  23) FINE.INI                         -- missing on slave
+(CARL        :  23) ARGH                             -- missing on slave
+(CARL        :  23) FREE.SAV                         -- missing on slave
+(CARL        :  23) STUFF.CMM                        -- missing on slave
+(CARL        :  23) SIMPLF.023                       -- missing on slave
+(CARL        :  23) SIMPLF.022                       -- missing on slave
+(CARL        :  23) SIMPLF.TST                       -- missing on slave
+(CARL        :  23) TREE.FAM                         -- missing on slave
+(CARL        :  23) SWITCH.OUT                       -- missing on slave
+(CARL        :  23) ADVISE.SHR                       -- missing on slave
+(CARL        :  23) REDSCR.SAV                       -- missing on slave
+(CARL        :  23) ESCTRP.REQ                       -- missing on slave
+(CARL        :  23) ESCTRP.SAI                       -- missing on slave
+(CARL        :  23) C.SAI                            -- missing on slave
+(CARL        :  23) VMFILE.SAI                       -- missing on slave
+(CARL        :  23) SAVSHR.FIL                       -- missing on slave
+(CARL        :  23) SYSDPY.SAV                       -- missing on slave
+(CARL        :  23) FNDBAD.28                        -- missing on slave
+(CARL        :  23) ASP11D.SAV                       -- missing on slave
+(CARL        :  23) SPPARC.F58                       -- missing on slave
+(CARL        :  23) HSB.SAV                          -- missing on slave
+(CARL        :  23) 1000.CTL                         -- missing on slave
+(CARL        :  23) 1000.SAV                         -- missing on slave
+(CARL        :  23) INIBAI.REL                       -- missing on slave
+(CARL        :  23) INIBAI.SAI                       -- missing on slave
+(CARL        :  23) NETSTA.DIR                       -- missing on slave
+(CARL        :  23) NETSTA.NEW                       -- missing on slave
+(CARL        :  23) ASP11.SAV                        -- missing on slave
+(CARL        :  23) ASH.LOG                          -- missing on slave
+(CARL        :  23) ASH.CTL                          -- missing on slave
+(CARL        :  23) GAMESF.H30                       -- missing on slave
+(CARL        :  23) JQUEUE.LOG                       -- missing on slave
+(CARL        :  23) FOOBAR.BAZ                       -- missing on slave
+(CARL        :  23) CTYLIB.REQ                       -- missing on slave
+(CARL        :  23) CTYLIB.SAI                       -- missing on slave
+(CARL        :  23) FIXMAY.CTL                       -- missing on slave
+(CARL        :  23) SCOUNT.SAV                       -- missing on slave
+Checking host 26
+(CARL        :  26) RPG.INI        2 12-Sep-85 13:18 -- bad checksum FENJEG
+                           should be 13-May-89 01:10 XIBNAZ  ALL  RD  NO
+(CARL        :  26) SWITCH.INI     2 07-May-88 23:58 -- bad checksum JORGAT
+                           should be 05-Feb-88 18:01 ZOSHEM  ALL  RD  NO
+(CARL        :  26) MAIL           1 12-Dec-92 21:13 -- bad checksum VAVVAV
+                           should be 08-Mar-88 00:42 GEPTIQ  ALL  RD  NO
+(CARL        :  26) BIO.SAV                          -- missing on slave
+(CARL        :  26) NEWMON.SAV                       -- missing on slave
+(CARL        :  26) DSKB.QIK                         -- missing on slave
+(CARL        :  26) SYSSHO.SAV                       -- missing on slave
+(CARL        :  26) SY.SAV                           -- missing on slave
+(CARL        :  26) SY.DAB                           -- missing on slave
+(CARL        :  26) DSLAVE.SAV                       -- missing on slave
+(CARL        :  26) MAGNUM.DIR                       -- missing on slave
+(CARL        :  26) ETATSY.SAV                       -- missing on slave
+(CARL        :  26) CSLAVE.SAV                       -- missing on slave
+(CARL        :  26) ETASYM                           -- missing on slave
+(CARL        :  26) AUTHOR.SAV                       -- missing on slave
+(CARL        :  26) IOCSF.165                        -- missing on slave
+(CARL        :  26) IOCSF.166                        -- missing on slave
+(CARL        :  26) GAMES.DIR                        -- missing on slave
+(CARL        :  26) MAIL.TST                         -- missing on slave
+(CARL        :  26) CARDS.SAI                        -- missing on slave
+(CARL        :  26) CARDS.SAV                        -- missing on slave
+(CARL        :  26) COUNT.SAV                        -- missing on slave
+(CARL        :  26) MAIL.BOX                         -- missing on slave
+(CARL        :  26) CRSHID.LOG                       -- missing on slave
+(CARL        :  26) FINE.INI                         -- missing on slave
+(CARL        :  26) ARGH                             -- missing on slave
+(CARL        :  26) FREE.SAV                         -- missing on slave
+(CARL        :  26) STUFF.CMM                        -- missing on slave
+(CARL        :  26) SIMPLF.023                       -- missing on slave
+(CARL        :  26) SIMPLF.022                       -- missing on slave
+(CARL        :  26) SIMPLF.TST                       -- missing on slave
+(CARL        :  26) CK.SAV                           -- missing on slave
+(CARL        :  26) LOGPKG.SAI                       -- missing on slave
+(CARL        :  26) LOGPKG.REQ                       -- missing on slave
+(CARL        :  26) TREE.FAM                         -- missing on slave
+(CARL        :  26) LIC.FDM                          -- missing on slave
+(CARL        :  26) SWITCH.OUT                       -- missing on slave
+(CARL        :  26) ADVISE.SHR                       -- missing on slave
+(CARL        :  26) REDSCR.SAV                       -- missing on slave
+(CARL        :  26) ESCTRP.REQ                       -- missing on slave
+(CARL        :  26) ESCTRP.SAI                       -- missing on slave
+(CARL        :  26) C.SAI                            -- missing on slave
+(CARL        :  26) VMFILE.SAI                       -- missing on slave
+(CARL        :  26) SYSDAT.SAV                       -- missing on slave
+(CARL        :  26) CT2.SAV                          -- missing on slave
+(CARL        :  26) QUEDPY.SAV                       -- missing on slave
+(CARL        :  26) SIZES.SAV                        -- missing on slave
+(CARL        :  26) PEAK.INI                         -- missing on slave
+(CARL        :  26) SAVSHR.FIL                       -- missing on slave
+(CARL        :  26) SYSDPY.SAV                       -- missing on slave
+(CARL        :  26) FNDBAD.28                        -- missing on slave
+(CARL        :  26) ASP11D.SAV                       -- missing on slave
+(CARL        :  26) SPPARC.F58                       -- missing on slave
+(CARL        :  26) HSB.SAV                          -- missing on slave
+(CARL        :  26) 1000.CTL                         -- missing on slave
+(CARL        :  26) 1000.SAV                         -- missing on slave
+(CARL        :  26) INIBAI.REL                       -- missing on slave
+(CARL        :  26) INIBAI.SAI                       -- missing on slave
+(CARL        :  26) NETSTA.DIR                       -- missing on slave
+(CARL        :  26) NETSTA.NEW                       -- missing on slave
+(CARL        :  26) ASP11.SAV                        -- missing on slave
+(CARL        :  26) ASH.LOG                          -- missing on slave
+(CARL        :  26) ASH.CTL                          -- missing on slave
+(CARL        :  26) QIKSAV.SAV                       -- missing on slave
+(CARL        :  26) GAMESF.H30                       -- missing on slave
+(CARL        :  26) JQUEUE.LOG                       -- missing on slave
+(CARL        :  26) FOOBAR.BAZ                       -- missing on slave
+(CARL        :  26) CTYLIB.REQ                       -- missing on slave
+(CARL        :  26) CTYLIB.SAI                       -- missing on slave
+(CARL        :  26) FIXMAY.CTL                       -- missing on slave
+(CARL        :  26) SYSDA.SAV                        -- missing on slave
+(CARL        :  26) FRMPKG.SAI                       -- missing on slave
+(CARL        :  26) FRMPKG.REQ                       -- missing on slave
+(CARL        :  26) PCOMAI.CTL                       -- missing on slave
+(CARL        :  26) SCOUNT.SAV                       -- missing on slave
+(CARL        :  26) VUE.INI                          -- missing on slave
+Checking host 30
+Checking host 33
+(CARL        :  33) RPG.INI        2 06-Feb-89 22:05 -- bad checksum YIPXEK
+                           should be 13-May-89 01:10 XIBNAZ  ALL  RD  NO
+(CARL        :  33) ASH.CTL        2 07-Feb-87 02:56 -- bad checksum GOQDUT
+                           should be 28-Jan-87 22:59 GUYHAN  ALL  RD  NO
+(CARL        :  33) JQUEUE.LOG    20 13-Nov-86 02:01 -- bad checksum LEQFIR
+                           should be 12-Nov-86 23:57 NOVBAW  ALL  RD  NO
+(CARL        :  33) LOGON.SHR     13 23-May-85 03:42 -- bad checksum COLSAY
+                           should be 16-May-85 09:36 QEVKAY  ALL RUN RUN  40010
+(CARL        :  33) HSB.SAV       31 10-Dec-86 01:04 -- bad checksum RICSAN
+                           should be 20-Nov-86 22:58 SARFAP  ALL  RD  NO
+(CARL        :  33) QUEDPY.SAV    39 29-Oct-87 19:36 -- bad checksum RAJDOR
+                           should be 16-Sep-87 07:55 HIXVIR  ALL  RD  NO
+(CARL        :  33) ESCTRP.REQ     2 22-May-86 02:39 -- bad checksum FULVEX
+                           should be 12-May-86 12:01 MIHZED  ALL  RD  NO
+(CARL        :  33) ESCTRP.SAI     2 06-May-88 19:22 -- bad checksum TOWVEN
+                           should be 12-May-86 12:01 QOBFUM  ALL  RD  NO
+(CARL        :  33) VMFILE.SAI    19 16-Jan-89 17:00 -- bad checksum RORJON
+                           should be 22-Mar-88 13:35 PUBWIM  ALL  RD  NO
+(CARL        :  33) TREE.FAM       7 15-Jun-87 19:29 -- bad checksum DUWHIW
+                           should be 08-Jun-87 01:46 VAJTUY  ALL  RD  NO
+(CARL        :  33) CRSHID.LOG     2 13-Jun-91 12:08 -- bad checksum KUVSEJ
+                           should be 01-Nov-92 15:58 WIGDUJ  ALL  RD  NO
+(CARL        :  33) LOGPKG.SAI     4 28-Jun-88 22:15 -- bad checksum XOSPOK
+                           should be 27-Apr-88 16:15 CIBHAL  ALL  RD  NO
+(CARL        :  33) LOGPKG.REQ     2 07-Jun-88 13:54 -- bad checksum FAZDIF
+                           should be 27-Apr-88 16:15 GOWJUP  ALL  RD  NO
+(CARL        :  33) SWITCH.INI     2 01-Oct-91 16:29 -- bad checksum JAWKOC
+                           should be 05-Feb-88 18:01 ZOSHEM  ALL  RD  NO
+(CARL        :  33) CSLAVE.SAV    14 20-May-82 21:17 -- bad checksum KOKYAD
+                           should be 20-May-82 21:29 MUBTOH  ALL  RD  NO     10
+(CARL        :  33) CARDS.SAV     35 11-Mar-88 22:10 -- bad checksum LAQVUN
+                           should be 15-Sep-87 01:29 MOBCOZ  ALL  RD  NO
+(CARL        :  33) CARDS.SAI     16 11-Mar-88 22:07 -- bad checksum DOTFEX
+                           should be 24-Apr-87 03:45 ZAWXEM  ALL  RD  NO
+(CARL        :  33) MAIL           1 10-Jun-92 11:30 -- bad checksum VAVVAV
+                           should be 08-Mar-88 00:42 GEPTIQ  ALL  RD  NO
+(CARL        :  33) DSLAVE.SAV    18 14-Jan-83 02:40 -- bad checksum XUNGUW
+                           should be 16-Dec-86 17:32 LUVFAT  ALL  RD  NO
+(CARL        :  33) BIO.SAV       13 02-Jan-86 21:57 -- bad checksum JAKLUV
+                           should be 27-Dec-85 14:44 VIYCEL  ALL  RD  NO
+(CARL        :  33) SYSLOG.SAV    25 13-Apr-89 14:45 -- bad license 342000
+                           should be 13-Apr-89 14:50 SIMFEK  ALL  RD  NO
+(CARL        :  33) SY.SAV        31 02-Jun-88 17:45 -- bad checksum QIPRIP
+                           should be 25-May-88 15:21 QEMZAT  ALL  RD  NO
+(CARL        :  33) DSKB.QIK       7 05-Aug-88 14:54 -- bad checksum FARQUF
+                           should be 05-Aug-88 14:54 GINLUK  ALL  RD  NO
+(CARL        :  33) VUE.INI        2 22-May-90 12:59 -- bad checksum HEHGOJ
+                           should be 13-May-89 01:40 JEJWIM  ALL  RD  NO
+(CARL        :  33) NEWMON.SAV                       -- missing on slave
+(CARL        :  33) MAGNUM.DIR                       -- missing on slave
+(CARL        :  33) ETASYM                           -- missing on slave
+(CARL        :  33) IOCSF.165                        -- missing on slave
+(CARL        :  33) IOCSF.166                        -- missing on slave
+(CARL        :  33) GAMES.DIR                        -- missing on slave
+(CARL        :  33) MAIL.TST                         -- missing on slave
+(CARL        :  33) COUNT.SAV                        -- missing on slave
+(CARL        :  33) MAIL.BOX                         -- missing on slave
+(CARL        :  33) FINE.INI                         -- missing on slave
+(CARL        :  33) ARGH                             -- missing on slave
+(CARL        :  33) STUFF.CMM                        -- missing on slave
+(CARL        :  33) SIMPLF.023                       -- missing on slave
+(CARL        :  33) SIMPLF.022                       -- missing on slave
+(CARL        :  33) SIMPLF.TST                       -- missing on slave
+(CARL        :  33) SWITCH.OUT                       -- missing on slave
+(CARL        :  33) C.SAI                            -- missing on slave
+(CARL        :  33) SAVSHR.FIL                       -- missing on slave
+(CARL        :  33) FNDBAD.28                        -- missing on slave
+(CARL        :  33) ASP11D.SAV                       -- missing on slave
+(CARL        :  33) SPPARC.F58                       -- missing on slave
+(CARL        :  33) NETSTA.DIR                       -- missing on slave
+(CARL        :  33) NETSTA.NEW                       -- missing on slave
+(CARL        :  33) ASP11.SAV                        -- missing on slave
+(CARL        :  33) ASH.LOG                          -- missing on slave
+(CARL        :  33) GAMESF.H30                       -- missing on slave
+(CARL        :  33) FOOBAR.BAZ                       -- missing on slave
+(CARL        :  33) CTYLIB.REQ                       -- missing on slave
+(CARL        :  33) CTYLIB.SAI                       -- missing on slave
+(CARL        :  33) SCOUNT.SAV                       -- missing on slave
+Checking host 34
+(CARL        :  34) VUE.INI        2 04-Jan-85 22:20 -- bad checksum SOCWIS
+                           should be 13-May-89 01:40 JEJWIM  ALL  RD  NO
+(CARL        :  34) RPG.INI        2 08-Feb-89 23:19 -- bad checksum ZIKQAC
+                           should be 13-May-89 01:10 XIBNAZ  ALL  RD  NO
+(CARL        :  34) USERS.SAV     21 07-Mar-89 20:00 -- bad checksum JADQEY
+                           should be 09-May-90 12:01 NEFWOC  ALL  RD  NO
+(CARL        :  34) JQUEUE.LOG    26 13-Nov-86 01:43 -- bad checksum ZIBMAT
+                           should be 12-Nov-86 23:57 NOVBAW  ALL  RD  NO
+(CARL        :  34) LOGON.SHR     13 10-May-85 19:24 -- protection RUN ALL ALL
+                           should be 16-May-85 09:36 QEVKAY  ALL RUN RUN  40010
+(CARL        :  34) DIRECT.LOW     2 25-May-83 18:37 -- protection ALL RUN RUN
+                           should be 24-Feb-86 22:03 GIFHOL  ALL  RD  NO     10
+(CARL        :  34) DIRECT.SHR    22 25-May-83 18:37 -- protection ALL RUN RUN
+                           should be 24-Feb-86 22:03 BOQRUY  ALL  RD  NO     10
+(CARL        :  34) VMFILE.SAI    19 09-May-88 17:40 -- bad checksum PUJFET
+                           should be 22-Mar-88 13:35 PUBWIM  ALL  RD  NO
+(CARL        :  34) SWITCH.INI     2 07-Feb-89 22:58 -- bad checksum NUGCIP
+                           should be 05-Feb-88 18:01 ZOSHEM  ALL  RD  NO
+(CARL        :  34) MAIL.BOX      35 22-Oct-81 18:01 -- bad checksum POLPUR
+                           should be 05-Feb-85 01:54 GIHHIM  ALL  RD  NO
+(CARL        :  34) MAIL           1 28-Mar-91 20:02 -- bad checksum VAVVAV
+                           should be r-88 00:42 GEPTIQ  ALL  RD  NO
+(CARL        :  34) DSKB.QIK       7 05-Aug-88 14:54 -- bad checksum WEGMIL
+                           should be 05-Aug-88 14:54 GINLUK  ALL  RD  NO
+(CARL        :  34) BIO.SAV                          -- missing on slave
+(CARL        :  34) NEWMON.SAV                       -- missing on slave
+(CARL        :  34) SY.DAB                           -- missing on slave
+(CARL        :  34) MAGNUM.DIR                       -- missing on slave
+(CARL        :  34) ETASYM                           -- missing on slave
+(CARL        :  34) IOCSF.165                        -- missing on slave
+(CARL        :  34) IOCSF.166                        -- missing on slave
+(CARL        :  34) GAMES.DIR                        -- missing on slave
+(CARL        :  34) MAIL.TST                         -- missing on slave
+(CARL        :  34) CARDS.SAI                        -- missing on slave
+(CARL        :  34) CARDS.SAV                        -- missing on slave
+(CARL        :  34) COUNT.SAV                        -- missing on slave
+(CARL        :  34) CRSHID.LOG                       -- missing on slave
+(CARL        :  34) FINE.INI                         -- missing on slave
+(CARL        :  34) FREE.SAV                         -- missing on slave
+(CARL        :  34) STUFF.CMM                        -- missing on slave
+(CARL        :  34) SIMPLF.023                       -- missing on slave
+(CARL        :  34) SIMPLF.022                       -- missing on slave
+(CARL        :  34) SIMPLF.TST                       -- missing on slave
+(CARL        :  34) TREE.FAM                         -- missing on slave
+(CARL        :  34) SWITCH.OUT                       -- missing on slave
+(CARL        :  34) ADVISE.SHR                       -- missing on slave
+(CARL        :  34) ESCTRP.REQ                       -- missing on slave
+(CARL        :  34) ESCTRP.SAI                       -- missing on slave
+(CARL        :  34) C.SAI                            -- missing on slave
+(CARL        :  34) SAVSHR.FIL                       -- missing on slave
+(CARL        :  34) SYSDPY.SAV                       -- missing on slave
+(CARL        :  34) FNDBAD.28                        -- missing on slave
+(CARL        :  34) ASP11D.SAV                       -- missing on slave
+(CARL        :  34) SPPARC.F58                       -- missing on slave
+(CARL        :  34) 1000.CTL                         -- missing on slave
+(CARL        :  34) 1000.SAV                         -- missing on slave
+(CARL        :  34) NETSTA.DIR                       -- missing on slave
+(CARL        :  34) NETSTA.NEW                       -- missing on slave
+(CARL        :  34) ASP11.SAV                        -- missing on slave
+(CARL        :  34) ASH.LOG                          -- missing on slave
+(CARL        :  34) ASH.CTL                          -- missing on slave
+(CARL        :  34) GAMESF.H30                       -- missing on slave
+(CARL        :  34) FOOBAR.BAZ                       -- missing on slave
+(CARL        :  34) CTYLIB.REQ                       -- missing on slave
+(CARL        :  34) CTYLIB.SAI                       -- missing on slave
+(CARL        :  34) SYSDA.SAV                        -- missing on slave
+(CARL        :  34) SCOUNT.SAV                       -- missing on slave
+Checking host 38
+(CARL        :  38) VUE.INI        2 04-Jan-85 22:21 -- bad checksum SOCWIS
+                           should be 13-May-89 01:40 JEJWIM  ALL  RD  NO
+(CARL        :  38) RPG.INI        2 18-Aug-88 16:38 -- bad checksum QOWCER
+                           should be 13-May-89 01:10 XIBNAZ  ALL  RD  NO
+(CARL        :  38) JQUEUE.LOG    12 07-Nov-86 16:49 -- bad checksum FALROM
+                           should be 12-Nov-86 23:57 NOVBAW  ALL  RD  NO
+(CARL        :  38) CRSHID.LOG     2 16-Jul-91 12:59 -- bad checksum MADBIN
+                           should be 01-Nov-92 15:58 WIGDUJ  ALL  RD  NO
+(CARL        :  38) ETASYM         2 13-Jun-81 06:14 -- bad checksum PUQKAH
+                           should be 09-Jul-82 02:09 CIXBIQ  ALL  RD  NO
+(CARL        :  38) CSLAVE.SAV    14 16-Dec-86 17:29 -- bad license 
+                           should be 20-May-82 21:29 MUBTOH  ALL  RD  NO     10
+(CARL        :  38) MAIL.BOX      80 10-Nov-82 18:59 -- bad checksum COLGOW
+                           should be 05-Feb-85 01:54 GIHHIM  ALL  RD  NO
+(CARL        :  38) MAIL           2 24-Sep-91 10:48 -- bad checksum VOZWIX
+                           should be 08-Mar-88 00:42 GEPTIQ  ALL  RD  NO
+(CARL        :  38) DSKB.QIK       7 05-Aug-88 14:55 -- bad checksum JOQSUX
+                           should be 05-Aug-88 14:54 GINLUK  ALL  RD  NO
+(CARL        :  38) NEWMON.SAV                       -- missing on slave
+(CARL        :  38) MAGNUM.DIR                       -- missing on slave
+(CARL        :  38) IOCSF.165                        -- missing on slave
+(CARL        :  38) IOCSF.166                        -- missing on slave
+(CARL        :  38) GAMES.DIR                        -- missing on slave
+(CARL        :  38) MAIL.TST                         -- missing on slave
+(CARL        :  38) COUNT.SAV                        -- missing on slave
+(CARL        :  38) FINE.INI                         -- missing on slave
+(CARL        :  38) FREE.SAV                         -- missing on slave
+(CARL        :  38) STUFF.CMM                        -- missing on slave
+(CARL        :  38) SIMPLF.023                       -- missing on slave
+(CARL        :  38) SIMPLF.022                       -- missing on slave
+(CARL        :  38) SIMPLF.TST                       -- missing on slave
+(CARL        :  38) SWITCH.OUT                       -- missing on slave
+(CARL        :  38) ADVISE.SHR                       -- missing on slave
+(CARL        :  38) REDSCR.SAV                       -- missing on slave
+(CARL        :  38) C.SAI                            -- missing on slave
+(CARL        :  38) VMFILE.SAI                       -- missing on slave
+(CARL        :  38) FNDBAD.28                        -- missing on slave
+(CARL        :  38) SPPARC.F58                       -- missing on slave
+(CARL        :  38) 1000.CTL                         -- missing on slave
+(CARL        :  38) 1000.SAV                         -- missing on slave
+(CARL        :  38) INIBAI.REL                       -- missing on slave
+(CARL        :  38) NETSTA.DIR                       -- missing on slave
+(CARL        :  38) NETSTA.NEW                       -- missing on slave
+(CARL        :  38) ASH.LOG                          -- missing on slave
+(CARL        :  38) ASH.CTL                          -- missing on slave
+(CARL        :  38) GAMESF.H30                       -- missing on slave
+(CARL        :  38) FOOBAR.BAZ                       -- missing on slave
+(CARL        :  38) CTYLIB.REQ                       -- missing on slave
+(CARL        :  38) CTYLIB.SAI                       -- missing on slave
+(CARL        :  38) SCOUNT.SAV                       -- missing on slave
+Checking host 74
+(CARL        :  74) VUE.INI        2 04-Jan-85 22:28 -- bad checksum SOCWIS
+                           should be 13-May-89 01:40 JEJWIM  ALL  RD  NO
+(CARL        :  74) RPG.INI        2 22-Jan-89 19:11 -- bad checksum POMCIR
+                           should be 13-May-89 01:10 XIBNAZ  ALL  RD  NO
+(CARL        :  74) TUMS.INI       3 08-Jun-90 01:54 -- bad checksum ZABVAK
+                           should be 27-Feb-89 05:02 GOVLUR  ALL  RD  NO
+(CARL        :  74) ESCTRP.SAI     2 16-Mar-89 00:23 -- bad checksum TOWVEN
+                           should be 12-May-86 12:01 QOBFUM  ALL  RD  NO
+(CARL        :  74) CRSHID.LOG     2 26-Jan-88 13:09 -- bad checksum ZETQUW
+                           should be 01-Nov-92 15:58 WIGDUJ  ALL  RD  NO
+(CARL        :  74) LOGPKG.REQ     2 07-Jun-88 13:54 -- bad checksum FAZDIF
+                           should be 27-Apr-88 16:15 GOWJUP  ALL  RD  NO
+(CARL        :  74) LOGPKG.SAI     4 28-Jun-88 22:15 -- bad checksum XOSPOK
+                           should be 27-Apr-88 16:15 CIBHAL  ALL  RD  NO
+(CARL        :  74) MAIL.FWD       2 28-Mar-90 19:12 -- bad checksum XOVGUY
+                           should be 27-Apr-90 12:33 GAKLOS  ALL  RD  NO
+(CARL        :  74) MAGNUM.DIR     2 13-Feb-90 19:29 -- bad checksum TAPMEY
+                           should be 11-Oct-90 16:48 BUXLIY   CP  NO  NO
+(CARL        :  74) MAIL          44 17-Mar-92 13:54 -- bad checksum LIFVUL
+                           should be 08-Mar-88 00:42 GEPTIQ  ALL  RD  NO
+(CARL        :  74) BIO.SAV                          -- missing on slave
+(CARL        :  74) NEWMON.SAV                       -- missing on slave
+(CARL        :  74) DSKB.QIK                         -- missing on slave
+(CARL        :  74) DSLAVE.SAV                       -- missing on slave
+(CARL        :  74) ETATSY.SAV                       -- missing on slave
+(CARL        :  74) CSLAVE.SAV                       -- missing on slave
+(CARL        :  74) ETASYM                           -- missing on slave
+(CARL        :  74) AUTHOR.SAV                       -- missing on slave
+(CARL        :  74) IOCSF.165                        -- missing on slave
+(CARL        :  74) IOCSF.166                        -- missing on slave
+(CARL        :  74) GAMES.DIR                        -- missing on slave
+(CARL        :  74) CARDS.SAI                        -- missing on slave
+(CARL        :  74) CARDS.SAV                        -- missing on slave
+(CARL        :  74) COUNT.SAV                        -- missing on slave
+(CARL        :  74) MAIL.BOX                         -- missing on slave
+(CARL        :  74) FINE.INI                         -- missing on slave
+(CARL        :  74) ARGH                             -- missing on slave
+(CARL        :  74) FREE.SAV                         -- missing on slave
+(CARL        :  74) STUFF.CMM                        -- missing on slave
+(CARL        :  74) SIMPLF.023                       -- missing on slave
+(CARL        :  74) SIMPLF.022                       -- missing on slave
+(CARL        :  74) SIMPLF.TST                       -- missing on slave
+(CARL        :  74) INASET.MAC                       -- missing on slave
+(CARL        :  74) CK.SAV                           -- missing on slave
+(CARL        :  74) TREE.FAM                         -- missing on slave
+(CARL        :  74) LIC.FDM                          -- missing on slave
+(CARL        :  74) SWITCH.OUT                       -- missing on slave
+(CARL        :  74) ADVISE.SHR                       -- missing on slave
+(CARL        :  74) REDSCR.SAV                       -- missing on slave
+(CARL        :  74) C.SAI                            -- missing on slave
+(CARL        :  74) VMFILE.SAI                       -- missing on slave
+(CARL        :  74) CT2.SAV                          -- missing on slave
+(CARL        :  74) QUEDPY.SAV                       -- missing on slave
+(CARL        :  74) SIZES.SAV                        -- missing on slave
+(CARL        :  74) SAVSHR.FIL                       -- missing on slave
+(CARL        :  74) SYSDPY.SAV                       -- missing on slave
+(CARL        :  74) FNDBAD.28                        -- missing on slave
+(CARL        :  74) ASP11D.SAV                       -- missing on slave
+(CARL        :  74) SPPARC.F58                       -- missing on slave
+(CARL        :  74) HSB.SAV                          -- missing on slave
+(CARL        :  74) 1000.CTL                         -- missing on slave
+(CARL        :  74) 1000.SAV                         -- missing on slave
+(CARL        :  74) INIBAI.REL                       -- missing on slave
+(CARL        :  74) INIBAI.SAI                       -- missing on slave
+(CARL        :  74) NETSTA.DIR                       -- missing on slave
+(CARL        :  74) NETSTA.NEW                       -- missing on slave
+(CARL        :  74) ASP11.SAV                        -- missing on slave
+(CARL        :  74) ASH.LOG                          -- missing on slave
+(CARL        :  74) ASH.CTL                          -- missing on slave
+(CARL        :  74) QIKSAV.SAV                       -- missing on slave
+(CARL        :  74) GAMESF.H30                       -- missing on slave
+(CARL        :  74) JQUEUE.LOG                       -- missing on slave
+(CARL        :  74) FOOBAR.BAZ                       -- missing on slave
+(CARL        :  74) CTYLIB.REQ                       -- missing on slave
+(CARL        :  74) CTYLIB.SAI                       -- missing on slave
+(CARL        :  74) FIXMAY.CTL                       -- missing on slave
+(CARL        :  74) SYSDA.SAV                        -- missing on slave
+(CARL        :  74) FRMPKG.SAI                       -- missing on slave
+(CARL        :  74) FRMPKG.REQ                       -- missing on slave
+(CARL        :  74) PCOMAI.CTL                       -- missing on slave
+(CARL        :  74) SCOUNT.SAV                       -- missing on slave
+   0 zá
