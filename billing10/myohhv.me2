@@ -1,0 +1,585 @@
+%   MK.CF                              MKCF.PR1        17  %
+PROCEDURE MK.CF%
+Version 19, Nov 03, 1982.  By Dennis Moulton
+Added a logout to the EOJ message.
+Version 18, Sep. 15, 1981. by Dennis Moulton
+Increased size of repeat count
+Version 17, Jan. 24, 1981, by Fred Canning
+fixed bug where $A did not work in a loop
+Version 16, Sep. 5, 1980, by VEV
+Fixed bug where "D" didn't set MAGNUM in M type.
+Version 15, July 31, 1980, By Dan Lemberg
+If "D" then no abort. 
+Version 13-14 NONE (skipped)
+VERSION 12, MAY 20, 1980, BY VEV
+ADDED NEW CONTROLS "D" FOR CALLING MAGNUM, "V" & "W" END-OF-X LINKS.
+Version 10, March 26, 1980, by VEV
+Added new controls "L" for logging and "Z" for changing groups.
+Version 9, February 7, 1980, by VEV
+Added "A", "G", "I", and "U" commands.
+Version 7, Dec. 13, 1979, by VEV
+Added "J" to link from end of segment to any non-contiguous segment.
+Cannot be used as an entry point. (Does not start a segment).
+Version 5, Nov. 17, 1979, by VEV
+Added "H" for Halting command file sequence at the end of a
+Magnum sequence.  Also change CNTL input from string. to 3N.
+Version 4, November 16, 1979, by VEV
+Checks for invalid use of the "E" after an XEXEC section of the
+command file.
+Version 3, Sept. 11, 1979, by VEV
+If group 999 is entered, selects RUN.CNTL and used the
+found CNTL number as the actual group no. for command selection.
+Version 2, Sept. 4, 1979, by VEV
+Added "K" for Checkpoint.
+Version 1, Aug. 21, 1979, by V.E.V.
+*
+Reads a Master Command File for a software group and uses the CNTL 
+number found in relation RUN.CNTL to select commands from the MCF
+starting at the control point.  Then writes the commands in appropiate
+Exec files for execution as either Exec commands or Magnum commands.
+See ACF.GRP for documents and all software involved. 
+%
+BEGIN
+
+FIELDS
+  SRC.FNAM      AS "10C",       % SOURCE FILE NAME %
+  WRT.SW        AS "N",         % Write line switch, 1 = write %
+  WRT.CT        AS "3Z",        % Count of output records (commands) %
+  STRG          AS "100C",      % One input record %
+  STRG1         AS "100C",      % Temporary storage %
+  CTRL          AS "C",         % Control letter, N, R, C, or E %
+  CTL           AS "C",         %Local CTRL for sw. %
+  SV.CTL        AS "C",         %Saved CTL when doing an Ignore%
+  AST.IN        AS "2Z",        % input AST %
+  AST.CK        AS "2Z",        % Used with I or U for checking AST %
+  CNT           AS "3Z",        % Count of strings stored in relation%
+  RPT.CNT       AS "3Z"         % Repeat command set count %
+
+REPORT MGCON TO "MAGCON.CF-ANY"
+  PAGE.SIZE 0
+
+REPORT MG TO "MAG.CF-ANY"
+  PAGE.SIZE 0
+
+REPORT EX TO "EX.CF-ANY"
+  PAGE.SIZE 0
+
+SOURCE AST FROM "ACTSYS.DAT"
+  FREE FORM
+  INPUT AST.IN
+
+SOURCE INP FROM SRC.FNAM
+  FIXED FORM
+  INPUT STRG
+
+SOURCE RPT.CT FROM "RPTCT.DAT"
+  FREE FORM
+  INPUT RPT.CNT
+
+RELATION STRGS IS
+  KEY   CNT
+  DATA  STRG
+
+
+
+MOVE DEFAULT TO CNTL, WRT.CT, CTRL, WRT.SW, CNT, RPT.CNT, CTL, AST.IN, SV.CTL
+
+TYPE "Group: "
+ACCEPT GRP.NO
+
+IF GRP.NO = 999 THEN
+  SELECT RUN.CNTL VIA KEY THEN
+    BEGIN
+    MOVE CNTL TO GRP.NO OF PROCEDURE
+    TYPE @CR, @TAB TO 10, "**** CALLING GROUP ", CNTL, "  ****", @CR,@CR
+    END
+  ELSE
+    ABORT "***NO ENTRY IN RUN.CNTL FOR 999 - CALL DBA ***", @CR
+ELSE NOTHING
+
+
+LET SRC.FNAM = "G" + GRP.NO AS "3C" + ".CF"
+
+SELECT RUN.CNTL VIA KEY THEN
+  MOVE CNTL TO CNTL OF PROCEDURE
+ELSE
+  ABORT "***NO CONTROL NO. IN RUN.CNTL FOR THIS GROUP.  CALL DBA.", @CR,@CR
+
+
+TYPE @TAB TO 50, "* * * * ACF CNTL: ", CNTL, @CR
+
+
+WRITE REPORT MG, EX     BEGIN
+
+IF CNTL = 99 THEN
+  BEGIN
+  PRINT TO EX
+        "TIME", @CR,
+        "DAY", @CR,
+        "TYPE (UAS)EOJ.DAT", @CR
+  PRINT TO MG
+        "RUN SET.CNTL", @CR,
+        GRP.NO, ",1", @CR
+  END
+
+
+ELSE
+
+  BEGIN
+
+  WRT.LP:
+  FOR EACH INP
+    BEGIN
+    IF SUBSTR(STRG,1,1) = "$" THEN
+      LET CTRL = SUBSTR(STRG,2,1)
+    ELSE
+      MOVE DEFAULT TO CTRL
+
+    IF CTRL = DEFAULT THEN
+      IF CTL = "I" THEN NOTHING
+      ELSE
+      IF WRT.SW = 1 THEN
+        IF CTL = "S" THEN
+          BEGIN
+          INSERT INTO STRGS
+          ADD 1 TO CNT
+          END
+        ELSE
+          IF CTL = "K" THEN
+            BEGIN
+            LET STRG1 = STRG
+            LET STRG = "DIR RELATION " + TRIM(STRG1) + " SIZE"
+            INSERT INTO STRGS
+            ADD 1 TO CNT
+            LET STRG = "BACKUP " + TRIM(STRG1)
+            INSERT INTO STRGS
+            ADD 1 TO CNT
+            LET STRG = "RUN SET.CNTL"
+            INSERT INTO STRGS
+            ADD 1 TO CNT
+            LET STRG = GRP.NO AS "3C" +","+ CNTL AS "3C"
+            INSERT INTO STRGS
+            MOVE "S" TO CTL
+            ADD 1 TO CNT
+            END
+          ELSE
+            BEGIN
+            ADD 1 TO WRT.CT
+            IF CTL = "X" THEN
+              PRINT TO EX TRIM(STRG), @CR
+            ELSE
+              PRINT TO MG TRIM(STRG), @CR
+            END
+      ELSE
+        IF CTL = "K" THEN
+          BEGIN
+          ADD 1 TO WRT.CT
+          MOVE "M" TO CTL
+          IF WRT.SW = 0 THEN
+            PRINT TO MG "REST "
+          ELSE
+            PRINT TO MG
+              "DIR RELATION ", TRIM(STRG), " SIZE", @CR, "BACKUP "
+          PRINT TO MG TRIM(STRG), @CR
+          IF WRT.SW = 2 THEN
+            PRINT TO MG
+              "RUN SET.CNTL", @CR,
+              GRP.NO, ",", CNTL, @CR
+          ELSE
+            PRINT TO MG
+              "DIR RELATION ", TRIM(STRG), " SIZE", @CR
+          MOVE 1 TO WRT.SW
+          END
+        ELSE NOTHING
+
+    ELSE        % Have a control record %
+      IF CTRL = "C" THEN NOTHING
+      ELSE
+      IF CTRL = "G" THEN
+        FOR EACH AST
+          MOVE AST.IN TO AST.IN OF PROCEDURE
+      ELSE
+        IF CTRL = "F" THEN
+          IF WRT.SW = 0 THEN NOTHING
+          ELSE
+            IF CTL NE "S" THEN
+              BEGIN
+              PRINT TO MG
+                "RUN SET.CNTL", @CR,
+                GRP.NO, ",", SUBSTR(STRG,3,3), @CR
+              ADD 2 TO WRT.CT
+              MOVE "E" TO CTL
+              FINISH WRT.LP
+              END
+            ELSE   % Previous CTL was an "S" %
+              BEGIN
+              MOVE DEFAULT TO RPT.CNT
+              FOR EACH RPT.CT
+                WHILE RPT.CNT GT 0 DO
+                  BEGIN
+                  FOR EACH STRGS
+                    BEGIN
+                    PRINT TO MG TRIM(STRG), @CR
+                    ADD 1 TO WRT.CT
+                    END
+                  SUBTRACT 1 FROM RPT.CNT
+                  END
+              DELETE FROM STRGS ALL
+              MOVE 1 TO WRT.SW
+              MOVE "M" TO CTL
+              END
+      ELSE              % Not an F or C or G %
+        CONDITIONAL ON WRT.SW
+          BEGIN
+          0:            % Write not started. %
+            IF CTRL = "K" OR "M" OR "N" OR "R" OR "S" OR "X" OR "Y" THEN
+              IF CNTL = SUBSTR(STRG,3,3) AS "3N" THEN
+                BEGIN
+                IF CTRL = "K" THEN
+                  NOTHING
+                ELSE
+                  MOVE 1 TO WRT.SW        % Set write mode %
+                IF CTRL = "X" OR "Y" THEN
+                  BEGIN
+                  MOVE "X" TO CTL
+                  PRINT TO MG
+                    "TIME", @CR
+                  END
+                ELSE            % Start write of Magnum command file section %
+                  BEGIN
+                  IF CTRL = "S" THEN
+                    MOVE CTRL TO CTL
+                  ELSE
+                    IF CTRL = "K" OR "R" THEN
+                      MOVE CTRL TO CTL
+                    ELSE
+                      MOVE "M" TO CTL
+                  PRINT TO MG
+                    "COPY FILE (UAS)STOPED.CF TO FILE EX.CF", @CR,
+                    "Y", @CR,
+                    "SEND COPY OF INPORT TO TERMINAL", @CR
+                  END
+                END
+              ELSE              % Not valid CNTL %
+                NOTHING
+            ELSE                % Other controls can't start a write %
+              NOTHING
+
+          1 OR 2:       % Write started %
+            BEGIN
+            IF CTL = "I" THEN
+              IF CTRL = "I" OR "U" THEN
+                LET CTL = SV.CTL        % Stop the ignore, restore CTL %
+              ELSE
+                NOTHING
+            ELSE NOTHING
+            IF CTL = "I" THEN NOTHING
+            ELSE
+            CONDITIONAL ON CTRL
+              BEGIN
+              "A":
+                IF WRT.SW = 2 THEN NOTHING
+                ELSE
+                  IF CTL = "S" THEN
+                    BEGIN
+                    LET STRG = AST.IN AS '2C'
+                    INSERT INTO STRGS
+                    ADD 1 TO CNT
+                    END
+                  ELSE
+                    IF CTL = "M" THEN
+                      PRINT TO MG AST.IN, @CR
+                    ELSE
+                      PRINT TO EX AST.IN, @CR
+
+              "D":
+                  IF CTL = "M" THEN
+                    PRINT TO MG "MAGNUM", @CR
+                  ELSE
+                    PRINT TO EX "MAGNUM", @CR
+
+              "E" OR "H":
+                BEGIN
+                IF CTL = "X" THEN
+                  ABORT '*** "', CTRL, '" FOUND AFTER XEXEC SECTION***', @CR
+                ELSE
+                  MOVE CTRL TO CTL
+                FINISH WRT.LP
+                END
+
+              "I":
+                BEGIN
+                LET AST.CK = SUBSTR(STRG,3,2) AS "2Z"
+                IF AST.CK = AST.IN THEN
+                  %Set ignore for this AST %
+                  BEGIN
+                  MOVE CTL TO SV.CTL
+                  LET CTL = "I"
+                  END
+                ELSE NOTHING
+                END
+
+              "K":
+                IF WRT.SW = 1 THEN
+                  BEGIN
+                  IF CTL = "S" THEN NOTHING
+                  ELSE
+                    MOVE 2 TO WRT.SW      % Force write "BACKUP" %
+                  MOVE CTRL TO CTL
+                  LET CNTL = SUBSTR(STRG,3,3) AS "3N"
+                  END
+                ELSE
+                  ABORT "***K*** FOUND WITH WRT.SW=2", @CR
+
+              "L":
+                IF CTL = "S" THEN
+                  BEGIN
+                  LET STRG1 = GRP.NO AS "3C" + "," + SUBSTR(STRG,3,4)
+                  LET STRG = "RUN GRP.LOG"
+                  INSERT INTO STRGS
+                  ADD 1 TO CNT
+                  LET STRG = STRG1
+                  INSERT INTO STRGS
+                  ADD 1 TO CNT
+                  END
+                ELSE
+                  PRINT TO MG
+                    "RUN GRP.LOG", @CR,
+                    GRP.NO, ",", SUBSTR(STRG,3,4), @CR
+
+              "M":
+                IF CTL = "X" THEN
+                  FINISH WRT.LP
+                ELSE
+                  BEGIN
+                  IF CTL = "S" THEN NOTHING
+                  ELSE MOVE CTRL TO CTL
+                  MOVE 1 TO WRT.SW
+                  END
+
+              "N" OR "J":
+                IF CTL = "X" THEN
+                  BEGIN
+                  PRINT TO EX
+                    "MAGNUM", @CR,
+                    "RUN SET.CNTL", @CR,
+                    GRP.NO, ",", SUBSTR(STRG,3,3), @CR,
+                    "RUN MK.CF", @CR,
+                    GRP.NO, @CR,
+                    "DO FILE MAG.CF", @CR,
+                    "Q", @CR,
+                    "R COM;EX.CF", @CR
+                  FINISH WRT.LP
+                  END
+                ELSE
+                  BEGIN
+                  IF CTL = "S" THEN
+                    BEGIN
+                    MOVE 1 TO WRT.SW
+                    LET CNTL = SUBSTR(STRG,3,3) AS "3N"
+                    LET STRG = "RUN SET.CNTL"
+                    INSERT INTO STRGS
+                    ADD 1 TO CNT
+                    LET STRG = GRP.NO AS "3C" +","+ CNTL AS "3C"
+                    INSERT INTO STRGS
+                    ADD 1 TO CNT
+                    END
+                  ELSE
+                    BEGIN
+                    MOVE "M" TO CTL
+                    MOVE 1 TO WRT.SW
+                    PRINT TO MG
+                      "RUN SET.CNTL", @CR,
+                      GRP.NO, ",", SUBSTR(STRG,3,3), @CR
+                    END
+                  IF CTRL = "J" THEN
+                    BEGIN
+                    MOVE "E" TO CTL
+                    FINISH WRT.LP
+                    END
+                  ELSE NOTHING
+                  END
+
+              "Q":
+                IF WRT.SW = 2 THEN NOTHING
+                ELSE
+                  BEGIN
+                  LET CNTL = SUBSTR(STRG,3,3) AS "3N"
+                  CONDITIONAL ON CTL
+                    BEGIN
+                    "S":
+                      BEGIN
+                      LET STRG = "RUN SET.CNTL"
+                      INSERT INTO STRGS
+                      ADD 1 TO CNT
+                      LET STRG = GRP.NO AS "3C" + "," + CNTL AS "3C"
+                      INSERT INTO STRGS
+                      ADD 1 TO CNT
+                      END
+
+                    "M" OR "R":
+                      PRINT TO MG
+                        "RUN SET.CNTL", @CR,
+                        GRP.NO, ",", CNTL, @CR
+
+                    "X":
+                      PRINT TO EX
+                        "MAGNUM", @CR,
+                        "RUN SET.CNTL", @CR,
+                        GRP.NO, ",", CNTL, @CR,
+                        "Q", @CR
+
+                    END
+                  END
+
+              "R":
+                IF CTL = "X" THEN
+                  FINISH WRT.LP
+                ELSE
+                  IF CTL = "R" THEN NOTHING
+                  ELSE
+                    MOVE 2 TO WRT.SW
+
+              "S":
+                IF CTL = "X" THEN
+                  FINISH WRT.LP
+                ELSE
+                  BEGIN
+                  MOVE 1 TO WRT.SW
+                  MOVE CTRL TO CTL
+                  END
+
+              "U":
+                BEGIN
+                LET AST.CK = SUBSTR(STRG,3,2) AS "2Z"
+                IF AST.CK = AST.IN THEN
+                  NOTHING
+                ELSE
+                  %Set ignore for other AST's%
+                  BEGIN
+                  MOVE CTL TO SV.CTL
+                  LET CTL = "I"
+                  END
+                END
+
+              "V" OR "W":
+                IF CTL = "X" THEN
+                  BEGIN
+                  IF CTRL = "V" THEN
+                    PRINT TO EX "MAGNUM", @CR
+                  ELSE NOTHING
+                  PRINT TO EX
+                    "RUN MK.CF", @CR,
+                    SUBSTR(STRG,3,3), @CR,
+                    "DO FILE MAG.CF", @CR,
+                    "Q", @CR,
+                    "R COM;EX.CF", @CR
+                  END
+                ELSE
+                  ABORT '*** "', CTRL, '" FOUND IN MAGNUM SECTION***', @CR
+
+              "X":
+                BEGIN
+                IF CTL = "X" THEN
+                  NOTHING
+                ELSE
+                  MOVE "E" TO CTL
+                FINISH WRT.LP
+                END
+
+              "Y":
+                IF CTL = "X" THEN
+                  BEGIN
+                  PRINT TO EX
+                    "MAGNUM", @CR,
+                    "RUN SET.CNTL", @CR,
+                    GRP.NO, ",", SUBSTR(STRG,3,3), @CR,
+                    "RUN MK.CF", @CR,
+                    GRP.NO, @CR,
+                    "Q", @CR,
+                    "R COM;EX.CF", @CR
+                  FINISH WRT.LP
+                  END
+                ELSE
+                  BEGIN
+                  PRINT TO MG
+                    "RUN SET.CNTL", @CR,
+                    GRP.NO, ",", SUBSTR(STRG,3,3), @CR
+                  MOVE "E" TO CTL
+                  FINISH WRT.LP
+                  END
+
+              "Z":
+                IF WRT.SW = 2 OR CTL NE "X" THEN
+                  ABORT "***Z*** FOUND IN ILLEGAL SEGMENT", @CR
+                ELSE
+                  BEGIN
+                  ADD 1 TO WRT.CT
+                  PRINT TO EX
+                    "MAGNUM", @CR,
+                    "RUN CHANGE.GROUP", @CR,
+                    GRP.NO, ",", SUBSTR(STRG,3,3), @CR,
+                    "RUN GRP.LOG", @CR,
+                    GRP.NO, ",STOP", @CR,
+                    "RUN GRP.LOG", @CR,
+                    SUBSTR(STRG,3,3), ",STRT", @CR,
+                    "% *** ", TRIM(SUBSTR(STRG,6)), " *** %", @CR,
+                    "RUN MK.CF", @CR,
+                    "999", @CR,
+                    "DO FILE MAG.CF", @CR,
+                    "Q", @CR,
+                    "R COM; EX.CF", @CR
+                  END
+
+
+
+              END       % End of conditional on CTRL %
+
+            END   % End of 1 OR 2 block ( write started) %
+          END   % End of Conditional on WRT.SW %
+
+    END         % End of FOR EACH INP %
+
+  IF WRT.CT = 0 THEN
+    ABORT "***NO DATA FOUND FOR CNTL = ", CNTL, @CR, @CR,
+          "   CALL DBA", @CR
+  ELSE NOTHING
+
+
+  IF CTL = "X" THEN
+    NOTHING
+  ELSE
+    WRITE REPORT MGCON  BEGIN
+      PRINT TO MG
+        "TIME", @CR,
+        "COPY FILE MAGCON.CF TO FILE EX.CF", @CR,
+        "Y", @CR
+      IF CTL = "E" THEN
+          PRINT TO MGCON
+            "MAGNUM", @CR,
+            "RUN MK.CF", @CR,
+            GRP.NO, @CR,
+            "DO FILE MAG.CF", @CR,
+            "Q", @CR,
+            "R COM;EX.CF", @CR
+      ELSE IF CTL = "H" THEN
+        PRINT TO MGCON
+          @CR, @CR, ";   E N D   O F   S E C T I O N", @CR, @CR
+      ELSE
+        BEGIN
+        PRINT TO MGCON
+          "TIME", @CR,
+          "DATE", @CR
+        PRINT TO MG
+          "RUN SET.CNTL", @CR,
+          GRP.NO, ",1", @CR,
+          "TYPE FILE (UAS)EOJ.DAT", @CR,
+          "LOGOUT", @CR
+        END
+                        END  % of WRITE REPORT MGCON %
+
+  END  % of CNTL NE 99 %
+
+                        END   %of Write report %
+
+END
