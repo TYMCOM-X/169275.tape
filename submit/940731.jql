@@ -1,0 +1,29 @@
+00:00:58 S 31-Jul-94
+03:00:58 S 31-Jul-94
+06:00:03 S 31-Jul-94
+07:00:03 S -S- stream #1 Req #44632 DSK:(DANIELSR)FILSAV=DSK:(DANIELSR)FILE38.BU
+07:00:09 S Processor status JSU EXECX Setup in frame 9
+07:00:09 P Waiting for interlock
+07:00:10 P Got interlock
+07:00:10 P EXECX Job Processor %1(226) starting in frame 9
+07:00:11 P Stream #1 Req #44632 DSK:(DANIELSR)FILSAV=DSK:(DANIELSR)FILE38.BU
+07:00:11 S Starting job processor in frame 9
+07:01:35 P Stream #1 Req #44632 * completed *
+07:01:36 S -R- stream #1 Done-End <0>
+07:17:10 P Signing off.
+07:45:01 S -S- stream #1 Req #44672 DSK:(JMS)SZRPT.LOG=DSK:(JMS)SZRPT.CTL
+07:45:07 S Processor status JSU EXECX Setup in frame 9
+07:45:07 P Waiting for interlock
+07:45:08 P Got interlock
+07:45:08 P EXECX Job Processor %1(226) starting in frame 9
+07:45:09 P Stream #1 Req #44672 DSK:(JMS)SZRPT.LOG=DSK:(JMS)SZRPT.CTL
+07:45:09 S Starting job processor in frame 9
+07:49:53 P Stream #1 Req #44672 * completed *
+07:49:54 S -R- stream #1 Done-End <0>
+08:05:08 P Signing off.
+09:00:09 S 31-Jul-94
+12:00:09 S 31-Jul-94
+15:00:09 S 31-Jul-94
+18:00:09 S 31-Jul-94
+21:00:09 S 31-Jul-94
+00:00:09 S 01-Aug-94
