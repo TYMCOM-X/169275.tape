@@ -1,0 +1,120 @@
+%   UUNDAT.CLEANUP                     UUNCLN.PR1      03  %
+PROCEDURE UUNDAT.CLEANUP  %
+
+Version 3.0, Oct 13, 1982, by Dennis Moulton
+  Changed the field named Language to Lang.  Language became a
+  reserved word in Magnum version 13.
+
+Version 2.0 -- by Leonard E. Rickan October 29 1981
+ADD COST.CODE FIELD TO THE OUTPUT FILE.
+
+Version 1.0 -- by Andrew M. Carrell Jun 16, 1980
+*
+THIS PROCEDURE REMOVES STOPPED RECORDS FROM THE CUSTOMER USER
+RELATION (UUN.USR.NAM) PRIOR TO A PRESELECTED DATE AND LOADS THEM
+INTO PERMANENT HISTORY SYMBOLIC FILES IN UAS.
+%
+
+BEGIN %1%
+
+FIELDS
+
+        COUNT.HIS               AS '6Z',
+        COUNT.TMP               AS '6Z',
+        COUNT.UUN               AS '6Z',
+        CUTOFF.DATE             AS DATE 'YYMMDD',
+        REPLY                   AS 'C',
+        TIME.HR.L               AS '2Z',
+        TIME.MIN.L              AS '2N'
+
+RELATION UUN.USR.NAM.TMP SAME AS UUN.USR.NAM
+
+RELATION UUN.USR.NAM.HIS.TMP SAME AS UUN.USR.NAM
+
+FORMAT UUNDAT.HIS.FMT
+        UUN,",",DSTART,",",GAN,",",USR.NAM,",",COST.CODE,",",USR.DIST,",",
+        CUS.NUM,",",CURRENCY,",",LANG,",",TYM,",",BILL.BIT,",",DSTOP,@CR
+
+FORMAT TERMINAL.OUTPUT.HEADING
+        "***BEGINNING PROCEDURE***",@SKIP 1,
+        "UUN.USR.NAM DATABASE CLEANUP",
+        "...........VERSION 2.0 "
+
+FORMAT TERMINAL.RUN.DATE.TIME
+        TODAY AS DATE "MM/DD/YY",@TAB 1,
+        TIME.HR.L,":",
+        TIME.MIN.L,@SKIP 2
+
+REPORT UUNDAT.HIS TO "*"
+   PAGE.SIZE 0
+
+
+
+%****************INITIALIZATION****************%
+
+MOVE DEFAULT TO
+        COUNT.HIS,
+        COUNT.TMP,
+        COUNT.UUN,
+        CUTOFF.DATE,
+        REPLY
+LET TIME.HR.L=(TIME/3600) AS "2Z"
+LET TIME.MIN.L=((TIME-TIME/3600*3600)/60) AS "2N"
+TYPE TERMINAL.OUTPUT.HEADING,TERMINAL.RUN.DATE.TIME,@SKIP 1
+
+WHILE CUTOFF.DATE = DEFAULT DO
+   BEGIN %5%
+   TYPE 'INPUT CUTOFF DATE:'
+   ACCEPT CUTOFF.DATE
+   TYPE 'IS THIS THE CORRECT CUTOFF DATE-',CUTOFF.DATE,'? (Y/N):'
+   ACCEPT REPLY
+   IF REPLY NE 'Y' THEN
+     MOVE DEFAULT TO CUTOFF.DATE
+   ELSE
+     NOTHING
+   END %5%
+
+FOR EACH UUN.USR.NAM
+   BEGIN %10%
+   IF DSTOP LT CUTOFF.DATE THEN
+     INSERT INTO UUN.USR.NAM.HIS.TMP
+   ELSE
+     INSERT INTO UUN.USR.NAM.TMP
+   END %10%
+
+MOVE COUNT(UUN.USR.NAM) AS '6Z' TO COUNT.UUN
+MOVE COUNT(UUN.USR.NAM.TMP) AS '6Z' TO COUNT.TMP
+MOVE COUNT(UUN.USR.NAM.HIS.TMP) AS '6Z' TO COUNT.HIS
+
+TYPE 'TOTAL UUN.USR.NAM RECORDS-',COUNT.UUN,@SKIP 1
+TYPE 'TOTAL UUN.USR.NAM HISTORY RECORDS-',COUNT.HIS,@SKIP 1
+TYPE 'TOTAL UUN.USR.NAM TEMPORY RECORDS-',COUNT.TMP,@SKIP 1
+
+IF (COUNT.HIS + COUNT.TMP) = COUNT.UUN THEN
+   BEGIN %15%
+   FOR EACH UUN.USR.NAM.HIS.TMP WRITE REPORT UUNDAT.HIS
+     PRINT TO UUNDAT.HIS
+     UUN                ,",",
+     DSTART             ,",",
+     GAN                ,",",
+     USR.NAM            ,",",
+     COST.CODE          ,",",
+     USR.DIST           ,",",
+     CUS.NUM            ,",",
+     CURRENCY           ,",",
+     LANG               ,",",
+     TYM                ,",",
+     BILL.BIT           ,",",
+     DSTOP              ,@CR
+
+
+     DELETE FROM UUN.USR.NAM ALL
+     FOR EACH UUN.USR.NAM.TMP
+        INSERT INTO UUN.USR.NAM
+   END %15%
+ELSE
+   BEGIN %20%
+   TYPE 'UUN.USR.NAM RECORDS NOT EQUAL CONTACT DBA',@CR
+   ABORT
+   END %20%
+END %1%
