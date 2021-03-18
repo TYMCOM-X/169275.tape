@@ -1,0 +1,31 @@
+00:00:12 S 05-Aug-95
+03:00:12 S 05-Aug-95
+03:59:28 S 05-Aug-95 Signing off.
+07:34:31 S ** 05-Aug-95 XEXEC %1(215) in frame 4 ** user PERPOPER **
+07:34:31 S run #1 job 7 is lost.
+07:34:32 S -S- run #1 job 7 Req #10289  Running DSK:(NETALERT)ALERT.SHR
+07:34:32 S run #2 job 8 is lost.
+07:34:32 S -S- run #2 job 8 Req #22811  Running DSK:(NETALERT)ALERT.SHR
+07:35:31 S 05-Aug-95
+07:45:01 S -S- stream #1 Req #45228 DSK:(JMS)SZRPT.LOG=DSK:(JMS)SZRPT.CTL
+07:45:08 S Processor status JSU EXECX Setup in frame 10
+07:45:08 P Waiting for interlock
+07:45:09 P Got interlock
+07:45:09 P EXECX Job Processor %1(226) starting in frame 10
+07:45:10 P Stream #1 Req #45228 DSK:(JMS)SZRPT.LOG=DSK:(JMS)SZRPT.CTL
+07:45:10 S Starting job processor in frame 10
+07:49:18 P Stream #1 Req #45228 * completed *
+07:49:19 S -R- stream #1 Done-End <0>
+08:05:09 P Signing off.
+09:00:10 S 05-Aug-95
+12:00:23 S 05-Aug-95
+15:00:27 S 05-Aug-95
+18:00:30 S 05-Aug-95
+21:00:30 S 05-Aug-95
+23:20:43 S ** 05-Aug-95 XEXEC %1(215) in frame 4 ** user PERPOPER **
+23:20:43 S run #1 job 7 is lost.
+23:20:43 S -S- run #1 job 7 Req #10289  Running DSK:(NETALERT)ALERT.SHR
+23:20:44 S run #2 job 8 is lost.
+23:20:44 S -S- run #2 job 8 Req #22811  Running DSK:(NETALERT)ALERT.SHR
+23:21:43 S 05-Aug-95
+00:00:43 S 06-Aug-95
