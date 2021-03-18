@@ -1,0 +1,207 @@
+;
+;     This control  file  applies  Software House's  CBLIO  and  COBFUN
+;patches  to  DEC's  Autopatched  CBLIO  and  COBFUN  using   Autopatch
+;utilities.  LIBOL is also reloaded.   The following logical names  are
+;assumed:  PAT:,  DIS:,  BAK:,  INS:,  and  ASL:  (see  the   Autopatch
+;documentation for a description of these logical names).
+;
+;     This control file should be started with /TAG:C68 (for  COBOL-68)
+;or /TAG:C74  (for COBOL-74).   One  of these  two switches  should  be
+;explicitly used.  If  neither one is  specified, nothing will  happen.
+;If both are desired, the control file should be submitted twice.
+;
+@LOGOUT		! Must use /TAG:C68 or /TAG:C74 !
+;
+;     Seven files  should  be restored  from  the 1022  tape:  Software
+;House's baseline  files (CBLIO.M12  and  COBFUN.M12, which  are  DEC's
+;original .MAC files before Software House's changes), Software House's
+;modified  files  (CBLIO.12B  and  COBFUN.12B),  the  comparison  files
+;(CBLIO.C12 and COBFUN.C12 which were generated using COMPAR), and  the
+;1022 feature test file (FT22.MAC).  These should be restored to  PAT:.
+;
+;     The basic procedure  for patching  CBLIO is in  three steps  (the
+;same three steps are used for COBFUN):
+;
+;     A) Use the COMPAR program to compare CBLIO.M12 vs.  DIS:CBLIO.MAC
+;	 (the Autopatched  CBLIO)  to produce  a  CBLIO.APC  comparison
+;	 file.
+;
+;     B) Use  the MERGE  program  to combine  the CBLIO.APC  file  just
+;	 created with  the CBLIO.C12  comparison file  provided on  the
+;	 tape.  This produces the CBLIO.COR comparision file.
+;
+;     C) Use  the  UPDATE  program  to make  the  sources  changes  (in
+;	 CBLIO.COR) to the baseline file (CBLIO.M12) to produce the new
+;	 source file (CBLIO.MAC).
+;
+;     Steps A, B,  and C are  repeated for COBFUN.   This procedure  is
+;illustrated below for the case  of CBLIO.  Finally, the patched  files
+;are used to build LIBOL.
+;
+;
+;                 +--------------+    .------.    +--------------+
+;                 |DIS:CBLIO.MAC |-->( COMPAR )<--|PAT:CBLIO.M12 |
+;                 +--------------+    "------"    +--------------+
+;                                        |               |
+;                                        V               |
+;  +--------------+    .-----.    +--------------+       |
+;  |PAT:CBLIO.C12 |-->( MERGE )<--|PAT:CBLIO.APC |       |
+;  +--------------+    "-----"    +--------------+       |
+;                         |                              |
+;                         V                              |
+;                  +--------------+    .------.          |
+;                  |PAT:CBLIO.COR |-->( UPDATE )<--------+
+;                  +--------------+    "------"
+;                                         |
+;                                         V
+;                                  +--------------+
+;                                  |PAT:CBLIO.MAC |
+;                                  +--------------+
+;
+;
+;
+;			**************
+;			** COBOL-68 **
+;			**************
+;
+;     The following files  are needed from  the 1022 distribution  tape
+;(restore to PAT:)
+;	CBLIO.12B	COBFUN.12B	;source with 1022 changes
+;	CBLIO.C12	COBFUN.C12	;comparsion of 1022 changes
+;	CBLIO.M12	COBFUN.M12	;source before 1022 changes
+;	FT22.MAC			;1022 feature test file
+;
+; Already Autopatched files:
+;	DIS:CBLIO.MAC	DIS:COBFUN.MAC
+;	LIBOL.REL	LIBSHR.REL
+;	*.UNV
+;
+@CHKPNT C68
+C68::
+@ENABLE
+;  Define logical names for patching
+@DEFINE DSK: DSK:,PAT:
+@PEP
+*
+*STATUS COBOL-20-V12B
+*EXIT
+@DEFINE DSK: DSK:,ASL:
+;
+;  Connect to PAT: for doing work
+@CONN PAT:
+;
+;  Step A
+@RUN ASL:COMPAR
+*PAT:CBLIO.APC=PAT:CBLIO.M12,DIS:CBLIO.MAC
+*PAT:COBFUN.APC=PAT:COBFUN.M12,DIS:COBFUN.MAC
+;*PAT:CBLIO.C12=PAT:CBLIO.M12,PAT:CBLIO.12B/NAME:"SH"/NUMBER
+;*PAT:COBFUN.C12=PAT:COBFUN.M12,PAT:COBFUN.12B/NAME:"SH"/NUMBER
+*/EXIT
+;
+;  Step B
+@RUN ASL:MERGE
+*PAT:CBLIO.COR=PAT:CBLIO.APC,PAT:CBLIO.C12
+*PAT:COBFUN.COR=PAT:COBFUN.APC,PAT:COBFUN.C12
+*/EXIT
+;
+;  Step C
+@RUN ASL:UPDATE
+*PAT:CBLIO.MAC=PAT:CBLIO.M12,PAT:CBLIO.COR
+*PAT:COBFUN.MAC=PAT:COBFUN.M12,PAT:COBFUN.COR
+*/EXIT
+;
+;  Compile the new updated CBLIO and COBFUN
+@COPY C68ASM.MAC COBASM.MAC
+@COMPILE /COMP @PAT:LIBASM.CMD
+@COMPILE /COMP LIBSHR.MAC
+@COMPILE /COMP FT22.MAC+PAT:CBLIO.MAC
+@COMPILE /COMP FT22.MAC+PAT:COBFUN.MAC
+;
+;  Build LIBOL
+@RUN ASL:MAKLIB
+*LIBOL.REL=LIBOL.REL/MASTER:COBFUN,COBFUN.REL/REPLACE:COBFUN
+*LIBOL.REL=LIBOL.REL/MASTER:CBLIO,CBLIO.REL/REPLACE:CBLIO
+*LIBOL.REL=LIBOL.REL/INDEX
+*/EXIT
+@RUN ASL:LINK
+*/NOSYM LIBSHR,LIBOL/SEARCH/GO
+@SAVE LIBO12
+;  Install LIBO12
+@COPY INS:LIBO12.EXE BAK:LIBO12.EXE
+@COPY PAT:LIBO12.EXE INS:LIBO12.EXE
+%ERR::
+@LOGOUT
+;
+;
+;
+;			**************
+;			** COBOL-74 **
+;			**************
+;
+;     The following files  are needed from  the 1022 distribution  tape
+;(restore to PAT:)
+;	CBLIO.12B	COBFUN.12B	;source with 1022 changes
+;	CBLIO.C12	COBFUN.C12	;comparsion of 1022 changes
+;	CBLIO.M12	COBFUN.M12	;source before 1022 changes
+;	FT22.MAC			;1022 feature test file
+;
+; Already Autopatched files:
+;	DIS:CBLIO.MAC	DIS:COBFUN.MAC
+;	C74LIB.REL	C74SHR.REL
+;	*.UNV
+;
+@CHKPNT C74
+C74::
+@ENABLE
+;  Define logical names for patching
+@DEFINE DSK: DSK:,PAT:
+@PEP
+*
+*STATUS COBOL-20-V12B
+*EXIT
+@DEFINE DSK: DSK:,ASL:
+;
+;  Connect to PAT: for doing work
+@CONN PAT:
+;
+;  Step A
+@RUN ASL:COMPAR
+*PAT:CBLIO.APC=PAT:CBLIO.M12,DIS:CBLIO.MAC
+*PAT:COBFUN.APC=PAT:COBFUN.M12,DIS:COBFUN.MAC
+;*PAT:CBLIO.C12=PAT:CBLIO.M12,PAT:CBLIO.12B/NAME:"SH"/NUMBER
+;*PAT:COBFUN.C12=PAT:COBFUN.M12,PAT:COBFUN.12B/NAME:"SH"/NUMBER
+*/EXIT
+;
+;  Step B
+@RUN ASL:MERGE
+*PAT:CBLIO.COR=PAT:CBLIO.APC,PAT:CBLIO.C12
+*PAT:COBFUN.COR=PAT:COBFUN.APC,PAT:COBFUN.C12
+*/EXIT
+;
+;  Step C
+@RUN ASL:UPDATE
+*PAT:CBLIO.MAC=PAT:CBLIO.M12,PAT:CBLIO.COR
+*PAT:COBFUN.MAC=PAT:COBFUN.M12,PAT:COBFUN.COR
+*/EXIT
+;
+;  Compile the new updated CBLIO and COBFUN
+@COPY C74ASM.MAC COBASM.MAC
+@COMPILE /COMP @PAT:LIBASM.CMD
+@COMPILE /COMP LIBSHR.MAC C74SHR.REL
+@COMPILE /COMP FT22.MAC+PAT:CBLIO.MAC
+@COMPILE /COMP FT22.MAC+PAT:COBFUN.MAC
+;
+;  Build LIBOL
+@RUN ASL:MAKLIB
+*C74LIB.REL=C74LIB.REL/MASTER:COBFUN,COBFUN.REL/REPLACE:COBFUN
+*C74LIB.REL=C74LIB.REL/MASTER:CBLIO,CBLIO.REL/REPLACE:CBLIO
+*C74LIB.REL=C74LIB.REL/INDEX
+*/EXIT
+@RUN ASL:LINK
+*/NOSYM C74SHR,C74LIB/SEARCH/GO
+@SAVE C74O12
+;  Install C74O12
+@COPY INS:C74O12.EXE BAK:C74O12.EXE
+@COPY PAT:C74O12.EXE INS:C74O12.EXE
+%ERR::
+@LOGOUT
