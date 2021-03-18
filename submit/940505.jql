@@ -1,0 +1,47 @@
+00:00:14 S 05-May-94
+03:00:14 S 05-May-94
+05:18:40 S -S- stream #1 Req #44515 DSK:(CTSFORD)GATHOU=DSK:(CTSFORD)PATGAT
+05:18:46 S Processor status JSU EXECX Setup in frame 14
+05:18:47 P Waiting for interlock
+05:18:48 P Got interlock
+05:18:48 P EXECX Job Processor %1(226) starting in frame 14
+05:18:48 P Stream #1 Req #44515 DSK:(CTSFORD)GATHOU=DSK:(CTSFORD)PATGAT
+05:18:49 S Starting job processor in frame 14
+06:00:50 S 05-May-94
+07:45:05 S -S- stream #2 Req #44512 DSK:(JMS)SZRPT.LOG=DSK:(JMS)SZRPT.CTL
+07:45:10 P Stream #2 Req #44512 DSK:(JMS)SZRPT.LOG=DSK:(JMS)SZRPT.CTL
+07:50:13 P Stream #2 Req #44512 * completed *
+07:50:16 S -R- stream #2 Done-End <0>
+09:00:02 S 05-May-94
+12:00:02 S 05-May-94
+13:30:03 S -S- stream #2 Req #44513 DSK:(MSNTRACK)DUDAY.LOG=DSK:(MSNTRACK)DUDAY.SUB
+13:30:04 P Stream #2 Req #44513 DSK:(MSNTRACK)DUDAY.LOG=DSK:(MSNTRACK)DUDAY.SUB
+13:33:35 P Stream #2 Req #44513 * completed *
+13:33:38 S -R- stream #2 Done-End <0>
+15:00:12 S 05-May-94
+16:32:30 P Stream #1 Req #44515 * completed *
+16:32:31 S -R- stream #1 Done-End <0>
+16:48:16 P Signing off.
+17:55:21 S -S- stream #1 Req #44518 DSK:(NETENG)T96PGR.LOG=DSK:(NETENG)T96PGR
+17:55:28 S Processor status JSU EXECX Setup in frame 20
+17:55:28 P Waiting for interlock
+17:55:30 P Got interlock
+17:55:30 P EXECX Job Processor %1(226) starting in frame 20
+17:55:30 P Stream #1 Req #44518 DSK:(NETENG)T96PGR.LOG=DSK:(NETENG)T96PGR
+17:55:31 S Starting job processor in frame 20
+17:57:54 P Stream #1 Req #44518 * completed *
+17:57:56 S -R- stream #1 Done-End <0>
+18:00:30 S 05-May-94
+18:13:30 P Signing off.
+20:59:55 S -S- stream #1 Req #44519 DSK:(SULLIVAN)C1.LOG=DSK:(SULLIVAN)C1
+21:00:02 S Processor status JSU EXECX Setup in frame 20
+21:00:02 P Waiting for interlock
+21:00:03 P Got interlock
+21:00:03 P EXECX Job Processor %1(226) starting in frame 20
+21:00:04 P Stream #1 Req #44519 DSK:(SULLIVAN)C1.LOG=DSK:(SULLIVAN)C1
+21:00:04 S Starting job processor in frame 20
+21:00:36 P Stream #1 Req #44519 * aborted - lost command port at line 33 *
+21:00:40 S -R- stream #1 Abort-Zap <0>
+21:01:04 S 05-May-94
+21:16:03 P Signing off.
+00:00:04 S 06-May-94
