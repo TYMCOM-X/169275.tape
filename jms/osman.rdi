@@ -1,0 +1,207 @@
+Master host: 30
+41 files on master system.
+Slave hosts: 23,26,30,33,34,38,74
+Checking host 23
+(OSMAN       :  23) TUMS.TIX       2 28-Nov-86 16:17 -- bad checksum WOWSUG
+                           should be 18-Nov-87 18:44 SIBDUC  ALL  RD  NO
+(OSMAN       :  23) MAILBO.84      6 30-Apr-85 22:09 -- bad checksum JAGTOB
+                           should be 28-Apr-85 23:12 QAKTAR  ALL  RD  NO
+(OSMAN       :  23) MAILBO.Q1      4 30-Apr-85 22:10 -- bad checksum NOQVAK
+                           should be 28-Apr-85 23:13 KISYOX  ALL  RD  NO
+(OSMAN       :  23) MAILBO.86     56 06-Apr-85 10:24 -- bad checksum GEBLAH
+                           should be 01-Apr-85 19:09 HONGUK  ALL  RD  NO
+(OSMAN       :  23) CRSHID.LOG     2 03-Mar-89 09:47 -- bad checksum LUNHIT
+                           should be 03-Mar-89 10:15 NAFDUM  ALL  RD  NO
+(OSMAN       :  23) SLVPSP.SAV     3 19-Apr-85 13:05 -- bad license 140000
+                           should be 19-Apr-85 13:10 RIGMIJ  ALL RUN RUN  40010
+(OSMAN       :  23) MAIL.BOX      38 03-Jan-87 10:58 -- bad checksum QANQAM
+                           should be 03-Jan-87 09:16 HIDSOY  ALL  RD  NO
+(OSMAN       :  23) MAGNUM.DIR     2 06-Feb-89 17:18 -- bad checksum PAVVUC
+                           should be 11-Oct-90 16:32 TULQOX   CP  NO  NO
+(OSMAN       :  23) BOTALL.A10                       -- missing on slave
+(OSMAN       :  23) MAG2.LOG                         -- missing on slave
+(OSMAN       :  23) MAIL30                           -- missing on slave
+(OSMAN       :  23) MAGF30.LOG                       -- missing on slave
+(OSMAN       :  23) RICK.MAI                         -- missing on slave
+(OSMAN       :  23) OPER.MAI                         -- missing on slave
+(OSMAN       :  23) UNIX.TES                         -- missing on slave
+(OSMAN       :  23) SZRPT.LOG                        -- missing on slave
+(OSMAN       :  23) SA10D6.MAC                       -- missing on slave
+(OSMAN       :  23) Q.INI                            -- missing on slave
+(OSMAN       :  23) ASP.SAV                          -- missing on slave
+(OSMAN       :  23) FNDBAD.RPT                       -- missing on slave
+(OSMAN       :  23) MONEND.LOG                       -- missing on slave
+(OSMAN       :  23) MONEND.CRS                       -- missing on slave
+(OSMAN       :  23) MAG.LOG                          -- missing on slave
+(OSMAN       :  23) OPR.MAI                          -- missing on slave
+(OSMAN       :  23) SUPCHK.LOG                       -- missing on slave
+Checking host 26
+(OSMAN       :  26) TUMS.TIX       2 01-Dec-87 13:15 -- bad checksum LATQUW
+                           should be 18-Nov-87 18:44 SIBDUC  ALL  RD  NO
+(OSMAN       :  26) CRSHID.LOG     2 13-Apr-89 18:32 -- bad checksum NAHGIG
+                           should be 03-Mar-89 10:15 NAFDUM  ALL  RD  NO
+(OSMAN       :  26) MAIL.BOX      66 03-Jan-87 09:50 -- bad checksum FAKQUD
+                           should be 03-Jan-87 09:16 HIDSOY  ALL  RD  NO
+(OSMAN       :  26) BOTALL.A10                       -- missing on slave
+(OSMAN       :  26) MAG2.LOG                         -- missing on slave
+(OSMAN       :  26) MAGNUM.DIR                       -- missing on slave
+(OSMAN       :  26) MAIL30                           -- missing on slave
+(OSMAN       :  26) MAGF30.LOG                       -- missing on slave
+(OSMAN       :  26) RICK.MAI                         -- missing on slave
+(OSMAN       :  26) FREE.CTL                         -- missing on slave
+(OSMAN       :  26) OPER.MAI                         -- missing on slave
+(OSMAN       :  26) UNIX.TES                         -- missing on slave
+(OSMAN       :  26) HOSALL                           -- missing on slave
+(OSMAN       :  26) SZRPT.LOG                        -- missing on slave
+(OSMAN       :  26) SA10D6.MAC                       -- missing on slave
+(OSMAN       :  26) Q.INI                            -- missing on slave
+(OSMAN       :  26) ASP.SAV                          -- missing on slave
+(OSMAN       :  26) DALHOS                           -- missing on slave
+(OSMAN       :  26) HOSDAL                           -- missing on slave
+(OSMAN       :  26) FNDBAD.RPT                       -- missing on slave
+(OSMAN       :  26) MAILBO.86                        -- missing on slave
+(OSMAN       :  26) MAILBO.Q1                        -- missing on slave
+(OSMAN       :  26) MAILBO.84                        -- missing on slave
+(OSMAN       :  26) MONEND.LOG                       -- missing on slave
+(OSMAN       :  26) MONEND.CRS                       -- missing on slave
+(OSMAN       :  26) MAG.LOG                          -- missing on slave
+(OSMAN       :  26) OPR.MAI                          -- missing on slave
+(OSMAN       :  26) SUPCHK.LOG                       -- missing on slave
+(OSMAN       :  26) HOSFRE                           -- missing on slave
+Checking host 30
+Checking host 33
+(OSMAN       :  33) OPR.MAI        2 18-Feb-87 16:57 -- bad checksum DETXAC
+                           should be 01-Feb-87 17:06 JOGQAN  ALL  RD  NO
+(OSMAN       :  33) TUMS.TIX       2 08-Jul-88 10:05 -- bad checksum BOBDUC
+                           should be 18-Nov-87 18:44 SIBDUC  ALL  RD  NO
+(OSMAN       :  33) MAILBO.84     10 30-Apr-85 23:14 -- bad checksum ZEDMEP
+                           should be 28-Apr-85 23:12 QAKTAR  ALL  RD  NO
+(OSMAN       :  33) MAILBO.Q1      9 30-Apr-85 23:15 -- bad checksum YOPHIX
+                           should be 28-Apr-85 23:13 KISYOX  ALL  RD  NO
+(OSMAN       :  33) MAILBO.86     61 04-Apr-85 13:53 -- bad checksum TEFMIX
+                           should be 01-Apr-85 19:09 HONGUK  ALL  RD  NO
+(OSMAN       :  33) OPER.MAI       2 30-Sep-86 20:54 -- bad checksum MOJBAV
+                           should be 21-Jul-87 11:10 XUHGIT  ALL  RD  NO
+(OSMAN       :  33) CRSHID.LOG     2 03-Mar-89 10:08 -- bad checksum COFQEF
+                           should be 03-Mar-89 10:15 NAFDUM  ALL  RD  NO
+(OSMAN       :  33) MAIL.BOX      40 03-Jan-87 11:34 -- bad checksum VEZHEJ
+                           should be 03-Jan-87 09:16 HIDSOY  ALL  RD  NO
+(OSMAN       :  33) BOTALL.A10                       -- missing on slave
+(OSMAN       :  33) MAG2.LOG                         -- missing on slave
+(OSMAN       :  33) MAGNUM.DIR                       -- missing on slave
+(OSMAN       :  33) MAIL30                           -- missing on slave
+(OSMAN       :  33) MAGF30.LOG                       -- missing on slave
+(OSMAN       :  33) RICK.MAI                         -- missing on slave
+(OSMAN       :  33) UNIX.TES                         -- missing on slave
+(OSMAN       :  33) SZRPT.LOG                        -- missing on slave
+(OSMAN       :  33) SA10D6.MAC                       -- missing on slave
+(OSMAN       :  33) Q.INI                            -- missing on slave
+(OSMAN       :  33) ASP.SAV                          -- missing on slave
+(OSMAN       :  33) MONEND.LOG                       -- missing on slave
+(OSMAN       :  33) MONEND.CRS                       -- missing on slave
+(OSMAN       :  33) MAG.LOG                          -- missing on slave
+(OSMAN       :  33) SUPCHK.LOG                       -- missing on slave
+Checking host 34
+(OSMAN       :  34) MAILBO.84      4 28-Apr-85 22:21 -- bad checksum LIZRIY
+                           should be 28-Apr-85 23:12 QAKTAR  ALL  RD  NO
+(OSMAN       :  34) MAILBO.Q1      3 28-Apr-85 22:21 -- bad checksum PIQBAR
+                           should be 28-Apr-85 23:13 KISYOX  ALL  RD  NO
+(OSMAN       :  34) ASP.SAV        6 14-Feb-86 14:55 -- bad checksum GORREL
+                           should be 24-May-88 15:08 DAJXUH  ALL  RD  NO
+(OSMAN       :  34) MAILBO.86     42 07-Apr-85 08:55 -- bad checksum DEXYUS
+                           should be 01-Apr-85 19:09 HONGUK  ALL  RD  NO
+(OSMAN       :  34) OPER.MAI       2 11-Dec-86 10:07 -- bad checksum LATQIV
+                           should be 21-Jul-87 11:10 XUHGIT  ALL  RD  NO
+(OSMAN       :  34) CRSHID.LOG     2 03-Mar-89 09:55 -- bad checksum LAHKUZ
+                           should be 03-Mar-89 10:15 NAFDUM  ALL  RD  NO
+(OSMAN       :  34) MAIL.BOX      29 03-Jan-87 11:33 -- bad checksum NOKQOC
+                           should be 03-Jan-87 09:16 HIDSOY  ALL  RD  NO
+(OSMAN       :  34) BOTALL.A10                       -- missing on slave
+(OSMAN       :  34) MAG2.LOG                         -- missing on slave
+(OSMAN       :  34) MAGNUM.DIR                       -- missing on slave
+(OSMAN       :  34) MAIL30                           -- missing on slave
+(OSMAN       :  34) MAGF30.LOG                       -- missing on slave
+(OSMAN       :  34) RICK.MAI                         -- missing on slave
+(OSMAN       :  34) UNIX.TES                         -- missing on slave
+(OSMAN       :  34) SZRPT.LOG                        -- missing on slave
+(OSMAN       :  34) SA10D6.MAC                       -- missing on slave
+(OSMAN       :  34) Q.INI                            -- missing on slave
+(OSMAN       :  34) FNDBAD.RPT                       -- missing on slave
+(OSMAN       :  34) MONEND.LOG                       -- missing on slave
+(OSMAN       :  34) MONEND.CRS                       -- missing on slave
+(OSMAN       :  34) MAG.LOG                          -- missing on slave
+(OSMAN       :  34) TUMS.TIX                         -- missing on slave
+(OSMAN       :  34) SUPCHK.LOG                       -- missing on slave
+Checking host 38
+(OSMAN       :  38) OPR.MAI        2 03-Feb-87 15:07 -- bad checksum GIBGAB
+                           should be 01-Feb-87 17:06 JOGQAN  ALL  RD  NO
+(OSMAN       :  38) MAILBO.84      3 28-Apr-85 23:24 -- bad checksum JATFES
+                           should be 28-Apr-85 23:12 QAKTAR  ALL  RD  NO
+(OSMAN       :  38) MAILBO.Q1      3 28-Apr-85 23:25 -- bad checksum ZARYOR
+                           should be 28-Apr-85 23:13 KISYOX  ALL  RD  NO
+(OSMAN       :  38) MAILBO.86     55 04-Apr-85 13:56 -- bad checksum LUFXAJ
+                           should be 01-Apr-85 19:09 HONGUK  ALL  RD  NO
+(OSMAN       :  38) OPER.MAI       2 13-Feb-86 09:40 -- bad checksum HUFDAB
+                           should be 21-Jul-87 11:10 XUHGIT  ALL  RD  NO
+(OSMAN       :  38) CRSHID.LOG     2 03-Mar-89 10:19 -- bad checksum GAXTUX
+                           should be 03-Mar-89 10:15 NAFDUM  ALL  RD  NO
+(OSMAN       :  38) MAIL.BOX      38 03-Jan-87 09:38 -- bad checksum VILDIL
+                           should be 03-Jan-87 09:16 HIDSOY  ALL  RD  NO
+(OSMAN       :  38) MAGNUM.DIR     2 29-Feb-88 16:48 -- bad checksum KABFEM
+                           should be 11-Oct-90 16:32 TULQOX   CP  NO  NO
+(OSMAN       :  38) BOTALL.A10                       -- missing on slave
+(OSMAN       :  38) MAG2.LOG                         -- missing on slave
+(OSMAN       :  38) MAIL30                           -- missing on slave
+(OSMAN       :  38) MAGF30.LOG                       -- missing on slave
+(OSMAN       :  38) RICK.MAI                         -- missing on slave
+(OSMAN       :  38) UNIX.TES                         -- missing on slave
+(OSMAN       :  38) SZRPT.LOG                        -- missing on slave
+(OSMAN       :  38) SA10D6.MAC                       -- missing on slave
+(OSMAN       :  38) ASP.SAV                          -- missing on slave
+(OSMAN       :  38) FNDBAD.RPT                       -- missing on slave
+(OSMAN       :  38) MONEND.LOG                       -- missing on slave
+(OSMAN       :  38) MONEND.CRS                       -- missing on slave
+(OSMAN       :  38) MAG.LOG                          -- missing on slave
+(OSMAN       :  38) SUPCHK.LOG                       -- missing on slave
+Checking host 74
+(OSMAN       :  74) TUMS.MSG       4 22-Mar-90 16:16 -- bad checksum YINHUM
+                           should be 30-Jan-89 11:23 DILBUJ  ALL  RD  NO
+(OSMAN       :  74) TUMS.TIX       2 11-May-90 21:09 -- bad checksum ROHWAF
+                           should be 18-Nov-87 18:44 SIBDUC  ALL  RD  NO
+(OSMAN       :  74) TURNUP.MSG     2 01-Mar-89 13:49 -- bad checksum FOFQEW
+                           should be 30-Jan-89 11:23 JUPMUY  ALL  RD  NO
+(OSMAN       :  74) CRSHID.LOG     2 03-Mar-89 13:26 -- bad checksum YELCEV
+                           should be 03-Mar-89 10:15 NAFDUM  ALL  RD  NO
+(OSMAN       :  74) MAIL.FWD       2 22-Mar-90 16:14 -- bad checksum PAYHAS
+                           should be 27-Apr-90 17:00 FEVKOW  ALL  RD  NO
+(OSMAN       :  74) BOTALL.A10                       -- missing on slave
+(OSMAN       :  74) MAG2.LOG                         -- missing on slave
+(OSMAN       :  74) MAGNUM.DIR                       -- missing on slave
+(OSMAN       :  74) PSPSLV.SAV                       -- missing on slave
+(OSMAN       :  74) MAIL                             -- missing on slave
+(OSMAN       :  74) MAIL.BOX                         -- missing on slave
+(OSMAN       :  74) MAIL30                           -- missing on slave
+(OSMAN       :  74) MAGF30.LOG                       -- missing on slave
+(OSMAN       :  74) RICK.MAI                         -- missing on slave
+(OSMAN       :  74) FREE.CTL                         -- missing on slave
+(OSMAN       :  74) OPER.MAI                         -- missing on slave
+(OSMAN       :  74) UNIX.TES                         -- missing on slave
+(OSMAN       :  74) BAKMAK.SHR                       -- missing on slave
+(OSMAN       :  74) HOSALL                           -- missing on slave
+(OSMAN       :  74) SZRPT.LOG                        -- missing on slave
+(OSMAN       :  74) SA10D6.MAC                       -- missing on slave
+(OSMAN       :  74) Q.INI                            -- missing on slave
+(OSMAN       :  74) ASP.SAV                          -- missing on slave
+(OSMAN       :  74) DALHOS                           -- missing on slave
+(OSMAN       :  74) HOSDAL                           -- missing on slave
+(OSMAN       :  74) FNDBAD.RPT                       -- missing on slave
+(OSMAN       :  74) MAILBO.86                        -- missing on slave
+(OSMAN       :  74) MAILBO.Q1                        -- missing on slave
+(OSMAN       :  74) MAILBO.84                        -- missing on slave
+(OSMAN       :  74) MONEND.LOG                       -- missing on slave
+(OSMAN       :  74) MONEND.CRS                       -- missing on slave
+(OSMAN       :  74) MAG.LOG                          -- missing on slave
+(OSMAN       :  74) OPR.MAI                          -- missing on slave
+(OSMAN       :  74) SUPCHK.LOG                       -- missing on slave
+(OSMAN       :  74) HOSFRE                           -- missing on slave
+  
