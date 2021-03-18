@@ -1,0 +1,401 @@
+Master host: 33
+397 files on master system.
+Slave hosts: 17
+Checking host 17
+(NEW11       :  17) SVNICK.IMG    28 25-Mar-88 00:07 -- extra not on master
+(NEW11       :  17) ACCESS.LIS     2 05-May-89 10:56 -- bad checksum BUBMUG
+                           should be 03-Oct-87 18:26 ZELDIH  ALL  RD  RD
+(NEW11       :  17) ACCESS.MSG     2 31-May-89 15:18 -- protection ALL  RD  NO
+                           should be 31-May-89 15:19 GUVNAD  ALL  RD  RD
+(NEW11       :  17) NDFRED.BND    18 25-Mar-88 00:10 -- extra not on master
+(NEW11       :  17) RDIST.OUT      3 14-Sep-90 19:12 -- bad checksum ZIGRED
+                           should be 04-Nov-90 19:12 NUDLEN  ALL  RD  NO
+(NEW11       :  17) RDIST.THU     11 28-Jun-90 19:11 -- bad checksum QEZZOL
+                           should be 01-Nov-90 19:12 COYNIC  ALL  RD  NO
+(NEW11       :  17) RDIST.WED      3 24-Aug-90 19:11 -- bad checksum QEHYIG
+                           should be 17-Oct-90 19:11 DUWVAM  ALL  RD  NO
+(NEW11       :  17) RDIST.LOG      4 14-Sep-90 19:12 -- bad checksum YAJQUP
+                           should be 04-Nov-90 19:12 ZOLCAN  ALL  RD  NO
+(NEW11       :  17) RDIST.TUE      3 11-Sep-90 19:11 -- bad checksum QAFCEV
+                           should be 23-Oct-90 19:12 TAXNEZ  ALL  RD  NO
+(NEW11       :  17) RDIST.SUN     11 01-Jul-90 19:10 -- bad checksum FADPEV
+                           should be 04-Nov-90 19:12 WUFFAD  ALL  RD  NO
+(NEW11       :  17) RDIST.FRI      3 14-Sep-90 19:12 -- bad checksum FEYROQ
+                           should be 26-Oct-90 19:12 NEVLEH  ALL  RD  NO
+(NEW11       :  17) RDIST.MON      3 27-Aug-90 19:11 -- bad checksum FIGQAB
+                           should be 29-Oct-90 19:12 YOJDUR  ALL  RD  NO
+(NEW11       :  17) BASCFG.DOC     9 03-Sep-82 09:19 -- extra not on master
+(NEW11       :  17) BASCFG.MEM    10 08-Dec-82 11:49 -- extra not on master
+(NEW11       :  17) BASCFG.BK1     8 06-Oct-82 12:05 -- extra not on master
+(NEW11       :  17) BASCFG.RNO     9 29-Nov-84 14:52 -- extra not on master
+(NEW11       :  17) SVFRED.IMG    21 25-Mar-88 00:15 -- extra not on master
+(NEW11       :  17) ND2770.BND    21 25-Mar-88 00:17 -- extra not on master
+(NEW11       :  17) NDFOON.BND    24 25-Mar-88 00:19 -- extra not on master
+(NEW11       :  17) CG6657.MAC     2 14-Jun-90 21:49 -- bad checksum VADVIS
+                           should be 09-Nov-90 15:47 MOQYEX  ALL  RD  NO
+(NEW11       :  17) NDNICK.BND    24 25-Mar-88 00:25 -- extra not on master
+(NEW11       :  17) SV2770.IMG    23 25-Mar-88 00:28 -- extra not on master
+(NEW11       :  17) SVFOON.IMG    27 25-Mar-88 00:30 -- extra not on master
+(NEW11       :  17) CG6760.MAC     2 14-Jun-90 21:59 -- bad checksum XIQPOX
+                           should be 09-Nov-90 15:48 DOHBUT  ALL  RD  NO
+(NEW11       :  17) ATCU01.301                       -- missing on slave
+(NEW11       :  17) ATCU17.301                       -- missing on slave
+(NEW11       :  17) LK554Y.CMD                       -- missing on slave
+(NEW11       :  17) MC554Y.CMD                       -- missing on slave
+(NEW11       :  17) LINCST.NBJ                       -- missing on slave
+(NEW11       :  17) LINA.NBJ                         -- missing on slave
+(NEW11       :  17) LNKF.NBJ                         -- missing on slave
+(NEW11       :  17) LKIST1.NBJ                       -- missing on slave
+(NEW11       :  17) LNK1.NBJ                         -- missing on slave
+(NEW11       :  17) TRMT.NBJ                         -- missing on slave
+(NEW11       :  17) TRMF.NBJ                         -- missing on slave
+(NEW11       :  17) ERROR.NBJ                        -- missing on slave
+(NEW11       :  17) SMODUL.NBJ                       -- missing on slave
+(NEW11       :  17) LNKISS.NBJ                       -- missing on slave
+(NEW11       :  17) LINCST.OBJ                       -- missing on slave
+(NEW11       :  17) LINA.OBJ                         -- missing on slave
+(NEW11       :  17) LKIST1.OBJ                       -- missing on slave
+(NEW11       :  17) LNKIAP.OBJ                       -- missing on slave
+(NEW11       :  17) LKGPKT.OBJ                       -- missing on slave
+(NEW11       :  17) LNKF.OBJ                         -- missing on slave
+(NEW11       :  17) LNK1.OBJ                         -- missing on slave
+(NEW11       :  17) TRMT.OBJ                         -- missing on slave
+(NEW11       :  17) TRMF.OBJ                         -- missing on slave
+(NEW11       :  17) ERROR.OBJ                        -- missing on slave
+(NEW11       :  17) EXECMM.OBJ                       -- missing on slave
+(NEW11       :  17) MCCAS.CMD                        -- missing on slave
+(NEW11       :  17) MC2353.CMD                       -- missing on slave
+(NEW11       :  17) LKCAS.CMD                        -- missing on slave
+(NEW11       :  17) LK2353.CMD                       -- missing on slave
+(NEW11       :  17) LK2396.CMD                       -- missing on slave
+(NEW11       :  17) MC2396.CMD                       -- missing on slave
+(NEW11       :  17) LNKIAP.NBJ                       -- missing on slave
+(NEW11       :  17) LK2344.CMD                       -- missing on slave
+(NEW11       :  17) MC2344.CMD                       -- missing on slave
+(NEW11       :  17) OLDNIB.NIB                       -- missing on slave
+(NEW11       :  17) RSXNDL.DOC                       -- missing on slave
+(NEW11       :  17) RU2342.MAC                       -- missing on slave
+(NEW11       :  17) TEST.XXX                         -- missing on slave
+(NEW11       :  17) ATC120.REL                       -- missing on slave
+(NEW11       :  17) LKEOSV.SAV                       -- missing on slave
+(NEW11       :  17) LK2353.C19                       -- missing on slave
+(NEW11       :  17) LNKF.MAC                         -- missing on slave
+(NEW11       :  17) GB5PR.MAC                        -- missing on slave
+(NEW11       :  17) TRMF.MAC                         -- missing on slave
+(NEW11       :  17) LINA.MAC                         -- missing on slave
+(NEW11       :  17) LNKFPR.MAC                       -- missing on slave
+(NEW11       :  17) NOEIPR.MAC                       -- missing on slave
+(NEW11       :  17) MMUPR.MAC                        -- missing on slave
+(NEW11       :  17) SATPR.MAC                        -- missing on slave
+(NEW11       :  17) CG554X.MAC                       -- missing on slave
+(NEW11       :  17) SV6745.IMG                       -- missing on slave
+(NEW11       :  17) ATCU16.301                       -- missing on slave
+(NEW11       :  17) MC554.CMD                        -- missing on slave
+(NEW11       :  17) LK554.CMD                        -- missing on slave
+(NEW11       :  17) LK554X.CMD                       -- missing on slave
+(NEW11       :  17) MC554X.CMD                       -- missing on slave
+(NEW11       :  17) ATCMGR.NBJ                       -- missing on slave
+(NEW11       :  17) LINBST.NJB                       -- missing on slave
+(NEW11       :  17) LNKRSP.NBJ                       -- missing on slave
+(NEW11       :  17) LODDUM.NBJ                       -- missing on slave
+(NEW11       :  17) LING.NBJ                         -- missing on slave
+(NEW11       :  17) LINBST.NBJ                       -- missing on slave
+(NEW11       :  17) AUTO11.NBJ                       -- missing on slave
+(NEW11       :  17) TRMSC.NBJ                        -- missing on slave
+(NEW11       :  17) PKT3D.NBJ                        -- missing on slave
+(NEW11       :  17) LODDUM.OBJ                       -- missing on slave
+(NEW11       :  17) XDTST.OBJ                        -- missing on slave
+(NEW11       :  17) LINBST.OBJ                       -- missing on slave
+(NEW11       :  17) LNKE.OBJ                         -- missing on slave
+(NEW11       :  17) LNKRSP.OBJ                       -- missing on slave
+(NEW11       :  17) LKBDCP.OBJ                       -- missing on slave
+(NEW11       :  17) LNKFLG.OBJ                       -- missing on slave
+(NEW11       :  17) DCPINI.OBJ                       -- missing on slave
+(NEW11       :  17) PKT3D.OBJ                        -- missing on slave
+(NEW11       :  17) LK2370.CMD                       -- missing on slave
+(NEW11       :  17) MC2370.CMD                       -- missing on slave
+(NEW11       :  17) LK2352.CMD                       -- missing on slave
+(NEW11       :  17) MC2352.CMD                       -- missing on slave
+(NEW11       :  17) LK2377.CMD                       -- missing on slave
+(NEW11       :  17) MC2377.CMD                       -- missing on slave
+(NEW11       :  17) LK2343.CMD                       -- missing on slave
+(NEW11       :  17) MC2343.CMD                       -- missing on slave
+(NEW11       :  17) LK167.CMD                        -- missing on slave
+(NEW11       :  17) MCRFSC.CMD                       -- missing on slave
+(NEW11       :  17) FINDIT.TEC                       -- missing on slave
+(NEW11       :  17) RU2341.MAC                       -- missing on slave
+(NEW11       :  17) MP2353.M26                       -- missing on slave
+(NEW11       :  17) MP2353.M25                       -- missing on slave
+(NEW11       :  17) MP2353.X24                       -- missing on slave
+(NEW11       :  17) MP2353.M21                       -- missing on slave
+(NEW11       :  17) MP2353.M20                       -- missing on slave
+(NEW11       :  17) MP2353.M19                       -- missing on slave
+(NEW11       :  17) LING.19C                         -- missing on slave
+(NEW11       :  17) AUTO11.21C                       -- missing on slave
+(NEW11       :  17) SCCPR.19C                        -- missing on slave
+(NEW11       :  17) RTCOPY.EXE                       -- missing on slave
+(NEW11       :  17) CG2342.MAC                       -- missing on slave
+(NEW11       :  17) AUTO11.MAC                       -- missing on slave
+(NEW11       :  17) LING.MAC                         -- missing on slave
+(NEW11       :  17) LNKI2B.MAC                       -- missing on slave
+(NEW11       :  17) ATCRPR.MAC                       -- missing on slave
+(NEW11       :  17) TPCPR.MAC                        -- missing on slave
+(NEW11       :  17) ATC03.I00                        -- missing on slave
+(NEW11       :  17) ATC03.I01                        -- missing on slave
+(NEW11       :  17) BB2700.N04                       -- missing on slave
+(NEW11       :  17) LINAST.NBJ                       -- missing on slave
+(NEW11       :  17) LKITP2.NBJ                       -- missing on slave
+(NEW11       :  17) XLTCRS.NBJ                       -- missing on slave
+(NEW11       :  17) TRMPTP.NBJ                       -- missing on slave
+(NEW11       :  17) TRMTST.NBJ                       -- missing on slave
+(NEW11       :  17) TRMFST.NBJ                       -- missing on slave
+(NEW11       :  17) NOLNKI.NBJ                       -- missing on slave
+(NEW11       :  17) LNKISC.NBJ                       -- missing on slave
+(NEW11       :  17) LINF.OBJ                         -- missing on slave
+(NEW11       :  17) LINAST.OBJ                       -- missing on slave
+(NEW11       :  17) LKITP2.OBJ                       -- missing on slave
+(NEW11       :  17) CRCTAB.OBJ                       -- missing on slave
+(NEW11       :  17) LKEPKT.OBJ                       -- missing on slave
+(NEW11       :  17) LNKEB.OBJ                        -- missing on slave
+(NEW11       :  17) LNKD.OBJ                         -- missing on slave
+(NEW11       :  17) LNKBS.OBJ                        -- missing on slave
+(NEW11       :  17) XLTCRS.OBJ                       -- missing on slave
+(NEW11       :  17) TRMPTP.OBJ                       -- missing on slave
+(NEW11       :  17) TRMTST.OBJ                       -- missing on slave
+(NEW11       :  17) TRMFST.OBJ                       -- missing on slave
+(NEW11       :  17) LK2342.CMD                       -- missing on slave
+(NEW11       :  17) LNKISC.N19                       -- missing on slave
+(NEW11       :  17) LK2351.CMD                       -- missing on slave
+(NEW11       :  17) LKCEC1.CMD                       -- missing on slave
+(NEW11       :  17) MC2351.CMD                       -- missing on slave
+(NEW11       :  17) V254.LOG                         -- missing on slave
+(NEW11       :  17) MC132.CMD                        -- missing on slave
+(NEW11       :  17) LK132.CMD                        -- missing on slave
+(NEW11       :  17) MC2342.CMD                       -- missing on slave
+(NEW11       :  17) ASMTMP.CMD                       -- missing on slave
+(NEW11       :  17) MCXFSC.CMD                       -- missing on slave
+(NEW11       :  17) MCCFSC.CMD                       -- missing on slave
+(NEW11       :  17) DOSTAP.EXE                       -- missing on slave
+(NEW11       :  17) DOSTAP.SAV                       -- missing on slave
+(NEW11       :  17) CG2341.MAC                       -- missing on slave
+(NEW11       :  17) VATCS.MAC                        -- missing on slave
+(NEW11       :  17) ATCPR.MAC                        -- missing on slave
+(NEW11       :  17) ROUTE.MAC                        -- missing on slave
+(NEW11       :  17) DBUGPR.MAC                       -- missing on slave
+(NEW11       :  17) ATC03.M00                        -- missing on slave
+(NEW11       :  17) ATC03.M01                        -- missing on slave
+(NEW11       :  17) CG554O.MAC                       -- missing on slave
+(NEW11       :  17) CG554A.MAC                       -- missing on slave
+(NEW11       :  17) SV2353.IMG                       -- missing on slave
+(NEW11       :  17) LK554A.CMD                       -- missing on slave
+(NEW11       :  17) MC554A.CMD                       -- missing on slave
+(NEW11       :  17) MC2S53.CMD                       -- missing on slave
+(NEW11       :  17) LK2S53.CMD                       -- missing on slave
+(NEW11       :  17) END.NBJ                          -- missing on slave
+(NEW11       :  17) LINGST.NBJ                       -- missing on slave
+(NEW11       :  17) LNKF2.NBJ                        -- missing on slave
+(NEW11       :  17) LKIBS2.NBJ                       -- missing on slave
+(NEW11       :  17) LKITP1.NBJ                       -- missing on slave
+(NEW11       :  17) LNKC.NBJ                         -- missing on slave
+(NEW11       :  17) TRM.NBJ                          -- missing on slave
+(NEW11       :  17) CMDSAT.NBJ                       -- missing on slave
+(NEW11       :  17) PKT2DB.NBJ                       -- missing on slave
+(NEW11       :  17) PKT2.NBJ                         -- missing on slave
+(NEW11       :  17) END.OBJ                          -- missing on slave
+(NEW11       :  17) LKITP1.OBJ                       -- missing on slave
+(NEW11       :  17) LKIBS2.OBJ                       -- missing on slave
+(NEW11       :  17) LKGQAL.OBJ                       -- missing on slave
+(NEW11       :  17) LNKF2.OBJ                        -- missing on slave
+(NEW11       :  17) LNKEBP.OBJ                       -- missing on slave
+(NEW11       :  17) LNKC.OBJ                         -- missing on slave
+(NEW11       :  17) LKBDPV.OBJ                       -- missing on slave
+(NEW11       :  17) TRM.OBJ                          -- missing on slave
+(NEW11       :  17) CMDT28.OBJ                       -- missing on slave
+(NEW11       :  17) CMDSAT.OBJ                       -- missing on slave
+(NEW11       :  17) PKT2DB.OBJ                       -- missing on slave
+(NEW11       :  17) PKT2.OBJ                         -- missing on slave
+(NEW11       :  17) SV2353.I26                       -- missing on slave
+(NEW11       :  17) LK2341.CMD                       -- missing on slave
+(NEW11       :  17) BB2150.NR5                       -- missing on slave
+(NEW11       :  17) SV2353.I25                       -- missing on slave
+(NEW11       :  17) BB2150.NR4                       -- missing on slave
+(NEW11       :  17) TRM.21C                          -- missing on slave
+(NEW11       :  17) SV2353.I21                       -- missing on slave
+(NEW11       :  17) SV2353.I20                       -- missing on slave
+(NEW11       :  17) LINGST.N19                       -- missing on slave
+(NEW11       :  17) SV2353.I19                       -- missing on slave
+(NEW11       :  17) LK2350.CMD                       -- missing on slave
+(NEW11       :  17) MC2350.CMD                       -- missing on slave
+(NEW11       :  17) MC2341.CMD                       -- missing on slave
+(NEW11       :  17) RU6745.MAC                       -- missing on slave
+(NEW11       :  17) ND6745.BND                       -- missing on slave
+(NEW11       :  17) DCP.DOC                          -- missing on slave
+(NEW11       :  17) DCP.PUB                          -- missing on slave
+(NEW11       :  17) DCP.RNO                          -- missing on slave
+(NEW11       :  17) DCP.MEM                          -- missing on slave
+(NEW11       :  17) CMDSAT.MAC                       -- missing on slave
+(NEW11       :  17) PKT2.MAC                         -- missing on slave
+(NEW11       :  17) TRM.MAC                          -- missing on slave
+(NEW11       :  17) VATCR.MAC                        -- missing on slave
+(NEW11       :  17) CG2R53.MAC                       -- missing on slave
+(NEW11       :  17) CASPR.MAC                        -- missing on slave
+(NEW11       :  17) SCCHPR.MAC                       -- missing on slave
+(NEW11       :  17) RPGINI.CTL                       -- missing on slave
+(NEW11       :  17) ONTATC.301                       -- missing on slave
+(NEW11       :  17) LOAD.OBJ                         -- missing on slave
+(NEW11       :  17) LPA.OBJ                          -- missing on slave
+(NEW11       :  17) LINFST.OBJ                       -- missing on slave
+(NEW11       :  17) TYMB.OBJ                         -- missing on slave
+(NEW11       :  17) LKIBS1.OBJ                       -- missing on slave
+(NEW11       :  17) LNKF1.OBJ                        -- missing on slave
+(NEW11     17) ATSNBJ.CMD                       -- missing on slave
+(NEW11       :  17) LOAD.NBJ                         -- missing on slave
+(NEW11       :  17) PADMGR.NBJ                       -- missing on slave
+(NEW11       :  17) LPA.NBJ                          -- missing on slave
+(NEW11       :  17) TYMB.NBJ                         -- missing on slave
+(NEW11       :  17) LNKF1.NBJ                        -- missing on slave
+(NEW11       :  17) LKIBS1.NBJ                       -- missing on slave
+(NEW11       :  17) LKBDUP.NBJ                       -- missing on slave
+(NEW11       :  17) XLTEBC.NBJ                       -- missing on slave
+(NEW11       :  17) TRMP.NBJ                         -- missing on slave
+(NEW11       :  17) TRMSTR.NBJ                       -- missing on slave
+(NEW11       :  17) CMDS.NBJ                         -- missing on slave
+(NEW11       :  17) PKT1DB.NBJ                       -- missing on slave
+(NEW11       :  17) PKT1.NBJ                         -- missing on slave
+(NEW11       :  17) ERRROM.NBJ                       -- missing on slave
+(NEW11       :  17) LNKB.OBJ                         -- missing on slave
+(NEW11       :  17) XLTEBC.OBJ                       -- missing on slave
+(NEW11       :  17) TRMP.OBJ                         -- missing on slave
+(NEW11       :  17) CMDS.OBJ                         -- missing on slave
+(NEW11       :  17) PKT1DB.OBJ                       -- missing on slave
+(NEW11       :  17) PKT1.OBJ                         -- missing on slave
+(NEW11       :  17) LNKISH.NBJ                       -- missing on slave
+(NEW11       :  17) COMMON.23C                       -- missing on slave
+(NEW11       :  17) MC2R53.CMD                       -- missing on slave
+(NEW11       :  17) LNKISH.N23                       -- missing on slave
+(NEW11       :  17) LK0277.CMD                       -- missing on slave
+(NEW11       :  17) MC0277.CMD                       -- missing on slave
+(NEW11       :  17) LK2R53.CMD                       -- missing on slave
+(NEW11       :  17) MC396.CMD                        -- missing on slave
+(NEW11       :  17) LK2356.CMD                       -- missing on slave
+(NEW11       :  17) MC2356.CMD                       -- missing on slave
+(NEW11       :  17) LKIPK2.CUR                       -- missing on slave
+(NEW11       :  17) LK396.CMD                        -- missing on slave
+(NEW11       :  17) LK2347.CMD                       -- missing on slave
+(NEW11       :  17) MC2347.CMD                       -- missing on slave
+(NEW11       :  17) LK2340.CMD                       -- missing on slave
+(NEW11       :  17) MC2340.CMD                       -- missing on slave
+(NEW11       :  17) MACLH3.CMD                       -- missing on slave
+(NEW11       :  17) ATC01.M27                        -- missing on slave
+(NEW11       :  17) ATC01.I27                        -- missing on slave
+(NEW11       :  17) PADMGR.21C                       -- missing on slave
+(NEW11       :  17) DIR884.DIR                       -- missing on slave
+(NEW11       :  17) COMMON.MAC                       -- missing on slave
+(NEW11       :  17) LKIPK2.MAC                       -- missing on slave
+(NEW11       :  17) XP.MAC                           -- missing on slave
+(NEW11       :  17) LNKIPR.MAC                       -- missing on slave
+(NEW11       :  17) PADMGR.MAC                       -- missing on slave
+(NEW11       :  17) CG6745.MAC                       -- missing on slave
+(NEW11       :  17) 3XDTPR.MAC                       -- missing on slave
+(NEW11       :  17) LNKBPR.MAC                       -- missing on slave
+(NEW11       :  17) SV2342.IMG                       -- missing on slave
+(NEW11       :  17) ATCU03.301                       -- missing on slave
+(NEW11       :  17) TXS.CTL                          -- missing on slave
+(NEW11       :  17) BUILD.CTL                        -- missing on slave
+(NEW11       :  17) TXS.LOG                          -- missing on slave
+(NEW11       :  17) LINC.OBJ                         -- missing on slave
+(NEW11       :  17) MACOBJ.CMD                       -- missing on slave
+(NEW11       :  17) LK6745.CMD                       -- missing on slave
+(NEW11       :  17) MC6745.CMD                       -- missing on slave
+(NEW11       :  17) STATUS.NBJ                       -- missing on slave
+(NEW11       :  17) LINC.NBJ                         -- missing on slave
+(NEW11       :  17) TYMA.NBJ                         -- missing on slave
+(NEW11       :  17) ZAPBUF.NBJ                       -- missing on slave
+(NEW11       :  17) LKBDUV.NBJ                       -- missing on slave
+(NEW11       :  17) AUTO7.NBJ                        -- missing on slave
+(NEW11       :  17) TRMTSC.NBJ                       -- missing on slave
+(NEW11       :  17) TRMST.NBJ                        -- missing on slave
+(NEW11       :  17) AUTR11.NBJ                       -- missing on slave
+(NEW11       :  17) STATUS.OBJ                       -- missing on slave
+(NEW11       :  17) TYMA.OBJ                         -- missing on slave
+(NEW11       :  17) ZAPBUF.OBJ                       -- missing on slave
+(NEW11       :  17) LNKIB.OBJ                        -- missing on slave
+(NEW11       :  17) LKBDUV.OBJ                       -- missing on slave
+(NEW11       :  17) AUTO7.OBJ                        -- missing on slave
+(NEW11       :  17) TRMST.OBJ                        -- missing on slave
+(NEW11       :  17) LK2355.CMD                       -- missing on slave
+(NEW11       :  17) MC2355.CMD                       -- missing on slave
+(NEW11       :  17) RU2353.N25                       -- missing on slave
+(NEW11       :  17) MACLH2.CMD                       -- missing on slave
+(NEW11       :  17) NODE.LOG                         -- missing on slave
+(NEW11       :  17) RU2353.MAC                       -- missing on slave
+(NEW11       :  17) BDV.ROM                          -- missing on slave
+(NEW11       :  17) BDV.OIM                          -- missing on slave
+(NEW11       :  17) LOAD11.SAV                       -- missing on slave
+(NEW11       :  17) IIXPR.MAC                        -- missing on slave
+(NEW11       :  17) LKIPK1.MAC                       -- missing on slave
+(NEW11       :  17) LINC.MAC                         -- missing on slave
+(NEW11       :  17) V2353.MAC                        -- missing on slave
+(NEW11       :  17) VCAS.MAC                         -- missing on slave
+(NEW11       :  17) SV2341.IMG                       -- missing on slave
+(NEW11       :  17) ATCU02.301                       -- missing on slave
+(NEW11       :  17) ATCU18.301                       -- missing on slave
+(NEW11       :  17) MC2397.CMD                       -- missing on slave
+(NEW11       :  17) MACNBJ.CMD                       -- missing on slave
+(NEW11       :  17) XDT.NBJ                          -- missing on slave
+(NEW11       :  17) ONCROM.NBJ                       -- missing on slave
+(NEW11       :  17) ONCE.NBJ                         -- missing on slave
+(NEW11       :  17) LINB.NBJ                         -- missing on slave
+(NEW11       :  17) LKIST2.NBJ                       -- missing on slave
+(NEW11       :  17) LNKIA.NBJ                        -- missing on slave
+(NEW11       :  17) LNK2.NBJ                         -- missing on slave
+(NEW11       :  17) AUTO13.NBJ                       -- missing on slave
+(NEW11       :  17) TRMPST.NBJ                       -- missing on slave
+(NEW11       :  17) CMDSST.NBJ                       -- missing on slave
+(NEW11       :  17) CMDTYM.NBJ                       -- missing on slave
+(NEW11       :  17) EXEC.NBJ                         -- missing on slave
+(NEW11       :  17) ACAS11.NBJ                       -- missing on slave
+(NEW11       :  17) LINBX.NBJ                        -- missing on slave
+(NEW11       :  17) XDT.OBJ                          -- missing on slave
+(NEW11       :  17) ONCE.OBJ                         -- missing on slave
+(NEW11       :  17) LINB.OBJ                         -- missing on slave
+(NEW11       :  17) LKITPC.OBJ                       -- missing on slave
+(NEW11       :  17) LKIST2.OBJ                       -- missing on slave
+(NEW11       :  17) LNKIA.OBJ                        -- missing on slave
+(NEW11       :  17) LNKG.OBJ                         -- missing on slave
+(NEW11       :  17) X25Q.OBJ                         -- missing on slave
+(NEW11       :  17) CRCBYT.OBJ                       -- missing on slave
+(NEW11       :  17) LNK2.OBJ                         -- missing on slave
+(NEW11       :  17) AUTO13.OBJ                       -- missing on slave
+(NEW11       :  17) TRMPST.OBJ                       -- missing on slave
+(NEW11       :  17) CMDSST.OBJ                       -- missing on slave
+(NEW11       :  17) CMDX28.OBJ                       -- missing on slave
+(NEW11       :  17) CMDTYM.OBJ                       -- missing on slave
+(NEW11       :  17) EXEC.OBJ                         -- missing on slave
+(NEW11       :  17) MCCARL.CMD                       -- missing on slave
+(NEW11       :  17) LNKIA.21C                        -- missing on slave
+(NEW11       :  17) LK2354.CMD                       -- missing on slave
+(NEW11       :  17) LK2397.CMD                       -- missing on slave
+(NEW11       :  17) CG2353.N25                       -- missing on slave
+(NEW11       :  17) CG2353.N19                       -- missing on slave
+(NEW11       :  17) CG2353.N18                       -- missing on slave
+(NEW11       :  17) LNKIA.20C                        -- missing on slave
+(NEW11       :  17) CG2353.N10                       -- missing on slave
+(NEW11       :  17) MC2354.CMD                       -- missing on slave
+(NEW11       :  17) CG2353.N02                       -- missing on slave
+(NEW11       :  17) LK522.CMD                        -- missing on slave
+(NEW11       :  17) LK2345.CMD                       -- missing on slave
+(NEW11       :  17) MC2345.CMD                       -- missing on slave
+(NEW11       :  17) MACLH1.CMD                       -- missing on slave
+(NEW11       :  17) RPG.INI                          -- missing on slave
+(NEW11       :  17) LKEISV.SAV                       -- missing on slave
+(NEW11       :  17) ONCROM.20C                       -- missing on slave
+(NEW11       :  17) LNKIA.HIS                        -- missing on slave
+(NEW11       :  17) NODLOD.SAV                       -- missing on slave
+(NEW11       :  17) SMDIIX.MAC                       -- missing on slave
+(NEW11       :  17) LINB.MAC                         -- missing on slave
+(NEW11       :  17) EXEC.MAC                         -- missing on slave
+(NEW11       :  17) CG2353.MAC                       -- missing on slave
+(NEW11       :  17) LIFPR.MAC                        -- missing on slave
+(NEW11       :  17) CG554Y.MAC                       -- missing on slave
+O M
