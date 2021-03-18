@@ -1,0 +1,816 @@
+!rdist (sys)*.sav,(sys)*.shr,(sys)*.low/master:33/host:14/check
+Master host: 33
+548 files on master system.
+Slave hosts: 14
+Checking host 14
+(SYS         :  14) SETOP.SAV      5 15-Aug-86 16:29 -- extra not on master
+(SYS         :  14) PIP.SHR        8 26-Jan-77 14:22 -- bad checksum GUNWOY
+                           should be 23-Mar-82 10:19 CIBJOS  ALL RUN RUN
+(SYS         :  14) PIP.LOW        2 26-Jan-77 14:23 -- bad checksum KUHVUP
+                           should be 23-Mar-82 10:19 KEKPIJ  ALL RUN RUN
+(SYS         :  14) SCAN.SAV      22 24-Sep-80 12:42 -- extra not on master
+(SYS         :  14) COPYPC.SAV    27 19-Feb-85 13:08 -- bad checksum DEGJEH
+                           should be 19-Feb-85 15:18 VUJXOV  RUN RUN RUN
+(SYS         :  14) LOADFL.SAV     4 01-Jan-64 16:01 -- extra not on master
+(SYS         :  14) LNKERR.SHR    27 25-Nov-81 09:52 -- bad checksum REPHOW
+                           should be 25-May-82 15:09 ZAYJUQ  ALL  RD  RD
+(SYS         :  14) DUSAGE.SAV    30 08-Jun-86 13:54 -- bad checksum FACZAN
+                           should be 16-Mar-83 09:27 HOQRAS  RUN RUN RUN     10
+(SYS         :  14) UPDLUD.SAV    19 08-Jun-86 14:06 -- bad checksum MEWTOF
+                           should be 17-May-84 16:54 FEDCAP  RUN RUN  NO 567412
+(SYS         :  14) DT.SAV         2 08-Jun-76 08:09 -- bad checksum ZOFLIF
+                           should be 18-Jun-76 14:32 DARPOV  ALL RUN RUN
+(SYS         :  14) FORTB.SHR     55 09-Jun-82 16:37 -- bad checksum VARVAX
+                           should be 19-Nov-81 17:12 QAVQOY  ALL  RD  RD    200
+(SYS         :  14) TBALDR.LOW    19 10-Aug-81 17:10 -- bad checksum QIXZUL
+                           should be 04-May-82 10:47 FIMFUP  ALL RUN RUN
+(SYS         :  14) TBAREK.LOW     2 10-Aug-81 17:10 -- bad checksum BASROX
+                           should be 04-May-82 10:47 COXPIV  ALL RUN RUN
+(SYS         :  14) TBAREK.SHR     6 10-Aug-81 17:10 -- bad checksum DELDUV
+                           should be 04-May-82 10:47 NIRNAL  ALL RUN RUN
+(SYS         :  14) COBOL.LOW      2 06-Aug-80 08:59 -- extra not on master
+(SYS         :  14) FTFORT.SAV     2 28-Aug-80 13:44 -- protection ALL RUN RUN
+                           should be 22-Aug-80 09:40 GUPGED  ALL  RD  RD
+(SYS         :  14) L1600D.SAV    17 29-Jul-77 08:45 -- bad checksum HOXFOZ
+                           should be 30-Jun-77 10:28 DURFEV  ALL RUN RUN
+(SYS         :  14) DDT27.SAV      9 20-Aug-80 16:34 -- extra not on master
+(SYS         :  14) 1022R.SHR     33 09-Jun-89 20:02 -- bad checksum FAFBAX
+                           should be 09-Jun-89 08:49 CUBJET  ALL  RD  RD    200
+(SYS         :  14) X22F.SHR      36 09-Jun-89 20:05 -- bad license 
+                           should be 09-Jun-89 08:50 HIRPUN  ALL  RD  RD    200
+(SYS         :  14) X22T.SHR      54 09-Jun-89 20:06 -- bad license 
+                           should be 09-Jun-89 08:50 WUFDUW  ALL  RD  RD    200
+(SYS         :  14) C24LOD.SAV   152 05-Aug-80 13:04 -- extra not on master
+(SYS         :  14) CRANK.SAV     13 01-Jan-64 16:01 -- extra not on master
+(SYS         :  14) PAKCP5.SAV    25 06-Feb-87 19:21 -- bad checksum BAPNAG
+                           should be 30-Nov-87 22:27 JONBOB  ALL  RD  NO
+(SYS         :  14) PAKCPX.SAV    13 06-Feb-87 19:14 -- extra not on master
+(SYS         :  14) EXECX.SAV     62 22-Sep-87 22:18 -- protection ALL  RD  NO
+                           should be 22-Sep-87 20:06 CIDKUP  ALL RUN  NO 777717
+(SYS         :  14) XEXEC.SAV     51 22-Sep-87 20:06 -- bad checksum YONGUB
+                           should be 22-Sep-87 20:06 TOHFUZ  ALL RUN  NO 777717
+(SYS         :  14) TW035E.SAV   170 03-May-89 14:51 -- extra not on master
+(SYS         :  14) NODLOD.SAV    26 17-Mar-82 15:05 -- extra not on master
+(SYS         :  14) OPPS.SAV       2 01-Jan-64 16:01 -- extra not on master
+(SYS         :  14) KMCLOD.SAV     2 25-Jul-80 14:46 -- extra not on master
+(SYS         :  14) ICP.SAV       30 19-Aug-80 19:40 -- extra not on master
+(SYS         :  14) FRMDDT.SAV    10 29-Apr-88 17:05 -- bad checksum VARGIZ
+                           should be 29-Apr-88 17:05 GOTNUX  ALL  RD  RD
+(SYS         :  14) FOROTS.SHR    16 16-May-85 13:32 -- extra not on master
+(SYS         :  14) LNK999.SHR     9 25-Nov-81 09:52 -- bad checksum LOWJIX
+                           should be 25-May-82 15:09 MITBUK  ALL  RD  RD
+(SYS         :  14) COBOLK.SHR    13 25-May-79 13:58 -- bad checksum ZUZDUT
+                           should be 25-May-79 10:41 LIHNAZ  ALL  RD  RD
+(SYS         :  14) PUNCH.SAV     13 09-Aug-79 11:12 -- bad checksum VOTFOZ
+                           should be 09-Aug-79 11:10 WOTZAB  ALL RUN RUN      2
+(SYS         :  14) TELAID.SHR    21 08-Oct-87 15:41 -- bad checksum PEBLEX
+                           should be 09-Oct-87 12:37 BIXJAK  ALL RUN RUN
+(SYS         :  14) TELAID.LOW     4 08-Oct-87 16:58 -- bad checksum BOJYOK
+                           should be 09-Oct-87 12:39 LAWFAW  ALL RUN RUN
+(SYS         :  14) PROFHI.SHR    14 07-Dec-77 08:01 -- bad checksum DUPJOZ
+                           should be 07-Dec-77 08:00 MAGJIZ  ALL RUN RUN
+(SYS         :  14) 1022C0.SHR    57 09-Jun-89 20:01 -- bad checksum YEWSUY
+                           should be 09-Jun-89 08:49 XUTNUP  ALL  RD  RD
+(SYS         :  14) NS1022.SHR   178 09-Jun-89 19:59 -- bad checksum TEMKES
+                           should be 09-Jun-89 08:49 QIBPAT  ALL  RD  RD    200
+(SYS         :  14) LP20FS.SAV     5 17-Nov-80 12:19 -- extra not on master
+(SYS         :  14) CON675.SAV   152 11-Nov-80 09:04 -- extra not on master
+(SYS         :  14) SED.SHR       19 16-Sep-85 19:12 -- extra not on master
+(SYS         :  14) SED.LOW       12 16-Sep-85 19:12 -- extra not on master
+(SYS         :  14) CRASH.SAV    514 19-May-65 13:36 -- bad checksum SUZPAS
+                           should be 27-Jan-66 14:06 COZHUL   RD  RD  NO
+(SYS         :  14) KSFEFS.SAV     3 28-May-87 16:09 -- extra not on master
+(SYS         :  14) ASP.SAV        7 23-Apr-87 22:52 -- bad checksum WOPLIN
+                           should be 10-Jun-88 08:05 DAJXUH  ALL RUN RUN  64017
+(SYS         :  14) LINK.SHR      11 25-Nov-81 09:52 -- bad checksum GESGOV
+                           should be 25-May-82 15:09 BONXOJ  ALL  RD  RD
+(SYS         :  14) LNKSCN.SHR    18 25-Nov-81 09:52 -- bad checksum SUKZAZ
+                           should be 25-May-82 15:09 SELZIG  ALL  RD  RD
+(SYS         :  14) LNKOV1.SHR    28 25-Nov-81 09:52 -- bad checksum ZOJPUP
+                           should be 25-May-82 15:09 JOWXAT  ALL  RD  RD
+(SYS         :  14) FILEX.SHR     13 30-May-86 13:47 -- protection ALL  RD  RD
+                           should be 19-Jan-81 14:39 VEGVID  ALL ALL ALL
+(SYS         :  14) BIONIC.SAV     2 22-Nov-76 11:06 -- bad checksum NEYLUH
+                           should be 16-Jan-86 10:29 DOJKAN  ALL RUN RUN   2000
+(SYS         :  14) SETTER.LOW     2 01-Jan-64 16:01 -- bad checksum YUKWEF
+                           should be 01-Jan-64 16:01 TAZZUP  ALL RUN RUN
+(SYS         :  14) SETTER.SHR    11 01-Jan-64 16:01 -- bad checksum CUYNUS
+                           should be 02-Jan-64 14:41 NULPUC  ALL RUN RUN
+(SYS         :  14) TRUCTL.SHR    21 11-Jul-83 10:14 -- protection ALL  RD  NO
+                           should be 28-Sep-76 14:33 KABBOR  ALL RUN RUN 145002
+(SYS         :  14) TRUCTL.SHR    21 11-Jul-83 10:14 -- bad license 147012
+                           should be 28-Sep-76 14:33 KABBOR  ALL RUN RUN 145002
+(SYS         :  14) TRUCTL.LOW     3 11-Jul-83 10:16 -- protection ALL  RD  NO
+                           should be 28-Sep-76 14:32 ZUJRUV  ALL RUN RUN 145002
+(SYS         :  14) TRUCTL.LOW     3 11-Jul-83 10:16 -- bad license 147012
+                           should be 28-Sep-76 14:32 ZUJRUV  ALL RUN RUN 145002
+(SYS         :  14) L1600M.SAV    17 29-Jul-77 08:45 -- protection ALL  RD  RD
+                           should be 30-Jun-77 10:38 DELFAB  ALL RUN RUN
+(SYS         :  14) 1022M.SHR     35 09-Jun-89 20:04 -- bad license 
+                           should be 09-Jun-89 08:50 NOYBOZ  ALL  RD  RD    200
+(SYS         :  14) 1022C1.SHR    89 09-Jun-89 20:02 -- bad checksum DEXMIZ
+                           should be 09-Jun-89 08:49 GOBLAX  ALL  RD  RD    200
+(SYS         :  14) 1022T.SHR     50 09-Jun-89 20:04 -- bad license 
+                           should be 09-Jun-89 08:50 SUHMOV  ALL  RD  RD    200
+(SYS         :  14) 1022F.SHR     45 09-Jun-89 20:04 -- bad checksum YUNPOX
+                           should be 09-Jun-89 08:50 JOSXIS  ALL  RD  RD    200
+(SYS         :  14) CP.SAV         2 14-Mar-86 19:26 -- extra not on master
+(SYS         :  14) 95034P.SAV   162 09-May-86 15:49 -- extra not on master
+(SYS         :  14) RB034J.SAV   153 19-Jun-86 15:44 -- extra not on master
+(SYS         :  14) DIRECT.LOW     2 22-May-87 16:52 -- extra not on master
+(SYS         :  14) DIRECT.SHR    22 22-May-87 16:50 -- extra not on master
+(SYS         :  14) OLDMON.SAV   169 13-Nov-90 22:16 -- bad checksum FUNZIH
+                           should be 09-Nov-89 12:52 FAXNIC  ALL  RD  NO
+(SYS         :  14) SYSTEM.SAV   169 11-Mar-91 13:47 -- bad checksum BITKUB
+                           should be 09-Nov-89 12:53 XOKKAM  ALL  RD  NO
+(SYS         :  14) QC1400.SHR    24 26-Feb-82 15:50 -- bad checksum YIHJUK
+                           should be 08-Sep-81 14:14 MIVNID  ALL  RD  RD    200
+(SYS         :  14) MSGLOG.SAV     2 13-Feb-91 16:02 -- extra not on master
+(SYS         :  14) SZRPT.SAV      4 30-Sep-86 18:30 -- protection ALL  RD  NO
+                           should be 30-Sep-86 17:33 XIRWUZ  ALL RUN RUN
+(SYS         :  14) LVALID.SAV    36 06-Nov-80 18:33 -- extra not on master
+(SYS         :  14) LNKMAP.SHR    13 25-Nov-81 09:52 -- bad checksum JOKJUT
+                           should be 25-May-82 15:09 DIKZUH  ALL  RD  RD
+(SYS         :  14) LNKOV2.SHR    25 25-Nov-81 09:52 -- bad checksum CEJXOZ
+                           should be 25-May-82 15:09 WETWIP  ALL  RD  RD
+(SYS         :  14) TTR.SAV       32 02-Sep-83 18:27 -- bad checksum YOBTUP
+                           should be 13-Oct-83 09:38 HONKON  ALL RUN RUN
+(SYS         :  14) READST.SAV    33 02-Aug-78 08:44 -- bad license   2010
+                           should be 02-Aug-78 08:41 VIBBOG  ALL RUN RUN   2000
+(SYS         :  14) BCHARG.SHR    23 31-Aug-78 16:20 -- bad checksum ZUYPAK
+                           should be 23-Mar-82 10:18 SIQNAC  ALL RUN RUN      2
+(SYS         :  14) BCHARG.LOW     2 31-Aug-78 16:23 -- bad checksum POTPAB
+                           should be 23-Mar-82 10:18 TOBVAC  ALL RUN RUN      2
+(SYS         :  14) TBA.SHR       44 10-Aug-81 17:10 -- bad checksum RUZCEN
+                           should be 10-Feb-85 21:48 CUQWUY  ALL RUN RUN
+(SYS         :  14) TBA.LOW        2 10-Aug-81 17:10 -- bad checksum RIDLIM
+                           should be 04-May-82 10:47 LADPEQ  ALL RUN RUN
+(SYS         :  14) PRESUP.SAV    29 11-Oct-77 07:40 -- bad checksum DALJUH
+                           should be 11-Oct-77 07:39 FAWQAR  ALL RUN RUN
+(SYS         :  14) GFD.SAV        3 21-Nov-86 02:21 -- bad checksum HADBOR
+                           should be 19-Sep-89 18:51 LEQJEH  ALL RUN RUN   5010
+(SYS         :  14) MAGWRT.SAV     3 17-Jan-80 12:09 -- extra not on master
+(SYS         :  14) BACKUP.SAV   169 13-Nov-90 22:14 -- bad checksum FUNZIH
+                           should be 09-Nov-89 12:53 QATMOM  ALL  RD  NO
+(SYS         :  14) BACKUP.SHR    11 20-Jun-85 11:51 -- extra not on master
+(SYS         :  14) CRSHID.SAV    40 30-Aug-85 20:32 -- protection ALL  RD  NO
+                           should be 19-Mar-85 15:00 PEWJEC  ALL RUN  NO   1410
+(SYS         :  14) COMPIL.SAV     2 20-May-85 15:24 -- extra not on master
+(SYS         :  14) UNDELE.SAV    28 16-Mar-84 12:43 -- extra not on master
+(SYS         :  14) LNKLOD.SHR    26 25-Nov-81 09:52 -- bad checksum PUWJUC
+                           should be 25-May-82 15:09 DABNAN  ALL  RD  RD
+(SYS         :  14) MUNG.SAV       2 11-Jul-85 16:09 -- protection ALL  RD  RD
+                           should be 27-May-90 14:23 MUXMOY  ALL  RD RUN
+(SYS         :  14) SETLIC.SAV     2 30-May-86 18:01 -- protection ALL  RD  NO
+                           should be 21-Nov-86 15:43 FUMWOV  RUN RUN RUN
+(SYS         :  14) DECDDT.SAV    11 22-Jan-87 10:20 -- extra not on master
+(SYS         :  14) 1022AC.SHR     4 09-Jun-89 20:01 -- bad license 
+                           should be 09-Jun-89 08:49 BOTCUK  ALL  RD  RD    200
+(SYS         :  14) LPQ.SAV        2 14-Nov-86 12:17 -- extra not on master
+(SYS         :  14) D.SAV          2 27-Dec-80 02:58 -- extra not on master
+(SYS         :  14) R.SAV         10 28-Sep-83 14:44 -- extra not on master
+(SYS         :  14) TWXD08.SAV   170 21-Oct-88 13:11 -- extra not on master
+(SYS         :  14) LOADZ.SAV     29 18-Nov-88 08:02 -- extra not on master
+(SYS         :  14) COM.SAV        2 07-Nov-75 10:48 -- protection ALL ALL  RD
+                           should be 08-Mar-88 11:34 SOJKAC  ALL RUN RUN
+(SYS         :  14) X22.LOW        2 16-Aug-83 15:41 -- extra not on master
+(SYS         :  14) CTYLOG.SAV     2 13-Feb-91 16:02 -- extra not on master
+(SYS         :  14) LOGOUT.SHR     4 23-Jul-86 20:21 -- protection ALL RUN RUN
+                           should be 14-Oct-86 19:12 NIWSEG  ALL  RD RUN 547000
+(SYS         :  14) SETE.SAV       2 21-Jan-80 10:57 -- bad checksum KUDXAT
+                           should be 01-Feb-89 19:19 FAYPAS  ALL RUN RUN   1000
+(SYS         :  14) LPASSW.SAV    16 24-Feb-81 14:49 -- extra not on master
+(SYS         :  14) RELOAD.SAV     2 29-Oct-81 17:03 -- extra not on master
+(SYS         :  14) SAISG9.SHR    41 11-Aug-80 10:47 -- bad checksum PUQTEN
+                           should be 11-Aug-80 10:47 XEDPEV  ALL  RD  RD
+(SYS         :  14) FAIL.SAV      25 02-Jun-80 09:48 -- bad checksum WIYDAH
+                           should be 26-Feb-81 17:23 WEMHIS  ALL RUN RUN
+(SYS         :  14) DRYDOC.SAV    26 09-Aug-80 10:39 -- bad checksum TONFEY
+                           should be 11-Mar-83 16:35 BUZFOF  ALL  RD  RD
+(SYS         :  14) NEWRPG.SHR    14 08-Jan-86 13:07 -- bad checksum CAPHAS
+                           should be 14-Dec-87 17:55 XAFQOF  ALL  RD  NO
+(SYS         :  14) PAKCOP.SAV    13 06-Feb-87 19:07 -- extra not on master
+(SYS         :  14) LNKXIT.SHR    14 25-Nov-81 09:52 -- bad checksum LILYOV
+                           should be 25-May-82 15:09 WUDWIQ  ALL  RD  RD
+(SYS         :  14) LINKER.SAV     5 30-Nov-81 19:27 -- extra not on master
+(SYS         :  14) MAIL.SAV      20 04-Jun-81 17:28 -- bad checksum ROVWEZ
+                           should be 27-Feb-81 11:47 BOQDIJ  ALL RUN RUN
+(SYS         :  14) TAPE.SHR      29 08-Dec-77 08:50 -- bad checksum LAMZOP
+                           should be 13-Dec-82 11:06 ZORWAQ  ALL  RD  RD
+(SYS         :  14) TAPE.LOW       2 08-Dec-77 08:52 -- bad checksum SUDKIK
+                           should be 13-Dec-82 11:06 PEKCOX  ALL  RD  RD
+(SYS         :  14) RECPPR.SAV     3 21-Jan-80 10:45 -- bad checksum MIFWAH
+                           should be 23-Mar-82 10:20 HOGQOQ  ALL RUN RUN      2
+(SYS         :  14) TBAMSG.SHR     4 10-Aug-81 17:10 -- protection ALL  RD  RD
+                           should be 04-May-82 10:47 SIVLUH  ALL RUN RUN
+(SYS         :  14) TBACMP.SHR    42 10-Aug-81 17:10 -- bad checksum QETFAZ
+                           should be 04-May-82 10:47 SESDIY  ALL RUN RUN
+(SYS         :  14) CRAM.SAV      62 27-Aug-80 09:36 -- extra not on master
+(SYS         :  14) CHKCLK.SAV     2 24-Dec-80 11:08 -- protection ALL RUN  NO
+                           should be 19-Dec-80 13:39 KEMNEP  ALL  RD  RD
+(SYS         :  14) PROFIL.SHR    14 06-Dec-77 16:51 -- bad checksum FAQNAD
+                           should be 06-Dec-77 16:50 MINKAY  ALL RUN RUN
+(SYS         :  14) PUB.SAV       86 02-May-80 09:46 -- bad checksum BIKMAZ
+                           should be 02-May-80 09:44 QERBIS  ALL RUN RUN
+(SYS         :  14) RUNPAM.SAV     2 23-Aug-80 11:49 -- extra not on master
+(SYS         :  14) INITIA.SAV     4 28-Sep-89 13:48 -- bad checksum HATVIX
+                           should be 15-Mar-89 17:15 FOVWOL  ALL RUN RUN 145000
+(SYS         :  14) PAKCP3.SAV    13 06-Feb-87 19:10 -- extra not on master
+(SYS         :  14) P034G.SAV    152 06-May-81 19:20 -- extra not on master
+(SYS         :  14) TAR.SAV       27 10-Jan-90 18:37 -- bad checksum WACRIT
+                           should be 10-Jan-90 18:14 YOZQOW  ALL  RD  RD
+(SYS         :  14) DIRIT.SHR      5 24-Apr-86 16:00 -- bad checksum TITKAJ
+                           should be 05-May-82 11:28 CODJUX  ALL RUN RUN
+(SYS         :  14) TITO.SAV      18 05-Jun-87 17:56 -- bad checksum KUXZEW
+                           should be 04-Oct-86 15:43 PEYVUS  ALL RUN RUN  25202
+(SYS         :  14) SY.SAV        25 10-Jan-86 23:46 -- bad checksum GIJQAB
+                           should be 10-Jan-86 23:46 KEFLIW  ALL  LK  LK  40010
+(SYS         :  14) TECO.SHR      15 20-May-85 19:32 -- bad checksum FUPXOL
+                           should be 01-Jan-64 16:01 JUZTEP  ALL RUN RUN
+(SYS         :  14) FOR22.SHR    193 11-Sep-81 14:06 -- bad checksum VUBCAX
+                           should be 17-Sep-82 14:57 BEFXEW  ALL  RD  RD    200
+(SYS         :  14) POP.SAV        2 22-Apr-82 18:38 -- extra not on master
+(SYS         :  14) ACTSUM.SAV    38 07-Dec-78 11:40 -- bad checksum XOSYOG
+                           should be 21-Apr-82 12:23 HIFCAC  ALL  RD  NO
+(SYS         :  14) DISK.SAV       8 17-Jan-80 11:53 -- extra not on master
+(SYS         :  14) TELAGR.LOW    61 22-Jul-80 14:30 -- bad checksum FIHDIW
+                           should be 23-Sep-81 17:20 TENHIG  ALL RUN RUN    200
+(SYS         :  14) SAIL23.SHR    61 17-Oct-80 01:11 -- bad checksum ZORZUG
+                           should be 17-Oct-80 01:11 ZOJZOL  ALL  RD  NO
+(SYS         :  14) X22C0.SHR     65 09-Jun-89 20:05 -- bad license 
+                           should be 09-Jun-89 08:50 BIPLUM  ALL  RD  RD    200
+(SYS         :  14) QN1400.SHR    84 09-Jun-89 20:00 -- bad checksum TUJVAK
+                      should be 09-Jun-89 08:49 WETYEX  ALL  RD  RD    200
+(SYS         :  14) 1022.SHR       7 09-Jun-89 20:01 -- bad license 
+                           should be 09-Jun-89 08:49 BODZOK  ALL  RD  RD    200
+(SYS         :  14) LNN.SAV        2 20-Jan-80 07:48 -- extra not on master
+(SYS         :  14) SUBMIT.SHR    52 22-Sep-87 21:00 -- bad checksum WOGBOC
+                           should be 22-Sep-87 21:00 KIXKUZ  ALL RUN RUN   2100
+(SYS         :  14) NEWMON.SAV   169 11-Mar-91 14:01 -- bad checksum BITKUB
+                           should be 19-Sep-89 20:52 XOKKAM  ALL  RD  NO
+(SYS         :  14) 1022SA.SAV    35 31-Jul-84 12:04 -- bad license 
+                           should be 30-Jul-84 11:41 ZUSGEG  ALL  RD  RD    200
+(SYS         :  14) DSKCLN.SAV     8 23-Aug-90 14:00 -- bad checksum RICLUN
+                           should be 20-Jun-89 16:17 KOBYIM  ALL  RD  NO  45017
+(SYS         :  14) P034P.SAV    161 08-Oct-85 17:04 -- extra not on master
+(SYS         :  14) MONCTY.SAV   152 17-Oct-80 07:30 -- extra not on master
+(SYS         :  14) TRW034.SAV   162 10-Oct-88 16:17 -- extra not on master
+(SYS         :  14) PCOM1.LOW      5 21-Oct-82 14:12 -- bad checksum KIYWOR
+                           should be 06-Sep-85 16:08 VAFSEF  ALL RUN RUN 777617
+(SYS         :  14) PCOM1.SHR     47 21-Oct-82 14:07 -- bad checksum CURWIF
+                           should be 06-Sep-85 16:03 JAPXAH  ALL RUN RUN 777617
+(SYS         :  14) CRA001.SAV                       -- missing on slave
+(SYS         :  14) DDTOLD.SAV                       -- missing on slave
+(SYS         :  14) KL3652.SAV                       -- missing on slave
+(SYS         :  14) CANCEL.SAV                       -- missing on slave
+(SYS         :  14) RUNOFF.LOW                       -- missing on slave
+(SYS         :  14) P10OCG.SHR                       -- missing on slave
+(SYS         :  14) P10OCG.LOW                       -- missing on slave
+(SYS         :  14) PASLST.SHR                       -- missing on slave
+(SYS         :  14) PASLST.LOW                       -- missing on slave
+(SYS         :  14) UPBIN.SAV                        -- missing on slave
+(SYS         :  14) OLDRPG.SHR                       -- missing on slave
+(SYS         :  14) LEVER.SAV                        -- missing on slave
+(SYS         :  14) DEFOPR.SAV                       -- missing on slave
+(SYS         :  14) KL3675.SAV                       -- missing on slave
+(SYS         :  14) ATF.SAV                          -- missing on slave
+(SYS         :  14) ONTYME.SAV                       -- missing on slave
+(SYS         :  14) DEFSYS.SAV                       -- missing on slave
+(SYS         :  14) ASPNEW.SAV                       -- missing on slave
+(SYS         :  14) DNTXT.SAV                        -- missing on slave
+(SYS         :  14) MDLPRO.SHR                       -- missing on slave
+(SYS         :  14) MDLPRO.LOW                       -- missing on slave
+(SYS         :  14) ODMS.SHR                         -- missing on slave
+(SYS         :  14) ODMS.LOW                         -- missing on slave
+(SYS         :  14) F40.SHR                          -- missing on slave
+(SYS         :  14) LOAD2.SAV                        -- missing on slave
+(SYS         :  14) KI3652.SAV                       -- missing on slave
+(SYS         :  14) SUBMIT.SAV                       -- missing on slave
+(SYS         :  14) COPY3.SAV                        -- missing on slave
+(SYS         :  14) P10SHP.SHR                       -- missing on slave
+(SYS         :  14) P10SHP.LOW                       -- missing on slave
+(SYS         :  14) PASANL.SHR                       -- missing on slave
+(SYS         :  14) PASANL.LOW                       -- missing on slave
+(SYS         :  14) PASCMD.SHR                       -- missing on slave
+(SYS         :  14) PASCMD.LOW                       -- missing on slave
+(SYS         :  14) MLIB.LOW                         -- missing on slave
+(SYS         :  14) MLIB.SHR                         -- missing on slave
+(SYS         :  14) CA68K.SHR                        -- missing on slave
+(SYS         :  14) OLDLOD.SAV                       -- missing on slave
+(SYS         :  14) DECBOL.SHR                       -- missing on slave
+(SYS         :  14) DECBOL.LOW                       -- missing on slave
+(SYS         :  14) NEWMOM.SAV                       -- missing on slave
+(SYS         :  14) SEND.SAV                         -- missing on slave
+(SYS         :  14) NEWL14.SAV                       -- missing on slave
+(SYS         :  14) UPTXT.SAV                        -- missing on slave
+(SYS         :  14) CD.SAV                           -- missing on slave
+(SYS         :  14) UNDELE.LOW                       -- missing on slave
+(SYS         :  14) UNDELE.SHR                       -- missing on slave
+(SYS         :  14) CRA002.SAV                       -- missing on slave
+(SYS         :  14) MRLDOL.SAV                       -- missing on slave
+(SYS         :  14) LOADK.SAV                        -- missing on slave
+(SYS         :  14) CSUM10.SAV                       -- missing on slave
+(SYS         :  14) FDM.SAV                          -- missing on slave
+(SYS         :  14) HACKUP.LOW                       -- missing on slave
+(SYS         :  14) HACKUP.SHR                       -- missing on slave
+(SYS         :  14) DNBIN.SAV                        -- missing on slave
+(SYS         :  14) SHC.SAV                          -- missing on slave
+(SYS         :  14) CT2.SAV                          -- missing on slave
+(SYS         :  14) SPELL.SAV                        -- missing on slave
+(SYS         :  14) SNOBOL.LOW                       -- missing on slave
+(SYS         :  14) SNOBOL.SHR                       -- missing on slave
+(SYS         :  14) FTF40.SHR                        -- missing on slave
+(SYS         :  14) SETEOF.SAV                       -- missing on slave
+(SYS         :  14) DIRIT.LOW                        -- missing on slave
+(SYS         :  14) CLRALC.SAV                       -- missing on slave
+(SYS         :  14) 33034G.SAV                       -- missing on slave
+(SYS         :  14) SI1000.LOW                       -- missing on slave
+(SYS         :  14) CT5.SAV                          -- missing on slave
+(SYS         :  14) DISCOM.SAV                       -- missing on slave
+(SYS         :  14) ZETPOP.LOW                       -- missing on slave
+(SYS         :  14) CA9900.SHR                       -- missing on slave
+(SYS         :  14) CA1802.SHR                       -- missing on slave
+(SYS         :  14) SI1000.SHR                       -- missing on slave
+(SYS         :  14) ISORT.LOW                        -- missing on slave
+(SYS         :  14) ISORT.SHR                        -- missing on slave
+(SYS         :  14) FTDRYD.SAV                       -- missing on slave
+(SYS         :  14) CALPOP.LOW                       -- missing on slave
+(SYS         :  14) SFOC.SHR                         -- missing on slave
+(SYS         :  14) FSHTAP.SAV                       -- missing on slave
+(SYS         :  14) SPECX.LOW                        -- missing on slave
+(SYS         :  14) SPECX.SHR                        -- missing on slave
+(SYS         :  14) CLEAR.SAV                        -- missing on slave
+(SYS         :  14) COMPLR.SAV                       -- missing on slave
+(SYS         :  14) FTSPOO.SAV                       -- missing on slave
+(SYS         :  14) REMIND.SAV                       -- missing on slave
+(SYS         :  14) SETDMP.SAV                       -- missing on slave
+(SYS         :  14) DETAP.SAV                        -- missing on slave
+(SYS         :  14) NEWHOL.SAV                       -- missing on slave
+(SYS         :  14) LICMAK.SAV                       -- missing on slave
+(SYS         :  14) MAKDIR.SAV                       -- missing on slave
+(SYS         :  14) SOMPIL.SHR                       -- missing on slave
+(SYS         :  14) STATPA.SAV                       -- missing on slave
+(SYS         :  14) REDUCE.SAV                       -- missing on slave
+(SYS         :  14) GLOB.SHR                         -- missing on slave
+(SYS         :  14) ELIZA.SAV                        -- missing on slave
+(SYS         :  14) NEWRES.SAV                       -- missing on slave
+(SYS         :  14) BINCOM.SAV                       -- missing on slave
+(SYS         :  14) DEFER.SAV                        -- missing on slave
+(SYS         :  14) TOD.SAV                          -- missing on slave
+(SYS         :  14) MLINK.LOW                        -- missing on slave
+(SYS         :  14) MLINK.SHR                        -- missing on slave
+(SYS         :  14) CT4.SAV                          -- missing on slave
+(SYS         :  14) XTELAG.LOW                       -- missing on slave
+(SYS         :  14) FTTITO.SAV                       -- missing on slave
+(SYS         :  14) EXPX22.SHR                       -- missing on slave
+(SYS         :  14) SI6800.SHR                       -- missing on slave
+(SYS         :  14) SI8085.SHR                       -- missing on slave
+(SYS         :  14) NVAS.SHR                         -- missing on slave
+(SYS         :  14) ACLOG.SAV                        -- missing on slave
+(SYS         :  14) NVAS.LOW                         -- missing on slave
+(SYS         :  14) SFOB.SHR                         -- missing on slave
+(SYS         :  14) OPCOPY.SAV                       -- missing on slave
+(SYS         :  14) FAILSA.SAV                       -- missing on slave
+(SYS         :  14) HELLO.SAV                        -- missing on slave
+(SYS         :  14) SUDS.SHR                         -- missing on slave
+(SYS         :  14) SPICE.SAV                        -- missing on slave
+(SYS         :  14) MAKBIL.SAV                       -- missing on slave
+(SYS         :  14) RWTAPE.LOW                       -- missing on slave
+(SYS         :  14) RCADEC.SAV                       -- missing on slave
+(SYS         :  14) DREGR.SAV                        -- missing on slave
+(SYS         :  14) TSTAT.SAV                        -- missing on slave
+(SYS         :  14) FSTAT.SAV                        -- missing on slave
+(SYS         :  14) VP96.SAV                         -- missing on slave
+(SYS         :  14) QQQICM.SHR                       -- missing on slave
+(SYS         :  14) SETDIS.SAV                       -- missing on slave
+(SYS         :  14) RBTAPE.SAV                       -- missing on slave
+(SYS         :  14) RGSTP.SAV                        -- missing on slave
+(SYS         :  14) VPFORM.SAV                       -- missing on slave
+(SYS         :  14) CYFRED.SHR                       -- missing on slave
+(SYS         :  14) BOTLOD.SAV                       -- missing on slave
+(SYS         :  14) MICRO.LOW                        -- missing on slave
+(SYS         :  14) MICRO.SHR                        -- missing on slave
+(SYS         :  14) PERP.SAV                         -- missing on slave
+(SYS         :  14) FOR22A.SHR                       -- missing on slave
+(SYS         :  14) DJFRPG.SHR                       -- missing on slave
+(SYS         :  14) SLDPOP.LOW                       -- missing on slave
+(SYS         :  14) CT3.SAV                          -- missing on slave
+(SYS         :  14) AICPA.SAV                        -- missing on slave
+(SYS         :  14) CA8008.SHR                       -- missing on slave
+(SYS         :  14) CA2000.SHR                       -- missing on slave
+(SYS         :  14) SI8048.SHR                       -- missing on slave
+(SYS         :  14) CAPPS8.SAV                       -- missing on slave
+(SYS         :  14) REMINI.SAV                       -- missing on slave
+(SYS         :  14) 5OB.SAV                          -- missing on slave
+(SYS         :  14) RECPRO.SAV                       -- missing on slave
+(SYS         :  14) VH96.SAV                         -- missing on slave
+(SYS         :  14) SFORTR.SHR                       -- missing on slave
+(SYS         :  14) SFOA.SHR                         -- missing on slave
+(SYS         :  14) BLIS11.SHR                       -- missing on slave
+(SYS         :  14) MACY11.SHR                       -- missing on slave
+(SYS         :  14) SUPER.SAV                        -- missing on slave
+(SYS         :  14) SWEET.SAV                        -- missing on slave
+(SYS         :  14) AUXMOV.SAV                       -- missing on slave
+(SYS         :  14) BASRUN.SHR                       -- missing on slave
+(SYS         :  14) BASRUN.LOW                       -- missing on slave
+(SYS         :  14) MAXIMA.SAV                       -- missing on slave
+(SYS         :  14) BSPICE.SAV                       -- missing on slave
+(SYS         :  14) GEXEC.SAV                        -- missing on slave
+(SYS         :  14) CREPOR.SAV                       -- missing on slave
+(SYS         :  14) QQCMND.SHR                       -- missing on slave
+(SYS         :  14) CHGGAN.SAV                       -- missing on slave
+(SYS         :  14) GDUP.SAV                         -- missing on slave
+(SYS         :  14) SBAS.LOW                         -- missing on slave
+(SYS         :  14) SBAS.SHR                         -- missing on slave
+(SYS         :  14) MAXORD.SAV                       -- missing on slave
+(SYS         :  14) CHGCUS.SAV                       -- missing on slave
+(SYS         :  14) UFDDUL.SAV                       -- missing on slave
+(SYS         :  14) @DATEX.SAV                       -- missing on slave
+(SYS         :  14) VHFORM.SAV                       -- missing on slave
+(SYS         :  14) HANGUP.SAV                       -- missing on slave
+(SYS         :  14) AMPSYN.SAV                       -- missing on slave
+(SYS         :  14) TKPOP.LOW                        -- missing on slave
+(SYS         :  14) HPPOP.LOW                        -- missing on slave
+(SYS         :  14) CT9.SAV                          -- missing on slave
+(SYS         :  14) CA4040.SHR                       -- missing on slave
+(SYS         :  14) CA1000.SAV                       -- missing on slave
+(SYS         :  14) FTSAIL.LOW                       -- missing on slave
+(SYS         :  14) FTSAIL.SHR                       -- missing on slave
+(SYS         :  14) OWNLSE.SAV                       -- missing on slave
+(SYS         :  14) SFOG.SHR                         -- missing on slave
+(SYS         :  14) SND620.SAV                       -- missing on slave
+(SYS         :  14) BASCOM.SHR                       -- missing on slave
+(SYS         :  14) BASCOM.LOW                       -- missing on slave
+(SYS         :  14) NODUPD.LOW                       -- missing on slave
+(SYS         :  14) SMERGE.SAV                       -- missing on slave
+(SYS         :  14) 620KTP.LOW                       -- missing on slave
+(SYS         :  14) 620KTP.SHR                       -- missing on slave
+(SYS         :  14) START.SAV                        -- missing on slave
+(SYS         :  14) DECB35.SAV                       -- missing on slave
+(SYS         :  14) DANSS.SAV                        -- missing on slave
+(SYS         :  14) CCORD.SAV                        -- missing on slave
+(SYS         :  14) DMPFIL.SAV                       -- missing on slave
+(SYS         :  14) DHEAD.SAV                        -- missing on slave
+(SYS         :  14) DPRINT.SAV                       -- missing on slave
+(SYS         :  14) MUSERS.SAV                       -- missing on slave
+(SYS         :  14) RUNTIM.LOW                       -- missing on slave
+(SYS         :  14) RUNTIM.SHR                       -- missing on slave
+(SYS         :  14) ZDRILL.LOW                       -- missing on slave
+(SYS         :  14) CREAT1.SAV                       -- missing on slave
+(SYS         :  14) ZDRILL.SHR                       -- missing on slave
+(SYS         :  14) CAL.SAV                          -- missing on slave
+(SYS         :  14) NODUPD.SHR                       -- missing on slave
+(SYS         :  14) MUDCHK.SAV                       -- missing on slave
+(SYS         :  14) SETLUD.SAV                       -- missing on slave
+(SYS         :  14) PASCAL.SHR                       -- missing on slave
+(SYS         :  14) PASCAL.LOW                       -- missing on slave
+(SYS         :  14) OBJCNV.SHR                       -- missing on slave
+(SYS         :  14) APL.SHR                          -- missing on slave
+(SYS         :  14) XMAGNU.SHR                       -- missing on slave
+(SYS         :  14) CT8.SAV                          -- missing on slave
+(SYS         :  14) RAID.SAV                         -- missing on slave
+(SYS         :  14) SI9900.SHR                       -- missing on slave
+(SYS         :  14) CA8085.SHR                       -- missing on slave
+(SYS         :  14) CA6800.SHR                       -- missing on slave
+(SYS         :  14) CADSYN.SAV                       -- missing on slave
+(SYS         :  14) FTPUN.SAV                        -- missing on slave
+(SYS         :  14) CT1.SAV                          -- missing on slave
+(SYS         :  14) KOPY.SAV                         -- missing on slave
+(SYS         :  14) SFOF.SHR                         -- missing on slave
+(SYS         :  14) FSHSPL.SAV                       -- missing on slave
+(SYS         :  14) SM6800.SAV                       -- missing on slave
+(SYS         :  14) SPIP.SAV                         -- missing on slave
+(SYS         :  14) CREATE.SAV                       -- missing on slave
+(SYS         :  14) REORG.LOW                        -- missing on slave
+(SYS         :  14) NSPICE.SAV                       -- missing on slave
+(SYS         :  14) REORG.SHR                        -- missing on slave
+(SYS         :  14) ALG300.SHR                       -- missing on slave
+(SYS         :  14) VP66.SAV                         -- missing on slave
+(SYS         :  14) CFORTR.SHR                       -- missing on slave
+(SYS         :  14) RUNOFF.SHR                       -- missing on slave
+(SYS         :  14) MEMO.SAV                         -- missing on slave
+(SYS         :  14) QQQTCM.SHR                       -- missing on slave
+(SYS         :  14) DSCRE.SAV                        -- missing on slave
+(SYS         :  14) QQLOAD.SHR                       -- missing on slave
+(SYS         :  14) QQBASC.LOW                       -- missing on slave
+(SYS         :  14) QQBASC.SHR                       -- missing on slave
+(SYS         :  14) SQZIT.SAV                        -- missing on slave
+(SYS         :  14) CARMEL.SAV                       -- missing on slave
+(SYS         :  14) LESCAL.SAV                       -- missing on slave
+(SYS         :  14) SYSDPY.SAV                       -- missing on slave
+(SYS         :  14) BATCH.SAV                        -- missing on slave
+(SYS         :  14) COMPAC.SAV                       -- missing on slave
+(SYS         :  14) FTUPDL.SAV                       -- missing on slave
+(SYS         :  14) TODALT.SAV                       -- missing on slave
+(SYS         :  14) CT7.SAV                          -- missing on slave
+(SYS         :  14) CA6502.SAV                       -- missing on slave
+(SYS         :  14) CLMICR.SHR                       -- missing on slave
+(SYS         :  14) CLMICR.LOW                       -- missing on slave
+(SYS         :  14) CA8048.SHR                       -- missing on slave
+(SYS         :  14) CAZ80.SHR                        -- missing on slave
+(SYS         :  14) FTSPFL.SAV                       -- missing on slave
+(SYS         :  14) FTAPL.SHR                        -- missing on slave
+(SYS         :  14) DEPRE.SAV                        -- missing on slave
+(SYS         :  14) SFOCMP.SAV                       -- missing on slave
+(SYS         :  14) FINLES.SAV                       -- missing on slave
+(SYS         :  14) VALID.SAV                        -- missing on slave
+(SYS         :  14) MAGTAB.SAV                       -- missing on slave
+(SYS         :  14) XBASIC.SHR                       -- missing on slave
+(SYS         :  14) XBASIC.LOW                       -- missing on slave
+(SYS         :  14) MLISPC.SAV                       -- missing on slave
+(SYS         :  14) XET.SAV                          -- missing on slave
+(SYS         :  14) DDT620.SAV                       -- missing on slave
+(SYS         :  14) MLISP.SAV                        -- missing on slave
+(SYS         :  14) DRILL.LOW                        -- missing on slave
+(SYS         :  14) DRILL.SHR                        -- missing on slave
+(SYS         :  14) VAS.LOW                          -- missing on slave
+(SYS         :  14) 230COP.SAV                       -- missing on slave
+(SYS         :  14) QQFORT.SHR                       -- missing on slave
+(SYS         :  14) QQEDIT.SHR                       -- missing on slave
+(SYS         :  14) NREPOR.SAV                       -- missing on slave
+(SYS         :  14) AID.SHR                          -- missing on slave
+(SYS         :  14) STECO.SHR                        -- missing on slave
+(SYS         :  14) INFO.SAV                         -- missing on slave
+(SYS         :  14) DED.SAV                          -- missing on slave
+(SYS         :  14) FTCOPY.SAV                       -- missing on slave
+(SYS         :  14) CT6.SAV                          -- missing on slave
+(SYS         :  14) CAF8.SAV                         -- missing on slave
+(SYS         :  14) SI8080.SHR                       -- missing on slave
+(SYS         :  14) CAPACE.SAV                       -- missing on slave
+(SYS         :  14) BASRES.LOW                       -- missing on slave
+(SYS         :  14) ALGOL.SHR                        -- missing on slave
+(SYS         :  14) BLISS.LOW                        -- missing on slave
+(SYS         :  14) BLISS.SHR                        -- missing on slave
+(SYS         :  14) DMPUFD.SAV                       -- missing on slave
+(SYS         :  14) CAPPS4.SAV                       -- missing on slave
+(SYS         :  14) MPERP.SAV                        -- missing on slave
+(SYS         :  14) BASRES.SHR                       -- missing on slave
+(SYS         :  14) MONINF.SHR                       -- missing on slave
+(SYS         :  14) MONINF.LOW                       -- missing on slave
+(SYS         :  14) SSPICE.SAV                       -- missing on slave
+(SYS         :  14) EXIT.SAV                         -- missing on slave
+(SYS         :  14) IBMDEC.SAV                       -- missing on slave
+(SYS         :  14) FILTFR.SAV                       -- missing on slave
+(SYS         :  14) RGPOL.SAV                        -- missing on slave
+(SYS         :  14) COPLUD.LOW                       -- missing on slave
+(SYS         :  14) CSMP.SAV                         -- missing on slave
+(SYS         :  14) VHEAD.SAV                        -- missing on slave
+(SYS         :  14) VPRINT.SAV                       -- missing on slave
+(SYS         :  14) SRCCOM.SHR                       -- missing on slave
+(SYS         :  14) DECIBM.SAV                       -- missing on slave
+(SYS         :  14) VPDATA.SAV                       -- missing on slave
+(SYS         :  14) BINCON.SAV                       -- missing on slave
+
+End of SAIL execution
+!rdist (mpl)*.sav,(mpl)*.shr,(mpl)*.low/master:33/host:14/check
+Master host: 33
+188 files on master system.
+Slave hosts: 14
+Checking host 14
+(MPL         :  14) LINK10.SHR    74 07-Apr-80 15:02 -- bad checksum XEFNID
+                           should be 08-Dec-80 22:01 CURTOM  ALL  RD RUN
+(MPL         :  14) SCRIPT.SAV    12 24-Nov-80 17:15 -- bad checksum GUPQUW
+                           should be 08-Dec-80 21:51 VAYZEK  ALL  RD RUN
+(MPL         :  14) SEC.SAV        4 01-Jan-64 16:01 -- bad checksum BADFUQ
+                           should be 01-Feb-79 19:20 CEGRAR  ALL  RD RUN     10
+(MPL         :  14) SETOP.SAV      5 15-Aug-86 16:36 -- bad checksum CUQMIB
+                           should be 17-Nov-86 15:05 MOCXIQ  ALL  RD RUN
+(MPL         :  14) PEECOM.SAV    16 10-Nov-86 17:06 -- bad checksum ZUHLIZ
+                           should be 25-Jan-91 16:12 BEKXAG  ALL  RD RUN
+(MPL         :  14) RPG.SHR       14 16-Jan-86 15:27 -- bad checksum SOYNAD
+                           should be 16-Jan-87 12:46 RAKYIJ  ALL  RD RUN
+(MPL         :  14) ICP.SAV       30 10-Jul-80 14:27 -- bad checksum JUTREK
+                           should be 11-Jul-80 13:09 GAKSEF  ALL  RD RUN 202010
+(MPL         :  14) RUNCPU.SAV     2 20-Aug-80 11:47 -- protection ALL  RD  RD
+                           should be 08-Dec-80 21:55 WOBCIT  ALL  RD RUN
+(MPL         :  14) SCREAM.SAV    31 25-May-89 16:36 -- protection ALL  RD  NO
+                           should be 02-Feb-87 17:11 NALDUJ  ALL  RD RUN
+(MPL         :  14) MSGLOG.SAV     2 13-Feb-91 16:02 -- bad license 200000
+                           should be 19-Mar-89 21:31 DIGLOP  ALL  RD  NO
+(MPL         :  14) TTYTAB.SAV     3 27-Apr-88 15:12 -- protection ALL  RD  NO
+                           should be 05-Dec-87 01:06 TEDPOJ  ALL  RD RUN 640000
+(MPL         :  14) REFORM.SHR    17 28-Sep-81 21:45 -- bad checksum DONRAZ
+                           should be 28-Sep-81 21:51 MEYCAL  ALL  RD RUN
+(MPL         :  14) CTYLOG.SAV     2 13-Feb-91 16:02 -- bad license 200000
+                           should be 24-May-88 13:34 NETHIT  ALL  RD  NO
+(MPL         :  14) LPQ.SAV       20 25-Jun-82 17:09 -- bad checksum KEJMAQ
+                           should be 07-Jan-82 05:06 TANZIH  ALL  RD RUN
+(MPL         :  14) BACKUP.LOW     8 01-Jul-81 14:36 -- extra not on master
+(MPL         :  14) BACKUP.SHR    11 01-Jul-81 14:36 -- extra not on master
+(MPL         :  14) BOTLOD.SAV     2 16-Dec-76 13:05 -- extra not on master
+(MPL         :  14) SETE.SAV       2 22-Apr-82 17:15 -- bad checksum QIWQIT
+                           should be 02-Dec-87 00:47 FAYPAS  ALL  RD RUN
+(MPL         :  14) HANGEM.SAV     9 25-Jan-88 11:36 -- protection ALL  RD  NO
+                           should be 18-Nov-87 15:15 XAWJOW  ALL  RD RUN 641000
+(MPL         :  14) HANGEM.SAV     9 25-Jan-88 11:36 -- bad license 
+                           should be 18-Nov-87 15:15 XAWJOW  ALL  RD RUN 641000
+(MPL         :  14) ACTSUM.SAV    38 06-Dec-78 11:50 -- bad checksum WORNUZ
+                           should be 22-Jun-79 23:44 XOSYOG  ALL  RD RUN
+(MPL         :  14) EDIT10.SHR    13 17-Jan-80 20:03 -- bad checksum SULMOD
+                           should be 17-Jan-80 20:03 MOMXUX  ALL  RD RUN
+(MPL         :  14) INFRED.SAV     5 18-Aug-80 16:02 -- bad checksum GOXFEK
+                           should be 10-Dec-86 23:34 ROMKID  ALL  RD RUN
+(MPL         :  14) PASPRN.SAV     2 09-Jan-78 13:08 -- bad checksum WIQDIZ
+                           should be 17-Jul-87 21:37 SATJAM  ALL  RD RUN
+(MPL         :  14) RECORD.LOW     9 01-Apr-82 04:00 -- bad license 640000
+                           should be 10-Dec-86 23:27 KEDLUH  ALL  RD RUN
+(MPL         :  14) RECORD.SHR     3 01-Apr-82 04:00 -- bad license 640000
+                           should be 10-Dec-86 23:28 YILQON  ALL  RD RUN
+(MPL         :  14) TYPBAT.SAV     2 11-Jun-87 17:44 -- bad checksum NARFUB
+                           should be 16-Nov-87 12:54 GEVSAQ  ALL  RD RUN     14
+(MPL         :  14) DIRIT.LOW      2 29-May-81 16:29 -- protection ALL  RD  RD
+                           should be 29-May-81 16:29 ROJZAZ  ALL  RD RUN
+(MPL         :  14) LICMAK.SAV     2 06-May-82 12:49 -- bad checksum NEFSOY
+                           should be 02-Dec-87 02:09 JILVOP  ALL  RD RUN
+(MPL         :  14) PCOMM.SHR                        -- missing on slave
+(MPL         :  14) PCOMM.LOW                        -- missing on slave
+(MPL         :  14) CIPHER.SAV                       -- missing on slave
+(MPL         :  14) PAGE.SAV                         -- missing on slave
+(MPL         :  14) ATSIGN.SHR                       -- missing on slave
+(MPL         :  14) ATSIGN.LOW                       -- missing on slave
+(MPL         :  14) MAIL.SAV                         -- missing on slave
+(MPL         :  14) MACAAA.SHR                       -- missing on slave
+(MPL         :  14) MACAAA.LOW                       -- missing on slave
+(MPL         :  14) SCRDDT.SAV                       -- missing on slave
+(MPL         :  14) ASM68K.SHR                       -- missing on slave
+(MPL         :  14) ASM68K.LOW                       -- missing on slave
+(MPL         :  14) SETLIC.SAV                       -- missing on slave
+(MPL         :  14) EMSCOM.SAV                       -- missing on slave
+(MPL         :  14) MONED.SAV                        -- missing on slave
+(MPL         :  14) TWINKL.SAV                       -- missing on slave
+(MPL         :  14) ADVISE.SHR                       -- missing on slave
+(MPL         :  14) ERRRPT.SAV                       -- missing on slave
+(MPL         :  14) MONMAK.SAV                       -- missing on slave
+(MPL         :  14) MACRO.SHR                        -- missing on slave
+(MPL         :  14) TYPE.LOW                         -- missing on slave
+(MPL         :  14) LNK68K.SHR                       -- missing on slave
+(MPL         :  14) LNK68K.LOW                       -- missing on slave
+(MPL         :  14) TAUX.SAV                         -- missing on slave
+(MPL         :  14) COPY.SAV                         -- missing on slave
+(MPL         :  14) EDIRIT.SHR                       -- missing on slave
+(MPL         :  14) ZEN1.SAV                         -- missing on slave
+
+End of SAIL execution
+!rdist (spl)*.sav,(spl)*.shr,(spl)*.low/master:33/host:14/check
+Master host: 33
+66 files on master system.
+Slave hosts: 14
+Checking host 14
+(SPL         :  14) LNK68K.SHR    33 20-Jun-86 11:50 -- extra not on master
+(SPL         :  14) LNK68K.LOW     1 05-Dec-90 16:15 -- extra not on master
+(SPL         :  14) FED.SHR        8 17-Oct-71 17:00 -- bad checksum FOJYOY
+                           should be 06-Nov-82 18:57 GONNUC  ALL  RD RUN
+(SPL         :  14) MARKER.SAV    22 04-May-87 14:42 -- bad checksum TEQXIC
+                           should be 06-Jan-88 17:38 RIXTIV  ALL  RD RUN
+(SPL         :  14) FIND.SAV      41 22-Mar-83 14:56 -- bad checksum YELHOD
+                           should be 11-Jan-88 19:22 NAWPUX  ALL  RD RUN
+(SPL         :  14) ASM68K.LOW     6 20-Jun-86 11:59 -- extra not on master
+(SPL         :  14) ASM68K.SHR    36 20-Jun-86 11:46 -- extra not on master
+(SPL         :  14) RECORD.SAV     3 19-Nov-86 01:05 -- bad checksum WILMIS
+                           should be 20-Nov-86 02:25 TOCRAW  ALL  RD RUN
+(SPL         :  14) UNCARM.SAV                       -- missing on slave
+(SPL         :  14) COM.SAV                          -- missing on slave
+(SPL         :  14) UPDATE.SHR                       -- missing on slave
+(SPL         :  14) COMPAR.SHR                       -- missing on slave
+(SPL         :  14) AUXIO.SAV                        -- missing on slave
+(SPL         :  14) DG.SAV                           -- missing on slave
+(SPL         :  14) MERGE.SHR                        -- missing on slave
+
+End of SAIL execution
+!rdist (osu)*.sav,(osu)*.shr,(osu)*.low/master:33/host:14/check
+Master host: 33
+65 files on master system.
+Slave hosts: 14
+Checking host 14
+(OSU         :  14) CHKPNT.SAV     5 10-Feb-87 17:36 -- protection ALL  RD  NO
+                           should be 10-Feb-87 17:36 BIGSIS  ALL  RD RUN
+(OSU         :  14) ASP.SAV        7 23-Apr-87 22:52 -- bad checksum WOPLIN
+                           should be 24-May-88 14:18 DAJXUH  ALL  RD RUN  64017
+(OSU         :  14) XLOGIN.SAV     2 14-Oct-86 19:47 -- protection ALL  RD  NO
+                           should be 14-Oct-86 19:14 TIYZAX  ALL  RD RUN   1000
+(OSU         :  14) XLOGIN.SAV     2 14-Oct-86 19:47 -- bad license 
+                           should be 14-Oct-86 19:14 TIYZAX  ALL  RD RUN   1000
+(OSU         :  14) GFD.SAV        3 31-Jan-89 19:50 -- bad checksum XOKRAW
+                           should be 19-Sep-89 18:50 LEQJEH  ALL  RD  NO
+(OSU         :  14) SYSTAT.LOW     2 10-Jan-89 12:06 -- protection ALL  RD  NO
+                           should be 27-Oct-88 19:07 KUTXUJ  ALL  RD RUN
+(OSU         :  14) SYSTAT.LOW     2 10-Jan-89 12:06 -- bad license 402000
+                           should be 27-Oct-88 19:07 KUTXUJ  ALL  RD RUN
+(OSU         :  14) SYSTAT.SHR    18 10-Jan-89 12:06 -- protection ALL  RD  NO
+                           should be 27-Oct-88 19:07 XAWZEN  ALL  RD RUN
+(OSU         :  14) SYSTAT.SHR    18 10-Jan-89 12:06 -- bad license 402000
+                           should be 27-Oct-88 19:07 XAWZEN  ALL  RD RUN
+(OSU         :  14) CROSS.SAV                        -- missing on slave
+(OSU         :  14) TITO.SAV                         -- missing on slave
+(OSU         :  14) REDABS.SAV                       -- missing on slave
+(OSU         :  14) INFRED.SAV                       -- missing on slave
+(OSU         :  14) CRSTAB.SAV                       -- missing on slave
+(OSU         :  14) LNN.SAV                          -- missing on slave
+(OSU         :  14) ERRCHK.SAV                       -- missing on slave
+(OSU         :  14) INIMAC.SAV                       -- missing on slave
+(OSU         :  14) SETE.SAV                         -- missing on slave
+(OSU         :  14) TITOP.SAV                        -- missing on slave
+(OSU         :  14) LOGTMP.SHR                       -- missing on slave
+(OSU         :  14) 620SAV.SAV                       -- missing on slave
+(OSU         :  14) MSTMRG.SAV                       -- missing on slave
+(OSU         :  14) RUN.SAV                          -- missing on slave
+(OSU         :  14) MONCOP.SAV                       -- missing on slave
+(OSU         :  14) LOGOUT.SHR                       -- missing on slave
+(OSU         :  14) HELP.SHR                         -- missing on slave
+(OSU         :  14) L36.SAV                          -- missing on slave
+(OSU         :  14) SA10NW.SAV                       -- missing on slave
+(OSU         :  14) SYMAUX.SHR                       -- missing on slave
+(OSU         :  14) BACKUP.LOW                       -- missing on slave
+(OSU         :  14) BACKUP.SHR                       -- missing on slave
+(OSU         :  14) CRASUM.SAV                       -- missing on slave
+(OSU         :  14) PARITY.SAV                       -- missing on slave
+(OSU         :  14) CRSHID.SAV                       -- missing on slave
+(OSU         :  14) SZRPT.SAV                        -- missing on slave
+(OSU         :  14) MONMAK.SAV                       -- missing on slave
+(OSU         :  14) DOK.SAV                          -- missing on slave
+(OSU         :  14) CRSUPD.SAV                       -- missing on slave
+(OSU         :  14) INIBAK.SAV                       -- missing on slave
+(OSU         :  14) PROJEC.SAV                       -- missing on slave
+(OSU         :  14) HLP.SHR                          -- missing on slave
+(OSU         :  14) SAP12.SAV                        -- missing on slave
+(OSU         :  14) DOC.SAV                          -- missing on slave
+(OSU         :  14) INFSND.SAV                       -- missing on slave
+(OSU         :  14) TAKEIT.SAV                       -- missing on slave
+(OSU         :  14) ASP4.SAV                         -- missing on slave
+(OSU         :  14) OLOGIN.SHR                       -- missing on slave
+(OSU         :  14) MONMK1.SAV                       -- missing on slave
+(OSU         :  14) FRECHK.SAV                       -- missing on slave
+(OSU         :  14) OCRSHI.SAV                       -- missing on slave
+(OSU         :  14) INIORG.SAV                       -- missing on slave
+(OSU         :  14) INIELB.SAV                       -- missing on slave
+(OSU         :  14) VALID.SAV                        -- missing on slave
+(OSU         :  14) FRECOR.SAV                       -- missing on slave
+(OSU         :  14) MORT.SAV                         -- missing on slave
+(OSU         :  14) ASPDDT.SAV                       -- missing on slave
+(OSU         :  14) RPG.SHR                          -- missing on slave
+(OSU         :  14) ONCALL.SAV                       -- missing on slave
+(OSU         :  14) CABLNK.LOW                       -- missing on slave
+(OSU         :  14) CABLNK.SHR                       -- missing on slave
+(OSU         :  14) EXPGEN.SAV                       -- missing on slave
+(OSU         :  14) KOST.SAV                         -- missing on slave
+(OSU         :  14) TPRD.SAV                         -- missing on slave
+(OSU         :  14) INIAXG.SAV                       -- missing on slave
+(OSU         :  14) LOGINN.SHR                       -- missing on slave
+
+End of SAIL execution
+!rdist (m33)*.sav,(m33)*.shr,(m33)*.low/master:26/host:14/check
+Master host: 26
+15 files on master system.
+Slave hosts: 14
+Checking host 14
+(M33         :  14) 17035E.SAV   171 28-Jan-91 16:42 -- extra not on master
+(M33         :  14) TW035E.SAV   170 03-May-89 14:51 -- extra not on master
+(M33         :  14) F02541.SAV    66 28-Jan-91 14:48 -- extra not on master
+(M33         :  14) TWXC05.SAV   169 02-Mar-91 17:37 -- extra not on master
+(M33         :  14) F02585.SAV    65 04-May-89 16:34 -- extra not on master
+(M33         :  14) F02614.SAV    65 13-Jul-89 22:23 -- extra not on master
+(M33         :  14) RBGG01.SAV   152 14-Nov-80 16:28 -- extra not on master
+(M33         :  14) RB034J.SAV   153 22-Apr-89 17:22 -- extra not on master
+(M33         :  14) F02586.SAV    65 27-Apr-89 15:19 -- extra not on master
+(M33         :  14) 14XE01.SAV   169 11-Mar-91 13:28 -- extra not on master
+(M33         :  14) F02633.SAV    65 31-Jan-91 21:09 -- extra not on master
+(M33         :  14) TW034P.SAV   162 08-May-87 18:23 -- extra not on master
+(M33         :  14) CRSHID.SAV    40 30-Aug-85 20:32 -- protection ALL  RD  NO
+                           should be 19-Mar-85 13:13 PEWJEC  ALL RUN  NO   1410
+(M33         :  14) 14035E.SAV   169 30-Jan-91 10:57 -- extra not on master
+(M33         :  14) F02636.SAV    65 13-Feb-91 15:58 -- extra not on master
+(M33         :  14) 17XE01.SAV   171 11-Mar-91 14:06 -- extra not on master
+(M33         :  14) TW035D.SAV   171 26-Sep-88 20:07 -- extra not on master
+(M33         :  14) TWXB05.SAV   168 02-Mar-91 18:04 -- extra not on master
+(M33         :  14) FILDDT.SAV                       -- missing on slave
+(M33         :  14) PAKCOP.SAV                       -- missing on slave
+(M33         :  14) PAKCP3.SAV                       -- missing on slave
+(M33         :  14) F02590.SAV                       -- missing on slave
+(M33         :  14) SHOINA.SAV                       -- missing on slave
+(M33         :  14) COPYCR.SAV                       -- missing on slave
+(M33         :  14) FRMDDT.SAV                       -- missing on slave
+(M33         :  14) 26035E.SAV                       -- missing on slave
+(M33         :  14) PAKCP5.SAV                       -- missing on slave
+(M33         :  14) PAKCPX.SAV                       -- missing on slave
+
+End of SAIL execution
+!rdist (ftssy)*.sav,(ftssy)*.shr,(ftssy)*.low/master:33/host:14/check
+Master host: 33
+0 files on master system.
+Slave hosts: 14
+Checking host 14
+
+End of SAIL execution
+!SEND JMS
+Type letter:
+; PCOM v1.63 - processed: (JMS)CHEK14.LOG = (JMS)CHEK14.CTL
+; Options: DETACH  LOG NOAPPEND SUPERSEDE LICENSE 
+; Limits: TIME:0 TRULIMIT:0 
+; Status: completed.
+; Output recorded in file (JMS)CHEK14.LOG.
+
+End of SAIL execution
+!LOGOUT
+1438.73 tru
+terminal time: 0:31:24
+ |-o	
