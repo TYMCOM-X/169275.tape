@@ -1,0 +1,189 @@
+                 RUNNING IRC MONTH-END ACCOUNTING
+                 --------------------------------
+
+  The IRC accounting is run using a MAGNUM procedure called MASTER.
+It uses an internal relation to recover from crashes and disconnects, and
+also has the ability to stop processing when abnormal situations are
+encountered during the run.  It uses two XEXEC files to control the
+processing.  
+  The first, ALLOW.CF, holds the date of the last file allowed to be
+processed.  The second, ACTUAL.CF, contains the actual date being 
+processed.  ACTUAL.CF should never be modified, however ALLOW.CF may 
+be edited at any time to limit the processing.
+  This is useful because the procedure is designed to be run on a day-
+by-day basis.  At the present time, most of the processing is done at
+month's end because of the limited space on 56.  If disk pages are not
+a problem, the raw data may be processed as soon as the file is 
+available.  If it is necessary to rerun a month or any part of a month
+the programmer must modify the process-control relations.
+  Because of the heavy use of system 56 by the TYMNET ORDER ENTRY
+SYSTEM, it is suggested that the running of IRC accounting on 56 be
+limited to 5 pm - 8am Monday through Friday and any time during the
+weekends or on holidays.
+  Also, three BASIC programs are run at the end of the process.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+I.  PROCESSES ON 56
+*******************
+1.  Log into INTLPROGS:30;COBRA JET;.  You may change the password to
+    suit your needs.  Telecopy files of the form IRCdd.mmm to 
+    INTLPROGS:56.  (dd is the day of the month, mmm is the abbreviation
+    for the month)
+
+2.  Log into INTLPROGS:56 once the files are telcopied and issue following
+    commands:
+
+    -MAG NEW.IRC
+    :RUN MASTER
+
+    (The program may be run detached by typing 
+     DO DETACH.MASTER instead of RUN MASTER)
+
+
+  MASTER will process all the files found until the limit imposed by
+ALLOW.CF.  In case of crash or disconnect just reissue the above
+commands.
+
+3.  At the end of the processing of the 33rd day, three preliminary
+    reports are written and a 34th day is produced.  At this time
+    call the accounting support person so the reports can be checked
+    to ensure the accuracy of the tables.
+
+4.  Once notified that the tables are okay, run MASTER again.  Now,
+    the 34th day will be processed, invoices and reports will be
+    generated.  At the end of this process it will once again be
+    necessary to contact the accounting support person for invoice
+    approval.
+
+5.  When invoices are approved run MASTER again.  This time the files
+    will have duplicate sessions removed.  (This could be a rather
+    lengthy process if a lot of crashes or disconnects occurred.)
+    It also initializes the files and relations for the next month's
+    run.
+
+6.  Backup the relation CHARGE.DATA to a file of the form CHARyy.mmm.
+    (yy is the last two digits of the year and mmm is the month
+     abbreviation)
+    
+    -MAG NEW.IRC
+    :BACKUP CHARGE.DATA TO FILE CHARyy.mmm
+                          e.g, CHAR83.APR
+
+7.  It is also necessary to create a combined file for three of
+    the IRCs.  The following steps should be followed.
+
+    a.  Log into INTLPROGS:56
+    b.  -DIR ###mmD.ITT/TOT (mm is a two-digit representation for the month)
+    c.  -DIR ###mmD.WUI/TOT
+    d.  -DIR ###mmD.TLG/TOT
+    e.  Add the three page counts and do a PSP.  The Order Entry System
+        requires about 15k pages for a day's run.  These are temporary
+        files which are returned to the system every night.  Nonetheless,
+        they are needed.  So, add the pages given in the DIRs and add 15000
+        to that total.  If this total is greater than the pages available,
+        contact the accounting support person and ask for more pages.
+    f.  -GFD INTLACCTG
+    g.  -RENAME (INTLPROGS)###mmD.*,SAME
+    h.  -RENAME (INTLPROGS)*.mmm,SAME
+    i.  -DEL PROGRE.*
+    j.  -GO COMITT
+    k.  -GO COMWUI
+    l.  -GO COMTLG
+  
+  These last three commands can be issued simultaneously on three
+different terminals or can be run detached by doing...
+
+     -GET COM###  (### is ITT, WUI, or TLG)
+     -CSTART
+     -DETACH
+  When these jobs have apparently completed type the files PROGRE.ITT,
+PROGRE.WUI, PROGRE.TLG.  These should contain the names of the files
+processed, and, as the last line, "JOB DONE" and the date of the run.
+They are in the INTLACCTG directory.  If the last line does not say
+"JOB DONE" then the job was not completed successfully.  Restart the
+job.
+restart the job.
+
+  The following has to be done on INTLPROGS:30
+
+II.  PROCESSES ON 30
+********************
+1.  As soon as the 33rd day is available issue the following commands
+   -MAG GET
+   :RUN MAKE.POINT
+
+    If a crash or disconnect occurs during this process just reissue
+the commands.
+
+2.  Upon completion telecopy file POINT.mmm to INTLPROGS:56.
+    Log into INTLPROGS:56
+    -GFD INTLACCTG
+    -RENAME (INTLPROGS)POINT.mmm,SAME
+
+3.  Put in a batch request to dump the IRCdd.mmm files to tape.
+    Request the operator to send mail upon completion with the tape
+    id numbers of the backups.  When this is received all the IRCdd.mmm
+    files can be deleted.
+    -DEL IRC##.mmm
+
+4.  There is a file on INTLPROGS:30 and INTLPROGS:56 which contains the
+    TIDS for the backup tapes.  If you want to continue using this to
+    keep track of them, do the following...
+
+    a. -MOD TAPES.IRC
+    b. *A
+    c. Enter month and year and the TID'S.
+    d. *EX
+    e. R (MPL)COPY
+    f. Files: TAPES.IRC
+    g. Copy to username: INTLPROGS
+    h. System: 56
+    i. Superceed existing files? Y
+  These TIDs must be kept track of, in case of reruns, and should never
+be deleted or written over.
+
+  Two months may not be processed simultaneously on the same system before
+step 6 is completed.
