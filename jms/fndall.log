@@ -1,0 +1,71 @@
+.:define $SUBSTITUTION=$TRUE
+DAYTIM
+17-JUN-1993 09:00:11 PDT
+
+.RUN (MPL)MHX	;Thursday
+hosts: 10S
+commands (end with ctrl-D):
+DIR (JMS)FNDBAD.RPT,SZRPT.LOG/ALPHA
+TYPE (JMS)FNDBAD.RPT
+CORE
+:SEND CHAR 4
+record? N
+26:
+33:
+.DIR (JMS)FNDBAD.RPT,SZRPT.LOG/ALPHA
+FNDBAD  RPT       1   6-JUN-92  730    ALL RD  RD         0          
+SZRPT   LOG       5  17-JUN-93   45    ALL RD  NO      1891          
+.TYPE (JMS)FNDBAD.RPT
+EXIT
+.CORE
+22:4+18/512 pages
+Vir. core left=1749576
+.
+34:
+.DIR (JMS)FNDBAD.RPT,SZRPT.LOG/ALPHA
+FNDBAD  RPT       2  17-JUN-93  730    ALL RD  RD        17          
+SZRPT   LOG       6  17-JUN-93   46    ALL RD  NO      2275          
+.TYPE (JMS)FNDBAD.RPT
+(UPLKT)FTLIB.BAD                HRE
+Legend:
+  HRE: Hard Read Error (3 times)
+EXIT
+.CORE
+22:4+18/512 pages
+Vir. core left=592895
+.
+38:
+.DIR (JMS)FNDBAD.RPT,SZRPT.LOG/ALPHA
+FNDBAD  RPT       1  17-JUN-93  730    ALL RD  RD         0          
+SZRPT   LOG       4  17-JUN-93   45    ALL RD  NO      1460          
+.TYPE (JMS)FNDBAD.RPT
+EXIT
+.CORE
+22:4+18/512 pages
+Vir. core left=490896
+.
+74:
+.DIR (JMS)FNDBAD.RPT,SZRPT.LOG/ALPHA
+FNDBAD  RPT       1  17-JUN-93  730    ALL RD  RD         0          
+SZRPT   LOG       5  17-JUN-93   45    ALL RD  NO      2015          
+.TYPE (JMS)FNDBAD.RPT
+EXIT
+.CORE
+22:4+18/512 pages
+Vir. core left=335312
+.
+
+.
+.DAYTIME
+17-JUN-1993 09:02:29 PDT
+
+.PSP
+DSKB:	1749583
+
+.COPY FNDALL.LOG,FNDALL.Thursday
+
+.LOGOUT
+12.62 tru
+terminal time: 0:02:27
+
+; Req #116326 completed
