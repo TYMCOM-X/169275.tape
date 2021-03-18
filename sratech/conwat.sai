@@ -1,0 +1,48 @@
+BEGIN "CONWAT"
+
+STRING INP!LINE;
+BOOLEAN EF;
+INTEGER BRK;
+LABEL GIN,GOUT;
+
+SETBREAK(1,'12,"","AI");
+
+OPEN (1,"DSK",0,2,0,512,BRK,EF);
+OPEN (2,"DSK",0,0,2,512,BRK,EF);
+
+EF _ TRUE;
+WHILE EF DO BEGIN
+    OUTSTR ("INPUT FILE : ");
+    INP!LINE _ INCHWL;
+    LOOKUP (1,INP!LINE,EF);
+    IF EF THEN
+        BEGIN
+        OUTSTR ("LOOKUP ERROR ON "&INP!LINE&'15&'12);
+        END;
+    END;
+EF _ TRUE;
+WHILE EF DO BEGIN
+    OUTSTR ("OUTPUT FILE : ");
+    INP!LINE _ INCHWL;
+    ENTER (2,INP!LINE,EF);
+    IF EF THEN
+        BEGIN
+        OUTSTR ("ENTER ERROR ON "&INP!LINE&'15&'12);
+        END;
+    END;
+
+WHILE NOT EF DO 
+    BEGIN
+    INP!LINE _ INPUT(1,1);
+    IF NOT EF THEN
+     BEGIN
+     INP!LINE _ "   "&INP!LINE[1 FOR 29]&"19"&INP!LINE[55 FOR 13]&
+      "19"&INP!LINE[68 TO 80]&INP!LINE[82 TO 85]&"                 "&
+      "                  "&INP!LINE[99 TO 118]&'15&'12;
+     OUT(2,INP!LINE);
+     END;
+    END;
+
+RELEASE (1);
+RELEASE (2);
+END
