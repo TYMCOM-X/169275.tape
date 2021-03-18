@@ -1,0 +1,31 @@
+00:00:13 S 10-Dec-94
+03:00:13 S 10-Dec-94
+05:00:02 S 10-Dec-94 Signing off.
+05:34:44 S ** 10-Dec-94 XEXEC %1(215) in frame 4 ** user PERPOPER **
+05:34:44 S run #1 job 7 is lost.
+05:34:44 S -S- run #1 job 7 Req #10289  Running DSK:(NETALERT)ALERT.SHR
+05:34:44 S run #2 job 8 is lost.
+05:34:44 S -S- run #2 job 8 Req #22811  Running DSK:(NETALERT)ALERT.SHR
+05:35:44 S 10-Dec-94
+05:40:15 S 10-Dec-94 Signing off.
+11:13:56 S ** 10-Dec-94 XEXEC %1(215) in frame 4 ** user PERPOPER **
+11:13:56 S run #1 job 7 is lost.
+11:13:56 S -S- run #1 job 7 Req #10289  Running DSK:(NETALERT)ALERT.SHR
+11:13:56 S run #2 job 8 is lost.
+11:13:56 S -S- run #2 job 8 Req #22811  Running DSK:(NETALERT)ALERT.SHR
+11:13:57 S -S- stream #1 Req #44856 DSK:(JMS)SZRPT.LOG=DSK:(JMS)SZRPT.CTL
+11:14:03 S Processor status JSU EXECX Setup in frame 9
+11:14:03 P Waiting for interlock
+11:14:04 P Got interlock
+11:14:05 P EXECX Job Processor %1(226) starting in frame 9
+11:14:05 P Stream #1 Req #44856 DSK:(JMS)SZRPT.LOG=DSK:(JMS)SZRPT.CTL
+11:14:05 S Starting job processor in frame 9
+11:15:05 S 10-Dec-94
+11:18:47 P Stream #1 Req #44856 * completed *
+11:18:50 S -R- stream #1 Done-End <0>
+11:34:05 P Signing off.
+12:00:06 S 10-Dec-94
+15:00:06 S 10-Dec-94
+18:00:06 S 10-Dec-94
+21:00:44 S 10-Dec-94
+00:00:44 S 11-Dec-94
