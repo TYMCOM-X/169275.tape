@@ -1,0 +1,2342 @@
+.rdist 10UPDA.RDI=(10UPDATE)/check/nomissing/host:56
+Master host: 33
+1 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist 11CURR.RDI=(11CURR)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist AUGMEN.RDI=(AUGMENT)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist CARL.RDI=(CARL)/check/nomissing/host:56
+Master host: 33
+988 files on master system.
+Slave hosts: 56
+Checking host 56
+(CARL        :  56) RPG.INI        2 04-Jan-85 22:27 -- bad checksum BUCPAB
+                           should be 06-Feb-89 22:05 YIPXEK  ALL  RD  NO
+(CARL        :  56) VUE.INI        2 04-Jan-85 22:27 -- bad checksum SOCWIS
+                           should be 22-May-90 12:59 HEHGOJ  ALL  RD  NO
+(CARL        :  56) PCOMAI.LOG     1 26-Feb-88 15:09 -- extra not on master
+(CARL        :  56) DEFSYS.SAV    17 06-Dec-85 10:23 -- bad checksum TOBBIJ
+                           should be 25-Sep-85 02:20 NEKFAV  ALL  RD  NO
+(CARL        :  56) LUD25.LST     11 15-Nov-85 15:11 -- bad checksum VOTCUJ
+                           should be 15-Nov-85 15:19 ZULJEQ  ALL  RD  NO
+(CARL        :  56) CARDSL.SAV    43 27-Jan-87 20:15 -- bad checksum WEWYEG
+                           should be 21-Sep-87 01:08 DUWPUQ  ALL  RD  NO
+(CARL        :  56) DEFOPR.DCL     2 27-Apr-88 17:54 -- bad checksum LOGXIQ
+                           should be 07-Feb-89 01:31 LECBOH  ALL  RD  NO
+(CARL        :  56) DEFOPR.DEF     3 27-Apr-88 17:55 -- bad checksum YOGHIP
+                           should be 22-May-90 18:22 FOYLAB  ALL  RD  NO
+(CARL        :  56) DEFOPR.INF     5 05-Apr-88 00:32 -- bad checksum DEDYIY
+                           should be 24-Apr-91 19:02 WAWJIW  ALL  RD  NO
+(CARL        :  56) DEFOPR.SAI    22 27-Apr-88 17:57 -- bad checksum BAPTEM
+                           should be 24-Apr-91 19:09 KOKFOD  ALL  RD  NO
+(CARL        :  56) DEFOPR.SAV    40 17-Mar-88 10:28 -- bad checksum WESJOM
+                           should be 24-Apr-91 19:12 FITBOD  ALL  RD  NO 400000
+(CARL        :  56) LOGINN.SHR     5 14-Oct-86 19:11 -- extra not on master
+(CARL        :  56) MVOTE.SAI      4 14-Jul-83 01:51 -- extra not on master
+(CARL        :  56) MVOTE.SAV     17 14-Jul-83 01:51 -- extra not on master
+(CARL        :  56) SETOP.PRP     11 31-May-88 01:46 -- bad checksum JOZGUN
+                           should be 31-May-88 16:23 YAMWOB  ALL  RD  NO
+(CARL        :  56) VMSPEC.SAI     3 04-Jan-88 18:35 -- bad checksum YANMER
+                           should be 16-Jan-89 22:45 DEKWUL  ALL  RD  NO
+(CARL        :  56) XEXEC.DIE      3 28-Nov-86 13:42 -- bad checksum MEHPUH
+                           should be 29-Nov-86 22:10 PADYAZ  ALL  RD  NO
+(CARL        :  56) JQUEUE.LOG    20 13-Nov-86 02:01 -- extra not on master
+(CARL        :  56) 2237.LOD       3 06-Jul-89 03:10 -- extra not on master
+(CARL        :  56) 25TYMN.BAK     2 29-Nov-89 10:30 -- extra not on master
+(CARL        :  56) 25TYMN.LOG     2 29-Nov-89 10:37 -- extra not on master
+(CARL        :  56) APR89.CTY      3 12-Apr-89 01:35 -- bad checksum NOBYUH
+                           should be 13-Apr-89 14:40 VAZLOW  ALL  RD  NO
+(CARL        :  56) APR89.MSG      3 12-Apr-89 01:35 -- extra not on master
+(CARL        :  56) BOOT.CMD       2 02-Mar-88 21:48 -- extra not on master
+(CARL        :  56) MPVVID.306     2 16-Aug-89 15:00 -- extra not on master
+(CARL        :  56) MPVVID.603     2 16-Aug-89 15:44 -- extra not on master
+(CARL        :  56) 54TYM0.LOG    28 29-Nov-89 03:12 -- extra not on master
+(CARL        :  56) JQUEUE.L0X    11 12-Nov-86 22:56 -- extra not on master
+(CARL        :  56) ND6752.TYM     2 30-Oct-89 10:35 -- extra not on master
+(CARL        :  56) STXLIB.REL     2 08-Feb-88 16:59 -- bad checksum KEQPIH
+                           should be 21-Jan-89 15:37 TAGBUZ  ALL  RD  NO
+(CARL        :  56) STXLIB.SAI     2 08-Feb-88 17:00 -- bad checksum TALPAM
+                           should be 22-Mar-88 19:34 ZOFLEG  ALL  RD  NO
+(CARL        :  56) UUOSYM.DEF    10 29-Jul-82 01:36 -- extra not on master
+(CARL        :  56) LOGON.SHR     13 16-May-85 09:28 -- bad checksum QEVKAY
+                           should be 23-May-85 03:42 COLSAY  ALL RUN RUN  40010
+(CARL        :  56) HSB.SAV       31 20-Nov-86 22:52 -- bad checksum SARFAP
+                           should be 10-Dec-86 01:04 RICSAN  ALL  RD  NO
+(CARL        :  56) FNDBAD.RPT     2 16-Aug-88 15:12 -- bad checksum DAXQEB
+                           should be 05-Jun-86 21:48 VEKSAV  ALL  RD  NO
+(CARL        :  56) I2S6.FAS       4 12-Sep-89 23:58 -- bad checksum QUJXUK
+                           should be 12-Sep-89 18:32 LOVZEG  ALL  RD  NO
+(CARL        :  56) I2S6.SAV      14 12-Sep-89 23:58 -- bad checksum SORDAZ
+                           should be 12-Sep-89 18:32 ZEMYUF  ALL  RD  NO
+(CARL        :  56) 25TYMA.LOG    54 29-Nov-89 10:38 -- extra not on master
+(CARL        :  56) 25TYMO.LOG    12 29-Nov-89 03:27 -- extra not on master
+(CARL        :  56) FOO.BAR        2 19-Jul-89 14:50 -- extra not on master
+(CARL        :  56) FOO.DIR        3 09-May-89 16:04 -- extra not on master
+(CARL        :  56) BIONIC.SAV     3 31-Jul-83 18:17 -- extra not on master
+(CARL        :  56) FOO.CTL        2 29-Aug-85 21:07 -- bad checksum WOXFIJ
+                           should be 02-Jun-87 17:30 MESMAL  ALL  RD  NO
+(CARL        :  56) FOO.SAI        2 13-Jul-83 23:14 -- bad checksum KUYTIX
+                           should be 08-Aug-88 17:10 SITNIV  ALL  RD  NO
+(CARL        :  56) JOBS.CTL       2 18-Mar-87 23:29 -- extra not on master
+(CARL        :  56) LICSUB.REL     3 19-Jan-88 04:17 -- bad checksum LIBHOG
+                           should be 16-Feb-89 14:35 YOWGOC  ALL  RD  NO
+(CARL        :  56) LICSUB.SAI     3 05-Apr-88 00:34 -- bad checksum YEZGOK
+                           should be 16-Feb-89 14:31 NOWWIB  ALL  RD  NO
+(CARL        :  56) LOGON.71      26 09-Mar-85 05:17 -- protection ALL  RD  NO
+                           should be 09-Mar-85 05:09 HEBFOG  ALL  RD RUN
+(CARL        :  56) LUD54.LST      8 15-Nov-85 15:05 -- bad checksum ZEGTOC
+                           should be 15-Nov-85 15:22 RAYLAZ  ALL  RD  NO
+(CARL        :  56) MSIEVE.SAI     4 14-Jul-83 02:27 -- extra not on master
+(CARL        :  56) MSIEVE.SAV    18 14-Jul-83 02:27 -- extra not on master
+(CARL        :  56) XFER.CTL       2 28-May-86 23:28 -- bad checksum TONNAF
+                           should be 01-Jun-86 17:45 JUCTAG  ALL  RD  NO
+(CARL        :  56) CBXXXX.R01     2 01-Nov-88 13:46 -- extra not on master
+(CARL        :  56) QUEDPY.SAV    38 16-Sep-87 08:39 -- bad checksum HIXVIR
+                           should be 29-Oct-87 19:36 RAJDOR  ALL  RD  NO
+(CARL        :  56) 54TYMN.LOG     2 29-Nov-89 10:37 -- extra not on master
+(CARL        :  56) ISO6.FAS       6 06-Sep-89 15:46 -- bad checksum DEHHUN
+                           should be 29-Nov-89 21:43 VALZOV  ALL  RD  NO
+(CARL        :  56) LUD.LST       12 15-Nov-85 12:35 -- bad checksum XEMMIG
+                           should be 15-Nov-85 16:30 SAGWOC  ALL  RD  NO
+(CARL        :  56) ND3230.C01     2 12-Sep-89 14:49 -- extra not on master
+(CARL        :  56) ND3230.T01     2 11-Sep-89 09:44 -- extra not on master
+(CARL        :  56) OPER.MSG       2 24-Jun-89 02:50 -- extra not on master
+(CARL        :  56) REN            4 28-Nov-89 17:46 -- extra not on master
+(CARL        :  56) 54TYMN.BAK     2 29-Nov-89 10:35 -- extra not on master
+(CARL        :  56) MEXEC.MAC      4 02-Apr-85 23:50 -- bad checksum KIMLAC
+                           should be 03-Apr-85 16:33 WUYWIS  ALL  RD  NO
+(CARL        :  56) N11246.TYM     2 30-Aug-89 11:00 -- extra not on master
+(CARL        :  56) SWDEF.DEF      3 29-Jul-82 01:36 -- protection ALL  RD  NO
+                           should be 02-Jul-82 02:48 QEYPIB  ALL  RD  RD
+(CARL        :  56) VMFILE.DEF     2 04-Jan-88 19:04 -- bad checksum NIFYOT
+                           should be 28-Jun-88 19:39 QUVYUJ  ALL  RD  NO
+(CARL        :  56) VMFILE.FDM    16 30-Jun-86 23:33 -- extra not on master
+(CARL        :  56) VMFILE.REL    12 06-Jan-88 17:42 -- bad checksum WIVQUC
+                           should be 16-Jan-89 20:07 BIDFIB  ALL  RD  NO
+(CARL        :  56) VMFILE.REQ     2 06-Jan-88 17:43 -- bad checksum RESXAQ
+                           should be 07-Mar-88 19:16 POZFIQ  ALL  RD  NO
+(CARL        :  56) VMFILE.SAI    17 06-Jan-88 17:43 -- bad checksum JEWFAB
+                           should be 16-Jan-89 17:00 RORJON  ALL  RD  NO
+(CARL        :  56) ESCTRP.REQ     2 12-May-86 11:55 -- bad checksum MIHZED
+                           should be 22-May-86 02:39 FULVEX  ALL  RD  NO
+(CARL        :  56) ESCTRP.SAI     2 12-May-86 11:55 -- bad checksum QOBFUM
+                           should be 06-May-88 19:22 TOWVEN  ALL  RD  NO
+(CARL        :  56) CB2032.CTL     2 11-Nov-88 16:27 -- extra not on master
+(CARL        :  56) SWITCH.INI     2 05-Feb-88 18:06 -- bad checksum ZOSHEM
+                           should be 17-Oct-89 21:31 JAWKOC  ALL  RD  NO
+(CARL        :  56) CRSHID.LOG     2 10-May-85 00:41 -- bad checksum SACFOG
+                           should be 13-Jun-91 12:08 KUVSEJ  ALL  RD  NO
+(CARL        :  56) LIC.FDM        7 18-Nov-86 22:10 -- extra not on master
+(CARL        :  56) LOGPKG.REQ     2 27-Apr-88 16:21 -- bad checksum GOWJUP
+                           should be 07-Jun-88 13:54 FAZDIF  ALL  RD  NO
+(CARL        :  56) LOGPKG.SAI     3 27-Apr-88 16:21 -- bad checksum CIBHAL
+                           should be 28-Jun-88 22:15 XOSPOK  ALL  RD  NO
+(CARL        :  56) CARL.DIR     132 27-Nov-89 23:01 -- extra not on master
+(CARL        :  56) 25TYM.LOG     27 29-Nov-89 02:15 -- extra not on master
+(CARL        :  56) 25TYMX.LOG     2 29-Nov-89 03:18 -- extra not on master
+(CARL        :  56) 54TYMA.LOG    84 29-Nov-89 10:51 -- extra not on master
+(CARL        :  56) SWITCH.REL     2 16-Jul-89 13:28 -- extra not on master
+(CARL        :  56) XCOM.PAT       3 07-Sep-89 21:39 -- extra not on master
+(CARL        :  56) 54TYMO.LOG     3 29-Nov-89 03:26 -- extra not on master
+(CARL        :  56) AISHOW.TXT     4 11-Jul-88 03:00 -- bad checksum MIGQUF
+                           should be 11-Jul-88 12:20 VOFTED  ALL ALL ALL
+(CARL        :  56) HOST.CTL       2 18-Mar-87 23:29 -- extra not on master
+(CARL        :  56) VMCHAN.SAI     2 04-Jan-88 18:35 -- bad checksum YABJOX
+                           should be 29-Jun-88 01:54 CUJLOX  ALL  RD  NO
+(CARL        :  56) 25.FDM       767 28-Feb-90 16:46 -- extra not on master
+(CARL        :  56) MAIL           4 07-May-90 00:52 -- bad checksum GENVOY
+                           should be 26-Mar-91 17:08 VAVVAV  ALL  RD  NO
+
+End of SAIL execution
+.rdist CMUAIL.RDI=(CMUAIL)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist COBOL1.RDI=(COBOL10)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist COBOLQ.RDI=(COBOLQA)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist DENCOF.RDI=(DENCOFF)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist DOC2.RDI=(DOC2)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist DOCAIL.RDI=(DOCAIL)/check/nomissing/host:56
+Master host: 33
+2 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist EBUS.RDI=(EBUS)/check/nomissing/host:56
+Master host: 33
+335 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist EDITOR.RDI=(EDITOR)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist EXECX.RDI=(EXECX)/check/nomissing/host:56
+Master host: 33
+196 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist F10.RDI=(F10)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist F10QA.RDI=(F10QA)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist F3CODE.RDI=(F3CODE)/check/nomissing/host:56
+Master host: 33
+11 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist F40.RDI=(F40)/check/nomissing/host:56
+Master host: 33
+1 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist FJSAIL.RDI=(FJSAIL)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist FLETCH.RDI=(FLETCHERC)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist FORK.RDI=(FORK)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist FOROTQ.RDI=(FOROTSQA)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist FOROTS.RDI=(FOROTS)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist FRENCH.RDI=(FRENCH)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist IMPORT.RDI=(IMPORT)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist INFO.RDI=(INFO)/check/nomissing/host:56
+Master host: 33
+112 files on master system.
+Slave hosts: 56
+Checking host 56
+(INFO        :  56) SYSNO.NFO      9 19-Apr-89 16:32 -- bad checksum LUHZOM
+                           should be 18-May-90 13:27 MIWXUT  ALL  RD  NO
+
+End of SAIL execution
+.rdist JAIL.RDI=(JAIL)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist JMS.RDI=(JMS)/check/nomissing/host:56
+Master host: 33
+697 files on master system.
+Slave hosts: 56
+Checking host 56
+(JMS         :  56) INFO.RDI       2 28-Feb-90 23:46 -- bad checksum XUKKAZ
+                           should be 05-Sep-91 14:38 XERDEC  ALL  RD  NO
+(JMS         :  56) MPL.RDI        3 28-Feb-90 23:57 -- bad checksum NIFXEY
+                           should be 31-Jul-91 19:53 QUYZEQ  ALL  RD  NO
+(JMS         :  56) OSU.RDI        2 01-Mar-90 00:05 -- bad checksum QILKEK
+                           should be 31-Jul-91 20:02 FEWDEZ  ALL  RD  NO
+(JMS         :  56) TXSDOC.RDI     2 01-Mar-90 00:24 -- bad checksum GOPDUR
+                           should be 31-Jul-91 20:33 MURXUJ  ALL  RD  NO
+(JMS         :  56) TXSINF.RDI     2 01-Mar-90 00:24 -- bad checksum GOPDUR
+                           should be 31-Jul-91 20:33 VUNTUH  ALL  RD  NO
+(JMS         :  56) VUE.RDI        2 01-Mar-90 00:29 -- bad checksum QUVHET
+                           should be 31-Jul-91 20:37 GINKAC  ALL  RD  NO
+(JMS         :  56) XEXEC.RDI      2 01-Mar-90 00:33 -- bad checksum BIRSAZ
+                           should be 31-Jul-91 20:43 HICYOC  ALL  RD  NO
+(JMS         :  56) SSVALS.RDI     2 28-Feb-90 23:27 -- extra not on master
+(JMS         :  56) SYSDOC.RDI     2 28-Feb-90 23:28 -- extra not on master
+(JMS         :  56) TBATLI.RDI     2 28-Feb-90 23:29 -- extra not on master
+(JMS         :  56) PDP10.CNT      3 03-Dec-85 09:18 -- extra not on master
+(JMS         :  56) 10UPDA.RDI     2 28-Feb-90 23:17 -- bad checksum GOPDUR
+                           should be 05-Sep-91 14:08 BOFMAY  ALL  RD  NO
+(JMS         :  56) COBOLQ.RDI     2 28-Feb-90 23:31 -- bad checksum QUVHET
+                           should be 05-Sep-91 14:19 XAFYAJ  ALL  RD  NO
+(JMS         :  56) EDITOR.RDI     2 28-Feb-90 23:38 -- bad checksum QUVHET
+                           should be 05-Sep-91 14:26 XAFYAJ  ALL  RD  NO
+(JMS         :  56) EXECX.RDI      2 28-Feb-90 23:38 -- bad checksum QUVHET
+                           should be 05-Sep-91 14:27 FEJSIB  ALL  RD  NO
+(JMS         :  56) F40.RDI        2 28-Feb-90 23:41 -- bad checksum QUVHET
+                           should be 05-Sep-91 14:32 BOFMAY  ALL  RD  NO
+(JMS         :  56) FJSAIL.RDI     2 28-Feb-90 23:42 -- bad checksum QUVHET
+                           should be 05-Sep-91 14:33 XAFYAJ  ALL  RD  NO
+(JMS         :  56) LINK10.RDI     2 28-Feb-90 23:50 -- bad checksum YIQROR
+                           should be 31-Jul-91 19:39 JEBDUG  ALL  RD  NO
+(JMS         :  56) MONDOC.RDI     2 28-Feb-90 23:56 -- bad checksum QUVHET
+                           should be 31-Jul-91 19:51 NIBFEB  ALL  RD  NO
+(JMS         :  56) RCMTES.RDI     2 01-Mar-90 00:08 -- bad checksum QUVHET
+                           should be 31-Jul-91 20:18 GINKAC  ALL  RD  NO
+(JMS         :  56) SPUNKD.RDI     2 01-Mar-90 00:17 -- bad checksum QUVHET
+                           should be 31-Jul-91 20:25 GINKAC  ALL  RD  NO
+(JMS         :  56) SPUNKR.RDI     2 01-Mar-90 00:18 -- extra not on master
+(JMS         :  56) TYMGRI.RDI     2 01-Mar-90 00:27 -- bad checksum QUVHET
+                           should be 31-Jul-91 20:36 GINKAC  ALL  RD  NO
+(JMS         :  56) 026TEL.COM     2 27-May-90 21:44 -- extra not on master
+(JMS         :  56) 026TEL.OUT     2 27-May-90 21:44 -- extra not on master
+(JMS         :  56) AUG26.SCR    538 28-Aug-90 09:11 -- extra not on master
+(JMS         :  56) TATTLE.LOG     2 08-Jun-91 16:05 -- bad checksum WUVSOX
+                           should be 08-Jun-91 16:05 DECSIL  ALL  RD  NO
+(JMS         :  56) JMS.RDI        3 28-Feb-90 23:47 -- bad checksum CULDUL
+                           should be 31-Jul-91 19:21 WUFDEQ  ALL  RD  NO
+(JMS         :  56) OSMAN.RDI      2 01-Mar-90 00:03 -- bad checksHBOT
+                           should be 31-Jul-91 20:00 MILHOL  ALL  RD  NO
+(JMS         :  56) SYSMAI.RDI     2 01-Mar-90 00:19 -- bad checksum BAXVAT
+                           should be 31-Jul-91 20:28 ZEFVAW  ALL  RD  NO
+(JMS         :  56) TBAUSP.RDI     2 01-Mar-90 00:21 -- bad checksum CAMXEX
+                           should be 31-Jul-91 20:30 GINKAC  ALL  RD  NO
+(JMS         :  56) TXSTES.RDI     2 01-Mar-90 00:25 -- bad checksum XUKKAZ
+                           should be 31-Jul-91 20:35 RURREH  ALL  RD  NO
+(JMS         :  56) FTSYSD.RDI     2 28-Feb-90 23:19 -- extra not on master
+(JMS         :  56) SSDEV.RDI      2 28-Feb-90 23:25 -- extra not on master
+(JMS         :  56) SSINST.RDI     2 28-Feb-90 23:25 -- extra not on master
+(JMS         :  56) SSUTIL.RDI     2 28-Feb-90 23:27 -- extra not on master
+(JMS         :  56) TNET.RDI       2 28-Feb-90 23:29 -- extra not on master
+(JMS         :  56) DOCAIL.RDI     2 28-Feb-90 23:33 -- bad checksum QUVHET
+                           should be 05-Sep-91 14:21 DEYQIN  ALL  RD  NO
+(JMS         :  56) FOROTS.RDI     2 28-Feb-90 23:44 -- bad checksum QUVHET
+                           should be 05-Sep-91 14:36 XAFYAJ  ALL  RD  NO
+(JMS         :  56) KSDIAG.RDI     2 28-Feb-90 23:50 -- bad checksum QUVHET
+                           should be 31-Jul-91 19:39 YIFNEJ  ALL  RD  NO
+(JMS         :  56) MFICHE.RDI     2 28-Feb-90 23:55 -- bad checksum QUVHET
+                           should be 31-Jul-91 19:50 GINKAC  ALL  RD  NO
+(JMS         :  56) TSUCOO.RDI     2 01-Mar-90 00:23 -- bad checksum GOPDUR
+                           should be 31-Jul-91 20:32 GINKAC  ALL  RD  NO
+(JMS         :  56) XPPTES.RDI     2 01-Mar-90 00:34 -- bad checksum QUVHET
+                           should be 31-Jul-91 20:45 GINKAC  ALL  RD  NO
+(JMS         :  56) YAMM.RDI       2 01-Mar-90 00:36 -- bad checksum QUVHET
+                           should be 31-Jul-91 20:45 BOBNIG  ALL  RD  NO
+(JMS         :  56) PERPOP.SCR     4 28-Aug-90 07:59 -- extra not on master
+(JMS         :  56) FNDBAD.LOG     2 05-Sep-91 07:30 -- bad checksum GUPSUW
+                           should be 05-Sep-91 07:30 TUBPID  ALL  RD  NO
+(JMS         :  56) SAILIB.RDI     3 01-Mar-90 00:09 -- bad checksum HIHMIK
+                           should be 31-Jul-91 20:19 BIPGEP  ALL  RD  NO
+(JMS         :  56) M33.RDI        3 28-Feb-90 23:52 -- bad checksum PUYKUP
+                           should be 31-Jul-91 19:40 BONWIT  ALL  RD  NO
+(JMS         :  56) OSP.RDI        2 01-Mar-90 00:05 -- bad checksum CEWLEN
+                           should be 31-Jul-91 20:01 QOYTUY  ALL  RD  NO
+(JMS         :  56) SPPOPE.RDI     2 01-Mar-90 00:15 -- bad checksum DAVQAX
+                           should be 31-Jul-91 20:23 JIQYUL  ALL  RD  NO
+(JMS         :  56) CCDA.RDI       2 28-Feb-90 23:17 -- extra not on master
+(JMS         :  56) FTTBA.RDI      2 28-Feb-90 23:19 -- extra not on master
+(JMS         :  56) CMUAIL.RDI     2 28-Feb-90 23:30 -- bad checksum QUVHET
+                           should be 05-Sep-91 14:18 XAFYAJ  ALL  RD  NO
+(JMS         :  56) F10QA.RDI      2 28-Feb-90 23:39 -- bad checksum QUVHET
+                           should be 05-Sep-91 14:31 XAFYAJ  ALL  RD  NO
+(JMS         :  56) JAIL.RDI       2 28-Feb-90 23:46 -- bad checksum QUVHET
+                           should be 05-Sep-91 14:39 XAFYAJ  ALL  RD  NO
+(JMS         :  56) OSB.RDI        2 01-Mar-90 00:02 -- bad checksum QUVHET
+                           should be 31-Jul-91 19:59 SODKON  ALL  RD  NO
+(JMS         :  56) SAILTE.RDI     2 01-Mar-90 00:11 -- bad checksum QUVHET
+                           should be 31-Jul-91 20:20 GINKAC  ALL  RD  NO
+(JMS         :  56) SPPARC.RDI     2 01-Mar-90 00:15 -- bad checksum QUVHET
+                           should be 31-Jul-91 20:23 GINKAC  ALL  RD  NO
+(JMS         :  56) SPUNKT.RDI     2 01-Mar-90 00:19 -- bad checksum QUVHET
+                           should be 31-Jul-91 20:26 GINKAC  ALL  RD  NO
+(JMS         :  56) TNXAIL.RDI     2 01-Mar-90 00:22 -- bad checksum QUVHET
+                           should be 31-Jul-91 20:31 GINKAC  ALL  RD  NO
+(JMS         :  56) TYMAIL.RDI     2 01-Mar-90 00:26 -- bad checksum QUVHET
+                           should be 31-Jul-91 20:36 GINKAC  ALL  RD  NO
+(JMS         :  56) XAIL.RDI       2 01-Mar-90 00:32 -- bad checksum QUVHET
+                           should be 31-Jul-91 20:43 GINKAC  ALL  RD  NO
+(JMS         :  56) XXARC.RDI      2 01-Mar-90 00:35 -- bad checksum QUVHET
+                           should be 31-Jul-91 20:45 GINKAC  ALL  RD  NO
+(JMS         :  56) SPOOL.LOG      2 02-Sep-91 00:00 -- bad checksum ROJQEM
+                           should be 02-Sep-91 00:00 VEJHIG  ALL  RD  NO
+(JMS         :  56) DSKS.DIR     160 16-Jan-85 08:05 -- extra not on master
+(JMS         :  56) DSKS.FDF     229 16-Jan-85 08:05 -- extra not on master
+(JMS         :  56) DSKS.SRT     185 14-May-84 04:18 -- extra not on master
+(JMS         :  56) AUG28.SCR    175 28-Aug-90 09:10 -- extra not on master
+(JMS         :  56) SZRPT.LOG     39 05-Sep-91 00:45 -- bad checksum PAVZEC
+                           should be 05-Sep-91 00:45 GAQZUD  ALL  RD  NO
+(JMS         :  56) SZRPT.GAN      9 21-Jan-87 19:09 -- extra not on master
+(JMS         :  56) SZRPT.SAT      4 31-Aug-91 01:48 -- bad checksum CIGCOV
+                           should be 31-Aug-91 06:25 XUPROD  ALL  RD  NO
+(JMS         :  56) SZRPT.SUN      4 01-Sep-91 02:59 -- bad checksum RACFOB
+                           should be 01-Sep-91 00:50 JAYQIV  ALL  RD  NO
+(JMS         :  56) SZRPT.MON      4 02-Sep-91 00:48 -- bad checksum RIMDAL
+                           should be 02-Sep-91 00:51 RELVOF  ALL  RD  NO
+(JMS         :  56) SZRPT.TUE      4 03-Sep-91 00:48 -- bad checksum ZIMSEK
+                           should be 03-Sep-91 00:52 GECLUX  ALL  RD  NO
+(JMS         :  56) SZRPT.WED      4 04-Sep-91 00:48 -- bad checksum BUGHOB
+                           should be 04-Sep-91 00:51 CIJHOJ  ALL  RD  NO
+(JMS         :  56) SZRPT.THU      4 05-Sep-91 00:49 -- bad checksum WIGZON
+                           should be 05-Sep-91 00:52 ZONMIC  ALL  RD  NO
+(JMS         :  56) SZRPT.FRI      4 30-Aug-91 00:49 -- bad checksum JOMYIF
+                           should be 30-Aug-91 00:52 JAQMIV  ALL  RD  NO
+(JMS         :  56) OSNF.OUT       2 26-Aug-87 12:08 -- extra not on master
+(JMS         :  56) OSNF.RDI       2 01-Mar-90 00:04 -- bad checksum GOPDUR
+                           should be 31-Jul-91 20:00 JAVPOT  ALL  RD  NO
+(JMS         :  56) PEAK.RDI       2 01-Mar-90 00:06 -- bad checksum TOWTOK
+                           should be 31-Jul-91 20:16 SORPAN  ALL  RD  NO
+(JMS         :  56) YEUX.RDI       2 01-Mar-90 00:36 -- bad checksum KAGREB
+                           should be 31-Jul-91 20:46 BOBNIG  ALL  RD  NO
+(JMS         :  56) EBUS.RDI       2 28-Feb-90 23:34 -- bad checksum WODSAD
+                           should be 05-Sep-91 14:22 XIXRAF  ALL  RD  NO
+(JMS         :  56) QALIBS.RDI     2 28-Feb-90 23:21 -- extra not on master
+(JMS         :  56) SALTYR.RDI     2 28-Feb-90 23:23 -- extra not on master
+(JMS         :  56) 56035E.WHR     2 28-Feb-90 23:28 -- extra not on master
+(JMS         :  56) COBOL1.RDI     2 28-Feb-90 23:31 -- bad checksum QUVHET
+                           should be 05-Sep-91 14:19 XAFYAJ  ALL  RD  NO
+(JMS         :  56) T10AIL.RDI     2 01-Mar-90 00:20 -- bad checksum QUVHET
+                           should be 31-Jul-91 20:29 GINKAC  ALL  RD  NO
+(JMS         :  56) TBAFTD.RDI     2 01-Mar-90 00:21 -- bad checksum QUVHET
+                           should be 31-Jul-91 20:30 SODKON  ALL  RD  NO
+(JMS         :  56) SZRPT.LST      2 05-Sep-91 00:45 -- bad checksum KEDPAL
+                           should be 05-Sep-91 00:45 TAHQEV  ALL  RD  NO
+(JMS         :  56) TEMP.BAK       2 15-Mar-90 12:05 -- extra not on master
+(JMS         :  56) TEMP.MSG       2 15-Mar-90 12:06 -- bad checksum POKDOL
+                           should be 15-Oct-89 23:55 YOBZIS  ALL  RD  NO
+(JMS         :  56) SYSNO.BAK      9 18-May-90 12:39 -- extra not on master
+(JMS         :  56) AUG29.SCR     35 29-Aug-90 20:57 -- extra not on master
+(JMS         :  56) CARL.RDI       2 28-Feb-90 23:19 -- bad checksum HOVREK
+                           should be 05-Sep-91 14:09 WOVCOM  ALL  RD  NO
+(JMS         :  56) NDT.RDI        2 01-Mar-90 00:02 -- bad checksum TONSOX
+                           should be 31-Jul-91 19:58 DUZDUS  ALL  RD  NO
+(JMS         :  56) SAIL.RDI       2 01-Mar-90 00:08 -- bad checksum QUVHET
+                           should be 31-Jul-91 20:18 GINKAC  ALL  RD  NO
+(JMS         :  56) DENCOF.RDI     2 28-Feb-90 23:18 -- bad checksum QUVHET
+                           should be 05-Sep-91 14:20 XAFYAJ  ALL  RD  NO
+(JMS         :  56) FWERKE.RDI     2 28-Feb-90 23:20 -- extra not on master
+(JMS         :  56) AUGMEN.RDI     2 28-Feb-90 23:19 -- bad checksum QUVHET
+                           should be 05-Sep-91 14:09 XAFYAJ  ALL  RD  NO
+(JMS         :  56) F10.RDI        2 28-Feb-90 23:39 -- bad checksum QUVHET
+                           should be 05-Sep-91 14:30 XAFYAJ  ALL  RD  NO
+(JMS         :  56) FLETCH.RDI     2 28-Feb-90 23:42 -- bad checksum QUVHET
+                           should be 05-Sep-91 14:34 XAFYAJ  ALL  RD  NO
+(JMS         :  56) KL10.RDI       2 28-Feb-90 23:48 -- bad checksum QUVHET
+                           should be 31-Jul-91 19:31 REQZIY  ALL  RD  NO
+(JMS         :  56) KS2020.RDI     2 28-Feb-90 23:49 -- bad checksum QUVHET
+                           should be 31-Jul-91 19:33 GIFFAP  ALL  RD  NO
+(JMS         :  56) MICROC.RDI     2 28-Feb-90 23:56 -- bad checksum QUVHET
+                           should be 31-Jul-91 19:51 GINKAC  ALL  RD  NO
+(JMS         :  56) SPTBAQ.RDI     2 01-Mar-90 00:16 -- bad checksum QUVHET
+                           should be 31-Jul-91 20:24 GINKAC  ALL  RD  NO
+(JMS         :  56) XCONSU.RDI     2 01-Mar-90 00:32 -- bad checksum QUVHET
+                           should be 31-Jul-91 20:43 GINKAC  ALL  RD  NO
+(JMS         :  56) SEDONL.HLP    11 22-May-85 06:23 -- protection ALL  RD  NO
+                           should be 22-May-85 06:23 WIJZIT  ALL  RD  RD
+(JMS         :  56) PUB.RDI        2 01-Mar-90 00:07 -- bad checksum GOPDUR
+                           should be 31-Jul-91 20:17 GINKAC  ALL  RD  NO
+(JMS         :  56) WRS.RDI        2 01-Mar-90 00:29 -- bad checksum KAXQUB
+                           should be 31-Jul-91 20:38 JUWGED  ALL  RD  NO
+(JMS         :  56) SSBACK.RDI     2 28-Feb-90 23:24 -- extra not on master
+(JMS         :  56) G3.CTL         3 28-Feb-90 23:15 -- extra not on master
+(JMS         :  56) 11CURR.RDI     2 28-Feb-90 23:18 -- bad checksum QUVHET
+                           should be 05-Sep-91 14:08 XAFYAJ  ALL  RD  NO
+(JMS         :  56) F3CODE.RDI     2 28-Feb-90 23:40 -- bad checksum QUVHET
+                           should be 05-Sep-91 14:31 HEPYAM  ALL  RD  NO
+(JMS         :  56) SPTBAR.RDI     2 01-Mar-90 00:17 -- bad checksum QUVHET
+                           should be 31-Jul-91 20:25 GINKAC  ALL  RD  NO
+(JMS         :  56) UORAIL.RDI     2 01-Mar-90 00:28 -- bad checksum QUVHET
+                           should be 31-Jul-91 20:37 GINKAC  ALL  RD  NO
+(JMS         :  56) MAGNUM.DIR     2 06-Jun-90 18:13 -- extra not on master
+(JMS         :  56) IMPORT.RDI     2 28-Feb-90 23:45 -- bad checksum QUVHET
+                           should be 05-Sep-91 14:37 XAFYAJ  ALL  RD  NO
+(JMS         :  56) SPL.RDI        2 01-Mar-90 00:12 -- bad checksum TOYVEK
+                           should be 31-Jul-91 20:21 NIYKUZ  ALL  RD  NO
+(JMS         :  56) TXSSUP.RDI     2 01-Mar-90 00:25 -- bad checksum XUKKAZ
+                           should be 31-Jul-91 20:34 BOBNIG  ALL  RD  NO
+(JMS         :  56) TXSTEX.RDI     2 01-Mar-90 00:26 -- bad checksum KAGREB
+                           should be 31-Jul-91 20:35 WOLPUC  ALL  RD  NO
+(JMS         :  56) ISISLI.RDI     2 28-Feb-90 23:20 -- extra not on master
+(JMS         :  56) QASYS.RDI      3 28-Feb-90 23:22 -- extra not on master
+(JMS         :  56) SSPAMB.RDI     2 28-Feb-90 23:26 -- extra not on master
+(JMS         :  56) VALIDA.RDI     2 28-Feb-90 23:30 -- extra not on master
+(JMS         :  56) G11447.CTL     2 28-Feb-90 23:16 -- extra not on master
+(JMS         :  56) DOC2.RDI       2 28-Feb-90 23:32 -- bad checksum QUVHET
+                           should be 05-Sep-91 14:21 XAFYAJ  ALL  RD  NO
+(JMS         :  56) FORK.RDI       2 28-Feb-90 23:43 -- bad checksum QUVHET
+                           should be 05-Sep-91 14:34 XAFYAJ  ALL  RD  NO
+(JMS         :  56) FOROTQ.RDI     2 28-Feb-90 23:44 -- bad checksum QUVHET
+                           should be 05-Sep-91 14:35 XAFYAJ  ALL  RD  NO
+
+End of SAIL execution
+.rdist KL10.RDI=(KL10)/check/nomissing/host:56
+Master host: 33
+113 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist KS2020.RDI=(KS2020)/check/nomissing/host:56
+Master host: 33
+366 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist KSDIAG.RDI=(KSDIAG)/check/nomissing/host:56
+Master host: 33
+13 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist LINK10.RDI=(LINK10)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+(LINK10      :  56) ACCESS.MSG     2 10-Aug-87 15:17 -- extra not on master
+(LINK10      :  56) LINK10.DIR    30 28-Nov-89 20:55 -- extra not on master
+
+End of SAIL execution
+.rdist M33.RDI=(M33)/check/nomissing/host:56
+Master host: 33
+470 files on master system.
+Slave hosts: 56
+Checking host 56
+(M33         :  56) KLCRSH.CMD     2 22-Mar-84 08:14 -- extra not on master
+(M33         :  56) MAIN03.VUE     2 29-Mar-85 04:02 -- extra not on master
+(M33         :  56) PATLOG.SAV    18 05-Dec-85 18:48 -- extra not on master
+(M33         :  56) PAKCP5.SAV    26 30-Nov-87 23:56 -- extra not on master
+(M33         :  56) BOOT5P.KI      3 31-Jan-86 15:04 -- extra not on master
+(M33         :  56) PAKCPX.SAV    26 30-Nov-87 23:59 -- extra not on master
+(M33         :  56) BOOT5B.KI      3 13-Jan-87 14:02 -- extra not on master
+(M33         :  56) BOOT5B.KL      3 13-Jan-87 14:03 -- extra not on master
+(M33         :  56) BOOT5P.KL      3 09-Mar-86 00:18 -- extra not on master
+(M33         :  56) IME.CMD        2 24-Oct-88 19:59 -- extra not on master
+(M33         :  56) ACCESS.MSG     2 11-Feb-91 10:59 -- bad checksum NETYET
+                           should be 18-Jul-91 17:26 CILTUD  ALL  RD  NO
+(M33         :  56) ACCESS.LIS     1 29-Jul-83 17:08 -- bad checksum VAVVAV
+                           should be 13-Jul-84 03:44 MUJMAS  ALL  RD  NO
+(M33         :  56) KEY620.DOC     2 17-Feb-82 09:12 -- extra not on master
+(M33         :  56) X2             2 15-May-82 12:31 -- extra not on master
+(M33         :  56) DSKSTS.CMD     2 05-Dec-78 12:00 -- extra not on master
+(M33         :  56) MAIN.FIN       3 20-Feb-81 15:46 -- extra not on master
+(M33         :  56) MONK10.BAK     2 15-Sep-83 15:26 -- extra not on master
+(M33         :  56) 6000.MON       2 30-Jul-87 14:33 -- extra not on master
+(M33         :  56) 6000.ORG       2 30-Jul-87 14:42 -- extra not on master
+(M33         :  56) KOST.SAV      11 14-Sep-77 10:47 -- extra not on master
+(M33         :  56) FDCNT.SAV     52 15-Nov-79 15:16 -- extra not on master
+(M33         :  56) PATCH.LOG      2 12-Feb-86 16:02 -- bad checksum HENCUW
+                           should be 05-Dec-85 21:24 GIVHAD  ALL  RD  NO
+(M33         :  56) FRECOR.SAV    17 19-Feb-85 09:49 -- extra not on master
+(M33         :  56) STATIC.LST    28 01-Feb-84 19:49 -- extra not on master
+(M33         :  56) STATIC.SAV     3 01-Feb-84 19:51 -- extra not on master
+(M33         :  56) STATIC.MAC    11 01-Feb-84 19:52 -- extra not on master
+(M33         :  56) FRMDDT.SAV    10 20-Apr-88 18:07 -- bad checksum YUXFIX
+                           should be 29-Apr-88 18:12 CIJMIK  ALL  RD  NO
+(M33         :  56) SA10.DIR       2 05-Oct-88 13:02 -- extra not on master
+(M33         :  56) RCVZAP.RUN     2 16-Nov-87 19:20 -- extra not on master
+(M33         :  56) 620DIR.TXT     2 25-Jan-73 09:51 -- extra not on master
+(M33         :  56) X3             2 15-May-82 12:31 -- extra not on master
+(M33         :  56) CHKPNT.CAB    21 10-May-85 14:22 -- extra not on master
+(M33         :  56) CHKPNT.MAC    20 10-May-85 14:25 -- extra not on master
+(M33         :  56) LDBBIO.CMD     2 29-Jan-80 17:11 -- extra not on master
+(M33         :  56) PATCH.OLD      3 10-May-82 10:49 -- bad checksum FURXEK
+                           should be 10-May-82 10:45 ROXFAS  ALL  RD  NO
+(M33         :  56) SETE1.BAK      2 20-Sep-83 16:01 -- extra not on master
+(M33         :  56) TEMPLT.CMD     2 04-May-82 14:37 -- extra not on master
+(M33         :  56) TSTSUP.SAV    14 08-Dec-86 20:53 -- extra not on master
+(M33         :  56) DMON.MEM       2 11-Jul-88 20:35 -- extra not on master
+(M33         :  56) 56035D.SAV   170 17-May-88 19:58 -- extra not on master
+(M33         :  56) M33.DIR      114 28-Nov-89 23:07 -- extra not on master
+(M33         :  56) FILE.DDT       2 26-Jun-85 02:57 -- extra not on master
+(M33         :  56) GOODGY.NQA     2 26-Mar-86 06:52 -- extra not on master
+(M33         :  56) INFSND.SAV     3 23-Feb-77 10:03 -- extra not on master
+(M33         :  56) NOTICE.25      2 22-Feb-82 16:54 -- extra not on master
+(M33         :  56) CRALST.NEW     2 12-Mar-82 08:45 -- bad checksum NOBPIK
+                           should be 12-Mar-82 09:01 POJNOC  ALL  RD  NO
+(M33         :  56) GROUP.CMD      2 14-Feb-80 20:27 -- extra not on master
+(M33         :  56) NOTICE.54      2 11-Feb-82 06:04 -- extra not on master
+(M33         :  56) ORING.CMD      2 29-Jan-80 17:11 -- extra not on master
+(M33         :  56) SETE2.BAK      2 07-Nov-83 15:34 -- extra not on master
+(M33         :  56) NOTICE.12      2 15-Sep-86 03:27 -- extra not on master
+(M33         :  56) CRASH.D37      2 30-Jul-87 13:58 -- extra not on master
+(M33         :  56) NOTICE.33      2 24-Feb-90 04:24 -- extra not on master
+(M33         :  56) FILDAT.CMD     2 11-Dec-74 09:45 -- extra not on master
+(M33         :  56) UPT.XPN        2 19-Apr-78 13:26 -- extra not on master
+(M33         :  56) CRASH.ALL      2 20-Jun-80 12:32 -- extra not on master
+(M33         :  56) XFER.CTL       2 06-Jun-87 20:48 -- bad checksum REYBUH
+                           should be 13-Jan-88 11:39 KECWIB  ALL  RD  NO
+(M33         :  56) PAT.FIL        2 04-May-82 15:24 -- extra not on master
+(M33         :  56) MAIN06.VUE     2 11-Mar-85 18:53 -- extra not on master
+(M33         :  56) BOOTS.INF      3 27-Feb-87 19:32 -- extra not on master
+(M33         :  56) BOOTS.SAV      2 11-May-87 19:24 -- extra not on master
+(M33         :  56) 56035E.SAV   170 31-Mar-90 23:54 -- extra not on master
+(M33         :  56) CRSUPD         2 24-Mar-80 19:56 -- extra not on master
+(M33         :  56) CRSUPD.SAV     2 28-Mar-80 23:12 -- extra not on master
+(M33         :  56) MONDAT.CMD     2 15-Jan-79 11:05 -- extra not on master
+(M33         :  56) X              2 15-May-82 12:48 -- extra not on master
+(M33         :  56) X5             2 15-May-82 12:49 -- extra not on master
+(M33         :  56) CUSPS.CMD      2 16-Dec-77 03:54 -- extra not on master
+(M33         :  56) READST.SAV    31 17-Mar-78 12:43 -- extra not on master
+(M33         :  56) SOQ.CMD        2 04-Oct-78 14:44 -- extra not on master
+(M33         :  56) FDPRT.SAV     52 15-Nov-79 16:08 -- extra not on master
+(M33         :  56) PRTSPT.CMD     2 16-Nov-79 16:17 -- extra not on master
+(M33         :  56) C.4            2 20-Feb-79 16:14 -- extra not on master
+(M33         :  56) C.3            2 20-Feb-79 16:14 -- extra not on master
+(M33         :  56) C.2            2 20-Feb-79 16:14 -- extra not on master
+(M33         :  56) C.1            2 20-Feb-79 16:14 -- extra not on master
+(M33         :  56) LUD.SYS      223 31-Mar-90 23:51 -- extra not on master
+(M33         :  56) CRSHID.LOG     2 15-Mar-91 22:56 -- extra not on master
+(M33         :  56) CRSHID.SAV    40 19-Mar-85 13:13 -- protection ALL RUN  NO
+                           should be 19-Mar-85 13:13 PEWJEC  ALL  RD  NO   1410
+(M33         :  56) BOTLOD.INF     2 24-Apr-87 15:19 -- extra not on master
+(M33         :  56) DDB.DDT        2 24-Feb-87 23:47 -- extra not on master
+(M33         :  56) BOTLOD.A10     3 24-Apr-87 15:19 -- extra not on master
+(M33         :  56) INTKIL.RUN     2 30-Jul-87 16:36 -- extra not on master
+(M33         :  56) ISXRAY.GGY     2 02-Jul-87 13:05 -- extra not on master
+(M33         :  56) CRASUM.SAV     3 07-Jun-76 22:11 -- extra not on master
+(M33         :  56) DEVLST.CMD     2 11-Jan-80 15:09 -- extra not on master
+(M33         :  56) CRASUM.34      2 25-Apr-80 16:02 -- extra not on master
+(M33         :  56) F02617.SAV    65 02-Apr-90 10:34 -- extra not on master
+(M33         :  56) PAKCP3.SAV    26 30-Nov-87 23:54 -- extra not on master
+(M33         :  56) PAKCOP.SAV    26 30-Nov-87 23:51 -- extra not on master
+(M33         :  56) PAKCOP.INF     2 30-Jun-87 12:58 -- extra not on master
+(M33         :  56) BOOT3P.KL      3 13-Jan-87 14:04 -- extra not on master
+(M33         :  56) BOOT3B.KI      3 08-Jul-85 16:24 -- extra not on master
+(M33         :  56) BOOT3B.KL      3 08-Jul-85 16:04 -- extra not on master
+(M33         :  56) BOOT3P.KI      3 13-Jan-87 14:03 -- extra not on master
+(M33         :  56) MAIL.FWD       2 14-Dec-88 12:55 -- extra not on master
+(M33         :  56) WHERE.CMD      2 25-Apr-89 15:42 -- extra not on master
+(M33         :  56) BIOBAS.BAK     2 31-Jul-83 16:29 -- extra not on master
+(M33         :  56) BIOBAS.OLD     3 07-Aug-83 05:27 -- extra not on master
+(M33         :  56) BIOBAS.REM     2 07-Aug-83 15:41 -- extra not on master
+(M33         :  56) BIOZAP.BAK     2 12-Feb-86 14:50 -- extra not on master
+(M33         :  56) LOGOUT.LOG     2 15-Mar-82 01:55 -- extra not on master
+(M33         :  56) MAIL.WRS       6 09-Jul-81 12:42 -- extra not on master
+(M33         :  56) 620SAV.SAV    39 13-Nov-72 08:30 -- extra not on master
+(M33         :  56) PARERR.PAT     2 14-Mar-89 11:32 -- extra not on master
+(M33         :  56) CRALOG.84      2 31-Dec-84 17:42 -- extra not on master
+(M33         :  56) STOPCD.MEM    14 30-Jan-87 22:53 -- bad checksum TEYWAP
+                           should be 04-Mar-89 14:31 LACYOC  ALL  RD  NO
+(M33         :  56) CODES.FSR      2 11-Dec-89 09:32 -- extra not on master
+(M33         :  56) CRALOG.78      4 29-Dec-78 16:47 -- extra not on master
+(M33         :  56) CRALOG.79      4 10-Dec-79 17:16 -- extra not on master
+(M33         :  56) CRSMAI.WRS     1 22-Jul-81 00:46 -- extra not on master
+(M33         :  56) DDBCHN.CMD     2 05-Jul-79 16:21 -- extra not on master
+(M33         :  56) INFRED.SAV     5 18-Jan-79 16:14 -- extra not on master
+(M33         :  56) REMIND.DAT     2 21-May-80 14:35 -- extra not on master
+(M33         :  56) CRALOG         3 04-Apr-83 16:54 -- extra not on master
+(M33         :  56) CRALOG.72      4 19-Dec-74 16:21 -- extra not on master
+(M33         :  56) CRALOG.73      7 19-Dec-74 16:22 -- extra not on master
+(M33         :  56) CRALOG.74      7 31-Dec-74 14:44 -- extra not on master
+(M33         :  56) CRALOG.75      4 30-Dec-75 16:53 -- extra not on master
+(M33         :  56) CRALOG.76      4 06-Jan-77 13:02 -- extra not on master
+(M33         :  56) CRALOG.77      5 12-Dec-77 14:17 -- extra not on master
+(M33         :  56) CRALOG.80      6 04-Aug-81 23:57 -- extra not on master
+(M33         :  56) CRALOG.81      5 31-Dec-81 21:28 -- extra not on master
+(M33         :  56) REMIND.DTA     2 12-Feb-79 09:12 -- extra not on master
+(M33         :  56) SATCNT.CMD     2 31-Oct-80 14:55 -- extra not on master
+(M33         :  56) GLOB.MHX       2 05-Jun-81 12:00 -- extra not on master
+(M33         :  56) PHONES.BAK     3 13-Apr-90 15:57 -- extra not on master
+
+End of SAIL execution
+.rdist MAIL.RDI=(MAIL)/check/nomissing/host:56
+Master host: 33
+36 files on master system.
+Slave hosts: 56
+Checking host 56
+(MAIL        :  56) LOG          253 05-Sep-91 15:00 -- bad checksum YIBMOW
+                           should be 05-Sep-91 15:00 RANTOQ  ALL  RD  NO
+(MAIL        :  56) ONTYME.DAT     3 11-Jul-86 17:06 -- extra not on master
+(MAIL        :  56) ONTYME.SAV    58 24-Jul-91 02:42 -- bad license 140402
+                           should be 24-Jul-91 02:20 GIHTOD  ALL  RD  NO
+(MAIL        :  56) EXEC.SAV      28 28-Jun-87 19:48 -- bad license 140002
+                           should be 30-Jun-91 01:50 CUYDOT  ALL  RD  NO
+(MAIL        :  56) TUMS.HLP       6 27-Jan-88 18:11 -- extra not on master
+(MAIL        :  56) #10&ZP.MAI     2 07-Aug-91 18:19 -- extra not on master
+(MAIL        :  56) !G/D)P.MAI     2 24-Aug-91 02:11 -- bad checksum HEWGUC
+                           should be 17-Aug-91 06:30 RINRAD  ALL  RD  NO
+(MAIL        :  56) CRALST.CMD     2 25-Sep-90 16:13 -- extra not on master
+(MAIL        :  56) !+F1_O.MAI     2 02-Sep-91 17:34 -- bad checksum ZOMJUL
+                           should be 05-Sep-91 14:57 MOBROS  ALL  RD  NO
+(MAIL        :  56) #10CUA.MAI     6 30-Aug-91 17:00 -- extra not on master
+(MAIL        :  56) MAIL.FWD       2 10-Jan-89 11:32 -- extra not on master
+(MAIL        :  56) MAIL.DIR      20 28-Nov-89 22:29 -- extra not on master
+(MAIL        :  56) ONTMTP.SAV    62 24-Jul-91 02:47 -- bad license 140402
+                           should be 24-Jul-91 02:25 ZIPGAN  ALL  RD  NO
+(MAIL        :  56) DIRIT.INI      2 22-Nov-87 06:26 -- extra not on master
+(MAIL        :  56) ",^G[X.MAI     2 04-Sep-91 23:27 -- extra not on master
+
+End of SAIL execution
+.rdist MFICHE.RDI=(MFICHE)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist MICROC.RDI=(MICROCYCLES)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist MONDOC.RDI=(MONDOC)/check/nomissing/host:56
+Master host: 33
+265 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist MPL.RDI=(MPL)/check/nomissing/host:56
+Master host: 33
+733 files on master system.
+Slave hosts: 56
+Checking host 56
+(MPL         :  56) SEC.SAV        4 01-Feb-79 18:42 -- bad license 
+                           should be 01-Feb-79 19:20 CEGRAR  ALL  RD RUN     10
+(MPL         :  56) LOKMAL.SAV     2 01-Feb-79 18:40 -- bad license 
+                           should be 01-Feb-79 19:19 FOJZOV  ALL  RD RUN     10
+(MPL         :  56) SCAN.SAV      22 03-May-81 05:40 -- bad checksum POWWUT
+                           should be 25-Aug-81 05:21 CAPPEJ  ALL  RD RUN
+(MPL         :  56) ICPSYM         2 12-Sep-90 15:16 -- bad checksum DEHDEP
+                           should be 07-Dec-87 09:53 QAPPIG  ALL  RD  NO
+(MPL         :  56) LINK10.SHR    74 16-Apr-81 10:14 -- bad checksum XEFNID
+                           should be 08-Dec-80 22:01 CURTOM  ALL  RD RUN
+(MPL         :  56) RPG.SHR       14 16-Apr-81 09:55 -- bad checksum BOXKIL
+                           should be 16-Jan-87 12:46 RAKYIJ  ALL  RD RUN
+(MPL         :  56) RUB.SAI        2 03-Jun-79 00:53 -- bad checksum TUSWIH
+                           should be 20-Oct-80 19:15 DAKTEV  ALL  RD  RD
+(MPL         :  56) SETOP.SAV      5 19-Oct-90 13:32 -- protection ALL  RD  NO
+                           should be 17-Nov-86 15:05 MOCXIQ  ALL  RD RUN
+(MPL         :  56) SUPMOV.BES    55 30-Aug-88 23:22 -- extra not on master
+(MPL         :  56) COPY.DOC       2 03-Jun-79 01:19 -- bad checksum ROBFUB
+                           should be 10-Dec-86 23:35 CUHSIV  ALL  RD  RD
+(MPL         :  56) ITSR.SWR       2 27-Jun-80 16:50 -- bad checksum POBZOC
+                           should be 27-Jun-80 16:50 JULGIK  ALL  RD  NO
+(MPL         :  56) UUOSYM.SAI     9 23-Jun-83 17:30 -- protection ALL  RD  NO
+                           should be 23-Jun-83 16:58 PUSVEN  ALL  RD  RD
+(MPL         :  56) ICP.OLD       30 22-Oct-80 15:48 -- extra not on master
+(MPL         :  56) UUODEF.MAC    21 23-Jun-83 17:27 -- bad checksum CELQID
+                           should be 23-Jun-83 15:38 QOYVAK  ALL  RD  RD
+(MPL         :  56) UUOSYM.MAC     9 23-Jun-83 17:28 -- protection ALL  RD  NO
+                           should be 23-Jun-83 16:57 MIBVIR  ALL  RD  RD
+(MPL         :  56) UUOSYM.DEF    10 23-Jun-83 17:29 -- bad checksum LAHQIK
+                           should be 15-Oct-83 00:24 LUFPIV  ALL  RD  RD
+(MPL         :  56) ICP.SAV       30 06-Mar-86 08:56 -- bad checksum JUTREK
+                           should be 11-Jul-80 13:09 GAKSEF  ALL  RD RUN 202010
+(MPL         :  56) LNK68K.DOC    39 14-Nov-87 00:25 -- extra not on master
+(MPL         :  56) OOPER.SAV      2 16-Apr-81 10:29 -- bad checksum TURNUZ
+                           should be 13-Apr-82 14:29 LEKZUY  ALL  RD RUN  40000
+(MPL         :  56) SPOOL.SAV     14 09-Jun-81 22:18 -- bad checksum NELHOG
+                           should be 15-Sep-81 05:02 YAYVOL  ALL  RD RUN
+(MPL         :  56) CTYMSG.SAV    16 30-May-79 14:46 -- bad license 
+                           should be 30-May-79 14:49 HEWVEH  ALL  RD RUN 100000
+(MPL         :  56) COPYCR.SAV     2 22-Jun-79 23:07 -- bad checksum NIVHAF
+                           should be 28-Jan-81 15:25 QOHPUF  ALL  RD RUN
+(MPL         :  56) ZAP.SAV        2 30-Jan-80 11:28 -- bad checksum ZAMJUC
+                           should be 30-Jan-80 17:11 XORXOL  ALL  RD RUN 400000
+(MPL         :  56) AUXIO.COM      2 21-Feb-69 13:49 -- bad checksum WOHWAY
+                           should be 10-Dec-86 23:32 FEYJON  ALL  RD  NO
+(MPL         :  56) AUXIO.CMD      2 30-Jun-81 18:14 -- bad checksum JIPBES
+                           should be 17-Oct-83 15:01 XIGHIP  ALL  RD  RD
+(MPL         :  56) AUXIO.34       8 30-Jun-81 18:14 -- extra not on master
+(MPL         :  56) SCREAM.SAV    31 25-May-89 17:03 -- protection ALL  RD  NO
+                           should be 02-Feb-87 17:11 NALDUJ  ALL  RD RUN
+(MPL         :  56) SCREAM.OLD    31 25-Mar-83 15:21 -- bad checksum WOSGOP
+                           should be 20-May-86 19:39 NACVAL  ALL  RD  NO
+(MPL         :  56) HENRY.LOW     10 11-May-84 15:52 -- extra not on master
+(MPL         :  56) HENRY.SHR      5 11-May-84 15:52 -- extra not on master
+(MPL         :  56) ICP13.SAV     29 16-Apr-81 06:34 -- bad license 
+                           should be 08-Dec-80 21:57 NONMUY  ALL  RD RUN 202010
+(MPL         :  56) READST.SAV    33 27-Jul-78 13:23 -- bad checksum SOZSIL
+                           should be 27-Jul-78 13:27 VIBBOG  ALL  RD RUN
+(MPL         :  56) ACTPRI.SAV     2 22-Jun-79 23:01 -- bad checksum MIZWUF
+                           should be 28-May-80 12:18 TENLOW  ALL  RD RUN
+(MPL         :  56) SETTRM.SAI    11 09-Apr-82 14:42 -- bad checksum BUWGEK
+                           should be 09-Apr-82 14:58 NEXJET  ALL  RD  RD
+(MPL         :  56) TTY            2 14-Jul-82 15:10 -- extra not on master
+(MPL         :  56) OPER.SAV       2 16-Apr-81 10:11 -- bad checksum GOBJIB
+                           should be 17-Nov-86 13:58 JAPGUJ  ALL  RD RUN
+(MPL         :  56) STEVE.RT       5 11-May-84 15:38 -- extra not on master
+(MPL         :  56) PCOM.CTL       2 10-May-85 14:41 -- extra not on master
+(MPL         :  56) PCOM.DOC      10 10-May-85 14:42 -- extra not on master
+(MPL         :  56) PCOM.SAI      35 10-May-85 14:37 -- extra not on master
+(MPL         :  56) AUXCHK.SAV     2 01-Feb-79 18:36 -- bad checksum XERGIS
+                           should be 10-Apr-80 08:23 LEXXIL  ALL  RD RUN
+(MPL         :  56) SNARF.SAV      2 10-Apr-79 18:41 -- bad checksum ZETTIQ
+                           should be 09-Dec-83 22:36 ZILFUY  ALL  RD RUN
+(MPL         :  56) RUNCHK.SAV     2 26-Nov-80 12:28 -- bad license 
+                           should be 28-Dec-79 15:50 MAVJIC  ALL  RD RUN 441000
+(MPL         :  56) XCORE.SAV      2 30-Jul-81 14:29 -- extra not on master
+(MPL         :  56) PJCVFY.SAV    15 19-Jan-83 17:51 -- bad license 
+                           should be 23-Oct-81 00:14 LIDYEH  ALL  RD RUN   1002
+(MPL         :  56) ASM68K.DOC    76 14-Nov-87 00:02 -- extra not on master
+(MPL         :  56) DIR.SAV        5 11-May-84 17:23 -- extra not on master
+(MPL         :  56) CRSHID.LOG     2 04-Dec-81 01:10 -- extra not on master
+(MPL         :  56) LUDDY.SAV      2 29-Dec-80 17:16 -- bad license 
+                           should be 29-Dec-80 17:11 DAGGIF  ALL  RD RUN  45002
+(MPL         :  56) SETE.SAV       2 22-Jun-79 22:50 -- bad checksum SIBSUT
+                           should be 02-Dec-87 00:47 FAYPAS  ALL  RD RUN
+(MPL         :  56) GRAB.SAV      13 08-Aug-79 17:10 -- bad checksum KOGWIQ
+                           should be 20-Oct-82 15:33 GUFGOZ  ALL  RD RUN
+(MPL         :  56) RUNPAM.SAV     2 26-Nov-80 12:27 -- bad license 
+                           should be 27-Aug-80 14:08 QAHYOG  ALL  RD RUN 401000
+(MPL         :  56) SNOOPY.SAV    32 16-Apr-81 10:06 -- bad license 
+                           should be 17-Jul-80 12:28 ZACGOP  ALL  RD RUN 600010
+(MPL         :  56) BADFIL.D54     1 21-Nov-82 11:06 -- extra not on master
+(MPL         :  56) REMIND.SAV     8 01-Feb-79 18:40 -- bad license 
+                           should be 01-Feb-79 19:19 WINNOP  ALL  RD RUN     10
+(MPL         :  56) PASPRN.SAV     2 22-Jun-79 23:02 -- bad checksum WIQDIZ
+                           should be 17-Jul-87 21:37 SATJAM  ALL  RD RUN
+(MPL         :  56) FSHTAP.SAV     2 22-Jun-79 23:02 -- bad license 
+                           should be 14-Nov-77 13:11 LAXHEK  ALL  RD RUN  20002
+(MPL         :  56) RUNMEM.SAV     2 26-Nov-80 12:28 -- bad checksum NIVMER
+                           should be 06-Aug-81 20:36 MOYKUK  ALL  RD RUN
+(MPL         :  56) ANYTHI        11 01-Dec-80 15:35 -- extra not on master
+(MPL         :  56) T              2 25-Nov-80 13:43 -- extra not on master
+(MPL         :  56) FTP10X.SAV    27 26-Jan-81 23:11 -- bad checksum SERMIL
+                           should be 25-Sep-83 01:21 FODJUP  ALL  RD RUN
+(MPL         :  56) TYPBAT.SAV     3 02-Nov-87 00:40 -- bad checksum KOBCOV
+                           should be 16-Nov-87 12:54 GEVSAQ  ALL  RD RUN     14
+(MPL         :  56) DIRIT.MAC     17 11-May-84 14:45 -- bad checksum MEDPUP
+                           should be 24-Apr-86 12:26 CURBER  ALL  RD  NO
+(MPL         :  56) DIRIT.REL      8 11-May-84 15:36 -- extra not on master
+(MPL         :  56) DIRIT.SAV      5 11-May-84 17:24 -- extra not on master
+(MPL         :  56) PCOINT.DCL     2 10-May-85 14:44 -- protection ALL  RD  NO
+                           should be 21-Sep-82 22:57 ROPHEB  ALL  RD  RD
+(MPL         :  56) T.RPT          1 21-Nov-82 11:03 -- extra not on master
+
+End of SAIL execution
+.rdist NDT.RDI=(NDT)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+(NDT         :  56) INIT.SAV       2 08-Mar-82 14:50 -- extra not on master
+(NDT         :  56) PMATE          2 19-Nov-82 13:25 -- extra not on master
+(NDT         :  56) CT1.SAV        2 02-Jun-81 16:35 -- extra not on master
+(NDT         :  56) TVSTRI.NGS     2 19-Nov-82 15:10 -- extra not on master
+(NDT         :  56) NDT.DIR        2 27-Nov-89 18:30 -- extra not on master
+
+End of SAIL execution
+.rdist OSB.RDI=(OSB)/check/nomissing/host:56
+Master host: 33
+1 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist OSMAN.RDI=(OSMAN)/check/nomissing/host:56
+Master host: 33
+20 files on master system.
+Slave hosts: 56
+Checking host 56
+(OSMAN       :  56) RPG.INI        2 27-Jun-88 10:37 -- extra not on master
+(OSMAN       :  56) INACT.BAK      2 19-Nov-87 12:53 -- extra not on master
+(OSMAN       :  56) INACT.LST      2 19-Nov-87 12:54 -- extra not on master
+(OSMAN       :  56) HOSFRE         2 01-Apr-88 13:42 -- extra not on master
+(OSMAN       :  56) TOM.MAI        2 18-Nov-87 12:50 -- bad checksum QIBDON
+                           should be 16-Feb-88 20:30 QUWDOV  ALL  RD  NO
+(OSMAN       :  56) TUMS.INI       2 24-Feb-89 14:42 -- extra not on master
+(OSMAN       :  56) TUMS.MSG       2 30-Jan-89 11:28 -- extra not on master
+(OSMAN       :  56) TUMS.TIX       2 08-Jul-88 10:05 -- extra not on master
+(OSMAN       :  56) LLOGTT.LOG     2 05-Jul-88 19:34 -- extra not on master
+(OSMAN       :  56) ND4720.BND   124 30-May-89 17:33 -- extra not on master
+(OSMAN       :  56) OPR.MAI        2 01-Feb-87 17:06 -- bad checksum JOGQAN
+                           should be 18-Feb-87 16:57 DETXAC  ALL  RD  NO
+(OSMAN       :  56) UKREPA.BAK     2 03-Nov-88 13:22 -- extra not on master
+(OSMAN       :  56) OPR.BAK        2 27-Sep-86 01:21 -- extra not on master
+(OSMAN       :  56) MAILBO.84     10 30-Apr-85 23:14 -- extra not on master
+(OSMAN       :  56) MAILBO.Q1      9 30-Apr-85 23:15 -- extra not on master
+(OSMAN       :  56) PX.SAV         6 10-Jul-88 16:59 -- extra not on master
+(OSMAN       :  56) MAILBO.86     61 04-Apr-85 13:53 -- extra not on master
+(OSMAN       :  56) HOSDAL         2 01-Apr-88 13:41 -- extra not on master
+(OSMAN       :  56) D56CTY.LOG     3 11-Jul-88 09:07 -- extra not on master
+(OSMAN       :  56) PSPPDP.SAV     6 06-Aug-88 06:09 -- extra not on master
+(OSMAN       :  56) PSPATO.SAV     2 04-Aug-88 17:15 -- extra not on master
+(OSMAN       :  56) DALHOS.BAK     2 01-Sep-88 18:23 -- extra not on master
+(OSMAN       :  56) DALHOS         2 02-Sep-88 09:19 -- extra not on master
+(OSMAN       :  56) RECOV.SYS      5 20-Jan-89 13:21 -- extra not on master
+(OSMAN       :  56) FNDBAD.RPT     1 11-Apr-89 11:10 -- extra not on master
+(OSMAN       :  56) Q              3 19-Nov-87 12:43 -- bad checksum QETTAL
+                           should be 06-Mar-89 13:51 XOZBAJ  ALL  RD  NO
+(OSMAN       :  56) 039PEA.001    27 22-Feb-88 14:25 -- extra not on master
+(OSMAN       :  56) HOSALL         2 01-Apr-88 13:41 -- extra not on master
+(OSMAN       :  56) BAKMAK.SHR     3 06-May-88 13:39 -- extra not on master
+(OSMAN       :  56) PEAK.TUT      10 04-Jun-87 13:25 -- extra not on master
+(OSMAN       :  56) Q.BAK          2 02-Jun-88 15:34 -- extra not on master
+(OSMAN       :  56) Q.LOG          2 02-Jun-88 15:36 -- extra not on master
+(OSMAN       :  56) QQ             3 17-Nov-87 12:45 -- extra not on master
+(OSMAN       :  56) REBUIL.DOC     2 13-Mar-87 14:55 -- extra not on master
+(OSMAN       :  56) TYM5.CTL       2 31-May-88 17:24 -- extra not on master
+(OSMAN       :  56) TYMC.CTL       2 02-Jun-88 15:05 -- extra not on master
+(OSMAN       :  56) TYMC.LOG       2 02-Jun-88 15:10 -- extra not on master
+(OSMAN       :  56) TYMCPY.CTL     2 01-Jun-88 16:04 -- extra not on master
+(OSMAN       :  56) TYMCPY.LOG     2 02-Jun-88 17:21 -- extra not on master
+(OSMAN       :  56) OPER.BAK       2 30-Sep-86 20:49 -- extra not on master
+(OSMAN       :  56) OPER.MAI       2 30-Sep-86 20:54 -- extra not on master
+(OSMAN       :  56) SWITCH.OLD     2 09-Apr-87 14:16 -- extra not on master
+(OSMAN       :  56) FREE.CTL       2 14-Jul-87 15:13 -- extra not on master
+(OSMAN       :  56) CRSHID.LOG     2 03-Mar-89 10:08 -- extra not on master
+(OSMAN       :  56) FREE.SAV      11 12-Nov-86 22:54 -- extra not on master
+(OSMAN       :  56) TYMDIR.CTL     2 05-Jul-88 19:27 -- extra not on master
+(OSMAN       :  56) TYMDIR.LOG     2 02-Jun-88 14:30 -- extra not on master
+(OSMAN       :  56) SLVPSP.SAV     3 19-Apr-85 13:08 -- extra not on master
+(OSMAN       :  56) MAIL.BOX      40 03-Jan-87 11:34 -- extra not on master
+(OSMAN       :  56) MAIL.FWD       2 27-Apr-90 17:00 -- extra not on master
+(OSMAN       :  56) PSPSLV.SAV     3 06-Mar-88 12:08 -- extra not on master
+(OSMAN       :  56) LELAND.BAK     2 08-Jul-88 09:46 -- extra not on master
+(OSMAN       :  56) LELAND.MAI     2 08-Jul-88 09:49 -- extra not on master
+(OSMAN       :  56) MAIL           1 09-Feb-89 21:55 -- extra not on master
+(OSMAN       :  56) EBBASE.DOC     6 10-Oct-85 16:46 -- extra not on master
+(OSMAN       :  56) TYMNET.CTL     2 31-May-88 17:25 -- extra not on master
+(OSMAN       :  56) DIRIT.INI      2 04-Aug-84 19:02 -- extra not on master
+(OSMAN       :  56) EAC1           2 13-Nov-89 15:06 -- extra not on master
+(OSMAN       :  56) TYMMAS         2 01-Jun-88 16:04 -- extra not on master
+(OSMAN       :  56) DSKCLN.CTL     2 21-Jul-88 11:54 -- extra not on master
+(OSMAN       :  56) DSKCLN.LOG    13 20-Jan-89 18:52 -- extra not on master
+(OSMAN       :  56) MAIL31         6 17-Jul-85 13:24 -- extra not on master
+
+End of SAIL execution
+.rdist OSNF.RDI=(OSNF)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+(OSNF        :  56) DUMMY          1 02-Feb-90 13:59 -- extra not on master
+
+End of SAIL execution
+.rdist OSP.RDI=(OSP)/check/nomissing/host:56
+Master host: 33
+6 files on master system.
+Slave hosts: 56
+Checking host 56
+(OSP         :  56) 56035E.SAV   170 31-Mar-90 23:54 -- extra not on master
+(OSP         :  56) P035E.MEM      6 02-Mar-89 22:08 -- extra not on master
+(OSP         :  56) P035E.DOC      2 13-Mar-89 12:47 -- extra not on master
+(OSP         :  56) STOPCD.MEM    25 04-Mar-89 14:31 -- extra not on master
+
+End of SAIL execution
+.rdist OSU.RDI=(OSU)/check/nomissing/host:56
+Master host: 33
+34 files on master system.
+Slave hosts: 56
+Checking host 56
+(OSU         :  56) VUE.CMD        2 30-Apr-83 14:16 -- extra not on master
+(OSU         :  56) LOGINN.INF     4 17-Oct-86 14:45 -- extra not on master
+(OSU         :  56) MORT.SAV      12 19-Aug-82 22:50 -- extra not on master
+(OSU         :  56) ASH.DDT       12 29-Jan-87 22:46 -- extra not on master
+(OSU         :  56) CHKPNT.SAV     5 10-Feb-87 17:45 -- extra not on master
+(OSU         :  56) ASP.DDT       16 12-Feb-87 15:52 -- extra not on master
+(OSU         :  56) ASP.SAV        7 26-May-88 13:50 -- protection ALL  RD  NO
+                           should be 24-May-88 14:18 DAJXUH  ALL  RD RUN  64017
+(OSU         :  56) ASP.SAV        7 26-May-88 13:50 -- bad license 
+                           should be 24-May-88 14:18 DAJXUH  ALL  RD RUN  64017
+(OSU         :  56) JOE.SAV       10 24-Oct-83 16:55 -- extra not on master
+(OSU         :  56) MAIL.BOX      44 02-Jul-82 00:52 -- extra not on master
+(OSU         :  56) LOGOUT.INF     2 17-Oct-86 14:45 -- extra not on master
+(OSU         :  56) INITIA.SAV     4 24-Aug-89 17:46 -- extra not on master
+(OSU         :  56) SYSTAT.LOW     2 27-Oct-88 19:43 -- extra not on master
+(OSU         :  56) SYSTAT.SHR    18 27-Oct-88 19:43 -- extra not on master
+(OSU         :  56) SETE.SAV       2 01-Feb-89 19:10 -- extra not on master
+(OSU         :  56) MAIL.FWD       2 19-Sep-89 19:07 -- extra not on master
+(OSU         :  56) DIRIT.INI      2 04-Feb-82 23:47 -- extra not on master
+(OSU         :  56) FILCHK.SAV    10 24-Oct-83 17:12 -- extra not on master
+(OSU         :  56) DSKCLN.SAV     8 24-Aug-90 15:23 -- extra not on master
+(OSU         :  56) DSKCLN.MAC    42 23-Aug-90 14:52 -- bad checksum LORQIS
+                           should be 24-Aug-90 15:17 CIFTAJ  ALL  RD  NO
+
+End of SAIL execution
+.rdist PASBLD.RDI=(PASBLD)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist PASCDO.RDI=(PASCALDOC)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist PASCLI.RDI=(PASCALIB)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist PASCOO.RDI=(PASCOOR)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist PASCQA.RDI=(PASCALQA)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist PASDOC.RDI=(PASDOC)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist PASGDO.RDI=(PASGDOC)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist PASGQA.RDI=(PASGQA)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist PASGSR.RDI=(PASGSRC)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist PASHOW.RDI=(PASHOW)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist PASIDO.RDI=(PASIDOC)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist PASIQA.RDI=(PASIQA)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist PASISR.RDI=(PASISRC)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist PASLIB.RDI=(PASLIB)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist PASNEW.RDI=(PASNEW)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist PASOLD.RDI=(PASOLD)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist PASPRO.RDI=(PASPROC)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist PASQA.RDI=(PASQA)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist PASREL.RDI=(PASRELCR)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist PASSAV.RDI=(PASSAV)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist PASSRC.RDI=(PASSRC)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist PASULI.RDI=(PASULIB)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist PASX.RDI=(PASCALX)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist PASXMI.RDI=(PASXMIT)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist PEAK.RDI=(PEAK)/check/nomissing/host:56
+Master host: 33
+2 files on master system.
+Slave hosts: 56
+Checking host 56
+(PEAK        :  56) ACCESS.MSG     2 05-Jun-84 07:08 -- bad checksum HIMHIS
+                           should be 02-Jul-86 01:59 MODRUK  ALL  RD  NO
+(PEAK        :  56) PH.DAT         6 21-Dec-85 10:34 -- extra not on master
+(PEAK        :  56) SETRPG.CTL     2 07-Apr-86 05:22 -- extra not on master
+(PEAK        :  56) RPG.INI        2 07-Apr-86 14:04 -- extra not on master
+(PEAK        :  56) MSC.DAT        2 14-Nov-85 00:44 -- extra not on master
+(PEAK        :  56) SLAM.SAV      33 01-Jul-86 18:26 -- extra not on master
+(PEAK        :  56) DEE.SAV       26 21-May-86 16:26 -- extra not on master
+(PEAK        :  56) TUMS.INI       2 19-Jun-86 11:48 -- extra not on master
+(PEAK        :  56) PUT.SAV       33 30-Jun-86 00:42 -- extra not on master
+(PEAK        :  56) ZEE.SAV       26 15-Oct-85 02:03 -- extra not on master
+(PEAK        :  56) PEAK.INI       2 12-Aug-86 15:46 -- extra not on master
+(PEAK        :  56) PEAK.SAV      69 22-Sep-87 15:33 -- extra not on master
+(PEAK        :  56) PEAK.HLP       5 22-Jan-86 23:40 -- extra not on master
+(PEAK        :  56) PEAK.KEY       2 31-Jul-83 21:01 -- extra not on master
+(PEAK        :  56) SWITCH.INI     2 07-Jul-86 13:51 -- extra not on master
+(PEAK        :  56) TURNUP.MSG     2 14-Oct-85 18:10 -- extra not on master
+(PEAK        :  56) TURNUP.CTL     2 16-Jan-86 13:57 -- extra not on master
+(PEAK        :  56) SWITCH.NEW     2 24-Apr-86 17:52 -- extra not on master
+(PEAK        :  56) MAIL.FWD       2 24-Aug-87 21:17 -- extra not on master
+(PEAK        :  56) MP.SAV        26 16-Apr-86 19:23 -- extra not on master
+(PEAK        :  56) S.SAV         18 18-Jun-86 16:43 -- extra not on master
+(PEAK        :  56) DIRIT.INI      2 10-Apr-86 14:31 -- extra not on master
+(PEAK        :  56) PHONES         2 06-May-86 12:08 -- extra not on master
+(PEAK        :  56) PRT.SAV       11 17-Dec-85 11:29 -- extra not on master
+
+End of SAIL execution
+.rdist PUB.RDI=(PUB)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+(PUB         :  56) UNDER.SAV     14 15-Feb-82 23:26 -- extra not on master
+
+End of SAIL execution
+.rdist RCMTES.RDI=(RCMTEST)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist SAIL.RDI=(SAIL)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist SAILIB.RDI=(SAILIB)/check/nomissing/host:56
+Master host: 33
+220 files on master system.
+Slave hosts: 56
+Checking host 56
+(SAILIB      :  56) WARP.BAK       2 14-Sep-84 14:17 -- extra not on master
+(SAILIB      :  56) WARP.DCL       2 14-Sep-84 14:18 -- extra not on master
+(SAILIB      :  56) WARP.DOC       2 14-Sep-84 14:19 -- extra not on master
+(SAILIB      :  56) LLIBA2.REL    46 14-Sep-84 14:39 -- bad checksum KEZQUR
+                           should be 15-Feb-83 09:42 MAJYIF  ALL  RD  RD
+(SAILIB      :  56) FRMOP.REL      2 14-Sep-84 14:53 -- extra not on master
+(SAILIB      :  56) APEND.DCL      2 14-Sep-84 14:58 -- extra not on master
+(SAILIB      :  56) SPNTRE.SAI     5 14-Sep-84 15:09 -- extra not on master
+(SAILIB      :  56) APEND.REL      3 14-Sep-84 15:12 -- bad checksum SELYOX
+                           should be 25-Oct-84 16:24 NUTZEF  ALL  RD  RD
+(SAILIB      :  56) FRMOP.SAI      2 14-Sep-84 15:12 -- extra not on master
+(SAILIB      :  56) FRMOP.HDR      2 14-Sep-84 15:12 -- extra not on master
+(SAILIB      :  56) IOMODO.REL     5 14-Sep-84 15:25 -- extra not on master
+(SAILIB      :  56) MAKDCL.DOC     2 14-Sep-84 14:26 -- extra not on master
+(SAILIB      :  56) PRICHK.REL     2 14-Sep-84 14:28 -- bad checksum PUCKOG
+                           should be 15-Nov-89 00:45 WOZGIZ  ALL  RD  RD
+(SAILIB      :  56) PRICHK.SAI     2 14-Sep-84 14:48 -- bad checksum JARQAH
+                           should be 15-Nov-89 00:45 MOBDEF  ALL  RD  RD
+(SAILIB      :  56) PRICHK.REQ     2 14-Sep-84 14:48 -- bad checksum KODJOL
+                           should be 15-Nov-89 00:43 HUDCUN  ALL  RD  RD
+(SAILIB      :  56) O.FAI         15 14-Sep-84 14:51 -- extra not on master
+(SAILIB      :  56) MAKSLB.SAI     7 14-Sep-84 14:54 -- extra not on master
+(SAILIB      :  56) REDUFD.DOC     2 14-Sep-84 14:56 -- extra not on master
+(SAILIB      :  56) SOUDX.DCL      2 14-Sep-84 14:57 -- extra not on master
+(SAILIB      :  56) EXTEND.DCL     2 14-Sep-84 15:22 -- extra not on master
+(SAILIB      :  56) OSTRNG.REL     5 14-Sep-84 15:23 -- extra not on master
+(SAILIB      :  56) LEPFMT.SAI     5 14-Sep-84 15:23 -- extra not on master
+(SAILIB      :  56) OFIND.SAI     10 14-Sep-84 15:31 -- extra not on master
+(SAILIB      :  56) OSTRNG.HDR     2 14-Sep-84 15:35 -- extra not on master
+(SAILIB      :  56) OSTRNG.DOC     5 14-Sep-84 15:35 -- extra not on master
+(SAILIB      :  56) OSTRNG.SAI     7 14-Sep-84 15:35 -- extra not on master
+(SAILIB      :  56) EXTEND.DOC     7 14-Sep-84 15:37 -- extra not on master
+(SAILIB      :  56) EXTEND.REL    11 14-Sep-84 15:37 -- extra not on master
+(SAILIB      :  56) LEPRUN.GLB    72 14-Sep-84 15:47 -- extra not on master
+(SAILIB      :  56) ZZREST.LOG    10 14-Sep-84 15:53 -- extra not on master
+(SAILIB      :  56) MAKDCL.SAV    17 07-Oct-83 21:39 -- extra not on master
+(SAILIB      :  56) MFDSCN.RLL     5 14-Sep-84 14:31 -- extra not on master
+(SAILIB      :  56) MFDSCN.SAI     5 12-Sep-85 14:26 -- extra not on master
+(SAILIB      :  56) MFDSCN.DOC     5 12-Sep-85 14:25 -- extra not on master
+(SAILIB      :  56) FILDAT.REL     3 14-Sep-84 14:44 -- bad checksum GOYGON
+                           should be 18-Aug-87 20:28 TECWUX  ALL  RD  RD
+(SAILIB      :  56) FILDAT.REQ     2 14-Sep-84 14:45 -- bad checksum MIBGEL
+                           should be 18-Feb-87 15:20 YIVBOB  ALL  RD  RD
+(SAILIB      :  56) FILDAT.SAI     3 14-Sep-84 14:45 -- extra not on master
+(SAILIB      :  56) SVLOW.DCL      2 14-Sep-84 14:57 -- extra not on master
+(SAILIB      :  56) COMMON.BAI    25 14-Sep-84 15:17 -- extra not on master
+(SAILIB      :  56) IOMOD.REL      5 14-Sep-84 15:24 -- extra not on master
+(SAILIB      :  56) TYMINT.DEF     2 14-Sep-84 15:39 -- bad checksum FIYLOM
+                           should be 15-Jun-86 15:05 KATTER  ALL  RD  RD
+(SAILIB      :  56) SAILIB.REQ     2 14-Sep-84 15:41 -- bad checksum KAJMOY
+                           should be 06-Jul-82 13:30 LOTDUD  ALL  RD  RD
+(SAILIB      :  56) SAILIB.DOC     7 14-Sep-84 15:41 -- extra not on master
+(SAILIB      :  56) AIL.DIR       15 14-Sep-84 15:43 -- extra not on master
+(SAILIB      :  56) SAILIB.FDM    69 14-Sep-84 15:55 -- extra not on master
+(SAILIB      :  56) FILDAT.DCL     2 03-Apr-85 10:42 -- extra not on master
+(SAILIB      :  56) WARPT.WRP      8 14-Sep-84 14:19 -- extra not on master
+(SAILIB      :  56) MAPLIB.DOC     7 14-Sep-84 14:22 -- extra not on master
+(SAILIB      :  56) MAPLIB.DCL     2 14-Sep-84 14:22 -- extra not on master
+(SAILIB      :  56) MAPLIB.REL    12 14-Sep-84 14:23 -- extra not on master
+(SAILIB      :  56) SETTRM.SAI    11 14-Sep-84 14:25 -- extra not on master
+(SAILIB      :  56) HLIBA2.REL    48 14-Sep-84 14:35 -- extra not on master
+(SAILIB      :  56) STRNG.REL      5 14-Sep-84 14:46 -- extra not on master
+(SAILIB      :  56) BLOCK.SAI      5 14-Sep-84 14:47 -- extra not on master
+(SAILIB      :  56) ATFILE.DOC     2 14-Sep-84 14:49 -- extra not on master
+(SAILIB      :  56) STRNG.DCL      2 14-Sep-84 14:57 -- extra not on master
+(SAILIB      :  56) LLIBA.REL     46 14-Sep-84 15:03 -- extra not on master
+(SAILIB      :  56) FIND.V13      11 14-Sep-84 15:07 -- extra not on master
+(SAILIB      :  56) STRNG.SAI      9 14-Sep-84 15:11 -- extra not on master
+(SAILIB      :  56) FIND.V12      11 14-Sep-84 15:27 -- extra not on master
+(SAILIB      :  56) FTSAIL.DOC     3 14-Sep-84 15:29 -- extra not on master
+(SAILIB      :  56) FIND.V11      11 14-Sep-84 15:30 -- extra not on master
+(SAILIB      :  56) FIND.71        9 14-Sep-84 15:30 -- extra not on master
+(SAILIB      :  56) VMFILE.DEF     2 22-Mar-88 13:59 -- bad checksum NIFYOT
+                           should be 28-Jun-88 19:39 QUVYUJ  ALL  RD  NO
+(SAILIB      :  56) VMFILE.REL    12 22-Mar-88 13:59 -- bad checksum QISTAW
+                           should be 16-Jan-89 20:07 BIDFIB  ALL  RD  NO
+(SAILIB      :  56) VMFILE.SAI    18 22-Mar-88 14:00 -- bad checksum PUBWIM
+                           should be 15-Jan-89 02:23 YODJAF  ALL  RD  NO
+(SAILIB      :  56) VERSN.REL      2 08-Feb-88 17:06 -- protection ALL  RD  NO
+                           should be 22-Mar-88 16:36 KORYUF  ALL  RD  RD
+(SAILIB      :  56) VERSN.REQ      2 08-Feb-88 17:06 -- protection ALL  RD  NO
+                           should be 08-Feb-88 16:55 ZIQKAJ  ALL  RD  RD
+(SAILIB      :  56) VERSN.SAI      2 08-Feb-88 17:06 -- protection ALL  RD  NO
+                           should be 08-Feb-88 16:54 HOBHEQ  ALL  RD  RD
+(SAILIB      :  56) SETTRM.DCL     1 03-Apr-85 10:44 -- extra not on master
+(SAILIB      :  56) FIND.LOW      12 10-Oct-80 00:58 -- extra not on master
+(SAILIB      :  56) FIND.SHR      29 10-Oct-80 00:59 -- extra not on master
+(SAILIB      :  56) ASK.DOC        2 14-Sep-84 14:48 -- extra not on master
+(SAILIB      :  56) PORT.DCL       2 14-Sep-84 14:57 -- extra not on master
+(SAILIB      :  56) SAIL.DOC      14 14-Sep-84 15:08 -- extra not on master
+(SAILIB      :  56) SEARCH.REQ     2 14-Sep-84 15:16 -- bad checksum DIYGOW
+                           should be 06-Jul-82 13:30 TINFEH  ALL  RD  RD
+(SAILIB      :  56) SEARCH.DCL     2 14-Sep-84 15:16 -- extra not on master
+(SAILIB      :  56) MAPPAG.SAI     8 14-Sep-84 15:20 -- extra not on master
+(SAILIB      :  56) RANDIO.REQ     2 14-Sep-84 15:22 -- bad checksum MUQZEF
+                           should be 06-Jul-82 13:30 XAMMUC  ALL  RD  RD
+(SAILIB      :  56) IOMODS.HDR     2 14-Sep-84 15:25 -- extra not on master
+(SAILIB      :  56) RANDIO.DOC     2 14-Sep-84 15:34 -- extra not on master
+(SAILIB      :  56) SEARCH.REL     9 14-Sep-84 15:38 -- extra not on master
+(SAILIB      :  56) SAIL.MSG      19 14-Sep-84 15:42 -- extra not on master
+(SAILIB      :  56) LPDUMP.SAI     7 14-Sep-84 15:46 -- extra not on master
+(SAILIB      :  56) SEARCH.V01    12 14-Sep-84 16:01 -- extra not on master
+(SAILIB      :  56) MAIN08.VUE     2 14-Sep-84 14:20 -- extra not on master
+(SAILIB      :  56) FRMRUN.REL     5 14-Sep-84 14:21 -- bad checksum WALTUB
+                           should be 05-Dec-86 18:35 JAKDEV  ALL  RD  RD
+(SAILIB      :  56) FRMRNN.REL     5 14-Sep-84 14:29 -- extra not on master
+(SAILIB      :  56) FRMRUN.SAI     7 14-Sep-84 14:30 -- extra not on master
+(SAILIB      :  56) FRMRUN.REQ     2 14-Sep-84 14:31 -- extra not on master
+(SAILIB      :  56) FRMRUN.DOC     6 14-Sep-84 14:31 -- extra not on master
+(SAILIB      :  56) MPLIB.DCL      2 14-Sep-84 14:58 -- extra not on master
+(SAILIB      :  56) BKFNS.DCL      2 14-Sep-84 14:58 -- extra not on master
+(SAILIB      :  56) ALL.DCL        4 14-Sep-84 15:07 -- extra not on master
+(SAILIB      :  56) STRNGS.REQ     2 14-Sep-84 15:13 -- bad checksum BOLYEN
+                           should be 06-Jul-82 13:30 DUGMAB  ALL  RD  RD
+(SAILIB      :  56) STRNGS.HDR     2 14-Sep-84 15:13 -- extra not on master
+(SAILIB      :  56) STRNGS.DCL     2 14-Sep-84 15:13 -- extra not on master
+(SAILIB      :  56) MPLIB.REL     11 14-Sep-84 15:19 -- extra not on master
+(SAILIB      :  56) BKFNS.SAI      8 14-Sep-84 15:22 -- extra not on master
+(SAILIB      :  56) OEXTEN.DCL     2 14-Sep-84 15:32 -- extra not on master
+(SAILIB      :  56) STRNGS.DOC     6 14-Sep-84 15:32 -- extra not on master
+(SAILIB      :  56) STRNGS.SAI    11 14-Sep-84 15:32 -- extra not on master
+(SAILIB      :  56) STRNGS.REL     5 14-Sep-84 15:33 -- extra not on master
+(SAILIB      :  56) IOSER.PUB     11 14-Sep-84 15:52 -- extra not on master
+(SAILIB      :  56) RNDIO.DCL      2 02-Apr-84 21:16 -- extra not on master
+(SAILIB      :  56) FILSCN.REQ     2 14-Sep-84 14:46 -- extra not on master
+(SAILIB      :  56) FILSCN.REL     4 14-Sep-84 14:49 -- extra not on master
+(SAILIB      :  56) FILSCN.SAI     4 14-Sep-84 14:50 -- extra not on master
+(SAILIB      :  56) XTEND.DCL      3 14-Sep-84 14:52 -- extra not on master
+(SAILIB      :  56) SERCH.DCL      2 14-Sep-84 14:57 -- extra not on master
+(SAILIB      :  56) DMATH.DCL      2 14-Sep-84 14:58 -- extra not on master
+(SAILIB      :  56) LBALL.DCL      2 14-Sep-84 14:58 -- extra not on master
+(SAILIB      :  56) HLIBA.REL     48 14-Sep-84 14:59 -- extra not on master
+(SAILIB      :  56) XTEND.REL     11 14-Sep-84 15:10 -- extra not on master
+(SAILIB      :  56) BRKFNS.REQ     2 14-Sep-84 15:13 -- bad checksum MAVDOW
+                           should be 06-Jul-82 13:30 FAPNON  ALL  RD  RD
+(SAILIB      :  56) BRKFNS.HDR     2 14-Sep-84 15:13 -- extra not on master
+(SAILIB      :  56) SERCH.REL     10 14-Sep-84 15:15 -- extra not on master
+(SAILIB      :  56) DMATH.SAI      6 14-Sep-84 15:21 -- extra not on master
+(SAILIB      :  56) OPFILE.FAI     5 14-Sep-84 15:21 -- extra not on master
+(SAILIB      :  56) BRKFNS.DCL     2 14-Sep-84 15:23 -- extra not on master
+(SAILIB      :  56) APPEND.HDR     2 14-Sep-84 15:24 -- extra not on master
+(SAILIB      :  56) DMATH.HDR      2 14-Sep-84 15:26 -- extra not on master
+(SAILIB      :  56) PROTEC.RCD     4 14-Sep-84 15:26 -- extra not on master
+(SAILIB      :  56) DMATH.OSA      6 14-Sep-84 15:27 -- extra not on master
+(SAILIB      :  56) BRKFNS.DOC     2 14-Sep-84 15:35 -- extra not on master
+(SAILIB      :  56) LPREAD.REL     7 14-Sep-84 15:44 -- extra not on master
+(SAILIB      :  56) LPREAD.SAI     9 14-Sep-84 15:45 -- extra not on master
+(SAILIB      :  56) DMATH.V01      7 14-Sep-84 15:54 -- extra not on master
+
+End of SAIL execution
+.rdist SAILTE.RDI=(SAILTEST)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist SPL.RDI=(SPL)/check/nomissing/host:56
+Master host: 33
+258 files on master system.
+Slave hosts: 56
+Checking host 56
+(SPL         :  56) PIP.HLP        2 25-Oct-85 13:53 -- protection ALL  RD RUN
+                           should be 25-Oct-85 14:56 DITHIB  ALL  RD  RD
+(SPL         :  56) ACCESS.DOC     2 18-Jan-87 22:25 -- protection ALL  RD RUN
+                           should be 12-Feb-87 02:31 XAKVEF  ALL  RD  RD
+(SPL         :  56) DIABLO.DOC     5 12-Feb-87 00:29 -- protection ALL  RD RUN
+                           should be 12-Feb-87 02:36 VUTCUQ  ALL  RD  RD
+(SPL         :  56) PIP.DOC        3 14-Nov-87 00:38 -- protection ALL  RD RUN
+                           should be 03-Apr-86 12:55 HABSOV  ALL  RD  RD
+(SPL         :  56) FIL.BAK        2 27-May-86 14:40 -- extra not on master
+(SPL         :  56) FTP20.OLD     30 28-Mar-85 01:12 -- bad checksum KUZRUQ
+                           should be 24-Feb-83 21:00 PAXNOP  ALL  RD  RD
+(SPL         :  56) INIT.SAI       2 26-Jun-83 11:29 -- extra not on master
+(SPL         :  56) FILCOM.HLP     2 25-Oct-85 13:51 -- protection ALL  RD RUN
+                           should be 10-Dec-86 23:25 PULPEF  ALL  RD  RD
+(SPL         :  56) COPY.16       24 08-Feb-83 17:47 -- protection ALL  RD RUN
+                           should be 10-Dec-86 23:29 HIYBAQ  ALL  RD  RD
+(SPL         :  56) COPY.DOC       3 06-May-86 13:15 -- protection ALL  RD RUN
+                           should be 06-May-86 13:11 DAMXAT  ALL  RD  RD
+(SPL         :  56) COPY.CMD       2 06-May-86 13:15 -- protection ALL  RD RUN
+                           should be 06-May-86 13:11 JETJOC  ALL  RD  RD
+(SPL         :  56) COPY.15       18 11-Oct-82 12:07 -- protection ALL  RD RUN
+                           should be 10-Dec-86 23:28 KIYFAP  ALL  RD  RD
+(SPL         :  56) COPY.15       18 11-Oct-82 12:07 -- bad license   1010
+                           should be 10-Dec-86 23:28 KIYFAP  ALL  RD  RD
+(SPL         :  56) TAUX.INF       2 04-Dec-86 22:40 -- protection ALL  RD RUN
+                           should be 04-Dec-86 22:41 RUNDUN  ALL  RD  RD
+(SPL         :  56) TAUX.DOC       2 03-Apr-86 12:49 -- protection ALL  RD RUN
+                           should be 03-Apr-86 12:49 NOPSIV  ALL  RD  RD
+(SPL         :  56) FSH030.FSH     1 09-Jan-89 16:50 -- extra not on master
+(SPL         :  56) FILCOM.DOC     2 14-Nov-87 00:20 -- protection ALL  RD RUN
+                           should be 03-Apr-86 12:51 VOQPIQ  ALL  RD  RD
+(SPL         :  56) MAKDCL.DOC     2 14-Nov-87 00:34 -- protection ALL  RD RUN
+                           should be 03-Apr-86 12:51 MOYCUN  ALL  RD  RD
+(SPL         :  56) PROJ.DFS       3 27-May-86 14:40 -- protection ALL  RD RUN
+                           should be 21-Oct-81 08:27 TEDZOZ  ALL  RD  RD
+(SPL         :  56) SHARI.1       26 30-Jun-89 04:02 -- extra not on master
+(SPL         :  56) TSRBAS.DMD     2 27-May-86 14:41 -- extra not on master
+(SPL         :  56) TELCHK.DOC     3 12-Dec-86 15:02 -- protection ALL  RD RUN
+                           should be 12-Dec-86 15:02 TIBTAQ  ALL  RD  RD
+(SPL         :  56) FED.SHR        8 06-Nov-82 19:13 -- bad checksum FOJYOY
+                           should be 06-Nov-82 18:57 GONNUC  ALL  RD RUN
+(SPL         :  56) MARKER.SAV    22 04-May-87 14:42 -- bad checksum TEQXIC
+                           should be 06-Jan-88 17:38 RIXTIV  ALL  RD RUN
+(SPL         :  56) DFAUX.SHR      3 05-Nov-83 01:44 -- bad checksum RELPUT
+                           should be 05-Nov-83 03:22 VODMOR  ALL  RD RUN
+(SPL         :  56) CPUTYP.MAC     4 11-May-87 16:29 -- protection ALL  RD RUN
+                           should be 11-May-87 16:29 PUWHEY  ALL  RD  RD
+(SPL         :  56) DELPAG.DOC     3 19-Nov-86 00:54 -- protection ALL  RD RUN
+                           should be 12-Feb-87 02:36 COHWUS  ALL  RD  RD
+(SPL         :  56) DOC.MEM        2 12-Feb-87 00:30 -- protection ALL  RD RUN
+                           should be 12-Feb-87 02:37 QIRYUW  ALL  RD  RD
+(SPL         :  56) MAIL9.MEM      2 12-Feb-87 00:45 -- protection ALL  RD RUN
+                           should be 12-Feb-87 02:45 TAVDEG  ALL  RD  RD
+(SPL         :  56) SUBR.DOC       5 12-Feb-87 00:54 -- protection ALL  RD RUN
+                           should be 12-Feb-87 02:49 WALMEW  ALL  RD  RD
+(SPL         :  56) SYSTEM.MEM     2 12-Feb-87 00:57 -- protection ALL  RD RUN
+                           should be 12-Feb-87 02:50 GINGOH  ALL  RD  RD
+(SPL         :  56) VAT.MEM        2 12-Feb-87 00:59 -- protection ALL  RD RUN
+                           should be 12-Feb-87 02:50 DOXBUC  ALL  RD  RD
+(SPL         :  56) FSH031.FSH     5 09-Jan-89 16:50 -- extra not on master
+(SPL         :  56) AUXIO          3 29-Mar-88 15:30 -- extra not on master
+(SPL         :  56) AUXIO.COM      3 27-Oct-80 16:01 -- extra not on master
+(SPL         :  56) AUXIO.DOC      2 07-Apr-86 18:57 -- protection ALL  RD RUN
+                           should be 07-Apr-86 19:18 VUFVIB  ALL  RD  RD
+(SPL         :  56) AUXIO.NEW      3 23-Oct-80 14:56 -- extra not on master
+(SPL         :  56) CREF.HLP       2 14-Nov-87 00:12 -- protection ALL  RD RUN
+                           should be 20-Mar-85 06:00 DUFMIS  ALL  RD  RD
+(SPL         :  56) TSR.DMD        2 27-May-86 14:40 -- extra not on master
+(SPL         :  56) TSR.DMS      637 27-May-86 14:42 -- extra not on master
+(SPL         :  56) LUK.SAV       31 20-Sep-81 20:58 -- bad checksum BAFFAC
+                           should be 30-Nov-81 19:03 JOBVEJ  ALL  RD RUN
+(SPL         :  56) LUK.DOC        2 20-Sep-81 21:00 -- protection ALL  RD RUN
+                           should be 11-May-81 19:23 TENDIQ  ALL  RD  RD
+(SPL         :  56) FIND.SAV      41 16-Aug-83 17:39 -- bad checksum YELHOD
+                           should be 11-Jan-88 19:22 NAWPUX  ALL  RD RUN
+(SPL         :  56) SETTRM.SAI    11 09-Apr-82 14:42 -- extra not on master
+(SPL         :  56) FIND.DOC       3 16-Aug-83 17:39 -- protection ALL  RD RUN
+                           should be 08-Sep-83 11:33 DIXDAL  ALL  RD  RD
+(SPL         :  56) TTY.MEM        2 12-Feb-87 00:59 -- protection ALL  RD RUN
+                           should be 12-Feb-87 02:50 BILPUC  ALL  RD  RD
+(SPL         :  56) SFTP.DOC       5 26-Jan-88 03:36 -- protection ALL  RD RUN
+                           should be 10-Dec-86 22:55 GANGIV  ALL  RD  RD
+(SPL         :  56) FSH032.FSH     1 09-Jan-89 16:50 -- extra not on master
+(SPL         :  56) MAP.DOC        2 14-Nov-87 00:37 -- protection ALL  RD RUN
+                           should be 03-Apr-86 12:50 GOXCUT  ALL  RD  RD
+(SPL         :  56) SIZES.SAV     16 28-Oct-85 11:38 -- extra not on master
+(SPL         :  56) PRDBAS.DMD     2 27-May-86 14:40 -- extra not on master
+(SPL         :  56) PRDBAS.DMS    57 27-May-86 14:41 -- extra not on master
+(SPL         :  56) TURNUP.DOC     3 25-Apr-86 18:43 -- protection ALL  RD RUN
+                           should be 25-Apr-86 18:40 YANFUS  ALL  RD  RD
+(SPL         :  56) PASS.MEM       2 12-Feb-87 00:51 -- protection ALL  RD RUN
+                           should be 12-Feb-87 02:49 JIKJUT  ALL  RD  RD
+(SPL         :  56) SNARF.DOC      2 12-Feb-87 00:53 -- protection ALL  RD RUN
+                           should be 09-Dec-83 22:35 GOGRAQ  ALL  RD  RD
+(SPL         :  56) FSH033.FSH     1 09-Jan-89 16:50 -- extra not on master
+(SPL         :  56) SNARF.MAC      3 28-Mar-85 01:01 -- protection ALL  RD RUN
+                           should be 09-Dec-83 22:36 GECWOR  ALL  RD  RD
+(SPL         :  56) FICHE.SAV     21 03-Nov-82 00:35 -- bad checksum QAMTIL
+                           should be 10-Sep-84 17:15 BIHBAD  ALL  RD RUN
+(SPL         :  56) FICHE.DOC      3 03-Nov-82 00:35 -- bad checksum VIVZUY
+                           should be 12-Dec-82 00:07 BEVTUM  ALL  RD  RD
+(SPL         :  56) GENINF.MEM     4 12-Feb-87 00:38 -- protection ALL  RD RUN
+                           should be 12-Feb-87 02:41 YAQBOW  ALL  RD  RD
+(SPL         :  56) LINKER.MEM     2 12-Feb-87 00:39 -- protection ALL  RD RUN
+                           should be 18-Sep-80 13:00 GERJOD  ALL  RD  RD
+(SPL         :  56) MAIL.MEM       2 12-Feb-87 00:45 -- protection ALL  RD RUN
+                           should be 12-Feb-87 02:45 JEZSAW  ALL  RD  RD
+(SPL         :  56) MAKLIB.DOC     6 12-Feb-87 00:46 -- protection ALL  RD RUN
+                           should be 12-Feb-87 02:45 GARZIN  ALL  RD  RD
+(SPL         :  56) FSH034.FSH     1 09-Jan-89 16:51 -- extra not on master
+(SPL         :  56) LINKER.DOC     2 14-Nov-87 00:25 -- protection ALL  RD RUN
+                           should be 03-Apr-86 12:52 DUCPAW  ALL  RD  RD
+(SPL         :  56) MAKLIB.HLP     2 14-Nov-87 00:35 -- protection ALL  RD RUN
+                           should be 18-Apr-85 02:21 DAQYEZ  ALL  RD  RD
+(SPL         :  56) WHO.DOC        2 14-Nov-87 00:40 -- protection ALL  RD RUN
+                           should be 03-Apr-86 12:50 POVVIX  ALL  RD  RD
+(SPL         :  56) LINKER.SAI     4 28-Mar-85 01:43 -- bad checksum HERFEQ
+                           should be 06-Feb-81 22:27 DIPYIW  ALL  RD  RD
+(SPL         :  56) PAGE.SAV      17 06-Jan-83 16:32 -- bad checksum SELZOX
+                           should be 14-Jan-83 02:23 WECJID  ALL  RD RUN
+(SPL         :  56) WHEN.SAV      13 19-Mar-87 15:42 -- bad license  40010
+                           should be 19-Mar-87 17:06 HABWAD  ALL  RD RUN
+(SPL         :  56) RECORD.SAV     3 19-Nov-86 01:05 -- bad checksum WILMIS
+                           should be 20-Nov-86 02:25 TOCRAW  ALL  RD RUN
+(SPL         :  56) CTEST.MEM      2 12-Feb-87 00:25 -- protection ALL  RD RUN
+                           should be 12-Feb-87 02:33 PUMLIJ  ALL  RD  RD
+(SPL         :  56) GLOB.DOC       5 12-Feb-87 00:38 -- protection ALL  RD RUN
+                           should be 12-Feb-87 02:41 NUXTOP  ALL  RD  RD
+(SPL         :  56) MONNOT.DOC    12 12-Feb-87 00:50 -- protection ALL  RD RUN
+                           should be 12-Feb-87 02:48 ZEWNOH  ALL  RD  RD
+(SPL         :  56) PRUNE.DOC      5 12-Feb-87 00:52 -- protection ALL  RD RUN
+                           should be 12-Feb-87 02:49 QARJEG  ALL  RD  RD
+(SPL         :  56) RECORD.DOC     2 29-May-87 23:09 -- protection ALL  RD RUN
+                           should be 29-May-87 23:09 ZESYED  ALL  RD  RD
+(SPL         :  56) DIRIT.MEM      2 19-Jan-83 13:46 -- protection ALL  RD RUN
+                           should be 19-Jan-83 13:46 FINYOY  ALL  RD  RD
+(SPL         :  56) GLOB.HLP       2 14-Nov-87 00:25 -- protection ALL  RD RUN
+                           should be 17-Apr-85 16:31 YUYWOD  ALL  RD  RD
+(SPL         :  56) PRUNE.DAT      2 27-May-86 14:40 -- bad checksum VOSKIZ
+                           should be 29-Dec-82 04:29 DUWDOS  ALL  RD  RD
+
+End of SAIL execution
+.rdist SPPARC.RDI=(SPPARCH)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist SPPOPE.RDI=(SPPOPER)/check/nomissing/host:56
+Master host: 33
+175 files on master system.
+Slave hosts: 56
+Checking host 56
+(SPPOPER     :  56) RPG.INI        2 22-May-86 17:29 -- bad checksum NAKTIP
+                           should be 09-May-86 09:47 WAQLAT  ALL  RD  NO
+(SPPOPER     :  56) ACCESS.MSG     2 23-May-86 17:05 -- bad checksum JOXWEP
+                           should be 01-Feb-88 17:46 RASZOC  ALL  RD  NO
+(SPPOPER     :  56) RECFIX.REL     4 01-Feb-82 16:09 -- extra not on master
+(SPPOPER     :  56) SPNODE.SAV    17 24-Aug-81 14:28 -- protection ALL  RD RUN
+                           should be 30-Apr-86 11:38 ZAVLIG  ALL  RD  NO
+(SPPOPER     :  56) SPNODE.SAV    17 24-Aug-81 14:28 -- bad license   2012
+                           should be 30-Apr-86 11:38 ZAVLIG  ALL  RD  NO
+(SPPOPER     :  56) CSPOOL.SAV     9 01-Dec-80 14:42 -- bad checksum HUKXIK
+                           should be 12-Dec-82 21:06 MEDGAW  ALL RUN RUN      2
+(SPPOPER     :  56) RPGINI.CTL     2 11-Dec-85 16:07 -- bad checksum YUTKEP
+                           should be 09-May-86 09:44 JENGEJ  ALL  RD  NO
+(SPPOPER     :  56) SPLMNT.HLD     3 15-Jun-83 09:09 -- extra not on master
+(SPPOPER     :  56) SPOOL.XXX     24 25-Aug-83 09:30 -- extra not on master
+(SPPOPER     :  56) PEAK.INI       2 22-May-86 17:29 -- bad checksum DIPDON
+                           should be 22-May-86 17:23 TOJDIR  ALL  RD  NO
+(SPPOPER     :  56) PRINTR.BAK     2 22-Sep-87 11:21 -- bad checksum FEWXAF
+                           should be 22-Sep-87 11:02 QETSER  ALL  RD  NO
+(SPPOPER     :  56) PRINTR.WHR     2 22-Sep-87 11:37 -- bad checksum TEPTUY
+                           should be 22-Sep-87 11:03 JEBWET  ALL  RD  NO
+(SPPOPER     :  56) Y              2 16-Aug-82 15:45 -- bad checksum DAFSIJ
+                           should be 09-Apr-86 22:36 GUBZEP  ALL  RD  NO
+(SPPOPER     :  56) NODPRI         9 10-Jan-86 15:52 -- bad checksum WIMSIK
+                           should be 15-Jul-87 16:03 PETDEW  ALL  RD  NO
+(SPPOPER     :  56) MAIL.BOX       2 29-May-87 12:14 -- bad checksum XAZNEB
+                           should be 03-Apr-87 16:10 XIQYOD  ALL  RD  NO
+(SPPOPER     :  56) MAIL           1 29-Sep-87 13:09 -- bad checksum VAVVAV
+                           should be 11-Jan-88 15:38 KUZWUY  ALL  RD  NO
+(SPPOPER     :  56) SPFIX.SAV     52 05-May-86 11:29 -- bad license  62002
+                           should be 05-May-86 10:47 RULZUY  ALL  RD  NO  60002
+(SPPOPER     :  56) DIRIT.INI      2 18-Nov-85 13:15 -- bad checksum XAJPIS
+                           should be 03-Mar-87 11:02 VECJAD  ALL  RD  NO
+
+End of SAIL execution
+.rdist SPTBAQ.RDI=(SPTBAQA)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist SPTBAR.RDI=(SPTBARK)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist SPUNKD.RDI=(SPUNKDEV)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist SPUNKT.RDI=(SPUNKTEST)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist SUBMIT.RDI=(SUBMIT)/check/nomissing/host:56
+Master host: 33
+257 files on master system.
+Slave hosts: 56
+Checking host 56
+(SUBMIT      :  56) EXECX.SAV     62 23-Sep-87 02:12 -- bad license   2000
+                           should be 22-Sep-87 22:18 CIDKUP  ALL  RD  NO
+(SUBMIT      :  56) XEXEC.SAV     51 23-Sep-87 02:24 -- bad license   2000
+                           should be 22-Sep-87 22:30 TOHFUZ  ALL  RD  NO
+(SUBMIT      :  56) 910402.JQL     3 01-Apr-91 16:00 -- bad checksum PIMHAN
+                           should be 01-Apr-91 16:00 XIRGUZ  ALL  RD  NO
+(SUBMIT      :  56) 910409.JQL     3 08-Apr-91 17:00 -- bad checksum TUYQEQ
+                           should be 08-Apr-91 17:00 DUTCAQ  ALL  RD  NO
+(SUBMIT      :  56) 910411.JQL     3 10-Apr-91 17:00 -- bad checksum FEGFOZ
+                           should be 10-Apr-91 17:00 TERZAZ  ALL  RD  NO
+(SUBMIT      :  56) 910418.JQL     3 17-Apr-91 17:00 -- bad checksum DAQHEH
+                           should be 17-Apr-91 17:00 TEYPOF  ALL  RD  NO
+(SUBMIT      :  56) 910420.JQL     3 19-Apr-91 17:00 -- bad checksum HUVSIY
+                           should be 19-Apr-91 17:00 WOTDOZ  ALL  RD  NO
+(SUBMIT      :  56) 910427.JQL     3 26-Apr-91 17:00 -- bad checksum WOCDEJ
+                           should be 26-Apr-91 17:00 XINLAW  ALL  RD  NO
+(SUBMIT      :  56) 910501.JQL     3 30-Apr-91 17:00 -- bad checksum VOKSAN
+                           should be 30-Apr-91 17:00 HUMZEV  ALL  RD  NO
+(SUBMIT      :  56) 910508.JQL     3 07-May-91 17:00 -- bad checksum YORMEF
+                           should be 07-May-91 17:00 MUBPUD  ALL  RD  NO
+(SUBMIT      :  56) 910510.JQL     3 09-May-91 17:00 -- bad checksum HAVLAG
+                           should be 09-May-91 17:00 DOBQUF  ALL  RD  NO
+(SUBMIT      :  56) 910517.JQL     3 16-May-91 17:00 -- bad checksum XACMEM
+                           should be 16-May-91 17:00 ROBZIS  ALL  RD  NO
+(SUBMIT      :  56) 910526.JQL     2 25-May-91 17:00 -- bad checksum SOVKOT
+                           should be 25-May-91 17:00 GIYDOT  ALL  RD  NO
+(SUBMIT      :  56) 910607.JQL     3 06-Jun-91 17:00 -- bad checksum FIHDOK
+                           should be 06-Jun-91 17:00 REKYIM  ALL  RD  NO
+(SUBMIT      :  56) 910616.JQL     3 15-Jun-91 17:00 -- bad checksum VENDOB
+                           should be 15-Jun-91 17:00 QUJJEX  ALL  RD  NO
+(SUBMIT      :  56) 910625.JQL     2 24-Jun-91 17:00 -- bad checksum TUSWUH
+                           should be 24-Jun-91 17:00 XUGPEX  ALL  RD  NO
+(SUBMIT      :  56) 910706.JQL     2 05-Jul-91 17:00 -- bad checksum FIJPER
+                           should be 05-Jul-91 17:00 WAXDIB  ALL  RD  NO
+(SUBMIT      :  56) 910715.JQL     2 14-Jul-91 17:00 -- bad checksum LEGLOM
+                           should be 14-Jul-91 17:00 MOFYAD  ALL  RD  NO
+(SUBMIT      :  56) 910724.JQL     2 23-Jul-91 17:00 -- bad checksum QUHROM
+                           should be 23-Jul-91 17:00 XADWUD  ALL  RD  NO
+(SUBMIT      :  56) 910805.JQL     2 04-Aug-91 17:00 -- bad checksum LOZVUW
+                           should be 04-Aug-91 17:00 FOVHEC  ALL  RD  NO
+(SUBMIT      :  56) 910814.JQL     2 13-Aug-91 17:00 -- bad checksum JAPJOK
+                           should be 13-Aug-91 17:00 DOFYOQ  ALL  RD  NO
+(SUBMIT      :  56) 910823.JQL     2 22-Aug-91 17:00 -- bad checksum WAHZIQ
+                           should be 22-Aug-91 17:00 CEGNOH  ALL  RD  NO
+(SUBMIT      :  56) 910904.JQL     2 03-Sep-91 17:00 -- bad checksum KALXET
+                           should be 03-Sep-91 17:00 GEZYIC  ALL  RD  NO
+(SUBMIT      :  56) JQUEUE.INI     7 18-Nov-86 22:20 -- bad checksum NEYNIZ
+                           should be 02-Jun-87 17:31 MAMDUG  ALL  RD  NO
+(SUBMIT      :  56) 910403.JQL     3 02-Apr-91 16:00 -- bad checksum VORFOG
+                           should be 02-Apr-91 16:00 PETRAM  ALL  RD  NO
+(SUBMIT      :  56) 910412.JQL     3 11-Apr-91 17:00 -- bad checksum BOBZUD
+                           should be 11-Apr-91 17:00 SAJGID  ALL  RD  NO
+(SUBMIT      :  56) 910419.JQL     3 18-Apr-91 17:00 -- bad checksum ZAXWIY
+                           should be 18-Apr-91 17:00 ZERZAG  ALL  RD  NO
+(SUBMIT      :  56) 910421.JQL     3 20-Apr-91 17:00 -- bad checksum BASJAY
+                           should be 20-Apr-91 17:00 BICSUJ  ALL  RD  NO
+(SUBMIT      :  56) 910428.JQL     3 27-Apr-91 17:00 -- bad checksum CORWOV
+                           should be 27-Apr-91 17:00 YUPKEN  ALL  RD  NO
+(SUBMIT      :  56) 910430.JQL     3 29-Apr-91 17:00 -- bad checksum HILWOT
+                           should be 29-Apr-91 17:00 YIGLON  ALL  RD  NO
+(SUBMIT      :  56) 910502.JQL     3 01-May-91 17:00 -- bad checksum YEMKIM
+                           should be 01-May-91 17:00 NAZREC  ALL  RD  NO
+(SUBMIT      :  56) 910509.JQL     3 08-May-91 17:00 -- bad checksum MOXSUB
+                           should be 08-May-91 17:00 KUXPOX  ALL  RD  NO
+(SUBMIT      :  56) 910511.JQL     3 10-May-91 17:00 -- bad checksum BEPMIL
+                           should be 10-May-91 17:00 ZULYEL  ALL  RD  NO
+(SUBMIT      :  56) 910518.JQL     3 17-May-91 17:00 -- bad checksum CICQOY
+                           should be 17-May-91 17:00 TUDWUD  ALL  RD  NO
+(SUBMIT      :  56) 910520.JQL     3 19-May-91 17:00 -- bad checksum HADLOV
+                           should be 19-May-91 17:00 JAZJIQ  ALL  RD  NO
+(SUBMIT      :  56) 910527.JQL     2 26-May-91 17:00 -- bad checksum YAQHEX
+                           should be 26-May-91 17:00 XAFFIJ  ALL  RD  NO
+(SUBMIT      :  56) 910601.JQL     2 31-May-91 17:00 -- bad checksum PASLEM
+                           should be 31-May-91 17:00 CIYBEW  ALL  RD  NO
+(SUBMIT      :  56) 910608.JQL     3 07-Jun-91 17:00 -- bad checksum MOQWOJ
+                           should be 07-Jun-91 17:00 TEKHEC  ALL  RD  NO
+(SUBMIT      :  56) 910610.JQL     3 09-Jun-91 17:00 -- bad checksum LECDUD
+                           should be 09-Jun-91 17:00 GEDROJ  ALL  RD  NO
+(SUBMIT      :  56) 910617.JQL     3 16-Jun-91 17:00 -- bad checksum COWREM
+                           should be 16-Jun-91 17:00 LESCAJ  ALL  RD  NO
+(SUBMIT      :  56) 910626.JQL     2 25-Jun-91 17:00 -- bad checksum GUPYAW
+                           should be 25-Jun-91 17:00 KOSVAL  ALL  RD  NO
+(SUBMIT      :  56) 910707.JQL     2 06-Jul-91 17:00 -- bad checksum YIQZIN
+                           should be 06-Jul-91 17:00 RIGFUZ  ALL  RD  NO
+(SUBMIT      :  56) 910716.JQL     2 15-Jul-91 17:00 -- bad checksum SAHYAQ
+                           should be 15-Jul-91 17:00 ZEYQES  ALL  RD  NO
+(SUBMIT      :  56) 910725.JQL     2 24-Jul-91 17:00 -- bad checksum QAWDIR
+                           should be 24-Jul-91 17:00 TIRCEX  ALL  RD  NO
+(SUBMIT      :  56) 910806.JQL     2 05-Aug-91 17:00 -- bad checksum ZEMLIX
+                           should be 05-Aug-91 17:00 BODTUH  ALL  RD  NO
+(SUBMIT      :  56) 910815.JQL     2 14-Aug-91 17:00 -- bad checksum NAZSIM
+                           should be 14-Aug-91 17:00 RIVXIX  ALL  RD  NO
+(SUBMIT      :  56) 910824.JQL     2 23-Aug-91 17:00 -- bad checksum HUTTIT
+                           should be 23-Aug-91 17:00 TUKREW  ALL  RD  NO
+(SUBMIT      :  56) 910905.JQL     2 04-Sep-91 17:00 -- bad checksum JEYZUD
+                           should be 04-Sep-91 17:00 XITLOB  ALL  RD  NO
+(SUBMIT      :  56) LOGON.SHR     13 03-Dec-86 18:44 -- extra not on master
+(SUBMIT      :  56) 910404.JQL     3 03-Apr-91 16:00 -- bad checksum RISBIR
+                           should be 03-Apr-91 16:00 QOSXIC  ALL  RD  NO
+(SUBMIT      :  56) 910413.JQL     3 12-Apr-91 17:00 -- bad checksum QORCUW
+                           should be 12-Apr-91 17:00 XEWSEW  ALL  RD  NO
+(SUBMIT      :  56) 910422.JQL     3 21-Apr-91 17:00 -- bad checksum ROYFUG
+                           should be 21-Apr-91 17:00 SOCTEN  ALL  RD  NO
+(SUBMIT      :  56) 910429.JQL     3 28-Apr-91 17:00 -- bad checksum CUSPUX
+                           should be 28-Apr-91 17:00 FIVTIC  ALL  RD  NO
+(SUBMIT      :  56) 910503.JQL     3 02-May-91 17:00 -- bad checksum WUWVIL
+                           should be 02-May-91 17:00 VOHWAZ  ALL  RD  NO
+(SUBMIT      :  56) 910512.JQL     3 11-May-91 17:00 -- bad checksum FORWUV
+                           should be 11-May-91 17:00 BACPIC  ALL  RD  NO
+(SUBMIT      :  56) 910519.JQL     3 18-May-91 17:00 -- bad checksum ZOZXIW
+                           should be 18-May-91 17:00 TOZRAB  ALL  RD  NO
+(SUBMIT      :  56) 910521.JQL     3 20-May-91 17:00 -- bad checksum CACZEH
+                           should be 20-May-91 17:00 SONLOM  ALL  RD  NO
+(SUBMIT      :  56) 910528.JQL     2 27-May-91 17:00 -- bad checksum WUBTOJ
+                           should be 27-May-91 17:00 BOCREY  ALL  RD  NO
+(SUBMIT      :  56) 910530.JQL     2 29-May-91 17:00 -- bad checksum TASHEJ
+                           should be 29-May-91 17:00 POBRUW  ALL  RD  NO
+(SUBMIT      :  56) 910602.JQL     2 01-Jun-91 17:00 -- bad checksum BIYKAK
+                           should be 01-Jun-91 17:00 TENXOF  ALL  RD  NO
+(SUBMIT      :  56) 910609.JQL     3 08-Jun-91 17:00 -- bad checksum ZEDBOJ
+                           should be 08-Jun-91 17:00 BEMJOT  ALL  RD  NO
+(SUBMIT      :  56) 910611.JQL     2 10-Jun-91 17:00 -- bad checksum HOZNOY
+                           should be 10-Jun-91 17:00 BUXSUR  ALL  RD  NO
+(SUBMIT      :  56) 910618.JQL     2 17-Jun-91 17:00 -- bad checksum PUCLAH
+                           should be 17-Jun-91 17:00 LUMCUB  ALL  RD  NO
+(SUBMIT      :  56) 910620.JQL     2 19-Jun-91 17:00 -- bad checksum JIGBEB
+                           should be 19-Jun-91 17:00 ZIXVEZ  ALL  RD  NO
+(SUBMIT      :  56) 910627.JQL     2 26-Jun-91 17:00 -- bad checksum FIMDOK
+                           should be 26-Jun-91 17:00 YOMTAX  ALL  RD  NO
+(SUBMIT      :  56) 910701.JQL     3 30-Jun-91 17:00 -- bad checksum NUVNEG
+                           should be 30-Jun-91 17:00 DODWAK  ALL  RD  NO
+(SUBMIT      :  56) 910708.JQL     2 07-Jul-91 17:00 -- bad checksum GOSFAK
+                           should be 07-Jul-91 17:00 BUBDOY  ALL  RD  NO
+(SUBMIT      :  56) 910710.JQL     3 09-Jul-91 17:00 -- bad checksum JIQXAJ
+                           should be 09-Jul-91 17:00 RITJOX  ALL  RD  NO
+(SUBMIT      :  56) 910717.JQL     2 16-Jul-91 17:00 -- bad checksum TOQMIJ
+                           should be 16-Jul-91 17:00 JUCKUN  ALL  RD  NO
+(SUBMIT      :  56) 910726.JQL     2 25-Jul-91 17:00 -- bad checksum JUVZEK
+                           should be 25-Jul-91 17:00 WODCOJ  ALL  RD  NO
+(SUBMIT      :  56) 910807.JQL     2 06-Aug-91 17:00 -- bad checksum HUWZUH
+                           should be 06-Aug-91 17:00 ZEDVOJ  ALL  RD  NO
+(SUBMIT      :  56) 910816.JQL     2 15-Aug-91 17:00 -- bad checksum GUJKEL
+                           should be 15-Aug-91 17:00 BATDOP  ALL  RD  NO
+(SUBMIT      :  56) 910825.JQL     2 24-Aug-91 17:00 -- bad checksum PAVVUR
+                           should be 24-Aug-91 17:00 JEYDUS  ALL  RD  NO
+(SUBMIT      :  56) 910405.JQL     3 04-Apr-91 16:00 -- bad checksum HADNIP
+                           should be 04-Apr-91 16:00 HURDUY  ALL  RD  NO
+(SUBMIT      :  56) 910414.JQL     3 13-Apr-91 17:00 -- bad checksum VODYEY
+                           should be 13-Apr-91 17:00 MAPFUR  ALL  RD  NO
+(SUBMIT      :  56) 910423.JQL     3 22-Apr-91 17:00 -- bad checksum VUWZEL
+                           should be 22-Apr-91 17:00 MAZQOM  ALL  RD  NO
+(SUBMIT      :  56) 910504.JQL     3 03-May-91 17:00 -- bad checksum RAFNEY
+                           should be 03-May-91 17:00 TUJTEK  ALL  RD  NO
+(SUBMIT      :  56) 910513.JQL     3 12-May-91 17:00 -- bad checksum GAXJOZ
+                           should be 12-May-91 17:00 COGFEC  ALL  RD  NO
+(SUBMIT      :  56) 910522.JQL     3 21-May-91 17:00 -- bad checksum MOXQOP
+                           should be 21-May-91 17:00 BULTES  ALL  RD  NO
+(SUBMIT      :  56) 910529.JQL     2 28-May-91 17:00 -- bad checksum WUPBOB
+                           should be 28-May-91 17:00 SOKPED  ALL  RD  NO
+(SUBMIT      :  56) 910531.JQL     2 30-May-91 17:00 -- bad checksum NAQVIZ
+                           should be 30-May-91 17:00 BINVOF  ALL  RD  NO
+(SUBMIT      :  56) 910603.JQL     2 02-Jun-91 17:00 -- bad checksum WIXQAG
+                           should be 02-Jun-91 17:00 VAPFUX  ALL  RD  NO
+(SUBMIT      :  56) 910612.JQL     2 11-Jun-91 17:00 -- bad checksum DEKQIZ
+                           should be 11-Jun-91 17:00 QICYEC  ALL  RD  NO
+(SUBMIT      :  56) 910619.JQL     3 18-Jun-91 17:00 -- bad checksum LEPWUD
+                           should be 18-Jun-91 17:00 ROGVEN  ALL  RD  NO
+(SUBMIT      :  56) 910621.JQL     3 20-Jun-91 17:00 -- bad checksum YEVGUB
+                           should be 20-Jun-91 17:00 SIFDAH  ALL  RD  NO
+(SUBMIT      :  56) 910628.JQL     2 27-Jun-91 17:00 -- bad checksum NAFPOL
+                           should be 27-Jun-91 17:00 MEPRUG  ALL  RD  NO
+(SUBMIT      :  56) 910630.JQL     2 29-Jun-91 17:00 -- bad checksum DIMJUM
+                           should be 29-Jun-91 17:00 QIDFUT  ALL  RD  NO
+(SUBMIT      :  56) 910702.JQL     2 01-Jul-91 17:00 -- bad checksum RAMKEY
+                           should be 01-Jul-91 17:00 TOQDIM  ALL  RD  NO
+(SUBMIT      :  56) 910709.JQL     2 08-Jul-91 17:00 -- bad checksum JUTBUF
+                           should be 08-Jul-91 17:00 MOCQAZ  ALL  RD  NO
+(SUBMIT      :  56) 910711.JQL     2 10-Jul-91 17:00 -- bad checksum ZOMRER
+                           should be 10-Jul-91 17:00 QOHBAV  ALL  RD  NO
+(SUBMIT      :  56) 910718.JQL     2 17-Jul-91 17:00 -- bad checksum BUXPAZ
+                           should be 17-Jul-91 17:00 CIYVUD  ALL  RD  NO
+(SUBMIT      :  56) 910720.JQL     2 19-Jul-91 17:00 -- bad checksum MUWTIS
+                           should be 19-Jul-91 17:00 XETTEF  ALL  RD  NO
+(SUBMIT      :  56) 910727.JQL     2 26-Jul-91 17:00 -- bad checksum BUYGOD
+                           should be 26-Jul-91 17:00 PIXZUC  ALL  RD  NO
+(SUBMIT      :  56) 910801.JQL     2 31-Jul-91 17:00 -- bad checksum KUTTOM
+                           should be 31-Jul-91 17:00 YITLOB  ALL  RD  NO
+(SUBMIT      :  56) 910808.JQL     2 07-Aug-91 17:00 -- bad checksum VOFFIS
+                           should be 07-Aug-91 17:00 FAVMAY  ALL  RD  NO
+(SUBMIT      :  56) 910810.JQL     2 09-Aug-91 17:00 -- bad checksum MIRQOD
+                           should be 09-Aug-91 17:00 DIMLIR  ALL  RD  NO
+(SUBMIT      :  56) 910817.JQL     2 16-Aug-91 17:00 -- bad checksum NIVGIQ
+                           should be 16-Aug-91 17:00 DEQCAV  ALL  RD  NO
+(SUBMIT      :  56) 910826.JQL     2 25-Aug-91 17:00 -- bad checksum KAPFIR
+                           should be 25-Aug-91 17:00 PAVNAV  ALL  RD  NO
+(SUBMIT      :  56) PRPCHG.DOC     4 15-Nov-86 19:33 -- bad checksum ZOFCEV
+                           should be 17-Feb-87 12:55 ZAFKOB  ALL  RD  NO
+(SUBMIT      :  56) PERP.LOG       2 18-Nov-86 22:12 -- bad checksum TEBKAG
+                           should be 15-Jul-87 14:52 CEYYAN  ALL  RD  NO
+(SUBMIT      :  56) 910406.JQL     3 05-Apr-91 16:00 -- bad checksum BOMZIP
+                           should be 05-Apr-91 16:00 WEQTIR  ALL  RD  NO
+(SUBMIT      :  56) 910415.JQL     3 14-Apr-91 17:00 -- bad checksum KIGTOB
+                           should be 14-Apr-91 17:00 QOQTIM  ALL  RD  NO
+(SUBMIT      :  56) 910424.JQL     3 23-Apr-91 17:00 -- bad checksum HETRIC
+                           should be 23-Apr-91 17:00 TIFFOC  ALL  RD  NO
+(SUBMIT      :  56) 910505.JQL     3 04-May-91 17:00 -- bad checksum ROCVOJ
+                           should be 04-May-91 17:00 LUKDUB  ALL  RD  NO
+(SUBMIT      :  56) 910514.JQL     3 13-May-91 17:00 -- bad checksum LOHDIF
+                           should be 13-May-91 17:00 VIQGIM  ALL  RD  NO
+(SUBMIT      :  56) 910523.JQL     3 22-May-91 17:00 -- bad checksum TIVBOM
+                           should be 22-May-91 17:00 FAKBAY  ALL  RD  NO
+(SUBMIT      :  56) 910604.JQL     3 03-Jun-91 17:00 -- bad checksum LUDKEJ
+                           should be 03-Jun-91 17:00 FOJDUW  ALL  RD  NO
+(SUBMIT      :  56) 910613.JQL     2 12-Jun-91 17:00 -- bad checksum RESLIF
+                           should be 12-Jun-91 17:00 MEBDIQ  ALL  RD  NO
+(SUBMIT      :  56) 910622.JQL     2 21-Jun-91 17:00 -- bad checksum CIJXUF
+                           should be 21-Jun-91 17:00 YAJKAK  ALL  RD  NO
+(SUBMIT      :  56) 910629.JQL     2 28-Jun-91 17:00 -- bad checksum DAZRAT
+                           should be 28-Jun-91 17:00 COFGEW  ALL  RD  NO
+(SUBMIT      :  56) 910703.JQL     2 02-Jul-91 17:00 -- bad checksum VUDVUX
+                           should be 02-Jul-91 17:00 SIVNAH  ALL  RD  NO
+(SUBMIT      :  56) 910712.JQL     3 11-Jul-91 17:00 -- bad checksum VEDDOB
+                           should be 11-Jul-91 17:00 VUFFEF  ALL  RD  NO
+(SUBMIT      :  56) 910719.JQL     2 18-Jul-91 17:00 -- bad checksum QAYLIH
+                           should be 18-Jul-91 17:00 PODTUB  ALL  RD  NO
+(SUBMIT      :  56) 910721.JQL     2 20-Jul-91 17:00 -- bad checksum WIVKUJ
+                           should be 20-Jul-91 17:00 CECNOQ  ALL  RD  NO
+(SUBMIT      :  56) 910728.JQL     2 27-Jul-91 17:00 -- bad checksum HALNEQ
+                           should be 27-Jul-91 17:00 YUWFEM  ALL  RD  NO
+(SUBMIT      :  56) 910730.JQL     2 29-Jul-91 17:00 -- bad checksum ZOZKEB
+                           should be 29-Jul-91 17:00 PUBDAT  ALL  RD  NO
+(SUBMIT      :  56) 910802.JQL     2 01-Aug-91 17:00 -- bad checksum KUXQUD
+                           should be 01-Aug-91 17:00 NEQQIN  ALL  RD  NO
+(SUBMIT      :  56) 910809.JQL     2 08-Aug-91 17:00 -- bad checksum SUWBUP
+                           should be 08-Aug-91 17:00 WAPHAF  ALL  RD  NO
+(SUBMIT      :  56) 910811.JQL     2 10-Aug-91 17:00 -- bad checksum JEVNEG
+                           should be 10-Aug-91 17:00 QUYPUZ  ALL  RD  NO
+(SUBMIT      :  56) 910818.JQL     2 17-Aug-91 17:00 -- bad checksum WOLSOD
+                           should be 17-Aug-91 17:00 WEBSIV  ALL  RD  NO
+(SUBMIT      :  56) 910820.JQL     2 19-Aug-91 17:00 -- bad checksum GAZSEY
+                           should be 19-Aug-91 17:00 DEBHEV  ALL  RD  NO
+(SUBMIT      :  56) 910827.JQL     2 26-Aug-91 17:00 -- bad checksum XEQJIR
+                           should be 26-Aug-91 17:00 QIQQAJ  ALL  RD  NO
+(SUBMIT      :  56) 910901.JQL     2 31-Aug-91 18:50 -- bad checksum NOLGIY
+                           should be 31-Aug-91 17:00 FOPNIH  ALL  RD  NO
+(SUBMIT      :  56) PER.LOG        2 23-Oct-85 14:47 -- bad checksum BOFDAK
+                           should be 23-Oct-85 13:43 BEYZAY  ALL  RD  NO
+(SUBMIT      :  56) 910407.JQL     3 06-Apr-91 16:00 -- bad checksum YIKHEF
+                           should be 06-Apr-91 16:00 ZURNOZ  ALL  RD  NO
+(SUBMIT      :  56) 910416.JQL     3 15-Apr-91 17:00 -- bad checksum GIBXOF
+                           should be 15-Apr-91 17:00 FUCBEC  ALL  RD  NO
+(SUBMIT      :  56) 910425.JQL     3 24-Apr-91 17:00 -- bad checksum WEZJEJ
+                           should be 24-Apr-91 17:00 YOPCOK  ALL  RD  NO
+(SUBMIT      :  56) 910506.JQL     3 05-May-91 17:00 -- bad checksum TOQHAF
+                           should be 05-May-91 17:00 PUKPUL  ALL  RD  NO
+(SUBMIT      :  56) 910515.JQL     3 14-May-91 17:00 -- bad checksum LEMGIL
+                           should be 14-May-91 17:00 ZONKOC  ALL  RD  NO
+(SUBMIT      :  56) 910524.JQL     3 23-May-91 17:00 -- bad checksum VICRIZ
+                           should be 23-May-91 17:00 NEFXUX  ALL  RD  NO
+(SUBMIT      :  56) 910605.JQL     3 04-Jun-91 17:00 -- bad checksum JIRXIP
+                           should be 04-Jun-91 17:00 DOKJEW  ALL  RD  NO
+(SUBMIT      :  56) 910614.JQL     2 13-Jun-91 17:00 -- bad checksum TOCLAM
+                           should be 13-Jun-91 17:00 VOYRUQ  ALL  RD  NO
+(SUBMIT      :  56) 910623.JQL     3 22-Jun-91 17:00 -- bad checksum CEDQES
+                           should be 22-Jun-91 17:00 KORFEM  ALL  RD  NO
+(SUBMIT      :  56) 910704.JQL     3 03-Jul-91 17:00 -- bad checksum HIWVAS
+                           should be 03-Jul-91 17:00 NEBPOJ  ALL  RD  NO
+(SUBMIT      :  56) 910713.JQL     2 12-Jul-91 17:00 -- bad checksum WETWUR
+                           should be 12-Jul-91 17:00 KINNOW  ALL  RD  NO
+(SUBMIT      :  56) 910722.JQL     3 21-Jul-91 17:00 -- bad checksum WEMNUW
+                           should be 21-Jul-91 17:00 RULBUY  ALL  RD  NO
+(SUBMIT      :  56) 910729.JQL     2 28-Jul-91 17:00 -- bad checksum COHHEG
+                           should be 28-Jul-91 17:00 QUBZEK  ALL  RD  NO
+(SUBMIT      :  56) 910731.JQL     2 30-Jul-91 17:00 -- bad checksum CASGOR
+                           should be 30-Jul-91 17:00 XAZXUX  ALL  RD  NO
+(SUBMIT      :  56) 910803.JQL     2 02-Aug-91 17:00 -- bad checksum QUCNAM
+                           should be 02-Aug-91 17:00 MIMNOK  ALL  RD  NO
+(SUBMIT      :  56) 910812.JQL     2 11-Aug-91 17:00 -- bad checksum LOKSUZ
+                           should be 11-Aug-91 17:00 HAKTOR  ALL  RD  NO
+(SUBMIT      :  56) 910819.JQL     2 18-Aug-91 17:00 -- bad checksum POCHIJ
+                           should be 18-Aug-91 17:00 SAHYEK  ALL  RD  NO
+(SUBMIT      :  56) 910821.JQL     2 20-Aug-91 17:00 -- bad checksum FIVYUZ
+                           should be 20-Aug-91 17:00 TOBFIP  ALL  RD  NO
+(SUBMIT      :  56) 910828.JQL     2 27-Aug-91 17:00 -- bad checksum SUZGEK
+                           should be 27-Aug-91 17:00 WUZJAL  ALL  RD  NO
+(SUBMIT      :  56) 910830.JQL     2 29-Aug-91 17:00 -- bad checksum CARFOZ
+                           should be 29-Aug-91 17:00 BOLQIN  ALL  RD  NO
+(SUBMIT      :  56) 910902.JQL     2 01-Sep-91 17:00 -- bad checksum BUZLIW
+                           should be 01-Sep-91 17:00 SIPREG  ALL  RD  NO
+(SUBMIT      :  56) SUBMIT.SAV    64 05-May-87 14:59 -- extra not on master
+(SUBMIT      :  56) SUBMIT.DOC    33 18-Dec-86 17:46 -- bad checksum VURJOL
+                           should be 17-Feb-87 12:53 BOKTUF  ALL  RD  NO
+(SUBMIT      :  56) T              2 19-Nov-86 23:02 -- extra not on master
+(SUBMIT      :  56) 910408.JQL     3 07-Apr-91 17:00 -- bad checksum QUPPEY
+                           should be 07-Apr-91 17:00 FAYWUY  ALL  RD  NO
+(SUBMIT      :  56) 910410.JQL     3 09-Apr-91 17:00 -- bad checksum FUQCEV
+                           should be 09-Apr-91 17:00 CEWXUW  ALL  RD  NO
+(SUBMIT      :  56) 910417.JQL     3 16-Apr-91 17:00 -- bad checksum METFOH
+                           should be 16-Apr-91 17:00 JIZFEQ  ALL  RD  NO
+(SUBMIT      :  56) 910426.JQL     3 25-Apr-91 17:00 -- bad checksum SOZZAC
+                           should be 25-Apr-91 17:00 LOBCEN  ALL  RD  NO
+(SUBMIT      :  56) 910507.JQL     3 06-May-91 17:00 -- bad checksum YEQVEX
+                           should be 06-May-91 17:00 LEMZES  ALL  RD  NO
+(SUBMIT      :  56) 910516.JQL     3 15-May-91 17:00 -- bad checksum WARFUB
+                           should be 15-May-91 17:00 GEXDEZ  ALL  RD  NO
+(SUBMIT      :  56) 910525.JQL     2 24-May-91 17:00 -- bad checksum NICQIZ
+                           should be 24-May-91 17:00 XERLOF  ALL  RD  NO
+(SUBMIT      :  56) 910606.JQL     3 05-Jun-91 17:00 -- bad checksum MOGGEM
+                           should be 05-Jun-91 17:00 TELBAM  ALL  RD  NO
+(SUBMIT      :  56) 910615.JQL     2 14-Jun-91 17:00 -- bad checksum POXRET
+                           should be 14-Jun-91 17:00 PAJGOJ  ALL  RD  NO
+(SUBMIT      :  56) 910624.JQL     3 23-Jun-91 17:00 -- bad checksum QIJVUL
+                           should be 23-Jun-91 17:00 ZAWQUX  ALL  RD  NO
+(SUBMIT      :  56) 910705.JQL     2 04-Jul-91 17:00 -- bad checksum XITKUX
+                           should be 04-Jul-91 17:00 CIRHEP  ALL  RD  NO
+(SUBMIT      :  56) 910714.JQL     2 13-Jul-91 17:00 -- bad checksum ZEYVOK
+                           should be 13-Jul-91 17:00 LIRXOG  ALL  RD  NO
+(SUBMIT      :  56) 910723.JQL     2 22-Jul-91 17:00 -- bad checksum KUPVER
+                           should be 22-Jul-91 17:00 LIHJAG  ALL  RD  NO
+(SUBMIT      :  56) 910804.JQL     2 03-Aug-91 17:00 -- bad checksum PIVYIB
+                           should be 03-Aug-91 17:00 KEDCEL  ALL  RD  NO
+(SUBMIT      :  56) 910813.JQL     2 12-Aug-91 17:00 -- bad checksum FUDNEG
+                           should be 12-Aug-91 17:00 SUZLUK  ALL  RD  NO
+(SUBMIT      :  56) 910822.JQL     2 21-Aug-91 17:00 -- bad checksum CEJBIW
+                           should be 21-Aug-91 17:00 VUMSAZ  ALL  RD  NO
+(SUBMIT      :  56) 910829.JQL     2 28-Aug-91 17:00 -- bad checksum GIWQEV
+                           should be 28-Aug-91 17:00 FEJYEV  ALL  RD  NO
+(SUBMIT      :  56) 910831.JQL     2 30-Aug-91 17:00 -- bad checksum VUGRIP
+                           should be 30-Aug-91 17:00 DUXMEH  ALL  RD  NO
+(SUBMIT      :  56) 910903.JQL     2 02-Sep-91 17:00 -- bad checksum MILNOW
+                           should be 02-Sep-91 17:00 SIWLOP  ALL  RD  NO
+
+End of SAIL execution
+.rdist SYSMAI.RDI=(SYSMAINT)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+(SYSMAINT    :  56) RPG.INI        2 30-Mar-89 18:14 -- extra not on master
+(SYSMAINT    :  56) ACCESS.MSG     2 30-Mar-89 18:13 -- extra not on master
+(SYSMAINT    :  56) PEAK.INI       2 22-May-86 17:29 -- extra not on master
+(SYSMAINT    :  56) SWITCH.INI     2 30-Mar-89 18:14 -- extra not on master
+(SYSMAINT    :  56) DIRIT.INI      2 19-Feb-87 16:57 -- extra not on master
+
+End of SAIL execution
+.rdist T10AIL.RDI=(T10AIL)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist TBAFTD.RDI=(TBAFTDEB)/check/nomissing/host:56
+Master host: 33
+1 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist TBAUSP.RDI=(TBAUSPS)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist TNXAIL.RDI=(TNXAIL)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist TSUCOO.RDI=(TSUCOOP)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+(TSUCOOP     :  56) ACCESS.MSG     2 29-Jan-88 17:44 -- extra not on master
+
+End of SAIL execution
+.rdist TXSDOC.RDI=(TXSDOC)/check/nomissing/host:56
+Master host: 33
+63 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist TXSINF.RDI=(TXSINFO)/check/nomissing/host:56
+Master host: 33
+1 files on master system.
+Slave hosts: 56
+Checking host 56
+(TXSINFO     :  56) ACCESS.MSG     2 24-Mar-89 16:23 -- extra not on master
+
+End of SAIL execution
+.rdist TXSSUP.RDI=(TXSSUP)/check/nomissing/host:56
+Master host: 33
+2 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist TXSTES.RDI=(TXSTEST)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+(TXSTEST     :  56) ACCESS.MSG     2 22-Sep-88 00:59 -- extra not on master
+(TXSTEST     :  56) MAIL.FWD       2 14-Dec-88 12:54 -- extra not on master
+
+End of SAIL execution
+.rdist TXSTEX.RDI=(TXSTEXT)/check/nomissing/host:56
+Master host: 33
+1 files on master system.
+Slave hosts: 56
+Checking host 56
+(TXSTEXT     :  56) SWITCH.INI     2 05-May-84 13:57 -- extra not on master
+(TXSTEXT     :  56) MAIL.FWD       2 23-Feb-89 21:38 -- extra not on master
+
+End of SAIL execution
+.rdist TYMAIL.RDI=(TYMAIL)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist TYMGRI.RDI=(TYMGRIPE)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist UORAIL.RDI=(UORAIL)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist VUE.RDI=(VUE)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist WRS.RDI=(WRS)/check/nomissing/host:56
+Master host: 33
+724 files on master system.
+Slave hosts: 56
+Checking host 56
+(WRS         :  56) HACK.SAV       2 03-Sep-80 19:37 -- protection ALL  RD  NO
+                           should be 01-May-78 16:36 CUYLOT  ALL RUN RUN
+(WRS         :  56) REV80A.PUB     2 19-Oct-80 22:52 -- extra not on master
+(WRS         :  56) CTY.SAV       13 01-Apr-81 17:54 -- bad license 
+                           should be 01-Apr-81 01:28 XAFMON  ALL  RD  NO 101000
+(WRS         :  56) PTAPAC.LOG    10 25-Sep-84 18:04 -- extra not on master
+(WRS         :  56) PTAPAJ.LOG     8 30-Sep-84 20:13 -- extra not on master
+(WRS         :  56) PTAPAQ.LOG     2 30-Sep-84 21:07 -- extra not on master
+(WRS         :  56) 0929.LOG       2 01-Oct-84 13:11 -- extra not on master
+(WRS         :  56) XEXEC.SAV     21 12-Oct-84 02:52 -- bad checksum PENROY
+                           should be 11-Jul-85 01:05 JAJDIY  ALL  RD  NO
+(WRS         :  56) PTAPAX.LOG    25 01-Nov-84 19:52 -- extra not on master
+(WRS         :  56) PTAPA_.LOG     2 13-Jan-85 18:09 -- extra not on master
+(WRS         :  56) PTAPB&.LOG     2 13-Apr-85 03:40 -- extra not on master
+(WRS         :  56) D25GAN.RPT    12 11-Nov-85 10:07 -- extra not on master
+(WRS         :  56) POSTEC.LOG     8 12-Nov-85 16:46 -- extra not on master
+(WRS         :  56) XEXEC.CTL      2 28-May-86 16:21 -- extra not on master
+(WRS         :  56) BIRTH2.KI      8 31-Aug-87 22:49 -- extra not on master
+(WRS         :  56) NIBSUM.BAK     5 26-Apr-89 16:10 -- extra not on master
+(WRS         :  56) NIBSUM.CMD     2 26-Apr-89 15:08 -- extra not on master
+(WRS         :  56) NIBSUM.SAI     5 26-Apr-89 17:01 -- bad checksum ZISTOV
+                           should be 26-Apr-89 16:34 MISHIS  ALL  RD  NO
+(WRS         :  56) NIBSUM.SAV    37 26-Apr-89 16:56 -- bad checksum NIHROK
+                           should be 26-Apr-89 16:30 VOYFUP  ALL  RD  NO
+(WRS         :  56) XEXEC.LOG      2 23-Oct-86 12:27 -- extra not on master
+(WRS         :  56) SCAN.LOG       4 13-Nov-90 11:27 -- extra not on master
+(WRS         :  56) 102490.SAT   541 24-Oct-90 17:12 -- extra not on master
+(WRS         :  56) ASCII.SAV     12 03-Sep-80 19:36 -- bad checksum HAPROB
+                           should be 25-May-81 00:17 MIMZIC  ALL RUN RUN
+(WRS         :  56) WARNER.LOG     7 17-Aug-84 13:16 -- extra not on master
+(WRS         :  56) PTAPAD.LOG    47 25-Sep-84 18:09 -- extra not on master
+(WRS         :  56) PTAPAK.LOG     4 30-Sep-84 20:17 -- extra not on master
+(WRS         :  56) PTAPAR.LOG     5 30-Sep-84 21:07 -- extra not on master
+(WRS         :  56) PTAPAY.LOG     4 10-Nov-84 11:41 -- extra not on master
+(WRS         :  56) PTAPB.LOG      2 13-Jan-85 18:09 -- extra not on master
+(WRS         :  56) PTAPB'.LOG     8 08-Oct-85 15:18 -- extra not on master
+(WRS         :  56) D25COS.RPT    12 11-Nov-85 10:06 -- extra not on master
+(WRS         :  56) D25USR.RPT    12 11-Nov-85 10:08 -- extra not on master
+(WRS         :  56) D25GAV.RPT     2 11-Nov-85 10:09 -- extra not on master
+(WRS         :  56) MAILER.SAV    25 17-Jun-86 19:16 -- extra not on master
+(WRS         :  56) ARGS.CMD       2 31-Aug-87 23:48 -- extra not on master
+(WRS         :  56) ARGS.REL       4 31-Aug-87 23:48 -- extra not on master
+(WRS         :  56) ARGS.REQ       2 31-Aug-87 23:48 -- bad checksum TILMIT
+                           should be 24-Oct-84 17:56 CIRCIK  ALL  RD  NO
+(WRS         :  56) ARGS.SAI       3 31-Aug-87 23:48 -- bad checksum CUCGEK
+                           should be 08-Jan-87 18:46 QOXGUK  ALL  RD  NO
+(WRS         :  56) BIRTH3.KI     15 31-Aug-87 22:50 -- extra not on master
+(WRS         :  56) 102590.SAT   534 25-Oct-90 17:33 -- extra not on master
+(WRS         :  56) TVSTRI.NGS     2 05-Jan-82 22:35 -- bad checksum TULNUQ
+                           should be 13-Jul-82 12:56 YICTEY  ALL  RD  NO
+(WRS         :  56) CRASH.MEM      3 17-Oct-80 19:29 -- extra not on master
+(WRS         :  56) K33RT3.MD1     8 20-Jun-84 01:33 -- extra not on master
+(WRS         :  56) PTAP.SAV       3 24-Sep-84 19:38 -- bad checksum QONWOS
+                           should be 21-Sep-84 19:00 CITVIK  ALL  RD  NO 640000
+(WRS         :  56) PTAPAE.LOG     2 30-Sep-84 19:12 -- extra not on master
+(WRS         :  56) PTAPAL.LOG    15 30-Sep-84 20:18 -- extra not on master
+(WRS         :  56) PTAPAS.LOG     2 01-Oct-84 19:20 -- extra not on master
+(WRS         :  56) M33.RPT       27 02-Oct-84 02:18 -- extra not on master
+(WRS         :  56) H56.RPT      235 22-Oct-84 04:11 -- extra not on master
+(WRS         :  56) PTAPAZ.LOG     5 24-Nov-84 22:30 -- extra not on master
+(WRS         :  56) PTAPB!.LOG     2 13-Jan-85 18:09 -- extra not on master
+(WRS         :  56) TVEDIT.SHR    58 24-Jun-82 09:10 -- protection ALL  RD  NO
+                           should be 24-Jun-82 09:08 FERLUK  ALL RUN RUN
+(WRS         :  56) BIRTH4.KI     57 31-Aug-87 23:08 -- extra not on master
+(WRS         :  56) SAMPLE.NIB    79 14-Oct-86 18:41 -- extra not on master
+(WRS         :  56) 102690.SAT   515 26-Oct-90 17:12 -- extra not on master
+(WRS         :  56) LUDLOC.SAV     2 03-Sep-80 19:33 -- protection ALL  RD  NO
+                           should be 10-Feb-79 23:18 HUVNEK  ALL RUN RUN
+(WRS         :  56) HOG.SAV       12 03-Sep-80 19:34 -- bad checksum KAQGIW
+                           should be 21-Nov-78 13:34 YAMFOS  ALL RUN RUN  40000
+(WRS         :  56) READCH.REL     2 04-Sep-81 19:48 -- extra not on master
+(WRS         :  56) RTYFIX.SAV     2 22-Nov-83 12:48 -- protection RUN RUN RUN
+                           should be 22-Nov-83 12:48 VEXMUP  ALL  RD  NO
+(WRS         :  56) RTYFIX.SAV     2 22-Nov-83 12:48 -- bad license 640000
+                           should be 22-Nov-83 12:48 VEXMUP  ALL  RD  NO
+(WRS         :  56) PTAPAF.LOG     4 30-Sep-84 19:21 -- extra not on master
+(WRS         :  56) PTAPAM.LOG    10 30-Sep-84 20:25 -- extra not on master
+(WRS         :  56) PTAPAT.LOG    33 01-Oct-84 19:38 -- extra not on master
+(WRS         :  56) PTAPA[.LOG     3 16-Dec-84 18:42 -- extra not on master
+(WRS         :  56) PTAPB".LOG     4 13-Jan-85 18:10 -- extra not on master
+(WRS         :  56) BIRTH.KI      27 31-Aug-87 22:41 -- extra not on master
+(WRS         :  56) BIRTH.RPT     25 31-Aug-87 22:38 -- extra not on master
+(WRS         :  56) HOMEB.KI      83 31-Aug-87 23:08 -- extra not on master
+(WRS         :  56) HOMEB.RPT     66 01-Sep-87 00:03 -- extra not on master
+(WRS         :  56) KI.CMD         2 31-Aug-87 22:50 -- extra not on master
+(WRS         :  56) KI.SAI         2 01-Sep-87 00:02 -- extra not on master
+(WRS         :  56) KI.SAV         6 01-Sep-87 00:03 -- extra not on master
+(WRS         :  56) 102090.SAT   276 20-Oct-90 17:12 -- extra not on master
+(WRS         :  56) 102790.SAT   292 27-Oct-90 17:43 -- extra not on master
+(WRS         :  56) REMINI.SAV     5 03-Sep-80 19:06 -- protection ALL  RD  NO
+                           should be 28-Feb-79 20:01 CIYRIC  ALL RUN RUN
+(WRS         :  56) CRASUM.SAV    14 22-Apr-81 19:55 -- bad checksum FOGWAB
+                           should be 22-Apr-81 19:47 QIMFEF  ALL  RD  NO
+(WRS         :  56) CRSHID.LOG     2 20-Jun-84 16:58 -- bad checksum YAGBOK
+                           should be 22-Oct-86 14:43 SAZTIT  ALL  RD  NO
+(WRS         :  56) PREAD.MKR      2 22-Oct-84 04:12 -- bad checksum LILYOP
+                           should be 21-Sep-85 03:06 KEPCIK  ALL  RD  NO
+(WRS         :  56) PTAPAG.LOG     2 30-Sep-84 19:24 -- extra not on master
+(WRS         :  56) PTAPAN.LOG    28 30-Sep-84 20:31 -- extra not on master
+(WRS         :  56) PTAPAU.LOG     2 07-Oct-84 20:48 -- extra not on master
+(WRS         :  56) PTAPA\.LOG     2 22-Dec-84 17:30 -- extra not on master
+(WRS         :  56) PTAPB#.LOG     7 29-Jan-85 21:16 -- extra not on master
+(WRS         :  56) FREE.LOG      17 21-Jun-85 13:02 -- bad checksum KEGBIV
+                           should be 23-Jun-87 13:46 MILLUB  ALL  RD  NO
+(WRS         :  56) D25ORG.RPT    35 11-Nov-85 10:04 -- extra not on master
+(WRS         :  56) FREEXX.LOG    28 20-Aug-86 23:49 -- extra not on master
+(WRS         :  56) ARGPAR.REL     5 31-Aug-87 23:49 -- extra not on master
+(WRS         :  56) ARGPAR.SAI     3 31-Aug-87 23:48 -- bad checksum CEXKUS
+                           should be 08-Nov-86 18:45 YEDWEL  ALL  RD  NO
+(WRS         :  56) 102190.SAT   193 21-Oct-90 17:22 -- extra not on master
+(WRS         :  56) 102890.SAT   186 28-Oct-90 17:13 -- extra not on master
+(WRS         :  56) LNTEST.SAV    13 03-Sep-80 19:21 -- bad checksum DUVCUQ
+                           should be 10-Jul-86 03:49 BUKWEZ  ALL  RD  NO
+(WRS         :  56) ACSCAN.SAV    31 23-Dec-81 05:51 -- extra not on master
+(WRS         :  56) ACSCAN.DAT     2 23-Dec-81 05:54 -- extra not on master
+(WRS         :  56) PROFIL.CTL     2 10-Jan-84 17:36 -- extra not on master
+(WRS         :  56) MAIL.FWD       2 12-Jan-89 10:28 -- bad checksum LEQSEM
+                           should be 21-Feb-88 00:51 NELVAY  ALL  RD  NO
+(WRS         :  56) MAIL.BOX       2 17-Aug-84 15:30 -- bad checksum ROBZUH
+                           should be 13-Mar-80 13:45 VUGJUH  ALL  RD  NO
+(WRS         :  56) PTAPAA.LOG     2 25-Sep-84 02:36 -- extra not on master
+(WRS         :  56) PTAPAH.LOG     2 30-Sep-84 19:42 -- extra not on master
+(WRS         :  56) PTAPAO.LOG    22 30-Sep-84 20:43 -- extra not on master
+(WRS         :  56) PTAPAV.LOG     3 21-Oct-84 12:18 -- extra not on master
+(WRS         :  56) PTAPA].LOG     5 02-Jan-85 20:55 -- extra not on master
+(WRS         :  56) PTAPB$.LOG     2 04-Feb-85 17:39 -- extra not on master
+(WRS         :  56) MAGNUM.DIR     2 07-Feb-81 06:40 -- bad checksum XOTZUM
+                           should be 02-Aug-88 23:24 BUVZAT   CP  NO  NO
+(WRS         :  56) WRS.LOG        2 12-Nov-85 13:16 -- bad checksum GONCOY
+                           should be 12-Nov-85 13:19 TODKIF  ALL  RD  NO
+(WRS         :  56) 102290.SAT   443 22-Oct-90 17:35 -- extra not on master
+(WRS         :  56) 102990.SAT   439 29-Oct-90 17:10 -- extra not on master
+(WRS         :  56) REMIND.DAT     3 25-Jul-83 15:40 -- bad checksum VULGID
+                           should be 19-Mar-85 05:01 WAQMUP  ALL  RD  NO
+(WRS         :  56) PTAPAB.LOG     6 25-Sep-84 17:55 -- extra not on master
+(WRS         :  56) PTAPAI.LOG     8 30-Sep-84 20:10 -- extra not on master
+(WRS         :  56) PTAPAP.LOG    30 30-Sep-84 20:57 -- extra not on master
+(WRS         :  56) PTAPAW.LOG    10 21-Oct-84 12:19 -- extra not on master
+(WRS         :  56) PTAPA^.LOG     4 13-Jan-85 18:07 -- extra not on master
+(WRS         :  56) PTAPB%.LOG     2 06-Mar-85 02:48 -- extra not on master
+(WRS         :  56) D25CCV.RPT     2 11-Nov-85 10:09 -- extra not on master
+(WRS         :  56) WHEN.SAV      17 11-Jan-82 11:56 -- extra not on master
+(WRS         :  56) BIRTH1.KI      6 31-Aug-87 22:49 -- extra not on master
+(WRS         :  56) ND3044.BAK     2 03-Mar-88 16:18 -- extra not on master
+(WRS         :  56) ND3044.TYM     2 03-Mar-88 16:20 -- extra not on master
+(WRS         :  56) 102390.SAT   530 23-Oct-90 17:25 -- extra not on master
+
+End of SAIL execution
+.rdist XAIL.RDI=(XAIL)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist XCONSU.RDI=(XCONSULT)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist XEXEC.RDI=(XEXEC)/check/nomissing/host:56
+Master host: 33
+218 files on master system.
+Slave hosts: 56
+Checking host 56
+(XEXEC       :  56) FCAT.DOC       2 13-Mar-86 01:14 -- bad checksum MUFYOY
+                           should be 10-Jul-86 02:50 TORXAH  ALL  RD  RD
+(XEXEC       :  56) @.SAV         19 22-Sep-78 18:06 -- extra not on master
+(XEXEC       :  56) INITGT.CMD     2 29-Dec-88 13:05 -- extra not on master
+(XEXEC       :  56) INITGT.SAI     2 29-Dec-88 13:03 -- extra not on master
+(XEXEC       :  56) RDIST.OLD     13 05-Dec-87 01:47 -- bad checksum KARLEG
+                           should be 10-Feb-88 18:06 TUXZAP  ALL  RD RUN
+(XEXEC       :  56) FOO            2 30-Mar-87 18:16 -- extra not on master
+(XEXEC       :  56) TELCHK.LOG     2 20-Feb-87 21:15 -- extra not on master
+(XEXEC       :  56) MEXEC.SAV      2 29-Nov-85 14:39 -- protection ALL  RD RUN
+                           should be 29-Nov-85 14:39 CELCAJ  ALL RUN RUN
+(XEXEC       :  56) DUL.DOC        2 19-Mar-86 07:50 -- bad checksum BITBAN
+                           should be 10-Jul-86 02:51 YILZEX  ALL  RD  RD
+(XEXEC       :  56) UPDATE.DOC     2 19-Mar-86 07:48 -- bad checksum GALSON
+                           should be 10-Jul-86 02:51 DUXHET  ALL  RD  RD
+(XEXEC       :  56) MEXEC.SHR      2 29-May-85 17:07 -- extra not on master
+(XEXEC       :  56) MEXEC.DOC      2 17-Mar-86 12:40 -- protection ALL  RD  RD
+                           should be 17-Mar-86 12:40 ROCTEC  ALL  RD  NO
+(XEXEC       :  56) INIT39.SAV    11 29-Dec-88 13:03 -- extra not on master
+(XEXEC       :  56) INIT39.DOC     2 29-Dec-88 13:03 -- extra not on master
+(XEXEC       :  56) INIT39.PUB     2 29-Dec-88 13:03 -- extra not on master
+(XEXEC       :  56) INIT39.SAI     2 29-Dec-88 13:03 -- extra not on master
+(XEXEC       :  56) INIT39.CMD     2 29-Dec-88 13:03 -- extra not on master
+(XEXEC       :  56) WHEREI.DOC     2 19-Mar-86 07:49 -- bad checksum KODSAZ
+                           should be 10-Jul-86 02:51 CIXJAC  ALL  RD  RD
+(XEXEC       :  56) INITIA.SYS     2 26-May-87 18:13 -- protection ALL  RD  RD
+                           should be 05-Jul-88 19:19 KAQXAV  ALL  RD  NO
+(XEXEC       :  56) SENDMA.DOC     3 17-Mar-86 15:04 -- bad checksum NACPEV
+                           should be 10-Jul-86 02:51 DOQMID  ALL  RD  RD
+(XEXEC       :  56) TIIXEC.REL     2 15-Jun-84 12:11 -- protection ALL  RD  NO
+                           should be 25-Nov-86 23:27 DAGFAG  ALL  RD  RD
+(XEXEC       :  56) TIIXEC.MAC     2 15-Jun-84 12:11 -- protection ALL  RD  NO
+                           should be 25-Nov-86 23:27 RIWRAP  ALL  RD  RD
+(XEXEC       :  56) SETUP.CTL      2 28-Jul-86 18:36 -- protection ALL  RD  NO
+                           should be 25-Nov-86 23:27 MOPXIY  ALL  RD  RD
+(XEXEC       :  56) RECORD.DOC    53 09-Jun-80 16:16 -- extra not on master
+
+End of SAIL execution
+.rdist XPPTES.RDI=(XPPTEST)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist XXARC.RDI=(XXARC)/check/nomissing/host:56
+Master host: 33
+0 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist YAMM.RDI=(YAMM)/check/nomissing/host:56
+Master host: 33
+2 files on master system.
+Slave hosts: 56
+Checking host 56
+
+End of SAIL execution
+.rdist YEUX.RDI=(YEUX)/check/nomissing/host:56
+Master host: 33
+2 files on master system.
+Slave hosts: 56
+Checking host 56
+(YEUX        :  56) XV.FDM       242 29-Jan-88 21:58 -- extra not on master
+(YEUX        :  56) SVUE.LOW       2 04-Feb-89 01:48 -- extra not on master
+(YEUX        :  56) SVUE.SHR      33 04-Feb-89 01:48 -- extra not on master
+
+End of SAIL execution
+.SEND JMS
+Type letter:
+; PCOM v1.63 - processed: (JMS)GAN3.LOG = (JMS)GAN3.CTL
+; Options: DETACH  LOG NOAPPEND SUPERSEDE LICENSE 
+; Limits: TIME:0 TRULIMIT:0 
+; Status: completed.
+; Output recorded in file (JMS)GAN3.LOG.
+
+End of SAIL execution
+.LOGOUT
+9069.41 tru
+terminal time: 2:01:14
+ "ð
