@@ -1,0 +1,311 @@
+File 1)	AP20:<AUTOPATCH.CBLWRK>COBFUN.12B	created: 1725 20-Aug-1981
+File 2)	AP20:<AUTOPATCH.CBLWRK>COBFUN.M12	created: 1341 05-Jan-1981
+
+1-1>1       	;WIZ.MT 7/27/81 SOFTWARE HOUSE PATCHES (SW$22 AND [SH-1])
+1->         	; UPD ID= 3167 on 10/14/80 at 3:24 PM by NIXON                          
+bytes 0,59
+****
+2-1>1       	; UPD ID= 3167 on 10/14/80 at 3:24 PM by NIXON                          
+bytes 0,0
+**************
+1-38>3      	      	IF1,<
+1->         	         	    IFNDEF SW$22,<SW$22==:1>
+1->         	         	    IFE SW$22,<
+1->         	         		PRINTX	DEC standard LIBOL will be assembled.
+1->         	         	    >
+1->         	         	    IFN SW$22,<
+1->         	         		PRINTX	1022 patches to LIBOL will be included.
+1->         	         	    >
+1->         	         	>
+1->         	TWOSEG	400000
+bytes 1267,1538
+****
+2-37>3      	TWOSEG	400000
+bytes 1208,1208
+**************
+1-61>3      	      	IFN SW$22,<
+1->         	         	T22=14		;GET AN UNUSED REGISTER FOR 1022 ROUTINES
+1->         	         	>
+1->         		DEFINE FUNDIR,<
+bytes 1702,1796
+****
+2-51>3      		DEFINE FUNDIR,<
+bytes 1372,1372
+**************
+1-126>4     	IFN SW$22,<
+1->         		PUSH	P,T22		;[SH-1] SAVE TEMP REGISTER FOR 1022
+1->         	>
+1->         		SETZ	P1,0		;LOCATE THE FUNCTION CODE
+bytes 3295,3361
+****
+2-113>4     		SETZ	P1,0		;LOCATE THE FUNCTION CODE
+bytes 2871,2871
+**************
+1-138>4     	IFN SW$22,<
+1->         		POP	P,T22		;[SH-1] RESTORE 1022 TEMP REGISTER
+1->         	>
+1->         		POPJ	P,		;RETURN
+bytes 3739,3803
+****
+2-122>4     		POPJ	P,		;RETURN
+bytes 3249,3249
+**************
+1-280>9     	;[SH-1]	  SKIPA	T1,.JBREL##	;CAN'T, GO TRY EXPANDING.
+1->         	;[SH-1]	JRST	FUNCRD		;GOT IT, RETURN.
+1->         	IFN SW$22,<			;[SH-1] INCLUDE IF ASSEMBLING 1022 PATCHES
+1->         		CAIA			;[SH-1] CAN'T, GO TRY EXPANDING.
+1->         		JRST	FUNCRD		;[SH-1] GOT IT, RETURN.
+1->         		HLRE	T22,136		;[SH-1]
+1->         		AOJN	T22,[PUSH P,0	;[SH-1] JUMP IF 1022
+File 1)	AP20:<AUTOPATCH.CBLWRK>COBFUN.12B	created: 1725 20-Aug-1981
+File 2)	AP20:<AUTOPATCH.CBLWRK>COBFUN.M12	created: 1341 05-Jan-1981
+
+1->         		MOVEI	0,T1		;[SH-1]
+1->         		PUSHJ	P,-2(T22)	;[SH-1] GET PSEUDO .JBREL
+1->         		POP	P,0		;[SH-1]
+1->         		JRST	FUNCR2]		;[SH-1]
+1->         		MOVE	T1,.JBREL##	;[SH-1] NOT 1022, USE REAL JBREL
+1->         	FUNCR2:				;[SH-1]
+1->         	>; END IFN SW$22
+1->         	IFE SW$22,<
+1->         		  SKIPA	T1,.JBREL##	;CAN'T, GO TRY EXPANDING.
+1->         		JRST	FUNCRD		;GOT IT, RETURN.
+1->         	>  ;END IFE SW$22
+1->         		MOVEI	T4,(T5)		;SAVE THE NUMBER OF WORDS TO GET.
+bytes 8327,8937
+****
+2-261>9     		  SKIPA	T1,.JBREL##	;CAN'T, GO TRY EXPANDING.
+2->         		JRST	FUNCRD		;GOT IT, RETURN.
+2->         		MOVEI	T4,(T5)		;SAVE THE NUMBER OF WORDS TO GET.
+bytes 7773,7853
+**************
+1-365>11    	;[SH-1]SETHLO:	CAMGE	T4,.JBFF##	;DO WE WANT CORE BELOW .JBFF?
+1->         	;[SH-1]	JRST	SETHL1		;YES, CAN'T HAVE IT.
+1->         	    	SETHLO:
+1->         	IFN SW$22,<			;[SH-1] INCLUDE IF ASSEMBLING 1022 PATCHES
+1->         		HLRE	T22,136		;[SH-1]
+1->         		AOJN	T22,[PUSH P,0	;[SH-1] JUMP IF 1022
+1->         			MOVEI	T0,T22	;[SH-1]
+1->         			PUSHJ	P,-3(T22) ;[SH-1] GET PSEUDO .JBFF
+1->         			POP	P,0	;[SH-1]
+1->         			CAMGE	T4,T22	;[SH-1] DO WE WANT CORE BELOW .JBFF?
+1->         			JRST	SETHL1	;[SH-1] YES, CAN'T HAVE IT
+1->         			JRST	SETHLA]	;[SH-1] ABOVE JBFF, ITS OK
+1->         		CAMGE	T4,.JBFF##	;[SH-1] DO WE WANT CORE BELOW .JBFF?
+1->         		JRST	SETHL1		;[SH-1] YES, CAN'T HAVE IT.
+1->         	SETHLA:				;[SH-1]
+1->         	>  ;END IFN SW$22
+1->         	IFE SW$22,<
+1->         		CAMGE	T4,.JBFF##	;DO WE WANT CORE BELOW .JBFF?
+1->         		JRST	SETHL1		;YES, CAN'T HAVE IT.
+1->         	>  ;END IFE SW$22
+1->         		HRRI	T1,(T4)		;HIGHEST LOCATION IN OVERLAY AREA.
+bytes 11142,11866
+****
+2-330>11    	SETHLO:	CAMGE	T4,.JBFF##	;DO WE WANT CORE BELOW .JBFF?
+2->         		JRST	SETHL1		;YES, CAN'T HAVE IT.
+2->         		HRRI	T1,(T4)		;HIGHEST LOCATION IN OVERLAY AREA.
+bytes 10058,10150
+**************
+1-706>20    	;[SH-1]	HRRZ	T3,.JBFF	;  AND ADDRESS OF FIRST FREE LOCATION.
+1->         	IFN SW$22,<			;[SH-1] INCLUDE IF ASSEMBLING 1022 PATCHES
+1->         		HLRE	T22,136		;[SH-1]
+1->         		AOJN	T22,[PUSH P,0	;[SH-1] JUMP IF 1022
+1->         			MOVEI	T0,T3	;[SH-1]
+1->         			PUSHJ	P,-3(T22) ;[SH-1] GET PSEUDO .JBFF
+1->         			POP	P,0	;[SH-1]
+1->         			JRST	FUNR1]	;[SH-1]
+1->         		HRRZ	T3,.JBFF	;[SH-1]   AND ADDRESS OF FIRST FREE LOCATION.
+File 1)	AP20:<AUTOPATCH.CBLWRK>COBFUN.12B	created: 1725 20-Aug-1981
+File 2)	AP20:<AUTOPATCH.CBLWRK>COBFUN.M12	created: 1341 05-Jan-1981
+
+1->         	FUNR1:				;[SH-1]
+1->         	>  ;END IFN SW$22
+1->         	IFE SW$22,<
+1->         		HRRZ	T3,.JBFF	;  AND ADDRESS OF FIRST FREE LOCATION.
+1->         	>  ;END IFE SW$22
+1->         		CAIE	T3,1(T5)	;IF THESE ARE NOT CONSECUTIVE
+bytes 21693,22175
+****
+2-653>20    		HRRZ	T3,.JBFF	;  AND ADDRESS OF FIRST FREE LOCATION.
+2->         		CAIE	T3,1(T5)	;IF THESE ARE NOT CONSECUTIVE
+bytes 19977,20032
+**************
+1-723>20    	;[SH-1]	HRRM	T2,.JBFF##	;THE NEW .JBFF
+1->         	IFN SW$22,<			;[SH-1] INCLUDE IF ASSEMBLING 1022 VERSION
+1->         		HLRE	T22,136		;[SH-1]
+1->         		AOJN	T22,[PUSH P,0	;[SH-1] JUMP IF 1022
+1->         			MOVEI	T0,T2	;[SH-1]
+1->         			PUSHJ	P,-4(T22) ;[SH-1] PUT PSEUDO .JBFF
+1->         			POP	P,0	;[SH-1]
+1->         			JRST	FUNR2]	;[SH-1]
+1->         		HRRM	T2,.JBFF##	;[SH-1] THE NEW .JBFF
+1->         	FUNR2:				;[SH-1]
+1->         	>  ;END IFN SW$22
+1->         	IFE SW$22,<
+1->         		HRRM	T2,.JBFF##	;THE NEW .JBFF
+1->         	>  ;END IFN SW$22
+1->         		HRLM	T4,HLOTC.##	;THE NEW UPPER LIMIT.
+bytes 22324,22740
+****
+2-668>20    		HRRM	T2,.JBFF##	;THE NEW .JBFF
+2->         		HRLM	T4,HLOTC.##	;THE NEW UPPER LIMIT.
+bytes 20181,20214
+**************
+1-843>24    	IFN SW$22,<			;[SH-1] INCLUDE IF ASSEMBLING 1022 VERSION
+1->         		HLRE	T22,136		;[SH-1]
+1->         		AOJE	T22,FUNC3	;[SH-1] SKIP THIS CODE IF NOT 1022
+1->         		CAIL	T1,(T2)		;[SH-1] IMITATE THE CODE WE'RE REPLACING
+1->         		JRST	FUNC2		;[SH-1]
+1->         		SETZM	(T4)		;[SH-1]
+1->         		CAIE	T4,HLOVL.	;[SH-1]
+1->         		JRST	FUNC2		;[SH-1]
+1->         		PUSH	P,0		;[SH-1]
+1->         		MOVEI	T0,T1		;[SH-1]
+1->         		PUSHJ	P,-3(T22)	;[SH-1] GET PSEUDO .JBFF
+1->         		POP	P,0		;[SH-1]
+1->         		SUBI	T1,1		;[SH-1]
+1->         	FUNC2:	CAIE	T4,HLOTC.	;[SH-1]
+1->         		JRST	FUNCB5		;[SH-1]
+1->         		AOS	T1		;[SH-1]
+1->         		PUSH	P,0		;[SH-1]
+1->         		MOVEI	T0,T1		;[SH-1]
+1->         		PUSHJ	P,-4(T22)	;[SH-1] PUT PSEUDO .JBFF
+1->         		POP	P,0		;[SH-1]
+1->         		SUBI	T1,1		;[SH-1]
+1->         		JRST	FUNCB5		;[SH-1]
+1->         	FUNC3:				;[SH-1]
+File 1)	AP20:<AUTOPATCH.CBLWRK>COBFUN.12B	created: 1725 20-Aug-1981
+File 2)	AP20:<AUTOPATCH.CBLWRK>COBFUN.M12	created: 1341 05-Jan-1981
+
+1->         	>  ;END IFN SW$22
+1->         		CAIL	T1,(T2)		;[514] HIGHEST .LT. LOWEST?
+bytes 26432,27099
+****
+2-764>24    		CAIL	T1,(T2)		;[514] HIGHEST .LT. LOWEST?
+bytes 23906,23906
+**************
+1-886>24    	IFN SW$22,<			;[SH-1] INCLUDE IF ASSEMBLING 1022 VERSION
+1->         		HLRE	T22,136		;[SH-1]
+1->         		AOJN	T22,FUNCB8	;[SH-1] DONT USE PAGE UUO IF 1022
+1->         	>  ;END IFN SW$22
+1->         		HRLZI	T2,.PAGCA	;[514] SIMPLE FUNCTION TO TEST WHETHER
+bytes 28015,28168
+****
+2-789>24    		HRLZI	T2,.PAGCA	;[514] SIMPLE FUNCTION TO TEST WHETHER
+bytes 24822,24822
+**************
+1-919>25    	IFN SW$22,<			;[SH-1] INCLUDE IF ASSEMBLING 1022 VERSION
+1->         		HLRE	T22,136		;[SH-1]
+1->         		AOJN	T22,[PUSH P,0	;[SH-1] SUBSTITUTE CODE IF 1022
+1->         			MOVE	0,T1	;[SH-1]
+1->         			PUSHJ	P,-1(T22) ;[SH-1] GIVE CORE BACK
+1->         			 JFCL		;[SH-1] FAILURE IS NO BIG DEAL
+1->         			POP	P,0	;[SH-1]
+1->         			JRST	FUNST0]	;[SH-1]
+1->         	>  ;END IFN SW$22
+1->         	>;END IFE TOPS20
+1->         	;DON'T HAVE PAGE. UUO--USE CORE UUO.
+1->         	IFN SW$22,<			;[SH-1] INCLUDE IF ASSEMBLING 1022 VERSION
+1->         		HLRE	T22,136		;[SH-1]
+1->         		AOJN	T22,[PUSH P,0	;[SH-1] SUBSTITUTE CODE IF 1022
+1->         			MOVE	0,T1	;[SH-1]
+1->         			PUSHJ	P,-1(T22) ;[SH-1] GIVE CORE BACK
+1->         			 JFCL		;[SH-1] FAILURE IS NO BIG DEAL
+1->         			POP	P,0	;[SH-1]
+1->         			JRST	FUNST0]	;[SH-1]
+1->         	>  ;END IFN SW$22
+1->         		CORE T1,		;[514] SHRINK
+bytes 29375,30037
+****
+2-812>25    	>;END IFE TOPS20
+2->         	;DON'T HAVE PAGE. UUO--USE CORE UUO.
+2->         		CORE T1,		;[514] SHRINK
+bytes 26029,26089
+**************
+1-1029>28   	;[SH-1]	HRRZ	T4,.JBFF	;FIRST FREE LOCATION AVAILABLE
+1->         	IFN SW$22,<			;[SH-1] INCLUDE IF ASSEMBLING 1022 VERSION
+1->         		HLRE	T22,136		;[SH-1]
+1->         		AOJN	T22,[PUSH P,0	;[SH-1] JUMP IF 1022
+1->         			MOVEI	T0,T4	;[SH-1]
+1->         			PUSHJ	P,-3(T22) ;[SH-1] GET PSEUDO .JBFF
+1->         			POP	P,0	;[SH-1]
+1->         			JRST	MORE1]	;[SH-1]
+1->         		HRRZ	T4,.JBFF	;[SH-1] FIRST FREE LOCATION AVAILABLE
+1->         	MORE1:				;[SH-1]
+1->         	>  ;END IFN SW$22
+File 1)	AP20:<AUTOPATCH.CBLWRK>COBFUN.12B	created: 1725 20-Aug-1981
+File 2)	AP20:<AUTOPATCH.CBLWRK>COBFUN.M12	created: 1341 05-Jan-1981
+
+1->         	IFE SW$22,<
+1->         		HRRZ	T4,.JBFF	;FIRST FREE LOCATION AVAILABLE
+1->         	>  ;END IFE SW$22
+1->         		MOVEI	T3,(T4)		;PLACE 'WORKING' VALUE HERE
+bytes 32300,32758
+****
+2-904>28    		HRRZ	T4,.JBFF	;FIRST FREE LOCATION AVAILABLE
+2->         		MOVEI	T3,(T4)		;PLACE 'WORKING' VALUE HERE
+bytes 28352,28399
+**************
+1-1050>28   	IFN SW$22,<			;[SH-1] INCLUDE IF ASSEMBLING 1022 VERSION
+1->         		HLRE	T22,136		;[SH-1]
+1->         		AOJN	T22,[PUSH P,0	;[SH-1] JUMP IF 1022
+1->         			MOVEI	0,(T5)	;[SH-1] LAST LOCATION DESIRED
+1->         			PUSHJ	P,-1(T22) ;[SH-1] GET CORE
+1->         			 TDZA	T22,T22	;[SH-1] FLAG FAILURE
+1->         			 SETO	T22,	;[SH-1] OR SUCCESS
+1->         			POP	P,0	;[SH-1]
+1->         			JUMPN	T22,MORM50 ;[SH-1] GO HERE ON SUCCESS
+1->         			POPJ	P,]	;[SH-1] ERROR RETURN IF FAILURE
+1->         	>  ;END IFN SW$22
+1->         		CAMG	T5,.JBREL	;IF WE CAN PROVIDE THIS
+bytes 33048,33454
+****
+2-920>28    		CAMG	T5,.JBREL	;IF WE CAN PROVIDE THIS
+bytes 28689,28689
+**************
+1-1071>28   	;[SH-1]	HRRM	T3,.JBFF	;NEW FIRST FREE LOCATION.
+1->         	IFN SW$22,<			;[SH-1] INCLUDE IF ASSEMBLING 1022 VERSION
+1->         		HLRE	T22,136		;[SH-1]
+1->         		AOJN	T22,[PUSH P,0	;[SH-1] JUMP IF 1022
+1->         			MOVEI	0,T3	;[SH-1]
+1->         			PUSHJ	P,-4(T22) ;[SH-1] PUT PSEUDO .JBFF
+1->         			POP	P,0	;[SH-1]
+1->         			JRST	MORE2]	;[SH-1]
+1->         		HRRM	T3,.JBFF	;[SH-1] NEW FIRST FREE LOCATION.
+1->         	MORE2:				;[SH-1]
+1->         	>  ;END IFN SW$22
+1->         	IFE SW$22,<
+1->         		HRRM	T3,.JBFF	;NEW FIRST FREE LOCATION.
+1->         	>  ;END IFE SW$22
+1->         		MOVEI	T1,OTCPT.##	;SET UP THE ADDRESS OF THE FREE LIST
+bytes 33848,34290
+****
+2-924>28    		HRRM	T3,.JBFF	;NEW FIRST FREE LOCATION.
+2->         		MOVEI	T1,OTCPT.##	;SET UP THE ADDRESS OF THE FREE LIST
+bytes 29083,29125
+**************
+1-1117>29   	IFN SW$22,<			;[SH-1] INCLUDE IF ASSEMBLING 1022 VERSION
+1->         		HLRE	T22,136		;[SH-1]
+1->         		AOJN	T22,[PUSH P,0	;[SH-1]
+1->         			MOVE	0,T5	;[SH-1] LOCATION DESIRED
+1->         			PUSHJ	P,-1(T22) ;[SH-1] GET CORE
+1->         			 TDZA	T4,T4	;[SH-1] FLAG FAILURE
+1->         			 SETO	T4,	;[SH-1] OR SUCCESS
+1->         			POP	P,0	;[SH-1]
+File 1)	AP20:<AUTOPATCH.CBLWRK>COBFUN.12B	created: 1725 20-Aug-1981
+File 2)	AP20:<AUTOPATCH.CBLWRK>COBFUN.M12	created: 1341 05-Jan-1981
+
+1->         			JUMPE	T4,XPAND4 ;[SH-1] DIDN'T GET IT
+1->         			PUSH	P,0	;[SH-1] SET T4 TO NEW JBREL
+1->         			MOVEI	0,T4	;[SH-1]
+1->         			PUSHJ	P,-2(T22) ;[SH-1]
+1->         			POP	P,0	;[SH-1]
+1->         			JRST	XPAND3]	;[SH-1] EXPAND UP TO NEW JBREL
+1->         	>  ;END IFN SW$22
+1->         		MOVE	T4,.JBREL##	;GET THE CURRENT END OF CORE.
+bytes 35039,35526
+****
+2-955>29    		MOVE	T4,.JBREL##	;GET THE CURRENT END OF CORE.
+bytes 29874,29874
+**************
