@@ -1,0 +1,1134 @@
+PROCEDURE SESS.UPD                   % SESUC.PR1      MY28WJ    26.7.0
+
+   Version 26.7 - April 21, 1983 - J. Murphy
+      Added code to process only on line I/O character charges.
+
+   Version 26.6 - Mar. 10, 1983 - J. Murphy
+      Added code to process the remote printer record. This is tran.code 18.
+
+   Version 26.5 - Mar. 2, 1983 - J. Murphy
+      Added code to add .0001 to tstart for all tymslice records. This
+      was done to catch all records and avoid duplicates.
+
+   Version 26.4 - Dec. 2, 1982 - J. Murphy
+      Added code to process recharge user record types. These records will
+      have a tran.code of 11.
+
+   Version 26.3 - Oct. 6, 1982 - J. Murphy
+      Deleted code that checked on total pru's and tru's.
+
+   Version 26.1 - Sept. 1, 1982 - J. Murphy
+      Added code to insert JOB.CLASS.SAVE into PREM for JOB.CLASS.
+
+   Version 26.0 - August 4, 1982 - J. Murphy
+      Added code to check for hosts that haven't received a new CP monitor.
+
+   Version 25.9 - July 21, 1982 - J. Murphy
+      Added the field TRU.CHRG to accept all royalty TRU charges. This
+      is necessary due to changes made to the raw accounting.
+
+   Version 25.8 - June 15, 1982 - J. Murphy
+      Added code to check for royalty records with a tran.code = 3. These
+      records will not be processed.
+
+   Version 25.7 - May 27, 1982 - J. Murphy
+      Modified code to insert DSTOP of DAILY370 into MISC.TRAN for DSTART.
+
+   Version 25.6 - May 20, 1982 - J. Murphy
+      Added code so checkpoint records (REASON=3) would not be processed.
+
+   Version 25.5 - May 11, 1982 - J. Murphy
+      Added code to check for reason # 3 so checkpoint records would not
+      be charged.
+
+   Version 25.4 - April 26, 1982 - J. Murphy
+      Modified code to make TSTART equal to TSTOP in all records that have
+      a RESOURCE equal to 149 in the relation TTU.PROG.NAMES. These records
+      will then be inserted into the relation MISC.TRAN.
+
+   Version 25.3 - April 8, 1982 - J. Murphy
+      Added code to select UUNs from the relation INTERNAL.UUNS before
+      they are inserted into CPU.CHARGE.SET.
+
+   Version 25.2 - Jan. 12, 1982 - P. E. Brown
+      Modified code to allow for the processing of TYMSLICE records.
+
+   Version 25.1 - Dec.10, 1981 - P. E. Brown
+      Modified printing of report PGMCOD.370 to eliminate excessive paper
+      usage.
+
+   Version 25.0 - Oct. 16, 1981 - P. E. Brown
+      Made required changes to allow loading of new transaction/premium
+      records.
+
+   Version 24.6 - Oct. 8, 1981 - P. E. Brown
+      Changed keys in temporary WATS relations due to fact that 'old'
+      data is retained for audit purposes.  Also added code to allow 
+      TRAN.CODE 60, the TRU extension record.
+
+   Version 24.5 - Sept. 10, 1981 - P. E. Brown
+      Altered procedure to allow for WATS surcharge while processing
+      connect records (TRAN.CODE 20).
+
+   Version 24.4 - July 27, 1981 - P. E. Brown
+      For each prime and non-prime connect record, excluding dedicated
+      device type, an additional instance is now created for CONNECT.ACT
+      to allow for I/O character charges.
+
+   Version 24.3 - July 16, 1981 - P. E. Brown
+      Modified code to allow processing of duplicate TSTART within TDISK
+      records.
+
+   Version 24.2 - July 1, 1981 - P. E. Brown
+      Modified code to correct problem of duplicate instances relating to
+      TRAN.CODE 30 and 50.
+
+   Version 24.1 - 1 June 1981 - by P. E. Brown
+      Added code to accommodate new TRAN.CODE 50 pertaining to file-backup
+      charging.  Also removed code relating to the processing of TRU
+      components.
+
+  VERSION 2.0  ---  23 DEC 75  --- PHIL SHEGGEBY
+*
+   A. CHANGES ALL VARIABLES TO STANDARD NAMES AND ABBREVIATIONS
+   B. PRU VALUE ON PREMIUM RECORD IS NOW INSERTED INTO RELATION 'TRAN'
+      TRU VALUE ON PREMIUM RECORD IS INSERTED INTO RELATION 'PREM'
+   C. TSTART AND TSTOP NOW COMPUTED AS INTEGER FIELDS
+
+ READS 370 DETAIL FILE(S) AND STORES DAILY SESSION ACTIVITY RECORDS
+  INTO RELATIONS SESSION, TRAN, CONNECT, PREM, AND TRU.370
+
+%
+
+BEGIN                                   % ***** 1 ***** %
+
+% DEFINE INTERNAL FIELDS %
+
+FIELDS
+      SPOOLID      AS '8C',
+      CHARS        AS '8Z',
+      RECORDS      AS '8Z',
+      PAGES        AS '8Z',
+      USERID         AS '8C',
+      TSTART3      SAME AS TSTART,  % Calculated time when charges begin %
+                                    % to accumulate on transaction charge %
+                                    % record, 50 'B' %
+      HR3          SAME AS REASON,
+      START.TRU    AS '7ZN.NN',
+      MIN3         SAME AS REASON,
+      SEC3         SAME AS REASON,
+      TRAN.PREM.FLAG AS 'N',
+      UUN.CHRG     SAME AS UUN,
+      UUN.SAVE     SAME AS UUN,
+      CPU.ID       AS '9C',          %  To accomodate IBM 3032 (HOST 48) %
+      USAGE        AS '5ZV2N',
+      CT.TIME      SAME AS USAGE,
+      CT.DIAL      SAME AS USAGE,
+      SV.RES       SAME AS RESOURCE,
+      TRU.L        AS '7ZV2N',
+      TTU.PRU.CHRG AS '8ZV2N',
+      TRU.CHRG     AS '8ZV2N',
+      TRU.TOT          SAME AS TTU.PRU.CHRG,
+      STARTC       AS '4Z',
+      CYLS         SAME AS STARTC,
+      RECID        AS 'C',
+      UUN.FLAG     SAME AS RECID,
+      SEC1         SAME AS REASON,
+      SEC2         SAME AS REASON,
+      MIN1         SAME AS REASON,
+      MIN2         SAME AS REASON,
+      HR1          SAME AS REASON,
+      HR2          SAME AS REASON,
+      MIN.DATE     SAME AS DSTART,
+      MAX.DATE     SAME AS DSTART,
+      CTL.DATE     SAME AS DSTART,
+      HR.USAGE     AS '2Z.3N',
+      FEATURE      AS '2C',
+      TUSAGE       SAME AS TRU.L,
+      REC.IN.CNT   AS '6Z',             % Total records in SR file %
+      CNT.SW       AS '6Z',
+      SESSION.CNT    SAME AS REC.IN.CNT,        % Primary session records %
+      CONNECT.CNT    SAME AS REC.IN.CNT,
+      TRAN.CNT       SAME AS REC.IN.CNT,
+      PREM.CNT       SAME AS REC.IN.CNT,
+      INVALID.CNT    SAME AS REC.IN.CNT,
+      IO.CNT         SAME AS REC.IN.CNT,
+      TRAN.CHRG.CNT  SAME AS REC.IN.CNT,
+      WATS.CNT       SAME AS REC.IN.CNT,
+      MISC.CNT       SAME AS REC.IN.CNT,
+      CHARGE.CNT     SAME AS REC.IN.CNT,
+      TYMSLICE.CNT   SAME AS REC.IN.CNT,        % TYMSLICE user record count %
+      RECORD.TSTART  SAME AS TSTART,
+      RECORD.TSTOP   SAME AS TSTOP,
+      CHRG.WATS      AS '2C',
+      SVSESS         SAME AS SESS,
+      DUPSW          AS '1C',
+      SESSION.SW     AS '1N',
+      TMPTC          SAME AS TRAN.CODE,
+      PORT.ID        AS '1C',
+      LAST.PREM.RES  SAME AS RESOURCE,
+      L.TDISK.TSTART SAME AS TSTART,
+      L.TDISK.RADDR  SAME AS RADDR,
+      NO.DUP         AS '2Z',
+      NODE.ZERO.CT   AS '5Z',
+      SESS.ELAPSED   SAME AS QTY,
+      CHKSUM         SAME AS TRU.L,
+      PREM.NODE      SAME AS NODE,
+      CHECK.NODE     AS '3C',
+      CHECK.HOST     AS '3C',
+      TRU.EXT.CNT    SAME AS REC.IN.CNT,
+      SESS.ADD.CNT   SAME AS REC.IN.CNT,% Count of new session instances %
+                                        % created from TRAN.CODE 50 records %
+      RESOURCE.SAVE  SAME AS RESOURCE,
+      DSTART3        SAME AS DSTART,    % day when charges begin to accum- %
+                                        % ulate on tran/prem record %
+      REC.10.SESS    SAME AS SESS,
+      ERR.RPT.NUM    AS 'N',
+      TTU.DSTART     SAME AS DSTART,
+      TTU.DSTOP      SAME AS DSTOP,
+      AGGR.FLAG      SAME AS RECID,     % Indicates TYMSLICE %
+      EMPTY.RPT      AS '6C',
+      PRINT.SESS     SAME AS SESS,
+      JOB.CLASS.SAVE SAME AS JOB.CLASS,
+      UUN.TMP        AS '6Z',
+      CHRG.SET       AS '10N'
+
+
+
+                % Data used to determine existence of a WATS line %
+
+SOURCE NODES.PORTS FROM '(UAS)WATNOD.DAT'
+FREE FORM
+INPUT NODE, PORT, DSTART, TSTART, DSTOP, TSTOP, @CR     
+
+                % Data used to determine existence of a WATS line which %
+                % is a dedicated device %
+
+SOURCE DED.LINES FROM '(UAS)WATHOS.DAT'
+FREE FORM                                               
+INPUT HOST, RADDR, DSTART, TSTART, DSTOP, TSTOP, @CR
+
+                        % Temporary relations for data related to %
+                        % WATS surcharge %
+
+RELATION T.NODES.PORTS IS
+   KEY    NODE, PORT, DSTART, TSTART
+   DATA   DSTOP, TSTOP
+
+RELATION T.DED.LINES IS
+   KEY   HOST, RADDR, DSTART, TSTART
+   DATA  DSTOP, TSTOP
+
+SOURCE DAILY370 FROM SRC.FNAM
+  FIXED FORM
+  INPUT @TAB 3,
+        HOST,
+        TRAN.CODE,
+        RECID,
+        REASON,
+        JOB.CLASS,
+        JOB.PRTY,
+        UUN.FLAG,
+        AGGR.FLAG,
+        UUN.TMP,
+        PROJ.CODE,
+        USR.NAM,
+        DSTART,
+        HR1,
+        MIN1,
+        SEC1,
+        DSTOP,
+        HR2,
+        MIN2,
+        SEC2,
+CONDITIONAL ON TRAN.CODE
+  BEGIN
+    10: CONDITIONAL ON RECID
+          BEGIN
+           '0': USAGE,CT.TIME,CT.DIAL,TRU.L,PRU,
+                TRU.FLAG,TID,NODE AS '4Z',PORT,@CR
+           'A': @CR
+           'B': CHRG.SET, @CR
+          END
+    11: @CR
+    12: @CR
+    15: USAGE,TRU.L,PRU,PROG.NAM,TRU.FLAG,@TAB 40,CPU.ID,@CR
+    18: @TAB 7,SPOOLID,PAGES,RECORDS,CHARS,NODE,PORT,USERID,UUN.CHRG,@CR
+    20: USAGE,RADDR,CLASS,TYP,MODEL,FEATURE,TID,NODE AS '4Z',PORT,
+        PORT.ID,CIN AS '10B',COUT AS '10B',@CR
+    30: USAGE,RADDR,CLASS,TYP,MODEL,FEATURE,STARTC,CYLS,@CR
+    40: USAGE,RADDR,CLASS,TYP,MODEL,FEATURE,@CR
+    50: @TAB 8,PROG.NAM,@TAB 8,UUN.CHRG,DSTART3,HR3,MIN3,SEC3,TTU.PRU.CHRG,
+        TRU.CHRG,CPU.ID,TRAN.PREM.FLAG,@CR
+    60: TRU.TOT, @CR
+    70: AGGR.NAM, DSTART3, HR3, MIN3, SEC3, CONTEND.TM, DELIV.TM, 
+        TARGET.FR, @CR
+    75: AGGR.NAM, DSTART3, HR3, MIN3, SEC3, CONTEND.TM, DELIV.TM, @CR
+    99: @TAB 6,FIRST.SESS,LAST.SESS,@TAB 1,CHKSUM,@TAB TO 155,SRC.DATE,@CR
+  END
+
+REPORT PROG.CODES APPEND TO 'PGMCOD.370'
+PAGE.SIZE 60
+HEADING.SIZE 3
+PAGE.HEADING
+   PRINT TO PROG.CODES @TAB 25, 'NEW PROG.NAM ENTRIES', @CR, @CR
+
+REPORT PROG.CODES2 APPEND TO 'PGMCOD.370'
+PAGE.SIZE 60
+HEADING.SIZE 3
+PAGE.HEADING
+   PRINT TO PROG.CODES2 @TAB 25, 'NEW PROG.NAM ENTRIES', @CR, @CR
+
+REPORT APPL.NAME.ERR APPEND TO 'SESUPD.ERR-ANY'    % Errors concerning %
+PAGE.SIZE 0                                        % transaction records %
+
+FORMAT RUN.DATE.TIME
+  @TAB 3,
+  TODAY AS DATE 'MM/DD/YY',
+  @TAB 2,
+  (TIME/3600) AS '2Z', ":",
+  ((TIME-TIME/3600*3600)/60) AS '2N', @CR
+
+MOVE TRU TO START.TRU
+TYPE "TRUs = ",(TRU-START.TRU),@CR,@CR
+
+TYPE TO TERMINAL "Starting: SESS.UPD.....Version 26.7.0", RUN.DATE.TIME
+
+MOVE 0 TO LAST.PREM.RES
+FOR EACH PROG.NAMS        % Find last premium resource assigned %
+    IF RESOURCE > LAST.PREM.RES THEN
+       MOVE RESOURCE TO LAST.PREM.RES
+
+MOVE '1' TO DUPSW
+MOVE 1 TO REC.TYP
+MOVE DEFAULT TO SVSESS, EMPTY.RPT, MISC.CNT, TYMSLICE.CNT
+MOVE DEFAULT TO HOST,FIRST.SESS,LAST.SESS,SRC.DATE, TRU.EXT.CNT, SESS.ADD.CNT
+MOVE DEFAULT TO UNIQ
+
+MOVE 0 TO TUSAGE, REC.IN.CNT, INVALID.CNT
+MOVE 0 TO SESSION.CNT, TRAN.CNT, PREM.CNT, IO.CNT, WATS.CNT
+MOVE 0 TO CONNECT.CNT, TRAN.CHRG.CNT
+MOVE 0 TO TMPTC
+MOVE 0 TO NODE.ZERO.CT
+LET MIN.DATE = DATE '991231'
+LET MAX.DATE = DATE '750101'
+LET CTL.DATE = DATE '750101'
+
+MOVE 16 TO TZ
+MOVE 3 TO ACTG.SYS.TYP
+MOVE ' ' TO CRDB
+MOVE 0 TO CRDB.CODE
+
+
+FOR EACH NODES.PORTS
+  INSERT INTO T.NODES.PORTS
+
+FOR EACH DED.LINES
+  INSERT INTO T.DED.LINES
+
+SELECT SESS.LOG VIA (LOC = 'LSESS') THEN
+   MOVE SESS TO SVSESS
+ELSE
+   ABORT @CR,
+     "*** Missing 'LSESS' in relation SESS.LOG ***", @CR,
+       "Contact Accounting DBA", @CR
+MOVE SVSESS TO SESS
+
+
+IF FILE 'PGMCOD.370' EXISTS THEN
+   NOTHING
+ELSE                    % Prevents 'empty' files which cause spooling %
+                        % problems during daily run %
+  WRITE REPORT PROG.CODES2
+    PRINT TO PROG.CODES2 ' ', @CR
+
+FILEBLK:
+FOR EACH SESS.SRC.FNAMS WRITE REPORT PROG.CODES, APPL.NAME.ERR
+BEGIN                  % ***** 2 ***** %
+  TYPE TO TERMINAL 'BEGIN PROCESSING DAILY FILE: ***',SRC.FNAM,'***',@CR
+  FOR EACH DAILY370
+DAILYBLK:    BEGIN       % Read 370 Daily file        ***** 3 ***** %
+    IF TRAN.CODE NE 70 THEN  % TRAN.CODE 70 records have 0 UUN %
+      MOVE UUN.TMP TO UUN
+
+    ADD 1 TO REC.IN.CNT
+    LET TSTART = ((SEC1 + MIN1*60 + HR1*3600) AS '5N.4N') / 3600
+    LET TSTOP  = ((SEC2 + MIN2*60 + HR2*3600) AS '5N.4N') / 3600
+    MOVE TSTOP TO RECORD.TSTOP
+    MOVE TSTART TO RECORD.TSTART
+    IF (TRAN.CODE = 10 AND RECID = '0' AND REASON # 10) THEN
+       MOVE 'Y' TO SESS.CHG
+       ELSE MOVE 'N' TO SESS.CHG
+    IF TRAN.CODE = 10 AND RECID = '0' THEN
+       BEGIN
+       MOVE NODE TO PREM.NODE
+       MOVE DSTART TO SESS.DSTART
+       MOVE DSTOP TO SESS.DSTOP
+       MOVE TSTART TO SESS.TSTART
+       MOVE TSTOP TO SESS.TSTOP
+       LET DUPSW = '1'
+       END
+                        % TRAN.CODE 50,60,12,70 and 75 contain no USAGE %
+    IF (RECID='0') AND (TRAN.CODE NE 50) AND (TRAN.CODE NE 60) AND
+      (TRAN.CODE NE 12) AND (TRAN.CODE NE 70) AND (TRAN.CODE NE 75)
+      AND (TRAN.CODE NE 11) AND (TRAN.CODE NE 18) THEN
+      ADD USAGE TO TUSAGE       % USAGE field is used for checksum total %
+
+    IF DUPSW # '1' THEN
+       NOTHING          % do not process following records related to %
+                        % a duplicate session record %
+    ELSE
+    BEGIN                                 % ***** 4 ***** %
+    MOVE TRAN.CODE TO TMPTC
+    IF TRAN.CODE = 10 AND RECID = '0' THEN
+
+      BEGIN            % Session record logic %
+      SELECT SESSION.ACT VIA KEY THEN
+        BEGIN
+        LET DUPSW = '0'
+        TYPE TO TERMINAL 'DUP SESSION --->  ',UUN,'  ',HOST,'  ',
+                  PROJ.CODE,'  ',DSTART,'  ',TSTART,@CR
+        FINISH DAILYBLK
+        END
+      ADD 1 TO SESS
+      MOVE SESS TO REC.10.SESS  % Retain primary session number for some %
+                                % tran/prem instances %
+      ADD 1 TO SESSION.CNT         % Number of primary session records in SR file%
+      LET QTY = USAGE / 60.0000
+      MOVE QTY TO SESS.ELAPSED
+      INSERT INTO SESSION.ACT
+      IF DSTART LT MIN.DATE AND GT CTL.DATE THEN
+         LET MIN.DATE = DSTART
+      IF DSTART GT MAX.DATE THEN
+         LET MAX.DATE = DSTART
+      LET QTY = PRU     % TRU will come from TRAN.CODE 60 record %
+      MOVE ' ' TO RADDR
+      IF JOB.CLASS = 'A' THEN     % online %
+        MOVE 55 TO RESOURCE
+       ELSE
+        MOVE 57 TO RESOURCE
+
+       INSERT INTO TRAN.ACT
+       ADD 1 TO TRAN.CNT
+
+       IF CT.TIME # 0 AND NODE = 0 AND TID # 255 THEN
+          ADD 1 TO NODE.ZERO.CT
+
+      END            % End of session record %
+
+                                % TRU components %
+   ELSE IF TRAN.CODE=10 AND RECID='A' THEN
+      NOTHING
+
+   ELSE IF (TRAN.CODE = 10) AND (RECID = 'B') AND (TRU.FLAG = 'C') THEN
+    BEGIN
+      IF HOST = 47 THEN
+      SELECT INTERNAL.UUNS VIA KEY THEN
+        NOTHING
+      ELSE
+        BEGIN
+          MOVE CHRG.SET TO QTY
+          MOVE 585 TO RESOURCE
+          INSERT INTO CPU.CHARGE.SET
+          ADD 1 TO CHARGE.CNT
+        END
+      ELSE
+        NOTHING
+    END
+
+   ELSE IF TRAN.CODE=12 THEN    % TYMSLICE sign on record %
+      NOTHING
+
+    ELSE IF TRAN.CODE = 50 AND REASON = 3 THEN
+       NOTHING
+
+    ELSE IF TRAN.CODE = 11 THEN   % RECHARGE USER RECORD %
+      NOTHING
+
+
+
+
+    ELSE IF TRAN.CODE = 15 OR (TRAN.CODE=50 AND TRAN.PREM.FLAG=1 AND REASON #3)
+      THEN
+                                        % Premium record %
+    BEGIN
+    MOVE JOB.CLASS TO JOB.CLASS.SAVE
+    IF TRAN.CODE=50 THEN
+      IF UUN.CHRG=UUN THEN
+        NOTHING
+      ELSE
+        TYPE @CR, 'Initiating UUN and charged UUN differ', @CR,
+        'Initiating UUN: ', UUN, @TAB 4, 'Charged UUN: ', UUN.CHRG, @CR,@CR
+
+    IF CPU.ID = "000303200" THEN   % Kludge to accomodate IBM 3032 (HOST 48) %
+      LET PROG.NAM = TRIM(PROG.NAM)+"3"
+    ELSE IF CPU.ID = "000303300" THEN     % to accommodate IBM 3033 %
+      LET PROG.NAM = TRIM(PROG.NAM)+"4"
+
+    IF TRAN.CODE=50 THEN
+      BEGIN
+      MOVE TRU.CHRG TO QTY
+      MOVE TTU.PRU.CHRG TO PRU
+      LET TSTART3= (((SEC3+MIN3*60+HR3*3600) AS '5N.4N')/3600)
+      LET PREM.CONNECT=(TSTOP-TSTART3)+((DSTOP-DSTART3)*23.9999)
+      END
+    ELSE
+      BEGIN
+      MOVE TRU.L TO QTY
+      LET PREM.CONNECT=USAGE/60.0000
+      MOVE TSTART TO TSTART3
+      MOVE DSTART TO DSTART3
+      END
+
+    SELECT PROG.NAMS VIA KEY THEN
+      BEGIN
+      MOVE 0 TO NO.DUP
+      WHILE NO.DUP EQ 0 DO
+        BEGIN
+        SELECT PREM VIA (UUN, SESS=REC.10.SESS, RESOURCE, DSTART=DSTART3,
+          TSTART=TSTART3) THEN
+            LET TSTART3=TSTART+.0001
+        ELSE
+          MOVE 1 TO NO.DUP
+        END
+
+      INSERT INTO PREM USING (REC.10.SESS FOR SESS,PREM.NODE FOR NODE,
+        TSTART3 FOR TSTART, DSTART3 FOR DSTART,JOB.CLASS.SAVE FOR JOB.CLASS)
+
+      ADD 1 TO PREM.CNT
+      END
+    ELSE
+      BEGIN
+      ADD 1 TO LAST.PREM.RES
+      IF JOB.CLASS = 'A' THEN
+         MOVE LAST.PREM.RES TO SV.RES
+       ELSE
+         MOVE (LAST.PREM.RES + 1) TO SV.RES
+      LET RESOURCE = LAST.PREM.RES
+      LET JOB.CLASS = 'A'
+      INSERT INTO PROG.NAMS
+      TYPE TO TERMINAL @CR, @CR,'  **** PROG.NAMS RELATION UPDATED:  ',
+              RESOURCE,' ',JOB.CLASS,' ',PROG.NAM, @CR, @CR
+      PRINT TO PROG.CODES @CR, @CR,'  **** PROG.NAMS RELATION UPDATED:  ',
+                          RESOURCE,' ',JOB.CLASS,' ',PROG.NAM,' ','BY ',
+                          SRC.FNAM, @CR, @CR
+
+      ADD 1 TO LAST.PREM.RES
+      LET RESOURCE = LAST.PREM.RES
+      LET JOB.CLASS = 'B'
+      INSERT INTO PROG.NAMS
+      TYPE TO TERMINAL @CR, @CR,'  **** PROG.NAMS RELATION UPDATED:  ',
+              RESOURCE,' ',JOB.CLASS,' ',PROG.NAM, @CR, @CR
+
+      PRINT TO PROG.CODES @CR, @CR,'  **** PROG.NAMS RELATION UPDATED:  ',
+                          RESOURCE,' ',JOB.CLASS,' ',PROG.NAM,' ','BY ',
+                          SRC.FNAM, @CR, @CR
+
+      MOVE SV.RES TO RESOURCE
+      MOVE 0 TO NO.DUP
+      WHILE NO.DUP EQ 0 DO
+        BEGIN
+        SELECT PREM VIA (UUN, SESS=REC.10.SESS, RESOURCE, DSTART=DSTART3,
+          TSTART=TSTART3) THEN
+            LET TSTART3=TSTART + .0001
+        ELSE
+          MOTO NO.DUP
+        END
+      INSERT INTO PREM USING (REC.10.SESS FOR SESS,PREM.NODE FOR NODE,
+        TSTART3 FOR TSTART, DSTART3 FOR DSTART, JOB.CLASS.SAVE FOR JOB.CLASS)
+      ADD 1 TO PREM.CNT
+      END
+    END  %  Of TRAN.CODE = 15  %
+    
+    ELSE IF TRAN.CODE = 18 THEN
+      BEGIN
+        MOVE TSTART TO TSTART3
+        MOVE 154 TO RESOURCE
+        MOVE SUBSTR(SPOOLID,4,5) TO UNIQ
+        MOVE PAGES TO QTY
+        MOVE 0 TO NO.DUP
+        WHILE NO.DUP EQ 0 DO
+          BEGIN
+            SELECT MISC.TRAN VIA (UUN=UUN.CHRG,ACTG.SYS.TYP,HOST,PROJ.CODE,
+                 RESOURCE,DSTART=DSTOP OF DAILY370,TSTART=TSTART3,CRDB.CODE,
+                 CRDB,UNIQ) THEN
+              LET TSTART3 = TSTART + .0001
+            ELSE 
+              MOVE 1 TO NO.DUP
+          END
+        INSERT INTO MISC.TRAN USING (UUN.CHRG FOR UUN,DSTOP OF DAILY370
+             FOR DSTOP,DSTOP OF DAILY370 FOR DSTART,TSTART3 FOR TSTART)
+        ADD 1 TO MISC.CNT
+        MOVE 155 TO RESOURCE
+        MOVE SUBSTR(SPOOLID,4,5) TO UNIQ
+        MOVE CHARS TO QTY
+        MOVE 0 TO NO.DUP
+        WHILE NO.DUP EQ 0 DO
+          BEGIN
+            SELECT MISC.TRAN VIA (UUN=UUN.CHRG,ACTG.SYS.TYP,HOST,PROJ.CODE,
+                 RESOURCE,DSTART=DSTOP OF DAILY370,TSTART=TSTART3,CRDB.CODE,
+                 CRDB,UNIQ) THEN
+              LET TSTART3 = TSTART + .0001
+            ELSE
+              MOVE 1 TO NO.DUP
+          END
+        INSERT INTO MISC.TRAN USING (UUN.CHRG FOR UUN,DSTOP OF DAILY370
+             FOR DSTOP,DSTOP OF DAILY370 FOR DSTART,TSTART3 FOR TSTART)
+        ADD 1 TO MISC.CNT
+       END % Of TRAN.CODE = 18 %
+            
+
+    ELSE IF TRAN.CODE = 20 THEN      % Connect record %
+      BEGIN
+       IF CLASS = '80' AND TYP = '40' THEN
+
+                        %  Dedicated device  %
+         BEGIN
+         LET HR.USAGE = USAGE / 60.0000
+         MOVE '00' TO MODEL
+         SELECT DEV.NAM VIA KEY THEN
+           BEGIN
+           LET QTY = HR.USAGE
+           INSERT INTO TRAN.ACT
+           ADD 1 TO TRAN.CNT
+
+                % Determine if dedicated device is WATS line %
+
+           MOVE DEFAULT TO CHRG.WATS
+           MOVE DEFAULT TO CHECK.HOST
+           IF JOB.CLASS EQ 'A' AND RESOURCE=100 THEN
+             FIND.DED.WATS:BEGIN
+             FOR EACH T.DED.LINES VIA (HOST,RADDR)
+               BEGIN
+               MOVE DEFAULT TO CHRG.WATS
+               IF DSTART LE DSTART OF DAILY370 AND
+                 DSTOP GE DSTOP OF DAILY370 THEN
+                   BEGIN
+                   IF DSTART = DSTART OF DAILY370 THEN
+                     IF TSTART GT RECORD.TSTART THEN
+                       MOVE 'NO' TO CHRG.WATS
+                   IF DSTOP = DSTOP OF DAILY370 THEN
+                     IF TSTOP LT RECORD.TSTOP THEN
+                       MOVE 'NO' TO CHRG.WATS
+                   END
+               ELSE
+                 MOVE 'NO' TO CHRG.WATS
+               MOVE 'YES' TO CHECK.HOST
+               IF CHRG.WATS=DEFAULT THEN
+                 FINISH FIND.DED.WATS
+               END
+             END   % FIND.DED.WATS: %
+           ELSE
+             MOVE 'NO' TO CHRG.WATS
+
+             IF CHECK.HOST NE 'YES' THEN
+               MOVE 'NO' TO CHRG.WATS
+
+
+             IF CHRG.WATS = 'NO' THEN
+               NOTHING
+             ELSE
+                 BEGIN          % WATS surcharge for a dedicated device %
+                 MOVE 190 TO RESOURCE
+                 MOVE HR.USAGE TO QTY
+                 INSERT INTO CONNECT.ACT
+                 ADD 1 TO CONNECT.CNT, WATS.CNT
+                 END
+           END  % of select DEV.NAM %
+
+          ELSE
+           BEGIN
+           ADD 1 TO INVALID.CNT
+           TYPE TO TERMINAL 'UNDEFINED DEVICE CODE: ',CLASS,TYP,MODEL, @CR
+           END
+         END  % CLASS 80, TYP 40 %
+        ELSE
+         BEGIN                  % Non-dedicated device %
+         LET QTY=USAGE/60.0000
+         MOVE 50 TO RESOURCE
+         MOVE REASON TO TERM.CODE
+         MOVE 0 TO CNT.SW
+         SELECT CONNECT.ACT VIA KEY THEN
+           MOVE 1 TO CNT.SW
+         ELSE
+           NOTHING
+         IF CNT.SW # 0 THEN
+           BEGIN
+           ADD .0001 TO TSTART
+           INSERT INTO CONNECT.ACT
+           ADD 1 TO CONNECT.CNT
+           END
+         ELSE
+           BEGIN
+           INSERT INTO CONNECT.ACT
+           ADD 1 TO CONNECT.CNT
+           END
+
+                        % Determine if record involves a WATS line %
+
+         IF JOB.CLASS = 'A' THEN
+         BEGIN
+                        % Only 'on line' connect time considered for %
+                        % WATS surcharge %
+
+         MOVE DEFAULT TO CHRG.WATS
+         MOVE DEFAULT TO CHECK.NODE
+         FIND.WATS:BEGIN
+         FOR EACH T.NODES.PORTS VIA(NODE, PORT)
+
+           BEGIN
+           MOVE DEFAULT TO CHRG.WATS
+           IF DSTART LE DSTART OF DAILY370 AND
+            DSTOP GE DSTOP  OF DAILY370 THEN
+              BEGIN
+              IF DSTART = DSTART OF DAILY370 THEN
+                IF TSTART GT RECORD.TSTART THEN
+                  MOVE 'NO' TO CHRG.WATS
+              IF DSTOP = DSTOP OF DAILY370 THEN
+                IF TSTOP LT RECORD.TSTOP THEN
+                  MOVE 'NO' TO CHRG.WATS
+              END
+           ELSE
+             MOVE 'NO' TO CHRG.WATS
+
+           MOVE 'YES' TO CHECK.NODE
+           IF CHRG.WATS=DEFAULT THEN
+             FINISH FIND.WATS
+           END
+
+         END  % FIND.WATS %
+
+         IF CHECK.NODE NE 'YES' THEN
+           MOVE 'NO' TO CHRG.WATS
+         IF CHRG.WATS = 'NO' THEN
+           NOTHING
+         ELSE
+                        % WATS surcharge for non-dedicated device %
+           BEGIN
+           MOVE 190 TO RESOURCE
+           MOVE (USAGE/60.0000) TO QTY
+           INSERT INTO CONNECT.ACT
+           ADD 1 TO CONNECT.CNT, WATS.CNT
+           END
+         END    % Of IF JOB.CLASS=A %
+
+           ELSE
+             NOTHING  % No WATS surcharge since JOB.CLASS NE 'A' %
+
+      
+                                % I/O character charge %
+
+      IF JOB.CLASS = 'A' THEN
+        BEGIN
+         MOVE ((CIN+COUT)/1000.000) TO QTY ROUNDED
+         MOVE 180 TO RESOURCE
+         MOVE 0 TO CNT.SW
+         SELECT CONNECT.ACT VIA KEY THEN
+           MOVE 1 TO CNT.SW
+         ELSE
+           NOTHING
+         IF CNT.SW NE 0 THEN
+           BEGIN
+           ADD .0001 TO TSTART
+           INSERT INTO CONNECT.ACT
+           ADD 1 TO CONNECT.CNT
+           ADD 1 TO IO.CNT
+           END
+         ELSE
+           BEGIN
+           INSERT INTO CONNECT.ACT
+           ADD 1 TO CONNECT.CNT
+           ADD 1 TO IO.CNT
+           END
+         END
+        ELSE
+          NOTHING
+
+
+         END  % Non-dedicated device %
+
+      END  % Of TRAN.CODE = 20 %
+
+    ELSE IF TRAN.CODE = 30 THEN      % Tdisk record %
+      BEGIN
+      LET HR.USAGE = USAGE / 60.0000
+      LET QTY = HR.USAGE * CYLS
+      MOVE 65 TO RESOURCE
+      MOVE 0 TO NO.DUP
+      WHILE NO.DUP EQ 0 DO
+        BEGIN
+        SELECT TRAN.ACT VIA KEY THEN
+          LET TSTART OF SESS.UPD=TSTART+.0001
+        ELSE
+          MOVE 1 TO NO.DUP
+        END
+
+      INSERT INTO TRAN.ACT
+      ADD 1 TO TRAN.CNT
+      MOVE ' ' TO RADDR
+      END       % Of TRAN.CODE = 30 %
+
+    ELSE IF TRAN.CODE = 40 THEN       % Device record %
+      BEGIN
+      LET HR.USAGE = USAGE / 60.0000
+      MOVE '00' TO MODEL     % Product code not dependent on model %
+      SELECT DEV.NAM VIA KEY THEN
+        BEGIN
+        LET QTY = HR.USAGE
+        ADD 1 TO TRAN.CNT
+        INSERT INTO TRAN.ACT
+        IF CLASS = '04' AND TYP = '10' THEN
+          BEGIN         % Minimum for dedicated disk %
+            IF HR.USAGE LT .500 AND REASON NE 10 THEN
+               BEGIN
+               MOVE 1 TO CRDB.CODE
+               MOVE 'D' TO CRDB
+               LET QTY = .500 - HR.USAGE
+               INSERT INTO TRAN.ACT
+               ADD 1 TO TRAN.CNT
+               MOVE ' ' TO CRDB
+               MOVE 0 TO CRDB.CODE
+               END
+          END
+        IF CLASS = '08' AND REASON # 10 THEN
+          BEGIN
+          MOVE 1 TO QTY
+          MOVE 87 TO RESOURCE      % Product code for tape mounts %
+          ADD 1 TO TRAN.CNT
+          INSERT INTO TRAN.ACT
+          END
+          IF CLASS = '04' AND TYP = '10' AND REASON # 10 THEN
+            BEGIN
+            MOVE 1 TO QTY
+            MOVE 86 TO RESOURCE     % Product code for disk mounts %
+            ADD 1 TO TRAN.CNT
+            INSERT INTO TRAN.ACT
+            END
+        MOVE ' ' TO RADDR
+        END     % Of SELECT DEV.NAM %
+      ELSE
+        BEGIN              % Device code not in table %
+        ADD 1 TO INVALID.CNT
+        TYPE TO TERMINAL
+          'UNDEFINED DEVICE CODE: ',CLASS, TYP, MODEL, @CR
+        END
+      END       % of TRAN.CODE =40 %
+
+    ELSE IF TRAN.CODE=50 AND REASON=3 THEN
+       NOTHING
+
+
+
+    ELSE IF TRAN.CODE=50 AND TRAN.PREM.FLAG=0 AND REASON # 3 THEN
+                        % Transaction charge record %
+      BEGIN
+      MOVE TTU.PRU.CHRG TO QTY
+      MOVE PROG.NAM TO APPL.NAM
+      MOVE DEFAULT TO TAX.AMT, AMT, TAX.CODE, PROD.CODE, RADDR, UNIQ,
+        RESOURCE.SAVE, ERR.RPT.NUM, PRINT.SESS
+      LET TSTART3=((SEC3+MIN3*60+HR3*3600) AS '5N.4N')/3600
+      MOVE 'Y' TO PRIME.P
+
+      SELECT TTU.PROG.NAMES VIA KEY THEN
+
+        BEGIN
+        MOVE RESOURCE TO RESOURCE.SAVE
+        MOVE DSTART TO TTU.DSTART       % Save day/time for error report %
+        MOVE DSTOP TO TTU.DSTOP
+
+        IF DSTART LE DSTART3 AND DSTOP GE DSTOP OF DAILY370 THEN
+          NOTHING
+        ELSE
+          BEGIN
+          MOVE 1 TO ERR.RPT.NUM
+          MOVE 210 TO RESOURCE.SAVE
+          END
+        IF RESOURCE=149 THEN            % Auxiliary services charge %
+            BEGIN
+            MOVE 0 TO NO.DUP
+            WHILE NO.DUP EQ 0 DO
+              BEGIN
+              SELECT MISC.TRAN VIA(UUN=UUN.CHRG, ACTG.SYS.TYP, HOST, 
+                  PROJ.CODE, RESOURCE, DSTART=DSTOP OF DAILY370,TSTART=TSTOP,
+                  CRDB.CODE, CRDB, UNIQ) THEN
+                    LET TSTOP=TSTOP+.0001
+              ELSE
+                MOVE 1 TO NO.DUP
+              END
+
+            INSERT INTO MISC.TRAN USING (UUN.CHRG FOR UUN,DSTOP OF DAILY370
+              FOR DSTOP, DSTOP OF DAILY370 FOR DSTART, TSTOP FOR TSTART)
+            ADD 1 TO MISC.CNT
+            END
+        END     % Select TTU.PROG.NAMES %
+
+      ELSE      % RESOURCE not found %
+
+        BEGIN
+        MOVE 210 TO RESOURCE.SAVE
+        MOVE 2 TO ERR.RPT.NUM
+        TYPE @CR, PROG.NAM, @TAB 1, 'not in TTU.PROG.NAMES', @CR,
+          'Using RESOURCE 210 as default', @CR, @CR
+        END
+
+      IF RESOURCE.SAVE NE 149 THEN
+
+        IF UUN.CHRG=UUN THEN    % A TRAN.ACT instance only %
+          BEGIN
+          MOVE 0 TO NO.DUP
+          WHILE NO.DUP EQ 0 DO  % Allowing for duplicate TSTART %
+
+            BEGIN
+            SELECT TRAN.ACT VIA (UUN, SESS=REC.10.SESS, RESOURCE=RESOURCE.SAVE,
+              DSTART=DSTART3, TSTART=TSTART3, CRDB.CODE, CRDB, RADDR) THEN
+              LET TSTART3=TSTART3 + .0001
+            ELSE
+              MOVE 1 TO NO.DUP
+            END
+
+          INSERT INTO TRAN.ACT USING (RESOURCE.SAVE FOR RESOURCE,
+            DSTART3 FOR DSTART, TSTART3 FOR TSTART, REC.10.SESS FOR SESS)
+          ADD 1 TO TRAN.CNT, TRAN.CHRG.CNT
+          MOVE REC.10.SESS TO PRINT.SESS
+          END           % If UUN.CHRG=UUN %
+
+        ELSE    % Transaction not charged to initiating UUN %
+                % New SESSION.ACT instance required in addition to TRAN.ACT %
+          BEGIN
+          ADD 1 TO SESS, TRAN.CNT, TRAN.CHRG.CNT, SESS.ADD.CNT
+          MOVE DEFAULT TO NODE, PORT, TID, PROJ.CODE, DAY.SET
+          MOVE 0 TO NO.DUP
+
+          WHILE NO.DUP EQ 0 DO
+            BEGIN
+            SELECT SESSION.ACT VIA (UUN=UUN.CHRG, ACTG.SYS.TYP, HOST, 
+              PROJ.CODE=' ', DSTART=DSTART3, TSTART=TSTART3) THEN
+                LET TSTART3=TSTART3+.0001
+            ELSE
+              MOVE 1 TO NO.DUP
+            END
+
+          INSERT INTO SESSION.ACT USING (UUN.CHRG FOR UUN, DSTART3 FOR DSTART,
+            TSTART3 FOR TSTART, 'Y' FOR SESS.CHG)
+
+          INSERT INTO TRAN.ACT USING (UUN.CHRG FOR UUN, RESOURCE.SAVE
+            FOR RESOURCE, DSTART3 FOR DSTART, TSTART3 FOR TSTART)
+          MOVE SESS TO PRINT.SESS
+          END
+
+      IF ERR.RPT.NUM=1 THEN     % Date problem with TTU.PROG.NAMES %
+        BEGIN
+        MOVE 'ERRORS' TO EMPTY.RPT
+        PRINT TO APPL.NAME.ERR
+          @CR, RUN.DATE.TIME, 'Date problem', @CR,
+          'PROG.NAM= ', PROG.NAM,',', 'Dates in TTU.PROG.NAMES: ',
+          TTU.DSTART AS DATE 'MM/DD/YY', ' ', TTU.DSTOP AS DATE 'MM/DD/YY',
+          @CR, 'Session # = ', PRINT.SESS, ',', 'Initiating UUN= ', UUN, 
+          ',', 'Charged UUN= ', UUN.CHRG, @CR
+        END
+      ELSE
+        IF ERR.RPT.NUM=2 THEN   % PROG.NAM not found in TTU.PROG.NAMES %
+          BEGIN
+          MOVE 'ERRORS' TO EMPTY.RPT
+          PRINT TO APPL.NAME.ERR
+           @CR,RUN.DATE.TIME,' ',PROG.NAM, ' ', 'not in TTU.PROG.NAMES', @CR,
+           'Session # = ', PRINT.SESS, ',', 'Initiating UUN= ', UUN, ',',
+           'Charged UUN= ', UUN.CHRG, @CR
+          END
+        ELSE
+          NOTHING
+
+      MOVE DEFAULT TO PRIME.P, CRDB.CODE
+      END       % Of TRAN.CODE = 50, RECID=B %
+
+    ELSE IF TRAN.CODE = 60 THEN         % TRU extension record %
+      BEGIN
+      ADD 1 TO TRU.EXT.CNT
+                        % Accumulate TRU from current record with PRU %
+                        % from session record %
+      SELECT TRAN.ACT VIA (UUN, SESS=REC.10.SESS, RESOURCE=55, DSTART,
+        TSTART, CRDB.CODE, CRDB, RADDR=' ') THEN
+          BEGIN
+          ADD TRU.TOT TO QTY
+          ALTER TRAN.ACT
+          END
+      ELSE
+        SELECT TRAN.ACT VIA (UUN, SESS=REC.10.SESS, RESOURCE=57, DSTART,
+          TSTART, CRDB.CODE, CRDB, RADDR=' ') THEN
+            BEGIN
+            ADD TRU.TOT TO QTY
+            ALTER TRAN.ACT
+            END
+
+
+      END       % Of TRAN.CODE=60 %
+
+
+
+    ELSE IF TRAN.CODE=70 THEN   % TYMSLICE group record %
+      BEGIN
+      LET TSTART3=((SEC3+MIN3*60+HR3*3600) AS '5N.4N')/3600
+      MOVE DEFAULT TO GROUP.END
+      IF REASON EQ 20 THEN
+        MOVE 02 TO REASON
+      SELECT TYMSLICE.GROUP.DAT VIA (AGGR.NAM,HOST,DSTART=DSTART3,
+             TSTART=TSTART3,REASON) THEN
+        BEGIN
+          LET TSTART3 = TSTART3 + .0001
+          INSERT INTO TYMSLICE.GROUP.DAT USING (TSTART3 FOR TSTART,
+                      DSTART3 FOR DSTART)
+        END
+      ELSE
+        BEGIN
+        INSERT INTO TYMSLICE.GROUP.DAT USING (TSTART3 FOR TSTART,
+             DSTART3 FOR DSTART)
+        END
+      END
+    ELSE IF TRAN.CODE EQ 75 THEN        % TYMSLICE user record %
+      BEGIN
+      LET TSTART3=((SEC3+MIN3*60+HR3*3600) AS '5N.4N')/3600
+      SELECT TYMSLICE.USER.DAT VIA (AGGR.NAM,HOST,DSTART=DSTART3,
+              TSTART=TSTART3,SESS = REC.10.SESS) THEN
+        BEGIN
+          LET TSTART3 = TSTART3 + .0001
+          INSERT INTO TYMSLICE.USER.DAT USING (REC.10.SESS FOR SESS,
+                                                DSTART3 FOR DSTART,
+                                                TSTART3 FOR TSTART)
+          ADD 1 TO TYMSLICE.CNT
+        END
+      ELSE
+      BEGIN
+      INSERT INTO TYMSLICE.USER.DAT USING (REC.10.SESS FOR SESS,
+        DSTART3 FOR DSTART, TSTART3 FOR TSTART)
+      ADD 1 TO TYMSLICE.CNT
+      END
+      END  % TYMSLICE RECORDS %
+
+    ELSE IF TRAN.CODE = 99 THEN    % Checksum record %
+      BEGIN
+      MOVE HOST TO HOST OF SESS.UPD
+      MOVE FIRST.SESS TO FIRST.SESS OF SESS.UPD
+      MOVE LAST.SESS TO LAST.SESS OF SESS.UPD
+      MOVE SRC.DATE TO SRC.DATE OF SESS.UPD
+      LET TUSAGE = TUSAGE - USAGE       % The value of USAGE at the start of %
+                                        % checksum record processing is %
+                                        % included in TUSAGE a second time %
+      IF CHKSUM = TUSAGE THEN
+         BEGIN
+         TYPE TO TERMINAL 'FILE CHECKSUM MATCHES: ',CHKSUM,@CR
+         END
+      ELSE
+        BEGIN
+        MOVE 1 TO TMPTC
+        TYPE TO TERMINAL
+          'FILE CHECKSUM DOES NOT MATCH: ',CHKSUM,TUSAGE, @CR
+        END
+      END       % Of TRAN.CODE = 99 %
+
+    ELSE
+      BEGIN             % Undefined record type on 370 daily file %
+      TYPE TO TERMINAL
+        'RECORD CONTAINS INVALID TC: ',TRAN.CODE, @TAB 5, REC.IN.CNT,@CR
+      ADD 1 TO INVALID.CNT
+      END
+
+     END                          % ***** 4 ***** %
+
+    END         % End of for each daily 370  ***** 3 ***** %
+
+
+
+    IF EMPTY.RPT NE 'ERRORS' THEN       % file will be spooled if 'empty' %
+      PRINT TO APPL.NAME.ERR @CR, 'No ERRORS for ',SRC.FNAM,RUN.DATE.TIME
+
+
+    ADD SESS.ADD.CNT TO SESSION.CNT  % Adding newly created sessions to number %
+                                  % of primary session records, 10 '0' %
+
+      TYPE TO TERMINAL
+
+
+        @CR,'RECORDS',@TAB 4, 'SESS',@TAB 4, 'NEW SESS', @TAB 4, 'TRAN',
+          @TAB 4, 'TRAN CHRG', @TAB 4, 'CONN', @TAB 4, 'I/O', @TAB 3,
+          'WATS', @CR,
+          @TAB 1, REC.IN.CNT, @TAB 2, SESSION.CNT, @TAB 6, SESS.ADD.CNT,
+          @TAB 2, TRAN.CNT, @TAB 7, TRAN.CHRG.CNT, @TAB 2, CONNECT.CNT,@TAB 1,
+          IO.CNT, @TAB 1, WATS.CNT, @CR, @CR,
+          @TAB 2, 'PREM',@TAB 4, 'MISC', @TAB 4, 'TRU EX', @TAB 4,
+          'INVALID', @TAB 4, 'PRE SESS', @TAB 4, 'LST SESS', @TAB 3, 
+          'TYM/USE1',@CR,
+          PREM.CNT, @TAB 2, MISC.CNT,@TAB 4, TRU.EXT.CNT, @TAB 5,
+          INVALID.CNT, @TAB 4, SVSESS, @TAB 4, SESS, @TAB 5, 
+          TYMSLICE.CNT,@CR, @CR,
+          'CHARGE SET', @CR,
+          @TAB 4,CHARGE.CNT, @CR, @CR
+    IF NODE.ZERO.CT > 0 THEN
+       TYPE TO TERMINAL 'SESSIONS WITH NODE = 0: ',NODE.ZERO.CT,@CR
+
+    IF TMPTC = 99 THEN
+      BEGIN
+        MOVE SESS TO SVSESS
+        SELECT SESS.LOG VIA (LOC = 'LSESS') THEN
+            BEGIN
+            LET CUTOFF.DATE = TODAY AS DATE 'YYMMDD'
+            ALTER SESS.LOG USING (SVSESS FOR SESS)
+            END
+        ELSE
+            ABORT @CR,
+            "*** Missing 'LSESS' in relation SESS.LOG ***", @CR,
+            "Contact Accounting DBA", @CR
+
+        SELECT SRC.FNAM.SESS VIA KEY THEN
+            BEGIN
+            MOVE 1 TO FLAG
+            LET WR.DATE = TODAY
+            ALTER SRC.FNAM.SESS
+            END
+           ELSE
+            TYPE TO TERMINAL 'ERROR ---> FILE   ',SRC.FNAM,' NOT FOUND IN ',
+                 'RELATION: **SRC.FNAM.SESS**',@CR,
+                 'ERROR IN PROCEDURE "START.SESS.UPD"',@CR
+
+        INSERT INTO HOST.SESS   USING (SESS.ADD.CNT FOR SESS.ADD) 
+
+        SELECT HOST.LOG VIA KEY THEN
+          BEGIN
+          IF MIN.DATE LT MIN.DSTART THEN
+             LET MIN.DSTART = MIN.DATE
+          IF MAX.DATE GT MAX.DSTART THEN
+             LET MAX.DSTART = MAX.DATE
+          ALTER HOST.LOG
+          END
+         ELSE
+          BEGIN
+          LET MIN.DSTART = MIN.DATE
+          LET MAX.DSTART = MAX.DATE
+          INSERT INTO HOST.LOG
+          END
+      END       % Of TMPTC = 99 %
+      ELSE
+        BEGIN
+        TYPE TO TERMINAL 
+         'ABOVE FILE NOT PROCESSED -- CHECKSUM BAD', @CR
+        ABORT
+        END
+
+
+SELECT IN.CNTL.DATE VIA LOC = 'CTLDT' THEN
+  LET DSTART = CUTOFF.DATE
+
+SELECT IN.CNTL.DATE VIA LOC = 'SRIDT' THEN
+  ALTER IN.CNTL.DATE USING (DSTART FOR CUTOFF.DATE)
+
+DELETE FROM SESS.SRC.FNAMS VIA KEY
+FINISH FILEBLK
+END                     % ***** 2 ***** %
+
+
+TYPE TO TERMINAL "Completed: SESS.UPD.....Version 26.7.0", RUN.DATE.TIME
+
+TYPE "FINAL TRU COUNT = ",(TRU-START.TRU),@CR,@CR
+
+
+END                                         % ***** 1 ***** %
+   qLjhb
