@@ -1,0 +1,36 @@
+00:00:17 S 13-Apr-95
+03:00:17 S 13-Apr-95
+06:00:29 S 13-Apr-95
+07:45:03 S -S- stream #1 Req #45083 DSK:(JMS)SZRPT.LOG=DSK:(JMS)SZRPT.CTL
+07:45:09 S Processor status JSU EXECX Setup in frame 9
+07:45:10 P Waiting for interlock
+07:45:11 P Got interlock
+07:45:11 P EXECX Job Processor %1(226) starting in frame 9
+07:45:11 S Starting job processor in frame 9
+07:45:11 P Stream #1 Req #45083 DSK:(JMS)SZRPT.LOG=DSK:(JMS)SZRPT.CTL
+07:49:53 P Stream #1 Req #45083 * completed *
+07:49:56 S -R- stream #1 Done-End <0>
+08:05:10 P Signing off.
+09:00:11 S 13-Apr-95
+12:00:12 S 13-Apr-95
+14:30:04 S -S- stream #1 Req #45084 DSK:(JMS)FNDBAD.LOG=DSK:(JMS)FNDBAD.CTL
+14:30:10 S Processor status JSU EXECX Setup in frame 9
+14:30:11 P Waiting for interlock
+14:30:12 P Got interlock
+14:30:12 P EXECX Job Processor %1(226) starting in frame 9
+14:30:12 P Stream #1 Req #45084 DSK:(JMS)FNDBAD.LOG=DSK:(JMS)FNDBAD.CTL
+14:30:13 S Starting job processor in frame 9
+14:32:47 P Stream #1 Req #45084 * completed *
+14:32:47 S -R- stream #1 Done-End <0>
+14:48:11 P Signing off.
+15:00:12 S 13-Apr-95
+18:00:12 S 13-Apr-95
+21:00:12 S 13-Apr-95
+21:37:44 S -S- stream #1 Req #45087 DSK:(CTSFORD)GATHOU=DSK:(CTSFORD)PATGAT
+21:37:51 S Processor status JSU EXECX Setup in frame 11
+21:37:51 P Waiting for interlock
+21:37:52 P Got interlock
+21:37:52 P EXECX Job Processor %1(226) starting in frame 11
+21:37:52 P Stream #1 Req #45087 DSK:(CTSFORD)GATHOU=DSK:(CTSFORD)PATGAT
+21:37:53 S Starting job processor in frame 11
+00:00:53 S 14-Apr-95
