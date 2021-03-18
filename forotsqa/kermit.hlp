@@ -1,0 +1,221 @@
+KERMIT  (Program)
+
+KERMIT is a family of programs that do reliable file transfer between computers
+over TTY lines.  KERMIT can be used to make a microcomputer behave as a
+terminal for a mainframe, or to transfer files from one computer to another.
+At Columbia, KERMIT can be used to transfer files to or from the SUPERBRAIN
+located in room 272A Mudd.
+
+KERMIT was developed at the Columbia Center for Computing Activities.  It is
+now in widespread use: implementations are available for the IBM-PC and for
+many 8080- and Z80-based micros running CP/M, including the Vector Graphics,
+Intertec Superbrain, Ohio Scientific, Heath/Zenith 89 and 100, DEC VT180 Robin
+and (soon) PC100 Rainbow, and Apple II (with Z80 softcard) microcomputers.
+There is also a version written in C for UNIX systems, another version in
+Pascal for RT-11 systems, and mainframe versions for TOPS-10 on DECsystem-10s,
+TOPS-20 for DECSYSTEM-20s, and VM/CMS on IBM 370-series machines (or
+compatibles).
+
+If you are interested in installing KERMIT on another computer, refer to the
+KERMIT Users Guide and the KERMIT Protocol Manual (available online in
+DOC:KERMIT-USER.DOC and DOC:KERMIT-PROTO.DOC).
+
+To use KERMIT to transfer files between two computers, you must sign on to each
+computer separately and start up KERMIT on each one.  This procedure varies
+from system to system; we discuss it for a DEC-20 and a SuperBrain.  This
+procedure also applies to any 8080/Z80-based CP/M microcomputer communicating
+with the DEC-20.
+
+Type HELP SUPERBRAIN or refer to the KERMIT manual if you are not familiar with
+the SuperBrain microcomputer.
+
+
+* Examples:
+
+Start the micro; put the system floppies in drive A, your own floppy in drive
+B.  Switch from the system disk to your own by typing B: after the micro's "A>"
+prompt.  When you see the "B>" prompt, run KERMIT and connect to the DEC-20.  A
+session to save files from the DEC-20 on a floppy disk in the SUPERBRAIN would
+look like this:
+
+	64K COLUMBIA SUPERBRAIN DOS 3.1 FOR CP/M 2.2
+
+	A>b:
+	B>a:kermit
+	CUCCA Superbrain Kermit-80 V2.3
+
+	Kermit-80>connect
+	[Connecting to remote host, type CTRL-]C to return]
+
+You can now log in to the DEC-20.  Turn on the PACX box and login as you would
+from any other terminal.  Then you run KERMIT on the DEC-20 to transfer your
+files.
+
+	CU20D [VT52]
+	@comsw1001x.j-doe (password)
+	 CU20D, TOPS-20 Monitor V5
+	 Job 55, TTY174, 16-Jan-83 16:22:19
+	 Previous login was 16-Jan-83 14:49:34
+	@
+
+Note that KERMIT causes the SUPERBRAIN to emulate a VT52 terminal.
+
+To save your PASCAL program HW2.PAS, you first have to run KERMIT on the DEC-20
+and instruct it to send your program to the SUPERBRAIN with the SEND command:
+
+	@kermit
+	Kermit-20>send hw2.pas
+
+Now you have to return to the SUPERBRAIN, and instruct its KERMIT to receive
+the file being sent.  To get back to the micro, type KERMIT's escape character
+CTRL-] C.  That means hold down the CONTROL and SHIFT keys and type "]", then
+release the SHIFT and CONTROL keys and type "C".
+
+	^]c
+	[Connection closed, back at micro]
+	Kermit-80>
+
+You will now be back giving commands to the SUPERBRAIN.  Notice that the KERMIT
+programs on the DEC-20 and the SUPERBRAIN have different prompts to help you
+differentiate between the two computers (the "-80" is because the Superbrain's
+CPU is a Z80).
+
+Now type the RECEIVE command to the SUPERBRAIN's KERMIT:
+
+	Kermit-80>receive
+
+The SUPERBRAIN will then display information about the file as it is being
+transferred.  If the file has been successfully saved on your floppy, another
+"Kermit-80>" prompt will be printed.  If there was an error, try sending the
+file again or ask the consultant for help.
+
+To send several files at once, you can include wildcards in the FILESPEC to the
+SEND command (type HELP FILESPEC for more information on "wildcards").  For
+instance, to send all of your PASCAL programs, you would use the SEND *.PAS
+command.
+
+The procedure for sending files from the micro to the DEC-20 is the same;
+you just reverse the RECEIVE and SEND commands.
+
+Note that the wildcard for specifying a single character in the filename is "?"
+on the SUPERBRAIN (KERMIT-80) instead of "%" as on the DEC-20.
+
+When you are finished transferring files, be sure to CONNECT back to the
+DEC-20, exit from KERMIT-20, and log out.
+
+
+* Server operation:
+
+(This section applies only to communication between Kermit-20 and Kermit-80;
+other versions of Kermit do not yet have this feature.)
+
+If you expect to be doing a lot of file transfers in both directions, you will
+find it more convenient to start Kermit-20 as a "Server".  In server mode,
+Kermit-20 takes all its commands from Kermit-80 -- you don't have to connect
+back and forth and give RECEIVE/SEND commands to each end whenever you want
+to transfer a file, and you don't have to connect back to the DEC-20 to log out
+when you're done:
+
+	Kermit-80>connect
+	[Connecting to remote host.  Type CTRL-]C to return to micro.]
+	(log in to the DEC-20)
+	@kermit
+	Kermit-20>server
+	[Kermit server running on DEC-20 host.  Please type your escape 
+	sequence to return to your local machine.  Shut down the server
+	by typing the Kermit BYE command on your local machine.]
+	^]c
+	[Connection closed, back at micro.]
+	Kermit-80>receive *.pas
+	Kermit-80>send foo.*
+	Kermit-80>exit
+
+	(You can exit from Kermit-80, do some other work on the micro,
+	and run Kermit-80 again as often as you like.)
+
+	A>kermit
+	Kermit-80>send file.pas
+	Kermit-80>bye
+	A>
+
+The BYE command shuts down the DEC-20 Kermit server, logs off its job, and then
+exits from Kermit-80 back to CP/M.
+
+
+* References:
+
+Type HELP on the following topics:
+
+	filespec
+	superbrain
+
+See also,
+
+	DOC:KERMIT-USER.DOC
+	KER:KERMIT-PROTO.DOC
+
+
+* Commands:
+
+This is a description of the most frequently used KERMIT commands.  Detailed
+descriptions of ALL commands are listed in the KERMIT manual, available online
+as DOC:KERMIT.DOC.
+
+CONNECT		Make a "virtual terminal" connection to the remote system.  On
+		the DEC-20, CONNECT invokes TELNET on the TTY line specified by
+		the SET LINE command (this feature is not available to holders
+		of course or NCA IDs).  To "escape" from a virtual terminal
+		connection, type the escape sequence (CTRL-] C on the
+		Superbrain).
+
+LOG filespec	While CONNECTed, make a transcript of the session in the CP/M
+		file named by FILESPEC.  Remote host must be able to do
+		XON/XOFF flow control (set TERMINAL PAUSE (ON) COMMAND on the
+		DEC-20).
+
+EXIT		Exit from KERMIT back to the host operating system.
+
+HELP		Type a summary of KERMIT commands and what they do.
+
+QUIT		Same as EXIT.
+
+RECEIVE		Receive a file or group of files from the remote host.
+
+RECEIVE filespec (Kermit-80 only)
+		Tell the remote Kermit server to send the files named by
+		FILESPEC.
+
+SEND filespec	Sends a file or group of files FILESPEC from the local host to
+		the remote host.
+
+SET arguments	Establish various system-dependent parameters.  The most useful
+		ARGUMENTS are:
+
+	DELAY n 	Wait n seconds before beginning transmission.  This
+			allows sufficient time for you to escape back to the
+			micro and get its KERMIT ready to receive.
+
+	ESCAPE		Sets the CONNECT escape character; KERMIT will prompt
+			you for the character.
+
+	FILE-WARNING argument
+			ARGUMENT can be either ON or OFF; the default is ON.
+			Normally SuperBrain KERMIT will warn you of filename
+			conflicts when receiving files.  If you don't want to
+			be warned, you can SET FILE-WARNING OFF.
+
+	IBM-FLAG	Set communication line echoing, parity, and handshaking
+			for the remote IBM VM/CMS system.
+
+
+SHOW		Display the values of SET options.
+
+STATUS		List information about the last transfer.
+
+BYE		(Kermit-80 only) Shut down and log out the remote Kermit
+		server.
+
+See the Kermit Users Guide for detailed descriptions of the commands for each
+implementation of Kermit.
+
+[End of KERMIT.HLP, 15 Feb 83]
