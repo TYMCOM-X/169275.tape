@@ -1,0 +1,336 @@
+Master host: 33
+257 files on master system.
+Slave hosts: 56
+Checking host 56
+(SUBMIT      :  56) EXECX.SAV     62 23-Sep-87 02:12 -- bad license   2000
+                           should be 22-Sep-87 22:18 CIDKUP  ALL  RD  NO
+(SUBMIT      :  56) XEXEC.SAV     51 23-Sep-87 02:24 -- bad license   2000
+                           should be 22-Sep-87 22:30 TOHFUZ  ALL  RD  NO
+(SUBMIT      :  56) 910402.JQL     3 01-Apr-91 16:00 -- bad checksum PIMHAN
+                           should be 01-Apr-91 16:00 XIRGUZ  ALL  RD  NO
+(SUBMIT      :  56) 910409.JQL     3 08-Apr-91 17:00 -- bad checksum TUYQEQ
+                           should be 08-Apr-91 17:00 DUTCAQ  ALL  RD  NO
+(SUBMIT      :  56) 910411.JQL     3 10-Apr-91 17:00 -- bad checksum FEGFOZ
+                           should be 10-Apr-91 17:00 TERZAZ  ALL  RD  NO
+(SUBMIT      :  56) 910418.JQL     3 17-Apr-91 17:00 -- bad checksum DAQHEH
+                           should be 17-Apr-91 17:00 TEYPOF  ALL  RD  NO
+(SUBMIT      :  56) 910420.JQL     3 19-Apr-91 17:00 -- bad checksum HUVSIY
+                           should be 19-Apr-91 17:00 WOTDOZ  ALL  RD  NO
+(SUBMIT      :  56) 910427.JQL     3 26-Apr-91 17:00 -- bad checksum WOCDEJ
+                           should be 26-Apr-91 17:00 XINLAW  ALL  RD  NO
+(SUBMIT      :  56) 910501.JQL     3 30-Apr-91 17:00 -- bad checksum VOKSAN
+                           should be 30-Apr-91 17:00 HUMZEV  ALL  RD  NO
+(SUBMIT      :  56) 910508.JQL     3 07-May-91 17:00 -- bad checksum YORMEF
+                           should be 07-May-91 17:00 MUBPUD  ALL  RD  NO
+(SUBMIT      :  56) 910510.JQL     3 09-May-91 17:00 -- bad checksum HAVLAG
+                           should be 09-May-91 17:00 DOBQUF  ALL  RD  NO
+(SUBMIT      :  56) 910517.JQL     3 16-May-91 17:00 -- bad checksum XACMEM
+                           should be 16-May-91 17:00 ROBZIS  ALL  RD  NO
+(SUBMIT      :  56) 910526.JQL     2 25-May-91 17:00 -- bad checksum SOVKOT
+                           should be 25-May-91 17:00 GIYDOT  ALL  RD  NO
+(SUBMIT      :  56) 910607.JQL     3 06-Jun-91 17:00 -- bad checksum FIHDOK
+                           should be 06-Jun-91 17:00 REKYIM  ALL  RD  NO
+(SUBMIT      :  56) 910616.JQL     3 15-Jun-91 17:00 -- bad checksum VENDOB
+                           should be 15-Jun-91 17:00 QUJJEX  ALL  RD  NO
+(SUBMIT      :  56) 910625.JQL     2 24-Jun-91 17:00 -- bad checksum TUSWUH
+                           should be 24-Jun-91 17:00 XUGPEX  ALL  RD  NO
+(SUBMIT      :  56) 910706.JQL     2 05-Jul-91 17:00 -- bad checksum FIJPER
+                           should be 05-Jul-91 17:00 WAXDIB  ALL  RD  NO
+(SUBMIT      :  56) 910715.JQL     2 14-Jul-91 17:00 -- bad checksum LEGLOM
+                           should be 14-Jul-91 17:00 MOFYAD  ALL  RD  NO
+(SUBMIT      :  56) 910724.JQL     2 23-Jul-91 17:00 -- bad checksum QUHROM
+                           should be 23-Jul-91 17:00 XADWUD  ALL  RD  NO
+(SUBMIT      :  56) 910805.JQL     2 04-Aug-91 17:00 -- bad checksum LOZVUW
+                           should be 04-Aug-91 17:00 FOVHEC  ALL  RD  NO
+(SUBMIT      :  56) 910814.JQL     2 13-Aug-91 17:00 -- bad checksum JAPJOK
+                           should be 13-Aug-91 17:00 DOFYOQ  ALL  RD  NO
+(SUBMIT      :  56) 910823.JQL     2 22-Aug-91 17:00 -- bad checksum WAHZIQ
+                           should be 22-Aug-91 17:00 CEGNOH  ALL  RD  NO
+(SUBMIT      :  56) 910904.JQL     2 03-Sep-91 17:00 -- bad checksum KALXET
+                           should be 03-Sep-91 17:00 GEZYIC  ALL  RD  NO
+(SUBMIT      :  56) JQUEUE.INI     7 18-Nov-86 22:20 -- bad checksum NEYNIZ
+                           should be 02-Jun-87 17:31 MAMDUG  ALL  RD  NO
+(SUBMIT      :  56) 910403.JQL     3 02-Apr-91 16:00 -- bad checksum VORFOG
+                           should be 02-Apr-91 16:00 PETRAM  ALL  RD  NO
+(SUBMIT      :  56) 910412.JQL     3 11-Apr-91 17:00 -- bad checksum BOBZUD
+                           should be 11-Apr-91 17:00 SAJGID  ALL  RD  NO
+(SUBMIT      :  56) 910419.JQL     3 18-Apr-91 17:00 -- bad checksum ZAXWIY
+                           should be 18-Apr-91 17:00 ZERZAG  ALL  RD  NO
+(SUBMIT      :  56) 910421.JQL     3 20-Apr-91 17:00 -- bad checksum BASJAY
+                           should be 20-Apr-91 17:00 BICSUJ  ALL  RD  NO
+(SUBMIT      :  56) 910428.JQL     3 27-Apr-91 17:00 -- bad checksum CORWOV
+                           should be 27-Apr-91 17:00 YUPKEN  ALL  RD  NO
+(SUBMIT      :  56) 910430.JQL     3 29-Apr-91 17:00 -- bad checksum HILWOT
+                           should be 29-Apr-91 17:00 YIGLON  ALL  RD  NO
+(SUBMIT      :  56) 910502.JQL     3 01-May-91 17:00 -- bad checksum YEMKIM
+                           should be 01-May-91 17:00 NAZREC  ALL  RD  NO
+(SUBMIT      :  56) 910509.JQL     3 08-May-91 17:00 -- bad checksum MOXSUB
+                           should be 08-May-91 17:00 KUXPOX  ALL  RD  NO
+(SUBMIT      :  56) 910511.JQL     3 10-May-91 17:00 -- bad checksum BEPMIL
+                           should be 10-May-91 17:00 ZULYEL  ALL  RD  NO
+(SUBMIT      :  56) 910518.JQL     3 17-May-91 17:00 -- bad checksum CICQOY
+                           should be 17-May-91 17:00 TUDWUD  ALL  RD  NO
+(SUBMIT      :  56) 910520.JQL     3 19-May-91 17:00 -- bad checksum HADLOV
+                           should be 19-May-91 17:00 JAZJIQ  ALL  RD  NO
+(SUBMIT      :  56) 910527.JQL     2 26-May-91 17:00 -- bad checksum YAQHEX
+                           should be 26-May-91 17:00 XAFFIJ  ALL  RD  NO
+(SUBMIT      :  56) 910601.JQL     2 31-May-91 17:00 -- bad checksum PASLEM
+                           should be 31-May-91 17:00 CIYBEW  ALL  RD  NO
+(SUBMIT      :  56) 910608.JQL     3 07-Jun-91 17:00 -- bad checksum MOQWOJ
+                           should be 07-Jun-91 17:00 TEKHEC  ALL  RD  NO
+(SUBMIT      :  56) 910610.JQL     3 09-Jun-91 17:00 -- bad checksum LECDUD
+                           should be 09-Jun-91 17:00 GEDROJ  ALL  RD  NO
+(SUBMIT      :  56) 910617.JQL     3 16-Jun-91 17:00 -- bad checksum COWREM
+                           should be 16-Jun-91 17:00 LESCAJ  ALL  RD  NO
+(SUBMIT      :  56) 910626.JQL     2 25-Jun-91 17:00 -- bad checksum GUPYAW
+                           should be 25-Jun-91 17:00 KOSVAL  ALL  RD  NO
+(SUBMIT      :  56) 910707.JQL     2 06-Jul-91 17:00 -- bad checksum YIQZIN
+                           should be 06-Jul-91 17:00 RIGFUZ  ALL  RD  NO
+(SUBMIT      :  56) 910716.JQL     2 15-Jul-91 17:00 -- bad checksum SAHYAQ
+                           should be 15-Jul-91 17:00 ZEYQES  ALL  RD  NO
+(SUBMIT      :  56) 910725.JQL     2 24-Jul-91 17:00 -- bad checksum QAWDIR
+                           should be 24-Jul-91 17:00 TIRCEX  ALL  RD  NO
+(SUBMIT      :  56) 910806.JQL     2 05-Aug-91 17:00 -- bad checksum ZEMLIX
+                           should be 05-Aug-91 17:00 BODTUH  ALL  RD  NO
+(SUBMIT      :  56) 910815.JQL     2 14-Aug-91 17:00 -- bad checksum NAZSIM
+                           should be 14-Aug-91 17:00 RIVXIX  ALL  RD  NO
+(SUBMIT      :  56) 910824.JQL     2 23-Aug-91 17:00 -- bad checksum HUTTIT
+                           should be 23-Aug-91 17:00 TUKREW  ALL  RD  NO
+(SUBMIT      :  56) 910905.JQL     2 04-Sep-91 17:00 -- bad checksum JEYZUD
+                           should be 04-Sep-91 17:00 XITLOB  ALL  RD  NO
+(SUBMIT      :  56) LOGON.SHR     13 03-Dec-86 18:44 -- extra not on master
+(SUBMIT      :  56) 910404.JQL     3 03-Apr-91 16:00 -- bad checksum RISBIR
+                           should be 03-Apr-91 16:00 QOSXIC  ALL  RD  NO
+(SUBMIT      :  56) 910413.JQL     3 12-Apr-91 17:00 -- bad checksum QORCUW
+                           should be 12-Apr-91 17:00 XEWSEW  ALL  RD  NO
+(SUBMIT      :  56) 910422.JQL     3 21-Apr-91 17:00 -- bad checksum ROYFUG
+                           should be 21-Apr-91 17:00 SOCTEN  ALL  RD  NO
+(SUBMIT      :  56) 910429.JQL     3 28-Apr-91 17:00 -- bad checksum CUSPUX
+                           should be 28-Apr-91 17:00 FIVTIC  ALL  RD  NO
+(SUBMIT      :  56) 910503.JQL     3 02-May-91 17:00 -- bad checksum WUWVIL
+                           should be 02-May-91 17:00 VOHWAZ  ALL  RD  NO
+(SUBMIT      :  56) 910512.JQL     3 11-May-91 17:00 -- bad checksum FORWUV
+                           should be 11-May-91 17:00 BACPIC  ALL  RD  NO
+(SUBMIT      :  56) 910519.JQL     3 18-May-91 17:00 -- bad checksum ZOZXIW
+                           should be 18-May-91 17:00 TOZRAB  ALL  RD  NO
+(SUBMIT      :  56) 910521.JQL     3 20-May-91 17:00 -- bad checksum CACZEH
+                           should be 20-May-91 17:00 SONLOM  ALL  RD  NO
+(SUBMIT      :  56) 910528.JQL     2 27-May-91 17:00 -- bad checksum WUBTOJ
+                           should be 27-May-91 17:00 BOCREY  ALL  RD  NO
+(SUBMIT      :  56) 910530.JQL     2 29-May-91 17:00 -- bad checksum TASHEJ
+                           should be 29-May-91 17:00 POBRUW  ALL  RD  NO
+(SUBMIT      :  56) 910602.JQL     2 01-Jun-91 17:00 -- bad checksum BIYKAK
+                           should be 01-Jun-91 17:00 TENXOF  ALL  RD  NO
+(SUBMIT      :  56) 910609.JQL     3 08-Jun-91 17:00 -- bad checksum ZEDBOJ
+                           should be 08-Jun-91 17:00 BEMJOT  ALL  RD  NO
+(SUBMIT      :  56) 910611.JQL     2 10-Jun-91 17:00 -- bad checksum HOZNOY
+                           should be 10-Jun-91 17:00 BUXSUR  ALL  RD  NO
+(SUBMIT      :  56) 910618.JQL     2 17-Jun-91 17:00 -- bad checksum PUCLAH
+                           should be 17-Jun-91 17:00 LUMCUB  ALL  RD  NO
+(SUBMIT      :  56) 910620.JQL     2 19-Jun-91 17:00 -- bad checksum JIGBEB
+                           should be 19-Jun-91 17:00 ZIXVEZ  ALL  RD  NO
+(SUBMIT      :  56) 910627.JQL     2 26-Jun-91 17:00 -- bad checksum FIMDOK
+                           should be 26-Jun-91 17:00 YOMTAX  ALL  RD  NO
+(SUBMIT      :  56) 910701.JQL     3 30-Jun-91 17:00 -- bad checksum NUVNEG
+                           should be 30-Jun-91 17:00 DODWAK  ALL  RD  NO
+(SUBMIT      :  56) 910708.JQL     2 07-Jul-91 17:00 -- bad checksum GOSFAK
+                           should be 07-Jul-91 17:00 BUBDOY  ALL  RD  NO
+(SUBMIT      :  56) 910710.JQL     3 09-Jul-91 17:00 -- bad checksum JIQXAJ
+                           should be 09-Jul-91 17:00 RITJOX  ALL  RD  NO
+(SUBMIT      :  56) 910717.JQL     2 16-Jul-91 17:00 -- bad checksum TOQMIJ
+                           should be 16-Jul-91 17:00 JUCKUN  ALL  RD  NO
+(SUBMIT      :  56) 910726.JQL     2 25-Jul-91 17:00 -- bad checksum JUVZEK
+                           should be 25-Jul-91 17:00 WODCOJ  ALL  RD  NO
+(SUBMIT      :  56) 910807.JQL     2 06-Aug-91 17:00 -- bad checksum HUWZUH
+                           should be 06-Aug-91 17:00 ZEDVOJ  ALL  RD  NO
+(SUBMIT      :  56) 910816.JQL     2 15-Aug-91 17:00 -- bad checksum GUJKEL
+                           should be 15-Aug-91 17:00 BATDOP  ALL  RD  NO
+(SUBMIT      :  56) 910825.JQL     2 24-Aug-91 17:00 -- bad checksum PAVVUR
+                           should be 24-Aug-91 17:00 JEYDUS  ALL  RD  NO
+(SUBMIT      :  56) 910405.JQL     3 04-Apr-91 16:00 -- bad checksum HADNIP
+                           should be 04-Apr-91 16:00 HURDUY  ALL  RD  NO
+(SUBMIT      :  56) 910414.JQL     3 13-Apr-91 17:00 -- bad checksum VODYEY
+                           should be 13-Apr-91 17:00 MAPFUR  ALL  RD  NO
+(SUBMIT      :  56) 910423.JQL     3 22-Apr-91 17:00 -- bad checksum VUWZEL
+                           should be 22-Apr-91 17:00 MAZQOM  ALL  RD  NO
+(SUBMIT      :  56) 910504.JQL     3 03-May-91 17:00 -- bad checksum RAFNEY
+                           should be 03-May-91 17:00 TUJTEK  ALL  RD  NO
+(SUBMIT      :  56) 910513.JQL     3 12-May-91 17:00 -- bad checksum GAXJOZ
+                           should be 12-May-91 17:00 COGFEC  ALL  RD  NO
+(SUBMIT      :  56) 910522.JQL     3 21-May-91 17:00 -- bad checksum MOXQOP
+                           should be 21-May-91 17:00 BULTES  ALL  RD  NO
+(SUBMIT      :  56) 910529.JQL     2 28-May-91 17:00 -- bad checksum WUPBOB
+                           should be 28-May-91 17:00 SOKPED  ALL  RD  NO
+(SUBMIT      :  56) 910531.JQL     2 30-May-91 17:00 -- bad checksum NAQVIZ
+                           should be 30-May-91 17:00 BINVOF  ALL  RD  NO
+(SUBMIT      :  56) 910603.JQL     2 02-Jun-91 17:00 -- bad checksum WIXQAG
+                           should be 02-Jun-91 17:00 VAPFUX  ALL  RD  NO
+(SUBMIT      :  56) 910612.JQL     2 11-Jun-91 17:00 -- bad checksum DEKQIZ
+                           should be 11-Jun-91 17:00 QICYEC  ALL  RD  NO
+(SUBMIT      :  56) 910619.JQL     3 18-Jun-91 17:00 -- bad checksum LEPWUD
+                           should be 18-Jun-91 17:00 ROGVEN  ALL  RD  NO
+(SUBMIT      :  56) 910621.JQL     3 20-Jun-91 17:00 -- bad checksum YEVGUB
+                           should be 20-Jun-91 17:00 SIFDAH  ALL  RD  NO
+(SUBMIT      :  56) 910628.JQL     2 27-Jun-91 17:00 -- bad checksum NAFPOL
+                           should be 27-Jun-91 17:00 MEPRUG  ALL  RD  NO
+(SUBMIT      :  56) 910630.JQL     2 29-Jun-91 17:00 -- bad checksum DIMJUM
+                           should be 29-Jun-91 17:00 QIDFUT  ALL  RD  NO
+(SUBMIT      :  56) 910702.JQL     2 01-Jul-91 17:00 -- bad checksum RAMKEY
+                           should be 01-Jul-91 17:00 TOQDIM  ALL  RD  NO
+(SUBMIT      :  56) 910709.JQL     2 08-Jul-91 17:00 -- bad checksum JUTBUF
+                           should be 08-Jul-91 17:00 MOCQAZ  ALL  RD  NO
+(SUBMIT      :  56) 910711.JQL     2 10-Jul-91 17:00 -- bad checksum ZOMRER
+                           should be 10-Jul-91 17:00 QOHBAV  ALL  RD  NO
+(SUBMIT      :  56) 910718.JQL     2 17-Jul-91 17:00 -- bad checksum BUXPAZ
+                           should be 17-Jul-91 17:00 CIYVUD  ALL  RD  NO
+(SUBMIT      :  56) 910720.JQL     2 19-Jul-91 17:00 -- bad checksum MUWTIS
+                           should be 19-Jul-91 17:00 XETTEF  ALL  RD  NO
+(SUBMIT      :  56) 910727.JQL     2 26-Jul-91 17:00 -- bad checksum BUYGOD
+                           should be 26-Jul-91 17:00 PIXZUC  ALL  RD  NO
+(SUBMIT      :  56) 910801.JQL     2 31-Jul-91 17:00 -- bad checksum KUTTOM
+                           should be 31-Jul-91 17:00 YITLOB  ALL  RD  NO
+(SUBMIT      :  56) 910808.JQL     2 07-Aug-91 17:00 -- bad checksum VOFFIS
+                           should be 07-Aug-91 17:00 FAVMAY  ALL  RD  NO
+(SUBMIT      :  56) 910810.JQL     2 09-Aug-91 17:00 -- bad checksum MIRQOD
+                           should be 09-Aug-91 17:00 DIMLIR  ALL  RD  NO
+(SUBMIT      :  56) 910817.JQL     2 16-Aug-91 17:00 -- bad checksum NIVGIQ
+                           should be 16-Aug-91 17:00 DEQCAV  ALL  RD  NO
+(SUBMIT      :  56) 910826.JQL     2 25-Aug-91 17:00 -- bad checksum KAPFIR
+                           should be 25-Aug-91 17:00 PAVNAV  ALL  RD  NO
+(SUBMIT      :  56) PRPCHG.DOC     4 15-Nov-86 19:33 -- bad checksum ZOFCEV
+                           should be 17-Feb-87 12:55 ZAFKOB  ALL  RD  NO
+(SUBMIT      :  56) PERP.LOG       2 18-Nov-86 22:12 -- bad checksum TEBKAG
+                           should be 15-Jul-87 14:52 CEYYAN  ALL  RD  NO
+(SUBMIT      :  56) 910406.JQL     3 05-Apr-91 16:00 -- bad checksum BOMZIP
+                           should be 05-Apr-91 16:00 WEQTIR  ALL  RD  NO
+(SUBMIT      :  56) 910415.JQL     3 14-Apr-91 17:00 -- bad checksum KIGTOB
+                           should be 14-Apr-91 17:00 QOQTIM  ALL  RD  NO
+(SUBMIT      :  56) 910424.JQL     3 23-Apr-91 17:00 -- bad checksum HETRIC
+                           should be 23-Apr-91 17:00 TIFFOC  ALL  RD  NO
+(SUBMIT      :  56) 910505.JQL     3 04-May-91 17:00 -- bad checksum ROCVOJ
+                           should be 04-May-91 17:00 LUKDUB  ALL  RD  NO
+(SUBMIT      :  56) 910514.JQL     3 13-May-91 17:00 -- bad checksum LOHDIF
+                           should be 13-May-91 17:00 VIQGIM  ALL  RD  NO
+(SUBMIT      :  56) 910523.JQL     3 22-May-91 17:00 -- bad checksum TIVBOM
+                           should be 22-May-91 17:00 FAKBAY  ALL  RD  NO
+(SUBMIT      :  56) 910604.JQL     3 03-Jun-91 17:00 -- bad checksum LUDKEJ
+                           should be 03-Jun-91 17:00 FOJDUW  ALL  RD  NO
+(SUBMIT      :  56) 910613.JQL     2 12-Jun-91 17:00 -- bad checksum RESLIF
+                           should be 12-Jun-91 17:00 MEBDIQ  ALL  RD  NO
+(SUBMIT      :  56) 910622.JQL     2 21-Jun-91 17:00 -- bad checksum CIJXUF
+                           should be 21-Jun-91 17:00 YAJKAK  ALL  RD  NO
+(SUBMIT      :  56) 910629.JQL     2 28-Jun-91 17:00 -- bad checksum DAZRAT
+                           should be 28-Jun-91 17:00 COFGEW  ALL  RD  NO
+(SUBMIT      :  56) 910703.JQL     2 02-Jul-91 17:00 -- bad checksum VUDVUX
+                           should be 02-Jul-91 17:00 SIVNAH  ALL  RD  NO
+(SUBMIT      :  56) 910712.JQL     3 11-Jul-91 17:00 -- bad checksum VEDDOB
+                           should be 11-Jul-91 17:00 VUFFEF  ALL  RD  NO
+(SUBMIT      :  56) 910719.JQL     2 18-Jul-91 17:00 -- bad checksum QAYLIH
+                           should be 18-Jul-91 17:00 PODTUB  ALL  RD  NO
+(SUBMIT      :  56) 910721.JQL     2 20-Jul-91 17:00 -- bad checksum WIVKUJ
+                           should be 20-Jul-91 17:00 CECNOQ  ALL  RD  NO
+(SUBMIT      :  56) 910728.JQL     2 27-Jul-91 17:00 -- bad checksum HALNEQ
+                           should be 27-Jul-91 17:00 YUWFEM  ALL  RD  NO
+(SUBMIT      :  56) 910730.JQL     2 29-Jul-91 17:00 -- bad checksum ZOZKEB
+                           should be 29-Jul-91 17:00 PUBDAT  ALL  RD  NO
+(SUBMIT      :  56) 910802.JQL     2 01-Aug-91 17:00 -- bad checksum KUXQUD
+                           should be 01-Aug-91 17:00 NEQQIN  ALL  RD  NO
+(SUBMIT      :  56) 910809.JQL     2 08-Aug-91 17:00 -- bad checksum SUWBUP
+                           should be 08-Aug-91 17:00 WAPHAF  ALL  RD  NO
+(SUBMIT      :  56) 910811.JQL     2 10-Aug-91 17:00 -- bad checksum JEVNEG
+                           should be 10-Aug-91 17:00 QUYPUZ  ALL  RD  NO
+(SUBMIT      :  56) 910818.JQL     2 17-Aug-91 17:00 -- bad checksum WOLSOD
+                           should be 17-Aug-91 17:00 WEBSIV  ALL  RD  NO
+(SUBMIT      :  56) 910820.JQL     2 19-Aug-91 17:00 -- bad checksum GAZSEY
+                           should be 19-Aug-91 17:00 DEBHEV  ALL  RD  NO
+(SUBMIT      :  56) 910827.JQL     2 26-Aug-91 17:00 -- bad checksum XEQJIR
+                      should be 26-Aug-91 17:00 QIQQAJ  ALL  RD  NO
+(SUBMIT      :  56) 910901.JQL     2 31-Aug-91 18:50 -- bad checksum NOLGIY
+                           should be 31-Aug-91 17:00 FOPNIH  ALL  RD  NO
+(SUBMIT      :  56) PER.LOG        2 23-Oct-85 14:47 -- bad checksum BOFDAK
+                           should be 23-Oct-85 13:43 BEYZAY  ALL  RD  NO
+(SUBMIT      :  56) 910407.JQL     3 06-Apr-91 16:00 -- bad checksum YIKHEF
+                           should be 06-Apr-91 16:00 ZURNOZ  ALL  RD  NO
+(SUBMIT      :  56) 910416.JQL     3 15-Apr-91 17:00 -- bad checksum GIBXOF
+                           should be 15-Apr-91 17:00 FUCBEC  ALL  RD  NO
+(SUBMIT      :  56) 910425.JQL     3 24-Apr-91 17:00 -- bad checksum WEZJEJ
+                           should be 24-Apr-91 17:00 YOPCOK  ALL  RD  NO
+(SUBMIT      :  56) 910506.JQL     3 05-May-91 17:00 -- bad checksum TOQHAF
+                           should be 05-May-91 17:00 PUKPUL  ALL  RD  NO
+(SUBMIT      :  56) 910515.JQL     3 14-May-91 17:00 -- bad checksum LEMGIL
+                           should be 14-May-91 17:00 ZONKOC  ALL  RD  NO
+(SUBMIT      :  56) 910524.JQL     3 23-May-91 17:00 -- bad checksum VICRIZ
+                           should be 23-May-91 17:00 NEFXUX  ALL  RD  NO
+(SUBMIT      :  56) 910605.JQL     3 04-Jun-91 17:00 -- bad checksum JIRXIP
+                           should be 04-Jun-91 17:00 DOKJEW  ALL  RD  NO
+(SUBMIT      :  56) 910614.JQL     2 13-Jun-91 17:00 -- bad checksum TOCLAM
+                           should be 13-Jun-91 17:00 VOYRUQ  ALL  RD  NO
+(SUBMIT      :  56) 910623.JQL     3 22-Jun-91 17:00 -- bad checksum CEDQES
+                           should be 22-Jun-91 17:00 KORFEM  ALL  RD  NO
+(SUBMIT      :  56) 910704.JQL     3 03-Jul-91 17:00 -- bad checksum HIWVAS
+                           should be 03-Jul-91 17:00 NEBPOJ  ALL  RD  NO
+(SUBMIT      :  56) 910713.JQL     2 12-Jul-91 17:00 -- bad checksum WETWUR
+                           should be 12-Jul-91 17:00 KINNOW  ALL  RD  NO
+(SUBMIT      :  56) 910722.JQL     3 21-Jul-91 17:00 -- bad checksum WEMNUW
+                           should be 21-Jul-91 17:00 RULBUY  ALL  RD  NO
+(SUBMIT      :  56) 910729.JQL     2 28-Jul-91 17:00 -- bad checksum COHHEG
+                           should be 28-Jul-91 17:00 QUBZEK  ALL  RD  NO
+(SUBMIT      :  56) 910731.JQL     2 30-Jul-91 17:00 -- bad checksum CASGOR
+                           should be 30-Jul-91 17:00 XAZXUX  ALL  RD  NO
+(SUBMIT      :  56) 910803.JQL     2 02-Aug-91 17:00 -- bad checksum QUCNAM
+                           should be 02-Aug-91 17:00 MIMNOK  ALL  RD  NO
+(SUBMIT      :  56) 910812.JQL     2 11-Aug-91 17:00 -- bad checksum LOKSUZ
+                           should be 11-Aug-91 17:00 HAKTOR  ALL  RD  NO
+(SUBMIT      :  56) 910819.JQL     2 18-Aug-91 17:00 -- bad checksum POCHIJ
+                           should be 18-Aug-91 17:00 SAHYEK  ALL  RD  NO
+(SUBMIT      :  56) 910821.JQL     2 20-Aug-91 17:00 -- bad checksum FIVYUZ
+                           should be 20-Aug-91 17:00 TOBFIP  ALL  RD  NO
+(SUBMIT      :  56) 910828.JQL     2 27-Aug-91 17:00 -- bad checksum SUZGEK
+                           should be 27-Aug-91 17:00 WUZJAL  ALL  RD  NO
+(SUBMIT      :  56) 910830.JQL     2 29-Aug-91 17:00 -- bad checksum CARFOZ
+                           should be 29-Aug-91 17:00 BOLQIN  ALL  RD  NO
+(SUBMIT      :  56) 910902.JQL     2 01-Sep-91 17:00 -- bad checksum BUZLIW
+                           should be 01-Sep-91 17:00 SIPREG  ALL  RD  NO
+(SUBMIT      :  56) SUBMIT.SAV    64 05-May-87 14:59 -- extra not on master
+(SUBMIT      :  56) SUBMIT.DOC    33 18-Dec-86 17:46 -- bad checksum VURJOL
+                           should be 17-Feb-87 12:53 BOKTUF  ALL  RD  NO
+(SUBMIT      :  56) T              2 19-Nov-86 23:02 -- extra not on master
+(SUBMIT      :  56) 910408.JQL     3 07-Apr-91 17:00 -- bad checksum QUPPEY
+                           should be 07-Apr-91 17:00 FAYWUY  ALL  RD  NO
+(SUBMIT      :  56) 910410.JQL     3 09-Apr-91 17:00 -- bad checksum FUQCEV
+                           should be 09-Apr-91 17:00 CEWXUW  ALL  RD  NO
+(SUBMIT      :  56) 910417.JQL     3 16-Apr-91 17:00 -- bad checksum METFOH
+                           should be 16-Apr-91 17:00 JIZFEQ  ALL  RD  NO
+(SUBMIT      :  56) 910426.JQL     3 25-Apr-91 17:00 -- bad checksum SOZZAC
+                           should be 25-Apr-91 17:00 LOBCEN  ALL  RD  NO
+(SUBMIT      :  56) 910507.JQL     3 06-May-91 17:00 -- bad checksum YEQVEX
+                           should be 06-May-91 17:00 LEMZES  ALL  RD  NO
+(SUBMIT      :  56) 910516.JQL     3 15-May-91 17:00 -- bad checksum WARFUB
+                           should be 15-May-91 17:00 GEXDEZ  ALL  RD  NO
+(SUBMIT      :  56) 910525.JQL     2 24-May-91 17:00 -- bad checksum NICQIZ
+                           should be 24-May-91 17:00 XERLOF  ALL  RD  NO
+(SUBMIT      :  56) 910606.JQL     3 05-Jun-91 17:00 -- bad checksum MOGGEM
+                           should be 05-Jun-91 17:00 TELBAM  ALL  RD  NO
+(SUBMIT      :  56) 910615.JQL     2 14-Jun-91 17:00 -- bad checksum POXRET
+                           should be 14-Jun-91 17:00 PAJGOJ  ALL  RD  NO
+(SUBMIT      :  56) 910624.JQL     3 23-Jun-91 17:00 -- bad checksum QIJVUL
+                           should be 23-Jun-91 17:00 ZAWQUX  ALL  RD  NO
+(SUBMIT      :  56) 910705.JQL     2 04-Jul-91 17:00 -- bad checksum XITKUX
+                           should be 04-Jul-91 17:00 CIRHEP  ALL  RD  NO
+(SUBMIT      :  56) 910714.JQL     2 13-Jul-91 17:00 -- bad checksum ZEYVOK
+                           should be 13-Jul-91 17:00 LIRXOG  ALL  RD  NO
+(SUBMIT      :  56) 910723.JQL     2 22-Jul-91 17:00 -- bad checksum KUPVER
+                           should be 22-Jul-91 17:00 LIHJAG  ALL  RD  NO
+(SUBMIT      :  56) 910804.JQL     2 03-Aug-91 17:00 -- bad checksum PIVYIB
+                           should be 03-Aug-91 17:00 KEDCEL  ALL  RD  NO
+(SUBMIT      :  56) 910813.JQL     2 12-Aug-91 17:00 -- bad checksum FUDNEG
+                           should be 12-Aug-91 17:00 SUZLUK  ALL  RD  NO
+(SUBMIT      :  56) 910822.JQL     2 21-Aug-91 17:00 -- bad checksum CEJBIW
+                           should be 21-Aug-91 17:00 VUMSAZ  ALL  RD  NO
+(SUBMIT      :  56) 910829.JQL     2 28-Aug-91 17:00 -- bad checksum GIWQEV
+                           should be 28-Aug-91 17:00 FEJYEV  ALL  RD  NO
+(SUBMIT      :  56) 910831.JQL     2 30-Aug-91 17:00 -- bad checksum VUGRIP
+                           should be 30-Aug-91 17:00 DUXMEH  ALL  RD  NO
+(SUBMIT      :  56) 910903.JQL     2 02-Sep-91 17:00 -- bad checksum MILNOW
+                           should be 02-Sep-91 17:00 SIWLOP  ALL  RD  NO
+ ]#gR©
