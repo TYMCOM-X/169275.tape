@@ -1,0 +1,234 @@
+
+
+
+                         THE ACCOUNTING SUMMARY PROGRAM                         THE ACCOUNTING SUMMARY PROGRAM
+                            System 1022 Version 117                            System 1022 Version 117
+
+
+
+          1.0  INTRODUCTION
+
+               The System 1022 Accounting System maintains records  on
+          the resources used during System 1022 usage.
+
+               In order for  the  accounting  system  to  operate,  an
+          accounting area (PPN or directory) must be set up on disk to
+          hold the accounting files.
+
+               Each time an OPEN  command  is  executed  in  1022,  an
+          available  accounting  file  is  selected, and an accounting
+          entry is made.  (If a prior OPEN command  had  already  been
+          executed, the same accounting file is used.)
+
+               The accounting entry is updated periodically during the
+          course of execution of System 1022 in the current job.
+
+
+
+          1.1  Accounting Files
+
+               Two sets of  accounting  files  should  reside  in  the
+          accounting area:
+
+          1.  Files which keep track of ordinary (stand-alone)  System
+              1022  usage  (including loads), and which have the names
+              SA00.ACT, SA01.ACT, SA02.ACT, etc., through SA99.ACT.
+
+          2.  Files which keep track  of  host  language  System  1022
+              usage,  and  which  have  the  names HL00.ACT, HL01.ACT,
+              HL02.ACT, etc., through HL99.ACT.
+
+
+               All 100 stand-alone files and 100  host-language  files
+          must  exist  unless  System 1022 is not used in both ways on
+          your system.  The files are initially empty.
+
+               The names of the accounting files are subject to change
+          with new releases of System 1022.
+
+
+
+          1.2  Accounting Entries
+
+               Accounting entries are added to the accounting files by
+          System  1022.   Certain  error  conditions  may arise in the
+          course of attempting to make an accounting  entry;   if  so,
+          the following error message will result:
+
+                    ?1022 ACCOUNTING FAILURE (n) CODE=m
+ACSUM PROGRAM                                                   Page 2
+
+
+                    CALL THE OPERATOR!
+
+          n is the error number;  m is  additional  information  given
+          with  some error conditions.  The error numbers are given in
+          Section 5.0.
+
+
+
+          2.0  EXTRACTING ACCOUNTING DATA
+
+               The accounting records stored by System  1022  must  be
+          translated  so  they  can  be understood.  The ACSUM program
+          reads the accounting records stored in the accounting  files
+          by  System 1022 and translates them to readable (ASCII) form
+          so that they can be reported upon.
+
+               When running the translation, the user must  specify  a
+          range  of  dates.   Only  the  accounting records from those
+          dates are then used.
+
+               The translated records  are  placed  in  a  file  named
+          ACSUM.DMI.
+
+               When the program is completed, it will display  on  the
+          terminal  a short summary of the information found and write
+          the same information to  a  file  called  ACSUM.SUM..   This
+          summary   includes  the  number  of  records  (transactions)
+          translated, the lowest and  highest  dates  found,  and  the
+          number  of  CPU milliseconds and the connect time in all the
+          records together.
+
+
+
+          2.1  Running The Program
+
+               The user (System Manager or designee) should be  logged
+          into  or  connected  to  the directory or PPN containing the
+          accounting files.  The program should be run in  Report  (R)
+          mode  to  extract accounting data, and must be supplied with
+          two dates.  A sample dialogue follows:
+
+                .R ACSUM   (TOPS-10) or    @RUN ACSUM   (TOPS-20)
+                ACSUM Program: Accounting information summary
+
+                Enter dates in the form MM/DD/YY
+                Enter start date: 05/01/83
+                Enter end date  : 05/31/83
+
+                Enter R to report or P to purge files : R
+
+                Output file created.
+                Transactions:              137
+                Lowest date found:    19830505 15:17:42
+                Highest date found:   19830527 11:15:23
+                CPU milliseconds:       893726
+ACSUM PROGRAM                                                   Page 3
+
+
+                Connect time:           11:12.13
+
+
+
+          2.2  ACSUM Error Messages
+
+          2.2.1  Start Date Must Be Before End Date - When  specifying
+          a range of dates, enter the earlier date first.  The program
+          will repeat its prompts.
+
+
+
+          2.2.2  Invalid  Date  Format. - ACSUM  can  only  understand
+          dates  in the format month, delimiter, day, delimiter, year,
+          where month, day, and year are numeric  and  the  delimiters
+          are slashes, spaces, tabs, or hyphens.
+
+
+
+          2.2.3  Read Error For File <name>.ACT Record Number  M - The
+          FOROTS  I/O  software could not read the file.  Error codes,
+          if  given,  refer  to  Table  G-1  in  the  TOPS-20  FORTRAN
+          Reference  Manual  or  Table H-1 in the DECsystem-10 FORTRAN
+          Programmer's Reference Manual.
+
+
+
+          2.2.4  Write Error For File <name> - The FOROTS I/O software
+          could not write to the file.  See the above for error codes.
+
+
+
+          2.2.5  Cannot  Open  Output  File  <name> - The  FOROTS  I/O
+          software  could  not open the file.  See the above for error
+          codes.
+
+
+
+          2.2.6  Checksum  For  File  <name>.ACT  Is   Incorrect - The
+          encrypted  accounting  records  have  been  modified.   Call
+          Software House for assistance.
+
+
+
+          2.2.7  Dates Not Increasing At File <name>.ACT - The records
+          in  an  accounting file are not in the order in which System
+          1022 wrote them.  Call Software House for assistance.
+ACSUM PROGRAM                                                   Page 4
+
+
+          3.0  PURGING ACCOUNTING FILES
+
+               When  accounting  records  have  been  translated   and
+          reported upon, authorized individuals may purge the files to
+          save disk space.
+
+               First, ensure that no users or programs  are  accessing
+          System 1022.
+
+               Run program ACSUM,  entering  the  range  of  dates  as
+          usual, but in answer to the question:
+
+                Enter R to report or P to purge files:
+
+          answer P to indicate the program should run in purge mode.
+
+               ACSUM reads all the accounting files,  eliminating  all
+          the  records  relating  to  the selected range of dates, and
+          re-writing any and all other records back to the files.
+
+               The new files created have the same  names  as  before.
+          On  TOPS-20,  they  also  have  the  next  higher generation
+          number.
+
+
+
+          4.0  LOADING THE ACCOUNTING DATASET
+
+               After extracting accounting records, they are in a file
+          named  ACSUM.DMI.   Use  the  data definition file ACSUM.DMD
+          with the System 1022 LOAD  command  to  produce  your  ACSUM
+          dataset.
+
+
+
+          4.1  Producing Accounting Reports
+
+               Once you have created the dataset  ACSUM.DMS,  you  can
+          use  System 1022 to produce accounting reports.  The dataset
+          definition for ACSUM.DMS is in the file ACSUM.DMD.
+
+               We have  provided  a  sample  TOPS-20  report.   Sample
+          output  can  be  found  in  ACSUM.RPT  which was produced by
+          TS20.DMC.  It uses both the ACSUM  dataset  and  a  SCHEDULE
+          dataset.  The latter lists all user names and the associated
+          time sharing schedule against which their usage applies.
+ACSUM PROGRAM                                                   Page 5
+
+
+          5.0  SYSTEM 1022 ACCOUNTING ERRORS
+
+Error Number                  Explanation
+____________                  ___________
+0              Couldn't INIT accounting device
+1              LOOKUP failure on accounting  file,  CODE=  lookup  error
+               code
+2              ENTER failure on accounting file, CODE= enter error code
+3              All accounting files were being used
+4              I/O error reading accounting file
+5              I/O error writing accounting file (check disk space  left
+               in accounting area)
+6              GETTAB for disk reads or writes failed
+7              GETTAB for kilo-core ticks failed
+                                        Revised April 25, 1986
+  
