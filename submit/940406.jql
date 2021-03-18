@@ -1,0 +1,17 @@
+00:00:29 S 06-Apr-94
+03:00:28 S 06-Apr-94
+06:00:32 S 06-Apr-94
+07:45:02 S -S- stream #2 Req #44448 DSK:(JMS)SZRPT.LOG=DSK:(JMS)SZRPT.CTL
+07:45:08 P Stream #2 Req #44448 DSK:(JMS)SZRPT.LOG=DSK:(JMS)SZRPT.CTL
+07:50:34 P Stream #2 Req #44448 * completed *
+07:50:37 S -R- stream #2 Done-End <0>
+09:00:32 S 06-Apr-94
+12:00:32 S 06-Apr-94
+14:19:21 P Stream #1 Req #44449 * aborted - time limit exceeded at line 16 *
+14:19:25 S -R- stream #1 Abort-Time <0>
+14:19:27 S -S- stream #1 Req #44428 DSK:(MSNTRACK)DUDAY.LOG=DSK:(MSNTRACK)DUDAY.SUB
+14:19:33 P Stream #1 Req #44428 DSK:(MSNTRACK)DUDAY.LOG=DSK:(MSNTRACK)DUDAY.SUB
+15:00:32 S 06-Apr-94
+18:00:27 S 06-Apr-94
+21:00:27 S 06-Apr-94
+00:00:36 S 07-Apr-94
