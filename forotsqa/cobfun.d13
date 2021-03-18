@@ -1,0 +1,304 @@
+File 1)	SH:<JEFF>COBFUN.AMS	created: 1019 01-Dec-1983
+File 2)	SH:<JEFF>COBFUN.DEC	created: 1646 12-May-1983
+
+1-1>1       	;/A1/ TS.JFOX 12/1/83	 SOFTWARE HOUSE PATCHES FOR 1022
+1->         	; UPD ID= 472 on 6/15/82 at 10:44 AM by NIXON                           
+bytes 0,58
+****
+2-1>1       	; UPD ID= 472 on 6/15/82 at 10:44 AM by NIXON                           
+bytes 0,0
+**************
+1-45>3      	      	IF1,<
+1->         	         	    IFNDEF SW$22,<SW$22==:1>
+1->         	         	    IFE SW$22,<
+1->         	         		PRINTX	DEC standard LIBOL will be assembled.
+1->         	         	    >
+1->         	         	    IFN SW$22,<
+1->         	         		PRINTX	1022 patches to LIBOL will be included.
+1->         	         	    >
+1->         	         	>
+1->         	;ACCUMULATORS
+bytes 1498,1771
+****
+2-44>3      	;ACCUMULATORS
+bytes 1442,1442
+**************
+1-67>3      	      	IFN SW$22,<
+1->         	         	T22=14		;GET AN UNUSED REGISTER FOR 1022 ROUTINES
+1->         	         	>
+1->         		DEFINE FUNDIR,<
+bytes 1918,2012
+****
+2-56>3      		DEFINE FUNDIR,<
+bytes 1589,1589
+**************
+1-132>4     	IFN SW$22,<
+1->         		PUSH	P,T22		;/A1/ SAVE TEMP REGISTER FOR 1022
+1->         	>
+1->         		SETZ	P1,0		;LOCATE THE FUNCTION CODE
+bytes 3511,3575
+****
+2-118>4     		SETZ	P1,0		;LOCATE THE FUNCTION CODE
+bytes 3088,3088
+**************
+1-144>4     	IFN SW$22,<
+1->         		POP	P,T22		;/A1/ RESTORE 1022 TEMP REGISTER
+1->         	>
+1->         		POPJ	P,		;RETURN
+bytes 3953,4015
+****
+2-127>4     		POPJ	P,		;RETURN
+bytes 3466,3466
+**************
+1-286>9     	IFN SW$22,<			;/A1/ INCLUDE IF ASSEMBLING 1022 PATCHES
+1->         		CAIA			;/A1/ CAN'T, GO TRY EXPANDING.
+1->         		JRST	FUNCRD		;/A1/ GOT IT, RETURN.
+1->         		HLRE	T22,136		;/A1/
+1->         		AOJN	T22,[PUSH P,0	;/A1/ JUMP IF 1022
+1->         		MOVEI	0,T1		;/A1/
+1->         		PUSHJ	P,-2(T22)	;/A1/ GET PSEUDO .JBREL
+File 1)	SH:<JEFF>COBFUN.AMS	created: 1019 01-Dec-1983
+File 2)	SH:<JEFF>COBFUN.DEC	created: 1646 12-May-1983
+
+1->         		POP	P,0		;/A1/
+1->         		JRST	FUNCR2]		;/A1/
+1->         		MOVE	T1,.JBREL##	;/A1/ NOT 1022, USE REAL JBREL
+1->         	FUNCR2:				;/A1/
+1->         	>; END IFN SW$22
+1->         	IFE SW$22,<
+1->         		  SKIPA	T1,.JBREL##	;CAN'T, GO TRY EXPANDING.
+1->         		JRST	FUNCRD		;GOT IT, RETURN.
+1->         	>  ;END IFE SW$22
+1->         		MOVEI	T4,(T5)		;SAVE THE NUMBER OF WORDS TO GET.
+bytes 8539,9033
+****
+2-266>9     		  SKIPA	T1,.JBREL##	;CAN'T, GO TRY EXPANDING.
+2->         		JRST	FUNCRD		;GOT IT, RETURN.
+2->         		MOVEI	T4,(T5)		;SAVE THE NUMBER OF WORDS TO GET.
+bytes 7990,8070
+**************
+1-369>11    	SETHLO:
+1->         	IFN SW$22,<			;/A1/ INCLUDE IF ASSEMBLING 1022 PATCHES
+1->         		HLRE	T22,136		;/A1/
+1->         		AOJN	T22,[PUSH P,0	;/A1/ JUMP IF 1022
+1->         			MOVEI	T0,T22	;/A1/
+1->         			PUSHJ	P,-3(T22) ;/A1/ GET PSEUDO .JBFF
+1->         			POP	P,0	;/A1/
+1->         			CAMGE	T4,T22	;/A1/ DO WE WANT CORE BELOW .JBFF?
+1->         			JRST	SETHL1	;/A1/ YES, CAN'T HAVE IT
+1->         			JRST	SETHLA]	;/A1/ ABOVE JBFF, ITS OK
+1->         		CAMGE	T4,.JBFF##	;/A1/ DO WE WANT CORE BELOW .JBFF?
+1->         		JRST	SETHL1		;/A1/ YES, CAN'T HAVE IT.
+1->         	SETHLA:				;/A1/
+1->         	>  ;END IFN SW$22
+1->         	IFE SW$22,<
+1->         		CAMGE	T4,.JBFF##	;DO WE WANT CORE BELOW .JBFF?
+1->         		JRST	SETHL1		;YES, CAN'T HAVE IT.
+1->         	>  ;END IFE SW$22
+1->         		HRRI	T1,(T4)		;HIGHEST LOCATION IN OVERLAY AREA.
+bytes 11238,11827
+****
+2-335>11    	SETHLO:	CAMGE	T4,.JBFF##	;DO WE WANT CORE BELOW .JBFF?
+2->         		JRST	SETHL1		;YES, CAN'T HAVE IT.
+2->         		HRRI	T1,(T4)		;HIGHEST LOCATION IN OVERLAY AREA.
+bytes 10275,10367
+**************
+1-708>20    	IFN SW$22,<			;/A1/ INCLUDE IF ASSEMBLING 1022 PATCHES
+1->         		HLRE	T22,136		;/A1/
+1->         		AOJN	T22,[PUSH P,0	;/A1/ JUMP IF 1022
+1->         			MOVEI	T0,T3	;/A1/
+1->         			PUSHJ	P,-3(T22) ;/A1/ GET PSEUDO .JBFF
+1->         			POP	P,0	;/A1/
+1->         			JRST	FUNR1]	;/A1/
+1->         		HRRZ	T3,.JBFF	;/A1/   AND ADDRESS OF FIRST FREE LOCATION.
+1->         	FUNR1:				;/A1/
+1->         	>  ;END IFN SW$22
+1->         	IFE SW$22,<
+1->         		HRRZ	T3,.JBFF	;  AND ADDRESS OF FIRST FREE LOCATION.
+1->         	>  ;END IFE SW$22
+File 1)	SH:<JEFF>COBFUN.AMS	created: 1019 01-Dec-1983
+File 2)	SH:<JEFF>COBFUN.DEC	created: 1646 12-May-1983
+
+1->         		CAIE	T3,1(T5)	;IF THESE ARE NOT CONSECUTIVE
+bytes 21654,22056
+****
+2-658>20    		HRRZ	T3,.JBFF	;  AND ADDRESS OF FIRST FREE LOCATION.
+2->         		CAIE	T3,1(T5)	;IF THESE ARE NOT CONSECUTIVE
+bytes 20194,20249
+**************
+1-724>20    	IFN SW$22,<			;/A1/ INCLUDE IF ASSEMBLING 1022 VERSION
+1->         		HLRE	T22,136		;/A1/
+1->         		AOJN	T22,[PUSH P,0	;/A1/ JUMP IF 1022
+1->         			MOVEI	T0,T2	;/A1/
+1->         			PUSHJ	P,-4(T22) ;/A1/ PUT PSEUDO .JBFF
+1->         			POP	P,0	;/A1/
+1->         			JRST	FUNR2]	;/A1/
+1->         		HRRM	T2,.JBFF##	;/A1/ THE NEW .JBFF
+1->         	FUNR2:				;/A1/
+1->         	>  ;END IFN SW$22
+1->         	IFE SW$22,<
+1->         		HRRM	T2,.JBFF##	;THE NEW .JBFF
+1->         	>  ;END IFN SW$22
+1->         		HRLM	T4,HLOTC.##	;THE NEW UPPER LIMIT.
+bytes 22205,22563
+****
+2-672>20    		HRRM	T2,.JBFF##	;THE NEW .JBFF
+2->         		HRLM	T4,HLOTC.##	;THE NEW UPPER LIMIT.
+bytes 20398,20431
+**************
+1-845>24    	IFN SW$22,<			;/A1/ INCLUDE IF ASSEMBLING 1022 VERSION
+1->         		HLRE	T22,136		;/A1/
+1->         		AOJE	T22,FUNC3	;/A1/ SKIP THIS CODE IF NOT 1022
+1->         		CAIL	T1,(T2)		;/A1/ IMITATE THE CODE WE'RE REPLACING
+1->         		JRST	FUNC2		;/A1/
+1->         		SETZM	(T4)		;/A1/
+1->         		CAIE	T4,HLOVL.	;/A1/
+1->         		JRST	FUNC2		;/A1/
+1->         		PUSH	P,0		;/A1/
+1->         		MOVEI	T0,T1		;/A1/
+1->         		PUSHJ	P,-3(T22)	;/A1/ GET PSEUDO .JBFF
+1->         		POP	P,0		;/A1/
+1->         		SUBI	T1,1		;/A1/
+1->         	FUNC2:	CAIE	T4,HLOTC.	;/A1/
+1->         		JRST	FUNCB5		;/A1/
+1->         		AOS	T1		;/A1/
+1->         		PUSH	P,0		;/A1/
+1->         		MOVEI	T0,T1		;/A1/
+1->         		PUSHJ	P,-4(T22)	;/A1/ PUT PSEUDO .JBFF
+1->         		POP	P,0		;/A1/
+1->         		SUBI	T1,1		;/A1/
+1->         		JRST	FUNCB5		;/A1/
+1->         	FUNC3:				;/A1/
+1->         	>  ;END IFN SW$22
+1->         		CAIL	T1,(T2)		;[514] HIGHEST .LT. LOWEST?
+bytes 26316,26937
+****
+2-771>24    		CAIL	T1,(T2)		;[514] HIGHEST .LT. LOWEST?
+bytes 24184,24184
+File 1)	SH:<JEFF>COBFUN.AMS	created: 1019 01-Dec-1983
+File 2)	SH:<JEFF>COBFUN.DEC	created: 1646 12-May-1983
+
+**************
+1-888>24    	IFN SW$22,<			;/A1/ INCLUDE IF ASSEMBLING 1022 VERSION
+1->         		HLRE	T22,136		;/A1/
+1->         		AOJN	T22,FUNCB8	;/A1/ DONT USE PAGE UUO IF 1022
+1->         	>  ;END IFN SW$22
+1->         		HRLZI	T2,.PAGCA	;[514] SIMPLE FUNCTION TO TEST WHETHER
+bytes 27853,28000
+****
+2-796>24    		HRLZI	T2,.PAGCA	;[514] SIMPLE FUNCTION TO TEST WHETHER
+bytes 25100,25100
+**************
+1-921>25    	IFN SW$22,<			;/A1/ INCLUDE IF ASSEMBLING 1022 VERSION
+1->         		HLRE	T22,136		;/A1/
+1->         		AOJN	T22,[PUSH P,0	;/A1/ SUBSTITUTE CODE IF 1022
+1->         			MOVE	0,T1	;/A1/
+1->         			PUSHJ	P,-1(T22) ;/A1/ GIVE CORE BACK
+1->         			 JFCL		;/A1/ FAILURE IS NO BIG DEAL
+1->         			POP	P,0	;/A1/
+1->         			JRST	FUNST0]	;/A1/
+1->         	>  ;END IFN SW$22
+1->         	>;END IFE TOPS20
+1->         	;DON'T HAVE PAGE. UUO--USE CORE UUO.
+1->         	IFN SW$22,<			;/A1/ INCLUDE IF ASSEMBLING 1022 VERSION
+1->         		HLRE	T22,136		;/A1/
+1->         		AOJN	T22,[PUSH P,0	;/A1/ SUBSTITUTE CODE IF 1022
+1->         			MOVE	0,T1	;/A1/
+1->         			PUSHJ	P,-1(T22) ;/A1/ GIVE CORE BACK
+1->         			 JFCL		;/A1/ FAILURE IS NO BIG DEAL
+1->         			POP	P,0	;/A1/
+1->         			JRST	FUNST0]	;/A1/
+1->         	>  ;END IFN SW$22
+1->         		CORE T1,		;[514] SHRINK
+bytes 29207,29837
+****
+2-819>25    	>;END IFE TOPS20
+2->         	;DON'T HAVE PAGE. UUO--USE CORE UUO.
+2->         		CORE T1,		;[514] SHRINK
+bytes 26307,26367
+**************
+1-1031>28   	IFN SW$22,<			;/A1/ INCLUDE IF ASSEMBLING 1022 VERSION
+1->         		HLRE	T22,136		;/A1/
+1->         		AOJN	T22,[PUSH P,0	;/A1/ JUMP IF 1022
+1->         			MOVEI	T0,T4	;/A1/
+1->         			PUSHJ	P,-3(T22) ;/A1/ GET PSEUDO .JBFF
+1->         			POP	P,0	;/A1/
+1->         			JRST	MORE1]	;/A1/
+1->         		HRRZ	T4,.JBFF	;/A1/ FIRST FREE LOCATION AVAILABLE
+1->         	MORE1:				;/A1/
+1->         	>  ;END IFN SW$22
+1->         	IFE SW$22,<
+1->         		HRRZ	T4,.JBFF	;FIRST FREE LOCATION AVAILABLE
+1->         	>  ;END IFE SW$22
+1->         		MOVEI	T3,(T4)		;PLACE 'WORKING' VALUE HERE
+bytes 32100,32486
+****
+2-911>28    		HRRZ	T4,.JBFF	;FIRST FREE LOCATION AVAILABLE
+File 1)	SH:<JEFF>COBFUN.AMS	created: 1019 01-Dec-1983
+File 2)	SH:<JEFF>COBFUN.DEC	created: 1646 12-May-1983
+
+2->         		MOVEI	T3,(T4)		;PLACE 'WORKING' VALUE HERE
+bytes 28630,28677
+**************
+1-1051>28   	IFN SW$22,<			;/A1/ INCLUDE IF ASSEMBLING 1022 VERSION
+1->         		HLRE	T22,136		;/A1/
+1->         		AOJN	T22,[PUSH P,0	;/A1/ JUMP IF 1022
+1->         			MOVEI	0,(T5)	;/A1/ LAST LOCATION DESIRED
+1->         			PUSHJ	P,-1(T22) ;/A1/ GET CORE
+1->         			 TDZA	T22,T22	;/A1/ FLAG FAILURE
+1->         			 SETO	T22,	;/A1/ OR SUCCESS
+1->         			POP	P,0	;/A1/
+1->         			JUMPN	T22,MORM50 ;/A1/ GO HERE ON SUCCESS
+1->         			POPJ	P,]	;/A1/ ERROR RETURN IF FAILURE
+1->         	>  ;END IFN SW$22
+1->         		CAMG	T5,.JBREL	;IF WE CAN PROVIDE THIS
+bytes 32776,33162
+****
+2-926>28    		CAMG	T5,.JBREL	;IF WE CAN PROVIDE THIS
+bytes 28967,28967
+**************
+1-1072>28   	IFN SW$22,<			;/A1/ INCLUDE IF ASSEMBLING 1022 VERSION
+1->         		HLRE	T22,136		;/A1/
+1->         		AOJN	T22,[PUSH P,0	;/A1/ JUMP IF 1022
+1->         			MOVEI	0,T3	;/A1/
+1->         			PUSHJ	P,-4(T22) ;/A1/ PUT PSEUDO .JBFF
+1->         			POP	P,0	;/A1/
+1->         			JRST	MORE2]	;/A1/
+1->         		HRRM	T3,.JBFF	;/A1/ NEW FIRST FREE LOCATION.
+1->         	MORE2:				;/A1/
+1->         	>  ;END IFN SW$22
+1->         	IFE SW$22,<
+1->         		HRRM	T3,.JBFF	;NEW FIRST FREE LOCATION.
+1->         	>  ;END IFE SW$22
+1->         		MOVEI	T1,OTCPT.##	;SET UP THE ADDRESS OF THE FREE LIST
+bytes 33556,33931
+****
+2-931>28    		HRRM	T3,.JBFF	;NEW FIRST FREE LOCATION.
+2->         		MOVEI	T1,OTCPT.##	;SET UP THE ADDRESS OF THE FREE LIST
+bytes 29361,29403
+**************
+1-1117>29   	IFN SW$22,<			;/A1/ INCLUDE IF ASSEMBLING 1022 VERSION
+1->         		HLRE	T22,136		;/A1/
+1->         		AOJN	T22,[PUSH P,0	;/A1/
+1->         			MOVE	0,T5	;/A1/ LOCATION DESIRED
+1->         			PUSHJ	P,-1(T22) ;/A1/ GET CORE
+1->         			 TDZA	T4,T4	;/A1/ FLAG FAILURE
+1->         			 SETO	T4,	;/A1/ OR SUCCESS
+1->         			POP	P,0	;/A1/
+1->         			JUMPE	T4,XPAND4 ;/A1/ DIDN'T GET IT
+1->         			PUSH	P,0	;/A1/ SET T4 TO NEW JBREL
+1->         			MOVEI	0,T4	;/A1/
+1->         			PUSHJ	P,-2(T22) ;/A1/
+1->         			POP	P,0	;/A1/
+1->         			JRST	XPAND3]	;/A1/ EXPAND UP TO NEW JBREL
+1->         	>  ;END IFN SW$22
+1->         		MOVE	T4,.JBREL##	;GET THE CURRENT END OF CORE.
+File 1)	SH:<JEFF>COBFUN.AMS	created: 1019 01-Dec-1983
+File 2)	SH:<JEFF>COBFUN.DEC	created: 1646 12-May-1983
+
+bytes 34680,35139
+****
+2-962>29    		MOVE	T4,.JBREL##	;GET THE CURRENT END OF CORE.
+bytes 30152,30152
+**************
+    
