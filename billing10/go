@@ -1,0 +1,10 @@
+detach? 39:
+-O MOST
+STRONACH
+-
+Did not set RC GD TD JL
+-RUN (UAS)COM;COPCK
+ INPUT FILE: EXI
+****ERROR: CANNOT FIND EXI.
+EXIT
+-
