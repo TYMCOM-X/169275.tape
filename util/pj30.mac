@@ -1,0 +1,11 @@
+title	PJ30	(UTIL)PJ30 runs PJ every 30 minutes
+
+PSP20:	MOVE	[2,,^D30]
+	HIBER			    ; sleep for 30 minutes
+	 HALT	.
+	HRROI	33		    ; .AXSI simulate terminal input
+	AUXCAL	[point 7,[asciz "DAYPSPRUN (UTIL)PSP20"]]
+	 HALT	.
+	EXIT	1,
+
+end	PSP20
