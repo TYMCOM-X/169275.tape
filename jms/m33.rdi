@@ -1,0 +1,496 @@
+Master host: 30
+116 files on master system.
+Slave hosts: 23,26,30,33,34,38,74
+Checking host 23
+(M33         :  23) KLCRSH.CMD     2 01-Sep-78 11:38 -- bad checksum GAPGEB
+                           should be 26-Jun-80 23:33 MUBDEF  ALL  RD  NO
+(M33         :  23) BOOT5P.KI      3 31-Jan-86 15:04 -- bad license 
+                           should be 31-Jan-86 15:04 FUGGUT  ALL  RD  NO      3
+(M33         :  23) BOOT5B.KI      3 13-Jan-87 14:02 -- bad license 
+                           should be 13-Jan-87 14:02 GEKNAR  ALL  RD  NO      3
+(M33         :  23) BOOT5B.KL      3 13-Jan-87 14:03 -- bad license 
+                           should be 13-Jan-87 14:03 XOTCUW  ALL  RD  NO      3
+(M33         :  23) BOOT5P.KL      3 09-Mar-86 00:18 -- bad license 
+                           should be 09-Mar-86 00:18 SOHJEB  ALL  RD  NO      3
+(M33         :  23) PATCH.LOG      2 27-Jan-87 17:19 -- bad checksum FOQTAP
+                           should be 27-Jan-87 18:15 SAFZEZ  ALL  RD  NO
+(M33         :  23) GROUP.CMD      2 14-Feb-80 20:27 -- bad checksum CIXMOT
+                           should be 14-Feb-80 20:27 RUMTOP  ALL  RD  NO
+(M33         :  23) CRALST.CMD     2 05-Aug-84 23:14 -- bad checksum CUWZAB
+                           should be 02-Feb-87 12:49 XEDRAY  ALL  RD  NO
+(M33         :  23) CRSHID.LOG     2 15-Jan-92 17:43 -- bad checksum RIQWIX
+                           should be 04-Nov-92 13:44 XAGDOT  ALL  RD  NO
+(M33         :  23) F02588.SAV    65 15-Mar-89 14:57 -- bad checksum VAVBIY
+                           should be 05-Nov-90 12:14 VAZVIH  ALL  RD  NO
+(M33         :  23) BOOT3P.KL      3 13-Jan-87 14:04 -- bad license 
+                           should be 13-Jan-87 14:04 DAKWIB  ALL  RD  NO      3
+(M33         :  23) BOOT3B.KI      3 08-Jul-85 16:24 -- bad license 
+                           should be 08-Jul-85 16:24 RIRFUB  ALL RUN  NO      3
+(M33         :  23) BOOT3B.KL      3 08-Jul-85 16:04 -- bad license 
+                           should be 08-Jul-85 16:04 YAWCAW  ALL RUN  NO      3
+(M33         :  23) BOOT3P.KI      3 13-Jan-87 14:03 -- bad license 
+                           should be 13-Jan-87 14:03 HOFSES  ALL  RD  NO      3
+(M33         :  23) CRALOG         2 31-Mar-83 13:07 -- bad checksum WUJVAM
+                           should be 13-Dec-82 13:37 LIGBAC  ALL  RD  NO
+(M33         :  23) CRALOG.84      2 31-Dec-84 16:37 -- bad checksum FUTZUP
+                           should be 31-Dec-84 16:03 FUPFUQ  ALL  RD  NO
+(M33         :  23) PHONES.BAK                       -- missing on slave
+(M33         :  23) KONEND.PAT                       -- missing on slave
+(M33         :  23) TTYDMP.PAT                       -- missing on slave
+(M33         :  23) XFER2.CTL                        -- missing on slave
+(M33         :  23) CRALOG.80                        -- missing on slave
+(M33         :  23) GLOB.MHX                         -- missing on slave
+(M33         :  23) CRALOG.81                        -- missing on slave
+(M33         :  23) REMIND.DAT                       -- missing on slave
+(M33         :  23) CRALOG.79                        -- missing on slave
+(M33         :  23) CRALOG.78                        -- missing on slave
+(M33         :  23) REMIND.DTA                       -- missing on slave
+(M33         :  23) INFRED.SAV                       -- missing on slave
+(M33         :  23) WAIT1.PAT                        -- missing on slave
+(M33         :  23) IMEPAR.PAT                       -- missing on slave
+(M33         :  23) XFER1.CTL                        -- missing on slave
+(M33         :  23) PAKCOP.SAV                       -- missing on slave
+(M33         :  23) PAKCP3.SAV                       -- missing on slave
+(M33         :  23) WHERE                            -- missing on slave
+(M33         :  23) FILDDT.SAV                       -- missing on slave
+(M33         :  23) NETDET.LOG                       -- missing on slave
+(M33         :  23) F02626.SAV                       -- missing on slave
+(M33         :  23) P035E.PAT                        -- missing on slave
+(M33         :  23) EVACLR.PAT                       -- missing on slave
+(M33         :  23) PEKCHK.PAT                       -- missing on slave
+(M33         :  23) CRSHID.DAT                       -- missing on slave
+(M33         :  23) CRASUM.30                        -- missing on slave
+(M33         :  23) CRASUM.SAV                       -- missing on slave
+(M33         :  23) CRA003.MEM                       -- missing on slave
+(M33         :  23) CR                               -- missing on slave
+(M33         :  23) GETPP.PAT                        -- missing on slave
+(M33         :  23) LUD.PAT                          -- missing on slave
+(M33         :  23) UFDER1.PAT                       -- missing on slave
+(M33         :  23) FTACFC.PAT                       -- missing on slave
+(M33         :  23) X                                -- missing on slave
+(M33         :  23) CRSUPD.SAV                       -- missing on slave
+(M33         :  23) 23001.DIR                        -- missing on slave
+(M33         :  23) 30035E.SAV                       -- missing on slave
+(M33         :  23) DMON.PAT                         -- missing on slave
+(M33         :  23) TTYZAP.PAT                       -- missing on slave
+(M33         :  23) PGSBL.PAT                        -- missing on slave
+(M33         :  23) XFER.CTL                         -- missing on slave
+(M33         :  23) COPYCR.SAV                       -- missing on slave
+(M33         :  23) CRALST.NEW                       -- missing on slave
+(M33         :  23) FOO.LOW                          -- missing on slave
+(M33         :  23) FOO.HGH                          -- missing on slave
+(M33         :  23) INFSND.SAV                       -- missing on slave
+(M33         :  23) RCVZAP.PAT                       -- missing on slave
+(M33         :  23) FRECOR.SAV                       -- missing on slave
+(M33         :  23) PATCH.OLD                        -- missing on slave
+(M33         :  23) CRAL2                            -- missing on slave
+(M33         :  23) FRMDDT.SAV                       -- missing on slave
+(M33         :  23) APT10.SAV                        -- missing on slave
+(M33         :  23) 30XE01.SAV                       -- missing on slave
+(M33         :  23) TAPES.MEM                        -- missing on slave
+(M33         :  23) UNCACH.PAT                       -- missing on slave
+(M33         :  23) PAKCPX.SAV                       -- missing on slave
+(M33         :  23) PAKCP5.SAV                       -- missing on slave
+(M33         :  23) MAIN.VUE                         -- missing on slave
+(M33         :  23) PATLOG.SAV                       -- missing on slave
+(M33         :  23) CONVRT.SAV                       -- missing on slave
+(M33         :  23) ACCESS.LIS                       -- missing on slave
+(M33         :  23) LOKMAL.SAV                       -- missing on slave
+(M33         :  23) RIBAUT.SAV                       -- missing on slave
+Checking host 26
+(M33         :  26) PAKCPX.SAV    26 22-Jul-88 17:13 -- bad checksum FOZZEQ
+                           should be 30-Nov-87 17:42 FUFCEK  ALL  RD  NO
+(M33         :  26) PAKCP5.SAV    26 22-Jul-88 17:10 -- bad checksum LEKMAM
+                           should be 30-Nov-87 17:40 JONBOB  ALL  RD  NO
+(M33         :  26) PATCH.LOG      2 27-Jan-87 17:02 -- bad checksum SODGIL
+                           should be 27-Jan-87 18:15 SAFZEZ  ALL  RD  NO
+(M33         :  26) GROUP.CMD      2 14-Feb-80 20:27 -- bad checksum XUQVUH
+                           should be 14-Feb-80 20:27 RUMTOP  ALL  RD  NO
+(M33         :  26) CRSHID.LOG     2 15-Jan-92 17:44 -- bad checksum HIHGEQ
+                           should be 04-Nov-92 13:44 XAGDOT  ALL  RD  NO
+(M33         :  26) PAKCP3.SAV    26 22-Jul-88 17:07 -- bad checksum QIKMEW
+                           should be 30-Nov-87 17:37 KOTLIF  ALL  RD  NO
+(M33         :  26) PAKCOP.SAV    26 22-Jul-88 17:05 -- bad checksum JIPLAZ
+                           should be 30-Nov-87 17:34 ROVNIX  ALL  RD  NO
+(M33         :  26) KONEND.PAT                       -- missing on slave
+(M33         :  26) TTYDMP.PAT                       -- missing on slave
+(M33         :  26) XFER2.CTL                        -- missing on slave
+(M33         :  26) CRALOG.84                        -- missing on slave
+(M33         :  26) CRALOG.80                        -- missing on slave
+(M33         :  26) CRALOG                           -- missing on slave
+(M33         :  26) GLOB.MHX                         -- missing on slave
+(M33         :  26) CRALOG.81                        -- missing on slave
+(M33         :  26) REMIND.DAT                       -- missing on slave
+(M33         :  26) CRALOG.79                        -- missing on slave
+(M33         :  26) CRALOG.78                        -- missing on slave
+(M33         :  26) REMIND.DTA                       -- missing on slave
+(M33         :  26) INFRED.SAV                       -- missing on slave
+(M33         :  26) WAIT1.PAT                        -- missing on slave
+(M33         :  26) IMEPAR.PAT                       -- missing on slave
+(M33         :  26) XFER1.CTL                        -- missing on slave
+(M33         :  26) BOOT3P.KI                        -- missing on slave
+(M33         :  26) BOOT3B.KL                        -- missing on slave
+(M33         :  26) BOOT3B.KI                        -- missing on slave
+(M33         :  26) BOOT3P.KL                        -- missing on slave
+(M33         :  26) WHERE                            -- missing on slave
+(M33         :  26) NETDET.LOG                       -- missing on slave
+(M33         :  26) F02626.SAV                       -- missing on slave
+(M33         :  26) F02588.SAV                       -- missing on slave
+(M33         :  26) EVACLR.PAT                       -- missing on slave
+(M33         :  26) PEKCHK.PAT                       -- missing on slave
+(M33         :  26) BOTLOD.A10                       -- missing on slave
+(M33         :  26) BOTLOD.INF                       -- missing on slave
+(M33         :  26) BOTLOD.SAV                       -- missing on slave
+(M33         :  26) CRASUM.30                        -- missing on slave
+(M33         :  26) CRASUM.SAV                       -- missing on slave
+(M33         :  26) CRA003.MEM                       -- missing on slave
+(M33         :  26) CR                               -- missing on slave
+(M33         :  26) UFDER1.PAT                       -- missing on slave
+(M33         :  26) FTACFC.PAT                       -- missing on slave
+(M33         :  26) BOOTS.SAV                        -- missing on slave
+(M33         :  26) BOOTS.INF                        -- missing on slave
+(M33         :  26) X                                -- missing on slave
+(M33         :  26) CRSUPD.SAV                       -- missing on slave
+(M33         :  26) CRSUPD                           -- missing on slave
+(M33         :  26) 23001.DIR                        -- missing on slave
+(M33         :  26) 30035E.SAV                       -- missing on slave
+(M33         :  26) DMON.PAT                         -- missing on slave
+(M33         :  26) TTYZAP.PAT                       -- missing on slave
+(M33         :  26) PGSBL.PAT                        -- missing on slave
+(M33         :  26) XFER.CTL                         -- missing on slave
+(M33         :  26) CRALST.CMD                       -- missing on slave
+(M33         :  26) CRALST.NEW                       -- missing on slave
+(M33         :  26) FOO.LOW                          -- missing on slave
+(M33         :  26) FOO.HGH                          -- missing on slave
+(M33         :  26) INFSND.SAV                       -- missing on slave
+(M33         :  26) CRASH.CMD                        -- missing on slave
+(M33         :  26) 620DIR.TXT                       -- missing on slave
+(M33         :  26) RCVZAP.RUN                       -- missing on slave
+(M33         :  26) RCVZAP.PAT                       -- missing on slave
+(M33         :  26) PATCH.OLD                        -- missing on slave
+(M33         :  26) CRAL2                            -- missing on slave
+(M33         :  26) APT10.SAV                        -- missing on slave
+(M33         :  26) 30XE01.SAV                       -- missing on slave
+(M33         :  26) TAPES.MEM                        -- missing on slave
+(M33         :  26) UNCACH.PAT                       -- missing on slave
+(M33         :  26) BOOT5P.KL                        -- missing on slave
+(M33         :  26) BOOT5B.KL                        -- missing on slave
+(M33         :  26) BOOT5B.KI                        -- missing on slave
+(M33         :  26) BOOT5P.KI                        -- missing on slave
+(M33         :  26) MAIN.VUE                         -- missing on slave
+(M33         :  26) KLCRSH.CMD                       -- missing on slave
+(M33         :  26) PATLOG.SAV                       -- missing on slave
+(M33         :  26) CONVRT.SAV                       -- missing on slave
+(M33         :  26) ACCESS.LIS                       -- missing on slave
+(M33         :  26) LOKMAL.SAV                       -- missing on slave
+(M33         :  26) RIBAUT.SAV                       -- missing on slave
+Checking host 30
+Checking host 33
+(M33         :  33) FRMDDT.SAV    10 29-Apr-88 18:12 -- bad checksum CIJMIK
+                           should be 20-Apr-88 18:07 YUXFIX  ALL  RD  NO
+(M33         :  33) PATCH.OLD      3 10-May-82 10:45 -- bad checksum ROXFAS
+                           should be 10-May-82 10:31 TOTWUK  ALL  RD  NO
+(M33         :  33) PATCH.LOG      2 05-Dec-85 21:24 -- bad checksum GIVHAD
+                           should be 27-Jan-87 18:15 SAFZEZ  ALL  RD  NO
+(M33         :  33) XFER.CTL       2 13-Jan-88 11:39 -- bad checksum KECWIB
+                           should be 06-Jun-87 20:47 REYBUH  ALL  RD  NO
+(M33         :  33) 32XE01.SAV   172 15-Mar-91 12:07 -- bad checksum YOQJOK
+                           should be 15-Mar-91 12:13 DIFXID  ALL  RD  NO
+(M33         :  33) CRALST.NEW     2 12-Mar-82 09:01 -- bad checksum POJNOC
+                           should be 15-Oct-79 11:07 NUHXIS  ALL  RD  NO
+(M33         :  33) CRALST.CMD     2 06-Aug-84 10:33 -- bad checksum NOQNAM
+                           should be 02-Feb-87 12:49 XEDRAY  ALL  RD  NO
+(M33         :  33) X              2 15-May-82 12:48 -- bad checksum XATLUR
+                           should be 03-Nov-78 16:41 MIGKOZ  ALL  RD  NO
+(M33         :  33) CRSHID.SAV    40 19-Mar-85 13:13 -- protection ALL  RD  NO
+                           should be 19-Mar-85 13:13 PEWJEC  ALL RUN  NO   1410
+(M33         :  33) CRASUM.SAV     3 07-Jun-76 22:11 -- protection ALL  RD  NO
+                           should be 09-Jun-76 10:05 LENFOS  ALL ALL  NO
+(M33         :  33) CRSHID.LOG     2 15-Jan-92 17:47 -- bad checksum FIGMIR
+                           should be 04-Nov-92 13:44 XAGDOT  ALL  RD  NO
+(M33         :  33) CRALOG.84      2 31-Dec-84 17:42 -- bad checksum LITWAN
+                           should be 31-Dec-84 16:03 FUPFUQ  ALL  RD  NO
+(M33         :  33) CRALOG.78      4 29-Dec-78 16:47 -- bad checksum KUWCIM
+                           should be 20-Dec-78 17:10 WOFFAQ  ALL  RD  NO
+(M33         :  33) CRALOG.79      4 10-Dec-79 17:16 -- bad checksum WOXXIW
+                           should be 02-Jan-80 12:25 LACGUD  ALL  RD  NO
+(M33         :  33) INFRED.SAV     5 18-Jan-79 16:14 -- bad checksum YASCEM
+                           should be 12-Feb-79 09:11 KIQKEM  ALL  RD  NO
+(M33         :  33) REMIND.DAT     2 21-May-80 14:37 -- bad checksum LODJAF
+                           should be 21-May-80 14:38 ZIBNOB  ALL  RD  NO
+(M33         :  33) REMIND.DTA     2 02-Jan-64 09:16 -- bad checksum BIRSUV
+                           should be 04-Aug-78 09:09 WAQMUP  ALL  RD  NO
+(M33         :  33) STOPCD.MEM    25 04-Mar-89 14:31 -- bad checksum LACYOC
+                           should be 30-Jan-87 22:48 TEYWAP  ALL  RD  NO
+(M33         :  33) ACCESS.LIS     2 13-Jul-84 03:44 -- bad checksum MUJMAS
+                           should be 03-Feb-78 23:12 HEFTEP  ALL  RD  NO
+(M33         :  33) ACCESS.MSG     2 03-Jun-92 11:56 -- bad checksum JAQWUC
+                           should be 11-Feb-91 10:59 NETYET  ALL  RD  NO
+(M33         :  33) 30XE01.SAV   170 15-Mar-91 12:13 -- bad checksum ROMSEZ
+                           should be 15-Mar-91 12:29 DALLOL  ALL  RD  NO
+(M33         :  33) TAPES.MEM      3 13-Jun-80 18:19 -- bad checksum JUCRAY
+                           should be 02-May-79 11:42 XUTSEC  ALL  RD  NO
+(M33         :  33) PHONES.BAK                       -- missing on slave
+(M33         :  33) CRALOG.80                        -- missing on slave
+(M33         :  33) CRALOG                           -- missing on slave
+(M33         :  33) CRALOG.81                        -- missing on slave
+(M33         :  33) WHERE                            -- missing on slave
+(M33         :  33) NETDET.LOG                       -- missing on slave
+(M33         :  33) F02626.SAV                       -- missing on slave
+(M33         :  33) F02588.SAV                       -- missing on slave
+(M33         :  33) EVACLR.PAT                       -- missing on slave
+(M33         :  33) CRASUM.30                        -- missing on slave
+(M33         :  33) CRA003.MEM                       -- missing on slave
+(M33         :  33) CR                               -- missing on slave
+(M33         :  33) 23001.DIR                        -- missing on slave
+(M33         :  33) 30035E.SAV                       -- missing on slave
+(M33         :  33) FOO.LOW                          -- missing on slave
+(M33         :  33) FOO.HGH                          -- missing on slave
+(M33         :  33) CRAL2                            -- missing on slave
+(M33         :  33) MAIN.VUE                         -- missing on slave
+Checking host 34
+
+?unable to build circuit to JMS:34
+?sup did not respond to login me
+(M33         :  34) CRSHID.SAV    40 19-Mar-85 13:13 -- protection ALL  RD  NO
+                           should be 19-Mar-85 13:13 PEWJEC  ALL RUN  NO   1410
+(M33         :  34) CRSHID.LOG     2 15-Jan-92 17:48 -- bad checksum YEYXIN
+                           should be 04-Nov-92 13:44 XAGDOT  ALL  RD  NO
+(M33         :  34) F02588.SAV    65 24-Jan-91 12:47 -- bad checksum NURXOH
+                           should be 05-Nov-90 12:14 VAZVIH  ALL  RD  NO
+(M33         :  34) BOOT3B.KI      3 08-Jul-85 16:24 -- protection ALL  RD  NO
+                           should be 08-Jul-85 16:24 RIRFUB  ALL RUN  NO      3
+(M33         :  34) BOOT3B.KL      3 08-Jul-85 16:04 -- protection ALL  RD  NO
+                           should be 08-Jul-85 16:04 YAWCAW  ALL RUN  NO      3
+(M33         :  34) STOPCD.MEM    24 01-Feb-88 15:32 -- bad checksum FINDAF
+                           should be 30-Jan-87 22:48 TEYWAP  ALL  RD  NO
+(M33         :  34) KONEND.PAT                       -- missing on slave
+(M33         :  34) TTYDMP.PAT                       -- missing on slave
+(M33         :  34) XFER2.CTL                        -- missing on slave
+(M33         :  34) CRALOG.84                        -- missing on slave
+(M33         :  34) CRALOG.80                        -- missing on slave
+(M33         :  34) CRALOG                           -- missing on slave
+(M33         :  34) GLOB.MHX                         -- missing on slave
+(M33         :  34) CRALOG.81                        -- missing on slave
+(M33         :  34) REMIND.DAT                       -- missing on slave
+(M33         :  34) CRALOG.79                        -- missing on slave
+(M33         :  34) DDBCHN.CMD                       -- missing on slave
+(M33         :  34) CRALOG.78                        -- missing on slave
+(M33         :  34) REMIND.DTA                       -- missing on slave
+(M33         :  34) INFRED.SAV                       -- missing on slave
+(M33         :  34) WAIT1.PAT                        -- missing on slave
+(M33         :  34) IMEPAR.PAT                       -- missing on slave
+(M33         :  34) XFER1.CTL                        -- missing on slave
+(M33         :  34) WHERE                            -- missing on slave
+(M33         :  34) NETDET.LOG                       -- missing on slave
+(M33         :  34) F02626.SAV                       -- missing on slave
+(M33         :  34) P035E.PAT                        -- missing on slave
+(M33         :  34) EVACLR.PAT                       -- missing on slave
+(M33         :  34) PEKCHK.PAT                       -- missing on slave
+(M33         :  34) DDB.DDT                          -- missing on slave
+(M33         :  34) CRSHID.DAT                       -- missing on slave
+(M33         :  34) BOTLOD.SAV                       -- missing on slave
+(M33         :  34) CRASUM.30                        -- missing on slave
+(M33         :  34) CRASUM.SAV                       -- missing on slave
+(M33         :  34) CRA003.MEM                       -- missing on slave
+(M33         :  34) DEVLST.CMD                       -- missing on slave
+(M33         :  34) CR                               -- missing on slave
+(M33         :  34) GETPP.PAT                        -- missing on slave
+(M33         :  34) LUD.PAT                          -- missing on slave
+(M33         :  34) UFDER1.PAT                       -- missing on slave
+(M33         :  34) FTACFC.PAT                       -- missing on slave
+(M33         :  34) MONDAT.CMD                       -- missing on slave
+(M33         :  34) X                                -- missing on slave
+(M33         :  34) CRSUPD.SAV                       -- missing on slave
+(M33         :  34) CRSUPD                           -- missing on slave
+(M33         :  34) SETETY.PAT                       -- missing on slave
+(M33         :  34) 23001.DIR                        -- missing on slave
+(M33         :  34) 30035E.SAV                       -- missing on slave
+(M33         :  34) DMON.PAT                         -- missing on slave
+(M33         :  34) TTYZAP.PAT                       -- missing on slave
+(M33         :  34) PGSBL.PAT                        -- missing on slave
+(M33         :  34) XFER.CTL                         -- missing on slave
+(M33         :  34) COPYCR.SAV                       -- missing on slave
+(M33         :  34) CRALST.CMD                       -- missing on slave
+(M33         :  34) CRALST.NEW                       -- missing on slave
+(M33         :  34) FOO.LOW                          -- missing on slave
+(M33         :  34) FOO.HGH                          -- missing on slave
+(M33         :  34) GROUP.CMD                        -- missing on slave
+(M33         :  34) ORING.CMD                        -- missing on slave
+(M33         :  34) INFSND.SAV                       -- missing on slave
+(M33         :  34) CRASH.CMD                        -- missing on slave
+(M33         :  34) 620DIR.TXT                       -- missing on slave
+(M33         :  34) RCVZAP.RUN                       -- missing on slave
+(M33         :  34) RCVZAP.PAT                       -- missing on slave
+(M33         :  34) PATCH.OLD                        -- missing on slave
+(M33         :  34) PATCH.LOG                        -- missing on slave
+(M33         :  34) CRAL2                            -- missing on slave
+(M33         :  34) LDBBIO.CMD                       -- missing on slave
+(M33         :  34) APT10.SAV                        -- missing on slave
+(M33         :  34) 30XE01.SAV                       -- missing on slave
+(M33         :  34) TAPES.MEM                        -- missing on slave
+(M33         :  34) UNCACH.PAT                       -- missing on slave
+(M33         :  34) MAIN.VUE                         -- missing on slave
+(M33         :  34) KLCRSH.CMD                       -- missing on slave
+(M33         :  34) PATLOG.SAV                       -- missing on slave
+(M33         :  34) DSKSTS.CMD                       -- missing on slave
+(M33         :  34) KEY620.DOC                       -- missing on slave
+(M33         :  34) CONVRT.SAV                       -- missing on slave
+(M33         :  34) ACCESS.LIS                       -- missing on slave
+(M33         :  34) LOKMAL.SAV                       -- missing on slave
+(M33         :  34) RIBAUT.SAV                       -- missing on slave
+Checking host 38
+(M33         :  38) MAIN.VUE       2 03-Sep-82 16:12 -- bad checksum ROQYIY
+                           should be 03-Sep-82 16:08 LOHMAH  ALL  RD  NO
+(M33         :  38) PATCH.LOG      2 15-Jan-87 19:59 -- bad checksum VERCUF
+                           should be 27-Jan-87 18:15 SAFZEZ  ALL  RD  NO
+(M33         :  38) PATCH.OLD      2 10-May-82 10:46 -- bad checksum KADTUT
+                           should be 10-May-82 10:31 TOTWUK  ALL  RD  NO
+(M33         :  38) CRALST.CMD     2 25-Jan-88 09:13 -- bad checksum QIFNEB
+                           should be 02-Feb-87 12:49 XEDRAY  ALL  RD  NO
+(M33         :  38) CRSHID.LOG     2 15-Jan-92 17:50 -- bad checksum MOGLEQ
+                           should be 04-Nov-92 13:44 XAGDOT  ALL  RD  NO
+(M33         :  38) CRALOG         2 04-Jul-82 02:34 -- bad checksum RIYLAS
+                           should be 13-Dec-82 13:37 LIGBAC  ALL  RD  NO
+(M33         :  38) CRALOG.84      2 31-Dec-84 16:07 -- bad checksum YETCOR
+                           should be 31-Dec-84 16:03 FUPFUQ  ALL  RD  NO
+(M33         :  38) PHONES.BAK                       -- missing on slave
+(M33         :  38) KONEND.PAT                       -- missing on slave
+(M33         :  38) TTYDMP.PAT                       -- missing on slave
+(M33         :  38) CRALOG.80                        -- missing on slave
+(M33         :  38) GLOB.MHX                         -- missing on slave
+(M33         :  38) CRALOG.81                        -- missing on slave
+(M33         :  38) REMIND.DAT                       -- missing on slave
+(M33         :  38) CRALOG.79                        -- missing on slave
+(M33         :  38) DDBCHN.CMD                       -- missing on slave
+(M33         :  38) CRALOG.78                        -- missing on slave
+(M33         :  38) REMIND.DTA                       -- missing on slave
+(M33         :  38) INFRED.SAV                       -- missing on slave
+(M33         :  38) WAIT1.PAT                        -- missing on slave
+(M33         :  38) IMEPAR.PAT                       -- missing on slave
+(M33         :  38) WHERE                            -- missing on slave
+(M33         :  38) NETDET.LOG                       -- missing on slave
+(M33         :  38) F02626.SAV                       -- missing on slave
+(M33         :  38) F02588.SAV                       -- missing on slave
+(M33         :  38) EVACLR.PAT                       -- missing on slave
+(M33         :  38) PEKCHK.PAT                       -- missing on slave
+(M33         :  38) CRASUM.30                        -- missing on slave
+(M33         :  38) CRASUM.SAV                       -- missing on slave
+(M33         :  38) CRA003.MEM                       -- missing on slave
+(M33         :  38) DEVLST.CMD                       -- missing on slave
+(M33         :  38) CR                               -- missing on slave
+(M33         :  38) UFDER1.PAT                       -- missing on slave
+(M33         :  38) FTACFC.PAT                       -- missing on slave
+(M33         :  38) MONDAT.CMD                       -- missing on slave
+(M33         :  38) X                                -- missing on slave
+(M33         :  38) CRSUPD.SAV                       -- missing on slave
+(M33         :  38) CRSUPD                           -- missing on slave
+(M33         :  38) 23001.DIR                        -- missing on slave
+(M33         :  38) 30035E.SAV                       -- missing on slave
+(M33         :  38) DMON.PAT                         -- missing on slave
+(M33         :  38) TTYZAP.PAT                       -- missing on slave
+(M33         :  38) PGSBL.PAT                        -- missing on slave
+(M33         :  38) CRALST.NEW                       -- missing on slave
+(M33         :  38) FOO.LOW                          -- missing on slave
+(M33         :  38) FOO.HGH                          -- missing on slave
+(M33         :  38) GROUP.CMD                        -- missing on slave
+(M33         :  38) ORING.CMD                        -- missing on slave
+(M33         :  38) INFSND.SAV                       -- missing on slave
+(M33         :  38) CRASH.CMD                        -- missing on slave
+(M33         :  38) 620DIR.TXT                       -- missing on slave
+(M33         :  38) RCVZAP.PAT                       -- missing on slave
+(M33         :  38) CRAL2                            -- missing on slave
+(M33         :  38) LDBBIO.CMD                       -- missing on slave
+(M33         :  38) APT10.SAV                        -- missing on slave
+(M33         :  38) 30XE01.SAV                       -- missing on slave
+(M33         :  38) TAPES.MEM                        -- missing on slave
+(M33         :  38) UNCACH.PAT                       -- missing on slave
+(M33         :  38) KLCRSH.CMD                       -- missing on slave
+(M33         :  38) PATLOG.SAV                       -- missing on slave
+(M33         :  38) DSKSTS.CMD                       -- missing on slave
+(M33         :  38) CONVRT.SAV                       -- missing on slave
+(M33         :  38) ACCESS.LIS                       -- missing on slave
+(M33         :  38) LOKMAL.SAV                       -- missing on slave
+(M33         :  38) RIBAUT.SAV                       -- missing on slave
+Checking host 74
+(M33         :  74) MAIN.VUE       2 03-Sep-82 16:17 -- bad checksum JUQVON
+                           should be 03-Sep-82 16:08 LOHMAH  ALL  RD  NO
+(M33         :  74) BOOT5B.KL      3 13-Jan-87 14:03 -- bad license      2
+                           should be 13-Jan-87 14:03 XOTCUW  ALL  RD  NO      3
+(M33         :  74) BOOT5B.KI      3 13-Jan-87 14:02 -- bad license      2
+                           should be 13-Jan-87 14:02 GEKNAR  ALL  RD  NO      3
+(M33         :  74) BOOT5P.KI      3 31-Jan-86 15:04 -- bad license      2
+                           should be 31-Jan-86 15:04 FUGGUT  ALL  RD  NO      3
+(M33         :  74) BOOT5P.KL      3 09-Mar-86 00:18 -- bad license      2
+                           should be 09-Mar-86 00:18 SOHJEB  ALL  RD  NO      3
+(M33         :  74) TAPES.MEM      3 13-Jun-80 18:19 -- bad checksum JUCRAY
+                           should be 02-May-79 11:42 XUTSEC  ALL  RD  NO
+(M33         :  74) ACCESS.MSG     2 03-Jun-92 11:56 -- bad checksum JAQWUC
+                           should be 11-Feb-91 10:59 NETYET  ALL  RD  NO
+(M33         :  74) FRMDDT.SAV    10 29-Apr-88 18:12 -- bad checksum CIJMIK
+                           should be 20-Apr-88 18:07 YUXFIX  ALL  RD  NO
+(M33         :  74) FRECOR.SAV    17 19-Feb-85 09:49 -- bad license  40000
+                           should be 19-Feb-85 09:49 FUMVEV  ALL  RD  NO 240000
+(M33         :  74) PATCH.LOG      2 05-Dec-85 21:24 -- bad checksum GIVHAD
+                           should be 27-Jan-87 18:15 SAFZEZ  ALL  RD  NO
+(M33         :  74) XFER.CTL       2 13-Jan-88 11:39 -- bad checksum KECWIB
+                           should be 06-Jun-87 20:47 REYBUH  ALL  RD  NO
+(M33         :  74) CRALST.NEW     2 12-Mar-82 09:01 -- bad checksum POJNOC
+                           should be 15-Oct-79 11:07 NUHXIS  ALL  RD  NO
+(M33         :  74) CRALST.CMD     2 06-Aug-84 10:33 -- bad checksum NOQNAM
+                           should be 02-Feb-87 12:49 XEDRAY  ALL  RD  NO
+(M33         :  74) X              2 15-May-82 12:48 -- bad checksum XATLUR
+                           should be 03-Nov-78 16:41 MIGKOZ  ALL  RD  NO
+(M33         :  74) CRASUM.SAV     3 07-Jun-76 22:11 -- protection ALL  RD  NO
+                           should be 09-Jun-76 10:05 LENFOS  ALL ALL  NO
+(M33         :  74) CRSHID.SAV    40 19-Mar-85 13:13 -- protection ALL  RD  NO
+                           should be 19-Mar-85 13:13 PEWJEC  ALL RUN  NO   1410
+(M33         :  74) CRSHID.SAV    40 19-Mar-85 13:13 -- bad license   1010
+                           should be 19-Mar-85 13:13 PEWJEC  ALL RUN  NO   1410
+(M33         :  74) CRSHID.LOG     2 15-Jan-92 17:47 -- bad checksum FIGMIR
+                           should be 04-Nov-92 13:44 XAGDOT  ALL  RD  NO
+(M33         :  74) BOOT3B.KI      3 08-Jul-85 16:24 -- bad checksum DEKDER
+                           should be 08-Jul-85 16:24 RIRFUB  ALL RUN  NO      3
+(M33         :  74) BOOT3B.KL      3 08-Jul-85 16:04 -- bad license      2
+                           should be 08-Jul-85 16:04 YAWCAW  ALL RUN  NO      3
+(M33         :  74) BOOT3P.KI      3 13-Jan-87 14:03 -- bad license      2
+                           should be 13-Jan-87 14:03 HOFSES  ALL  RD  NO      3
+(M33         :  74) BOOT3P.KL      3 13-Jan-87 14:04 -- bad license      2
+                           should be 13-Jan-87 14:04 DAKWIB  ALL  RD  NO      3
+(M33         :  74) INFRED.SAV     5 18-Jan-79 16:14 -- bad checksum YASCEM
+                           should be 12-Feb-79 09:11 KIQKEM  ALL  RD  NO
+(M33         :  74) REMIND.DAT     2 21-May-80 14:37 -- bad checksum LODJAF
+                           should be 21-May-80 14:38 ZIBNOB  ALL  RD  NO
+(M33         :  74) REMIND.DTA     2 02-Jan-64 09:16 -- bad checksum BIRSUV
+                           should be 04-Aug-78 09:09 WAQMUP  ALL  RD  NO
+(M33         :  74) CRALOG.84      2 31-Dec-84 17:42 -- bad checksum LITWAN
+                           should be 31-Dec-84 16:03 FUPFUQ  ALL  RD  NO
+(M33         :  74) CRALOG.78      4 29-Dec-78 16:47 -- bad checksum KUWCIM
+                           should be 20-Dec-78 17:10 WOFFAQ  ALL  RD  NO
+(M33         :  74) CRALOG.79      4 10-Dec-79 17:16 -- bad checksum WOXXIW
+                           should be 02-Jan-80 12:25 LACGUD  ALL  RD  NO
+(M33         :  74) STOPCD.MEM    25 04-Mar-89 14:31 -- bad checksum LACYOC
+                           should be 30-Jan-87 22:48 TEYWAP  ALL  RD  NO
+(M33         :  74) ACCESS.LIS     2 13-Jul-84 03:44 -- bad checksum MUJMAS
+                           should be 03-Feb-78 23:12 HEFTEP  ALL  RD  NO
+(M33         :  74) PATCH.OLD      3 10-May-82 10:45 -- bad checksum ROXFAS
+                           should be 10-May-82 10:31 TOTWUK  ALL  RD  NO
+(M33         :  74) PHONES.BAK                       -- missing on slave
+(M33         :  74) CRALOG.80                        -- missing on slave
+(M33         :  74) CRALOG                           -- missing on slave
+(M33         :  74) CRALOG.81                        -- missing on slave
+(M33         :  74) WHERE                            -- missing on slave
+(M33         :  74) NETDET.LOG                       -- missing on slave
+(M33         :  74) F02626.SAV                       -- missing on slave
+(M33         :  74) F02588.SAV                       -- missing on slave
+(M33         :  74) EVACLR.PAT                       -- missing on slave
+(M33         :  74) CRASUM.30                        -- missing on slave
+(M33         :  74) CRA003.MEM                       -- missing on slave
+(M33         :  74) CR                               -- missing on slave
+(M33         :  74) 23001.DIR                        -- missing on slave
+(M33         :  74) 30035E.SAV                       -- missing on slave
+(M33         :  74) FOO.LOW                          -- missing on slave
+(M33         :  74) FOO.HGH                          -- missing on slave
+(M33         :  74) CRAL2                            -- missing on slave
+(M33         :  74) 30XE01.SAV                       -- missing on slave
+    L@=L
