@@ -1,0 +1,25 @@
+!RUN (CUD10)USERS
+Reading DUL...LUD...MFD...Done!
+
+DUL entries missing LUD entries:
+  1  10056 306625  OHSALES       OHSALES       
+  2  21476 363742  HIGASHI       HIGASHI       
+  3  21476 466230                ISISFILES     
+  4  21477  33245  CWINTER       CWINTER       
+  5  21477 100411  MARCOMM       MARCOMM       
+  6  21477 516447  MSOTELCO      MSOTELCO      
+  7  44251 413444  LFULLER       LFULLER       
+  8  44267 753031  INTLINFO      INTLINFO      
+
+LUD entries missing DUL entries:
+--None--
+
+UFD entry without LUD and DUL entries:
+--None--
+
+Name mismatch:     UFD name      DUL name
+--None--
+
+!LOGOUT
+262.87 tru
+terminal time: 0:00:31
