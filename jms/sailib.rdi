@@ -1,0 +1,153 @@
+Master host: 33
+220 files on master system.
+Slave hosts: 56
+Checking host 56
+(SAILIB      :  56) WARP.BAK       2 14-Sep-84 14:17 -- extra not on master
+(SAILIB      :  56) WARP.DCL       2 14-Sep-84 14:18 -- extra not on master
+(SAILIB      :  56) WARP.DOC       2 14-Sep-84 14:19 -- extra not on master
+(SAILIB      :  56) LLIBA2.REL    46 14-Sep-84 14:39 -- bad checksum KEZQUR
+                           should be 15-Feb-83 09:42 MAJYIF  ALL  RD  RD
+(SAILIB      :  56) FRMOP.REL      2 14-Sep-84 14:53 -- extra not on master
+(SAILIB      :  56) APEND.DCL      2 14-Sep-84 14:58 -- extra not on master
+(SAILIB      :  56) SPNTRE.SAI     5 14-Sep-84 15:09 -- extra not on master
+(SAILIB      :  56) APEND.REL      3 14-Sep-84 15:12 -- bad checksum SELYOX
+                           should be 25-Oct-84 16:24 NUTZEF  ALL  RD  RD
+(SAILIB      :  56) FRMOP.SAI      2 14-Sep-84 15:12 -- extra not on master
+(SAILIB      :  56) FRMOP.HDR      2 14-Sep-84 15:12 -- extra not on master
+(SAILIB      :  56) IOMODO.REL     5 14-Sep-84 15:25 -- extra not on master
+(SAILIB      :  56) MAKDCL.DOC     2 14-Sep-84 14:26 -- extra not on master
+(SAILIB      :  56) PRICHK.REL     2 14-Sep-84 14:28 -- bad checksum PUCKOG
+                           should be 15-Nov-89 00:45 WOZGIZ  ALL  RD  RD
+(SAILIB      :  56) PRICHK.SAI     2 14-Sep-84 14:48 -- bad checksum JARQAH
+                           should be 15-Nov-89 00:45 MOBDEF  ALL  RD  RD
+(SAILIB      :  56) PRICHK.REQ     2 14-Sep-84 14:48 -- bad checksum KODJOL
+                           should be 15-Nov-89 00:43 HUDCUN  ALL  RD  RD
+(SAILIB      :  56) O.FAI         15 14-Sep-84 14:51 -- extra not on master
+(SAILIB      :  56) MAKSLB.SAI     7 14-Sep-84 14:54 -- extra not on master
+(SAILIB      :  56) REDUFD.DOC     2 14-Sep-84 14:56 -- extra not on master
+(SAILIB      :  56) SOUDX.DCL      2 14-Sep-84 14:57 -- extra not on master
+(SAILIB      :  56) EXTEND.DCL     2 14-Sep-84 15:22 -- extra not on master
+(SAILIB      :  56) OSTRNG.REL     5 14-Sep-84 15:23 -- extra not on master
+(SAILIB      :  56) LEPFMT.SAI     5 14-Sep-84 15:23 -- extra not on master
+(SAILIB      :  56) OFIND.SAI     10 14-Sep-84 15:31 -- extra not on master
+(SAILIB      :  56) OSTRNG.HDR     2 14-Sep-84 15:35 -- extra not on master
+(SAILIB      :  56) OSTRNG.DOC     5 14-Sep-84 15:35 -- extra not on master
+(SAILIB      :  56) OSTRNG.SAI     7 14-Sep-84 15:35 -- extra not on master
+(SAILIB      :  56) EXTEND.DOC     7 14-Sep-84 15:37 -- extra not on master
+(SAILIB      :  56) EXTEND.REL    11 14-Sep-84 15:37 -- extra not on master
+(SAILIB      :  56) LEPRUN.GLB    72 14-Sep-84 15:47 -- extra not on master
+(SAILIB      :  56) ZZREST.LOG    10 14-Sep-84 15:53 -- extra not on master
+(SAILIB      :  56) MAKDCL.SAV    17 07-Oct-83 21:39 -- extra not on master
+(SAILIB      :  56) MFDSCN.RLL     5 14-Sep-84 14:31 -- extra not on master
+(SAILIB      :  56) MFDSCN.SAI     5 12-Sep-85 14:26 -- extra not on master
+(SAILIB      :  56) MFDSCN.DOC     5 12-Sep-85 14:25 -- extra not on master
+(SAILIB      :  56) FILDAT.REL     3 14-Sep-84 14:44 -- bad checksum GOYGON
+                           should be 18-Aug-87 20:28 TECWUX  ALL  RD  RD
+(SAILIB      :  56) FILDAT.REQ     2 14-Sep-84 14:45 -- bad checksum MIBGEL
+                           should be 18-Feb-87 15:20 YIVBOB  ALL  RD  RD
+(SAILIB      :  56) FILDAT.SAI     3 14-Sep-84 14:45 -- extra not on master
+(SAILIB      :  56) SVLOW.DCL      2 14-Sep-84 14:57 -- extra not on master
+(SAILIB      :  56) COMMON.BAI    25 14-Sep-84 15:17 -- extra not on master
+(SAILIB      :  56) IOMOD.REL      5 14-Sep-84 15:24 -- extra not on master
+(SAILIB      :  56) TYMINT.DEF     2 14-Sep-84 15:39 -- bad checksum FIYLOM
+                           should be 15-Jun-86 15:05 KATTER  ALL  RD  RD
+(SAILIB      :  56) SAILIB.REQ     2 14-Sep-84 15:41 -- bad checksum KAJMOY
+                           should be 06-Jul-82 13:30 LOTDUD  ALL  RD  RD
+(SAILIB      :  56) SAILIB.DOC     7 14-Sep-84 15:41 -- extra not on master
+(SAILIB      :  56) AIL.DIR       15 14-Sep-84 15:43 -- extra not on master
+(SAILIB      :  56) SAILIB.FDM    69 14-Sep-84 15:55 -- extra not on master
+(SAILIB      :  56) FILDAT.DCL     2 03-Apr-85 10:42 -- extra not on master
+(SAILIB      :  56) WARPT.WRP      8 14-Sep-84 14:19 -- extra not on master
+(SAILIB      :  56) MAPLIB.DOC     7 14-Sep-84 14:22 -- extra not on master
+(SAILIB      :  56) MAPLIB.DCL     2 14-Sep-84 14:22 -- extra not on master
+(SAILIB      :  56) MAPLIB.REL    12 14-Sep-84 14:23 -- extra not on master
+(SAILIB      :  56) SETTRM.SAI    11 14-Sep-84 14:25 -- extra not on master
+(SAILIB      :  56) HLIBA2.REL    48 14-Sep-84 14:35 -- extra not on master
+(SAILIB      :  56) STRNG.REL      5 14-Sep-84 14:46 -- extra not on master
+(SAILIB      :  56) BLOCK.SAI      5 14-Sep-84 14:47 -- extra not on master
+(SAILIB      :  56) ATFILE.DOC     2 14-Sep-84 14:49 -- extra not on master
+(SAILIB      :  56) STRNG.DCL      2 14-Sep-84 14:57 -- extra not on master
+(SAILIB      :  56) LLIBA.REL     46 14-Sep-84 15:03 -- extra not on master
+(SAILIB      :  56) FIND.V13      11 14-Sep-84 15:07 -- extra not on master
+(SAILIB      :  56) STRNG.SAI      9 14-Sep-84 15:11 -- extra not on master
+(SAILIB      :  56) FIND.V12      11 14-Sep-84 15:27 -- extra not on master
+(SAILIB      :  56) FTSAIL.DOC     3 14-Sep-84 15:29 -- extra not on master
+(SAILIB      :  56) FIND.V11      11 14-Sep-84 15:30 -- extra not on master
+(SAILIB      :  56) FIND.71        9 14-Sep-84 15:30 -- extra not on master
+(SAILIB      :  56) VMFILE.DEF     2 22-Mar-88 13:59 -- bad checksum NIFYOT
+                           should be 28-Jun-88 19:39 QUVYUJ  ALL  RD  NO
+(SAILIB      :  56) VMFILE.REL    12 22-Mar-88 13:59 -- bad checksum QISTAW
+                           should be 16-Jan-89 20:07 BIDFIB  ALL  RD  NO
+(SAILIB      :  56) VMFILE.SAI    18 22-Mar-88 14:00 -- bad checksum PUBWIM
+                           should be 15-Jan-89 02:23 YODJAF  ALL  RD  NO
+(SAILIB      :  56) VERSN.REL      2 08-Feb-88 17:06 -- protection ALL  RD  NO
+                           should be 22-Mar-88 16:36 KORYUF  ALL  RD  RD
+(SAILIB      :  56) VERSN.REQ      2 08-Feb-88 17:06 -- protection ALL  RD  NO
+                           should be 08-Feb-88 16:55 ZIQKAJ  ALL  RD  RD
+(SAILIB      :  56) VERSN.SAI      2 08-Feb-88 17:06 -- protection ALL  RD  NO
+                           should be 08-Feb-88 16:54 HOBHEQ  ALL  RD  RD
+(SAILIB      :  56) SETTRM.DCL     1 03-Apr-85 10:44 -- extra not on master
+(SAILIB      :  56) FIND.LOW      12 10-Oct-80 00:58 -- extra not on master
+(SAILIB      :  56) FIND.SHR      29 10-Oct-80 00:59 -- extra not on master
+(SAILIB      :  56) ASK.DOC        2 14-Sep-84 14:48 -- extra not on master
+(SAILIB      :  56) PORT.DCL       2 14-Sep-84 14:57 -- extra not on master
+(SAILIB      :  56) SAIL.DOC      14 14-Sep-84 15:08 -- extra not on master
+(SAILIB      :  56) SEARCH.REQ     2 14-Sep-84 15:16 -- bad checksum DIYGOW
+                           should be 06-Jul-82 13:30 TINFEH  ALL  RD  RD
+(SAILIB      :  56) SEARCH.DCL     2 14-Sep-84 15:16 -- extra not on master
+(SAILIB      :  56) MAPPAG.SAI     8 14-Sep-84 15:20 -- extra not on master
+(SAILIB      :  56) RANDIO.REQ     2 14-Sep-84 15:22 -- bad checksum MUQZEF
+                           should be 06-Jul-82 13:30 XAMMUC  ALL  RD  RD
+(SAILIB      :  56) IOMODS.HDR     2 14-Sep-84 15:25 -- extra not on master
+(SAILIB      :  56) RANDIO.DOC     2 14-Sep-84 15:34 -- extra not on master
+(SAILIB      :  56) SEARCH.REL     9 14-Sep-84 15:38 -- extra not on master
+(SAILIB      :  56) SAIL.MSG      19 14-Sep-84 15:42 -- extra not on master
+(SAILIB      :  56) LPDUMP.SAI     7 14-Sep-84 15:46 -- extra not on master
+(SAILIB      :  56) SEARCH.V01    12 14-Sep-84 16:01 -- extra not on master
+(SAILIB      :  56) MAIN08.VUE     2 14-Sep-84 14:20 -- extra not on master
+(SAILIB      :  56) FRMRUN.REL     5 14-Sep-84 14:21 -- bad checksum WALTUB
+                           should be 05-Dec-86 18:35 JAKDEV  ALL  RD  RD
+(SAILIB      :  56) FRMRNN.REL     5 14-Sep-84 14:29 -- extra not on master
+(SAILIB      :  56) FRMRUN.SAI     7 14-Sep-84 14:30 -- extra not on master
+(SAILIB      :  56) FRMRUN.REQ     2 14-Sep-84 14:31 -- extra not on master
+(SAILIB      :  56) FRMRUN.DOC     6 14-Sep-84 14:31 -- extra not on master
+(SAILIB      :  56) MPLIB.DCL      2 14-Sep-84 14:58 -- extra not on master
+(SAILIB      :  56) BKFNS.DCL      2 14-Sep-84 14:58 -- extra not on master
+(SAILIB      :  56) ALL.DCL        4 14-Sep-84 15:07 -- extra not on master
+(SAILIB      :  56) STRNGS.REQ     2 14-Sep-84 15:13 -- bad checksum BOLYEN
+                           should be 06-Jul-82 13:30 DUGMAB  ALL  RD  RD
+(SAILIB      :  56) STRNGS.HDR     2 14-Sep-84 15:13 -- extra not on master
+(SAILIB      :  56) STRNGS.DCL     2 14-Sep-84 15:13 -- extra not on master
+(SAILIB      :  56) MPLIB.REL     11 14-Sep-84 15:19 -- extra not on master
+(SAILIB      :  56) BKFNS.SAI      8 14-Sep-84 15:22 -- extra not on master
+(SAILIB      :  56) OEXTEN.DCL     2 14-Sep-84 15:32 -- extra not on master
+(SAILIB      :  56) STRNGS.DOC     6 14-Sep-84 15:32 -- extra not on master
+(SAILIB      :  56) STRNGS.SAI    11 14-Sep-84 15:32 -- extra not on master
+(SAILIB      :  56) STRNGS.REL     5 14-Sep-84 15:33 -- extra not on master
+(SAILIB      :  56) IOSER.PUB     11 14-Sep-84 15:52 -- extra not on master
+(SAILIB      :  56) RNDIO.DCL      2 02-Apr-84 21:16 -- extra not on master
+(SAILIB      :  56) FILSCN.REQ     2 14-Sep-84 14:46 -- extra not on master
+(SAILIB      :  56) FILSCN.REL     4 14-Sep-84 14:49 -- extra not on master
+(SAILIB      :  56) FILSCN.SAI     4 14-Sep-84 14:50 -- extra not on master
+(SAILIB      :  56) XTEND.DCL      3 14-Sep-84 14:52 -- extra not on master
+(SAILIB      :  56) SERCH.DCL      2 14-Sep-84 14:57 -- extra not on master
+(SAILIB      :  56) DMATH.DCL      2 14-Sep-84 14:58 -- extra not on master
+(SAILIB      :  56) LBALL.DCL      2 14-Sep-84 14:58 -- extra not on master
+(SAILIB      :  56) HLIBA.REL     48 14-Sep-84 14:59 -- extra not on master
+(SAILIB      :  56) XTEND.REL     11 14-Sep-84 15:10 -- extra not on master
+(SAILIB      :  56) BRKFNS.REQ     2 14-Sep-84 15:13 -- bad checksum MAVDOW
+                           should be 06-Jul-82 13:30 FAPNON  ALL  RD  RD
+(SAILIB      :  56) BRKFNS.HDR     2 14-Sep-84 15:13 -- extra not on master
+(SAILIB      :  56) SERCH.REL     10 14-Sep-84 15:15 -- extra not on master
+(SAILIB      :  56) DMATH.SAI      6 14-Sep-84 15:21 -- extra not on master
+(SAILIB      :  56) OPFILE.FAI     5 14-Sep-84 15:21 -- extra not on master
+(SAILIB      :  56) BRKFNS.DCL     2 14-Sep-84 15:23 -- extra not on master
+(SAILIB      :  56) APPEND.HDR     2 14-Sep-84 15:24 -- extra not on master
+(SAILIB      :  56) DMATH.HDR      2 14-Sep-84 15:26 -- extra not on master
+(SAILIB      :  56) PROTEC.RCD     4 14-Sep-84 15:26 -- extra not on master
+(SAILIB      :  56) DMATH.OSA      6 14-Sep-84 15:27 -- extra not on master
+(SAILIB      :  56) BRKFNS.DOC     2 14-Sep-84 15:35 -- extra not on master
+(SAILIB      :  56) LPREAD.REL     7 14-Sep-84 15:44 -- extra not on master
+(SAILIB      :  56) LPREAD.SAI     9 14-Sep-84 15:45 -- extra not on master
+(SAILIB      :  56) DMATH.V01      7 14-Sep-84 15:54 -- extra not on master
+    
