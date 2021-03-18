@@ -1,0 +1,57 @@
+	.SBTTL	CG6760	- TXS micronet in 135 Nicholson Lane, San Jose, CA
+; Changed 14-Jun-90 by Joe Smith (408)922-6220
+;MACHNM	EQ	$8 6760		: Node number
+;HST0	EQ	$A 4681		: Kernel host
+;NLINES	EQ	2		: Number of engine-sync lines
+;NASYNG	EQ	1		: One group of async ports
+;CONSAT	EQ	1		: ATC-style CONSAT (async terminal) interface
+;BAUDR	EQ	2		: Supports 4800 baud terminals
+;	TIILNK(5561,8,8)	: Line 6 on 5561 supplies RXC+TXC @ 4.8Kb
+;	:::LNK(5416,8,8)	: (line has been disconnected)
+;NLUS0	EQ	2		: Node code
+;S0L0	S.REF(0)		: Connects to SYNC line on switcher
+;S0L1	S.REF(1)
+
+	.MACRO	CONFIG
+	NAME	6760
+	
+	LINK	14   ,0,TF,16.,S,F,<167770,330,5,128.,KMC>	;DRV11 #1
+;*;	LINK	NICK,377,TF,8.,P,C,<167760,40,5>		;DRV11 #2
+	LINK	6657,377,TF,8.,P,C,<167750,50,5>		;DRV11 #3
+;*;	LINK	FOON,377,TF,8.,P,C,<167740,70,5>		;DRV11 #4
+
+;*;	THOST	18813		;CONSAT accounting host
+	THOST	4681
+	KHOST	4681,XRAY
+	LINK	TYMNET,0,TF,16.,S,I,<6760,15.>
+	 LNKH	14,14		;KS2020 on this base
+	 LNKH	15,17		;KS2020 on other base
+; TYMNET lines
+	 LNKL	128.,XLINK,4,S,A,<160010,400,5>	;ND5416, kh3732
+	 LNKL	128.,XLINK,4,S,A,<160020,410,5>	;ND5561, kh3734
+	
+	DEV	ST,200,<300,300>
+	 SOC	 1.
+	 SOC	 2.
+
+	DEV	WD,200
+	 SOC	 1.
+
+	HCL	A,<TYMNET>
+	MOD	<<CR><LF>"This is 14's base">
+	DHOST	TYMNET
+
+	DEFINE	JIFSEC,60.			;60 TICKS PER SECOND
+
+				;"A" = DL single-line interface
+	LINX	A,<176500,300>
+	 LINE	 1.,F,2400,,TYM,LA180,ASC,TYMSHR,N,N,R,N,N,HW,A,200
+	LINX	A,<176510,310>
+	 LINE	 2.,F,2400,,TYM,LA180,ASC,TYMSHR,N,N,R,N,N,HW,A,200
+	LINX	A,<176520,320>
+	 LINE	 3.,F,2400,,TYM,CRTB,ASC,TYMSHR,N,N,Y,N,Y,HW,A,200
+	LINX	A,<177560,60>
+	 LINE	 4.,F,2400,,TYM,CRTB,ASC,TYMSHR,N,N,Y,N,Y,HW,A,300
+
+
+	.ENDM
