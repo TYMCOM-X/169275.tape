@@ -1,0 +1,127 @@
+detach? 14: cannot build circuit
+17: cannot build circuit
+22:
+.;
+.o$
+!sys (sra)
+ 5  DETACHED        SYSDAT  36    SL    1387.62  0:00:00 SRA +
+ 9  DETACHED        FTICP   46    SL      88.74  0:00:04 SRA +$
+ 9  I          12    OUT  SRA
+!exi
+23:
+.;
+.o$
+!sys (sra)
+ 5  DETACHED        SYSDAT  36    SL    2224.77  0:00:00 SRA +
+39  DETACHED        FTICP   46    SL     164.61  0:00:47 SRA +
+39  I          13    OUT  SRA
+!exi
+25:
+.;
+.o$
+!sys (sra)
+ 1  DETACHED        SYSDAT   1    ^C       4.91  0:00:00 SRA +
+42  DETACHED        FTICP   46    SL     108.40  0:00:03 SRA +$
+42  I          18    OUT  SRA
+!exi
+26:
+.;
+.o$
+!sys (sra)
+ 1  DETACHED        SYSDAT  36    SL     232.24  0:00:00 SRA +
+50  DETACHED        FTICP   46    SL     108.79  0:00:05 SRA +$
+50  I          17    OUT  SRA
+!exi
+30:
+.;
+.o$
+!sys (sra)
+ 1  DETACHED        SYSDAT  36    SL    3182.43  0:00:00 SRA +
+ 6  DETACHED        FTICP   46    SL     122.90  0:00:07 SRA +$
+ 6  I          22    OUT  SRA
+!exi
+31:
+.;
+.o$
+!sys (sra)
+ 5  DETACHED        SYSDAT  36    SL    1885.96  0:00:00 SRA +
+33  DETACHED        FTICP   46    SL      95.77  0:00:02 SRA +$
+33  I          12    OUT  SRA
+!exi
+32:
+.;
+.o$
+!sys (sra)
+ 5  DETACHED      SYSDAT 34       SL       308.49  0:00:00 SRA +
+!exi
+33:
+.;
+.o$
+!sys (sra)
+ 7  DETACHED        SYSDAT  36    SL     727.58  0:00:00 SRA *+
+59  DETACHED        FTICP   46    SL     124.81  0:00:05 SRA *+$
+59  I          24    OUT  SRA
+!exi
+34:
+.;
+.o$
+!sys (sra)
+ 5  DETACHED        SYSDAT  36    SL    1056.56  0:00:00 SRA +
+19  DETACHED        FTICP   46    SL      94.87  0:00:02 SRA +$
+19  I          12    OUT  SRA
+!exi
+35:
+.;
+.o$
+!sys (sra)
+ 1  DETACHED        SYSDAT  36    SL    2146.31  0:00:00 SRA +
+ 9  Solar-2466 #167 USRVAL 114    ^C     152.47  1:53:17 SRA (USEVAL) +
+11  DETACHED        FTICP   46    SL      88.09  0:00:03 SRA +$
+11  I          12    OUT  SRA
+!exi
+37:
+.;
+.o$
+!sys (sra)
+ 1  DETACHED        SYSDAT  36    SL    2313.93  0:00:00 SRA +
+37  DETACHED        FTICP   46    SL     108.65  0:00:03 SRA +$
+37  I          17    OUT  SRA
+!exi
+38:
+.;
+.o$
+!sys (sra)
+ 1  DETACHED        SYSDAT  36    SL     909.25  0:00:00 SRA +
+43  DETACHED        FTICP   46    SL     113.28  0:00:04 SRA +$
+43  I          17    OUT  SRA
+!exi
+54:
+.;
+.o$
+!sys (sra)
+ 1  DETACHED        SYSDAT  36    SL     595.98  0:00:00 SRA +
+48  DETACHED        FTICP   46    SL     106.67  0:00:02 SRA +$
+48  I          15    OUT  SRA
+!exi
+56:
+.;
+.o$
+!sys (sra)
+ 1  DETACHED        SYSDAT  36    SL    3097.81  0:00:00 SRA +
+24  DETACHED        FTICP   46    SL     116.01  0:00:06 SRA +
+24  I          16    OUT  SRA
+!exi
+58:
+.;
+.o$
+!sys (sra)
+ 1  DETACHED        SYSDAT  36    SL    1807.46  0:00:00 SRA +
+13  DETACHED        FTICP   46    SL      90.34  0:00:03 SRA +$
+13  I          12    OUT  SRA
+!exi
+74:
+.;
+.o$
+!sys (sra)
+ 7  DETACHED        SYSDAT  36    SL      67.24  0:00:00 SRA +
+!exi
