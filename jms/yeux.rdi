@@ -1,0 +1,7 @@
+Master host: 33
+2 files on master system.
+Slave hosts: 56
+Checking host 56
+(YEUX        :  56) XV.FDM       242 29-Jan-88 21:58 -- extra not on master
+(YEUX        :  56) SVUE.LOW       2 04-Feb-89 01:48 -- extra not on master
+(YEUX        :  56) SVUE.SHR      33 04-Feb-89 01:48 -- extra not on master
