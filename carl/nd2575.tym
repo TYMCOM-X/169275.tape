@@ -1,0 +1,198 @@
+: Note: This is NOT a public network node!  It is part of a virtual subnetwork.
+:	NO MODIFICATIONS TO THIS FILE ARE TO BE MADE without prior authoriza-
+:	tion from the Tymnet International Technical Support organization!!!
+:	For further information, contact Tymnet International Operations in
+:	Vienna, Virginia.   Telephone:  (703)356-6995
+:
+:		      TRT's ISIS and Node Code Parameter File
+:
+:	Date:    14-JUN-87			    Changed By:White
+:	Node Number:  2575			    ISIS Code Version:    5.08
+:	Kernal Host:  2152			    Node Code Version:    5.07
+:	Memory Size:  1024 kb (semi)     	    Location:  TRT,Wash D.C.
+:	Customer:  TRT Telecommunications	    Site Phone:  (202)347-8091
+:
+:				Revision History
+:	  Date     Changed
+:      (yy-mm-dd)  By Whom		 Description of Change
+:	--------   --------   ------------------------------------------------
+:	84-06-19   Lane       Upgrade to 5.06 node and 5.07 isis code
+:                             Changed window size on Trinidad link
+:       84-09-16   Lane       Upgrade to 5.08 isis code, changed window size 
+:                             on Panama and Costa Rico link fm 48 to 8
+:       84-09-18   Lane       Increased memory for slot 3
+:       85-01-15   Lane       Add 2nd mother board, Add diag slot
+:       85-03-11   Lane       Add neighbor - 6033,Upgrade to 5.07 node code
+:                             Combine slot 1 & 4 into slot 1
+:       85-05-10   Lane       Reconfigure node for 1 X.25,1 X.75 slot
+:                             Commented refs for hardware not on node yet
+:	85-06-18   S/White    Removed links to Trinidad, Costa Rica  & Panama
+:			      (which are now on node 3762)....also removed
+:			      Bahrain which is permanently out of the net.
+:			      Made appropriate small changes elsewhere to be
+:			      consistent with the number of links.
+:	85-06-24   S/White    Added TIILNK statement to make Bermuda ND6232
+:			      a  recognized neighbour.
+:       85-07-24   Lane       Change neighbor 2544 to 5015	
+:	85-09-04  S/White     Removed TIILNK's to 1141/bermuda & 2527/Austria
+:			      Raised # ports on MB1 to 8 Reduced NLU to 11.
+:			      Added Tymnet x.75 to Faifax. 1 daughter
+:			      card added
+:	86-02-06  S/White     Changed neighbours 576->4104, 1141->removed.
+:
+:       86-02-27 T/Otradovec  moved sio 1,5 from slot 1 to slot 2.
+:                             made sio 1,7 available on slot 2 for telex
+:                             pad no.5...(increased M.NP1 to 8 - Stephen)
+:                             increaed slot 2 mem to 280k from 270k
+:	86-09-02  S/White    increased memory allocation for slot 3 to 70k
+:				decreased slot 1 by 15k.
+:       87-03-19  A/Shur      Increased Network Sync lines to 11, added
+:                             Egypt Node 2416 and Panama Node 3773 as
+:                             neighbours. Removed Portugal 3105. Allow 2
+:                             XLINKS. All as first phase of TRT's reconfig.
+:
+:	87-03-24  White	     added 3 more s.ref()s at TRT request.  Increased
+:				other parameters as required. S0  now 15 lu's
+:	87-04-05 White	     + TIILNK 4124 in prep for FFX reconfig 10 APR
+:	87-04-08 WHITE		up t2 window on 3305 to 24
+:	87-01-06 WHITE	     decrease slot 1 to 250k, increase slot 2 to 295K
+:	87-06-14 WHITE	     decrease slot 1 to 230k, increase slot 2 to 315k
+:	88-11-18 Rajan Mani  Added macros, marked **, necessary to upgrade 
+:			     to Isis v7.03, node code v5.22
+:       88-11-22 R. Mani     Commented out TIILINK stmt for 3005 (no longer
+:						a neighbour )
+:
+:	88-11-28 R.Mani		Added 3k to slot 0, per nad message
+:	89-04-06 R. Mani	Added slot 0 lu 15 ( t-ii to Tymnet Fairfax )
+:				m.ref(1,3) ( order 48619 )
+:	10-01-89 R. Mani	Added m.ref(0,4) for t-ii to Curacao ( 4.8 Sat)
+:				Added TIILINK stmt for Curacao.
+:
+:	NOTE:  Parameters with ':*' are defaulted to zero (0) if not present.
+:		Hardware Configuration
+ENGINE	EQ	1		:  1=hardware is Tymnet ENGINE, 0=Interdata
+MICRO	EQ	2		:* 1=async enhanced, 2=sync enhanced
+N.ADA	EQ	1		:* 1 if new async addressing
+NASYNG	EQ	2		:* No. of async groups (2 grp/cd)
+ASYNEW	EQ	1		:* 0=old async driver, 1=both, 2=new driver
+CONSAT	EQ	1		:* 1=CONSAT resides on this node
+ZITEL	EQ	1		:* Switch option for semi-condutor memory
+LBOOT	EQ	1		:* Switch option for bootstrap mode
+M.NCARD EQ	2		:* No. of SIO mother-boards
+M.DA0	EQ	$0 80		:  Address of mother board 0
+M.NP0	EQ	$A 9		:* No. of ports on mother board 0
+M.DA1   EQ      $0 81           :  Address of mother board 1
+M.NP1   EQ      $A 8            :* No. of ports on mother board 1
+
+:		ISIS Configuration Constraints
+NSLOT	EQ	4		:  No. of slots to connect (not slot 0)
+NLU	EQ	$A 16		:  Max no. of logical units in any slot
+NDP	EQ	$A 256		:  No. of dispatcher ports for node code
+DI.CHN	EQ	$A 256		:  No. of dispatcher ports for all slots
+
+:		Node Configuration
+MACHNM	EQ	$8 2575		:  Node number
+HST0	EQ	$A 2152		:  ISIS kernel host number
+TII	EQ	1		:  1 if TYMNET-II on node
+PTHRU	EQ	0		:* 1 if passthroughs inhibitted
+NPTHR	EQ	$A 128		:  No. of passthroughs allowed (default: 256)
+NLINES	EQ	$A 14		:  No. of sync network lines (default 16)
+SILINS	EQ	$A 2		:* No. of sio network lines
+NETID   EQ	1		:** Tymnet Public Network and subnetworks
+MACHIN	EQ	1		:** 1=HW is Engine, 0=Interdata, 2=HDLC Micro
+IKNRNG	EQ 	1		:** 0=ISIS 5.**, 1 = ISIS 7.**
+REBTST	EQ	1		:** Use with Isis ver 7.03, increases number 
+				:   of rebuild attempts.
+TRIKLV  EQ      1               :  Disable trickle logic
+MEMRMK	EQ	1		:* Have gen tell us optimum memory use
+
+OPTION(REBLD)      		:  Turn on Rebuild circuit option
+
+:
+:		     Network Configuration
+:
+:	TIILNK(neighbor,groups,window size,SAT!TER,link speed)
+:	defaults as TIILNK(none,8,8,TER,node code computes speed)
+:	valid link speeds are MS, 56, 48, 38, 28, 19, 9, 4.
+:
+:  Neighbor Description     Neighbor Location   Circuit Number  Trouble Number
+:------------------------  -------------------  --------------  --------------
+
+	TIILNK(4124,8,8)	:TYMNET - Fairfax (effective 10/apr/87)
+	TIILNK(4104,8,8)	:Tymnet - Newark
+	TIILNK(3215,8,8)	:BERMUDA          TRT circuit    202/347-8091
+	TIILNK(3523,8,8,SAT)    :Costa Rica       TRT circuit    (202)347-8091
+	TIILNK(4204,2,4)	:ITALY            TRT circuit    202/347-8091
+	TIILNK(6232,,8,TER,)	:BERMUDA          TRT circuit    202/347-8091
+	TIILNK(3762,8,16,,MS)	:OCL-TRT          Hard-wired     202/347-8091
+	TIILNK(6033,8,16,SAT)   :Bahrain          TRT circuit    202/347-8091
+        TIILNK(2416,8,8,SAT)    :Egypt            TRT circuit    202/347-8091
+        TIILNK(3773,8,8,SAT)    :Panama           TRT circuit    202/347-8091
+:	TIILNK(3005,8,8,TER,2.4):TRT, San Fran    TRT circuit    (202)347-8091
+	TIILNK(3305,8,24,SAT)   :Honduras         TRT circuit    (202)347-8091
+	TIILNK(3676,8,8,SAT)    :Jamaica          TRT circuit    (202)347-8091
+	TIILNK(3416,8,8,SAT)    :Trinidad         TRT circuit    (202)347-8091
+	TIILNK(2527,8,8)	:AUSTRIA          TRT circuit    202/347-8091
+	TIILNK(7250,8,8,SAT)	:4.8 Curacao	  TRT circuit    202/347-8091
+
+XLINKS	EQ      $A 2		:NO. OF WILD CARD NEIGHBORS (MUST BE WS8)
+
+:	SLOT 0 --- THE NODE CODE
+S0CORE  EQ      $A 300
+NLUS0	EQ	$A 16
+S0L0	S.REF(0)	:  5015 9.6
+S0L1	S.REF(1)	:  6033 4.8
+S0L2	S.REF(2)	:  6232 4.8
+S0L3	S.REF(3)	:  4204 4.8
+S0L4	S.REF(4)	:  2527 2.4
+S0L5	S.REF(5)        :  3773 4.8
+S0L6	S.REF(6)	:  2416 4.8
+S0L7	S.REF(7)	:  3215 9.6
+S0L8	S.REF(8)	:  3005 4.8
+S0L9	S.REF(9)	:  4104 9.6   SUMMARY: 4 * 9.6
+S0L10   S.REF(10)	:  3523 9.6            7 * 4.8
+S0L11	S.REF(11)	:? 3676 2.4            3 * 2.4
+S0L12	S.REF(12)	:? 3305 2.4	       1 * OCL (SOON TO GO AWAY)
+S0L13	S.REF(13)	:? 3416 4.8
+S0L14   M.REF(1,3)	: SIO T-II LINK TO NODE 4124 IN FAIRFAX
+S0L15   M.REF(0,8)	:OCL LINK to node 3762
+S0L16   M.REF(0,4)	: SIO T-II LINK to node 7250, Curacao
+:
+:	SLOT 1 - TRT'S X.75 MULTI-HOST SLOT 
+S1CORE	EQ	$A 230		:Slot 1 core size in KB
+NLUS1   EQ      3               :NO. OF LU FOR SLOT 1
+S1L0	M.REF(0,2)		:Telenet                 -- Host 290
+S1L1	M.REF(0,3)		:Germany (DATEX-P)       -- Host 1439
+S1L2	M.REF(0,6)		:Austria                 -- Host 4010
+
+:	SLOT 2 - X.25 Multi Host Slot 
+S2CORE	EQ	$A 315          :Slot 2 core size in KB
+NLUS2   EQ      $A 12           :NO. OF LU FOR SLOT 2
+S2L0	M.REF(0,0)		:Real-time Telex X.25    -- Host 6754
+S2L1    M.REF(1,7)              :Real-time Telex no.5    -- Host 7901
+S2L2    M.REF(1,0)              :Dedicated Telex PAD     -- Host 1355
+S2L3    M.REF(1,1)              :Intl MSS PAD # 2        -- Host 2899
+S2L4    M.REF(0,1)              :Test host               -- Host 2636
+S2L5    M.REF(0,5)              :World Bank X.25         -- Host 4028
+S2L6    M.REF(1,2)              :Guatamala X.25          -- Host 4543
+S2L7    M.REF(1,5)              :Dynapac X.25 HOST
+S2L8	M.REF(0,7)		: HOST 6756
+S2L9	M.REF(1,6)		: HOST 3607
+S2L10	M.REF(1,4)		: HOST 7477
+S2L11	M.REF(0,4)		: HOST 4151
+
+:	Slot 3 - TRT's Consat - Accounting host 6408
+:	HOPEFULLY ONLY EVER  1 OR 2 PORTS IN USE AT A TIME! (SJW 24M87)
+S3CORE	EQ	$A 70           :Slot 4 core size in KB
+NLUS3	EQ	2               :No. of LU for Slot 3
+S3L0	A.REF(0)		:Physical ports 0-15 D
+S3L1	A.REF(1)		:Physical ports 16-31D
+
+:       Slot 4 - Diagnostic Slot (ENGDIAG)SLCRSH.NIB
+S4CORE  EQ      $A 1            :Slot 4 core size in KB
+NLUS4   EQ      0               :No logical units
+
+
+:  NOTE --  (INTLTECH)TRT.GGL  (Goodguy list) assembled in from Command files
+
+   END
