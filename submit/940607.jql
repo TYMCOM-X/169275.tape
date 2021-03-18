@@ -1,0 +1,51 @@
+00:00:25 S 07-Jun-94
+03:00:24 S 07-Jun-94
+06:00:27 S 07-Jun-94
+07:45:02 S -S- stream #2 Req #44584 DSK:(JMS)SZRPT.LOG=DSK:(JMS)SZRPT.CTL
+07:45:07 P Stream #2 Req #44584 DSK:(JMS)SZRPT.LOG=DSK:(JMS)SZRPT.CTL
+07:49:46 P Stream #2 Req #44584 * completed *
+07:49:47 S -R- stream #2 Done-End <0>
+09:00:26 S 07-Jun-94
+12:00:27 S 07-Jun-94
+13:21:57 S -S- stream #2 Req #44587 DSK:(CTSFORD)GATHOU=DSK:(CTSFORD)PATGAT
+13:22:02 P Stream #2 Req #44587 DSK:(CTSFORD)GATHOU=DSK:(CTSFORD)PATGAT
+13:30:03 S -S- stream #3 Req #44585 DSK:(MSNTRACK)DUDAY.LOG=DSK:(MSNTRACK)DUDAY.SUB
+13:30:09 P Stream #3 Req #44585 DSK:(MSNTRACK)DUDAY.LOG=DSK:(MSNTRACK)DUDAY.SUB
+13:33:30 P Stream #3 Req #44585 * completed *
+13:33:33 S -R- stream #3 Done-End <0>
+15:00:28 S 07-Jun-94
+16:42:02 S -S- stream #3 Req #44590 DSK:(NETENG)HOSTPG.LOG=DSK:(NETENG)HOSTPG
+16:42:04 P Stream #3 file enter error (3) DSK:(NETENG)HOSTPG
+16:42:04 P Stream #3 JobExit: 5,5
+16:42:08 S -R- stream #3 Abort-Enter <0>
+16:42:09 S -S- stream #3 Req #44591 DSK:(NETENG)HOSTPG.LOG=DSK:(NETENG)HOSTPG
+16:42:10 P Stream #3 file enter error (3) DSK:(NETENG)HOSTPG
+16:42:10 P Stream #3 JobExit: 5,5
+16:42:14 S -R- stream #3 Abort-Enter <0>
+16:46:21 S -S- stream #3 Req #44592 DSK:(NETENG)HOSTPG.LOG=DSK:(NETENG)HOSTPG
+16:46:27 P Stream #3 file enter error (3) DSK:(NETENG)HOSTPG
+16:46:27 P Stream #3 JobExit: 5,5
+16:46:32 S -R- stream #3 Abort-Enter <0>
+17:05:41 S -S- stream #3 Req #44593 DSK:(NETENG)HOSTPG.LOG=DSK:(NETENG)HOSTPG
+17:05:46 P Stream #3 file enter error (3) DSK:(NETENG)HOSTPG
+17:05:46 P Stream #3 JobExit: 5,5
+17:05:51 S -R- stream #3 Abort-Enter <0>
+17:06:12 S -S- stream #3 Req #44593 DSK:(NETENG)HOSTPG.LOG=DSK:(NETENG)HOSTPG.
+17:06:17 P Stream #3 file enter error (3) DSK:(NETENG)HOSTPG.
+17:06:18 P Stream #3 JobExit: 5,5
+17:06:23 S -R- stream #3 Abort-Enter <0>
+18:00:41 S 07-Jun-94
+18:19:09 S -S- stream #3 Req #44594 DSK:(NETENG)HOSTPG.LOG=DSK:(NETENG)HOSTPG
+18:19:14 P Stream #3 file enter error (3) DSK:(NETENG)HOSTPG
+18:19:14 P Stream #3 JobExit: 5,5
+18:19:15 S -R- stream #3 Abort-Enter <0>
+18:19:58 S -S- stream #3 Req #44594 DSK:(NETENG)HOSTPG.LOG=DSK:(NETENG)HOSTPG.
+18:20:03 P Stream #3 file enter error (3) DSK:(NETENG)HOSTPG.
+18:20:04 P Stream #3 JobExit: 5,5
+18:20:09 S -R- stream #3 Abort-Enter <0>
+20:35:48 S -S- stream #3 Req #44595 DSK:(NETENG)T96PGR.LOG=DSK:(NETENG)T96PGR
+20:35:52 P Stream #3 Req #44595 DSK:(NETENG)T96PGR.LOG=DSK:(NETENG)T96PGR
+20:37:40 P Stream #3 Req #44595 * completed *
+00:00:55 S 08-Jun-94
+#2 Done-End <0>
+22:18:33 P Stream #2 Req #44587 * completed *
