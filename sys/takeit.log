@@ -1,0 +1,536 @@
+7-FEB-96 20:34:13  ** Session begins: TAKEIT version 47.
+7-FEB-96 20:34:13  * Opername: ZACHARYE, Username: OPER
+7-FEB-96 20:34:15  AUTO 
+7-FEB-96 20:34:36  * Countdown = 25 minutes, Grace = 1
+7-FEB-96 20:34:36  * "System going down as per schedule."
+7-FEB-96 20:34:36  * Warning: 25 minutes /EZ
+7-FEB-96 20:49:36  * Warning: 10 minutes /EZ
+7-FEB-96 20:54:36  * Warning: 5 minutes /EZ
+7-FEB-96 20:57:36  * Warning: 2 minutes /EZ
+7-FEB-96 20:58:36  * System shut (0 -> 400000)
+7-FEB-96 20:58:36  * Warning: 1 minute /EZ
+7-FEB-96 20:59:36  * System super shut (400000 -> 600000)
+7-FEB-96 20:59:36  * Warning: 0 minutes /EZ
+7-FEB-96 20:59:37  * Killed job 3, user OPER <CR1699> SL
+7-FEB-96 20:59:37  * Evicted job 4, user PERPOPER <XEXEC> RN
+7-FEB-96 20:59:37  * Evicted job 5, user PERPOPER <SYSLOG> RN
+7-FEB-96 20:59:37  * Evicted job 6, user PERPOPER <CRON> RN
+7-FEB-96 20:59:37  * Killed job 12, user JMS <MAILER> ^C
+7-FEB-96 20:59:39  * Killed job 13, user JMS <MAILER> ^C
+7-FEB-96 20:59:39  * Killed job 14, user JMS <MAILER> ^C
+7-FEB-96 20:59:40  * Killed job 15, user JMS <MAILER> ^C
+7-FEB-96 20:59:40  * Killed job 16, user JMS <MAILER> ^C
+7-FEB-96 20:59:42  * Killed job 17, user JMS <MAILER> ^C
+7-FEB-96 20:59:42  * Killed job 18, user JMS <MAILER> ^C
+7-FEB-96 20:59:43  * Killed job 19, user JMS <MAILER> ^C
+7-FEB-96 20:59:43  * Killed job 20, user JMS <MAILER> ^C
+7-FEB-96 20:59:43  * Killed job 21, user JMS <MAILER> ^C
+7-FEB-96 20:59:44  * Killed job 22, user JMS <MAILER> ^C
+7-FEB-96 20:59:45  * Killed job 23, user JMS <MAILER> ^C
+7-FEB-96 20:59:50  * Killed job 1, user PJ <PAM> SL
+7-FEB-96 20:59:51  * Evicted job 2, user OPER <CHKPNT> TS
+7-FEB-96 20:59:57  * Hanging system...
+7-FEB-96 20:59:57  ** Session ends.
+
+26-JAN-96 20:35:35  ** Session begins: TAKEIT version 47.
+26-JAN-96 20:35:35  * Opername: ZACHARYE, Username: OPER
+26-JAN-96 20:35:37  AUTO 
+26-JAN-96 20:35:54  * Countdown = 24 minutes, Grace = 1
+26-JAN-96 20:35:54  * "System going down as per schedule."
+26-JAN-96 20:35:54  * Warning: 24 minutes /EZ
+26-JAN-96 20:49:59  * Warning: 10 minutes /EZ
+26-JAN-96 20:54:59  * Warning: 5 minutes /EZ
+26-JAN-96 20:57:55  * Warning: 2 minutes /EZ
+26-JAN-96 20:58:55  * System shut (0 -> 400000)
+26-JAN-96 20:58:55  * Warning: 1 minute /EZ
+26-JAN-96 20:59:55  * System super shut (400000 -> 600000)
+26-JAN-96 20:59:55  * Warning: 0 minutes /EZ
+26-JAN-96 20:59:55  * Killed job 3, user OPER <CRS979> SL
+26-JAN-96 20:59:55  * Evicted job 4, user PERPOPER <XEXEC> RN
+26-JAN-96 20:59:55  * Evicted job 5, user PERPOPER <SYSLOG> RN
+26-JAN-96 20:59:56  * Evicted job 6, user PERPOPER <CRON> RN
+26-JAN-96 20:59:56  * Killed job 10, user OPER <1022F4> ^C
+26-JAN-96 20:59:56  * Killed job 12, user JMS <MAILER> ^C
+26-JAN-96 20:59:58  * Killed job 13, user JMS <MAILER> ^C
+26-JAN-96 20:59:58  * Killed job 14, user JMS <MAILER> ^C
+26-JAN-96 21:00:01  * Killed job 1, user PJ <PAM> SL
+26-JAN-96 21:00:01  * Evicted job 2, user OPER <CHKPNT> TS
+26-JAN-96 21:00:07  * Hanging system...
+26-JAN-96 21:00:07  ** Session ends.
+
+19-JAN-96 19:33:59  ** Session begins: TAKEIT version 47.
+19-JAN-96 19:33:59  * Opername: BERNARDO, Username: OPER
+19-JAN-96 19:34:04  AUTO 
+19-JAN-96 19:34:27  * Countdown = 1:25 hours, Grace = 5
+19-JAN-96 19:34:27  * "System going down as per schedule."
+19-JAN-96 20:29:31  * Warning: 30 minutes /BD
+19-JAN-96 20:49:31  * Warning: 10 minutes /BD
+19-JAN-96 20:54:31  * Warning: 5 minutes /BD
+19-JAN-96 20:57:27  * Warning: 2 minutes /BD
+19-JAN-96 20:58:27  * System shut (0 -> 400000)
+19-JAN-96 20:58:27  * Warning: 1 minute /BD
+19-JAN-96 20:59:27  * System super shut (400000 -> 600000)
+19-JAN-96 20:59:27  * Warning: 0 minutes /BD
+19-JAN-96 20:59:28  * Killed job 3, user OPER <CRS979> SL
+19-JAN-96 20:59:28  * Evicted job 4, user PERPOPER <XEXEC> RN
+19-JAN-96 20:59:28  * Evicted job 5, user PERPOPER <SYSLOG> RN
+19-JAN-96 20:59:28  * Evicted job 6, user PERPOPER <CRON> RN
+19-JAN-96 20:59:28  * Killed job 8, user NETALERT <LOGOUT> RN
+19-JAN-96 20:59:30  * Killed job 12, user JMS <MAILER> ^C
+19-JAN-96 20:59:30  * Killed job 13, user JMS <MAILER> ^C
+19-JAN-96 20:59:30  * Killed job 14, user JMS <MAILER> ^C
+19-JAN-96 20:59:32  * Killed job 15, user JMS <MAILER> ^C
+19-JAN-96 20:59:32  * Killed job 16, user JMS <MAILER> ^C
+19-JAN-96 20:59:32  * Killed job 17, user JMS <MAILER> ^C
+19-JAN-96 20:59:34  * Killed job 18, user JMS <MAILER> ^C
+19-JAN-96 20:59:36  * Killed job 1, user PJ <PAM> SL
+19-JAN-96 20:59:36  * Evicted job 2, user OPER <CHKPNT> TS
+19-JAN-96 20:59:41  * Hanging system...
+19-JAN-96 20:59:41  ** Session ends.
+
+12-JAN-96 19:45:49  ** Session begins: TAKEIT version 47.
+12-JAN-96 19:45:49  * Opername: BERNARDO, Username: OPER
+12-JAN-96 19:45:57  AUTO 
+12-JAN-96 19:46:24  * Countdown = 1:13 hours, Grace = 5
+12-JAN-96 19:46:24  * "System going down as per schedule."
+12-JAN-96 20:29:29  * Warning: 30 minutes /BD
+12-JAN-96 20:49:29  * Warning: 10 minutes /BD
+12-JAN-96 20:54:29  * Warning: 5 minutes /BD
+12-JAN-96 20:57:25  * Warning: 2 minutes /BD
+12-JAN-96 20:58:25  * System shut (0 -> 400000)
+12-JAN-96 20:58:25  * Warning: 1 minute /BD
+12-JAN-96 20:59:25  * System super shut (400000 -> 600000)
+12-JAN-96 20:59:25  * Warning: 0 minutes /BD
+12-JAN-96 20:59:25  * Killed job 3, user OPER <CRS980> SL
+12-JAN-96 20:59:25  * Evicted job 4, user PERPOPER <XEXEC> RN
+12-JAN-96 20:59:25  * Evicted job 5, user PERPOPER <SYSLOG> RN
+12-JAN-96 20:59:25  * Evicted job 6, user PERPOPER <CRON> RN
+12-JAN-96 20:59:25  * Killed job 7, user TECHSERV <ALERT> ^C
+12-JAN-96 20:59:27  * Killed job 8, user NETALERT <ALERT> ^C
+12-JAN-96 20:59:27  ??!FOHLT error ' for job 8, user  <LOGOUT> ^C
+12-JAN-96 20:59:27  * Killed job 9, user OPER <1022F4> ^C
+12-JAN-96 20:59:29  * Killed job 10, user NETENG <LISTER> ^C
+12-JAN-96 20:59:29  * Killed job 11, user JMS <MAILER> ^C
+12-JAN-96 20:59:29  * Killed job 13, user JMS <MAILER> ^C
+12-JAN-96 20:59:31  * Killed job 14, user JMS <MAILER> ^C
+12-JAN-96 20:59:31  * Killed job 15, user JMS <MAILER> ^C
+12-JAN-96 20:59:31  * Killed job 16, user JMS <MAILER> ^C
+12-JAN-96 20:59:33  * Killed job 17, user JMS <MAILER> ^C
+12-JAN-96 20:59:33  * Killed job 18, user JMS <MAILER> ^C
+12-JAN-96 20:59:37  * Killed job 1, user PJ <PAM> SL
+12-JAN-96 20:59:37  * Evicted job 2, user OPER <CHKPNT> TS
+12-JAN-96 20:59:45  * Hanging system...
+12-JAN-96 20:59:45  ** Session ends.
+
+5-JAN-96 20:35:18  ** Session begins: TAKEIT version 47.
+5-JAN-96 20:35:18  * Opername: ZACHARYE, Username: OPER
+5-JAN-96 20:35:21  AUTO 
+5-JAN-96 20:35:39  * Countdown = 24 minutes, Grace = 1
+5-JAN-96 20:35:39  * "System going down as per schedule."
+5-JAN-96 20:35:39  * Warning: 24 minutes /EZ
+5-JAN-96 20:49:44  * Warning: 10 minutes /EZ
+5-JAN-96 20:54:44  * Warning: 5 minutes /EZ
+5-JAN-96 20:57:40  * Warning: 2 minutes /EZ
+5-JAN-96 20:58:40  * System shut (0 -> 400000)
+5-JAN-96 20:58:40  * Warning: 1 minute /EZ
+5-JAN-96 20:59:40  * System super shut (400000 -> 600000)
+5-JAN-96 20:59:40  * Warning: 0 minutes /EZ
+5-JAN-96 20:59:41  * Killed job 3, user OPER <CRS984> SL
+5-JAN-96 20:59:41  * Evicted job 4, user PERPOPER <XEXEC> RN
+5-JAN-96 20:59:41  * Evicted job 5, user PERPOPER <SYSLOG> RN
+5-JAN-96 20:59:41  * Evicted job 6, user PERPOPER <CRON> SS
+5-JAN-96 20:59:41  * Killed job 8, user NETALERT <LOGOUT> SL
+5-JAN-96 20:59:43  ?can't halt frame with JACCT: job 8, user NETALERT <LOGOUT> SL
+5-JAN-96 21:00:11  * Killed job 10, user OPER <TITO> TI
+5-JAN-96 21:00:12  * Killed job 1, user PJ <PAM> SL
+5-JAN-96 21:00:12  * Evicted job 2, user OPER <CHKPNT> TS
+5-JAN-96 21:00:17  * Hanging system...
+5-JAN-96 21:00:17  ** Session ends.
+
+29-DEC-95 21:00:06  ** Session begins: TAKEIT version 47.
+29-DEC-95 21:00:06  * Opername: CHAVEZJ, Username: OPER
+29-DEC-95 21:00:13  AUTO 
+29-DEC-95 21:00:57  * Countdown = 5 minutes, Grace = 1
+29-DEC-95 21:00:57  * "System going down as per schedule."
+29-DEC-95 21:00:57  * Warning: 5 minutes /JC
+29-DEC-95 21:03:57  * Warning: 2 minutes /JC
+29-DEC-95 21:04:57  * System shut (0 -> 400000)
+29-DEC-95 21:04:57  * Warning: 1 minute /JC
+29-DEC-95 21:05:57  * System super shut (400000 -> 600000)
+29-DEC-95 21:05:57  * Warning: 0 minutes /JC
+29-DEC-95 21:05:58  * Killed job 3, user OPER <CRS981> SL
+29-DEC-95 21:05:58  * Evicted job 4, user PERPOPER <XEXEC> RN
+29-DEC-95 21:05:58  * Evicted job 5, user PERPOPER <SYSLOG> RN
+29-DEC-95 21:05:59  * Evicted job 6, user PERPOPER <CRON> RN
+29-DEC-95 21:05:59  * Killed job 11, user JMS <MAILER> ^C
+29-DEC-95 21:05:59  * Killed job 13, user JMS <MAILER> ^C
+29-DEC-95 21:05:59  * Killed job 14, user JMS <MAILER> ^C
+29-DEC-95 21:05:59  * Killed job 15, user JMS <MAILER> ^C
+29-DEC-95 21:06:01  * Killed job 16, user JMS <MAILER> ^C
+29-DEC-95 21:06:01  * Killed job 17, user JMS <MAILER> ^C
+29-DEC-95 21:06:01  * Killed job 18, user JMS <MAILER> ^C
+29-DEC-95 21:06:05  * Killed job 1, user PJ <PAM> SL
+29-DEC-95 21:06:05  * Evicted job 2, user OPER <CHKPNT> TS
+29-DEC-95 21:06:11  * Hanging system...
+29-DEC-95 21:06:11  ** Session ends.
+
+22-DEC-95 19:53:01  ** Session begins: TAKEIT version 47.
+22-DEC-95 19:53:01  * Opername: BERNARDO, Username: OPER
+22-DEC-95 19:53:06  AUTO 
+22-DEC-95 19:54:18  AUTO 
+22-DEC-95 19:54:51  * Countdown = 1:05 hours, Grace = 5
+22-DEC-95 19:54:51  * "System going down as per schedule."
+22-DEC-95 20:29:55  * Warning: 30 minutes /BD
+22-DEC-95 20:49:55  * Warning: 10 minutes /BD
+22-DEC-95 20:54:55  * Warning: 5 minutes /BD
+22-DEC-95 20:57:51  * Warning: 2 minutes /BD
+22-DEC-95 20:58:51  * System shut (0 -> 400000)
+22-DEC-95 20:58:51  * Warning: 1 minute /BD
+22-DEC-95 20:59:51  * System super shut (400000 -> 600000)
+22-DEC-95 20:59:51  * Warning: 0 minutes /BD
+22-DEC-95 20:59:51  * Killed job 3, user OPER <CRS754> SL
+22-DEC-95 20:59:51  * Evicted job 4, user PERPOPER <XEXEC> RN
+22-DEC-95 20:59:51  * Evicted job 5, user PERPOPER <SYSLOG> RN
+22-DEC-95 20:59:52  * Evicted job 6, user PERPOPER <CRON> RN
+22-DEC-95 20:59:52  * Killed job 9, user OPER <MAGCON> ^C
+22-DEC-95 20:59:52  * Killed job 11, user OPER <TITO> ^C
+22-DEC-95 20:59:52  * Killed job 12, user JMS <MAILER> ^C
+22-DEC-95 20:59:54  * Killed job 13, user JMS <MAILER> ^C
+22-DEC-95 20:59:54  * Killed job 14, user JMS <MAILER> ^C
+22-DEC-95 20:59:54  * Killed job 15, user JMS <MAILER> ^C
+22-DEC-95 20:59:56  * Killed job 16, user JMS <MAILER> ^C
+22-DEC-95 20:59:59  * Killed job 1, user PJ <PAM> SL
+22-DEC-95 20:59:59  * Evicted job 2, user OPER <CHKPNT> TS
+22-DEC-95 21:00:05  * Hanging system...
+22-DEC-95 21:00:05  ** Session ends.
+
+22-DEC-95 19:52:22  ** Session begins: TAKEIT version 47.
+22-DEC-95 19:52:22  * Opername: BERNARDO, Username: OPER
+22-DEC-95 19:52:29  QUIT 
+22-DEC-95 19:52:29  ** Session ends.
+
+15-DEC-95 19:53:27  ** Session begins: TAKEIT version 47.
+15-DEC-95 19:53:27  * Opername: BERNARDO, Username: OPER
+15-DEC-95 19:53:31  AUTO 
+15-DEC-95 19:53:54  * Countdown = 1:06 hours, Grace = 5
+15-DEC-95 19:53:54  * "System going down as per schedule."
+15-DEC-95 20:29:59  * Warning: 30 minutes /BD
+15-DEC-95 20:49:59  * Warning: 10 minutes /BD
+15-DEC-95 20:54:59  * Warning: 5 minutes /BD
+15-DEC-95 20:57:55  * Warning: 2 minutes /BD
+15-DEC-95 20:58:55  * System shut (0 -> 400000)
+15-DEC-95 20:58:55  * Warning: 1 minute /BD
+15-DEC-95 20:59:55  * System super shut (400000 -> 600000)
+15-DEC-95 20:59:55  * Warning: 0 minutes /BD
+15-DEC-95 20:59:55  * Killed job 3, user OPER <CRS981> SL
+15-DEC-95 20:59:55  * Evicted job 4, user PERPOPER <XEXEC> RN
+15-DEC-95 20:59:55  * Evicted job 5, user PERPOPER <SYSLOG> RN
+15-DEC-95 20:59:55  * Evicted job 6, user PERPOPER <CRON> RN
+15-DEC-95 20:59:55  * Killed job 10, user JMS <MAILER> ^C
+15-DEC-95 20:59:57  * Killed job 11, user OPER <OPER> ^C
+15-DEC-95 20:59:57  * Killed job 12, user JMS <MAILER> ^C
+15-DEC-95 20:59:57  * Killed job 14, user JMS <MAILER> ^C
+15-DEC-95 20:59:59  * Killed job 15, user JMS <MAILER> ^C
+15-DEC-95 20:59:59  * Killed job 17, user JMS <MAILER> ^C
+15-DEC-95 20:59:59  * Killed job 18, user JMS <MAILER> ^C
+15-DEC-95 21:00:01  * Killed job 19, user JMS <MAILER> ^C
+15-DEC-95 21:00:04  * Killed job 1, user PJ <PAM> SL
+15-DEC-95 21:00:04  * Evicted job 2, user OPER <CHKPNT> TS
+15-DEC-95 21:00:11  * Hanging system...
+15-DEC-95 21:00:11  ** Session ends.
+
+8-DEC-95 19:56:07  ** Session begins: TAKEIT version 47.
+8-DEC-95 19:56:07  * Opername: BERNARDO, Username: OPER
+8-DEC-95 19:56:16  AUTO 
+8-DEC-95 19:56:38  * Countdown = 1:03 hours, Grace = 5
+8-DEC-95 19:56:38  * "System going down as per schedule."
+8-DEC-95 20:29:43  * Warning: 30 minutes /BD
+8-DEC-95 20:49:43  * Warning: 10 minutes /BD
+8-DEC-95 20:54:43  * Warning: 5 minutes /BD
+8-DEC-95 20:57:39  * Warning: 2 minutes /BD
+8-DEC-95 20:58:39  * System shut (0 -> 400000)
+8-DEC-95 20:58:39  * Warning: 1 minute /BD
+8-DEC-95 20:59:39  * System super shut (400000 -> 600000)
+8-DEC-95 20:59:39  * Warning: 0 minutes /BD
+8-DEC-95 20:59:39  * Killed job 3, user OPER <CRS456> SL
+8-DEC-95 20:59:39  * Evicted job 4, user PERPOPER <XEXEC> RN
+8-DEC-95 20:59:39  * Evicted job 5, user PERPOPER <SYSLOG> RN
+8-DEC-95 20:59:39  * Evicted job 6, user PERPOPER <CRON> SW
+8-DEC-95 20:59:39  * Killed job 11, user OPER <TITO> ^C
+8-DEC-95 20:59:41  * Killed job 12, user JMS <MAILER> ^C
+8-DEC-95 20:59:41  * Killed job 13, user JMS <MAILER> ^C
+8-DEC-95 20:59:41  * Killed job 14, user JMS <MAILER> ^C
+8-DEC-95 20:59:45  * Killed job 1, user PJ <PAM> SL
+8-DEC-95 20:59:45  * Evicted job 2, user OPER <CHKPNT> ML
+8-DEC-95 20:59:50  * Hanging system...
+8-DEC-95 20:59:50  ** Session ends.
+
+1-DEC-95 19:44:39  ** Session begins: TAKEIT version 47.
+1-DEC-95 19:44:39  * Opername: BERNARDO, Username: OPER
+1-DEC-95 19:44:44  AUTO 
+1-DEC-95 19:45:15  * Countdown = 1:14 hours, Grace = 5
+1-DEC-95 19:45:15  * "System going down as per schedule."
+1-DEC-95 20:29:20  * Warning: 30 minutes /BSD
+1-DEC-95 20:49:20  * Warning: 10 minutes /BSD
+1-DEC-95 20:54:20  * Warning: 5 minutes /BSD
+1-DEC-95 20:57:16  * Warning: 2 minutes /BSD
+1-DEC-95 20:58:16  * System shut (0 -> 400000)
+1-DEC-95 20:58:16  * Warning: 1 minute /BSD
+1-DEC-95 20:59:16  * System super shut (400000 -> 600000)
+1-DEC-95 20:59:16  * Warning: 0 minutes /BSD
+1-DEC-95 20:59:16  * Killed job 3, user OPER <CRS971> SL
+1-DEC-95 20:59:16  * Evicted job 4, user PERPOPER <XEXEC> RN
+1-DEC-95 20:59:17  * Evicted job 5, user PERPOPER <SYSLOG> RN
+1-DEC-95 20:59:17  * Evicted job 6, user PERPOPER <CRON> SW
+1-DEC-95 20:59:17  * Killed job 7, user TECHSERV <LOGOUT> RN
+1-DEC-95 20:59:19  * Killed job 8, user NETALERT <LOGOUT> RN
+1-DEC-95 20:59:19  ??!FOHLT error ' for job 8, user  <LOGOUT> ^C
+1-DEC-95 20:59:19  * Killed job 12, user JMS <MAILER> ^C
+1-DEC-95 20:59:21  * Killed job 13, user JMS <MAILER> ^C
+1-DEC-95 20:59:21  * Killed job 14, user JMS <MAILER> ^C
+1-DEC-95 20:59:21  * Killed job 15, user JMS <MAILER> ^C
+1-DEC-95 20:59:23  * Killed job 16, user JMS <MAILER> ^C
+1-DEC-95 20:59:23  * Killed job 17, user JMS <MAILER> ^C
+1-DEC-95 20:59:23  * Killed job 18, user JMS <MAILER> ^C
+1-DEC-95 20:59:25  * Killed job 1, user PJ <PAM> SL
+1-DEC-95 20:59:25  * Evicted job 2, user OPER <CHKPNT> ML
+1-DEC-95 20:59:32  * Hanging system...
+1-DEC-95 20:59:32  ** Session ends.
+
+17-NOV-95 20:31:25  ** Session begins: TAKEIT version 47.
+17-NOV-95 20:31:25  * Opername: ZACHARYE, Username: OPER
+17-NOV-95 20:31:27  AUTO 
+17-NOV-95 20:31:44  * Countdown = 28 minutes, Grace = 1
+17-NOV-95 20:31:44  * "System going down as per schedule."
+17-NOV-95 20:31:44  * Warning: 28 minutes /EZ
+17-NOV-95 20:31:55  IMMUNE 9
+17-NOV-95 20:49:49  * Warning: 10 minutes /EZ
+17-NOV-95 20:54:49  * Warning: 5 minutes /EZ
+17-NOV-95 20:55:21  * circuit zapped
+17-NOV-95 20:57:45  * Warning: 2 minutes /EZ
+17-NOV-95 20:58:45  * System shut (0 -> 400000)
+17-NOV-95 20:58:45  * Warning: 1 minute /EZ
+17-NOV-95 20:59:45  * Warning: 0 minutes /EZ
+17-NOV-95 20:59:45  * Killed job 3, user OPER <CRS404> SL
+17-NOV-95 20:59:45  * Evicted job 4, user PERPOPER <XEXEC> RN
+17-NOV-95 20:59:45  * Evicted job 5, user PERPOPER <SYSLOG> RN
+17-NOV-95 20:59:45  * Evicted job 6, user PERPOPER <CRON> RN
+17-NOV-95 20:59:45  * Killed job 7, user TECHSERV <ALERT> ^C
+17-NOV-95 20:59:45  * Killed job 8, user NETALERT <ALERT> ^C
+17-NOV-95 20:59:45  * Killed job 12, user JMS <MAILER> ^C
+17-NOV-95 20:59:45  * Killed job 13, user JMS <MAILER> ^C
+17-NOV-95 20:59:45  * Killed job 14, user BILLING10 <PCOM> ^C
+17-NOV-95 20:59:48  * Killed job 10, user BILLING10 <1022F4> ^C
+17-NOV-95 21:35:54  * Killed job 1, user PJ <PAM> SL
+17-NOV-95 21:35:54  * Evicted job 2, user OPER <CHKPNT> TS
+17-NOV-95 21:35:58  * Hanging system...
+17-NOV-95 21:35:58  ** Session ends.
+
+14-NOV-95 08:46:59  ** Session begins: TAKEIT version 47.
+14-NOV-95 08:46:59  * Opername: HIGHTOWER, Username: OPER
+14-NOV-95 08:47:07  KILL 13
+14-NOV-95 08:47:07  * Killed job 13, user BILLING10 <DIRIT> ^C
+14-NOV-95 08:47:10  QUIT 
+14-NOV-95 08:47:10  ** Session ends.
+
+10-NOV-95 21:37:15  ** Session begins: TAKEIT version 47.
+10-NOV-95 21:37:15  * Opername: ZACHARYE, Username: OPER
+10-NOV-95 21:37:18  AUTO 
+10-NOV-95 21:37:36  * Countdown = 5 minutes, Grace = 1
+10-NOV-95 21:37:36  * "System going down as per schedule."
+10-NOV-95 21:37:36  * Warning: 5 minutes /EZ
+10-NOV-95 21:40:37  * Warning: 2 minutes /EZ
+10-NOV-95 21:41:37  * System shut (0 -> 400000)
+10-NOV-95 21:41:37  * Warning: 1 minute /EZ
+10-NOV-95 21:42:37  * System super shut (400000 -> 600000)
+10-NOV-95 21:42:37  * Warning: 0 minutes /EZ
+10-NOV-95 21:42:37  * Killed job 3, user OPER <CRSHI2> SL
+10-NOV-95 21:42:37  * Evicted job 4, user PERPOPER <XEXEC> RN
+10-NOV-95 21:42:38  * Evicted job 5, user PERPOPER <SYSLOG> RN
+10-NOV-95 21:42:38  * Evicted job 6, user PERPOPER <CRON> SS
+10-NOV-95 21:42:40  * Killed job 1, user PJ <PAM> SL
+10-NOV-95 21:42:42  * Evicted job 2, user OPER <CHKPNT> TS
+10-NOV-95 21:42:47  * Hanging system...
+10-NOV-95 21:42:47  ** Session ends.
+
+10-NOV-95 20:33:15  ** Session begins: TAKEIT version 47.
+10-NOV-95 20:33:15  * Opername: BERNARDO, Username: OPER
+10-NOV-95 20:33:26  AUTO 
+10-NOV-95 20:33:49  * Countdown = 26 minutes, Grace = 4
+10-NOV-95 20:33:49  * "System goown as per schedule."
+10-NOV-95 20:33:49  * Warning: 26 minutes /BD
+10-NOV-95 20:49:54  * Warning: 10 minutes /BD
+10-NOV-95 20:54:54  * Warning: 5 minutes /BD
+10-NOV-95 20:57:50  * Warning: 2 minutes /BD
+10-NOV-95 20:58:50  * System shut (0 -> 400000)
+10-NOV-95 20:58:50  * Warning: 1 minute /BD
+10-NOV-95 20:59:50  * System super shut (400000 -> 600000)
+10-NOV-95 20:59:50  * Warning: 0 minutes /BD
+10-NOV-95 20:59:50  * Killed job 3, user OPER <CRS981> SL
+10-NOV-95 20:59:50  * Evicted job 4, user PERPOPER <XEXEC> RN
+10-NOV-95 20:59:50  * Evicted job 5, user PERPOPER <SYSLOG> RN
+10-NOV-95 20:59:51  * Evicted job 6, user PERPOPER <CRON> RN
+10-NOV-95 20:59:51  * Killed job 12, user JMS <MAILER> ^C
+10-NOV-95 20:59:51  * Killed job 13, user JMS <MAILER> ^C
+10-NOV-95 20:59:51  * Killed job 15, user JMS <MAILER> ^C
+10-NOV-95 20:59:53  * Killed job 16, user JMS <MAILER> ^C
+10-NOV-95 20:59:53  * Killed job 17, user JMS <MAILER> ^C
+10-NOV-95 20:59:53  * Killed job 18, user JMS <MAILER> ^C
+10-NOV-95 20:59:55  * Killed job 19, user BILLING10 <DIRIT> ^C
+10-NOV-95 20:59:55  * Killed job 23, user JMS <MAILER> ^C
+10-NOV-95 21:00:02  * Killed job 1, user PJ <PAM> SL
+10-NOV-95 21:00:02  * Evicted job 2, user OPER <CHKPNT> TS
+10-NOV-95 21:00:07  * Hanging system...
+10-NOV-95 21:00:07  ** Session ends.
+
+3-NOV-95 17:15:21  ** Session begins: TAKEIT version 47.
+3-NOV-95 17:15:21  * Opername: ZACHARYE, Username: OPER
+3-NOV-95 17:15:30  AUTO 
+3-NOV-95 17:16:10  * Countdown = 5 minutes, Grace = 5
+3-NOV-95 17:16:10  * "System going down as per schedule."
+3-NOV-95 17:16:10  * Warning: 5 minutes /EZ
+3-NOV-95 17:19:10  * Warning: 2 minutes /EZ
+3-NOV-95 17:20:10  * System shut (0 -> 400000)
+3-NOV-95 17:20:10  * Warning: 1 minute /EZ
+3-NOV-95 17:21:10  * System super shut (400000 -> 600000)
+3-NOV-95 17:21:10  * Warning: 0 minutes /EZ
+3-NOV-95 17:21:11  * Killed job 3, user OPER <CRSHI1> SL
+3-NOV-95 17:21:11  * Evicted job 4, user PERPOPER <XEXEC> RN
+3-NOV-95 17:21:12  * Evicted job 5, user PERPOPER <SYSLOG> RN
+3-NOV-95 17:21:12  * Evicted job 6, user PERPOPER <CRON> RN
+3-NOV-95 17:21:13  * Killed job 1, user PJ <PAM> SL
+3-NOV-95 17:21:14  * Evicted job 2, user OPER <CHKPNT> TS
+3-NOV-95 17:21:19  * Hanging system...
+3-NOV-95 17:21:19  ** Session ends.
+
+27-OCT-95 19:46:26  ** Session begins: TAKEIT version 47.
+27-OCT-95 19:46:26  * Opername: BERNARDO, Username: OPER
+27-OCT-95 19:46:31  AUTO 
+27-OCT-95 19:47:40  * Countdown = 1:12 hours, Grace = 5
+27-OCT-95 19:47:40  * "System going down as per schedule."
+27-OCT-95 20:29:44  * Warning: 30 minutes /BD
+27-OCT-95 20:49:44  * Warning: 10 minutes /BD
+27-OCT-95 20:54:44  * Warning: 5 minutes /BD
+27-OCT-95 20:57:40  * Warning: 2 minutes /BD
+27-OCT-95 20:58:40  * System shut (0 -> 400000)
+27-OCT-95 20:58:40  * Warning: 1 minute /BD
+27-OCT-95 20:59:40  * System super shut (400000 -> 600000)
+27-OCT-95 20:59:40  * Warning: 0 minutes /BD
+27-OCT-95 20:59:40  * Killed job 3, user OPER <CRSH80> SL
+27-OCT-95 20:59:40  * Evicted job 4, user PERPOPER <XEXEC> RN
+27-OCT-95 20:59:40  * Evicted job 5, user PERPOPER <SYSLOG> RN
+27-OCT-95 20:59:40  * Evicted job 6, user PERPOPER <CRON> SW
+27-OCT-95 20:59:40  * Killed job 8, user TECHSERV <ALERT> ^C
+27-OCT-95 20:59:42  * Killed job 9, user NETALERT <ALERT> ^C
+27-OCT-95 20:59:42  ??!FOHLT error ' for job 9, user  <LOGOUT> ^C
+27-OCT-95 20:59:42  * Killed job 10, user OPER <1022F4> ^C
+27-OCT-95 21:04:10  * Killed job 11, user OPER <SUPCHK> SL
+27-OCT-95 21:04:10  * Killed job 13, user OPER <PSPATO> SL
+27-OCT-95 21:04:11  * Killed job 1, user PJ <PAM> SL
+27-OCT-95 21:04:11  * Evicted job 2, user OPER <CHKPNT> TS
+27-OCT-95 21:04:15  * Hanging system...
+27-OCT-95 21:04:15  ** Session ends.
+
+20-OCT-95 20:16:32  ** Session begins: TAKEIT version 47.
+20-OCT-95 20:16:32  * Opername: ZACHARYE, Username: OPER
+20-OCT-95 20:16:34  AUTO 
+20-OCT-95 20:16:53  * Countdown = 43 minutes, Grace = 1
+20-OCT-95 20:16:53  * "System going down as per schedule."
+20-OCT-95 20:29:57  * Warning: 30 minutes /EZ
+20-OCT-95 20:33:21  IMMUNE 12
+20-OCT-95 20:49:53  * Warning: 10 minutes /EZ
+20-OCT-95 20:54:53  * Warning: 5 minutes /EZ
+20-OCT-95 20:57:53  * Warning: 2 minutes /EZ
+20-OCT-95 20:58:53  * System shut (0 -> 400000)
+20-OCT-95 20:58:53  * Warning: 1 minute /EZ
+20-OCT-95 20:59:53  * System super shut (400000 -> 600000)
+20-OCT-95 20:59:53  * Warning: 0 minutes /EZ
+20-OCT-95 20:59:54  * Killed job 3, user OPER <CRS979> SL
+20-OCT-95 20:59:54  * Evicted job 4, user PERPOPER <XEXEC> RN
+20-OCT-95 20:59:54  * Evicted job 5, user PERPOPER <SYSLOG> RN
+20-OCT-95 20:59:54  * Evicted job 6, user PERPOPER <CRON> RN
+20-OCT-95 20:59:54  * Killed job 8, user OPER <MAGCON> ^C
+20-OCT-95 20:59:56  * Killed job 10, user JMS <MAILER> ^C
+20-OCT-95 20:59:56  * Killed job 11, user JMS <MAILER> ^C
+20-OCT-95 20:59:56  * Killed job 13, user JMS <MAILER> ^C
+20-OCT-95 20:59:58  * Killed job 14, user JMS <MAILER> ^C
+20-OCT-95 20:59:58  * Killed job 15, user JMS <MAILER> ^C
+20-OCT-95 20:59:58  * Killed job 16, user JMS <MAILER> ^C
+20-OCT-95 21:00:00  * Killed job 20, user JMS <MAILER> ^C
+20-OCT-95 21:12:12  * Killed job 1, user PJ <PAM> SL
+20-OCT-95 21:12:12  * Evicted job 2, user OPER <CHKPNT> SW
+20-OCT-95 21:12:17  * Hanging system...
+20-OCT-95 21:12:17  ** Session ends.
+
+13-OCT-95 19:46:14  ** Session begins: TAKEIT version 47.
+13-OCT-95 19:46:14  * Opername: BERNARDO, Username: OPER
+13-OCT-95 19:46:20  AUTO 
+13-OCT-95 19:46:47  * Countdown = 1:13 hours, Grace = 5
+13-OCT-95 19:46:47  * "System going down as per schedule."
+13-OCT-95 20:29:51  * Warning: 30 minutes /BD
+13-OCT-95 20:49:51  * Warning: 10 minutes /BD
+13-OCT-95 20:54:51  * Warning: 5 minutes /BD
+13-OCT-95 20:57:47  * Warning: 2 minutes /BD
+13-OCT-95 20:58:47  * System shut (0 -> 400000)
+13-OCT-95 20:58:47  * Warning: 1 minute /BD
+13-OCT-95 20:59:47  * System super shut (400000 -> 600000)
+13-OCT-95 20:59:47  * Warning: 0 minutes /BD
+13-OCT-95 20:59:47  * Killed job 3, user OPER <CRS976> SL
+13-OCT-95 20:59:47  * Evicted job 4, user PERPOPER <XEXEC> RN
+13-OCT-95 20:59:48  * Evicted job 5, user PERPOPER <SYSLOG> RN
+13-OCT-95 20:59:48  * Evicted job 6, user PERPOPER <CRON> RN
+13-OCT-95 20:59:48  * Killed job 10, user OPER <TITO> ^C
+13-OCT-95 20:59:50  * Killed job 12, user JMS <MAILER> ^C
+13-OCT-95 20:59:50  * Killed job 13, user JMS <MAILER> ^C
+13-OCT-95 20:59:50  * Killed job 14, user JMS <MAILER> ^C
+13-OCT-95 20:59:52  * Killed job 15, user JMS <MAILER> ^C
+13-OCT-95 20:59:52  * Killed job 16, user JMS <MAILER> ^C
+13-OCT-95 20:59:52  * Killed job 18, user JMS <MAILER> ^C
+13-OCT-95 20:59:54  * Killed job 19, user JMS <MAILER> ^C
+13-OCT-95 20:59:56  * Killed job 1, user PJ <PAM> SL
+13-OCT-95 20:59:56  * Evicted job 2, user OPER <CHKPNT> ML
+13-OCT-95 21:00:02  * Hanging system...
+13-OCT-95 21:00:02  ** Session ends.
+
+6-OCT-95 20:15:19  ** Session begins: TAKEIT version 47.
+6-OCT-95 20:15:19  * Opername: ZACHARYE, Username: OPER
+6-OCT-95 20:15:21  AUTO 
+6-OCT-95 20:15:54  * Countdown = 44 minutes, Grace = 1
+6-OCT-95 20:15:54  * "System going down as per schedule."
+6-OCT-95 20:29:58  * Warning: 30 minutes /EZ
+6-OCT-95 20:49:55  * Warning: 10 minutes /EZ
+6-OCT-95 20:54:55  * Warning: 5 minutes /EZ
+6-OCT-95 20:57:54  * Warning: 2 minutes /EZ
+6-OCT-95 20:58:54  * System shut (0 -> 400000)
+6-OCT-95 20:58:54  * Warning: 1 minute /EZ
+6-OCT-95 20:59:54  * System super shut (400000 -> 600000)
+6-OCT-95 20:59:54  * Warning: 0 minutes /EZ
+6-OCT-95 20:59:55  * Killed job 3, user OPER <CRS689> SL
+6-OCT-95 20:59:55  * Evicted job 4, user PERPOPER <XEXEC> RN
+6-OCT-95 20:59:55  * Evicted job 5, user PERPOPER <SYSLOG> RN
+6-OCT-95 20:59:55  * Evicted job 6, user PERPOPER <CRON> SW
+6-OCT-95 20:59:55  * Killed job 7, user TECHSERV <ALERT> ^C
+6-OCT-95 20:59:56  * Killed job 8, user NETALERT <ALERT> ^C
+6-OCT-95 20:59:56  ??!FOHLT error ' for job 8, user  <LOGOUT> ^C
+6-OCT-95 20:59:56  * Killed job 9, user JMS <MAILER> ^C
+6-OCT-95 20:59:58  * Killed job 12, user JMS <MAILER> ^C
+6-OCT-95 20:59:59  * Killed job 13, user JMS <MAILER> ^C
+6-OCT-95 20:59:59  * Killed job 16, user JMS <MAILER> ^C
+6-OCT-95 21:00:00  * Killed job 18, user JMS <MAILER> ^C
+6-OCT-95 21:00:25  * Killed job 10, user OPER <TITO> RN
+6-OCT-95 21:00:25  * Evicted job 15, user BILLING10 <PCOM> RN
+6-OCT-95 21:00:25  * Killed job 17, user BILLING10 <1022F4> RN
+6-OCT-95 21:00:31  * Killed job 1, user PJ <PAM> SL
+6-OCT-95 21:00:31  * Evicted job 2, user OPER <CHKPNT> TS
+6-OCT-95 21:00:36  * Hanging system...
+6-OCT-95 21:00:36  ** Session ends.
+
+1-OCT-95 19:48:41  ** Session begins: TAKEIT version 47.
+1-OCT-95 19:48:41  * Opername: BERNARDO, Username: OPER
+1-OCT-95 19:48:46  AUTO 
+1-OCT-95 19:49:12  * Countdown = 1:10 hours, Grace = 5
+1-OCT-95 19:49:12  * "System going down as per schedule."
+1-OCT-95 20:29:16  * Warning: 30 minutes /BD
+1-OCT-95 20:49:16  * Warning: 10 minut
+** file truncated **
+ U -Ê
