@@ -1,0 +1,74 @@
+:       ISIS-II - T-I - DEFINITION PARAMETERS - 13-OCT-89  ROF
+:       KERNEL CODE:  7.03            NODE CODE:  5.22
+:       MEMORY: 1024 SEMI               LOCATION: SAN JOSE - SUPER SITE
+:       ORDER #: INCREASE NUMBER OF DISPATCHER PORTS
+
+:               PARAMETERS WITH ':*' ARE DEFAULTED TO ZERO (0) IF NOT PRESENT.
+
+:               HARDWARE CONFIGURATION
+ENGINE  EQ      1               :  1 IF HARDWARE IS TYMNET ENGINE
+MICRO   EQ      2               :* 1=ASYNC ENHANCED, 2=SYNC ENHANCED
+N.ADA   EQ      1               :* 1 IF NEW ASYNC ADDRESSING
+NASYNG  EQ      2               :* NO. OF ASYNC GROUPS (2 GRP/CD)
+M.NCARD EQ      1               :  NU.# OF SIO MOTHER BDS.
+M.DA0   EQ      $0 80           :  DEVICE ADDRESS FOR MOTHER-BOARD 0
+M.NP0   EQ      $A 2            :  NO. OF PORTS FOR MOTHER-BOARD 0
+LBOOT   EQ      1               :  NEW BOOT PROM
+ZITEL   EQ      1		:  MAC 1
+NPRINT   EQ     0               :  NO OF HIGH SPEED PRINTERS
+BAUDR    EQ     1		:  4800 BAUD
+
+:               ISIS CONFIGURATION CONSTRAINTS
+NSLOT   EQ      1               : NO. OF SLOTS TO CONNECT
+NLU     EQ      $A 5            :  MAX. NO. OF LOGICAL UNITS/SLOT
+NDP     EQ      $A 512          :  NUMBER OF DISPATCHER PORTS
+
+:               NODE CONFIGURATION
+TII     EQ      1               :  1 IF TYMNET-II ON NODE
+TIINEW  EQ      1               :  4.00 OR LATER VERSION
+PTHRU   EQ      0               :* IF PASSTHROUGH INHIBITTED
+NPTHR   EQ      $A 128          :  NUMBER OF PASSTHROUGHS
+MACHNM  EQ      $8 2467         :  NODE NUMBER
+HST0    EQ      $A 1253         :  ISIS KERNEL HOST NUMBER
+NETID   EQ      1
+MACHIN  EQ      1
+SILINS  EQ      $A 2            :  # OF SIO NETWORK CONNECTION
+NLINES  EQ      $A 3            :  NO. OF LINKS (MUST EQ NLUS0)
+NUMWS8  EQ      3               :  NO OF WINDOW SIZE 8'S
+CONSAT	EQ	1		:  CONSAT
+ASYNEW  EQ      2               :* 0=OLD ASYNC DRIVER, 1=BOTH, 2=NEW DRIVER
+REBTST  EQ      1
+P1SIZE  EQ      $0 800
+PHSIZE  EQ      $0 400
+IKNRNG  EQ      1
+        OPTION(TLEV,REBLD)            :  SYNC LINE TRACE
+
+:               NETWORK CONFIGURATION
+
+        TIILNK(6514,8,8,,MS)
+        TIILNK(7162,8,8,,MS)
+        TIILNK(4747,8,8)
+        TIILNK(5420,8,8)
+
+        
+
+XLINKS  EQ      1               :  NUMBER OF WILD CARD LINKS
+
+:       SLOT 0 - THE NODE CODE
+S0CORE  EQ      $A 310
+NLUS0   EQ      $A 5
+S0L0    S.REF(0)                : WILD CARD XLINK
+S0L1    S.REF(1)
+S0L2    S.REF(2)
+S0L3    M.REF(0,0)
+S0L4    M.REF(0,1)
+
+:       SLOT 1 - CONSAT SLOT
+S1CORE  EQ      $A 70           :  SLOT 1 CORE SIZE IN KB
+S1LIC   EQ      0
+NLUS1   EQ      $A 2            :  NO. OF LU FOR SLOT 1
+S1L0    A.REF(0)                
+S1L1    A.REF(1)                
+
+:       GOOD-GUY LIST CAN BE LOCATED UNDER (WNFEOPS:25)GOOD.GGY
+        END
