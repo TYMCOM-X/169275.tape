@@ -1,0 +1,39 @@
+00:00:13 S 04-May-94
+03:00:12 S 04-May-94
+06:00:16 S 04-May-94
+07:45:01 S -S- stream #1 Req #44509 DSK:(JMS)SZRPT.LOG=DSK:(JMS)SZRPT.CTL
+07:45:07 S Processor status JSU EXECX Setup in frame 12
+07:45:08 P Waiting for interlock
+07:45:09 P Got interlock
+07:45:09 P EXECX Job Processor %1(226) starting in frame 12
+07:45:10 P Stream #1 Req #44509 DSK:(JMS)SZRPT.LOG=DSK:(JMS)SZRPT.CTL
+07:45:10 S Starting job processor in frame 12
+07:49:53 P Stream #1 Req #44509 * completed *
+07:49:54 S -R- stream #1 Done-End <0>
+08:05:09 P Signing off.
+09:00:09 S 04-May-94
+12:00:09 S 04-May-94
+13:30:01 S -S- stream #1 Req #44510 DSK:(MSNTRACK)DUDAY.LOG=DSK:(MSNTRACK)DUDAY.SUB
+13:30:08 S Processor status JSU EXECX Setup in frame 14
+13:30:08 P Waiting for interlock
+13:30:09 P Got interlock
+13:30:09 P EXECX Job Processor %1(226) starting in frame 14
+13:30:10 P Stream #1 Req #44510 DSK:(MSNTRACK)DUDAY.LOG=DSK:(MSNTRACK)DUDAY.SUB
+13:30:10 S Starting job processor in frame 14
+13:33:35 P Stream #1 Req #44510 * completed *
+13:33:35 S -R- stream #1 Done-End <0>
+13:49:10 P Signing off.
+15:00:11 S 04-May-94
+18:00:14 S 04-May-94
+20:30:05 S -S- stream #1 Req #44514 DSK:(NETENG)HOSTPG.LO=DSK:(NETENG)HOSTPG
+20:30:11 S Processor status JSU EXECX Setup in frame 11
+20:30:11 P Waiting for interlock
+20:30:12 P Got interlock
+20:30:13 P EXECX Job Processor %1(226) starting in frame 11
+20:30:13 P Stream #1 Req #44514 DSK:(NETENG)HOSTPG.LO=DSK:(NETENG)HOSTPG
+20:30:13 S Starting job processor in frame 11
+21:00:13 S 04-May-94
+21:16:18 P Stream #1 Req #44514 * completed *
+21:16:19 S -R- stream #1 Done-End <0>
+21:32:12 P Signing off.
+00:00:13 S 05-May-94
