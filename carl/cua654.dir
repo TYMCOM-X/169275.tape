@@ -1,0 +1,280 @@
+
+  Parity:Odd
+%DRTIDE Error reading FTA0: file :.; I/O status = 400014 (Improper mode)
+  9-Track  Write enabled
+FILGEN	RND    68  <***>   266446  30-Nov-77
+TTY	DMP    13  <***>   507623  30-Nov-77
+OLDLOG	MAC    31  <***>   201623   1-Nov-77
+LOGON	EXE    48  <***>   274760   2-Nov-77	1A(14)
+ECM12	UNV    17  <***>   676020   8-Sep-77
+ECM12	MAC    36  <***>   213020  29-Oct-76
+LOGON	BAK     9  <***>   574711   1-Nov-77
+LOGON	REL    12  <***>   515241   2-Nov-77
+LOGON	MAP    17  <***>   152315   2-Nov-77
+SWITCH	INI     2  <***>   226770   1-Nov-77
+LOGON	MAC    35  <***>   522140   2-Nov-77
+LOGON	RNH     9  <***>   261333   2-Nov-77
+COBLIB	MAC   164  <***>   756430  22-Jul-77
+PRINTR	CBL     2  <***>   371575  22-Jul-75
+DOCGEN	SNO    17  <***>   712114  11-Apr-75
+CURMAC	UNV     2  <***>   230676  10-Mar-75
+CURHAZ	DOC    22  <***>   466242  11-Apr-75
+SNOOPY	DAT    16  <***>   054550   1-Nov-73
+COBSUB	UNV     8  <***>   762634  21-Mar-77
+CURHAZ	MAC    32  <***>   165643  10-Mar-75
+CURHAZ	REL    13  <***>   402703   2-Feb-76
+COBSUB	MAC    19  <***>   566540  21-Mar-77
+COBLIB	SPL     3  <***>   303251  28-Mar-77
+DPYLIB	SPL     3  <***>   461510  19-Apr-77
+COBLIB	RND    54  <***>   635152  28-Mar-77
+CURMAC	MAC     4  <***>   276543  10-Mar-75
+LOOKUP	MAC     5  <***>   160267  26-May-77
+MEMO	RNO     4  <***>   365447  27-May-77
+HELP	SNO    15  <***>   422001   7-Oct-74
+COBLIB	DOC    58  <***>   026363   7-Jul-77
+COB	MAC   185  <***>   121211   7-Jul-77
+PPYLIB	MAC   103  <***>   563500  26-Apr-77
+POBLIB	MAC   163  <***>   571235   7-Jul-77
+TPPN	MAC     2  <***>   422724  24-Aug-77
+DPYLIB	REL    24  <***>   260557  29-Nov-77
+COB	REL    31  <***>   736453  20-Oct-77
+DPY	REL    20  <***>   230406  20-Oct-77
+DPY	EXE    36  <***>   500270  20-Oct-77
+DPYLIB	MAC   104  <***>   435041  20-Oct-77
+DPY	CBL    12  <***>   536136  20-Oct-77
+CCTRAP	REL     2  <***>   113321  27-Oct-77
+TRAP	EXE    16  <***>   065007  26-Oct-77
+CCTLIB	REL     2  <***>   151774  26-Oct-77
+CCTRAP	MAC     6  <***>   170313  26-Oct-77
+CCTLIB	MAC     5  <***>   016606  26-Oct-77
+TRAP	CBL     2  <***>   777750  26-Oct-77
+CCTLIB	DOC    14  <***>   177570  27-Oct-77
+CCTLIB	RND    11  <***>   461314  27-Oct-77
+BOTHER	BAK     2  <***>   514233  17-Nov-77
+BOTHER	REL     3  <***>   365564  28-Nov-77
+BOTHER	EXE    20  <***>   211623  28-Nov-77
+CHAR	FOR     1  <***>   135777  23-Nov-77
+CHAR	EXE     8  <***>   366125  23-Nov-77
+BOTHER	CBL     1  <***>   550162  28-Nov-77
+COBLIB	REL    31  <***>   736453  29-Nov-77
+TALK	CBL    11  <***>   115222  24-Jun-77
+TLK5	REL    18  <***>   373316  23-Jun-77
+TALK	SAV    18  <***>   256613  24-Jun-77
+MTEST	CBL    27  <***>   536077  23-Apr-75
+SKEL1	CBL    11  <***>   330063  11-Mar-75
+SKEL	CBL     8  <***>   047473  23-Jun-77
+X	FOR     1  <***>   632221  23-Jun-77
+X	REL     1  <***>   251602   8-Jul-77
+TALK	REL    15  <***>   757166  22-Nov-77
+LIBRAR	MAC    29  <***>   247534  18-Nov-77
+REFORM	RNO     6  <***>   121440  15-Sep-76
+REFORM	FOR     8  <***>   266442  30-Aug-77
+REFORM	EXE    20  <***>   372612  30-Aug-77
+DSKCHR	SAV     3  <***>   437507  15-Sep-76	1A(11)
+DSKCHR	MAC    15  <***>   200142  15-Sep-76
+CURHAZ	X01    25  <***>   472650  20-Apr-77
+RECORD	SNO     2  <***>   115565   8-Jun-76
+SNOSYM	SNO     9  <***>   621554  25-Feb-77
+PRTYUP	SNO     3  <***>   443647  28-May-76
+PRTYUP	FAS     3  <***>   005513   1-Jun-76
+UPDGEN	SNO    11  <***>   450145   1-Jun-76
+UPDGEN	DAT     8  <***>   746423   1-Jun-76
+PATCHR	SAV    79  <***>   740573  30-Mar-76	4B(121)
+PATCHR	HLP     4  <***>   234243   3-Sep-75
+PATCHR	DOC     1  <***>   476512   3-Sep-75
+DUMMY	PAT     1  <***>   331300   5-Jul-74
+SNOSYM	SAV    34  <***>   157233  25-Feb-77	4B(121)
+RISK	BAS    36  <***>   127320  14-Apr-76
+TAPLIB	RND    17  <***>   716143  30-Jul-75
+RDGEN	SAV     7  <***>   511277  12-Aug-75
+TAPLIB	DOC    21  <***>   515075   4-Nov-75
+TAPSUB	REL     2  <***>   545373   7-Jun-76
+UHAUL	CBL     5  <***>   347077  16-Jan-75
+GETREC	CBL    10  <***>   566545  18-May-77
+UNHAUL	CBL     6  <***>   705710  23-Jul-75
+QUETAP	CBL     5  <***>   365177  27-Jan-75
+TAPQUE	CBL     8  <***>   216354  26-Feb-75
+BJAFA	CBL     6  <***>   630737  29-Jan-76
+TAPLIB	CBL     6  <***>   246642  29-Jan-76
+TAPTRN	CBL    28  <***>   104161  29-Jan-76
+TAPES	CBL    34  <***>   557524  13-May-77
+UPDATE	CBL    21  <***>   724635  13-Sep-76
+TAPES	SAV    56  <***>   366164  18-May-77	1(16)
+UPDATE	SAV    17  <***>   671501  15-Sep-76
+TAPTRN	SAV    40  <***>   357500  27-Aug-76	2(11)
+BJAFA	SAV    12  <***>   062572  27-Aug-76	1(4)
+DOC	TXT     5  <***>   172517  29-Jan-76
+TAPES	DOC     1  <***>   312446  27-Aug-76
+UPDATE	CMD     1  <***>   011477  13-Sep-76
+TAPES	CBH    34  <***>   256203  11-May-77
+GETREC	CBH     9  <***>   012577  11-May-77
+TAPFUN	SAV    56  <***>   606476  11-May-77
+TAPTRN	HLP     3  <***>   263402   9-Apr-75
+BJAFA	HLP     1  <***>   205131   8-Apr-75
+PPNTYP	MAC     2  <***>   726511  24-Aug-77
+BJAFA	NEW     6  <***>   513127  24-Aug-77
+TAPES	S16    56  <***>   366164  24-Aug-77
+TAPES	NEW    34  <***>   214072  24-Aug-77
+TAPTRN	S11    40  <***>   357500  24-Aug-77
+TAPLIB	NEW     6  <***>   770232  24-Aug-77
+TAPTRN	NEW    29  <***>   536563  24-Aug-77
+GETREC	NEW    10  <***>   535534  24-Aug-77
+UPDATE	NEW    21  <***>   301126  24-Aug-77
+GETREC	REL    15  <***>   403600  24-Aug-77
+TAPTRN	REL    49  <***>   415645  24-Aug-77
+PPNTYP	REL     1  <***>   543265  24-Aug-77
+TAPLIB	REL    10  <***>   403347  24-Aug-77
+UPDATE	REL    28  <***>   111211  24-Aug-77
+TECO	INI     1  <***>   734533  24-Aug-77
+TAPTRN	CMD     1  <***>   624345  24-Aug-77
+  Total of 2669 blocks in 125 files Checksum = 450220
+
+  BACKUP reel number 1; end save set: CUA
+    by version 2(232) at 15:41:22 on  9-Dec-77
+    written on MTA011: on S/N 1205 at 1600 9-track
+    under TOPS-10 system 603(15717): Catholic Univ 603(12) VM
+
+
+  BACKUP reel number 1; start save set: CUA
+    by version 2(232) at 15:46:31 on  9-Dec-77
+    written on MTA011: on S/N 1205 at 1600 9-track
+    under TOPS-10 system 603(15717): Catholic Univ 603(12) VM
+
+FILGEN	DOC    74  <***>   630225  30-Nov-77
+FILGEN	548    45  <***>   141363  15-Nov-77
+FILGEN	EXE   104  <***>   760555  25-Nov-77	4B(121)
+FILGEN	555    48  <***>   133541  25-Nov-77
+FILGEN	BAK    68  <***>   506517  30-Nov-77
+FILGEN	RND    68  <***>   266446  30-Nov-77
+TTY	DMP    13  <***>   507623  30-Nov-77
+OLDLOG	MAC    31  <***>   201623   1-Nov-77
+LOGON	EXE    48  <***>   274760   2-Nov-77	1A(14)
+ECM12	UNV    17  <***>   676020   8-Sep-77
+ECM12	MAC    36  <***>   213020  29-Oct-76
+LOGON	BAK     9  <***>   574711   1-Nov-77
+LOGON	REL    12  <***>   515241   2-Nov-77
+LOGON	MAP    17  <***>   152315   2-Nov-77
+SWITCH	INI     2  <***>   226770   1-Nov-77
+LOGON	MAC    35  <***>   522140   2-Nov-77
+LOGON	RNH     9  <***>   261333   2-Nov-77
+COBLIB	MAC   164  <***>   756430  22-Jul-77
+PRINTR	CBL     2  <***>   371575  22-Jul-75
+DOCGEN	SNO    17  <***>   712114  11-Apr-75
+CURMAC	UNV     2  <***>   230676  10-Mar-75
+CURHAZ	DOC    22  <***>   466242  11-Apr-75
+SNOOPY	DAT    16  <***>   054550   1-Nov-73
+COBSUB	UNV     8  <***>   762634  21-Mar-77
+CURHAZ	MAC    32  <***>   165643  10-Mar-75
+CURHAZ	REL    13  <***>   402703   2-Feb-76
+COBSUB	MAC    19  <***>   566540  21-Mar-77
+COBLIB	SPL     3  <***>   303251  28-Mar-77
+DPYLIB	SPL     3  <***>   461510  19-Apr-77
+COBLIB	RND    54  <***>   635152  28-Mar-77
+CURMAC	MAC     4  <***>   276543  10-Mar-75
+LOOKUP	MAC     5  <***>   160267  26-May-77
+MEMO	RNO     4  <***>   365447  27-May-77
+HELP	SNO    15  <***>   422001   7-Oct-74
+COBLIB	DOC    58  <***>   026363   7-Jul-77
+COB	MAC   185  <***>   121211   7-Jul-77
+PPYLIB	MAC   103  <***>   563500  26-Apr-77
+POBLIB	MAC   163  <***>   571235   7-Jul-77
+TPPN	MAC     2  <***>   422724  24-Aug-77
+DPYLIB	REL    24  <***>   260557  29-Nov-77
+COB	REL    31  <***>   736453  20-Oct-77
+DPY	REL    20  <***>   230406  20-Oct-77
+DPY	EXE    36  <***>   500270  20-Oct-77
+DPYLIB	MAC   104  <***>   435041  20-Oct-77
+DPY	CBL    12  <***>   536136  20-Oct-77
+CCTRAP	REL     2  <***>   113321  27-Oct-77
+TRAP	EXE    16  <***>   065007  26-Oct-77
+CCTLIB	REL     2  <***>   151774  26-Oct-77
+CCTRAP	MAC     6  <***>   170313  26-Oct-77
+CCTLIB	MAC     5  <***>   016606  26-Oct-77
+TRAP	CBL     2  <***>   777750  26-Oct-77
+CCTLIB	DOC    14  <***>   177570  27-Oct-77
+CCTLIB	RND    11  <***>   461314  27-Oct-77
+BOTHER	BAK     2  <***>   514233  17-Nov-77
+BOTHER	REL     3  <***>   365564  28-Nov-77
+BOTHER	EXE    20  <***>   211623  28-Nov-77
+CHAR	FOR     1  <***>   135777  23-Nov-77
+CHAR	EXE     8  <***>   366125  23-Nov-77
+BOTHER	CBL     1  <***>   550162  28-Nov-77
+COBLIB	REL    31  <***>   736453  29-Nov-77
+TALK	CBL    11  <***>   115222  24-Jun-77
+TLK5	REL    18  <***>   373316  23-Jun-77
+TALK	SAV    18  <***>   256613  24-Jun-77
+MTEST	CBL    27  <***>   536077  23-Apr-75
+SKEL1	CBL    11  <***>   330063  11-Mar-75
+SKEL	CBL     8  <***>   047473  23-Jun-77
+X	FOR     1  <***>   632221  23-Jun-77
+X	REL     1  <***>   251602   8-Jul-77
+TALK	REL    15  <***>   757166  22-Nov-77
+LIBRAR	MAC    29  <***>   247534  18-Nov-77
+REFORM	RNO     6  <***>   121440  15-Sep-76
+REFORM	FOR     8  <***>   266442  30-Aug-77
+REFORM	EXE    20  <***>   372612  30-Aug-77
+DSKCHR	SAV     3  <***>   437507  15-Sep-76	1A(11)
+DSKCHR	MAC    15  <***>   200142  15-Sep-76
+CURHAZ	X01    25  <***>   472650  20-Apr-77
+RECORD	SNO     2  <***>   115565   8-Jun-76
+SNOSYM	SNO     9  <***>   621554  25-Feb-77
+PRTYUP	SNO     3  <***>   443647  28-May-76
+PRTYUP	FAS     3  <***>   005513   1-Jun-76
+UPDGEN	SNO    11  <***>   450145   1-Jun-76
+UPDGEN	DAT     8  <***>   746423   1-Jun-76
+PATCHR	SAV    79  <***>   740573  30-Mar-76	4B(121)
+PATCHR	HLP     4  <***>   234243   3-Sep-75
+PATCHR	DOC     1  <***>   476512   3-Sep-75
+DUMMY	PAT     1  <***>   331300   5-Jul-74
+SNOSYM	SAV    34  <***>   157233  25-Feb-77	4B(121)
+RISK	BAS    36  <***>   127320  14-Apr-76
+TAPLIB	RND    17  <***>   716143  30-Jul-75
+RDGEN	SAV     7  <***>   511277  12-Aug-75
+TAPLIB	DOC    21  <***>   515075   4-Nov-75
+TAPSUB	REL     2  <***>   545373   7-Jun-76
+UHAUL	CBL     5  <***>   347077  16-Jan-75
+GETREC	CBL    10  <***>   566545  18-May-77
+UNHAUL	CBL     6  <***>   705710  23-Jul-75
+QUETAP	CBL     5  <***>   365177  27-Jan-75
+TAPQUE	CBL     8  <***>   216354  26-Feb-75
+BJAFA	CBL     6  <***>   630737  29-Jan-76
+TAPLIB	CBL     6  <***>   246642  29-Jan-76
+TAPTRN	CBL    28  <***>   104161  29-Jan-76
+TAPES	CBL    34  <***>   557524  13-May-77
+UPDATE	CBL    21  <***>   724635  13-Sep-76
+TAPES	SAV    56  <***>   366164  18-May-77	1(16)
+UPDATE	SAV    17  <***>   671501  15-Sep-76
+TAPTRN	SAV    40  <***>   357500  27-Aug-76	2(11)
+BJAFA	SAV    12  <***>   062572  27-Aug-76	1(4)
+DOC	TXT     5  <***>   172517  29-Jan-76
+TAPES	DOC     1  <***>   312446  27-Aug-76
+UPDATE	CMD     1  <***>   011477  13-Sep-76
+TAPES	CBH    34  <***>   256203  11-May-77
+GETREC	CBH     9  <***>   012577  11-May-77
+TAPFUN	SAV    56  <***>   606476  11-May-77
+TAPTRN	HLP     3  <***>   263402   9-Apr-75
+BJAFA	HLP     1  <***>   205131   8-Apr-75
+PPNTYP	MAC     2  <***>   726511  24-Aug-77
+BJAFA	NEW     6  <***>   513127  24-Aug-77
+TAPES	S16    56  <***>   366164  24-Aug-77
+TAPES	NEW    34  <***>   214072  24-Aug-77
+TAPTRN	S11    40  <***>   357500  24-Aug-77
+TAPLIB	NEW     6  <***>   770232  24-Aug-77
+TAPTRN	NEW    29  <***>   536563  24-Aug-77
+GETREC	NEW    10  <***>   535534  24-Aug-77
+UPDATE	NEW    21  <***>   301126  24-Aug-77
+GETREC	REL    15  <***>   403600  24-Aug-77
+TAPTRN	REL    49  <***>   415645  24-Aug-77
+PPNTYP	REL     1  <***>   543265  24-Aug-77
+TAPLIB	REL    10  <***>   403347  24-Aug-77
+UPDATE	REL    28  <***>   111211  24-Aug-77
+TECO	INI     1  <***>   734533  24-Aug-77
+TAPTRN	CMD     1  <***>   624345  24-Aug-77
+  Total of 3008 blocks in 130 files Checksum = 734222
+
+  BACKUP reel number 1; end save set: CUA
+    by version 2(232) at 15:53:43 on  9-Dec-77
+    written on MTA011: on S/N 1205 at 1600 9-track
+    under TOPS-10 system 603(15717): Catholic Univ 603(12) VM
+
+    
